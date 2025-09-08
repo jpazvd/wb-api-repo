@@ -142,3 +142,41 @@ This tool can be easily integrated into:
 Developed for bridging **Stata `wbopendata` workflows** with modern Python pipelines.  
 Supports reproducible UNICEF/World Bank style analytics.
 
+
+# World Bank API Helper (wb_api_tools)
+
+This repo provides a lightweight CLI to fetch **country metadata**, **indicator metadata**, and **indicator data** from the World Bank API, plus automation for nightly metadata refresh and batch data pulls from `config.yaml`.
+
+## Quick Start
+```bash
+pip install -r requirements.txt
+
+# Metadata (YAML, CSV, keyed YAML)
+make wb-metadata
+make wb-metadata-csv
+make wb-metadata-keyed
+
+# Batch pulls from config.yaml
+make wb-config
+```
+
+## Population by Age & Sex (Examples)
+See **docs/EXAMPLES.md** and **docs/AGE_BANDS.md**.
+
+Quick example:
+```bash
+python _programs/wb_api_tools.py data   --indicators SP.POP.0004.MA,SP.POP.0004.FE,SP.POP.0509.MA,SP.POP.0509.FE   --countries all   --date 2000:2050   --long   --out _data/wb/pop_age_sex_counts_long.csv
+```
+
+## Documentation & Examples
+- **docs/EXAMPLES.md** — end-to-end instructions (API, Stata, Python)
+- **docs/AGE_BANDS.md** — standard 5-year age band codes
+- **_programs/examples/population_examples.sh** — runnable shell examples
+- **_programs/examples/population_examples.do** — Stata examples
+- **config_full_age_sex.yaml** — full age×sex batch pulls (counts + shares)
+
+Generate full indicator lists programmatically:
+```bash
+python _programs/examples/generate_age_sex_codes.py            # counts
+python _programs/examples/generate_age_sex_codes.py --shares   # shares
+```
