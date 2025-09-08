@@ -1,0 +1,21 @@
+
+# Configuration for batch World Bank data pulls.
+# Each job specifies indicators, countries, date range, output path and format.
+# Paths are relative to the repo root unless absolute.
+
+jobs:
+  # Example 1: Poverty headcount & GDP per capita PPP, all countries, long format
+  - name: poverty_gdppc_long
+    indicators: ["SI.POV.DDAY", "NY.GDP.PCAP.PP.KD"]
+    countries: "all"          # or comma-separated ISO3 list, e.g. "BRA,IND,ZAF"
+    date: "2000:2023"         # single year "2020", open range "2010:" also valid
+    long: true                # long format (stacked); false -> wide
+    out: "_data/wb/poverty_gdppc_long.csv"
+
+  # Example 2: Health ODA series, all countries, CSV wide
+  - name: oda_health_wide
+    indicators: ["DT.ODA.DACD.HLTH.BAS.CD", "DT.ODA.DACD.HLTH.CD", "DT.ODA.DACD.HLTH.GEN.CD"]
+    countries: "all"
+    date: "2000:2023"
+    long: false
+    out: "_data/wb/oda_health_wide.csv"
