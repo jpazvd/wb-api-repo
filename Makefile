@@ -12,3 +12,8 @@ wb-metadata-csv:
 .PHONY: wb-config
 wb-config:
 	python _programs/run_from_config.py
+
+
+.PHONY: wb-metadata-keyed
+wb-metadata-keyed:
+	python _programs/make_wb_metadata_yaml_keyed.py
