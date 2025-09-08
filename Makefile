@@ -1,6 +1,6 @@
 
-.PHONY: wb-metadata wb-metadata-csv all
-all: wb-metadata wb-metadata-csv
+.PHONY: wb-metadata wb-metadata-csv wb-metadata-keyed wb-config all
+all: wb-metadata wb-metadata-csv wb-metadata-keyed
 
 wb-metadata:
 	python _programs/make_wb_metadata_yaml.py
@@ -8,12 +8,8 @@ wb-metadata:
 wb-metadata-csv:
 	python _programs/make_wb_metadata_csv.py
 
-
-.PHONY: wb-config
-wb-config:
-	python _programs/run_from_config.py
-
-
-.PHONY: wb-metadata-keyed
 wb-metadata-keyed:
 	python _programs/make_wb_metadata_yaml_keyed.py
+
+wb-config:
+	python _programs/run_from_config.py
