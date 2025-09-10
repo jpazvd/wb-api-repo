@@ -9,10 +9,10 @@ It allows you to fetch **country metadata**, **indicator metadata**, and **indic
 ## 📦 Installation
 
 1. Save the script `wb_api_tools.py` to your project folder.
-2. Make sure you have the required Python libraries:
+2. Install required Python libraries from `requirements.txt`:
 
 ```bash
-pip install requests pandas
+pip install -r requirements.txt
 ```
 
 3. Run from the command line:
@@ -63,6 +63,9 @@ python wb_api_tools.py data   --indicators SI.POV.DDAY,NY.GDP.PCAP.PP.KD   --cou
 
 # Wide format (default)
 python wb_api_tools.py data   --indicators SI.POV.DDAY,NY.GDP.PCAP.PP.KD   --countries BRA,IND,ZAF   --date 2010:   --out data.csv
+
+# Verbose debug output
+python wb_api_tools.py --verbose data   --indicators NY.GDP.PCAP.PP.KD   --countries BRA   --date 2010:2020   --long   --out data_verbose.csv
 ```
 
 - **Long format**: `countryiso3code, country, indicator, date, value`

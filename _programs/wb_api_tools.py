@@ -11,6 +11,9 @@ import sys, time, argparse
 from typing import Dict, Any, Optional, Iterable, List, Tuple
 import requests, pandas as pd
 
+# Global verbose flag
+VERBOSE = False
+
 BASE = "https://api.worldbank.org/v2"
 SESSION = requests.Session()
 DEFAULT_PER_PAGE = 1000
@@ -157,6 +160,7 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
         indicators = [c.strip() for c in indicators.split(",") if c.strip()]
     indicators = list(dict.fromkeys(indicators))  # Remove duplicates
 
+    global VERBOSE
     frames = []
     for ind in indicators:
         try:
@@ -174,17 +178,19 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
 
             # Make direct CSV request (no pagination needed for CSV)
             r = SESSION.get(url, params=params, timeout=60)
-            print(f"Debug-fetch URL: {r.url}")
-            text_raw = r.text
-            print(f"Debug-fetch text length: {len(text_raw)}")
-            print(f"Debug-fetch sample:\n{text_raw[:200]}")
+            if VERBOSE:
+                print(f"Debug-fetch URL: {r.url}")
+                text_raw = r.text
+                print(f"Debug-fetch text length: {len(text_raw)}")
+                print(f"Debug-fetch sample:\n{text_raw[:200]}")
             r.raise_for_status()
 
             # Parse CSV response from raw bytes to handle BOM and encoding correctly
             import io
             df = pd.read_csv(io.BytesIO(r.content), encoding='utf-8-sig', quoting=1)
-            print(f"Debug: Columns for {ind}: {list(df.columns)}")
-            print(f"Debug: Shape: {df.shape}")
+            if VERBOSE:
+                print(f"Debug: Columns for {ind}: {list(df.columns)}")
+                print(f"Debug: Shape: {df.shape}")
 
             # The World Bank CSV comes in wide format with years as columns
             # Expected columns: Country Name, Country Code, Indicator Name, Indicator Code, 1960, 1961, etc.
@@ -289,6 +295,7 @@ def _save_df(df, out: Optional[str]) -> None:
 
 def build_parser():
     p = argparse.ArgumentParser(description="World Bank API helper")
+    p.add_argument("--verbose", action="store_true", help="Show debug output (verbose)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     p_c = sub.add_parser("countries", help="Fetch country metadata")
@@ -312,8 +319,12 @@ def build_parser():
 def main(argv=None):
     argv = argv or sys.argv[1:]
     args = build_parser().parse_args(argv)
-    # Debug: print parsed arguments
-    print(f"Debug-main args: cmd={args.cmd}, indicators={getattr(args, 'indicators', None)}, countries={getattr(args, 'countries', None)}, date={getattr(args, 'date', None)}, long={getattr(args, 'long', None)}, out={getattr(args, 'out', None)}")
+    # Set global verbose
+    global VERBOSE
+    VERBOSE = args.verbose
+    # Debug: print parsed arguments if verbose
+    if VERBOSE:
+        print(f"Debug-main args: cmd={args.cmd}, indicators={getattr(args, 'indicators', None)}, countries={getattr(args, 'countries', None)}, date={getattr(args, 'date', None)}, long={getattr(args, 'long', None)}, out={getattr(args, 'out', None)}")
     if args.cmd == "countries":
         df = get_country_metadata()
         _save_df(df, args.out)
@@ -324,10 +335,11 @@ def main(argv=None):
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
                       date=args.date, per_page=args.per_page, long=args.long)
-        # Debug: show fetched data shape and sample
-        print(f"Debug-final df shape: {df.shape}")
-        if not df.empty:
-            print(df.head(5).to_string(index=False))
+        # Debug: show fetched data shape and sample if verbose
+        if VERBOSE:
+            print(f"Debug-final df shape: {df.shape}")
+            if not df.empty:
+                print(df.head(5).to_string(index=False))
         _save_df(df, args.out)
 
 if __name__ == "__main__":
