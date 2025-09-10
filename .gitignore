@@ -24,3 +24,7 @@ env/
 # Test output
 htmlcov/
 coverage.xml
+// Ignore all files in tests directory except Python test scripts
+_tests/*.csv
+_tests/*.txt
+!_tests/*.py
