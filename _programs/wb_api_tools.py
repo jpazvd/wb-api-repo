@@ -17,9 +17,13 @@ DEFAULT_PER_PAGE = 1000
 RETRIES = 4
 BACKOFF = 0.8
 
-def _request(url: str, params: Optional[Dict[str, Any]] = None) -> Tuple[Dict[str, Any], List[Dict[str, Any]]]:
+def _request(url: str, params: Optional[Dict[str, Any]] = None, format_type: str = "json") -> Tuple[Dict[str, Any], List[Dict[str, Any]]]:
+    """
+    Make API request with support for both JSON and CSV formats
+    Following Stata wbopendata approach for CSV downloads
+    """
     params = dict(params or {})
-    params.setdefault("format", "json")
+    params.setdefault("format", format_type)
     last = None
     for i in range(RETRIES):
         try:
@@ -27,32 +31,62 @@ def _request(url: str, params: Optional[Dict[str, Any]] = None) -> Tuple[Dict[st
             if r.status_code >= 500:
                 raise requests.HTTPError(f"{r.status_code} {r.text[:200]}")
             r.raise_for_status()
-            payload = r.json()
-            if isinstance(payload, list) and len(payload) >= 2:
-                return payload[0], payload[1]
-            raise ValueError("Unexpected payload")
+
+            if format_type == "csv":
+                # Handle CSV response directly
+                import io
+                # Strip BOM if present
+                text = r.text
+                if text.startswith('\ufeff'):
+                    text = text[1:]
+                df = pd.read_csv(io.StringIO(text))
+                # Convert DataFrame to expected format
+                data = df.to_dict('records')
+                return {}, data
+            else:
+                # Handle JSON response (for metadata)
+                payload = r.json()
+                if isinstance(payload, list) and len(payload) >= 2:
+                    return payload[0], payload[1]
+                raise ValueError("Unexpected JSON payload structure")
+
         except Exception as e:
             last = e
             time.sleep(BACKOFF * (2**i))
     raise RuntimeError(f"Request failed after {RETRIES} attempts: {last}")
 
-def _paged(url: str, params: Optional[Dict[str, Any]] = None, per_page: int = DEFAULT_PER_PAGE) -> Iterable[Dict[str, Any]]:
+def _paged(url: str, params: Optional[Dict[str, Any]] = None, per_page: int = DEFAULT_PER_PAGE, format_type: str = "json") -> Iterable[Dict[str, Any]]:
+    """
+    Handle paginated requests with support for both JSON and CSV formats
+    For CSV format, pagination is handled differently since all data comes in one response
+    """
     params = dict(params or {})
-    params.update({"format":"json","per_page":per_page,"page":1})
-    hdr, data = _request(url, params)
-    if data: 
-        for row in data: 
-            yield row
-    pages = int((hdr or {}).get("pages", 1) or 1)
-    for p in range(2, pages+1):
-        params["page"] = p
-        _, data = _request(url, params)
-        for row in data or []:
-            yield row
+    params.update({"format": format_type, "per_page": per_page, "page": 1})
+
+    if format_type == "csv":
+        # For CSV, we can get all data in one request
+        # World Bank CSV API supports large downloads without pagination
+        _, data = _request(url, params, format_type="csv")
+        if data:
+            for row in data:
+                yield row
+    else:
+        # JSON pagination (for metadata)
+        hdr, data = _request(url, params, format_type="json")
+        if data:
+            for row in data:
+                yield row
+        pages = int((hdr or {}).get("pages", 1) or 1)
+        for p in range(2, pages+1):
+            params["page"] = p
+            _, data = _request(url, params, format_type="json")
+            for row in data or []:
+                yield row
 
 def get_country_metadata(per_page: int = DEFAULT_PER_PAGE) -> pd.DataFrame:
+    """Fetch country metadata using JSON (more reliable for structured data)"""
     url = f"{BASE}/country"
-    rows = list(_paged(url, {}, per_page=per_page))
+    rows = list(_paged(url, {}, per_page=per_page, format_type="json"))
     def g(obj, *ks):
         cur = obj
         for k in ks:
@@ -95,16 +129,17 @@ def _normalize_indicator_meta(r: Dict[str, Any]) -> Dict[str, Any]:
 
 def get_indicator_metadata(codes: Optional[List[str]] = None, search: Optional[str] = None,
                            per_page: int = DEFAULT_PER_PAGE) -> pd.DataFrame:
+    """Fetch indicator metadata using JSON (better for structured metadata)"""
     if codes:
         recs = []
         for code in codes:
             url = f"{BASE}/indicator/{code}"
-            _, data = _request(url, params={"format":"json"})
+            _, data = _request(url, params={"format": "json"}, format_type="json")
             for r in data:
                 recs.append(_normalize_indicator_meta(r))
         return pd.DataFrame.from_records(recs)
     url = f"{BASE}/indicator"
-    rows = list(_paged(url, {}, per_page=per_page))
+    rows = list(_paged(url, {}, per_page=per_page, format_type="json"))
     df = pd.DataFrame.from_records([_normalize_indicator_meta(r) for r in rows])
     if search:
         s = search.lower()
@@ -114,44 +149,122 @@ def get_indicator_metadata(codes: Optional[List[str]] = None, search: Optional[s
 
 def get_data(indicators: List[str], countries: str = "all", date: Optional[str] = None,
              per_page: int = DEFAULT_PER_PAGE, long: bool = False) -> pd.DataFrame:
+    """
+    Fetch indicator data using CSV downloads (following Stata wbopendata approach)
+    Much more reliable than JSON for bulk data
+    """
     if isinstance(indicators, str):
         indicators = [c.strip() for c in indicators.split(",") if c.strip()]
-    indicators = list(dict.fromkeys(indicators))
+    indicators = list(dict.fromkeys(indicators))  # Remove duplicates
+
     frames = []
     for ind in indicators:
-        url = f"{BASE}/country/{countries}/indicator/{ind}"
-        params = {}
-        if date:
-            params["date"] = date
-        rows = list(_paged(url, params, per_page=per_page))
-        if not rows: 
+        try:
+            # Use CSV download approach like Stata wbopendata
+            url = f"{BASE}/countries/{countries}/indicators/{ind}"
+
+            # Build parameters for CSV download
+            params = {
+                "downloadformat": "CSV",
+                "HREQ": "N",
+                "filetype": "data"
+            }
+            if date:
+                params["date"] = date
+
+            # Make direct CSV request (no pagination needed for CSV)
+            r = SESSION.get(url, params=params, timeout=60)
+            print(f"Debug-fetch URL: {r.url}")
+            text_raw = r.text
+            print(f"Debug-fetch text length: {len(text_raw)}")
+            print(f"Debug-fetch sample:\n{text_raw[:200]}")
+            r.raise_for_status()
+
+            # Parse CSV response from raw bytes to handle BOM and encoding correctly
+            import io
+            df = pd.read_csv(io.BytesIO(r.content), encoding='utf-8-sig', quoting=1)
+            print(f"Debug: Columns for {ind}: {list(df.columns)}")
+            print(f"Debug: Shape: {df.shape}")
+
+            # The World Bank CSV comes in wide format with years as columns
+            # Expected columns: Country Name, Country Code, Indicator Name, Indicator Code, 1960, 1961, etc.
+
+            # Identify year columns (numeric column names)
+            year_columns = []
+            id_columns = []
+            for col in df.columns:
+                col_str = str(col).strip()
+                if col_str.isdigit() and len(col_str) == 4:  # 4-digit years
+                    year_columns.append(col)
+                else:
+                    id_columns.append(col)
+
+            if not year_columns:
+                print(f"Warning: No year columns found for {ind}. Columns: {list(df.columns)}")
+                continue
+
+            # Melt the dataframe to convert from wide to long format
+            df_long = df.melt(
+                id_vars=id_columns,
+                value_vars=year_columns,
+                var_name='date',
+                value_name='value'
+            )
+
+            # Rename columns to standard format
+            column_rename_map = {
+                "Country Code": "countryiso3code",
+                "Country Name": "country",
+                "Indicator Code": "indicator_code",
+                "Indicator Name": "indicator_name"
+            }
+            df_long = df_long.rename(columns=column_rename_map)
+
+            # Ensure indicator column is set correctly
+            df_long["indicator"] = ind
+
+            # Convert date to numeric and value to numeric
+            df_long["date"] = pd.to_numeric(df_long["date"], errors="coerce")
+            df_long["value"] = pd.to_numeric(df_long["value"], errors="coerce")
+
+            # Remove rows with NaN values
+            df_long = df_long.dropna(subset=['value'])
+
+            frames.append(df_long)
+
+        except Exception as e:
+            print(f"Error processing {ind}: {e}")
+            import traceback
+            traceback.print_exc()
             continue
-        recs = []
-        for r in rows:
-            countryiso3 = r.get("countryiso3code")
-            country = (r.get("country") or {}).get("value") if isinstance(r.get("country"), dict) else None
-            recs.append({
-                "countryiso3code": countryiso3,
-                "country": country,
-                "indicator": ind,
-                "date": r.get("date"),
-                "value": r.get("value"),
-            })
-        import pandas as pd
-        frames.append(pd.DataFrame.from_records(recs))
+
     if not frames:
-        import pandas as pd
-        return pd.DataFrame(columns=["countryiso3code","country","indicator","date","value"])
-    import pandas as pd
-    df_long = pd.concat(frames, ignore_index=True)
-    df_long["date"] = pd.to_numeric(df_long["date"], errors="coerce")
-    df_long.sort_values(["countryiso3code","indicator","date"], inplace=True)
+        # Return empty DataFrame with expected columns
+        return pd.DataFrame(columns=["countryiso3code", "country", "indicator", "date", "value"])
+
+    # Combine all indicator data
+    df_combined = pd.concat(frames, ignore_index=True)
+
+    # Sort data
+    df_combined = df_combined.sort_values(["countryiso3code", "indicator", "date"])
+
     if long:
-        return df_long
-    wide = df_long.pivot_table(index=["countryiso3code","country","date"],
-                               columns="indicator", values="value", aggfunc="first").reset_index()
-    wide.columns = [c if isinstance(c, str) else c[1] for c in wide.columns.values]
-    return wide
+        # Return long format (already is)
+        return df_combined
+    else:
+        # Convert to wide format
+        # First, create a pivot table
+        wide = df_combined.pivot_table(
+            index=["countryiso3code", "country", "date"],
+            columns="indicator",
+            values="value",
+            aggfunc="first"
+        ).reset_index()
+
+        # Clean up column names (remove multi-index)
+        wide.columns = [col if isinstance(col, str) else col[1] for col in wide.columns.values]
+
+        return wide
 
 def _save_df(df, out: Optional[str]) -> None:
     if not out:
@@ -199,6 +312,8 @@ def build_parser():
 def main(argv=None):
     argv = argv or sys.argv[1:]
     args = build_parser().parse_args(argv)
+    # Debug: print parsed arguments
+    print(f"Debug-main args: cmd={args.cmd}, indicators={getattr(args, 'indicators', None)}, countries={getattr(args, 'countries', None)}, date={getattr(args, 'date', None)}, long={getattr(args, 'long', None)}, out={getattr(args, 'out', None)}")
     if args.cmd == "countries":
         df = get_country_metadata()
         _save_df(df, args.out)
@@ -209,6 +324,10 @@ def main(argv=None):
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
                       date=args.date, per_page=args.per_page, long=args.long)
+        # Debug: show fetched data shape and sample
+        print(f"Debug-final df shape: {df.shape}")
+        if not df.empty:
+            print(df.head(5).to_string(index=False))
         _save_df(df, args.out)
 
 if __name__ == "__main__":
