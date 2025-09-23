@@ -40050,8 +40050,10 @@ CC.OIL.PSBC.ID:
     on GEM.wiki. GFIT was accessed in July 2021 to generate this data.
   source_organization: 'Global Fossil Infrastructure Tracker, Global Energy Monitor.
     Available at: https://globalenergymonitor.org/projects/global-fossil-infrastructure-tracker/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 CC.OIL.PSBC.OP:
   id: CC.OIL.PSBC.OP
@@ -40116,10 +40118,8 @@ CC.OIL.PSBC.RT:
     on GEM.wiki. GFIT was accessed in July 2021 to generate this data.
   source_organization: 'Global Fossil Infrastructure Tracker, Global Energy Monitor.
     Available at: https://globalenergymonitor.org/projects/global-fossil-infrastructure-tracker/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 CC.OIL.PSBC.SH:
   id: CC.OIL.PSBC.SH
@@ -51275,8 +51275,10 @@ DP.DOD.DSTC.CR.BC:
   source_id: '20'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DP.DOD.DSTC.CR.BC.CD:
   id: DP.DOD.DSTC.CR.BC.CD
@@ -52215,10 +52217,8 @@ DT.AMT.DECT.CD.CB.03.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.AMT.DECT.CD.CB.0912.US:
   id: DT.AMT.DECT.CD.CB.0912.US
@@ -63596,8 +63596,10 @@ DT.DOD.DLXF.CD.FC.GG.TO.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DT.DOD.DLXF.CD.FC.GG.US.US:
   id: DT.DOD.DLXF.CD.FC.GG.US.US
@@ -64422,10 +64424,8 @@ DT.DOD.DSCD.CD.CB.AR.EA.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.DOD.DSCD.CD.CB.AR.EN.US:
   id: DT.DOD.DSCD.CD.CB.AR.EN.US
@@ -76388,10 +76388,8 @@ DT.INTS.DLTL.CD.GG.AR.0912.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.INTS.DLTL.CD.GG.AR.1218.US:
   id: DT.INTS.DLTL.CD.GG.AR.1218.US
@@ -89632,10 +89630,8 @@ EN.AGR.EMPL.MA:
     hunting, fishing or forestry.  '
   source_organization: Food and Agriculture Organization, electronic files and web
     site.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 EN.ANM.THRD.NO:
   id: EN.ANM.THRD.NO
@@ -106443,8 +106439,10 @@ HF.STA.BPSY.Q1:
   source_id: '65'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 HF.STA.BPSY.Q2:
   id: HF.STA.BPSY.Q2
@@ -111220,10 +111218,8 @@ HH.MICS.OOS.1.F:
     students who are in secondary.
   source_organization: World Bank staff calculations based on Multiple Indicator Cluster
     Survey (MICS) data
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 HH.MICS.OOS.1.M:
   id: HH.MICS.OOS.1.M
@@ -130024,8 +130020,10 @@ JI.EMP.WAGE.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.ENR.0616.FE.ZS:
   id: JI.ENR.0616.FE.ZS
@@ -133364,10 +133362,8 @@ LO.EGRA.CLPM.FRN.3GRD:
     across countries or languages. Consult the EdData website and the specific country
     report for more information: www.eddataglobal.org.'
   source_organization: 'Early Grade Reading Assessment (EGRA): https://www.eddataglobal.org/reading/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.EGRA.CLPM.HAR.2GRD:
   id: LO.EGRA.CLPM.HAR.2GRD
@@ -144112,8 +144108,10 @@ LO.PASEC.REA.6.L0:
     2014. Consult the PASEC website for more detailed information: http://www.pasec.confemen.org/'
   source_organization: 'Programme d''Analyse des Systèmes Educatifs de la CONFEMEN/Program
     for the Analysis of CONFEMEN Education Systems (PASEC): http://www.pasec.confemen.org/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PASEC.REA.6.L1:
   id: LO.PASEC.REA.6.L1
@@ -159361,8 +159359,10 @@ NW.HCA.PC.CD:
   source_id: '59'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NW.HCA.TO:
   id: NW.HCA.TO
@@ -171225,8 +171225,10 @@ PER.SOR.CTL.TOT.VOC:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SOR.CTL.VOC:
   id: PER.SOR.CTL.VOC
@@ -180049,10 +180051,8 @@ PRJ.MYS.2529.MF:
     for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PRJ.MYS.25UP.FE:
   id: PRJ.MYS.25UP.FE
@@ -187012,8 +187012,10 @@ SE.CLO.15Y.LDGAP.M.PS.2000.F:
     deprived child to the minimum proficiency level and indicates the average increase
     in learning required to eliminate learning deprivation.
   source_organization: Education Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDGAP.M.PS.2000.M:
   id: SE.CLO.15Y.LDGAP.M.PS.2000.M
@@ -191106,10 +191108,8 @@ SE.CLO.15Y.LDSEV.S.PS.2009.3:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDSEV.S.PS.2009.4:
   id: SE.CLO.15Y.LDSEV.S.PS.2009.4
@@ -198122,8 +198122,10 @@ SE.CLO.4.PRF.M.TMS.2011.A:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.4.PRF.M.TMS.2011.F:
   id: SE.CLO.4.PRF.M.TMS.2011.F
@@ -202128,10 +202130,8 @@ SE.CLO.5.PRF.M.TMS.2015.A:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.5.PRF.M.TMS.2015.F:
   id: SE.CLO.5.PRF.M.TMS.2015.F
@@ -209002,8 +209002,10 @@ SE.CLO.8.PRF.M.TMS.2007.1:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.8.PRF.M.TMS.2007.2:
   id: SE.CLO.8.PRF.M.TMS.2007.2
@@ -213152,10 +213154,8 @@ SE.LPV.PRIM.LD.FE:
 
     UN Educational, Scientific and Cultural Organization (UNESCO), publisher: UNESCO
     Institute for Statistics (UIS)'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.LPV.PRIM.LD.MA:
   id: SE.LPV.PRIM.LD.MA
@@ -226504,10 +226504,8 @@ SG.VAW.1549.LT.ME.ZS:
     lifetime.
   source_organization: The United Nations Inter-Agency Working Group on Violence Against
     Women Estimation and Data (VAW-IAWGED)  (WHO, UN Women, UNICEF, UNSD, UNFPA, UNODC)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SG.VAW.1549.ME.ZS:
   id: SG.VAW.1549.ME.ZS
@@ -227133,8 +227131,8 @@ SG.VAW.HLPV.ZS:
   unit: ''
 SG.VAW.INJR.ZS:
   id: SG.VAW.INJR.ZS
-  name: Women who who have experienced injuries resulting from spousal violence (%
-    of ever-married women ages 15-49 who have ever experienced any physical or sexual
+  name: Women who have experienced injuries resulting from spousal violence (% of
+    ever-married women ages 15-49 who have ever experienced any physical or sexual
     violence)
   source: Gender Statistics
   source_id: '14'
@@ -236332,8 +236330,10 @@ SH.STA.IYCF.ZS:
     infant and young child feeding (IYCF) practices (food diversity, feeding frequency,
     and consumption of breast milk or milk)
   source_organization: Demographic and Health Surveys
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SH.STA.LBMI.Q1.ZS:
   id: SH.STA.LBMI.Q1.ZS
@@ -241881,10 +241881,8 @@ SL.GDP.PCAP.EM.XD:
     employment.
   source_organization: Derived using data from International Labour Organization,
     ILOSTAT database. The data retrieved in March 1, 2020.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SL.IND.EMPL.FE.ZS:
   id: SL.IND.EMPL.FE.ZS
@@ -257109,10 +257107,8 @@ TX.VAL.MANF.CD:
   source_id: '57'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 TX.VAL.MANF.CD.WB:
   id: TX.VAL.MANF.CD.WB
@@ -269471,8 +269467,10 @@ UIS.GCS.LOWERSEC.NCOG.GLOC:
     students at the same stage of education and year. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.GCS.LOWERSEC.NCOG.GLOC.F:
   id: UIS.GCS.LOWERSEC.NCOG.GLOC.F
@@ -276904,10 +276902,8 @@ UIS.NART.1.RUR:
     Statistics calculations based on national census data and household surveys. For
     more information, consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.NART.1.RUR.F:
   id: UIS.NART.1.RUR.F
@@ -305370,6 +305366,42 @@ borrow.any.9:
   topic_ids: []
   topics: []
   unit: ''
+borrow.any.t.d:
+  id: borrow.any.t.d
+  name: Borrowed any money  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money (by themselves
+    or together with someone else) for any reason and from any source in the past
+    year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+borrow.any.t.d.1:
+  id: borrow.any.t.d.1
+  name: Borrowed any money, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money (by themselves
+    or together with someone else) for any reason and from any source in the past
+    year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+borrow.any.t.d.2:
+  id: borrow.any.t.d.2
+  name: Borrowed any money, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money (by themselves
+    or together with someone else) for any reason and from any source in the past
+    year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 cfuel_al_alot_dfcl_1529:
   id: cfuel_al_alot_dfcl_1529
   name: Persons aged 15 to 29 years with clean cooking fuel (% of persons aged 15
@@ -306479,6 +306511,826 @@ cmpu_some_dfcl_urb:
   topic_ids: []
   topics: []
   unit: ''
+con1:
+  id: con1
+  name: Own a mobile phone  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report owning a mobile phone that
+    they use to make and receive personal calls, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con1.1:
+  id: con1.1
+  name: Own a mobile phone, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report owning a mobile phone that
+    they use to make and receive personal calls, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con1.2:
+  id: con1.2
+  name: Own a mobile phone, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report owning a mobile phone that
+    they use to make and receive personal calls, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con11:
+  id: con11
+  name: SIM number registered in own name  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the SIM number in their
+    mobile phone is registered in their name, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con11.1:
+  id: con11.1
+  name: SIM number registered in own name, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the SIM number in their
+    mobile phone is registered in their name, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con11.2:
+  id: con11.2
+  name: SIM number registered in own name, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the SIM number in their
+    mobile phone is registered in their name, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con12d:
+  id: con12d
+  name: Daily mobile phone use  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they use a mobile phone
+    daily, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con12d.1:
+  id: con12d.1
+  name: Daily mobile phone use, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they use a mobile phone
+    daily, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con12d.2:
+  id: con12d.2
+  name: Daily mobile phone use, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they use a mobile phone
+    daily, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con14:
+  id: con14
+  name: Read a text message on a mobile phone  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they read a text message
+    on a mobile phone. This can include an SMS or text message or a message on a messaging
+    app, such as WhatsApp, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con14.1:
+  id: con14.1
+  name: Read a text message on a mobile phone, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they read a text message
+    on a mobile phone. This can include an SMS or text message or a message on a messaging
+    app, such as WhatsApp, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con14.2:
+  id: con14.2
+  name: Read a text message on a mobile phone, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they read a text message
+    on a mobile phone. This can include an SMS or text message or a message on a messaging
+    app, such as WhatsApp, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con16:
+  id: con16
+  name: Can send a text message on a mobile phone  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a text message
+    through a mobile phone. This can include an SMS or text message or a message on
+    a messaging app, such as WhatsApp, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con16.1:
+  id: con16.1
+  name: Can send a text message on a mobile phone, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a text message
+    through a mobile phone. This can include an SMS or text message or a message on
+    a messaging app, such as WhatsApp, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con16.2:
+  id: con16.2
+  name: Can send a text message on a mobile phone, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a text message
+    through a mobile phone. This can include an SMS or text message or a message on
+    a messaging app, such as WhatsApp, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con17a:
+  id: con17a
+  name: Prefers receiving government news by SMS or text  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they would prefer receiving
+    important government news by SMS or text, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con17a.1:
+  id: con17a.1
+  name: Prefers receiving government news by SMS or text, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they would prefer receiving
+    important government news by SMS or text, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con17a.2:
+  id: con17a.2
+  name: Prefers receiving government news by SMS or text, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they would prefer receiving
+    important government news by SMS or text, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con17b:
+  id: con17b
+  name: Prefers receiving government news by phone call  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they would prefer receiving
+    important government news by phone call, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con17b.1:
+  id: con17b.1
+  name: Prefers receiving government news by phone call, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they would prefer receiving
+    important government news by phone call, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con17b.2:
+  id: con17b.2
+  name: Prefers receiving government news by phone call, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they would prefer receiving
+    important government news by phone call, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con18:
+  id: con18
+  name: Phone has a lock (PIN, password, fingerprint)  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report a lock on the mobile phone
+    that they use, such as a PIN, password, or fingerprint, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con18.1:
+  id: con18.1
+  name: Phone has a lock (PIN, password, fingerprint), women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report a lock on the mobile phone
+    that they use, such as a PIN, password, or fingerprint, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con18.2:
+  id: con18.2
+  name: Phone has a lock (PIN, password, fingerprint), men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report a lock on the mobile phone
+    that they use, such as a PIN, password, or fingerprint, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con19:
+  id: con19
+  name: Can change PIN or password on mobile phone without help  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they can change the PIN
+    or password, without help, on the mobile phone  they use, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con19.1:
+  id: con19.1
+  name: Can change PIN or password on mobile phone without help, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they can change the PIN
+    or password, without help, on the mobile phone  they use, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con19.2:
+  id: con19.2
+  name: Can change PIN or password on mobile phone without help, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they can change the PIN
+    or password, without help, on the mobile phone  they use, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con20:
+  id: con20
+  name: Family member sets rules for mobile phone use  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that someone, such as a family
+    member, sets rules about how they can use a mobile phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con20.1:
+  id: con20.1
+  name: Family member sets rules for mobile phone use, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that someone, such as a family
+    member, sets rules about how they can use a mobile phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con20.2:
+  id: con20.2
+  name: Family member sets rules for mobile phone use, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that someone, such as a family
+    member, sets rules about how they can use a mobile phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con21:
+  id: con21
+  name: Received phone call or SMS asking for money in the past 12 months  (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they have received a
+    phone call, SMS, or text message on their mobile phone from someone they didn't
+    know, asking them to send money, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con21.1:
+  id: con21.1
+  name: Received phone call or SMS asking for money in the past 12 months, women (%
+    age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they have received a
+    phone call, SMS, or text message on their mobile phone from someone they didn't
+    know, asking them to send money, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con21.2:
+  id: con21.2
+  name: Received phone call or SMS asking for money in the past 12 months, men (%
+    age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they have received a
+    phone call, SMS, or text message on their mobile phone from someone they didn't
+    know, asking them to send money, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con26d:
+  id: con26d
+  name: Daily internet use  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they use the internet
+    daily, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con26d.1:
+  id: con26d.1
+  name: Daily internet use, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they use the internet
+    daily, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con26d.2:
+  id: con26d.2
+  name: Daily internet use, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they use the internet
+    daily, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con27:
+  id: con27
+  name: Buys data package for internet use  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they buy a data package
+    to use the internet, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con27.1:
+  id: con27.1
+  name: Buys data package for internet use, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they buy a data package
+    to use the internet, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con27.2:
+  id: con27.2
+  name: Buys data package for internet use, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they buy a data package
+    to use the internet, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con28m:
+  id: con28m
+  name: Buys data package monthly  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they buy a monthly data
+    package to use the internet, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con28m.1:
+  id: con28m.1
+  name: Buys data package monthly, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they buy a monthly data
+    package to use the internet, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con28m.2:
+  id: con28m.2
+  name: Buys data package monthly, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they buy a monthly data
+    package to use the internet, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30a:
+  id: con30a
+  name: Sent a voice message in past three months  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a voice message
+    from a mobile phone in the past three months, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30a.1:
+  id: con30a.1
+  name: Sent a voice message in past three months, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a voice message
+    from a mobile phone in the past three months, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30a.2:
+  id: con30a.2
+  name: Sent a voice message in past three months, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a voice message
+    from a mobile phone in the past three months, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30b:
+  id: con30b
+  name: Sent a photo in past three months  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a photo from
+    a mobile phone in the past three months, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30b.1:
+  id: con30b.1
+  name: Sent a photo in past three months, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a photo from
+    a mobile phone in the past three months, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30b.2:
+  id: con30b.2
+  name: Sent a photo in past three months, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they sent a photo from
+    a mobile phone in the past three months, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30c:
+  id: con30c
+  name: Used social media in past three months  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they used social media,
+    such as Facebook or TikTok, on a mobile phone in the past three months, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30c.1:
+  id: con30c.1
+  name: Used social media in past three months, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they used social media,
+    such as Facebook or TikTok, on a mobile phone in the past three months, women
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30c.2:
+  id: con30c.2
+  name: Used social media in past three months, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they used social media,
+    such as Facebook or TikTok, on a mobile phone in the past three months, men (%
+    age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30d:
+  id: con30d
+  name: Read news online in past three months  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they read about news
+    online in the past three months, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30d.1:
+  id: con30d.1
+  name: Read news online in past three months, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they read about news
+    online in the past three months, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30d.2:
+  id: con30d.2
+  name: Read news online in past three months, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they read about news
+    online in the past three months, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30e:
+  id: con30e
+  name: Accessed online info to learn/train/educate in past three months  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they accessed information
+    online to learn, train, or educate themselves or someone else in the past three
+    months, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30e.1:
+  id: con30e.1
+  name: Accessed online info to learn/train/educate in past three months, women (%
+    age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they accessed information
+    online to learn, train, or educate themselves or someone else in the past three
+    months, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30e.2:
+  id: con30e.2
+  name: Accessed online info to learn/train/educate in past three months, men (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they accessed information
+    online to learn, train, or educate themselves or someone else in the past three
+    months, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30g:
+  id: con30g
+  name: Accessed government services/info online in past three months  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they accessed government
+    services or searched for government information online in the past three months,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30g.1:
+  id: con30g.1
+  name: Accessed government services/info online in past three months, women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they accessed government
+    services or searched for government information online in the past three months,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con30g.2:
+  id: con30g.2
+  name: Accessed government services/info online in past three months, men (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they accessed government
+    services or searched for government information online in the past three months,
+    men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con31a:
+  id: con31a
+  name: Does not own a smartphone due to cost  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who don't own a smartphone, because they
+    don't have enough money to buy one, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con31a.1:
+  id: con31a.1
+  name: Does not own a smartphone due to cost, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who don't own a smartphone, because they
+    don't have enough money to buy one, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con31a.2:
+  id: con31a.2
+  name: Does not own a smartphone due to cost, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who don't own a smartphone, because they
+    don't have enough money to buy one, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con9a:
+  id: con9a
+  name: Main mobile phone is a smartphone  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the main mobile phone
+    they use is a smartphone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con9a.1:
+  id: con9a.1
+  name: Main mobile phone is a smartphone, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the main mobile phone
+    they use is a smartphone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con9a.2:
+  id: con9a.2
+  name: Main mobile phone is a smartphone, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the main mobile phone
+    they use is a smartphone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con9b:
+  id: con9b
+  name: Main mobile phone is a basic text phone  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the main mobile phone
+    they use is a basic text phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con9b.1:
+  id: con9b.1
+  name: Main mobile phone is a basic text phone, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the main mobile phone
+    they use is a basic text phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+con9b.2:
+  id: con9b.2
+  name: Main mobile phone is a basic text phone, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that the main mobile phone
+    they use is a basic text phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+dig.acc:
+  id: dig.acc
+  name: Digitally enabled account  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of adults who report having a mobile money account or
+    an account at a bank or similar financial institution that allows the account
+    owner to make or receive payments using a card or phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+dig.acc.1:
+  id: dig.acc.1
+  name: Digitally enabled account, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of adults who report having a mobile money account or
+    an account at a bank or similar financial institution that allows the account
+    owner to make or receive payments using a card or phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+dig.acc.2:
+  id: dig.acc.2
+  name: Digitally enabled account, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of adults who report having a mobile money account or
+    an account at a bank or similar financial institution that allows the account
+    owner to make or receive payments using a card or phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 eatn_al_alot_dfcl_1529:
   id: eatn_al_alot_dfcl_1529
   name: Persons aged 15 to 29 years who have ever attended school (% of persons aged
@@ -307367,8 +308219,10 @@ elc_none_dfcl_male:
   source_id: '92'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 elc_none_dfcl_rur:
   id: elc_none_dfcl_rur
@@ -308704,6 +309558,186 @@ fdis_some_dfcl_urb:
   topic_ids: []
   topics: []
   unit: ''
+fh1:
+  id: fh1
+  name: Sent domestic remittances  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending any of
+    their money in the past year to a relative or friend living in a different area
+    of their country. This can be money they hand-delivered personally or sent in
+    some other way, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh1.1:
+  id: fh1.1
+  name: Sent domestic remittances, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending any of
+    their money in the past year to a relative or friend living in a different area
+    of their country. This can be money they hand-delivered personally or sent in
+    some other way, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh1.2:
+  id: fh1.2
+  name: Sent domestic remittances, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending any of
+    their money in the past year to a relative or friend living in a different area
+    of their country. This can be money they hand-delivered personally or sent in
+    some other way, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh1.fh2:
+  id: fh1.fh2
+  name: Sent or received domestic remittances  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending or receiving
+    any of their money in the past year to or from a relative or friend living in
+    a different area of their country, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh1.fh2.1:
+  id: fh1.fh2.1
+  name: Sent or received domestic remittances, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending or receiving
+    any of their money in the past year to or from a relative or friend living in
+    a different area of their country, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh1.fh2.2:
+  id: fh1.fh2.2
+  name: Sent or received domestic remittances, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending or receiving
+    any of their money in the past year to or from a relative or friend living in
+    a different area of their country, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh2:
+  id: fh2
+  name: Received domestic remittances  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any money
+    in the past year from a relative or friend living in a different area of their
+    country. This includes any money received in-person, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh2.1:
+  id: fh2.1
+  name: Received domestic remittances, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any money
+    in the past year from a relative or friend living in a different area of their
+    country. This includes any money received in-person, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh2.2:
+  id: fh2.2
+  name: Received domestic remittances, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any money
+    in the past year from a relative or friend living in a different area of their
+    country. This includes any money received in-person, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh2a:
+  id: fh2a
+  name: Received international remittances   (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they recieved international
+    remittances in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh2a.1:
+  id: fh2a.1
+  name: Received international remittances , women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they recieved international
+    remittances in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fh2a.2:
+  id: fh2a.2
+  name: Received international remittances , men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they recieved international
+    remittances in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fiaccount.t.d:
+  id: fiaccount.t.d
+  name: Bank or similar financial institution account  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having an account (by themselves
+    or together with someone else) at a bank or another similar financial institution,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fiaccount.t.d.1:
+  id: fiaccount.t.d.1
+  name: Bank or similar financial institution account, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having an account (by themselves
+    or together with someone else) at a bank or another similar financial institution,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fiaccount.t.d.2:
+  id: fiaccount.t.d.2
+  name: Bank or similar financial institution account, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having an account (by themselves
+    or together with someone else) at a bank or another similar financial institution,
+    men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin1.1a:
   id: fin1.1a
   name: First financial institution account ever was opened to receive a wage payment
@@ -308896,6 +309930,28 @@ fin1.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin10:
+  id: fin10
+  name: Owns a credit card  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having a credit card, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin10.1:
+  id: fin10.1
+  name: Owns a credit card, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having a credit card, women
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin10.1a:
   id: fin10.1a
   name: 'Reason for not using their inactive account: bank or financial institution
@@ -309014,6 +310070,17 @@ fin10.1e.s:
   source_note: Among respondents who report having an inactive account, the percentage
     who don't use the account because they don't trust banks or financial institutions.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin10.2:
+  id: fin10.2
+  name: Owns a credit card, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having a credit card, men
+    (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -309218,6 +310285,30 @@ fin11e:
   source_note: The percentage of respondents who report not having a financial institution
     account for religious reasons.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin11e.1:
+  id: fin11e.1
+  name: No account because someone in the family has one, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report not having a bank or similar
+    financial institution account because someone else in their family already has
+    one, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin11e.2:
+  id: fin11e.2
+  name: No account because someone in the family has one, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report not having a bank or similar
+    financial institution account because someone else in their family already has
+    one, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -310695,6 +311786,29 @@ fin16_t_a_7:
   topic_ids: []
   topics: []
   unit: ''
+fin17a:
+  id: fin17a
+  name: Saved at a bank or similar financial institution  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money at a bank or similar financial institution in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17a.1:
+  id: fin17a.1
+  name: Saved at a bank or similar financial institution, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money at a bank or similar financial institution in the past year, women (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin17a.17a1.d:
   id: fin17a.17a1.d
   name: Saved at a financial institution or using a mobile money account (% age 15+)
@@ -310860,6 +311974,18 @@ fin17a.17a1.d.9:
     money at a bank or another type of financial institution or using a mobile money
     account to save in the past year, rural (% age 15+)
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17a.2:
+  id: fin17a.2
+  name: Saved at a bank or similar financial institution, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money at a bank or similar financial institution in the past year, men (% age
+    15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -311243,6 +312369,39 @@ fin17a_t_a_7:
   topic_ids: []
   topics: []
   unit: ''
+fin17b:
+  id: fin17b
+  name: Saved money using a mobile money account  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving money using a mobile
+    money account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17b.1:
+  id: fin17b.1
+  name: Saved money using a mobile money account, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving money using a mobile
+    money account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17b.2:
+  id: fin17b.2
+  name: Saved money using a mobile money account, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving money using a mobile
+    money account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin17b.t.d:
   id: fin17b.t.d
   name: Saved using a savings club or a person outside the family (% age 15+)
@@ -311314,8 +312473,10 @@ fin17b.t.d.2:
     money in the past year by using an informal savings club or a person outside the
     family, male (% age 15+)
   source_organization: Global Findex database
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin17b.t.d.3:
   id: fin17b.t.d.3
@@ -311402,6 +312563,42 @@ fin17b.t.d.9:
     money in the past year by using an informal savings club or a person outside the
     family, rural (% age 15+)
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17c:
+  id: fin17c
+  name: Saved using a savings club or a person outside the family  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money in the past year by using an informal savings club or a person outside the
+    family, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17c.1:
+  id: fin17c.1
+  name: Saved using a savings club or a person outside the family, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money in the past year by using an informal savings club or a person outside the
+    family, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17c.2:
+  id: fin17c.2
+  name: Saved using a savings club or a person outside the family, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money in the past year by using an informal savings club or a person outside the
+    family, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -311551,6 +312748,39 @@ fin17c.d.2014.9:
   topic_ids: []
   topics: []
   unit: ''
+fin17dm:
+  id: fin17dm
+  name: Saved or set aside money into an account, monthly  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money in the past year on monthly basis using an account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17dm.1:
+  id: fin17dm.1
+  name: Saved or set aside money into an account, monthly, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money in the past year on monthly basis using an account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin17dm.2:
+  id: fin17dm.2
+  name: Saved or set aside money into an account, monthly, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report saving or setting aside any
+    money in the past year on monthly basis using an account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin18.t.d:
   id: fin18.t.d
   name: Saved any money in the past year (% age 15+)
@@ -311559,6 +312789,39 @@ fin18.t.d:
   source_note: The percentage of respondents who report personally saving or setting
     aside any money for any reason and using any mode of saving in the past 12 months.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin19:
+  id: fin19
+  name: Made regular payments to insurance agent or company   (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they made made any regular
+    payments to an insurance agent or company in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin19.1:
+  id: fin19.1
+  name: Made regular payments to insurance agent or company , women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they made made any regular
+    payments to an insurance agent or company in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin19.2:
+  id: fin19.2
+  name: Made regular payments to insurance agent or company , men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they made made any regular
+    payments to an insurance agent or company in the past year, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -312460,6 +313723,43 @@ fin21b.2014.9:
   topic_ids: []
   topics: []
   unit: ''
+fin22a:
+  id: fin22a
+  name: Borrowed from a formal bank or similar financial institution  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from a
+    bank or similar financial institution or using a credit card in the past year,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22a.1:
+  id: fin22a.1
+  name: Borrowed from a formal bank or similar financial institution, women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from a
+    bank or similar financial institution or using a credit card in the past year,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22a.2:
+  id: fin22a.2
+  name: Borrowed from a formal bank or similar financial institution, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from a
+    bank or similar financial institution or using a credit card in the past year,
+    men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin22a.2014:
   id: fin22a.2014
   name: Borrowed for education or school fees (% age 15+)
@@ -312479,10 +313779,8 @@ fin22a.2014.1:
   source_note: The percentage of respondents who report borrowing any money for education
     or school fees in the past year, female (% age 15+)
   source_organization: Global Findex database
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin22a.2014.10:
   id: fin22a.2014.10
@@ -312603,6 +313901,45 @@ fin22a.2014.9:
   source_note: The percentage of respondents who report borrowing any money for education
     or school fees in the past year, rural (% age 15+)
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22a.22a1.22g.d:
+  id: fin22a.22a1.22g.d
+  name: Borrowed any money from a formal bank or similar financial institution or
+    using a mobile money account  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from a
+    bank or similar financial institution, or using a credit card, or using a mobile
+    money account in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22a.22a1.22g.d.1:
+  id: fin22a.22a1.22g.d.1
+  name: Borrowed any money from a formal bank or similar financial institution or
+    using a mobile money account, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from a
+    bank or similar financial institution, or using a credit card, or using a mobile
+    money account in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22a.22a1.22g.d.2:
+  id: fin22a.22a1.22g.d.2
+  name: Borrowed any money from a formal bank or similar financial institution or
+    using a mobile money account, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from a
+    bank or similar financial institution, or using a credit card, or using a mobile
+    money account in the past year, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -313018,6 +314355,39 @@ fin22a_t_d_7:
   topic_ids: []
   topics: []
   unit: ''
+fin22b:
+  id: fin22b
+  name: Borrowed from family or friends  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from family,
+    relatives, or friends in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22b.1:
+  id: fin22b.1
+  name: Borrowed from family or friends, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from family,
+    relatives, or friends in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22b.2:
+  id: fin22b.2
+  name: Borrowed from family or friends, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from family,
+    relatives, or friends in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin22b.t.d:
   id: fin22b.t.d
   name: Borrowed from family or friends (% age 15+)
@@ -313161,6 +314531,39 @@ fin22b.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin22c:
+  id: fin22c
+  name: Borrowed from a savings club  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from an
+    informal savings club in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22c.1:
+  id: fin22c.1
+  name: Borrowed from a savings club, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from an
+    informal savings club in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22c.2:
+  id: fin22c.2
+  name: Borrowed from a savings club, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money from an
+    informal savings club in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin22c.t.d:
   id: fin22c.t.d
   name: Borrowed from a savings club (% age 15+)
@@ -313301,6 +314704,172 @@ fin22c.t.d.9:
   source_note: The percentage of respondents who report borrowing any money from an
     informal savings club in the past year, rural (% age 15+)
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22d:
+  id: fin22d
+  name: Borrowed for health or medical purposes  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money for health
+    or medical purposes in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22d.1:
+  id: fin22d.1
+  name: Borrowed for health or medical purposes, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money for health
+    or medical purposes in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22d.2:
+  id: fin22d.2
+  name: Borrowed for health or medical purposes, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money for health
+    or medical purposes in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22e:
+  id: fin22e
+  name: Borrowed to start or operate a business  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money to start
+    or operate a business in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22e.1:
+  id: fin22e.1
+  name: Borrowed to start or operate a business, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money to start
+    or operate a business in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22e.2:
+  id: fin22e.2
+  name: Borrowed to start or operate a business, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report borrowing any money to start
+    or operate a business in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22f:
+  id: fin22f
+  name: Purchased food on credit  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report buying household food and
+    paying for it at a later date, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22f.1:
+  id: fin22f.1
+  name: Purchased food on credit, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report buying household food and
+    paying for it at a later date, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22f.2:
+  id: fin22f.2
+  name: Purchased food on credit, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report buying household food and
+    paying for it at a later date, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22g:
+  id: fin22g
+  name: Used a credit card  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using their own credit card
+    in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22g.1:
+  id: fin22g.1
+  name: Used a credit card, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using their own credit card
+    in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22g.2:
+  id: fin22g.2
+  name: Used a credit card, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using their own credit card
+    in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22h:
+  id: fin22h
+  name: Paid off all credit card balances in full by their due date  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they paid off all credit card
+    balances in full by their due date, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22h.1:
+  id: fin22h.1
+  name: Paid off all credit card balances in full by their due date, women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they paid off all credit card
+    balances in full by their due date, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin22h.2:
+  id: fin22h.2
+  name: Paid off all credit card balances in full by their due date, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they paid off all credit card
+    balances in full by their due date, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -314482,6 +316051,224 @@ fin24a.N.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin24aN:
+  id: fin24aN
+  name: 'Coming up with emergency funds in 30 days: not possible  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is not possible for them to
+    come up with the emergency funds in 30 days. This includes people who say do not
+    know or refused, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aN.1:
+  id: fin24aN.1
+  name: 'Coming up with emergency funds in 30 days: not possible, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is not possible for them to
+    come up with the emergency funds in 30 days. This includes people who say do not
+    know or refused, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aN.2:
+  id: fin24aN.2
+  name: 'Coming up with emergency funds in 30 days: not possible, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is not possible for them to
+    come up with the emergency funds in 30 days. This includes people who say do not
+    know or refused, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aND:
+  id: fin24aND
+  name: 'Coming up with emergency funds in 30 days: possible and not difficult at
+    all  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and not difficult
+    at all for them to come up with the funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aND.1:
+  id: fin24aND.1
+  name: 'Coming up with emergency funds in 30 days: possible and not difficult at
+    all, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and not difficult
+    at all for them to come up with the funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aND.2:
+  id: fin24aND.2
+  name: 'Coming up with emergency funds in 30 days: possible and not difficult at
+    all, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and not difficult
+    at all for them to come up with the funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aP:
+  id: fin24aP
+  name: 'Coming up with emergency funds in 30 days: possible  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible--whether"difficult,""somewhat
+    difficult,"or"not very difficult"--for them to come up with the emergency funds
+    in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aP.1:
+  id: fin24aP.1
+  name: 'Coming up with emergency funds in 30 days: possible, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible--whether"difficult,""somewhat
+    difficult,"or"not very difficult"--for them to come up with the emergency funds
+    in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aP.2:
+  id: fin24aP.2
+  name: 'Coming up with emergency funds in 30 days: possible, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible--whether"difficult,""somewhat
+    difficult,"or"not very difficult"--for them to come up with the emergency funds
+    in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aSD:
+  id: fin24aSD
+  name: 'Coming up with emergency funds in 30 days: possible and somewhat difficult  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and somewhat difficult
+    for them to come up with the emergency funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aSD.1:
+  id: fin24aSD.1
+  name: 'Coming up with emergency funds in 30 days: possible and somewhat difficult,
+    women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and somewhat difficult
+    for them to come up with the emergency funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aSD.2:
+  id: fin24aSD.2
+  name: 'Coming up with emergency funds in 30 days: possible and somewhat difficult,
+    men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and somewhat difficult
+    for them to come up with the emergency funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aSD_ND:
+  id: fin24aSD_ND
+  name: 'Coming up with emergency funds in 30 days: possible and not difficult or
+    somewhat difficult  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and not difficult
+    at all or somewhat difficult to come up with the funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aSD_ND.1:
+  id: fin24aSD_ND.1
+  name: 'Coming up with emergency funds in 30 days: possible and not difficult or
+    somewhat difficult, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and not difficult
+    at all or somewhat difficult to come up with the funds in 30 days, women (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aSD_ND.2:
+  id: fin24aSD_ND.2
+  name: 'Coming up with emergency funds in 30 days: possible and not difficult or
+    somewhat difficult, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and not difficult
+    at all or somewhat difficult to come up with the funds in 30 days, men (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aVD:
+  id: fin24aVD
+  name: 'Coming up with emergency funds in 30 days: possible and very difficult  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and very difficult
+    for them to come up with the emergency funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aVD.1:
+  id: fin24aVD.1
+  name: 'Coming up with emergency funds in 30 days: possible and very difficult, women
+    (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and very difficult
+    for them to come up with the emergency funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24aVD.2:
+  id: fin24aVD.2
+  name: 'Coming up with emergency funds in 30 days: possible and very difficult, men
+    (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible and very difficult
+    for them to come up with the emergency funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin24b.1.d:
   id: fin24b.1.d
   name: 'Coming up with emergency funds in 7 days: possible and very difficult (%
@@ -315320,6 +317107,640 @@ fin24b.321.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin24ba:
+  id: fin24ba
+  name: Less than two weeks can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for less than two weeks, in case they their
+    household lost its main source of income, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24ba.1:
+  id: fin24ba.1
+  name: Less than two weeks can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for less than two weeks, in case they their
+    household lost its main source of income, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24ba.2:
+  id: fin24ba.2
+  name: Less than two weeks can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for less than two weeks, in case they their
+    household lost its main source of income, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bb:
+  id: fin24bb
+  name: About one month can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for about one month, in case they their
+    household lost its main source of income, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bb.1:
+  id: fin24bb.1
+  name: About one month can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for about one month, in case they their
+    household lost its main source of income, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bb.2:
+  id: fin24bb.2
+  name: About one month can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for about one month, in case they their
+    household lost its main source of income, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bc:
+  id: fin24bc
+  name: About two months can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for about two months, in case they their
+    household lost its main source of income, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bc.1:
+  id: fin24bc.1
+  name: About two months can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for about two months, in case they their
+    household lost its main source of income, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bc.2:
+  id: fin24bc.2
+  name: About two months can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for about two months, in case they their
+    household lost its main source of income, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bd:
+  id: fin24bd
+  name: More than two months can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for more than two months, in case they their
+    household lost its main source of income, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bd.1:
+  id: fin24bd.1
+  name: More than two months can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for more than two months, in case they their
+    household lost its main source of income, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bd.2:
+  id: fin24bd.2
+  name: More than two months can be covered using savings, borrowing, selling something,
+    seeking help from friends and family, or other ways, in case household loses its
+    main source of income, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they could cover expenses
+    by using savings, borrowing, selling something they own, seeking help from family
+    and friends or through some other way for more than two months, in case they their
+    household lost its main source of income, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bor:
+  id: fin24bor
+  name: 'Main source of emergency funds in 30 days: loan from a bank, employer, or
+    private lender  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list borrowing from a bank, employer, or
+    private lender as their main source of emergency funds, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bor.1:
+  id: fin24bor.1
+  name: 'Main source of emergency funds in 30 days: loan from a bank, employer, or
+    private lender, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list borrowing from a bank, employer, or
+    private lender as their main source of emergency funds, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24bor.2:
+  id: fin24bor.2
+  name: 'Main source of emergency funds in 30 days: loan from a bank, employer, or
+    private lender, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list borrowing from a bank, employer, or
+    private lender as their main source of emergency funds, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24c:
+  id: fin24c
+  name: Experienced a natural disaster or severe weather event  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they personally experienced
+    a natural disaster or severe weather event in the past three years, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24c.1:
+  id: fin24c.1
+  name: Experienced a natural disaster or severe weather event, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they personally experienced
+    a natural disaster or severe weather event in the past three years, women (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24c.2:
+  id: fin24c.2
+  name: Experienced a natural disaster or severe weather event, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they personally experienced
+    a natural disaster or severe weather event in the past three years, men (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24d1:
+  id: fin24d1
+  name: 'Natural disaster in the past three years: Income lost or unable to work,
+    by self or household member  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they or someone in their household
+    lost income or were unable to work as a result of natural disasters or severe
+    weather events in the past three years, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24d1.1:
+  id: fin24d1.1
+  name: 'Natural disaster in the past three years: Income lost or unable to work,
+    by self or household member, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they or someone in their household
+    lost income or were unable to work as a result of natural disasters or severe
+    weather events in the past three years, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24d1.2:
+  id: fin24d1.2
+  name: 'Natural disaster in the past three years: Income lost or unable to work,
+    by self or household member, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they or someone in their household
+    lost income or were unable to work as a result of natural disasters or severe
+    weather events in the past three years, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24d2:
+  id: fin24d2
+  name: 'Natural disaster in the past three years: Damage to home or livestock  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they experienced damage to
+    their home or livestock as a result of natural disasters or severe weather events
+    in the past three years, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24d2.1:
+  id: fin24d2.1
+  name: 'Natural disaster in the past three years: Damage to home or livestock, women
+    (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they experienced damage to
+    their home or livestock as a result of natural disasters or severe weather events
+    in the past three years, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24d2.2:
+  id: fin24d2.2
+  name: 'Natural disaster in the past three years: Damage to home or livestock, men
+    (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they experienced damage to
+    their home or livestock as a result of natural disasters or severe weather events
+    in the past three years, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam:
+  id: fin24fam
+  name: 'Main source of emergency funds in 30 days: family or friends  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list family, relatives, or friends as their
+    main source of emergency funds, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam.1:
+  id: fin24fam.1
+  name: 'Main source of emergency funds in 30 days: family or friends, women (% age
+    15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list family, relatives, or friends as their
+    main source of emergency funds, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam.2:
+  id: fin24fam.2
+  name: 'Main source of emergency funds in 30 days: family or friends, men (% age
+    15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list family, relatives, or friends as their
+    main source of emergency funds, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam_SD_ND:
+  id: fin24fam_SD_ND
+  name: 'Main source of emergency funds in 30 days: family or friends, possible and
+    not difficult or somewhat difficult  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is family and friends and that it is possible and not difficult at all or
+    somewhat difficult to come up with the funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam_SD_ND.1:
+  id: fin24fam_SD_ND.1
+  name: 'Main source of emergency funds in 30 days: family or friends, possible and
+    not difficult or somewhat difficult, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is family and friends and that it is possible and not difficult at all or
+    somewhat difficult to come up with the funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam_SD_ND.2:
+  id: fin24fam_SD_ND.2
+  name: 'Main source of emergency funds in 30 days: family or friends, possible and
+    not difficult or somewhat difficult, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is family and friends and that it is possible and not difficult at all or
+    somewhat difficult to come up with the funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam_VD:
+  id: fin24fam_VD
+  name: 'Main source of emergency funds in 30 days: family or friends, possible and
+    very difficult  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is family and friends and that it is possible and very difficult to come
+    up with the funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam_VD.1:
+  id: fin24fam_VD.1
+  name: 'Main source of emergency funds in 30 days: family or friends, possible and
+    very difficult, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is family and friends and that it is possible and very difficult to come
+    up with the funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24fam_VD.2:
+  id: fin24fam_VD.2
+  name: 'Main source of emergency funds in 30 days: family or friends, possible and
+    very difficult, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is family and friends and that it is possible and very difficult to come
+    up with the funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sav:
+  id: fin24sav
+  name: 'Main source of emergency funds in 30 days: savings  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list savings as their main source of emergency
+    funds, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sav.1:
+  id: fin24sav.1
+  name: 'Main source of emergency funds in 30 days: savings, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list savings as their main source of emergency
+    funds, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sav.2:
+  id: fin24sav.2
+  name: 'Main source of emergency funds in 30 days: savings, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list savings as their main source of emergency
+    funds, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sav_SD_ND:
+  id: fin24sav_SD_ND
+  name: 'Main source of emergency funds in 30 days: savings, possible and not difficult
+    or somewhat difficult  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is savings and that it is possible and not difficult at all or somewhat
+    difficult to come up with the funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sav_SD_ND.1:
+  id: fin24sav_SD_ND.1
+  name: 'Main source of emergency funds in 30 days: savings, possible and not difficult
+    or somewhat difficult, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is savings and that it is possible and not difficult at all or somewhat
+    difficult to come up with the funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sav_SD_ND.2:
+  id: fin24sav_SD_ND.2
+  name: 'Main source of emergency funds in 30 days: savings, possible and not difficult
+    or somewhat difficult, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is savings and that it is possible and not difficult at all or somewhat
+    difficult to come up with the funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sell:
+  id: fin24sell
+  name: 'Main source of emergency funds in 30 days: sale of assets  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list selling assets as their main source
+    of emergency funds, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sell.1:
+  id: fin24sell.1
+  name: 'Main source of emergency funds in 30 days: sale of assets, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list selling assets as their main source
+    of emergency funds, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24sell.2:
+  id: fin24sell.2
+  name: 'Main source of emergency funds in 30 days: sale of assets, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list selling assets as their main source
+    of emergency funds, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24work:
+  id: fin24work
+  name: 'Main source of emergency funds in 30 days: work  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list money from working as their main source
+    of emergency funds, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24work.1:
+  id: fin24work.1
+  name: 'Main source of emergency funds in 30 days: work, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list money from working as their main source
+    of emergency funds, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24work.2:
+  id: fin24work.2
+  name: 'Main source of emergency funds in 30 days: work, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say it is possible for them to come
+    up with emergency funds in 30 days and list money from working as their main source
+    of emergency funds, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24work_SD_ND:
+  id: fin24work_SD_ND
+  name: 'Main source of emergency funds in 30 days: work, possible and not difficult
+    or somewhat difficult  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is work and that it is possible and not difficult at all or somewhat difficult
+    to come up with the funds in 30 days, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24work_SD_ND.1:
+  id: fin24work_SD_ND.1
+  name: 'Main source of emergency funds in 30 days: work, possible and not difficult
+    or somewhat difficult, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is work and that it is possible and not difficult at all or somewhat difficult
+    to come up with the funds in 30 days, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin24work_SD_ND.2:
+  id: fin24work_SD_ND.2
+  name: 'Main source of emergency funds in 30 days: work, possible and not difficult
+    or somewhat difficult, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who say that their main source of emergency
+    money is work and that it is possible and not difficult at all or somewhat difficult
+    to come up with the funds in 30 days, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin25a_t_a_s:
   id: fin25a_t_a_s
   name: 'Main source of emergency funds: savings (% age 15+)'
@@ -315397,6 +317818,149 @@ fin25a_t_a_s_7:
   source_id: '33'
   source_note: ''
   source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e1:
+  id: fin25e1
+  name: Used mobile phone or card to pay for household food or cleaning supplies  (%
+    age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile phone or card
+    to pay for household food or cleaning supplies, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e1.1:
+  id: fin25e1.1
+  name: Used mobile phone or card to pay for household food or cleaning supplies,
+    women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile phone or card
+    to pay for household food or cleaning supplies, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e1.2:
+  id: fin25e1.2
+  name: Used mobile phone or card to pay for household food or cleaning supplies,
+    men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile phone or card
+    to pay for household food or cleaning supplies, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e2:
+  id: fin25e2
+  name: Used mobile phone or card to pay for in-store purchase  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or card
+    to pay for instore purchase in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e2.1:
+  id: fin25e2.1
+  name: Used mobile phone or card to pay for in-store purchase, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or card
+    to pay for instore purchase in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e2.2:
+  id: fin25e2.2
+  name: Used mobile phone or card to pay for in-store purchase, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or card
+    to pay for instore purchase in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e2b:
+  id: fin25e2b
+  name: Did NOT use mobile phone or card to pay for in-store purchase   (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report not using a mobile phone or
+    card to pay for instore purchase in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e2b.1:
+  id: fin25e2b.1
+  name: Did NOT use mobile phone or card to pay for in-store purchase , women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report not using a mobile phone or
+    card to pay for instore purchase in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e2b.2:
+  id: fin25e2b.2
+  name: Did NOT use mobile phone or card to pay for in-store purchase , men (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report not using a mobile phone or
+    card to pay for instore purchase in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e4d:
+  id: fin25e4d
+  name: 'Reason for cash payment for in-store purchases: used to paying it with cash  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report the main reason they used
+    cash to pay for instore purchase in the past year, is because they are used to
+    paying by cash, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e4d.1:
+  id: fin25e4d.1
+  name: 'Reason for cash payment for in-store purchases: used to paying it with cash,
+    women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report the main reason they used
+    cash to pay for instore purchase in the past year, is because they are used to
+    paying by cash, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin25e4d.2:
+  id: fin25e4d.2
+  name: 'Reason for cash payment for in-store purchases: used to paying it with cash,
+    men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report the main reason they used
+    cash to pay for instore purchase in the past year, is because they are used to
+    paying by cash, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -315726,6 +318290,73 @@ fin26.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin26a:
+  id: fin26a
+  name: Used a mobile phone or the internet to pay bills  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to pay bills in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin26a.1:
+  id: fin26a.1
+  name: Used a mobile phone or the internet to pay bills, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to pay bills in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin26a.2:
+  id: fin26a.2
+  name: Used a mobile phone or the internet to pay bills, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to pay bills in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin26b:
+  id: fin26b
+  name: Used a mobile phone or the internet to buy something online  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to buy something online in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin26b.1:
+  id: fin26b.1
+  name: Used a mobile phone or the internet to buy something online, women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to buy something online in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin26b.2:
+  id: fin26b.2
+  name: Used a mobile phone or the internet to buy something online, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to buy something online in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin27.29.t:
   id: fin27.29.t
   name: 'Sent or received domestic remittances: using an account (% age 15+)'
@@ -315776,6 +318407,41 @@ fin27.t.s:
     the percentage who report sending it using a financial institution account or
     a mobile money account.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin27a:
+  id: fin27a
+  name: Made a digital online merchant payment for an online purchase  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using the internet to buy
+    something online in the past year and paid online, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin27a.1:
+  id: fin27a.1
+  name: Made a digital online merchant payment for an online purchase, women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using the internet to buy
+    something online in the past year and paid online, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin27a.2:
+  id: fin27a.2
+  name: Made a digital online merchant payment for an online purchase, men (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using the internet to buy
+    something online in the past year and paid online, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -315888,6 +318554,86 @@ fin27c2.t.s:
     the percentage who report sending it over-the-counter in a branch of their financial
     institution; through a mobile banking agent; or through a money transfer service.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin28:
+  id: fin28
+  name: 'Sent domestic remittances: using an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending any of
+    their money in the past year to a relative or friend living in a different area
+    of their country, and sent it using a bank or similar financial institution account
+    or a mobile money account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin28.1:
+  id: fin28.1
+  name: 'Sent domestic remittances: using an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending any of
+    their money in the past year to a relative or friend living in a different area
+    of their country, and sent it using a bank or similar financial institution account
+    or a mobile money account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin28.2:
+  id: fin28.2
+  name: 'Sent domestic remittances: using an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending any of
+    their money in the past year to a relative or friend living in a different area
+    of their country, and sent it using a bank or similar financial institution account
+    or a mobile money account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin28.29:
+  id: fin28.29
+  name: 'Sent or received domestic remittances: using an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending or receiving
+    any of their money in the past year to or from a relative or friend living in
+    a different area of their country, and sent or received the money using a bank
+    or similar financial institution account or a mobile money account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin28.29.1:
+  id: fin28.29.1
+  name: 'Sent or received domestic remittances: using an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending or receiving
+    any of their money in the past year to or from a relative or friend living in
+    a different area of their country, and sent or received the money using a bank
+    or similar financial institution account or a mobile money account, women (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin28.29.2:
+  id: fin28.29.2
+  name: 'Sent or received domestic remittances: using an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally sending or receiving
+    any of their money in the past year to or from a relative or friend living in
+    a different area of their country, and sent or received the money using a bank
+    or similar financial institution account or a mobile money account, men (% age
+    15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -316050,6 +318796,45 @@ fin28.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin29:
+  id: fin29
+  name: 'Received domestic remittances: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any money
+    in the past year from a relative or friend living in a different area of their
+    country, and received it into a bank or similar financial institution account
+    or a mobile money account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin29.1:
+  id: fin29.1
+  name: 'Received domestic remittances: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any money
+    in the past year from a relative or friend living in a different area of their
+    country, and received it into a bank or similar financial institution account
+    or a mobile money account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin29.2:
+  id: fin29.2
+  name: 'Received domestic remittances: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any money
+    in the past year from a relative or friend living in a different area of their
+    country, and received it into a bank or similar financial institution account
+    or a mobile money account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin29.t:
   id: fin29.t
   name: 'Received domestic remittances: into an account (% age 15+)'
@@ -316127,6 +318912,78 @@ fin29c2.t.s:
     percentage who report receiving it over-the-counter in a branch of their financial
     institution; through a mobile banking agent; or through a money transfer service.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin3:
+  id: fin3
+  name: Used a card or mobile phone to make payments  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they used a card or a mobile
+    phone to make payments, buy things, or to send or receive money using your account,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin3.1:
+  id: fin3.1
+  name: Used a card or mobile phone to make payments, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they used a card or a mobile
+    phone to make payments, buy things, or to send or receive money using your account,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin3.2:
+  id: fin3.2
+  name: Used a card or mobile phone to make payments, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report they used a card or a mobile
+    phone to make payments, buy things, or to send or receive money using your account,
+    men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin30:
+  id: fin30
+  name: Made a utility payment  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin30.1:
+  id: fin30.1
+  name: Made a utility payment, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year, women (%
+    age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin30.2:
+  id: fin30.2
+  name: Made a utility payment, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year, men (%
+    age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -316310,6 +319167,84 @@ fin30.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin31a:
+  id: fin31a
+  name: 'Made a utility payment: using a bank or similar financial institution account  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year directly
+    from a bank or similar financial institution account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31a.1:
+  id: fin31a.1
+  name: 'Made a utility payment: using a bank or similar financial institution account,
+    women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year directly
+    from a bank or similar financial institution account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31a.2:
+  id: fin31a.2
+  name: 'Made a utility payment: using a bank or similar financial institution account,
+    men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year directly
+    from a bank or similar financial institution account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31a.31b:
+  id: fin31a.31b
+  name: 'Made a utility payment: using an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year directly
+    from a bank or similar financial institution account or by using a mobile phone,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31a.31b.1:
+  id: fin31a.31b.1
+  name: 'Made a utility payment: using an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year directly
+    from a bank or similar financial institution account or by using a mobile phone,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31a.31b.2:
+  id: fin31a.31b.2
+  name: 'Made a utility payment: using an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year directly
+    from a bank or similar financial institution account or by using a mobile phone,
+    men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin31a.t:
   id: fin31a.t
   name: 'Made a utility payment: using a financial institution account (% age 15+)'
@@ -316332,6 +319267,42 @@ fin31a.t.s:
     water, electricity, or trash collection in the past year, the percentage who report
     making these payments directly from a financial institution account.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31b:
+  id: fin31b
+  name: 'Made a utility payment: using a mobile phone  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year using a
+    mobile phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31b.1:
+  id: fin31b.1
+  name: 'Made a utility payment: using a mobile phone, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year using a
+    mobile phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31b.2:
+  id: fin31b.2
+  name: 'Made a utility payment: using a mobile phone, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year using a
+    mobile phone, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -316395,6 +319366,162 @@ fin31c.t.s:
     water, electricity, or trash collection in the past year, the percentage who report
     making these payments using cash only.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31d:
+  id: fin31d
+  name: 'Made a utility payment: using cash only  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year using cash
+    only, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31d.1:
+  id: fin31d.1
+  name: 'Made a utility payment: using cash only, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year using cash
+    only, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin31d.2:
+  id: fin31d.2
+  name: 'Made a utility payment: using cash only, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally making regular
+    payments for water, electricity, or trash collection in the past year using cash
+    only, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32:
+  id: fin32
+  name: Received wages  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work. This
+    does not include any money received directly from clients or customers, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.1:
+  id: fin32.1
+  name: Received wages, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work. This
+    does not include any money received directly from clients or customers, women
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.2:
+  id: fin32.2
+  name: Received wages, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work. This
+    does not include any money received directly from clients or customers, men (%
+    age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33:
+  id: fin32.33
+  name: Received public sector wages  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.1:
+  id: fin32.33.1
+  name: Received public sector wages, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.2:
+  id: fin32.33.2
+  name: Received public sector wages, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.34a:
+  id: fin32.33.34a
+  name: 'Received public sector wages: into a bank or similar financial institution
+    account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, and who report receiving
+    that money directly into a bank or similar financial institution account, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.34a.1:
+  id: fin32.33.34a.1
+  name: 'Received public sector wages: into a bank or similar financial institution
+    account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, and who report receiving
+    that money directly into a bank or similar financial institution account, women
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.34a.2:
+  id: fin32.33.34a.2
+  name: 'Received public sector wages: into a bank or similar financial institution
+    account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, and who report receiving
+    that money directly into a bank or similar financial institution account, men
+    (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -316504,6 +319631,48 @@ fin32.33.34e.t.s:
     in the form of a salary or wages for doing work, the percentage who report receiving
     this money directly to a card.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.acc:
+  id: fin32.33.acc
+  name: 'Received public sector wages: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, and who received that
+    money directly into a bank or similar financial institution account, into a card,
+    or into a mobile money account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.acc.1:
+  id: fin32.33.acc.1
+  name: 'Received public sector wages: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, and who received that
+    money directly into a bank or similar financial institution account, into a card,
+    or into a mobile money account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.33.acc.2:
+  id: fin32.33.acc.2
+  name: 'Received public sector wages: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed by the government,
+    military, or public sector and receiving any money from their employer in the
+    past year in the form of a salary or wages for doing work, and who received that
+    money directly into a bank or similar financial institution account, into a card,
+    or into a mobile money account, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -316722,6 +319891,123 @@ fin32.33.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin32.acc:
+  id: fin32.acc
+  name: 'Received wages: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it directly into a bank or similar financial institution account,
+    into a card, or through a mobile phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.acc.1:
+  id: fin32.acc.1
+  name: 'Received wages: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it directly into a bank or similar financial institution account,
+    into a card, or through a mobile phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.acc.2:
+  id: fin32.acc.2
+  name: 'Received wages: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it directly into a bank or similar financial institution account,
+    into a card, or through a mobile phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33:
+  id: fin32.n33
+  name: Received private sector wages  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.1:
+  id: fin32.n33.1
+  name: Received private sector wages, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.2:
+  id: fin32.n33.2
+  name: Received private sector wages, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.34a:
+  id: fin32.n33.34a
+  name: 'Received private sector wages: into a bank or similar financial institution
+    account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, and who received that money directly into
+    a bank or similar financial institution account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.34a.1:
+  id: fin32.n33.34a.1
+  name: 'Received private sector wages: into a bank or similar financial institution
+    account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, and who received that money directly into
+    a bank or similar financial institution account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.34a.2:
+  id: fin32.n33.34a.2
+  name: 'Received private sector wages: into a bank or similar financial institution
+    account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, and who received that money directly into
+    a bank or similar financial institution account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin32.n33.34a.t:
   id: fin32.n33.34a.t
   name: 'Received private sector wages: into a financial institution account (% age
@@ -316777,6 +320063,42 @@ fin32.n33.34b.t.s:
   topic_ids: []
   topics: []
   unit: ''
+fin32.n33.34c:
+  id: fin32.n33.34c
+  name: 'Received private sector wages: in cash only  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work in cash only, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.34c.1:
+  id: fin32.n33.34c.1
+  name: 'Received private sector wages: in cash only, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work in cash only, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.34c.2:
+  id: fin32.n33.34c.2
+  name: 'Received private sector wages: in cash only, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work in cash only, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin32.n33.34d.t:
   id: fin32.n33.34d.t
   name: 'Received private sector wages: in cash only (% age 15+)'
@@ -316825,6 +320147,48 @@ fin32.n33.34e.t.s:
     receiving any money from their employer in the past year in the form of a salary
     or wages for doing work, the percentage who report receiving this money to a card.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.acc:
+  id: fin32.n33.acc
+  name: 'Received private sector wages: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, and who received that money directly into
+    a bank or similar financial institution account, into a card, or through a mobile
+    phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.acc.1:
+  id: fin32.n33.acc.1
+  name: 'Received private sector wages: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, and who received that money directly into
+    a bank or similar financial institution account, into a card, or through a mobile
+    phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin32.n33.acc.2:
+  id: fin32.n33.acc.2
+  name: 'Received private sector wages: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report being employed in the private
+    sector and receiving any money from their employer in the past year in the form
+    of a salary or wages for doing work, and who received that money directly into
+    a bank or similar financial institution account, into a card, or through a mobile
+    phone, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -317347,6 +320711,48 @@ fin33.2014.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin34a:
+  id: fin34a
+  name: 'Received wages: into a bank or similar financial institution account  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it directly into a bank or similar financial institution account,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin34a.1:
+  id: fin34a.1
+  name: 'Received wages: into a bank or similar financial institution account, women
+    (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it directly into a bank or similar financial institution account,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin34a.2:
+  id: fin34a.2
+  name: 'Received wages: into a bank or similar financial institution account, men
+    (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it directly into a bank or similar financial institution account,
+    men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin34a.2014:
   id: fin34a.2014
   name: 'Paid school fees: using cash only (% age 15+)'
@@ -317494,6 +320900,42 @@ fin34b.t.s:
   topic_ids: []
   topics: []
   unit: ''
+fin34c:
+  id: fin34c
+  name: 'Received wages: in cash only  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it in cash only, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin34c.1:
+  id: fin34c.1
+  name: 'Received wages: in cash only, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it in cash only, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin34c.2:
+  id: fin34c.2
+  name: 'Received wages: in cash only, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report receiving any money from an
+    employer in the past year in the form of a salary or wages for doing work, and
+    who received it in cash only, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin34c.2014:
   id: fin34c.2014
   name: 'Paid school fees: using a mobile phone (% age 15+)'
@@ -317585,6 +321027,201 @@ fin35.s:
   source_note: Among respondents receiving wages into an account, the percentage who
     report paying higher fees than expected to receive them.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin36b:
+  id: fin36b
+  name: 'Wage payments: leave some money in the account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report leaving some money in the
+    account when their employer paid them salary or wages into their account, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin36b.1:
+  id: fin36b.1
+  name: 'Wage payments: leave some money in the account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report leaving some money in the
+    account when their employer paid them salary or wages into their account, women
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin36b.2:
+  id: fin36b.2
+  name: 'Wage payments: leave some money in the account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report leaving some money in the
+    account when their employer paid them salary or wages into their account, men
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37:
+  id: fin37
+  name: Received government transfer  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year. This includes payments for educational or
+    medical expenses, unemployment benefits, subsidy payments, or any kind of social
+    benefits. It does not include a pension from the government, military, or public
+    sector; wages; or any other payments related to work, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.1:
+  id: fin37.1
+  name: Received government transfer, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year. This includes payments for educational or
+    medical expenses, unemployment benefits, subsidy payments, or any kind of social
+    benefits. It does not include a pension from the government, military, or public
+    sector; wages; or any other payments related to work, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.2:
+  id: fin37.2
+  name: Received government transfer, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year. This includes payments for educational or
+    medical expenses, unemployment benefits, subsidy payments, or any kind of social
+    benefits. It does not include a pension from the government, military, or public
+    sector; wages; or any other payments related to work, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38:
+  id: fin37.38
+  name: Received government transfer or pension  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    or pension from the government in the past year. This includes payments for educational
+    or medical expenses, unemployment benefits, subsidy payments, or any kind of social
+    benefits. It also includes payments for a pension from the government, military,
+    or public sector, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.1:
+  id: fin37.38.1
+  name: Received government transfer or pension, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    or pension from the government in the past year. This includes payments for educational
+    or medical expenses, unemployment benefits, subsidy payments, or any kind of social
+    benefits. It also includes payments for a pension from the government, military,
+    or public sector, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.2:
+  id: fin37.38.2
+  name: Received government transfer or pension, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    or pension from the government in the past year. This includes payments for educational
+    or medical expenses, unemployment benefits, subsidy payments, or any kind of social
+    benefits. It also includes payments for a pension from the government, military,
+    or public sector, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.39.acc:
+  id: fin37.38.39.acc
+  name: 'Received government transfer or pension: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    or pension from the government in the past year into a bank or similar financial
+    institution account, into a card, or through a mobile phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.39.acc.1:
+  id: fin37.38.39.acc.1
+  name: 'Received government transfer or pension: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    or pension from the government in the past year into a bank or similar financial
+    institution account, into a card, or through a mobile phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.39.acc.2:
+  id: fin37.38.39.acc.2
+  name: 'Received government transfer or pension: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    or pension from the government in the past year into a bank or similar financial
+    institution account, into a card, or through a mobile phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.39a:
+  id: fin37.38.39a
+  name: 'Received government transfer or pension: into bank or similar financial institution
+    account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any government
+    transfer or pension from the government in the past year into a bank or similar
+    financial institution account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.39a.1:
+  id: fin37.38.39a.1
+  name: 'Received government transfer or pension: into bank or similar financial institution
+    account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any government
+    transfer or pension from the government in the past year into a bank or similar
+    financial institution account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.38.39a.2:
+  id: fin37.38.39a.2
+  name: 'Received government transfer or pension: into bank or similar financial institution
+    account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any government
+    transfer or pension from the government in the past year into a bank or similar
+    financial institution account, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -317896,6 +321533,81 @@ fin37.38.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin37.39.acc:
+  id: fin37.39.acc
+  name: 'Received government transfer: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year directly into a bank or similar financial
+    institution account, into a card, or through a mobile phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.39.acc.1:
+  id: fin37.39.acc.1
+  name: 'Received government transfer: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year directly into a bank or similar financial
+    institution account, into a card, or through a mobile phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.39.acc.2:
+  id: fin37.39.acc.2
+  name: 'Received government transfer: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year directly into a bank or similar financial
+    institution account, into a card, or through a mobile phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.39a:
+  id: fin37.39a
+  name: 'Received government transfer: into a bank or similar financial institution
+    account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year directly into a bank or similar financial
+    institution account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.39a.1:
+  id: fin37.39a.1
+  name: 'Received government transfer: into a bank or similar financial institution
+    account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year directly into a bank or similar financial
+    institution account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin37.39a.2:
+  id: fin37.39a.2
+  name: 'Received government transfer: into a bank or similar financial institution
+    account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any transfer
+    from the government in the past year directly into a bank or similar financial
+    institution account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin37.39a.t:
   id: fin37.39a.t
   name: 'Received government transfer: into a financial institution account (% age
@@ -318204,6 +321916,118 @@ fin37.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin38:
+  id: fin38
+  name: Received a public sector pension  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.1:
+  id: fin38.1
+  name: Received a public sector pension, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year, women (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.2:
+  id: fin38.2
+  name: Received a public sector pension, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.39.acc:
+  id: fin38.39.acc
+  name: 'Received a public sector pension: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year directly into
+    a bank or similar financial institution account, into a card, or through a mobile
+    phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.39.acc.1:
+  id: fin38.39.acc.1
+  name: 'Received a public sector pension: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year directly into
+    a bank or similar financial institution account, into a card, or through a mobile
+    phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.39.acc.2:
+  id: fin38.39.acc.2
+  name: 'Received a public sector pension: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year directly into
+    a bank or similar financial institution account, into a card, or through a mobile
+    phone, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.39a:
+  id: fin38.39a
+  name: 'Received a public sector pension: into a bank or similar financial institution
+    account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year directly into
+    a bank or similar financial institution account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.39a.1:
+  id: fin38.39a.1
+  name: 'Received a public sector pension: into a bank or similar financial institution
+    account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year directly into
+    a bank or similar financial institution account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin38.39a.2:
+  id: fin38.39a.2
+  name: 'Received a public sector pension: into a bank or similar financial institution
+    account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving a pension
+    from the government, military, or public sector in the past year directly into
+    a bank or similar financial institution account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin38.39a.t:
   id: fin38.39a.t
   name: 'Received a public sector pension: into a financial institution account (%
@@ -318495,6 +322319,45 @@ fin4.8.t:
   topic_ids: []
   topics: []
   unit: ''
+fin4.d:
+  id: fin4.d
+  name: First bank or similar financial institution account ever was opened to receive
+    a wage payment or money from the government  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report opening a bank or similar
+    financial institution account for the first time to receive money from the government
+    or to receive a wage payment, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin4.d.1:
+  id: fin4.d.1
+  name: First bank or similar financial institution account ever was opened to receive
+    a wage payment or money from the government, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report opening a bank or similar
+    financial institution account for the first time to receive money from the government
+    or to receive a wage payment, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin4.d.2:
+  id: fin4.d.2
+  name: First bank or similar financial institution account ever was opened to receive
+    a wage payment or money from the government, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report opening a bank or similar
+    financial institution account for the first time to receive money from the government
+    or to receive a wage payment, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin4.t:
   id: fin4.t
   name: Used a debit card (% age 15+)
@@ -318503,6 +322366,45 @@ fin4.t:
   source_note: The percentage of respondents who report using their own debit card
     to make a purchase in the past year.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin42:
+  id: fin42
+  name: Received payments for the sale of agricultural products, livestock, or crops  (%
+    age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from any source for the sale of agricultural products, crops, produce, or livestock
+    in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin42.1:
+  id: fin42.1
+  name: Received payments for the sale of agricultural products, livestock, or crops,
+    women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from any source for the sale of agricultural products, crops, produce, or livestock
+    in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin42.2:
+  id: fin42.2
+  name: Received payments for the sale of agricultural products, livestock, or crops,
+    men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from any source for the sale of agricultural products, crops, produce, or livestock
+    in the past year, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -318752,6 +322654,42 @@ fin43b.t.s:
     for the sale of agricultural products, crops, produce, or livestock in the past
     year, the percentage who report receiving this money through a mobile phone.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin43c:
+  id: fin43c
+  name: 'Received payments for agricultural products: in cash only  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving money
+    from any source for the sale of agricultural products, crops, produce, or livestock
+    in the past year in cash only, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin43c.1:
+  id: fin43c.1
+  name: 'Received payments for agricultural products: in cash only, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving money
+    from any source for the sale of agricultural products, crops, produce, or livestock
+    in the past year in cash only, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin43c.2:
+  id: fin43c.2
+  name: 'Received payments for agricultural products: in cash only, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving money
+    from any source for the sale of agricultural products, crops, produce, or livestock
+    in the past year in cash only, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -320963,8 +324901,10 @@ fin45.1.2.d.11:
     experience or continue to experience severe financial hardship as a result of
     the disruption caused by COVID-19, out of labor force (% age 15+)
   source_organization: Global Findex database
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin45.1.2.d.12:
   id: fin45.1.2.d.12
@@ -321898,6 +325838,149 @@ fin45.4M.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin45a:
+  id: fin45a
+  name: 'Most worrying financial issue: money for old age  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial worry is that
+    they won't have enough money for old age, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45a.1:
+  id: fin45a.1
+  name: 'Most worrying financial issue: money for old age, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial worry is that
+    they won't have enough money for old age, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45a.2:
+  id: fin45a.2
+  name: 'Most worrying financial issue: money for old age, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial worry is that
+    they won't have enough money for old age, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45c:
+  id: fin45c
+  name: 'Most worrying financial issue: paying for medical costs in case of a serious
+    illness or accident  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money for medical costs in the case of a serious illness
+    or accident, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45c.1:
+  id: fin45c.1
+  name: 'Most worrying financial issue: paying for medical costs in case of a serious
+    illness or accident, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money for medical costs in the case of a serious illness
+    or accident, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45c.2:
+  id: fin45c.2
+  name: 'Most worrying financial issue: paying for medical costs in case of a serious
+    illness or accident, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money for medical costs in the case of a serious illness
+    or accident, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45d:
+  id: fin45d
+  name: 'Most worrying financial issue: money to pay for monthly expenses or bills  (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money for monthly expenses or bills, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45d.1:
+  id: fin45d.1
+  name: 'Most worrying financial issue: money to pay for monthly expenses or bills,
+    women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money for monthly expenses or bills, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45d.2:
+  id: fin45d.2
+  name: 'Most worrying financial issue: money to pay for monthly expenses or bills,
+    men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money for monthly expenses or bills, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45e:
+  id: fin45e
+  name: 'Most worrying financial issue: paying school or education fees  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money to pay school fees, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45e.1:
+  id: fin45e.1
+  name: 'Most worrying financial issue: paying school or education fees, women (%
+    age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money to pay school fees, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin45e.2:
+  id: fin45e.2
+  name: 'Most worrying financial issue: paying school or education fees, men (% age
+    15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents whose primary financial issue is that
+    they won't have enough money to pay school fees, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin48_a:
   id: fin48_a
   name: Has a national identity card (% age 15+)
@@ -322541,6 +326624,39 @@ fin7.t.d.9:
   topic_ids: []
   topics: []
   unit: ''
+fin8:
+  id: fin8
+  name: Store money in account  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report keeping money in their bank
+    or similar financial institution account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin8.1:
+  id: fin8.1
+  name: Store money in account, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report keeping money in their bank
+    or similar financial institution account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin8.2:
+  id: fin8.2
+  name: Store money in account, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report keeping money in their bank
+    or similar financial institution account, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin8.t:
   id: fin8.t
   name: Used a credit card (% age 15+)
@@ -322790,6 +326906,32 @@ fin9a:
   topic_ids: []
   topics: []
   unit: ''
+fin9a.1:
+  id: fin9a.1
+  name: Received information about account balance from bank through email, SMS, or
+    text message on mobile in the past 12 months, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having a bank or similar financial
+    institution account,and report receiving any information about their account balance
+    from their bank, such as through email, SMS, or text message, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin9a.2:
+  id: fin9a.2
+  name: Received information about account balance from bank through email, SMS, or
+    text message on mobile in the past 12 months, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report having a bank or similar financial
+    institution account,and report receiving any information about their account balance
+    from their bank, such as through email, SMS, or text message, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 fin9a.s:
   id: fin9a.s
   name: Deposited money into a financial institution account 2 or more times a month
@@ -322800,6 +326942,130 @@ fin9a.s:
     institution account, the percentage who report doing so two or more times per
     month.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin9b:
+  id: fin9b
+  name: Used a mobile phone or the internet to check account balance (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to check their balance for a bank or similar financial institution account
+    in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin9b.1:
+  id: fin9b.1
+  name: Used a mobile phone or the internet to check account balance, women (% age
+    15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to check their balance for a bank or similar financial institution account
+    in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fin9b.2:
+  id: fin9b.2
+  name: Used a mobile phone or the internet to check account balance, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile phone or the
+    internet to check their balance for a bank or similar financial institution account
+    in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p:
+  id: fing2p
+  name: Received government payments  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any payment
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year. This includes payments for educational or medical expenses,
+    unemployment benefits, subsidy payments, or any kind of social benefits. It also
+    includes pension payments from the government, military, or public sector as well
+    as wages from employment in the government, military, or public sector, (% age
+    15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.1:
+  id: fing2p.1
+  name: Received government payments, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any payment
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year. This includes payments for educational or medical expenses,
+    unemployment benefits, subsidy payments, or any kind of social benefits. It also
+    includes pension payments from the government, military, or public sector as well
+    as wages from employment in the government, military, or public sector, women
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.2:
+  id: fing2p.2
+  name: Received government payments, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving any payment
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year. This includes payments for educational or medical expenses,
+    unemployment benefits, subsidy payments, or any kind of social benefits. It also
+    includes pension payments from the government, military, or public sector as well
+    as wages from employment in the government, military, or public sector, men (%
+    age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.acc:
+  id: fing2p.acc
+  name: 'Received government payments: into an account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year directly into a bank or similar financial institution
+    account, into a card, or through a mobile phone, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.acc.1:
+  id: fing2p.acc.1
+  name: 'Received government payments: into an account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year directly into a bank or similar financial institution
+    account, into a card, or through a mobile phone, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.acc.2:
+  id: fing2p.acc.2
+  name: 'Received government payments: into an account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year directly into a bank or similar financial institution
+    account, into a card, or through a mobile phone, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -322877,6 +327143,48 @@ fing2p.cash.t.s:
     government (government transfers, public sector pension, or public sector wages)
     in the past year, the percentage who report receiving the payments in cash only.
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.fin:
+  id: fing2p.fin
+  name: 'Received government payments: into a bank or similar financial institution
+    account  (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year directly into a bank or similar financial institution
+    account, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.fin.1:
+  id: fing2p.fin.1
+  name: 'Received government payments: into a bank or similar financial institution
+    account, women (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year directly into a bank or similar financial institution
+    account, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+fing2p.fin.2:
+  id: fing2p.fin.2
+  name: 'Received government payments: into a bank or similar financial institution
+    account, men (% age 15+)'
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally receiving payments
+    from the government (government transfers, public sector pension, or public sector
+    wages) in the past year directly into a bank or similar financial institution
+    account, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -323480,6 +327788,102 @@ fplm_some_dfcl_urb:
   topic_ids: []
   topics: []
   unit: ''
+g20.any:
+  id: g20.any
+  name: Made or received a digital payment  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile money, a debit
+    or credit card, or a mobile phone to make a payment from an account--or report
+    using the internet to pay bills or to buy something online or in a store--in the
+    past year. This includes respondents who report paying bills, sending or receiving
+    remittances, receiving payments for agricultural products, receiving government
+    transfers, receiving wages, or receiving a public sector pension directly from
+    or into a bank or similar financial institution account or through a mobile money
+    account in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.any.1:
+  id: g20.any.1
+  name: Made or received a digital payment, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile money, a debit
+    or credit card, or a mobile phone to make a payment from an account--or report
+    using the internet to pay bills or to buy something online or in a store--in the
+    past year. This includes respondents who report paying bills, sending or receiving
+    remittances, receiving payments for agricultural products, receiving government
+    transfers, receiving wages, or receiving a public sector pension directly from
+    or into a bank or similar financial institution account or through a mobile money
+    account in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.any.2:
+  id: g20.any.2
+  name: Made or received a digital payment, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile money, a debit
+    or credit card, or a mobile phone to make a payment from an account--or report
+    using the internet to pay bills or to buy something online or in a store--in the
+    past year. This includes respondents who report paying bills, sending or receiving
+    remittances, receiving payments for agricultural products, receiving government
+    transfers, receiving wages, or receiving a public sector pension directly from
+    or into a bank or similar financial institution account or through a mobile money
+    account in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.made:
+  id: g20.made
+  name: Made a digital payment  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile money, a debit
+    or credit card, or a mobile phone to make a payment from an account; or who report
+    using the internet to pay bills or to buy something online or in a store in the
+    past year. This includes respondents who report paying bills or sending remittances
+    directly from a bank or similar financial institution account or through a mobile
+    money account in the past year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.made.1:
+  id: g20.made.1
+  name: Made a digital payment, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile money, a debit
+    or credit card, or a mobile phone to make a payment from an account; or who report
+    using the internet to pay bills or to buy something online or in a store in the
+    past year. This includes respondents who report paying bills or sending remittances
+    directly from a bank or similar financial institution account or through a mobile
+    money account in the past year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.made.2:
+  id: g20.made.2
+  name: Made a digital payment, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using mobile money, a debit
+    or credit card, or a mobile phone to make a payment from an account; or who report
+    using the internet to pay bills or to buy something online or in a store in the
+    past year. This includes respondents who report paying bills or sending remittances
+    directly from a bank or similar financial institution account or through a mobile
+    money account in the past year, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 g20.made.t.d:
   id: g20.made.t.d
   name: Made a digital payment (% age 15+)
@@ -323567,10 +327971,8 @@ g20.made.t.d.2:
     directly from a financial institution account or through a mobile money account
     in the past year, male (% age 15+)
   source_organization: Global Findex database
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 g20.made.t.d.3:
   id: g20.made.t.d.3
@@ -323881,6 +328283,54 @@ g20.receive.t.d.9:
     institution account or into a mobile money account in the past year, rural (%
     age 15+)
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.received:
+  id: g20.received
+  name: Received digital payments  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile money account,
+    a debit or credit card, or a mobile phone to receive a payment into an account
+    in the past year. This includes respondents who report receiving remittances,
+    receiving payments for agricultural products, receiving government transfers,
+    receiving wages, or receiving a public sector pension directly into a bank or
+    similar financial institution account or into a mobile money account in the past
+    year, (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.received.1:
+  id: g20.received.1
+  name: Received digital payments, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile money account,
+    a debit or credit card, or a mobile phone to receive a payment into an account
+    in the past year. This includes respondents who report receiving remittances,
+    receiving payments for agricultural products, receiving government transfers,
+    receiving wages, or receiving a public sector pension directly into a bank or
+    similar financial institution account or into a mobile money account in the past
+    year, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+g20.received.2:
+  id: g20.received.2
+  name: Received digital payments, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report using a mobile money account,
+    a debit or credit card, or a mobile phone to receive a payment into an account
+    in the past year. This includes respondents who report receiving remittances,
+    receiving payments for agricultural products, receiving government transfers,
+    receiving wages, or receiving a public sector pension directly into a bank or
+    similar financial institution account or into a mobile money account in the past
+    year, men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
@@ -327585,6 +332035,28 @@ ifrm_some_dfcl_urb:
   topic_ids: []
   topics: []
   unit: ''
+internet.1:
+  id: internet.1
+  name: Used the internet in the past three months, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they used the internet
+    in the past three months, women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+internet.2:
+  id: internet.2
+  name: Used the internet in the past three months, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report that they used the internet
+    in the past three months, men (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
 litr_al_alot_dfcl_1529:
   id: litr_al_alot_dfcl_1529
   name: Literacy rate (% of persons aged 15 to 29 years with disability i.e. at least
@@ -330566,10 +335038,8 @@ ocel_some_dfcl_male:
   source_id: '92'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 ocel_some_dfcl_rur:
   id: ocel_some_dfcl_rur
@@ -339278,8 +343748,10 @@ per_pr_allpr.bry_q1_rur:
   source_note: Percentage of program beneficiaries in a quintile relative to the total
     number of beneficiaries in the population
   source_organization: ASPIRE
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_pr_allpr.bry_q1_tot:
   id: per_pr_allpr.bry_q1_tot
@@ -366702,6 +371174,42 @@ save.any.9:
     aside any money for any reason and using any mode of saving in the past year,
     rural (% age 15+)
   source_organization: Global Findex database
+  topic_ids: []
+  topics: []
+  unit: ''
+save.any.t.d:
+  id: save.any.t.d
+  name: Saved any money  (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally saving or setting
+    aside any money for any reason and using any mode of saving in the past year,
+    (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+save.any.t.d.1:
+  id: save.any.t.d.1
+  name: Saved any money, women (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally saving or setting
+    aside any money for any reason and using any mode of saving in the past year,
+    women (% age 15+)
+  source_organization: Global Findex Database
+  topic_ids: []
+  topics: []
+  unit: ''
+save.any.t.d.2:
+  id: save.any.t.d.2
+  name: Saved any money, men (% age 15+)
+  source: Gender Statistics
+  source_id: '14'
+  source_note: The percentage of respondents who report personally saving or setting
+    aside any money for any reason and using any mode of saving in the past year,
+    men (% age 15+)
+  source_organization: Global Findex Database
   topic_ids: []
   topics: []
   unit: ''
