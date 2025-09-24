@@ -42101,9 +42101,19 @@ CRPFM-9.2:
   topic_ids: []
   topics: []
   unit: ''
-CoCA:
-  id: CoCA
-  name: Cost of an energy sufficient diet
+CoCA_LCU:
+  id: CoCA_LCU
+  name: Cost of an energy sufficient diet in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoCA_PPP:
+  id: CoCA_PPP
+  name: Cost of an energy sufficient diet in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42152,16 +42162,6 @@ CoCA_unafford_n:
   topic_ids: []
   topics: []
   unit: ''
-CoHD:
-  id: CoHD
-  name: Cost of a healthy diet
-  source: Food Prices for Nutrition
-  source_id: '88'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
 CoHD_CoCA:
   id: CoHD_CoCA
   name: Cost of a healthy diet relative to the cost of sufficient energy from starchy
@@ -42173,9 +42173,39 @@ CoHD_CoCA:
   topic_ids: []
   topics: []
   unit: ''
-CoHD_asf:
-  id: CoHD_asf
-  name: Cost of animal-source foods
+CoHD_LCU:
+  id: CoHD_LCU
+  name: Cost of a healthy diet in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_PPP:
+  id: CoHD_PPP
+  name: Cost of a healthy diet in PPP dollars
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_asf_LCU:
+  id: CoHD_asf_LCU
+  name: Cost of animal source foods in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_asf_PPP:
+  id: CoHD_asf_PPP
+  name: Cost of animal source foods in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42204,9 +42234,19 @@ CoHD_asf_ss:
   topic_ids: []
   topics: []
   unit: ''
-CoHD_f:
-  id: CoHD_f
-  name: Cost of fruits
+CoHD_f_LCU:
+  id: CoHD_f_LCU
+  name: Cost of fruits in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_f_PPP:
+  id: CoHD_f_PPP
+  name: Cost of fruits in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42254,9 +42294,19 @@ CoHD_headcount:
   topic_ids: []
   topics: []
   unit: ''
-CoHD_lns:
-  id: CoHD_lns
-  name: Cost of legumes, nuts and seeds
+CoHD_lns_LCU:
+  id: CoHD_lns_LCU
+  name: Cost of legumes, nuts and seeds in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_lns_PPP:
+  id: CoHD_lns_PPP
+  name: Cost of legumes, nuts and seeds in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42285,9 +42335,19 @@ CoHD_lns_ss:
   topic_ids: []
   topics: []
   unit: ''
-CoHD_of:
-  id: CoHD_of
-  name: Cost of oils and fats
+CoHD_of_LCU:
+  id: CoHD_of_LCU
+  name: Cost of fats and oils in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_of_PPP:
+  id: CoHD_of_PPP
+  name: Cost of fats and oils in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42326,9 +42386,19 @@ CoHD_pov:
   topic_ids: []
   topics: []
   unit: ''
-CoHD_ss:
-  id: CoHD_ss
-  name: Cost of starchy staples
+CoHD_ss_LCU:
+  id: CoHD_ss_LCU
+  name: Cost of starchy staples in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_ss_PPP:
+  id: CoHD_ss_PPP
+  name: Cost of starchy staples in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42356,9 +42426,19 @@ CoHD_unafford_n:
   topic_ids: []
   topics: []
   unit: ''
-CoHD_v:
-  id: CoHD_v
-  name: Cost of vegetables
+CoHD_v_LCU:
+  id: CoHD_v_LCU
+  name: Cost of vegetables in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoHD_v_PPP:
+  id: CoHD_v_PPP
+  name: Cost of vegetables in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -42387,9 +42467,19 @@ CoHD_v_ss:
   topic_ids: []
   topics: []
   unit: ''
-CoNA:
-  id: CoNA
-  name: Cost of a nutrient adequate diet
+CoNA_LCU:
+  id: CoNA_LCU
+  name: Cost of a nutrient adequate diet in local currency unit
+  source: Food Prices for Nutrition
+  source_id: '88'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+CoNA_PPP:
+  id: CoNA_PPP
+  name: Cost of a nutrient adequate diet in PPP dollars
   source: Food Prices for Nutrition
   source_id: '88'
   source_note: ''
@@ -51171,8 +51261,10 @@ DP.DOD.DSOA.CR.FC.Z1:
     quarterly database of the IMF, annualized by the World Bank, unless otherwise
     specified.
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DP.DOD.DSOA.CR.GG:
   id: DP.DOD.DSOA.CR.GG
@@ -51275,10 +51367,8 @@ DP.DOD.DSTC.CR.BC:
   source_id: '20'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DP.DOD.DSTC.CR.BC.CD:
   id: DP.DOD.DSTC.CR.BC.CD
@@ -63497,8 +63587,10 @@ DT.DOD.DLXF.CD.DR:
   source_id: '57'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DT.DOD.DLXF.CD.FC.CB.EU.US:
   id: DT.DOD.DLXF.CD.FC.CB.EU.US
@@ -63596,10 +63688,8 @@ DT.DOD.DLXF.CD.FC.GG.TO.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.DOD.DLXF.CD.FC.GG.US.US:
   id: DT.DOD.DLXF.CD.FC.GG.US.US
@@ -75080,8 +75170,10 @@ DT.INT.DLTT.CD.MA.AR.36.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DT.INT.DLTT.CD.MA.AR.69.US:
   id: DT.INT.DLTT.CD.MA.AR.69.US
@@ -92232,16 +92324,6 @@ EN.ROD.ACCT:
   topic_ids: []
   topics: []
   unit: ''
-EN.ROD.TRAF:
-  id: EN.ROD.TRAF
-  name: Road traffic (vehicles per km)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
 EN.RUR.DNST:
   id: EN.RUR.DNST
   name: Rural population density (rural population per sq. km of arable land)
@@ -92281,36 +92363,6 @@ EN.TDF.COMP:
 EN.TDF.COMP.ZS:
   id: EN.TDF.COMP.ZS
   name: Traditional fuel use (% of total energy use)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-EN.TRN.ACCT.VEH.ZS:
-  id: EN.TRN.ACCT.VEH.ZS
-  name: Traffic accidents (injured or killed per 1,000 vehicles)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-EN.TRN.NVEH.1K:
-  id: EN.TRN.NVEH.1K
-  name: Vehicles (per 1,000 people)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-EN.TRN.NVEH.KM:
-  id: EN.TRN.NVEH.KM
-  name: Vehicles (per km of road)
   source: WDI Database Archives
   source_id: '57'
   source_note: ''
@@ -106380,8 +106432,10 @@ HF.STA.BPHT.ZS.Q2:
     for high blood pressure (age-range may vary)
   source_organization: Health Equity and Financial Protection Indicators (HEFPI) database,
     World Bank
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 HF.STA.BPHT.ZS.Q3:
   id: HF.STA.BPHT.ZS.Q3
@@ -106439,10 +106493,8 @@ HF.STA.BPSY.Q1:
   source_id: '65'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 HF.STA.BPSY.Q2:
   id: HF.STA.BPSY.Q2
@@ -117652,8 +117704,10 @@ IC.LOAN.COL.ZS:
   source_id: '11'
   source_note: Percentage of loans that require collateral.
   source_organization: World Bank, Enterprise Surveys (http://www.enterprisesurveys.org/).
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 IC.MNG.IND:
   id: IC.MNG.IND
@@ -123232,16 +123286,6 @@ IS.ROD.GOOD.MT.K6:
   topics:
   - 'Infrastructure '
   unit: ''
-IS.ROD.NORM.XD:
-  id: IS.ROD.NORM.XD
-  name: Roads, normalized index (100 = expected total length)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
 IS.ROD.PAVE.ZS:
   id: IS.ROD.PAVE.ZS
   name: Roads, paved (% of total roads)
@@ -123314,16 +123358,6 @@ IS.ROD.TOTL.KM:
   - '9'
   topics:
   - 'Infrastructure '
-  unit: ''
-IS.ROD.TRAF:
-  id: IS.ROD.TRAF
-  name: Road traffic (million vehicle-km)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
   unit: ''
 IS.RRS.DESL.ZS:
   id: IS.RRS.DESL.ZS
@@ -123489,16 +123523,6 @@ IS.SHP.GOOD.TU:
   - '9'
   topics:
   - 'Infrastructure '
-  unit: ''
-IS.VEH.2CYL.P3:
-  id: IS.VEH.2CYL.P3
-  name: Two-wheelers (per 1,000 people)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
   unit: ''
 IS.VEH.NVEH.P3:
   id: IS.VEH.NVEH.P3
@@ -129999,8 +130023,10 @@ JI.EMP.WAGE.UR.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.EMP.WAGE.YG.ZS:
   id: JI.EMP.WAGE.YG.ZS
@@ -130020,10 +130046,8 @@ JI.EMP.WAGE.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 JI.ENR.0616.FE.ZS:
   id: JI.ENR.0616.FE.ZS
@@ -144078,8 +144102,10 @@ LO.PASEC.REA.6:
     for more detailed information: http://www.pasec.confemen.org/'
   source_organization: 'Programme d''Analyse des Systèmes Educatifs de la CONFEMEN/Program
     for the Analysis of CONFEMEN Education Systems (PASEC): http://www.pasec.confemen.org/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PASEC.REA.6.FE:
   id: LO.PASEC.REA.6.FE
@@ -144108,10 +144134,8 @@ LO.PASEC.REA.6.L0:
     2014. Consult the PASEC website for more detailed information: http://www.pasec.confemen.org/'
   source_organization: 'Programme d''Analyse des Systèmes Educatifs de la CONFEMEN/Program
     for the Analysis of CONFEMEN Education Systems (PASEC): http://www.pasec.confemen.org/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.PASEC.REA.6.L1:
   id: LO.PASEC.REA.6.L1
@@ -159336,8 +159360,10 @@ NW.HCA.MALE.TO.CD:
   source_id: '59'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NW.HCA.PC:
   id: NW.HCA.PC
@@ -159359,10 +159385,8 @@ NW.HCA.PC.CD:
   source_id: '59'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NW.HCA.TO:
   id: NW.HCA.TO
@@ -171203,8 +171227,10 @@ PER.SOR.CTL.TOT.SEC:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SOR.CTL.TOT.TER:
   id: PER.SOR.CTL.TOT.TER
@@ -171225,10 +171251,8 @@ PER.SOR.CTL.TOT.VOC:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.SOR.CTL.VOC:
   id: PER.SOR.CTL.VOC
@@ -186987,8 +187011,10 @@ SE.CLO.15Y.LDGAP.M.PS.2000.5:
     deprived child to the minimum proficiency level and indicates the average increase
     in learning required to eliminate learning deprivation.
   source_organization: Education Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDGAP.M.PS.2000.A:
   id: SE.CLO.15Y.LDGAP.M.PS.2000.A
@@ -187012,10 +187038,8 @@ SE.CLO.15Y.LDGAP.M.PS.2000.F:
     deprived child to the minimum proficiency level and indicates the average increase
     in learning required to eliminate learning deprivation.
   source_organization: Education Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDGAP.M.PS.2000.M:
   id: SE.CLO.15Y.LDGAP.M.PS.2000.M
@@ -198101,8 +198125,10 @@ SE.CLO.4.PRF.M.TMS.2011.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.4.PRF.M.TMS.2011.5:
   id: SE.CLO.4.PRF.M.TMS.2011.5
@@ -198122,10 +198148,8 @@ SE.CLO.4.PRF.M.TMS.2011.A:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.4.PRF.M.TMS.2011.F:
   id: SE.CLO.4.PRF.M.TMS.2011.F
@@ -208980,8 +209004,10 @@ SE.CLO.8.PRF.M.TMS.2003.R:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.8.PRF.M.TMS.2003.U:
   id: SE.CLO.8.PRF.M.TMS.2003.U
@@ -209002,10 +209028,8 @@ SE.CLO.8.PRF.M.TMS.2007.1:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.8.PRF.M.TMS.2007.2:
   id: SE.CLO.8.PRF.M.TMS.2007.2
@@ -222808,36 +222832,6 @@ SF.TRN.RAIL.KM.ZS:
   topic_ids: []
   topics: []
   unit: ''
-SF.TRN.ROAD.GDS:
-  id: SF.TRN.ROAD.GDS
-  name: Roads, goods transported (million ton-km)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-SF.TRN.ROAD.NORM:
-  id: SF.TRN.ROAD.NORM
-  name: Roads, normalized index (100 = expected total length)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-SF.TRN.ROAD.PV.ZS:
-  id: SF.TRN.ROAD.PV.ZS
-  name: Roads, paved (%)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
 SG.ABS.PENB:
   id: SG.ABS.PENB
   name: There are periods of absence due to childcare accounted for in pension benefits
@@ -236330,10 +236324,8 @@ SH.STA.IYCF.ZS:
     infant and young child feeding (IYCF) practices (food diversity, feeding frequency,
     and consumption of breast milk or milk)
   source_organization: Demographic and Health Surveys
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SH.STA.LBMI.Q1.ZS:
   id: SH.STA.LBMI.Q1.ZS
@@ -241007,16 +240999,6 @@ SL.AGR.TOTL.ZS:
   topic_ids: []
   topics: []
   unit: ''
-SL.ALL.SIZE.FE:
-  id: SL.ALL.SIZE.FE
-  name: Labor Force, Female (%)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
 SL.EMP.1524.SP.FE.NE.ZS:
   id: SL.EMP.1524.SP.FE.NE.ZS
   name: Employment to population ratio, ages 15-24, female (%) (national estimate)
@@ -244724,16 +244706,6 @@ SM.EMI.TERT.ZS:
   - 'Financial Sector '
   - 'Health '
   unit: ''
-SM.MMR.DTHS:
-  id: SM.MMR.DTHS
-  name: Number of maternal mortality deaths
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
 SM.POP.ASYS.EA:
   id: SM.POP.ASYS.EA
   name: Asylum-seekers by country or territory of asylum
@@ -246384,16 +246356,6 @@ SP.DYN.LE60.MA.IN:
   - '17'
   topics:
   - Gender
-  unit: ''
-SP.DYN.LIFE.MF:
-  id: SP.DYN.LIFE.MF
-  name: Life Expectancy at Birth(years)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
   unit: ''
 SP.DYN.SMAM.FE:
   id: SP.DYN.SMAM.FE
@@ -257915,16 +257877,6 @@ TX.VAL.TECH.CD:
   - Private Sector
   - 'Science & Technology '
   - Trade
-  unit: ''
-TX.VAL.TECH.MANF.ZS:
-  id: TX.VAL.TECH.MANF.ZS
-  name: High-technology exports (% of manufactured exports)
-  source: WDI Database Archives
-  source_id: '57'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
   unit: ''
 TX.VAL.TECH.MF.ZS:
   id: TX.VAL.TECH.MF.ZS
@@ -269467,10 +269419,8 @@ UIS.GCS.LOWERSEC.NCOG.GLOC:
     students at the same stage of education and year. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.GCS.LOWERSEC.NCOG.GLOC.F:
   id: UIS.GCS.LOWERSEC.NCOG.GLOC.F
@@ -269580,8 +269530,10 @@ UIS.GCS.LOWERSEC.NCOG.MULT.F:
     students at the same stage of education and year. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.GCS.LOWERSEC.NCOG.MULT.GPI:
   id: UIS.GCS.LOWERSEC.NCOG.MULT.GPI
@@ -308124,8 +308076,10 @@ elc_any_dfcl_seeing_all:
   source_id: '92'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 elc_any_dfcl_selfcare_all:
   id: elc_any_dfcl_selfcare_all
@@ -308219,10 +308173,8 @@ elc_none_dfcl_male:
   source_id: '92'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 elc_none_dfcl_rur:
   id: elc_none_dfcl_rur
@@ -312411,8 +312363,10 @@ fin17b.t.d:
     money in the past year by using an informal savings club or a person outside the
     family.
   source_organization: Global Findex database
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin17b.t.d.1:
   id: fin17b.t.d.1
@@ -312473,10 +312427,8 @@ fin17b.t.d.2:
     money in the past year by using an informal savings club or a person outside the
     family, male (% age 15+)
   source_organization: Global Findex database
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin17b.t.d.3:
   id: fin17b.t.d.3
@@ -324835,8 +324787,10 @@ fin45.1.1.d.8:
     or continue to experience severe financial hardship as a result of the disruption
     caused by COVID-19, richest 60% (% ages 15+)
   source_organization: Global Findex database
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin45.1.1.d.9:
   id: fin45.1.1.d.9
@@ -324901,10 +324855,8 @@ fin45.1.2.d.11:
     experience or continue to experience severe financial hardship as a result of
     the disruption caused by COVID-19, out of labor force (% age 15+)
   source_organization: Global Findex database
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin45.1.2.d.12:
   id: fin45.1.2.d.12
@@ -343724,8 +343676,10 @@ per_pr_allpr.bry_ep_tot:
   source_note: Percentage of program beneficiaries in a quintile relative to the total
     number of beneficiaries in the population
   source_organization: ASPIRE
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_pr_allpr.bry_q1_preT_tot:
   id: per_pr_allpr.bry_q1_preT_tot
@@ -343748,10 +343702,8 @@ per_pr_allpr.bry_q1_rur:
   source_note: Percentage of program beneficiaries in a quintile relative to the total
     number of beneficiaries in the population
   source_organization: ASPIRE
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_pr_allpr.bry_q1_tot:
   id: per_pr_allpr.bry_q1_tot

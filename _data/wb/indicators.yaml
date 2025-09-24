@@ -44058,15 +44058,6 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoCA
-  name: Cost of an energy sufficient diet
-  unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: CoCA_fexp
   name: 'Affordability of an energy sufficient diet: ratio of cost to food expenditures'
   unit: ''
@@ -44085,9 +44076,27 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
+- id: CoCA_LCU
+  name: Cost of an energy sufficient diet in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
 - id: CoCA_pov
   name: 'Affordability of an energy sufficient diet: ratio of cost to the food poverty
     line'
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoCA_PPP
+  name: Cost of an energy sufficient diet in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44104,8 +44113,8 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD
-  name: Cost of a healthy diet
+- id: CoHD_asf_LCU
+  name: Cost of animal source foods in local currency unit
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44113,8 +44122,8 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD_asf
-  name: Cost of animal-source foods
+- id: CoHD_asf_PPP
+  name: Cost of animal source foods in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44151,8 +44160,17 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD_f
-  name: Cost of fruits
+- id: CoHD_f_LCU
+  name: Cost of fruits in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_f_PPP
+  name: Cost of fruits in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44196,8 +44214,26 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD_lns
-  name: Cost of legumes, nuts and seeds
+- id: CoHD_LCU
+  name: Cost of a healthy diet in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_lns_LCU
+  name: Cost of legumes, nuts and seeds in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_lns_PPP
+  name: Cost of legumes, nuts and seeds in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44224,8 +44260,17 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD_of
-  name: Cost of oils and fats
+- id: CoHD_of_LCU
+  name: Cost of fats and oils in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_of_PPP
+  name: Cost of fats and oils in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44261,8 +44306,26 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD_ss
-  name: Cost of starchy staples
+- id: CoHD_PPP
+  name: Cost of a healthy diet in PPP dollars
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_ss_LCU
+  name: Cost of starchy staples in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_ss_PPP
+  name: Cost of starchy staples in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -44288,8 +44351,17 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoHD_v
-  name: Cost of vegetables
+- id: CoHD_v_LCU
+  name: Cost of vegetables in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_v_PPP
+  name: Cost of vegetables in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -45031,15 +45103,6 @@
   source_organization: Global Findex Database
   topics: ''
   topic_ids: ''
-- id: CoNA
-  name: Cost of a nutrient adequate diet
-  unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: CoNA_fexp
   name: 'Affordability of a nutrient adequate diet: ratio of cost to food expenditures'
   unit: ''
@@ -45058,9 +45121,27 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
+- id: CoNA_LCU
+  name: Cost of a nutrient adequate diet in local currency unit
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
 - id: CoNA_pov
   name: 'Affordability of a nutrient adequate diet: ratio of cost to the food poverty
     line'
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoNA_PPP
+  name: Cost of a nutrient adequate diet in PPP dollars
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
@@ -91531,15 +91612,6 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: EN.ROD.TRAF
-  name: Road traffic (vehicles per km)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: EN.RUR.DNST
   name: Rural population density (rural population per sq. km of arable land)
   unit: ''
@@ -91575,33 +91647,6 @@
   topic_ids: ''
 - id: EN.TDF.COMP.ZS
   name: Traditional fuel use (% of total energy use)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: EN.TRN.ACCT.VEH.ZS
-  name: Traffic accidents (injured or killed per 1,000 vehicles)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: EN.TRN.NVEH.1K
-  name: Vehicles (per 1,000 people)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: EN.TRN.NVEH.KM
-  name: Vehicles (per km of road)
   unit: ''
   source_id: '57'
   source: WDI Database Archives
@@ -140504,15 +140549,6 @@
     files, except where noted.
   topics: 'Infrastructure '
   topic_ids: '9'
-- id: IS.ROD.NORM.XD
-  name: Roads, normalized index (100 = expected total length)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: IS.ROD.PAVE.ZS
   name: Roads, paved (% of total roads)
   unit: ''
@@ -140573,15 +140609,6 @@
     files, except where noted.
   topics: 'Infrastructure '
   topic_ids: '9'
-- id: IS.ROD.TRAF
-  name: Road traffic (million vehicle-km)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: IS.RRS.DESL.ZS
   name: Diesel locomotives available (in service as % of total diesel locomotives)
   unit: ''
@@ -140724,15 +140751,6 @@
   source_organization: 'UN Conference on Trade and Development (UNCTAD), uri: http://unctad.org/en/Pages/statistics.aspx'
   topics: 'Infrastructure '
   topic_ids: '9'
-- id: IS.VEH.2CYL.P3
-  name: Two-wheelers (per 1,000 people)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: IS.VEH.NVEH.P3
   name: Motor vehicles (per 1,000 people)
   unit: ''
@@ -263183,33 +263201,6 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: SF.TRN.ROAD.GDS
-  name: Roads, goods transported (million ton-km)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: SF.TRN.ROAD.NORM
-  name: Roads, normalized index (100 = expected total length)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: SF.TRN.ROAD.PV.ZS
-  name: Roads, paved (%)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: SG.ABS.PENB
   name: There are periods of absence due to childcare accounted for in pension benefits
     (1=yes; 0=no)
@@ -279215,15 +279206,6 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: SL.ALL.SIZE.FE
-  name: Labor Force, Female (%)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: SL.EMP.1524.SP.FE.NE.ZS
   name: Employment to population ratio, ages 15-24, female (%) (national estimate)
   unit: ''
@@ -282212,15 +282194,6 @@
     , "A Gendered Assessment of Highly Skilled Emigration" (2009).
   topics: 'Education ;Financial Sector ;Health '
   topic_ids: 4;7;8
-- id: SM.MMR.DTHS
-  name: Number of maternal mortality deaths
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: SM.POP.ASYS.EA
   name: Asylum-seekers by country or territory of asylum
   unit: ''
@@ -283717,15 +283690,6 @@
     Division: Retrieved August 31, 2023.'
   topics: Gender
   topic_ids: '17'
-- id: SP.DYN.LIFE.MF
-  name: Life Expectancy at Birth(years)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: SP.DYN.SMAM.FE
   name: Age at first marriage, female
   unit: ''
@@ -293363,15 +293327,6 @@
     World Integrated Trade Solution system (WITS), World Bank (WB)'
   topics: Private Sector;Science & Technology ;Trade
   topic_ids: 12;14;21
-- id: TX.VAL.TECH.MANF.ZS
-  name: High-technology exports (% of manufactured exports)
-  unit: ''
-  source_id: '57'
-  source: WDI Database Archives
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: TX.VAL.TECH.MF.ZS
   name: High-technology exports (% of manufactured exports)
   unit: ''
@@ -322667,24 +322622,27 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.ROFST.H.1.URB.Q4.F
-  name: Out-of-school rate for children of primary school age, urban, fourth quintile,
-    female (household survey data) (%)
+- id: UIS.ROFST.H.2.F.WPIA
+  name: Out-of-school rate for adolescents of lower secondary school age, female,
+    adjusted wealth parity index (household survey data) (WPIA)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Proportion of children in the official age range for primary education
-    who are not enrolled in primary education. To calculate the indicator, the number
-    of students of the official age for primary education enrolled in primary education
-    is subtracted from the total population of primary education. The result is expressed
-    as a percentage of the population of the official age for primary education. For
-    more information, consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_note: 'The Adjusted Wealth Parity Index (WPIA) is calculated by dividing
+    the poorest quintile value for the indicator by the richest quintile value for
+    the indicator. If the resulting value exceeds 1, the ratio is inverted and subtracted
+    from 2. The adjusted wealth parity index is symmetrical around 1 and lies in the
+    range 0-2. An adjusted WPI equal to 1 indicates parity between the richest and
+    poorest quintiles. In general, a value less than 1 indicates disparity in favor
+    of the richest quintile and a value greater than 1 indicates disparity in favor
+    of the poorest quintile. For more information, consult the UNESCO Institute for
+    Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.ROFST.H.1.URB.Q4.GPIA
-  name: Out-of-school rate for children of primary school age, primary education,
-    urban, fourth quintile, adjusted gender parity index (household survey data) (GPIA)
+- id: UIS.ROFST.H.2.GPIA
+  name: Out-of-school rate for adolescents of lower secondary school age, adjusted
+    gender parity index (household survey data) (GPIA)
   unit: ''
   source_id: '12'
   source: Education Statistics
@@ -322699,48 +322657,58 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.ROFST.H.1.URB.Q4.M
-  name: Out-of-school rate for children of primary school age, urban, fourth quintile,
-    male (household survey data) (%)
+- id: UIS.ROFST.H.2.LPIA
+  name: Out-of-school rate for adolescents of lower secondary school age, adjusted
+    location parity index (household survey data) (LPIA)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Proportion of children in the official age range for primary education
-    who are not enrolled in primary education. To calculate the indicator, the number
-    of students of the official age for primary education enrolled in primary education
-    is subtracted from the total population of primary education. The result is expressed
-    as a percentage of the population of the official age for primary education. For
-    more information, consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
+    the rural value for the indicator by the urban value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    LPI equal to 1 indicates parity between rural and urban locations. In general,
+    a value less than 1 indicates disparity in favor of urban locations and a value
+    greater than 1 indicates disparity in favor of rural locations. For more information,
+    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.ROFST.H.1.URB.Q5
-  name: Out-of-school rate for children of primary school age, urban, richest quintile,
-    both sexes (household survey data) (%)
+- id: UIS.ROFST.H.2.M
+  name: Out-of-school rate for adolescents of lower secondary school age, male (household
+    survey data) (%)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Proportion of children in the official age range for primary education
-    who are not enrolled in primary education. To calculate the indicator, the number
-    of students of the official age for primary education enrolled in primary education
-    is subtracted from the total population of primary education. The result is expressed
-    as a percentage of the population of the official age for primary education. For
-    more information, consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_note: 'Number of children of official lower secondary school age who did
+    not attend primary or secondary school at any time during the reference academic
+    year, expressed as a percentage of the number of official lower secondary school
+    age children in the household survey sample. Children attending pre-primary or
+    non-formal education are considered out of school. The UNESCO Institute for Statistics
+    (UIS) releases estimates of out-of-school children calculated from both administrative
+    and household survey sources (Demographic and Health Surveys and Multiple Indicator
+    Cluster Surveys). Administrative records and household surveys are two data sources
+    which differ in fundamental ways: who collects the data, as well as how, when
+    and for what purpose. As a result, the out-of-school children estimates calculated
+    from one data source may not match those based on other data sources. For more
+    information, consult the UIS website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.ROFST.H.1.URB.Q5.F
-  name: Out-of-school rate for children of primary school age, urban, richest quintile,
-    female (household survey data) (%)
+- id: UIS.ROFST.H.2.M.LPIA
+  name: Out-of-school rate for adolescents of lower secondary school age, male, adjusted
+    location parity index (household survey data) (LPIA)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Proportion of children in the official age range for primary education
-    who are not enrolled in primary education. To calculate the indicator, the number
-    of students of the official age for primary education enrolled in primary education
-    is subtracted from the total population of primary education. The result is expressed
-    as a percentage of the population of the official age for primary education. For
-    more information, consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
+    the rural value for the indicator by the urban value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    LPI equal to 1 indicates parity between rural and urban locations. In general,
+    a value less than 1 indicates disparity in favor of urban locations and a value
+    greater than 1 indicates disparity in favor of rural locations. For more information,
+    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
