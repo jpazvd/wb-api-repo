@@ -42134,8 +42134,8 @@ CoCA_fexp:
 CoCA_headcount:
   id: CoCA_headcount
   name: Percent of the population who cannot afford sufficient calories
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42145,8 +42145,8 @@ CoCA_pov:
   id: CoCA_pov
   name: 'Affordability of an energy sufficient diet: ratio of cost to the food poverty
     line'
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42155,8 +42155,8 @@ CoCA_pov:
 CoCA_unafford_n:
   id: CoCA_unafford_n
   name: Millions of people who cannot afford sufficient calories
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42176,8 +42176,8 @@ CoHD_CoCA:
 CoHD_LCU:
   id: CoHD_LCU
   name: Cost of a healthy diet in local currency unit
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42186,8 +42186,8 @@ CoHD_LCU:
 CoHD_PPP:
   id: CoHD_PPP
   name: Cost of a healthy diet in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42206,8 +42206,8 @@ CoHD_asf_LCU:
 CoHD_asf_PPP:
   id: CoHD_asf_PPP
   name: Cost of animal source foods in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42227,8 +42227,8 @@ CoHD_asf_ss:
   id: CoHD_asf_ss
   name: Cost of animal-sourced foods relative to the starchy staples in a least-cost
     healthy diet
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42237,8 +42237,8 @@ CoHD_asf_ss:
 CoHD_f_LCU:
   id: CoHD_f_LCU
   name: Cost of fruits in local currency unit
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42257,8 +42257,8 @@ CoHD_f_PPP:
 CoHD_f_prop:
   id: CoHD_f_prop
   name: Cost share for fruits in a least-cost healthy diet
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42277,8 +42277,8 @@ CoHD_f_ss:
 CoHD_fexp:
   id: CoHD_fexp
   name: 'Affordability of a healthy diet: ratio of cost to food expenditures'
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42307,8 +42307,8 @@ CoHD_lns_LCU:
 CoHD_lns_PPP:
   id: CoHD_lns_PPP
   name: Cost of legumes, nuts and seeds in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42328,8 +42328,8 @@ CoHD_lns_ss:
   id: CoHD_lns_ss
   name: Cost of legumes, nuts and seeds relative to the starchy staples in a least-cost
     healthy diet
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42348,8 +42348,8 @@ CoHD_of_LCU:
 CoHD_of_PPP:
   id: CoHD_of_PPP
   name: Cost of fats and oils in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42369,8 +42369,8 @@ CoHD_of_ss:
   id: CoHD_of_ss
   name: Cost of oils and fats relative to the starchy staples in a least-cost healthy
     diet
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42399,8 +42399,8 @@ CoHD_ss_LCU:
 CoHD_ss_PPP:
   id: CoHD_ss_PPP
   name: Cost of starchy staples in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42419,8 +42419,8 @@ CoHD_ss_prop:
 CoHD_unafford_n:
   id: CoHD_unafford_n
   name: Millions of people who cannot afford a healthy diet
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42439,8 +42439,8 @@ CoHD_v_LCU:
 CoHD_v_PPP:
   id: CoHD_v_PPP
   name: Cost of vegetables in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42460,8 +42460,8 @@ CoHD_v_ss:
   id: CoHD_v_ss
   name: Cost of vegetables relative to the starchy staples in a least-cost healthy
     diet
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42470,8 +42470,8 @@ CoHD_v_ss:
 CoNA_LCU:
   id: CoNA_LCU
   name: Cost of a nutrient adequate diet in local currency unit
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -42480,8 +42480,8 @@ CoNA_LCU:
 CoNA_PPP:
   id: CoNA_PPP
   name: Cost of a nutrient adequate diet in PPP dollars
-  source: Food Prices for Nutrition
-  source_id: '88'
+  source: FPN Datahub Archive
+  source_id: '93'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -53418,8 +53418,10 @@ DT.AMT.DLCD.CD.CB.AR.03.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DT.AMT.DLCD.CD.CB.AR.0912.US:
   id: DT.AMT.DLCD.CD.CB.AR.0912.US
@@ -53893,10 +53895,8 @@ DT.AMT.DLTL.CD.GG.AR.0912.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.AMT.DLTL.CD.GG.AR.1218.US:
   id: DT.AMT.DLTL.CD.GG.AR.1218.US
@@ -65603,8 +65603,10 @@ DT.DOD.DSTC.CD.DR:
   source_id: '57'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 DT.DOD.DSTC.CD.FC.CB.EU.US:
   id: DT.DOD.DSTC.CD.FC.CB.EU.US
@@ -66062,10 +66064,8 @@ DT.DOD.DSTC.CD.MA.AR.NE.US:
   source_id: '22'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.DOD.DSTC.CD.MA.AR.OC.US:
   id: DT.DOD.DSTC.CD.MA.AR.OC.US
@@ -79856,10 +79856,8 @@ DT.NTR.BLAT.CB.CD:
     during the year; negative transfers show net transfers made by the borrower to
     the creditor during the year. Data are in current U.S. dollars.
   source_organization: World Bank, International Debt Statistics.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 DT.NTR.BLAT.CD:
   id: DT.NTR.BLAT.CD
@@ -92321,10 +92319,8 @@ EN.ROD.ACCT:
   source_id: '57'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 EN.RUR.DNST:
   id: EN.RUR.DNST
@@ -109609,8 +109605,10 @@ HH.DHS.OOST.DO:
     percent of the proportion of out-of-school children older than the age with the
     highest attendance rate.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 HH.DHS.OOST.DO.F:
   id: HH.DHS.OOST.DO.F
@@ -110292,10 +110290,8 @@ HH.DHS.SCR.M:
     The completion rate can exceed 100 percent if there are many overage students
     in the last grade of secondary school.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 HH.DHS.SCR.Q1:
   id: HH.DHS.SCR.Q1
@@ -120622,8 +120618,10 @@ IN.HLTH.HIVDEATH.EST:
     Department of AIDS Control, India
 
     http://data.gov.in/catalogs#sort_by=changed&sort_order=DESC&items_per_page=20&path=group_name/hiv-estimates-14175/ministry_department/ministry-health-and-fa'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 IN.HLTH.HIVINFECTION.EST:
   id: IN.HLTH.HIVINFECTION.EST
@@ -121198,10 +121196,8 @@ IN.POV.HH.ASSETS.LANDLINEPHONE.PCT:
   source_id: '41'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 IN.POV.HH.ASSETS.MOBILEPHONE.PCT:
   id: IN.POV.HH.ASSETS.MOBILEPHONE.PCT
@@ -132465,8 +132461,10 @@ JI.WAG.GNDR.OL:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.WAG.GNDR.RU:
   id: JI.WAG.GNDR.RU
@@ -132911,10 +132909,8 @@ JI.WAG.MONT.MD.LE.DF:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 JI.WAG.MONT.MD.MA.10:
   id: JI.WAG.MONT.MD.MA.10
@@ -149059,8 +149055,10 @@ LO.PISA.REA.P50:
     reports, but may not be comparable across years or countries. Consult the PISA
     website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PISA.REA.P75:
   id: LO.PISA.REA.P75
@@ -149797,10 +149795,8 @@ LO.SACMEQ.MAT.L1.MA:
     http://www.sacmeq.org/'
   source_organization: Southern and Eastern Africa Consortium for Monitoring Educational
     Quality (SACMEQ) Data Archive, www.sacmeq.org
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.SACMEQ.MAT.L2:
   id: LO.SACMEQ.MAT.L2
@@ -162850,8 +162846,10 @@ NY.GDY.TOTL.KN.87:
   source_id: '57'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NY.GEN.AEDU.GD.ZS:
   id: NY.GEN.AEDU.GD.ZS
@@ -163674,10 +163672,8 @@ NY.GNS.PRVT.CD:
     income REAL in private sector less private consumption expenditure. Data are in
     current U.S. dollars.  '
   source_organization: World Bank country economists.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NY.GNS.PRVT.CN:
   id: NY.GNS.PRVT.CN
@@ -173716,8 +173712,10 @@ PER.TER.PSTF:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.TER.PTR:
   id: PER.TER.PTR
@@ -174148,10 +174146,8 @@ PER.TT.PS.USD:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.TT.SEC.UNQUAL:
   id: PER.TT.SEC.UNQUAL
@@ -179581,8 +179577,10 @@ PRJ.ATT.ALL.4.MF:
     for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PRJ.ATT.ALL.NED.FE:
   id: PRJ.ATT.ALL.NED.FE
@@ -180327,10 +180325,8 @@ PRJ.MYS.80UP.MA:
     for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PRJ.MYS.80UP.MF:
   id: PRJ.MYS.80UP.MF
@@ -190806,8 +190802,10 @@ SE.CLO.15Y.LDSEV.R.PSD.2017.5:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDSEV.R.PSD.2017.A:
   id: SE.CLO.15Y.LDSEV.R.PSD.2017.A
@@ -191298,10 +191296,8 @@ SE.CLO.15Y.LDSEV.S.PS.2012.M:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDSEV.S.PS.2012.R:
   id: SE.CLO.15Y.LDSEV.S.PS.2012.R
@@ -201854,8 +201850,10 @@ SE.CLO.5.LDSEV.S.TMS.2019.M:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.5.LDSEV.S.TMS.2019.R:
   id: SE.CLO.5.LDSEV.S.TMS.2019.R
@@ -202319,10 +202317,8 @@ SE.CLO.5.PRF.R.PRL.2001.1:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.5.PRF.R.PRL.2001.2:
   id: SE.CLO.5.PRF.R.PRL.2001.2
@@ -212779,8 +212775,10 @@ SE.GEPD.PRIM:
   source_id: '12'
   source_note: ''
   source_organization: World Bank, Global Education Policy Dashboard
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.GEPD.PRIM.1:
   id: SE.GEPD.PRIM.1
@@ -213447,10 +213445,8 @@ SE.LPV.PRIM.OOS:
     on enrollment data. Our preferred definition is the adjusted net primary enrollment
     as reported by UIS.
   source_organization: Word Bank and UIS
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.LPV.PRIM.OOS.FE:
   id: SE.LPV.PRIM.OOS.FE
@@ -226192,8 +226188,10 @@ SG.RSX.SXOT.Q2.ZS:
     being the poorest 20 percent of households and quintile 5 being the richest 20
     percent of households.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SG.RSX.SXOT.Q3.ZS:
   id: SG.RSX.SXOT.Q3.ZS
@@ -226841,10 +226839,8 @@ SG.VAW.65PL.ME.ZS:
     intimate partner in the last 12 months.
   source_organization: The United Nations Inter-Agency Working Group on Violence Against
     Women Estimation and Data (VAW-IAWGED)  (WHO, UN Women, UNICEF, UNSD, UNFPA, UNODC)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SG.VAW.AFSX.ZS:
   id: SG.VAW.AFSX.ZS
@@ -256810,8 +256806,10 @@ TX.QTY.MANF.XD.WB:
   source_id: '11'
   source_note: 'Export volume index of manufactures with 1987=100.  '
   source_organization: World Bank  country economists.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 TX.QTY.MRCH.XD.WB:
   id: TX.QTY.MRCH.XD.WB
@@ -257419,10 +257417,8 @@ TX.VAL.MRCH.OR.CD:
     data.
   source_organization: World Bank staff estimates based data from International Monetary
     Fund's Direction of Trade database.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 TX.VAL.MRCH.OR.ZS:
   id: TX.VAL.MRCH.OR.ZS
@@ -276500,8 +276496,10 @@ UIS.NART.1.Q3:
     Statistics calculations based on national census data and household surveys. For
     more information, consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.NART.1.Q3.F:
   id: UIS.NART.1.Q3.F
@@ -277347,10 +277345,8 @@ UIS.NART.1.RUR.Q5:
     Statistics calculations based on national census data and household surveys. For
     more information, consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.NART.1.RUR.Q5.F:
   id: UIS.NART.1.RUR.Q5.F
@@ -314117,8 +314113,10 @@ con3a.11:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 con3a.12:
   id: con3a.12
@@ -314481,10 +314479,8 @@ con5a.2:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 con5a.3:
   id: con5a.3
@@ -322033,8 +322029,10 @@ fin14d.6:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin14d.7:
   id: fin14d.7
@@ -322469,10 +322467,8 @@ fin16_t_a_7:
   source_id: '33'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin17a:
   id: fin17a
@@ -333005,8 +333001,10 @@ fin31a.31b.7:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin31a.31b.8:
   id: fin31a.31b.8
@@ -333456,10 +333454,8 @@ fin32.10:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin32.11:
   id: fin32.11
@@ -343447,10 +343443,8 @@ fplm_al_alot_dfcl_rur:
   source_id: '92'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fplm_al_alot_dfcl_urb:
   id: fplm_al_alot_dfcl_urb
@@ -361964,8 +361958,10 @@ per_pr_allpr.cov_ep_preT_tot:
   source_note: Percentage of population participating in Private Transfers programs
     (includes direct and indirect beneficiaries)
   source_organization: ASPIRE
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_pr_allpr.cov_ep_tot:
   id: per_pr_allpr.cov_ep_tot
@@ -374302,8 +374298,10 @@ per_sa_fw.avt_pop_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_sa_fw.avt_pop_urb:
   id: per_sa_fw.avt_pop_urb
@@ -374764,10 +374762,8 @@ per_sa_fw.ben_ep_preT_tot:
   source_note: Percentage of benefits going to the extreme poor (those below $125
     a day)  relative to the total benefits going to the population
   source_organization: ASPIRE
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_sa_fw.ben_ep_tot:
   id: per_sa_fw.ben_ep_tot
@@ -386245,8 +386241,10 @@ per_sa_sp.bry_pop_totm:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_sa_sp.bry_pop_totmr:
   id: per_sa_sp.bry_pop_totmr
