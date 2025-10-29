@@ -32669,6 +32669,45 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
+- id: birth_reg
+  name: Children under age 5 whose births are registered, total (%)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: Percentage of children under age 5 who were registered at the moment
+    of the survey. The numerator of this indicator includes children reported to have
+    a birth certificate, regardless of whether or not it was seen by the interviewer,
+    and those without a birth certificate whose mother or caregiver says the birth
+    has been registered, total.
+  source_organization: UNICEF. https://data.unicef.org/topic/child-protection/birth-registration/
+  topics: ''
+  topic_ids: ''
+- id: birth_reg_1
+  name: Children under age 5 whose births are registered, female (%)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: Percentage of children under age 5 who were registered at the moment
+    of the survey. The numerator of this indicator includes children reported to have
+    a birth certificate, regardless of whether or not it was seen by the interviewer,
+    and those without a birth certificate whose mother or caregiver says the birth
+    has been registered, women.
+  source_organization: UNICEF. https://data.unicef.org/topic/child-protection/birth-registration/
+  topics: ''
+  topic_ids: ''
+- id: birth_reg_2
+  name: Children under age 5 whose births are registered, male (%)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: Percentage of children under age 5 who were registered at the moment
+    of the survey. The numerator of this indicator includes children reported to have
+    a birth certificate, regardless of whether or not it was seen by the interviewer,
+    and those without a birth certificate whose mother or caregiver says the birth
+    has been registered, men.
+  source_organization: UNICEF. https://data.unicef.org/topic/child-protection/birth-registration/
+  topics: ''
+  topic_ids: ''
 - id: BM.AG.AGR.TRAC.CD
   name: Agricultural tractors, exports (FAO, current US$)
   unit: ''
@@ -44026,8 +44065,8 @@
 - id: CoCA_headcount
   name: Percent of the population who cannot afford sufficient calories
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44035,17 +44074,8 @@
 - id: CoCA_headcount
   name: Percent of the population who cannot afford sufficient calories
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: CoCA_LCU
-  name: Cost of an energy sufficient diet in local currency unit
-  unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44059,12 +44089,11 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoCA_pov
-  name: 'Affordability of an energy sufficient diet: ratio of cost to the food poverty
-    line'
+- id: CoCA_LCU
+  name: Cost of an energy sufficient diet in local currency unit
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44079,11 +44108,12 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoCA_PPP
-  name: Cost of an energy sufficient diet in PPP dollars
+- id: CoCA_pov
+  name: 'Affordability of an energy sufficient diet: ratio of cost to the food poverty
+    line'
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44093,6 +44123,24 @@
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoCA_PPP
+  name: Cost of an energy sufficient diet in PPP dollars
+  unit: ''
+  source_id: '93'
+  source: FPN Datahub Archive
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoCA_unafford_n
+  name: Millions of people who cannot afford sufficient calories
+  unit: ''
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44106,29 +44154,20 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
-- id: CoCA_unafford_n
-  name: Millions of people who cannot afford sufficient calories
-  unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: CoHD_asf_LCU
-  name: Cost of animal source foods in local currency unit
-  unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
 - id: CoHD_asf_LCU
   name: Cost of animal source foods in local currency unit
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_asf_LCU
+  name: Cost of animal source foods in local currency unit
+  unit: ''
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44173,8 +44212,8 @@
   name: Cost of animal-sourced foods relative to the starchy staples in a least-cost
     healthy diet
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44183,8 +44222,8 @@
   name: Cost of animal-sourced foods relative to the starchy staples in a least-cost
     healthy diet
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44230,8 +44269,8 @@
 - id: CoHD_f_PPP
   name: Cost of fruits in PPP dollars
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44239,17 +44278,8 @@
 - id: CoHD_f_PPP
   name: Cost of fruits in PPP dollars
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: CoHD_f_prop
-  name: Cost share for fruits in a least-cost healthy diet
-  unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44259,6 +44289,15 @@
   unit: ''
   source_id: '93'
   source: FPN Datahub Archive
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_f_prop
+  name: Cost share for fruits in a least-cost healthy diet
+  unit: ''
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44284,8 +44323,8 @@
 - id: CoHD_fexp
   name: 'Affordability of a healthy diet: ratio of cost to food expenditures'
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44293,8 +44332,8 @@
 - id: CoHD_fexp
   name: 'Affordability of a healthy diet: ratio of cost to food expenditures'
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44338,8 +44377,8 @@
 - id: CoHD_lns_LCU
   name: Cost of legumes, nuts and seeds in local currency unit
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44347,8 +44386,8 @@
 - id: CoHD_lns_LCU
   name: Cost of legumes, nuts and seeds in local currency unit
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44393,8 +44432,8 @@
   name: Cost of legumes, nuts and seeds relative to the starchy staples in a least-cost
     healthy diet
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44403,17 +44442,8 @@
   name: Cost of legumes, nuts and seeds relative to the starchy staples in a least-cost
     healthy diet
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: CoHD_of_LCU
-  name: Cost of fats and oils in local currency unit
-  unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44423,6 +44453,15 @@
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_of_LCU
+  name: Cost of fats and oils in local currency unit
+  unit: ''
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44467,8 +44506,8 @@
   name: Cost of oils and fats relative to the starchy staples in a least-cost healthy
     diet
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44477,8 +44516,8 @@
   name: Cost of oils and fats relative to the starchy staples in a least-cost healthy
     diet
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44522,8 +44561,8 @@
 - id: CoHD_ss_LCU
   name: Cost of starchy staples in local currency unit
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44531,8 +44570,8 @@
 - id: CoHD_ss_LCU
   name: Cost of starchy staples in local currency unit
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44576,8 +44615,8 @@
 - id: CoHD_unafford_n
   name: Millions of people who cannot afford a healthy diet
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44585,17 +44624,8 @@
 - id: CoHD_unafford_n
   name: Millions of people who cannot afford a healthy diet
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: CoHD_v_LCU
-  name: Cost of vegetables in local currency unit
-  unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44605,6 +44635,15 @@
   unit: ''
   source_id: '88'
   source: Food Prices for Nutrition
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: CoHD_v_LCU
+  name: Cost of vegetables in local currency unit
+  unit: ''
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44649,8 +44688,8 @@
   name: Cost of vegetables relative to the starchy staples in a least-cost healthy
     diet
   unit: ''
-  source_id: '88'
-  source: Food Prices for Nutrition
+  source_id: '93'
+  source: FPN Datahub Archive
   source_note: ''
   source_organization: ''
   topics: ''
@@ -44659,8 +44698,8 @@
   name: Cost of vegetables relative to the starchy staples in a least-cost healthy
     diet
   unit: ''
-  source_id: '93'
-  source: FPN Datahub Archive
+  source_id: '88'
+  source: Food Prices for Nutrition
   source_note: ''
   source_organization: ''
   topics: ''
@@ -55028,6 +55067,83 @@
   source: WDI Database Archives
   source_note: ''
   source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: diff_elections_s
+  name: 'Challenge: Participating in elections, total (% of population ages 15+ without
+    an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    limitation that they experience because they lack an ID is the inability to participate
+    in elections. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: diff_finance_s
+  name: 'Challenge: Using financial services, total (% of population ages 15+ without
+    an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    limitation that they experience because they lack an ID is the inability to open
+    a bank account. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: diff_gov_s
+  name: 'Challenge: Receiving financial support, total (% of population ages 15+ without
+    an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    limitation that they experience because they lack an ID is the inability to receive
+    financial support from the government. If the minimum age for obtaining an ID
+    is above 15, observations below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: diff_job_s
+  name: 'Challenge: Applying for a job, total (% of population ages 15+ without an
+    ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    limitation that they experience because they lack an ID is the inability apply
+    for a job. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: diff_med_s
+  name: 'Challenge: Receiving medical care, total (% of population ages 15+ without
+    an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    limitation that they experience because they lack an ID is the inability to use
+    financial services. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: diff_sim_s
+  name: 'Challenge: Obtaining a SIM card (% of population ages 15+ without an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    limitation that they experience because they lack an ID is the inability to obtain
+    a SIM card. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
 - id: dig.acc
@@ -135691,6 +135807,154 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
+- id: has_eid
+  name: Have online digital ID, total (% of population ages 15+)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_1
+  name: Have online digital ID, female  (% of female population ages 15+)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample women.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_10
+  name: Have online digital ID, urban  (% of urban population ages 15+)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample urban.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_11
+  name: Have online digital ID, out of the workforce (% of population ages 15+ out
+    of the workforce)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample out of workforce.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_12
+  name: Have online digital ID, in the workforce (% of population ages 15+ in the
+    workforce)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample in workforce.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_2
+  name: Have online digital ID, male (% of male population ages 15+)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample men.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_3
+  name: Have online digital ID, ages 15-24 (% of population ages 15-24)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample below 25 years of age.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_4
+  name: Have online digital ID, ages 25+ (% population ages 25+)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample 25 years of age and above.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_5
+  name: Have online digital ID, primary (% of population ages 15+ with primary education)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample primary education or less.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_6
+  name: Have online digital ID, secondary (% of population ages 15+ with secondary
+    education)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample secondary education or more.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_7
+  name: Have online digital ID, poorest 40% (% of population ages 15+ in  the poorest
+    40%)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample lower 40% income category.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_8
+  name: Have online digital ID, richest 60% (% of population ages 15+ in the richest
+    60%)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample upper 60% income category.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: has_eid_9
+  name: Have online digital ID, rural (% of rural population ages 15+)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID. If the minimum age for obtaining an ID is above 15, observations below the
+    minimum age are excluded, sub-sample rural.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
 - id: HD.HCI.AMRT
   name: Survival Rate from Age 15-60
   unit: ''
@@ -150469,8 +150733,13 @@
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: ''
-  source_organization: ''
+  source_note: Identities and/or identity information (e.g., name, date of birth,
+    etc.) can be verified or authenticated using digital—rather than manual—means
+    in the context of in-person transactions.
+  source_organization: (i) Data provided by ID authorities in response to questionnaires,
+    as part of the ID4D Global Dataset data collection; and (ii) Desk research relying
+    on official sources, such as government websites, press releases, reports from
+    UN agencies, and other development partners. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
 - id: ID.DIG.AUTH.RM
@@ -150478,8 +150747,12 @@
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: ''
-  source_organization: ''
+  source_note: Identities or identity information, such as name or date of birth,
+    can be verified or authenticated using digital rather than manual methods in in-person
+    transactions. “1=yes” means a country has an online digital identity system or
+    credential, which may be part of or separate from the foundational ID system.
+    “0=no” means a country does not have an online digital identity system or credential.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.DIG.RECS
@@ -150487,19 +150760,24 @@
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: ''
-  source_organization: ''
+  source_note: Records are stored in a digital format, rather than in paper records
+    or ledgers.
+  source_organization: (i) Data provided by ID authorities in response to questionnaires,
+    as part of the ID4D Global Dataset data collection; and (ii) Desk research relying
+    on official sources, such as government websites, press releases, reports from
+    UN agencies, and other development partners. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
 - id: ID.OWN.25UP.ZS
-  name: ID ownership, 25 and older (%)
+  name: ID ownership, ages 25+ (% of population ages 25+)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential), age 25 or older. If the minimum age for
-    obtaining an ID is above 15, observations below the minimum age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample 25 years of age and above.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.BRTH.ZS
@@ -150515,132 +150793,306 @@
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.40.ZS
-  name: ID ownership, poorest 40% (% age 15+)
+  name: ID ownership, poorest 40% (% of population ages 15+ in the poorest 40%)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents age 15 and above among the poorest 40
-    percent of households who report owning a primary foundational ID (national ID
-    or similar credential). If the minimum age for obtaining an ID is above 15, observations
-    below the minimum age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample lower 40% income group.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.60.ZS
-  name: ID ownership, richest 60% (% age 15+)
+  name: ID ownership, richest 60% (% of population ages 15+ in the richest 60%)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents age 15 and above among the richest 60
-    percent of households who report owning a primary foundational ID (national ID
-    or similar credential). If the minimum age for obtaining an ID is above 15, observations
-    below the minimum age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample upper 60% income group.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.FE.ZS
-  name: ID ownership, female (% age 15+)
+  name: ID ownership, female (% of female population ages 15+)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of female respondents age 15 and above who report owning
+  source_note: The percentage of adult respondents age 15 and above who report owning
     a primary foundational ID (national ID or similar credential). If the minimum
-    age for obtaining an ID is above 15, observations below the minimum age are excluded.
-  source_organization: Global Findex Database
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample women.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.MA.ZS
-  name: ID ownership, male (% age 15+)
+  name: ID ownership, male (% of male population ages 15+)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of male respondents age 15 and above who report owning
+  source_note: The percentage of adult respondents age 15 and above who report owning
     a primary foundational ID (national ID or similar credential). If the minimum
-    age for obtaining an ID is above 15, observations below the minimum age are excluded.
-  source_organization: Global Findex Database
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample men.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.OW.ZS
-  name: ID ownership, out of the workforce (% age 15+)
+  name: ID ownership, out of the workforce (% of population ages 15+ out of the workforce)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential) among those who are out of the workforce.
-    If the minimum age for obtaining an ID is above 15, observations below the minimum
-    age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample out of workforce.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.PR.ZS
-  name: ID ownership, primary education or less (% age 15+)
+  name: ID ownership, primary education or less (% of population ages 15+ with primary
+    education or less)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential) among those with a primary education or
-    less. If the minimum age for obtaining an ID is above 15, observations below the
-    minimum age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample primary education or less.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.RU.ZS
-  name: ID ownership, rural (% age 15+)
+  name: ID ownership, rural (% of rural population ages 15+)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential) among those residing in rural areas. If
-    the minimum age for obtaining an ID is above 15, observations below the minimum
-    age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample rural.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.SE.ZS
-  name: ID ownership, secondary education or more (% age 15+)
+  name: ID ownership, secondary education or more (% of population ages 15+ with secondary
+    education or more)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential) among those with a secondary education
-    or more. If the minimum age for obtaining an ID is above 15, observations below
-    the minimum age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample secondary education or more.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.UR.ZS
-  name: ID ownership, urban (% age 15+)
+  name: ID ownership, urban (% of urban population ages 15+)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential) among those residing in urban areas. If
-    the minimum age for obtaining an ID is above 15, observations below the minimum
-    age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample urban.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.WF.ZS
-  name: ID ownership, in the workforce (% age 15+)
+  name: ID ownership, in the workforce (% of population ages 15+ in the workforce)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents who report owning a primary foundational
-    ID (national ID or similar credential) among those who are in the workforce. If
-    the minimum age for obtaining an ID is above 15, observations below the minimum
-    age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample in workforce.
+  source_organization: Global Findex ID4D Database.
   topics: ''
   topic_ids: ''
 - id: ID.OWN.TOTL.ZS
-  name: ID ownership (% age 15+)
+  name: ID ownership, total (% of population ages 15+)
   unit: ''
   source_id: '89'
   source: Identification for Development (ID4D) Data
-  source_note: The percentage of respondents age 15 and above who report owning a
-    primary foundational ID (national ID or similar credential). If the minimum age
-    for obtaining an ID is above 15, observations below the minimum age are excluded.
-  source_organization: Global Findex Database
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    total sample.
+  source_organization: Global Findex ID4D Database.
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s
+  name: Foundational ID has been used without permission for illegal purposes, total
+    (% of population ages 15+ with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_1
+  name: Foundational ID has been used without permission for illegal purposes, female
+    (% of female population ages 15+ with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample women.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_10
+  name: Foundational ID has been used without permission for illegal purposes, urban
+    (% of urban population ages 15+ with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample  urban.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_11
+  name: Foundational ID has been used without permission for illegal purposes, out
+    of the workforce (% of population ages 15+ out of the workforce with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample out of workforce.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_12
+  name: Foundational ID has been used without permission for illegal purposes, in
+    the workforce (% of population ages 15+ in the workforce with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample in workforce.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_2
+  name: Foundational ID has been used without permission for illegal purposes, male
+    (% of male population ages 15+ with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample men.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_3
+  name: Foundational ID has been used without permission for illegal purposes, ages
+    15-24 (% of population ages 15-24 with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample below 25 years of age.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_4
+  name: Foundational ID has been used without permission for illegal purposes, ages
+    25+ (% of population ages 25+ with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample 25 years of age and above.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_5
+  name: Foundational ID has been used without permission for illegal purposes, primary
+    (% of population ages 15+ with primary education and an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample primary education or less.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_6
+  name: Foundational ID has been used without permission for illegal purposes, secondary
+    (% of population ages 15+ with secondary education and an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample  secondary education or more.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_7
+  name: Foundational ID has been used without permission for illegal purposes, poorest
+    40% (% of population ages 15+ in the poorest 40% with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample lower 40% income group.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_8
+  name: Foundational ID has been used without permission for illegal purposes, richest
+    60% (% of population ages 15+ in the richest 60% with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample upper 60% income group.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: id_misuse_s_9
+  name: Foundational ID has been used without permission for illegal purposes, rural
+    (% of rural population ages 15+ with an ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who own a foundational ID and who
+    reported that their foundational ID has been used without their permission for
+    illegal purposes. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, sub-sample rural.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
 - id: IDX.HDI
@@ -188548,6 +189000,82 @@
   source: Disability Data Hub (DDH)
   source_note: ''
   source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: noid_expensive_s
+  name: 'Reason no ID: Too expensive, total (% of population ages 15+ without an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    of the reasons they do not own an ID is because getting an ID is too expensive.
+    If the minimum age for obtaining an ID is above 15, observations below the minimum
+    age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: noid_far_s
+  name: 'Reason no ID: Travel too far, total (% of population ages 15+ without an
+    ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    of the reasons they do not own an ID is because they have to travel too far to
+    a registration center to get an ID. If the minimum age for obtaining an ID is
+    above 15, observations below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: noid_nodocs_s
+  name: 'Reason no ID: No documalets, total (% of population ages 15+ without an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    of the reasons they do not own an ID is because they lack necessary documents.
+    If the minimum age for obtaining an ID is above 15, observations below the minimum
+    age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: noid_noneed_s
+  name: 'Reason no ID: Do not need an ID, total (% of population ages 15+ without
+    an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    of the reasons they do not own an ID is because they do not need one. If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: noid_other_s
+  name: 'Reason no ID: Have another ID, total (% of population ages 15+ without an
+    ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    of the reasons they do not own an ID is becasue they own another ID. If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: noid_uncomfortable_s
+  name: 'Reason no ID: Uncomfortable sharing info, total (% of population ages 15+
+    without an ID)'
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents without an ID who report that one
+    of the reasons they do not own an ID is because they feel uncomfortable sharing
+    their information. If the minimum age for obtaining an ID is above 15, observations
+    below the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
 - id: NP.AGR.TOTL.CN
@@ -351056,6 +351584,199 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
+- id: UIS.T.5
+  name: Teachers in tertiary education ISCED 5 programmes, both sexes (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Total number of teachers in public and private short-cycle tertiary
+    education institutions (ISCED 5). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.T.5.F
+  name: Teachers in tertiary education ISCED 5 programmes, female (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Total number of female teachers in public and private short-cycle tertiary
+    education institutions (ISCED 5). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.T.5.M
+  name: Teachers in tertiary education ISCED 5 programmes, male (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Total number of male teachers in public and private short-cycle tertiary
+    education institutions (ISCED 5). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions. For more information, consult the UNESCO Institute
+    of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.T.58.M
+  name: Teachers in tertiary education programmes, male (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Total number of male teachers in public and private tertiary education
+    institutions (ISCED 5-8). Teachers are persons employed full time or part time
+    in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions. For more information, consult the UNESCO Institute
+    of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.02
+  name: Teacher attrition rate from pre-primary education, both sexes (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Percentage of teachers at a given level of education leaving the profession
+    in a given school year. The number of leavers is estimated by subtracting the
+    number of teachers in year t from those in year t-1 and adding the number of new
+    entrants to the teaching workforce in year t. The attrition rate is the number
+    of leavers expressed as a percentage of the total number of teachers in year t-1.
+    A high value indicates high levels of teacher turnover which can be disruptive
+    for the learning of students. Assessing and monitoring teacher attrition is essential
+    to ensuring a sufficient supply of qualified and well-trained teachers as well
+    as to their effective deployment, support and management. Where teachers teach
+    for 30-40 years, the attrition rate will be well below 5%. Attrition rates above
+    10% indicate that the average teaching career lasts only 10 years. For more information,
+    consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.02.F
+  name: Teacher attrition rate from pre-primary education, female (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Percentage of teachers at a given level of education leaving the profession
+    in a given school year. The number of leavers is estimated by subtracting the
+    number of teachers in year t from those in year t-1 and adding the number of new
+    entrants to the teaching workforce in year t. The attrition rate is the number
+    of leavers expressed as a percentage of the total number of teachers in year t-1.
+    A high value indicates high levels of teacher turnover which can be disruptive
+    for the learning of students. Assessing and monitoring teacher attrition is essential
+    to ensuring a sufficient supply of qualified and well-trained teachers as well
+    as to their effective deployment, support and management. Where teachers teach
+    for 30-40 years, the attrition rate will be well below 5%. Attrition rates above
+    10% indicate that the average teaching career lasts only 10 years. For more information,
+    consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.02.GPIA
+  name: Teacher attrition rate from pre-primary education, adjusted gender parity
+    index (GPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
+    the female value for the indicator by the male value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    GPI equal to 1 indicates parity between females and males. In general, a value
+    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
+    disparity in favor of females. For more information, consult the UNESCO Institute
+    for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.02.M
+  name: Teacher attrition rate from pre-primary education, male (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Percentage of teachers at a given level of education leaving the profession
+    in a given school year. The number of leavers is estimated by subtracting the
+    number of teachers in year t from those in year t-1 and adding the number of new
+    entrants to the teaching workforce in year t. The attrition rate is the number
+    of leavers expressed as a percentage of the total number of teachers in year t-1.
+    A high value indicates high levels of teacher turnover which can be disruptive
+    for the learning of students. Assessing and monitoring teacher attrition is essential
+    to ensuring a sufficient supply of qualified and well-trained teachers as well
+    as to their effective deployment, support and management. Where teachers teach
+    for 30-40 years, the attrition rate will be well below 5%. Attrition rates above
+    10% indicate that the average teaching career lasts only 10 years. For more information,
+    consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.1.F
+  name: Teacher attrition rate from primary education, female (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Number of female teachers who left the primary education system in
+    year t+1, expressed as a percentage of female teachers in service in primary education
+    system in year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.1.GPIA
+  name: Teacher attrition rate from primary education, adjusted gender parity index
+    (GPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
+    the female value for the indicator by the male value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    GPI equal to 1 indicates parity between females and males. In general, a value
+    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
+    disparity in favor of females. For more information, consult the UNESCO Institute
+    for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.1.M
+  name: Teacher attrition rate from primary education, male (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Number of male teachers who left the primary education system in year
+    t+1, expressed as a percentage of male teachers in service in primary education
+    system in year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.TATTRR.1.T
+  name: Teacher attrition rate from primary education, both sexes (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Number of teachers who left the primary education system in year t+1,
+    expressed as a percentage of teachers in service in primary education system in
+    year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
 - id: UIS.TATTRR.2.F
   name: Teacher attrition rate from lower secondary education, female (%)
   unit: ''
@@ -351469,182 +352190,6 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.TRTP.02.GPIA
-  name: Proportion of teachers with the minimum required qualifications in pre-primary
-    education, adjusted gender parity index (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TRTP.02.M
-  name: Proportion of teachers with the minimum required qualifications in pre-primary
-    education, male (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of male teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the pre-primary
-    level in the given country, expressed as a percentage of the total number of male
-    teachers at the pre-primary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TRTP.1.GPIA
-  name: Proportion of teachers with the minimum required qualifications in primary
-    education, adjusted gender parity index (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TRTP.2
-  name: Proportion of teachers with the minimum required qualifications in lower secondary
-    education, both sexes (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the lower secondary
-    level in the given country, expressed as a percentage of the total number of teachers
-    at the lower secondary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.TRTP.2.F
-  name: Proportion of teachers with the minimum required qualifications in lower secondary
-    education, female (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of female teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the lower secondary
-    level in the given country, expressed as a percentage of the total number of female
-    teachers at the lower secondary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.TRTP.2.GPIA
-  name: Proportion of teachers with the minimum required qualifications in lower secondary
-    education, adjusted gender parity index (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TRTP.2.M
-  name: Proportion of teachers with the minimum required qualifications in lower secondary
-    education, male (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of male teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the lower secondary
-    level in the given country, expressed as a percentage of the total number of male
-    teachers at the lower secondary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.TRTP.2T3.GPIA
-  name: Proportion of teachers with the minimum required qualifications in secondary
-    education, adjusted gender parity index (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TRTP.3
-  name: Proportion of teachers with the minimum required qualifications in upper secondary
-    education, both sexes (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the upper secondary
-    level in the given country, expressed as a percentage of the total number of teachers
-    at the upper secondary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.TRTP.3.F
-  name: Proportion of teachers with the minimum required qualifications in upper secondary
-    education, female (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of female teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the upper secondary
-    level in the given country, expressed as a percentage of the total number of female
-    teachers at the upper secondary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.TRTP.3.GPIA
-  name: Proportion of teachers with the minimum required qualifications in upper secondary
-    education, adjusted gender parity index (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TRTP.3.M
-  name: Proportion of teachers with the minimum required qualifications in upper secondary
-    education, male (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Number of male teachers who have received the minimum organized teacher
-    training (pre-service or in-service) required for teaching at the upper secondary
-    level in the given country, expressed as a percentage of the total number of male
-    teachers at the upper secondary level.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
 - id: UIS.TRTP.02.GPIA
   name: Proportion of teachers with the minimum required qualifications in pre-primary
     education, adjusted gender parity index (GPIA)
@@ -355045,6 +355590,181 @@
     relatively high degrees of directiveness. The Polity data producers prefer to
     leave open for empirical investigation the question of how Autocracy, Democracy,
     and directiveness (performance) have covaried over time. '
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    total (% of population ages 15+ who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, total sample.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_1
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    female (% of female population ages 15+ who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample women.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_10
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    urban (% of urban population ages 15+ who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample urban.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_11
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    out of the workforce (% of population ages 15+ out of the workforce who own an
+    online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample out of workforce.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_12
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    in the workforce (% of population ages 15+ in the workforce who own an online
+    digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample in workforce.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_2
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    male (% of male population ages 15+ who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample men.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_3
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    ages 15-24 (% of population ages 15-24 who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample below 25 years of age.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_4
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    ages 25+ (% of population ages 25+ who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample 25 years of age and above.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_5
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    primary (% of population ages 15+ with primary education who own an online digital
+    ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample primary education or less.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_6
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    secondary (% of population ages 15+ with secondary education who own an online
+    digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample secondary education or more.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_7
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    poorest 40% (% of population ages 15+ in the poorest 40% who own an online digital
+    ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample lower 40% income group.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_8
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    richest 60% (% of population ages 15+ in the richest 60% who own an online digital
+    ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample upper 60% income group.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
+  topics: ''
+  topic_ids: ''
+- id: used_eid_s_9
+  name: Online digital ID has been used on phone or computer to confirm identity online,
+    rural (% of rural population ages 15+ who own an online digital ID)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents who report owning an online digital
+    ID and also report having used their online digital ID to confirm their identity
+    online. If the minimum age for obtaining an ID is above 15, observations below
+    the minimum age are excluded, sub-sample rural.
+  source_organization: Global Findex ID4D Database. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
 - id: v_F_nsk
