@@ -119023,6 +119023,19 @@ ID.DIG.RECS:
   topic_ids: []
   topics: []
   unit: ''
+ID.OWN.1524.ZS:
+  id: ID.OWN.1524.ZS
+  name: ID ownership, ages 15-24 (% of population ages 15-24)
+  source: Identification for Development (ID4D) Data
+  source_id: '89'
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample below 25 years of age.
+  source_organization: Global Findex ID4D Database
+  topic_ids: []
+  topics: []
+  unit: ''
 ID.OWN.25UP.ZS:
   id: ID.OWN.25UP.ZS
   name: ID ownership, ages 25+ (% of population ages 25+)
@@ -120215,8 +120228,10 @@ IN.ENV.COASTALZONE.SHORELAND.PCT:
   source_id: '41'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 IN.ENV.COASTALZONE.WASTELAND.AREA:
   id: IN.ENV.COASTALZONE.WASTELAND.AREA
@@ -120225,10 +120240,8 @@ IN.ENV.COASTALZONE.WASTELAND.AREA:
   source_id: '41'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 IN.ENV.COASTALZONE.WASTELAND.PCT:
   id: IN.ENV.COASTALZONE.WASTELAND.PCT
@@ -132109,8 +132122,10 @@ JI.TLF.ACTI.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.TLF.TOTL:
   id: JI.TLF.TOTL
@@ -132119,10 +132134,8 @@ JI.TLF.TOTL:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 JI.TLF.TOTL.FE:
   id: JI.TLF.TOTL.FE
@@ -148210,8 +148223,10 @@ LO.PISA.MAT.P90:
     reports, but may not be comparable across years or countries. Consult the PISA
     website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PISA.MAT.P95:
   id: LO.PISA.MAT.P95
@@ -148223,10 +148238,8 @@ LO.PISA.MAT.P95:
     reports, but may not be comparable across years or countries. Consult the PISA
     website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.PISA.REA:
   id: LO.PISA.REA
@@ -162080,8 +162093,10 @@ NY.GDP.MKTP.CN.XD:
   source_note: 'The GDP implicit deflator is the ratio of GDP in current local currency
     to GDP in constant local currency.  '
   source_organization: World Bank country economists.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NY.GDP.MKTP.IN:
   id: NY.GDP.MKTP.IN
@@ -162090,10 +162105,8 @@ NY.GDP.MKTP.IN:
   source_id: '57'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NY.GDP.MKTP.KD:
   id: NY.GDP.MKTP.KD
@@ -173284,8 +173297,10 @@ PER.SR.SAL.USD:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SR.SOR.GOV:
   id: PER.SR.SOR.GOV
@@ -173295,10 +173310,8 @@ PER.SR.SOR.GOV:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.SR.TCH.HRS:
   id: PER.SR.TCH.HRS
@@ -178798,8 +178811,10 @@ PRJ.ATT.60UP.2.MF:
     the Wittgenstein Centre for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PRJ.ATT.60UP.3.FE:
   id: PRJ.ATT.60UP.3.FE
@@ -178817,10 +178832,8 @@ PRJ.ATT.60UP.3.FE:
     the Wittgenstein Centre for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PRJ.ATT.60UP.3.MA:
   id: PRJ.ATT.60UP.3.MA
@@ -190359,8 +190372,10 @@ SE.CLO.15Y.LDSEV.R.PS.2009.3:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDSEV.R.PS.2009.4:
   id: SE.CLO.15Y.LDSEV.R.PS.2009.4
@@ -190370,10 +190385,8 @@ SE.CLO.15Y.LDSEV.R.PS.2009.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDSEV.R.PS.2009.5:
   id: SE.CLO.15Y.LDSEV.R.PS.2009.5
@@ -201407,8 +201420,10 @@ SE.CLO.5.LDSEV.R.PRL.2016.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.5.LDSEV.R.PRL.2016.5:
   id: SE.CLO.5.LDSEV.R.PRL.2016.5
@@ -201418,10 +201433,8 @@ SE.CLO.5.LDSEV.R.PRL.2016.5:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.5.LDSEV.R.PRL.2016.A:
   id: SE.CLO.5.LDSEV.R.PRL.2016.A
@@ -212286,8 +212299,10 @@ SE.CLO.9.PRF.S.TMS.2007.F:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.9.PRF.S.TMS.2007.M:
   id: SE.CLO.9.PRF.S.TMS.2007.M
@@ -212297,10 +212312,8 @@ SE.CLO.9.PRF.S.TMS.2007.M:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.9.PRF.S.TMS.2007.R:
   id: SE.CLO.9.PRF.S.TMS.2007.R
@@ -225573,8 +225586,10 @@ SG.OWN.LDJT.FE.ZS:
     jointly" implies the woman doesn’t own a land on her own, but instead jointly
     owns one with someone else.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SG.OWN.LDJT.MA.Q1.ZS:
   id: SG.OWN.LDJT.MA.Q1.ZS
@@ -225589,10 +225604,8 @@ SG.OWN.LDJT.MA.Q1.ZS:
     being the poorest 20 percent of households and quintile 5 being the richest 20
     percent of households.'
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SG.OWN.LDJT.MA.Q2.ZS:
   id: SG.OWN.LDJT.MA.Q2.ZS
@@ -256233,8 +256246,10 @@ TRD.ACRS.BRDR.EXPT.COST.CD.DB0615:
     transport costs. Only official costs are recorded. The component indicator is
     computed based on the methodology in the DB06-15 studies.'
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 TRD.ACRS.BRDR.EXPT.COST.CD.DB0615.DFRN:
   id: TRD.ACRS.BRDR.EXPT.COST.CD.DB0615.DFRN
@@ -256247,10 +256262,8 @@ TRD.ACRS.BRDR.EXPT.COST.CD.DB0615.DFRN:
     where 0 represents the worst regulatory performance and 100 the best regulatory
     performance, and is computed based on the methodology in the DB06-15 studies.
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 TRD.ACRS.BRDR.EXPT.COST.DOC.COMP.CD.DB1619:
   id: TRD.ACRS.BRDR.EXPT.COST.DOC.COMP.CD.DB1619
@@ -275742,8 +275755,10 @@ UIS.NARA.AGM1.URB.Q1.M:
     of education below the one intended for their age. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.NARA.AGM1.URB.Q2:
   id: UIS.NARA.AGM1.URB.Q2
@@ -275759,10 +275774,8 @@ UIS.NARA.AGM1.URB.Q2:
     of education below the one intended for their age. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.NARA.AGM1.URB.Q2.F:
   id: UIS.NARA.AGM1.URB.Q2.F
@@ -362066,8 +362079,10 @@ per_pr_allpr.bry_q1_preT_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_pr_allpr.bry_q1_rur:
   id: per_pr_allpr.bry_q1_rur
@@ -362078,10 +362093,8 @@ per_pr_allpr.bry_q1_rur:
   source_note: Percentage of program beneficiaries in a quintile relative to the total
     number of beneficiaries in the population
   source_organization: ASPIRE
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_pr_allpr.bry_q1_tot:
   id: per_pr_allpr.bry_q1_tot
@@ -386289,8 +386302,10 @@ per_sa_sp.avt_q4_preT_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_sa_sp.avt_q4_rur:
   id: per_sa_sp.avt_q4_rur

@@ -150768,6 +150768,18 @@
     UN agencies, and other development partners. https://id4d.worldbank.org/
   topics: ''
   topic_ids: ''
+- id: ID.OWN.1524.ZS
+  name: ID ownership, ages 15-24 (% of population ages 15-24)
+  unit: ''
+  source_id: '89'
+  source: Identification for Development (ID4D) Data
+  source_note: The percentage of adult respondents age 15 and above who report owning
+    a primary foundational ID (national ID or similar credential). If the minimum
+    age for obtaining an ID is above 15, observations below the minimum age are excluded,
+    sub-sample below 25 years of age.
+  source_organization: Global Findex ID4D Database
+  topics: ''
+  topic_ids: ''
 - id: ID.OWN.25UP.ZS
   name: ID ownership, ages 25+ (% of population ages 25+)
   unit: ''
@@ -351570,17 +351582,6 @@
   source_note: 'Number of male teachers who left the primary education system in year
     t+1, expressed as a percentage of male teachers in service in primary education
     system in year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TATTRR.1.T
-  name: Teacher attrition rate from primary education, both sexes (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Number of teachers who left the primary education system in year t+1,
-    expressed as a percentage of teachers in service in primary education system in
-    year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
