@@ -302206,7 +302206,7 @@
   topics: Poverty ;Aid Effectiveness ;Climate Change
   topic_ids: 11;2;19
 - id: SI.POV.DDAY.CV
-  name: Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)
+  name: Survey coverage for poverty headcount ratio (at $1.90 a day, 2011 PPP)
   unit: ''
   source_id: '57'
   source: WDI Database Archives
@@ -302220,7 +302220,7 @@
   topics: ''
   topic_ids: ''
 - id: SI.POV.DDAY.SH
-  name: Share of total poor population (at $3.00 a day, 2021 PPP)
+  name: Share of total poor population (at $1.90 a day, 2011 PPP)
   unit: ''
   source_id: '57'
   source: WDI Database Archives
@@ -302510,7 +302510,7 @@
   topics: ''
   topic_ids: ''
 - id: SI.POV.NOP1
-  name: Number of poor at $3.00 a day (2021 PPP) (millions)
+  name: Number of poor at $1.90 a day (2011 PPP) (millions)
   unit: ''
   source_id: '57'
   source: WDI Database Archives

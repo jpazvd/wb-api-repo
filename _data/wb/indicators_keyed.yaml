@@ -240231,7 +240231,7 @@ SI.POV.DDAY:
   unit: ''
 SI.POV.DDAY.CV:
   id: SI.POV.DDAY.CV
-  name: Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)
+  name: Survey coverage for poverty headcount ratio (at $1.90 a day, 2011 PPP)
   source: WDI Database Archives
   source_id: '57'
   source_note: Share of population covered by a survey within five years or reference
@@ -240246,7 +240246,7 @@ SI.POV.DDAY.CV:
   unit: ''
 SI.POV.DDAY.SH:
   id: SI.POV.DDAY.SH
-  name: Share of total poor population (at $3.00 a day, 2021 PPP)
+  name: Share of total poor population (at $1.90 a day, 2011 PPP)
   source: WDI Database Archives
   source_id: '57'
   source_note: The share of total global poor population.
@@ -240587,7 +240587,7 @@ SI.POV.NGAP:
   unit: ''
 SI.POV.NOP1:
   id: SI.POV.NOP1
-  name: Number of poor at $3.00 a day (2021 PPP) (millions)
+  name: Number of poor at $1.90 a day (2011 PPP) (millions)
   source: WDI Database Archives
   source_id: '57'
   source_note: 'The number of people (millions) living on less than $1.90 a day (2011
