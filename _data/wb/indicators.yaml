@@ -95498,7 +95498,7 @@
   topics: 'Environment '
   topic_ids: '6'
 - id: EG.EGY.PRIM.PP.KD
-  name: Energy intensity level of primary energy (MJ/$2017 PPP GDP)
+  name: Energy intensity level of primary energy (MJ/$2021 PPP GDP)
   unit: ''
   source_id: '2'
   source: World Development Indicators
@@ -300464,8 +300464,8 @@
   name: Proportion of population pushed further below the $2.15 ($ 2017 PPP) poverty
     line by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country’s population living
     in households whose non-health expenditures are already below the $2.15 poverty
     line and who as a result are pushed further into poverty by their out-of-pocket
@@ -300500,8 +300500,8 @@
   name: Proportion of population pushed further below the $3.65 ($ 2017 PPP) poverty
     line by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country’s population living
     in households whose non-health expenditures are already below the $3.65 poverty
     line and who as a result are pushed further into poverty by their out-of-pocket
@@ -300536,8 +300536,8 @@
   name: Proportion of population pushed further below the 60% median consumption poverty
     line by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: "This indicator shows the fraction of a country’s population living\
     \ in households whose non-health expenditures are already below the 60% median\
     \ consumption poverty line and who as a result are pushed further into poverty\
@@ -300621,8 +300621,8 @@
   name: Proportion of population pushed below the $2.15 ($ 2017 PPP) poverty line
     by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country’s population experiencing
     out-of-pocket health impoverishing expenditures, defined as expenditures without
     which the household they live in would have been above the $ 2.15 poverty line,
@@ -300706,8 +300706,8 @@
   name: Proportion of population pushed below the $3.65 ($ 2017 PPP) poverty line
     by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country’s population experiencing
     out-of-pocket health impoverishing expenditures, defined as expenditures without
     which the household they live in would have been above the $3.65 poverty line,
@@ -300744,8 +300744,8 @@
   name: Proportion of population pushed below the 60% median consumption poverty line
     by out-of-pocket health expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country’s population experiencing
     out-of-pocket health impoverishing expenditures, defined as expenditures without
     which the household they live in would have been above the 60% median consumption
@@ -300780,8 +300780,8 @@
   name: Proportion of population spending more than 10% of household consumption or
     income on out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: Proportion of population spending more than 10% of household consumption
     or income on out-of-pocket health care expenditure. Out-of-pocket health expenditure
     is defined as any spending incurred by a household when any member uses a health
@@ -300814,8 +300814,8 @@
   name: Proportion of population spending more than 25% of household consumption or
     income on out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: Proportion of population spending more than 25% of household consumption
     or income on out-of-pocket health care expenditure. Out-of-pocket health expenditure
     is defined as any spending incurred by a household when any member uses a health
@@ -300830,8 +300830,8 @@
 - id: SH.UHC.SRVS.CV.XD
   name: UHC service coverage index
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: Coverage index for essential health services (based on tracer interventions
     that include reproductive, maternal, newborn and child health, infectious diseases,
     noncommunicable diseases and service capacity and access). It is presented on
@@ -300865,8 +300865,8 @@
   name: Proportion of population pushed or further pushed below the $2.15 ($ 2017
     PPP) poverty line by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country's population who is
     either (1) living in households whose non-health expenditures are already below
     the $2.15 poverty line and who as a result are pushed further into poverty by
@@ -300907,8 +300907,8 @@
   name: Proportion of population pushed or further pushed below the $3.65 ($ 2017
     PPP) poverty line by out-of-pocket health care expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country's population who is
     either (1) living in households whose non-health expenditures are already below
     the $3.65 poverty line and who as a result are pushed further into poverty by
@@ -300949,8 +300949,8 @@
   name: Proportion of population pushed or further pushed below the 60% median consumption
     poverty line by out-of-pocket health expenditure (%)
   unit: ''
-  source_id: '2'
-  source: World Development Indicators
+  source_id: '57'
+  source: WDI Database Archives
   source_note: This indicator shows the fraction of a country's population who is
     either (1) living in households whose non-health expenditures are already below
     the relative poverty line and who as a result are pushed further into poverty
@@ -301498,6 +301498,209 @@
     (see http://apps.who.int/nha/database for the most recent updates).
   topics: 'Health '
   topic_ids: '8'
+- id: SH_UHC_FH40
+  name: Proportion of population facing financial hardship due to out-of-pocket health
+    expenditure (%)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: "Proportion of population spending more than 40% of household discretionary\
+    \ budget on out-of-pocket health expenditure (%)\n\nThe discretionary budget is\
+    \ defined as the total household budget, measured by consumption expenditure or\
+    \ income, minus the societal poverty line (SPL  ). Using 2017 purchasing power\
+    \ parities (PPPs), the SPL corresponds to whichever is greater: $2.15 (the international\
+    \ poverty line) or $1.15 + 50% of median household consumption expenditure or\
+    \ income, excluding out-of-pocket household expenditure on health. \n\nOut-of-pocket\
+    \ health expenditure is defined as any spending incurred by a household when any\
+    \ member uses a health good or service to receive any type of care (preventive,\
+    \ curative, rehabilitative, long-term or palliative care); provided by any type\
+    \ of provider; for any type of disease, illness or health condition; in any type\
+    \ of setting (outpatient, inpatient, at home)."
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_FH40_FURTHER
+  name: Proportion of population further impoverished due to out-of-pocket health
+    expenditure, based on the societal poverty line (%)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'Proportion of population living in households already in societal
+    poverty (household total budget lies below the societal poverty line) that incur
+    any out-of-pocket health expenditure.
+
+
+    The household discretionary budget is defined as the total household budget, measured
+    by consumption expenditure or income, minus the societal poverty line (SPL). Using
+    2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
+    $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
+    expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
+    Out-of-pocket health expenditure is defined as any spending incurred by a household
+    when any member uses a health good or service to receive any type of care (preventive,
+    curative, rehabilitative, long-term or palliative care); provided by any type
+    of provider; for any type of disease, illness or health condition; in any type
+    of setting (outpatient, inpatient, at home).'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_FH40_IMPOV
+  name: Proportion of population facing impoverishing out-of-pocket health expenditure,
+    based on the societal poverty line (%)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: "Proportion of population spending more than 100% of household discretionary\
+    \ budget on out-of-pocket health expenditure (%). This includes people living\
+    \ in poverty that are further impoverished due to out-of-pocket health expenditure\
+    \ as well as people who are pushed into poverty by out-of-pocket health expenditure.\
+    \ \n\nThe discretionary budget is defined as the total household budget, measured\
+    \ by consumption expenditure or income, minus the societal poverty line (SPL \
+    \ ). Using 2017 purchasing power parities (PPPs), the SPL corresponds to whichever\
+    \ is greater: $2.15 (the international poverty line) or $1.15 + 50% of median\
+    \ household consumption expenditure or income, excluding out-of-pocket household\
+    \ expenditure on health. \n\nOut-of-pocket health expenditure is defined as any\
+    \ spending incurred by a household when any member uses a health good or service\
+    \ to receive any type of care (preventive, curative, rehabilitative, long-term\
+    \ or palliative care); provided by any type of provider; for any type of disease,\
+    \ illness or health condition; in any type of setting (outpatient, inpatient,\
+    \ at home)."
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_FH40_LARGE
+  name: Proportion of population facing large (but non-impoverishing) out-of-pocket
+    health expenditure (%)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'Proportion of population spending more than 40% but less than 100%
+    of household discretionary budget on out-of-pocket health expenditure (%)
+
+
+    The discretionary budget is defined as the total household budget, measured by
+    consumption expenditure or income, minus the societal poverty line (SPL). Using
+    2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
+    $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
+    expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
+    Out-of-pocket health expenditure is defined as any spending incurred by a household
+    when any member uses a health good or service to receive any type of care (preventive,
+    curative, rehabilitative, long-term or palliative care); provided by any type
+    of provider; for any type of disease, illness or health condition; in any type
+    of setting (outpatient, inpatient, at home).'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: World Health Organization ( WHO )'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_FH40_PUSHED
+  name: Proportion of population pushed into poverty (based on the societal poverty
+    line) due to out-of-pocket health expenditure (%)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'Proportion of population living in households with positive discretionary
+    budgets that spend all their discretionary budget on out-of-pocket health expenditure.
+
+
+    The household discretionary budget is defined as the total household budget, measured
+    by consumption expenditure or income, minus the societal poverty line (SPL). Using
+    2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
+    $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
+    expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
+    Out-of-pocket health expenditure is defined as any spending incurred by a household
+    when any member uses a health good or service to receive any type of care (preventive,
+    curative, rehabilitative, long-term or palliative care); provided by any type
+    of provider; for any type of disease, illness or health condition; in any type
+    of setting (outpatient, inpatient, at home).'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_SCI
+  name: UHC service coverage index
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: A composite index representing coverage of essential health services
+    based on 14 tracer indicators in the areas of reproductive, maternal, newborn
+    and child health, infectious diseases, noncommunicable diseases and service capacity
+    and access. It is presented on a scale of 0 to 100 index points.
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_SCI_CAPACITY
+  name: UHC service coverage sub-index on service capacity and access
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: UHC service coverage sub-index on service capacity and access is based
+    on three tracer indicators (i) hospital access, (ii) health workforce, (iii) health
+    security.  It is presented on a scale of 0 to 100 index points and is one of the
+    four sub-indexes underlaying the overall UHC service coverage index.
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_SCI_ID
+  name: UHC service coverage sub-index on infectious diseases
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'UHC service coverage sub-index on infectious diseases is based on
+    four tracer indicators: (i) Tuberculosis, (ii) HIV/AIDS (iii) Malaria (iv) Water,
+    sanitation and hygiene. It is presented on a scale of 0 to 100 index points and
+    is one of the four sub-indexes underlaying the overall UHC service coverage index.'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_SCI_NCD
+  name: UHC service coverage sub-index on non-communicable diseases
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'UHC service coverage sub-index on non-communicable diseases is based
+    on three tracer indicators: (i) hypertension, (ii) diabetes, (iii) tobacco. It
+    is presented on a scale of 0 to 100 index points and is one of the four sub-indexes
+    underlaying the overall UHC service coverage index.'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topics: ''
+  topic_ids: ''
+- id: SH_UHC_SCI_RMNCH
+  name: UHC service coverage sub-index on reproductive, maternal, newborn and child
+    health
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'UHC service coverage sub-index on reproductive, maternal, newborn
+    and child health services is based on four tracer indicators: (i) family planning,
+    (ii) pregnancy care, (iii) child immunization, (iv) child treatment. It is presented
+    on a scale of 0 to 100 index points and is one of the four sub-indexes underlaying
+    the overall UHC service coverage index.'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topics: ''
+  topic_ids: ''
 - id: shck_al_alot_dfcl_1529
   name: Persons aged 15 to 29 years in households that experienced a shock recently
     (% of persons aged 15 to 29 years with disability i.e. at least a lot of functional
@@ -302206,7 +302409,7 @@
   topics: Poverty ;Aid Effectiveness ;Climate Change
   topic_ids: 11;2;19
 - id: SI.POV.DDAY.CV
-  name: Survey coverage for poverty headcount ratio (at $1.90 a day, 2011 PPP)
+  name: Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)
   unit: ''
   source_id: '57'
   source: WDI Database Archives
@@ -302220,7 +302423,7 @@
   topics: ''
   topic_ids: ''
 - id: SI.POV.DDAY.SH
-  name: Share of total poor population (at $1.90 a day, 2011 PPP)
+  name: Share of total poor population (at $3.00 a day, 2021 PPP)
   unit: ''
   source_id: '57'
   source: WDI Database Archives
@@ -302420,11 +302623,10 @@
   source_note: The multidimensional poverty headcount ratio (UNDP) is the percentage
     of a population living in poverty according to UNDPs multidimensional poverty
     index. The index includes three dimensions -- health, education, and living standards.
-  source_organization: 'Alkire, S., Kanagaratnam, U., and Suppa, N. (2024). The global
-    Multidimensional Poverty Index (MPI) 2024 country results and methodological note.
-    OPHI MPI Methodological  Note 58, Oxford Poverty and Human Development Initiative,
-    University of Oxford., uri: https://ophi.org.uk/publications/MN-58, publisher:
-    Oxford Poverty and Human Development Initiative (OPHI)'
+  source_organization: 'Alkire, S., Mishra, R., Selden, L. and Suppa, N. (2025). ‘The
+    global Multidimensional Poverty Index (MPI) 2025: Country results and methodological
+    note’, OPHI MPI Methodological Note 61, Oxford Poverty and Human Development Initiative
+    (OPHI), University of Oxford.url: <https://ophi.org.uk/publications/MN-61>'
   topics: ''
   topic_ids: ''
 - id: SI.POV.MPWB
@@ -302510,7 +302712,7 @@
   topics: ''
   topic_ids: ''
 - id: SI.POV.NOP1
-  name: Number of poor at $1.90 a day (2011 PPP) (millions)
+  name: Number of poor at $3.00 a day (2021 PPP) (millions)
   unit: ''
   source_id: '57'
   source: WDI Database Archives
@@ -351419,13 +351621,29 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.T.5.F
-  name: Teachers in tertiary education ISCED 5 programmes, female (number)
+- id: UIS.T.2
+  name: Teachers in lower secondary education, both sexes (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: Total number of female teachers in public and private short-cycle tertiary
-    education institutions (ISCED 5). Teachers are persons employed full time or part
+  source_note: Total number of teachers in public and private lower secondary education
+    institutions (ISCED 2). Teachers are persons employed full time or part time in
+    an official capacity to guide and direct the learning experience of pupils and
+    students, irrespective of their qualifications or the delivery mechanism, i.e.
+    face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.2.F
+  name: Teachers in lower secondary education, female (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Total number of female teachers in public and private lower secondary
+    education institutions (ISCED 2). Teachers are persons employed full time or part
     time in an official capacity to guide and direct the learning experience of pupils
     and students, irrespective of their qualifications or the delivery mechanism,
     i.e. face-to-face and/or at a distance. This definition excludes educational personnel
@@ -351433,15 +351651,15 @@
     who do not teach) and persons who work occasionally or in a voluntary capacity
     in educational institutions.
   source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.5.M
-  name: Teachers in tertiary education ISCED 5 programmes, male (number)
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.2.M
+  name: Teachers in lower secondary education, male (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Total number of male teachers in public and private short-cycle tertiary
-    education institutions (ISCED 5). Teachers are persons employed full time or part
+  source_note: 'Total number of male teachers in public and private lower secondary
+    education institutions (ISCED 2). Teachers are persons employed full time or part
     time in an official capacity to guide and direct the learning experience of pupils
     and students, irrespective of their qualifications or the delivery mechanism,
     i.e. face-to-face and/or at a distance. This definition excludes educational personnel
@@ -351452,14 +351670,14 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.T.58.M
-  name: Teachers in tertiary education programmes, male (number)
+- id: UIS.T.23.M
+  name: Teachers in secondary education, male (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Total number of male teachers in public and private tertiary education
-    institutions (ISCED 5-8). Teachers are persons employed full time or part time
-    in an official capacity to guide and direct the learning experience of pupils
+  source_note: 'Total number of male teachers in public and private secondary education
+    institutions (ISCED 2 and 3). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
     and students, irrespective of their qualifications or the delivery mechanism,
     i.e. face-to-face and/or at a distance. This definition excludes educational personnel
     who have no active teaching duties (e.g. headmasters, headmistresses or principals
@@ -351469,119 +351687,101 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.TATTRR.02
-  name: Teacher attrition rate from pre-primary education, both sexes (%)
+- id: UIS.T.3
+  name: Teachers in upper secondary education, both sexes (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Percentage of teachers at a given level of education leaving the profession
-    in a given school year. The number of leavers is estimated by subtracting the
-    number of teachers in year t from those in year t-1 and adding the number of new
-    entrants to the teaching workforce in year t. The attrition rate is the number
-    of leavers expressed as a percentage of the total number of teachers in year t-1.
-    A high value indicates high levels of teacher turnover which can be disruptive
-    for the learning of students. Assessing and monitoring teacher attrition is essential
-    to ensuring a sufficient supply of qualified and well-trained teachers as well
-    as to their effective deployment, support and management. Where teachers teach
-    for 30-40 years, the attrition rate will be well below 5%. Attrition rates above
-    10% indicate that the average teaching career lasts only 10 years. For more information,
-    consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_note: Total number of teachers in public and private upper secondary education
+    institutions (ISCED 3). Teachers are persons employed full time or part time in
+    an official capacity to guide and direct the learning experience of pupils and
+    students, irrespective of their qualifications or the delivery mechanism, i.e.
+    face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.3.F
+  name: Teachers in upper secondary education, female (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Total number of female teachers in public and private upper secondary
+    education institutions (ISCED 3). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.3.M
+  name: Teachers in upper secondary education, male (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Total number of male teachers in public and private upper secondary
+    education institutions (ISCED 3). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions. For more information, consult the UNESCO Institute
+    of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.TATTRR.02.F
-  name: Teacher attrition rate from pre-primary education, female (%)
+- id: UIS.T.4
+  name: Teachers in post-secondary non-tertiary education, both sexes (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Percentage of teachers at a given level of education leaving the profession
-    in a given school year. The number of leavers is estimated by subtracting the
-    number of teachers in year t from those in year t-1 and adding the number of new
-    entrants to the teaching workforce in year t. The attrition rate is the number
-    of leavers expressed as a percentage of the total number of teachers in year t-1.
-    A high value indicates high levels of teacher turnover which can be disruptive
-    for the learning of students. Assessing and monitoring teacher attrition is essential
-    to ensuring a sufficient supply of qualified and well-trained teachers as well
-    as to their effective deployment, support and management. Where teachers teach
-    for 30-40 years, the attrition rate will be well below 5%. Attrition rates above
-    10% indicate that the average teaching career lasts only 10 years. For more information,
-    consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_note: Total number of teachers in public and private post-secondary non-tertiary
+    education institutions (ISCED 4). Teachers are persons employed full time or part
+    time in an official capacity to guide and direct the learning experience of pupils
+    and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
   source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TATTRR.02.GPIA
-  name: Teacher attrition rate from pre-primary education, adjusted gender parity
-    index (GPIA)
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.4.F
+  name: Teachers in post-secondary non-tertiary education, female (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
+  source_note: Total number of female teachers in public and private post-secondary
+    non-tertiary education institutions (ISCED 4). Teachers are persons employed full
+    time or part time in an official capacity to guide and direct the learning experience
+    of pupils and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions.
   source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TATTRR.02.M
-  name: Teacher attrition rate from pre-primary education, male (%)
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.4.M
+  name: Teachers in post-secondary non-tertiary education, male (number)
   unit: ''
   source_id: '12'
   source: Education Statistics
-  source_note: 'Percentage of teachers at a given level of education leaving the profession
-    in a given school year. The number of leavers is estimated by subtracting the
-    number of teachers in year t from those in year t-1 and adding the number of new
-    entrants to the teaching workforce in year t. The attrition rate is the number
-    of leavers expressed as a percentage of the total number of teachers in year t-1.
-    A high value indicates high levels of teacher turnover which can be disruptive
-    for the learning of students. Assessing and monitoring teacher attrition is essential
-    to ensuring a sufficient supply of qualified and well-trained teachers as well
-    as to their effective deployment, support and management. Where teachers teach
-    for 30-40 years, the attrition rate will be well below 5%. Attrition rates above
-    10% indicate that the average teaching career lasts only 10 years. For more information,
-    consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TATTRR.1.F
-  name: Teacher attrition rate from primary education, female (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Number of female teachers who left the primary education system in
-    year t+1, expressed as a percentage of female teachers in service in primary education
-    system in year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TATTRR.1.GPIA
-  name: Teacher attrition rate from primary education, adjusted gender parity index
-    (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.TATTRR.1.M
-  name: Teacher attrition rate from primary education, male (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Number of male teachers who left the primary education system in year
-    t+1, expressed as a percentage of male teachers in service in primary education
-    system in year t. For more information, consult the UIS website: http://www.uis.unesco.org/Education/'
+  source_note: 'Total number of male teachers in public and private post-secondary
+    non-tertiary education institutions (ISCED 4). Teachers are persons employed full
+    time or part time in an official capacity to guide and direct the learning experience
+    of pupils and students, irrespective of their qualifications or the delivery mechanism,
+    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions. For more information, consult the UNESCO Institute
+    of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''

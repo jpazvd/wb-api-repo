@@ -88950,7 +88950,7 @@ EG.CFT.ACCS.ZS:
   unit: ''
 EG.EGY.PRIM.PP.KD:
   id: EG.EGY.PRIM.PP.KD
-  name: Energy intensity level of primary energy (MJ/$2017 PPP GDP)
+  name: Energy intensity level of primary energy (MJ/$2021 PPP GDP)
   source: World Development Indicators
   source_id: '2'
   source_note: Energy intensity level of primary energy is the ratio between energy
@@ -238788,8 +238788,8 @@ SH.UHC.FBP1.ZS:
   id: SH.UHC.FBP1.ZS
   name: Proportion of population pushed further below the $2.15 ($ 2017 PPP) poverty
     line by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country’s population living
     in households whose non-health expenditures are already below the $2.15 poverty
     line and who as a result are pushed further into poverty by their out-of-pocket
@@ -238828,8 +238828,8 @@ SH.UHC.FBP2.ZS:
   id: SH.UHC.FBP2.ZS
   name: Proportion of population pushed further below the $3.65 ($ 2017 PPP) poverty
     line by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country’s population living
     in households whose non-health expenditures are already below the $3.65 poverty
     line and who as a result are pushed further into poverty by their out-of-pocket
@@ -238868,8 +238868,8 @@ SH.UHC.FBPR.ZS:
   id: SH.UHC.FBPR.ZS
   name: Proportion of population pushed further below the 60% median consumption poverty
     line by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "This indicator shows the fraction of a country’s population living\
     \ in households whose non-health expenditures are already below the 60% median\
     \ consumption poverty line and who as a result are pushed further into poverty\
@@ -238965,8 +238965,8 @@ SH.UHC.NOP1.ZS:
   id: SH.UHC.NOP1.ZS
   name: Proportion of population pushed below the $2.15 ($ 2017 PPP) poverty line
     by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country’s population experiencing
     out-of-pocket health impoverishing expenditures, defined as expenditures without
     which the household they live in would have been above the $ 2.15 poverty line,
@@ -239062,8 +239062,8 @@ SH.UHC.NOP2.ZS:
   id: SH.UHC.NOP2.ZS
   name: Proportion of population pushed below the $3.65 ($ 2017 PPP) poverty line
     by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country’s population experiencing
     out-of-pocket health impoverishing expenditures, defined as expenditures without
     which the household they live in would have been above the $3.65 poverty line,
@@ -239104,8 +239104,8 @@ SH.UHC.NOPR.ZS:
   id: SH.UHC.NOPR.ZS
   name: Proportion of population pushed below the 60% median consumption poverty line
     by out-of-pocket health expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country’s population experiencing
     out-of-pocket health impoverishing expenditures, defined as expenditures without
     which the household they live in would have been above the 60% median consumption
@@ -239146,8 +239146,8 @@ SH.UHC.OOPC.10.ZS:
   id: SH.UHC.OOPC.10.ZS
   name: Proportion of population spending more than 10% of household consumption or
     income on out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: Proportion of population spending more than 10% of household consumption
     or income on out-of-pocket health care expenditure. Out-of-pocket health expenditure
     is defined as any spending incurred by a household when any member uses a health
@@ -239186,8 +239186,8 @@ SH.UHC.OOPC.25.ZS:
   id: SH.UHC.OOPC.25.ZS
   name: Proportion of population spending more than 25% of household consumption or
     income on out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: Proportion of population spending more than 25% of household consumption
     or income on out-of-pocket health care expenditure. Out-of-pocket health expenditure
     is defined as any spending incurred by a household when any member uses a health
@@ -239205,8 +239205,8 @@ SH.UHC.OOPC.25.ZS:
 SH.UHC.SRVS.CV.XD:
   id: SH.UHC.SRVS.CV.XD
   name: UHC service coverage index
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: Coverage index for essential health services (based on tracer interventions
     that include reproductive, maternal, newborn and child health, infectious diseases,
     noncommunicable diseases and service capacity and access). It is presented on
@@ -239244,8 +239244,8 @@ SH.UHC.TOT1.ZS:
   id: SH.UHC.TOT1.ZS
   name: Proportion of population pushed or further pushed below the $2.15 ($ 2017
     PPP) poverty line by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country's population who is
     either (1) living in households whose non-health expenditures are already below
     the $2.15 poverty line and who as a result are pushed further into poverty by
@@ -239290,8 +239290,8 @@ SH.UHC.TOT2.ZS:
   id: SH.UHC.TOT2.ZS
   name: Proportion of population pushed or further pushed below the $3.65 ($ 2017
     PPP) poverty line by out-of-pocket health care expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country's population who is
     either (1) living in households whose non-health expenditures are already below
     the $3.65 poverty line and who as a result are pushed further into poverty by
@@ -239336,8 +239336,8 @@ SH.UHC.TOTR.ZS:
   id: SH.UHC.TOTR.ZS
   name: Proportion of population pushed or further pushed below the 60% median consumption
     poverty line by out-of-pocket health expenditure (%)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: This indicator shows the fraction of a country's population who is
     either (1) living in households whose non-health expenditures are already below
     the relative poverty line and who as a result are pushed further into poverty
@@ -240001,6 +240001,219 @@ SH.XPD.TOTL.ZS:
   topics:
   - 'Health '
   unit: ''
+SH_UHC_FH40:
+  id: SH_UHC_FH40
+  name: Proportion of population facing financial hardship due to out-of-pocket health
+    expenditure (%)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: "Proportion of population spending more than 40% of household discretionary\
+    \ budget on out-of-pocket health expenditure (%)\n\nThe discretionary budget is\
+    \ defined as the total household budget, measured by consumption expenditure or\
+    \ income, minus the societal poverty line (SPL  ). Using 2017 purchasing power\
+    \ parities (PPPs), the SPL corresponds to whichever is greater: $2.15 (the international\
+    \ poverty line) or $1.15 + 50% of median household consumption expenditure or\
+    \ income, excluding out-of-pocket household expenditure on health. \n\nOut-of-pocket\
+    \ health expenditure is defined as any spending incurred by a household when any\
+    \ member uses a health good or service to receive any type of care (preventive,\
+    \ curative, rehabilitative, long-term or palliative care); provided by any type\
+    \ of provider; for any type of disease, illness or health condition; in any type\
+    \ of setting (outpatient, inpatient, at home)."
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_FH40_FURTHER:
+  id: SH_UHC_FH40_FURTHER
+  name: Proportion of population further impoverished due to out-of-pocket health
+    expenditure, based on the societal poverty line (%)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'Proportion of population living in households already in societal
+    poverty (household total budget lies below the societal poverty line) that incur
+    any out-of-pocket health expenditure.
+
+
+    The household discretionary budget is defined as the total household budget, measured
+    by consumption expenditure or income, minus the societal poverty line (SPL). Using
+    2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
+    $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
+    expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
+    Out-of-pocket health expenditure is defined as any spending incurred by a household
+    when any member uses a health good or service to receive any type of care (preventive,
+    curative, rehabilitative, long-term or palliative care); provided by any type
+    of provider; for any type of disease, illness or health condition; in any type
+    of setting (outpatient, inpatient, at home).'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_FH40_IMPOV:
+  id: SH_UHC_FH40_IMPOV
+  name: Proportion of population facing impoverishing out-of-pocket health expenditure,
+    based on the societal poverty line (%)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: "Proportion of population spending more than 100% of household discretionary\
+    \ budget on out-of-pocket health expenditure (%). This includes people living\
+    \ in poverty that are further impoverished due to out-of-pocket health expenditure\
+    \ as well as people who are pushed into poverty by out-of-pocket health expenditure.\
+    \ \n\nThe discretionary budget is defined as the total household budget, measured\
+    \ by consumption expenditure or income, minus the societal poverty line (SPL \
+    \ ). Using 2017 purchasing power parities (PPPs), the SPL corresponds to whichever\
+    \ is greater: $2.15 (the international poverty line) or $1.15 + 50% of median\
+    \ household consumption expenditure or income, excluding out-of-pocket household\
+    \ expenditure on health. \n\nOut-of-pocket health expenditure is defined as any\
+    \ spending incurred by a household when any member uses a health good or service\
+    \ to receive any type of care (preventive, curative, rehabilitative, long-term\
+    \ or palliative care); provided by any type of provider; for any type of disease,\
+    \ illness or health condition; in any type of setting (outpatient, inpatient,\
+    \ at home)."
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_FH40_LARGE:
+  id: SH_UHC_FH40_LARGE
+  name: Proportion of population facing large (but non-impoverishing) out-of-pocket
+    health expenditure (%)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'Proportion of population spending more than 40% but less than 100%
+    of household discretionary budget on out-of-pocket health expenditure (%)
+
+
+    The discretionary budget is defined as the total household budget, measured by
+    consumption expenditure or income, minus the societal poverty line (SPL). Using
+    2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
+    $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
+    expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
+    Out-of-pocket health expenditure is defined as any spending incurred by a household
+    when any member uses a health good or service to receive any type of care (preventive,
+    curative, rehabilitative, long-term or palliative care); provided by any type
+    of provider; for any type of disease, illness or health condition; in any type
+    of setting (outpatient, inpatient, at home).'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: World Health Organization ( WHO )'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_FH40_PUSHED:
+  id: SH_UHC_FH40_PUSHED
+  name: Proportion of population pushed into poverty (based on the societal poverty
+    line) due to out-of-pocket health expenditure (%)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'Proportion of population living in households with positive discretionary
+    budgets that spend all their discretionary budget on out-of-pocket health expenditure.
+
+
+    The household discretionary budget is defined as the total household budget, measured
+    by consumption expenditure or income, minus the societal poverty line (SPL). Using
+    2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
+    $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
+    expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
+    Out-of-pocket health expenditure is defined as any spending incurred by a household
+    when any member uses a health good or service to receive any type of care (preventive,
+    curative, rehabilitative, long-term or palliative care); provided by any type
+    of provider; for any type of disease, illness or health condition; in any type
+    of setting (outpatient, inpatient, at home).'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO];
+
+    World Bank (WB) [WB], note: Universal Health Coverage Dataset'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_SCI:
+  id: SH_UHC_SCI
+  name: UHC service coverage index
+  source: World Development Indicators
+  source_id: '2'
+  source_note: A composite index representing coverage of essential health services
+    based on 14 tracer indicators in the areas of reproductive, maternal, newborn
+    and child health, infectious diseases, noncommunicable diseases and service capacity
+    and access. It is presented on a scale of 0 to 100 index points.
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_SCI_CAPACITY:
+  id: SH_UHC_SCI_CAPACITY
+  name: UHC service coverage sub-index on service capacity and access
+  source: World Development Indicators
+  source_id: '2'
+  source_note: UHC service coverage sub-index on service capacity and access is based
+    on three tracer indicators (i) hospital access, (ii) health workforce, (iii) health
+    security.  It is presented on a scale of 0 to 100 index points and is one of the
+    four sub-indexes underlaying the overall UHC service coverage index.
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_SCI_ID:
+  id: SH_UHC_SCI_ID
+  name: UHC service coverage sub-index on infectious diseases
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'UHC service coverage sub-index on infectious diseases is based on
+    four tracer indicators: (i) Tuberculosis, (ii) HIV/AIDS (iii) Malaria (iv) Water,
+    sanitation and hygiene. It is presented on a scale of 0 to 100 index points and
+    is one of the four sub-indexes underlaying the overall UHC service coverage index.'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_SCI_NCD:
+  id: SH_UHC_SCI_NCD
+  name: UHC service coverage sub-index on non-communicable diseases
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'UHC service coverage sub-index on non-communicable diseases is based
+    on three tracer indicators: (i) hypertension, (ii) diabetes, (iii) tobacco. It
+    is presented on a scale of 0 to 100 index points and is one of the four sub-indexes
+    underlaying the overall UHC service coverage index.'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topic_ids: []
+  topics: []
+  unit: ''
+SH_UHC_SCI_RMNCH:
+  id: SH_UHC_SCI_RMNCH
+  name: UHC service coverage sub-index on reproductive, maternal, newborn and child
+    health
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'UHC service coverage sub-index on reproductive, maternal, newborn
+    and child health services is based on four tracer indicators: (i) family planning,
+    (ii) pregnancy care, (iii) child immunization, (iv) child treatment. It is presented
+    on a scale of 0 to 100 index points and is one of the four sub-indexes underlaying
+    the overall UHC service coverage index.'
+  source_organization: 'Universal Health Coverage Dataset, World Health Organization
+    (WHO) [WHO], uri: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/uhc-index-of-service-coverage'
+  topic_ids: []
+  topics: []
+  unit: ''
 SI.DST.02ND.20:
   id: SI.DST.02ND.20
   name: Income share held by second 20%
@@ -240231,7 +240444,7 @@ SI.POV.DDAY:
   unit: ''
 SI.POV.DDAY.CV:
   id: SI.POV.DDAY.CV
-  name: Survey coverage for poverty headcount ratio (at $1.90 a day, 2011 PPP)
+  name: Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)
   source: WDI Database Archives
   source_id: '57'
   source_note: Share of population covered by a survey within five years or reference
@@ -240246,7 +240459,7 @@ SI.POV.DDAY.CV:
   unit: ''
 SI.POV.DDAY.SH:
   id: SI.POV.DDAY.SH
-  name: Share of total poor population (at $1.90 a day, 2011 PPP)
+  name: Share of total poor population (at $3.00 a day, 2021 PPP)
   source: WDI Database Archives
   source_id: '57'
   source_note: The share of total global poor population.
@@ -240485,11 +240698,10 @@ SI.POV.MPUN:
   source_note: The multidimensional poverty headcount ratio (UNDP) is the percentage
     of a population living in poverty according to UNDPs multidimensional poverty
     index. The index includes three dimensions -- health, education, and living standards.
-  source_organization: 'Alkire, S., Kanagaratnam, U., and Suppa, N. (2024). The global
-    Multidimensional Poverty Index (MPI) 2024 country results and methodological note.
-    OPHI MPI Methodological  Note 58, Oxford Poverty and Human Development Initiative,
-    University of Oxford., uri: https://ophi.org.uk/publications/MN-58, publisher:
-    Oxford Poverty and Human Development Initiative (OPHI)'
+  source_organization: 'Alkire, S., Mishra, R., Selden, L. and Suppa, N. (2025). ‘The
+    global Multidimensional Poverty Index (MPI) 2025: Country results and methodological
+    note’, OPHI MPI Methodological Note 61, Oxford Poverty and Human Development Initiative
+    (OPHI), University of Oxford.url: <https://ophi.org.uk/publications/MN-61>'
   topic_ids: []
   topics: []
   unit: ''
@@ -240587,7 +240799,7 @@ SI.POV.NGAP:
   unit: ''
 SI.POV.NOP1:
   id: SI.POV.NOP1
-  name: Number of poor at $1.90 a day (2011 PPP) (millions)
+  name: Number of poor at $3.00 a day (2021 PPP) (millions)
   source: WDI Database Archives
   source_id: '57'
   source_note: 'The number of people (millions) living on less than $1.90 a day (2011
@@ -256059,8 +256271,10 @@ TRD.ACRS.BRDR.DB0615.DFRN:
     the number documents to export and import. It is computed based on the methodology
     in the DB06-15 studies.
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 TRD.ACRS.BRDR.DB1619.DFRN:
   id: TRD.ACRS.BRDR.DB1619.DFRN
@@ -256246,10 +256460,8 @@ TRD.ACRS.BRDR.EXPT.COST.CD.DB0615:
     transport costs. Only official costs are recorded. The component indicator is
     computed based on the methodology in the DB06-15 studies.'
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 TRD.ACRS.BRDR.EXPT.COST.CD.DB0615.DFRN:
   id: TRD.ACRS.BRDR.EXPT.COST.CD.DB0615.DFRN
@@ -275579,8 +275791,10 @@ UIS.NARA.AGM1.RUR.WPIA:
     of the poorest quintile. For more information, consult the UNESCO Institute for
     Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.NARA.AGM1.URB:
   id: UIS.NARA.AGM1.URB
@@ -275755,10 +275969,8 @@ UIS.NARA.AGM1.URB.Q1.M:
     of education below the one intended for their age. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.NARA.AGM1.URB.Q2:
   id: UIS.NARA.AGM1.URB.Q2
