@@ -257784,6 +257784,36 @@
   source_organization: ''
   topics: ''
   topic_ids: ''
+- id: SE.CLO.15Y.LDSEV.R.PS.2009.1
+  name: Learning Deprivation Severity;PISA 2009 for grade 15Y using MPL Level 2 for
+    reading, First Quintile
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: SE.CLO.15Y.LDSEV.R.PS.2009.2
+  name: Learning Deprivation Severity;PISA 2009 for grade 15Y using MPL Level 2 for
+    reading, Second Quintile
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: SE.CLO.15Y.LDSEV.R.PS.2009.3
+  name: Learning Deprivation Severity;PISA 2009 for grade 15Y using MPL Level 2 for
+    reading, Third Quintile
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
 - id: SE.CLO.15Y.LDSEV.R.PS.2009.4
   name: Learning Deprivation Severity;PISA 2009 for grade 15Y using MPL Level 2 for
     reading, Fourth Quintile
@@ -267793,36 +267823,6 @@
 - id: SE.CLO.5.LDSEV.R.PRL.2016.1
   name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
     for reading, First Quintile
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: SE.CLO.5.LDSEV.R.PRL.2016.2
-  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
-    for reading, Second Quintile
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: SE.CLO.5.LDSEV.R.PRL.2016.3
-  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
-    for reading, Third Quintile
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: ''
-  source_organization: ''
-  topics: ''
-  topic_ids: ''
-- id: SE.CLO.5.LDSEV.R.PRL.2016.4
-  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
-    for reading, Fourth Quintile
   unit: ''
   source_id: '12'
   source: Education Statistics
@@ -333886,6 +333886,57 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
+- id: UIS.NARA.AGM1.RUR.Q5.GPIA
+  name: Adjusted net attendance rate, one year before the official primary entry age,
+    rural, richest quintile, adjusted gender parity index (GPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
+    the female value for the indicator by the male value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    GPI equal to 1 indicates parity between females and males. In general, a value
+    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
+    disparity in favor of females. For more information, consult the UNESCO Institute
+    for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.NARA.AGM1.RUR.Q5.M
+  name: Adjusted net attendance rate, one year before the official primary entry age,
+    rural, richest quintile, male (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Divide the total number of students in the official school age range
+    for the given level of education who are attending school at any level of education
+    by the population of the same age group and multiply the result by 100. The difference
+    between the total NAR and the adjusted NAR provides a measure of the proportion
+    of children in the official relevant school age group who are attending levels
+    of education below the one intended for their age. For more information, consult
+    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.NARA.AGM1.RUR.WPIA
+  name: Adjusted net attendance rate, one year before the official primary entry age,
+    rural, adjusted wealth parity index (WPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Wealth Parity Index (WPIA) is calculated by dividing
+    the poorest quintile value for the indicator by the richest quintile value for
+    the indicator. If the resulting value exceeds 1, the ratio is inverted and subtracted
+    from 2. The adjusted wealth parity index is symmetrical around 1 and lies in the
+    range 0-2. An adjusted WPI equal to 1 indicates parity between the richest and
+    poorest quintiles. In general, a value less than 1 indicates disparity in favor
+    of the richest quintile and a value greater than 1 indicates disparity in favor
+    of the poorest quintile. For more information, consult the UNESCO Institute for
+    Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
 - id: UIS.NARA.AGM1.URB
   name: Adjusted net attendance rate, one year before the official primary entry age,
     urban, both sexes (%)
@@ -351572,55 +351623,6 @@
   source_organization: UNESCO Institute for Statistics
   topics: 'Education '
   topic_ids: '4'
-- id: UIS.T.4.F
-  name: Teachers in post-secondary non-tertiary education, female (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of female teachers in public and private post-secondary
-    non-tertiary education institutions (ISCED 4). Teachers are persons employed full
-    time or part time in an official capacity to guide and direct the learning experience
-    of pupils and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.T.4.M
-  name: Teachers in post-secondary non-tertiary education, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private post-secondary
-    non-tertiary education institutions (ISCED 4). Teachers are persons employed full
-    time or part time in an official capacity to guide and direct the learning experience
-    of pupils and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions. For more information, consult the UNESCO Institute
-    of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.5
-  name: Teachers in tertiary education ISCED 5 programmes, both sexes (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of teachers in public and private short-cycle tertiary
-    education institutions (ISCED 5). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
 - id: UIS.T.2
   name: Teachers in lower secondary education, both sexes (number)
   unit: ''

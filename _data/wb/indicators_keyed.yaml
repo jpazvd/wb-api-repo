@@ -190372,10 +190372,8 @@ SE.CLO.15Y.LDSEV.R.PS.2009.3:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDSEV.R.PS.2009.4:
   id: SE.CLO.15Y.LDSEV.R.PS.2009.4
@@ -201383,39 +201381,6 @@ SE.CLO.5.LDSEV.R.PRL.2016.1:
   id: SE.CLO.5.LDSEV.R.PRL.2016.1
   name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
     for reading, First Quintile
-  source: Education Statistics
-  source_id: '12'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-SE.CLO.5.LDSEV.R.PRL.2016.2:
-  id: SE.CLO.5.LDSEV.R.PRL.2016.2
-  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
-    for reading, Second Quintile
-  source: Education Statistics
-  source_id: '12'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-SE.CLO.5.LDSEV.R.PRL.2016.3:
-  id: SE.CLO.5.LDSEV.R.PRL.2016.3
-  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
-    for reading, Third Quintile
-  source: Education Statistics
-  source_id: '12'
-  source_note: ''
-  source_organization: ''
-  topic_ids: []
-  topics: []
-  unit: ''
-SE.CLO.5.LDSEV.R.PRL.2016.4:
-  id: SE.CLO.5.LDSEV.R.PRL.2016.4
-  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
-    for reading, Fourth Quintile
   source: Education Statistics
   source_id: '12'
   source_note: ''
@@ -275791,10 +275756,8 @@ UIS.NARA.AGM1.RUR.WPIA:
     of the poorest quintile. For more information, consult the UNESCO Institute for
     Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.NARA.AGM1.URB:
   id: UIS.NARA.AGM1.URB
