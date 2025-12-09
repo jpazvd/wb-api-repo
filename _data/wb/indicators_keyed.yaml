@@ -70211,6 +70211,17 @@ DT.DOD.TCST.CD.PU.AR.US:
   topic_ids: []
   topics: []
   unit: ''
+DT.DOD.VPPG.CD:
+  id: DT.DOD.VPPG.CD
+  name: External debt stocks, variable rate public and publicly guaranteed debt (PPG)
+    (DOD, current US$)
+  source: ' International Debt Statistics: DSSI'
+  source_id: '81'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
 DT.DOD.VTOT.CD:
   id: DT.DOD.VTOT.CD
   name: External debt stocks, variable rate (DOD, current US$)
@@ -76454,6 +76465,28 @@ DT.INT.PUBS.CD.IQ.00.US:
     Interest, USD
   source: Quarterly External Debt Statistics GDDS
   source_id: '23'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+DT.INT.VPPG.CD:
+  id: DT.INT.VPPG.CD
+  name: Interest payments on variable rate external debt, public and publicly guaranteed
+    (PPG) (INT, current US$)
+  source: ' International Debt Statistics: DSSI'
+  source_id: '81'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+DT.INT.VTOT.CD:
+  id: DT.INT.VTOT.CD
+  name: Interest payments on variable rate external debt, long-term (INT, current
+    US$)
+  source: ' International Debt Statistics: DSSI'
+  source_id: '81'
   source_note: ''
   source_organization: ''
   topic_ids: []
@@ -98360,8 +98393,10 @@ FM.AST.OFIN.CN:
     the economy (excludes government). Data are in current local currencies. '
   source_organization: International Monetary Fund, International Financial Statistics
     and data files.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 FM.AST.PRVT.CN:
   id: FM.AST.PRVT.CN
@@ -109217,8 +109252,10 @@ HH.DHS.NAR.23.Q3:
     poorest 20 percent of students and quintile 5 being the richest 20 percent of
     students.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 HH.DHS.NAR.23.Q4:
   id: HH.DHS.NAR.23.Q4
@@ -109256,10 +109293,8 @@ HH.DHS.NAR.23.R:
   source_note: Net attendance rate. Secondary. Rural is the proportion of rural children
     of official secondary school age who are attending secondary school.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 HH.DHS.NAR.23.U:
   id: HH.DHS.NAR.23.U
@@ -120198,8 +120233,10 @@ IN.ENV.COASTALZONE.OTHFEATURES.AREA:
   source_id: '41'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 IN.ENV.COASTALZONE.OTHFEATURES.PCT:
   id: IN.ENV.COASTALZONE.OTHFEATURES.PCT
@@ -120228,10 +120265,8 @@ IN.ENV.COASTALZONE.SHORELAND.PCT:
   source_id: '41'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 IN.ENV.COASTALZONE.WASTELAND.AREA:
   id: IN.ENV.COASTALZONE.WASTELAND.AREA
@@ -132090,8 +132125,10 @@ JI.TLF.ACTI.RU.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.TLF.ACTI.UR.ZS:
   id: JI.TLF.ACTI.UR.ZS
@@ -132122,10 +132159,8 @@ JI.TLF.ACTI.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 JI.TLF.TOTL:
   id: JI.TLF.TOTL
@@ -148184,8 +148219,10 @@ LO.PISA.MAT.P25:
     reports, but may not be comparable across years or countries. Consult the PISA
     website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PISA.MAT.P50:
   id: LO.PISA.MAT.P50
@@ -148223,10 +148260,8 @@ LO.PISA.MAT.P90:
     reports, but may not be comparable across years or countries. Consult the PISA
     website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.PISA.MAT.P95:
   id: LO.PISA.MAT.P95
@@ -162033,8 +162068,10 @@ NY.GDP.MKTP.CD.XD:
     as the ratio of the GDP at market prices in current U.S. dollars) to the GDP at
     market prices in constant (2000) U.S. dollars.  '
   source_organization: World Bank country economists.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NY.GDP.MKTP.CN:
   id: NY.GDP.MKTP.CN
@@ -162093,10 +162130,8 @@ NY.GDP.MKTP.CN.XD:
   source_note: 'The GDP implicit deflator is the ratio of GDP in current local currency
     to GDP in constant local currency.  '
   source_organization: World Bank country economists.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NY.GDP.MKTP.IN:
   id: NY.GDP.MKTP.IN
@@ -173266,8 +173301,10 @@ PER.SR.SAL.RCT:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SR.SAL.SHARE.RCT:
   id: PER.SR.SAL.SHARE.RCT
@@ -173297,10 +173334,8 @@ PER.SR.SAL.USD:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.SR.SOR.GOV:
   id: PER.SR.SOR.GOV
@@ -178754,8 +178789,10 @@ PRJ.ATT.60UP.1.MF:
     http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PRJ.ATT.60UP.2.FE:
   id: PRJ.ATT.60UP.2.FE
@@ -178811,10 +178848,8 @@ PRJ.ATT.60UP.2.MF:
     the Wittgenstein Centre for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PRJ.ATT.60UP.3.FE:
   id: PRJ.ATT.60UP.3.FE
@@ -190339,8 +190374,10 @@ SE.CLO.15Y.LDSEV.R.PS.2006.U:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDSEV.R.PS.2009.1:
   id: SE.CLO.15Y.LDSEV.R.PS.2009.1
@@ -201390,6 +201427,39 @@ SE.CLO.5.LDSEV.R.PRL.2016.1:
   topics:
   - null
   unit: ''
+SE.CLO.5.LDSEV.R.PRL.2016.2:
+  id: SE.CLO.5.LDSEV.R.PRL.2016.2
+  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
+    for reading, Second Quintile
+  source: Education Statistics
+  source_id: '12'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+SE.CLO.5.LDSEV.R.PRL.2016.3:
+  id: SE.CLO.5.LDSEV.R.PRL.2016.3
+  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
+    for reading, Third Quintile
+  source: Education Statistics
+  source_id: '12'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+SE.CLO.5.LDSEV.R.PRL.2016.4:
+  id: SE.CLO.5.LDSEV.R.PRL.2016.4
+  name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
+    for reading, Fourth Quintile
+  source: Education Statistics
+  source_id: '12'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
 SE.CLO.5.LDSEV.R.PRL.2016.5:
   id: SE.CLO.5.LDSEV.R.PRL.2016.5
   name: Learning Deprivation Severity;PIRLS 2016 for grade 5 using MPL Low (400 points)
@@ -212232,8 +212302,10 @@ SE.CLO.9.PRF.S.TMS.2007.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.9.PRF.S.TMS.2007.5:
   id: SE.CLO.9.PRF.S.TMS.2007.5
@@ -212264,10 +212336,8 @@ SE.CLO.9.PRF.S.TMS.2007.F:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.9.PRF.S.TMS.2007.M:
   id: SE.CLO.9.PRF.S.TMS.2007.M
@@ -225505,8 +225575,10 @@ SG.OWN.LDJT.FE.Q3.ZS:
     with quintile 1 being the poorest 20 percent of households and quintile 5 being
     the richest 20 percent of households.'
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SG.OWN.LDJT.FE.Q4.ZS:
   id: SG.OWN.LDJT.FE.Q4.ZS
@@ -225551,10 +225623,8 @@ SG.OWN.LDJT.FE.ZS:
     jointly" implies the woman doesn’t own a land on her own, but instead jointly
     owns one with someone else.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SG.OWN.LDJT.MA.Q1.ZS:
   id: SG.OWN.LDJT.MA.Q1.ZS
@@ -256189,8 +256259,10 @@ TRAD.IMPT.MTRN:
   source_note: ''
   source_organization: BADAN PUSAT STATISTIK - Statistics Indonesia, Unpublished statistics
     on Sub-National Trade
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 TRAD.IMPT.OLFTW:
   id: TRAD.IMPT.OLFTW
@@ -256236,10 +256308,8 @@ TRD.ACRS.BRDR.DB0615.DFRN:
     the number documents to export and import. It is computed based on the methodology
     in the DB06-15 studies.
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 TRD.ACRS.BRDR.DB1619.DFRN:
   id: TRD.ACRS.BRDR.DB1619.DFRN
@@ -275702,8 +275772,10 @@ UIS.NARA.AGM1.RUR.Q5.F:
     of education below the one intended for their age. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.NARA.AGM1.RUR.Q5.GPIA:
   id: UIS.NARA.AGM1.RUR.Q5.GPIA
@@ -322229,8 +322301,10 @@ fin14c.7:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin14c.8:
   id: fin14c.8
@@ -322262,10 +322336,8 @@ fin14d:
   source_id: '28'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin14d.1:
   id: fin14d.1
@@ -333201,8 +333273,10 @@ fin31a.2:
     payments for water, electricity, or trash collection in the past year directly
     from a bank or similar financial institution account, men (% age 15+)
   source_organization: Global Findex Database
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 fin31a.3:
   id: fin31a.3
@@ -333238,10 +333312,8 @@ fin31a.31b.1:
     from a bank or similar financial institution account or by using a mobile phone,
     women (% age 15+)
   source_organization: Global Findex Database
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 fin31a.31b.10:
   id: fin31a.31b.10
@@ -362220,8 +362292,10 @@ per_pr_allpr.bry_pop_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_pr_allpr.bry_q1_preT_tot:
   id: per_pr_allpr.bry_q1_preT_tot
@@ -362254,10 +362328,8 @@ per_pr_allpr.bry_q1_preT_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_pr_allpr.bry_q1_rur:
   id: per_pr_allpr.bry_q1_rur
@@ -386477,10 +386549,8 @@ per_sa_sp.avt_q4_preT_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_sa_sp.avt_q4_rur:
   id: per_sa_sp.avt_q4_rur
