@@ -19982,12 +19982,19 @@ AG.CON.FERT.PT.ZS:
   name: Fertilizer consumption (% of fertilizer production)
   source: World Development Indicators
   source_id: '2'
-  source_note: Fertilizer consumption measures the quantity of plant nutrients used
-    per unit of arable land. Fertilizer products cover nitrogenous, potash, and phosphate
-    fertilizers (including ground rock phosphate). Traditional nutrients--animal and
-    plant manures--are not included. For the purpose of data dissemination, FAO has
-    adopted the concept of a calendar year (January to December). Some countries compile
-    fertilizer data on a calendar year basis, while others are on a split-year basis.
+  source_note: Fertilizer consumption measures the quantity of plant nutrients and
+    is calculated as production plus imports minus exports. Fertilizer products cover
+    nitrogenous, potash, and phosphate fertilizers (including ground rock phosphate).
+    Traditional nutrients--animal and plant manures--are not included. Because some
+    chemical compounds used for fertilizers have other industrial applications, the
+    consumption data may overstate the quantity available for crops. Fertilizer consumption
+    as a share of production shows the agriculture sector's vulnerability to import
+    and energy price fluctuation. Most fertilizers that are commonly used in agriculture
+    contain the three basic plant nutrients-nitrogen, phosphorus, and potassium. Some
+    fertilizers also contain certain micronutrients such as zinc and other metals
+    that are necessary for plant growth. Materials that are applied to the land primarily
+    to enhance soil characteristics (rather than as plant food) are commonly referred
+    to as soil amendments.
   source_organization: 'FAO electronic files and web site, Food and Agriculture Organization
     of the United Nations (FAO), publisher: Food and Agriculture Organization of the
     United Nations (FAO)'
@@ -20296,17 +20303,17 @@ AG.LND.AGRI.K2:
   name: Agricultural land (sq. km)
   source: World Development Indicators
   source_id: '2'
-  source_note: Agricultural land refers to the share of land area that is arable,
-    under permanent crops, and under permanent pastures. Arable land includes land
-    defined by the FAO as land under temporary crops (double-cropped areas are counted
-    once), temporary meadows for mowing or for pasture, land under market or kitchen
-    gardens, and land temporarily fallow. Land abandoned as a result of shifting cultivation
-    is excluded. Land under permanent crops is land cultivated with crops that occupy
-    the land for long periods and need not be replanted after each harvest, such as
-    cocoa, coffee, and rubber. This category includes land under flowering shrubs,
-    fruit trees, nut trees, and vines, but excludes land under trees grown for wood
-    or timber. Permanent pasture is land used for five or more years for forage, including
-    natural and cultivated crops.
+  source_note: Agricultural land refers to the land area that is arable, under permanent
+    crops, and under permanent pastures. Arable land includes land defined by the
+    FAO as land under temporary crops (double-cropped areas are counted once), temporary
+    meadows for mowing or for pasture, land under market or kitchen gardens, and land
+    temporarily fallow. Land abandoned as a result of shifting cultivation is excluded.
+    Land under permanent crops is land cultivated with crops that occupy the land
+    for long periods and need not be replanted after each harvest, such as cocoa,
+    coffee, and rubber. This category includes land under flowering shrubs, fruit
+    trees, nut trees, and vines, but excludes land under trees grown for wood or timber.
+    Permanent pasture is land used for five or more years for forage, including natural
+    and cultivated crops.
   source_organization: 'FAO electronic files and web site, Food and Agriculture Organization
     of the United Nations (FAO), publisher: Food and Agriculture Organization of the
     United Nations (FAO)'
@@ -20388,7 +20395,7 @@ AG.LND.ARBL.ZS:
     crops (double-cropped areas are counted once), temporary meadows for mowing or
     for pasture, land under market or kitchen gardens, and land temporarily fallow.
     Land abandoned as a result of shifting cultivation is excluded.
-  source_organization: 'FAO electronic files and web site, Food and Agriculture Organization
+  source_organization: 'FAO electronic files and website, Food and Agriculture Organization
     of the United Nations (FAO), publisher: Food and Agriculture Organization of the
     United Nations (FAO)'
   topic_ids:
@@ -20442,8 +20449,9 @@ AG.LND.CREL.HA:
     for hay or harvested green for food, feed, or silage and those used for grazing
     are excluded.
   source_organization: 'FAO electronic files and web site, Food and Agriculture Organization
-    of the United Nations (FAO), publisher: Food and Agriculture Organization of the
-    United Nations (FAO)'
+    of the United Nations (FAO), uri: https://www.fao.org/faostat/en/#data/QCL, note:
+    Item code F1717, publisher: Food and Agriculture Organization of the United Nations
+    (FAO)'
   topic_ids:
   - '1'
   topics:
@@ -21003,8 +21011,8 @@ AG.PRD.CREL.MT:
     only. Cereal crops harvested for hay or harvested green for food, feed, or silage
     and those used for grazing are excluded.
   source_organization: 'FAO electronic files and web site, Food and Agriculture Organization
-    of the United Nations (FAO), publisher: Food and Agriculture Organization of the
-    United Nations (FAO)'
+    of the United Nations (FAO), uri: https://www.fao.org/faostat/en/#data/QCL, publisher:
+    Food and Agriculture Organization of the United Nations (FAO)'
   topic_ids:
   - '1'
   topics:
@@ -21603,8 +21611,8 @@ AG.YLD.CREL.KG:
     the calendar year in which the bulk of the harvest took place. Most of a crop
     harvested near the end of a year will be used in the following year.
   source_organization: 'FAO electronic files and web site, Food and Agriculture Organization
-    of the United Nations (FAO), publisher: Food and Agriculture Organization of the
-    United Nations (FAO)'
+    of the United Nations (FAO), uri: https://www.fao.org/faostat/en/#data/QCL, publisher:
+    Food and Agriculture Organization of the United Nations (FAO)'
   topic_ids:
   - '1'
   - '19'
@@ -88964,8 +88972,12 @@ EG.CFT.ACCS.ZS:
     of total population primarily using clean cooking fuels and technologies for cooking.
     Under WHO guidelines, kerosene is excluded from clean cooking fuels.
   source_organization: 'Tracking SDG 7: The Energy Progress Report, International
-    Energy Agency (IEA), note: License: Creative Commons Attribution—NonCommercial
-    3.0 IGO (CC BY-NC 3.0 IGO);
+    Energy Agency (IEA), International Renewable Energy Agency (IRENA), United Nations
+    Statistical Division (UNSD), World Bank, World Health Organization (WHO), uri:
+    https://trackingsdg7.esmap.org/, note: License: Creative Commons Attribution—NonCommercial
+    3.0 IGO (CC BY-NC 3.0 IGO), publisher: International Energy Agency (IEA), International
+    Renewable Energy Agency (IRENA), United Nations Statistical Division (UNSD), World
+    Bank, World Health Organization (WHO), date published: 2025-06;
 
     International Renewable Energy Agency (IRENA), note: Tracking SDG 7: The Energy
     Progress Report;
@@ -91092,10 +91104,10 @@ EN.GHG.ALL.LU.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    European Forest Observatory, uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    European Forest Observatory, uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91117,10 +91129,10 @@ EN.GHG.ALL.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91141,10 +91153,10 @@ EN.GHG.ALL.PC.CE.AR5:
     fluxes have larger uncertainties.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91167,10 +91179,10 @@ EN.GHG.CH4.AG.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91189,10 +91201,10 @@ EN.GHG.CH4.BU.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91212,10 +91224,10 @@ EN.GHG.CH4.FE.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91234,10 +91246,10 @@ EN.GHG.CH4.IC.MT.CE.AR5:
     Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91261,10 +91273,10 @@ EN.GHG.CH4.IP.MT.CE.AR5:
     (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91283,10 +91295,10 @@ EN.GHG.CH4.MT.CE.AR5:
     (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91305,10 +91317,10 @@ EN.GHG.CH4.PI.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91329,10 +91341,10 @@ EN.GHG.CH4.TR.MT.CE.AR5:
     (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91353,10 +91365,10 @@ EN.GHG.CH4.WA.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91377,10 +91389,10 @@ EN.GHG.CH4.ZG.AR5:
     emissions level in 1990.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91403,10 +91415,10 @@ EN.GHG.CO2.AG.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91425,10 +91437,10 @@ EN.GHG.CO2.BU.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91448,10 +91460,10 @@ EN.GHG.CO2.FE.MT.CE.AR5:
     the Global Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91470,10 +91482,10 @@ EN.GHG.CO2.IC.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91497,10 +91509,10 @@ EN.GHG.CO2.IP.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91596,11 +91608,11 @@ EN.GHG.CO2.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
-    publisher: JRC European Commission, date published: 2024'
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
+    publisher: International Energy Agency (IEA), date published: 2024'
   topic_ids:
   - '6'
   topics:
@@ -91618,10 +91630,10 @@ EN.GHG.CO2.PC.CE.AR5:
     Change Land Use and Forestry (LULUCF), as these fluxes have larger uncertainties.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91640,10 +91652,10 @@ EN.GHG.CO2.PI.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91660,10 +91672,10 @@ EN.GHG.CO2.RT.GDP.KD:
     LULUCF divided by the GDP in constant 2021 US$.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91680,10 +91692,10 @@ EN.GHG.CO2.RT.GDP.PP.KD:
     LULUCF divided by the GDP in 2021 PPP $.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91704,10 +91716,10 @@ EN.GHG.CO2.TR.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91728,10 +91740,10 @@ EN.GHG.CO2.WA.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91752,10 +91764,10 @@ EN.GHG.CO2.ZG.AR5:
     than the emissions level in 1990.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91776,10 +91788,10 @@ EN.GHG.FGAS.IP.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91802,10 +91814,10 @@ EN.GHG.N2O.AG.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91824,10 +91836,10 @@ EN.GHG.N2O.BU.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91847,10 +91859,10 @@ EN.GHG.N2O.FE.MT.CE.AR5:
     the Global Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91869,10 +91881,10 @@ EN.GHG.N2O.IC.MT.CE.AR5:
     Warming Potential (GWP) factors of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91896,10 +91908,10 @@ EN.GHG.N2O.IP.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91918,10 +91930,10 @@ EN.GHG.N2O.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91940,10 +91952,10 @@ EN.GHG.N2O.PI.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91964,10 +91976,10 @@ EN.GHG.N2O.TR.MT.CE.AR5:
     Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -91988,10 +92000,10 @@ EN.GHG.N2O.WA.MT.CE.AR5:
     of IPCC's 5th Assessment Report (AR5).
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -92012,10 +92024,11 @@ EN.GHG.N2O.ZG.AR5:
     emissions level in 1990.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    EDGAR (Emissions Database for Global Atmospheric Research) Community GHG Database,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -92040,10 +92053,10 @@ EN.GHG.TOT.ZG.AR5:
     in 1990.
   source_organization: 'EDGAR (Emissions Database for Global Atmospheric Research)
     Community GHG Database, Joint Research Centre (JRC) - European Commission, uri:
-    https://edgar.jrc.ec.europa.eu/dataset_ghg2032, publisher: JRC European Commission,
+    https://edgar.jrc.ec.europa.eu/dataset_ghg2024, publisher: JRC European Commission,
     date published: 2024;
 
-    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2032,
+    International Energy Agency (IEA), uri: https://edgar.jrc.ec.europa.eu/dataset_ghg2024,
     publisher: JRC European Commission, date published: 2024'
   topic_ids:
   - '6'
@@ -92894,8 +92907,9 @@ ER.FSH.AQUA.MT:
     including fish, molluscs, crustaceans and aquatic plants. Aquaculture production
     specifically refers to output from aquaculture activities, which are designated
     for final harvest for consumption.
-  source_organization: 'Food and Agriculture Organization of the United Nations (FAO),
-    publisher: Food and Agriculture Organization of the United Nations (FAO)'
+  source_organization: 'Food and Agriculture Organization., Food and Agriculture Organization
+    of the United Nations (FAO), publisher: Food and Agriculture Organization of the
+    United Nations (FAO)'
   topic_ids:
   - '6'
   topics:
@@ -92908,8 +92922,9 @@ ER.FSH.CAPT.MT:
   source_id: '2'
   source_note: Capture fisheries production measures the volume of fish catches landed
     by a country for all commercial, industrial, recreational and subsistence purposes.
-  source_organization: 'Food and Agriculture Organization of the United Nations (FAO),
-    publisher: Food and Agriculture Organization of the United Nations (FAO)'
+  source_organization: 'Food and Agriculture Organization., Food and Agriculture Organization
+    of the United Nations (FAO), publisher: Food and Agriculture Organization of the
+    United Nations (FAO)'
   topic_ids:
   - '6'
   topics:
@@ -92924,8 +92939,9 @@ ER.FSH.PROD.MT:
     by a country for all commercial, industrial, recreational and subsistence purposes.
     The harvest from mariculture, aquaculture and other kinds of fish farming is also
     included.
-  source_organization: 'Food and Agriculture Organization of the United Nations (FAO),
-    publisher: Food and Agriculture Organization of the United Nations (FAO)'
+  source_organization: 'Food and Agriculture Organization., Food and Agriculture Organization
+    of the United Nations (FAO), publisher: Food and Agriculture Organization of the
+    United Nations (FAO)'
   topic_ids:
   - '6'
   topics:
@@ -116275,8 +116291,8 @@ IC.FRM.GEN.GEND6:
 IC.FRM.INFM.ZS:
   id: IC.FRM.INFM.ZS
   name: Firms that do not report all sales for tax purposes (% of firms)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: Firms that do not report all sales for tax purposes are the percentage
     of firms that expressed that a typical firm reports less than 100 percent of sales
     for tax purposes; such firms are termed "informal firms."
@@ -123234,8 +123250,8 @@ IS.AIR.PSGR:
   name: Air transport, passengers carried
   source: World Development Indicators
   source_id: '2'
-  source_note: Air passengers carried include both domestic and international aircraft
-    passengers of air carriers registered in the country.
+  source_note: Air carrier data per country refers to passengers carried by airlines
+    registered in that country regardless of the origin or destination of the passengers.
   source_organization: 'Civil Aviation Statistics of the World, International Civil
     Aviation Organization (ICAO), uri: https://data.icao.int/newdataplus/#:~:text=ICAO%20data%20is%20comprised%20of,information%20about%20commercial%20air%20carriers;
 
@@ -153496,26 +153512,10 @@ MS.MIL.XPND.CD:
   name: Military expenditure (current USD)
   source: World Development Indicators
   source_id: '2'
-  source_note: Military expenditures data from SIPRI are derived from the NATO definition,
-    which includes all current and capital expenditures on the armed forces, including
-    peacekeeping forces; defense ministries and other government agencies engaged
-    in defense projects; paramilitary forces, if these are judged to be trained and
-    equipped for military operations; and military space activities. Such expenditures
-    include military and civil personnel, including retirement pensions of military
-    personnel and social services for personnel; operation and maintenance; procurement;
-    military research and development; and military aid (in the military expenditures
-    of the donor country). Excluded are civil defense and current expenditures for
-    previous military activities, such as for veterans' benefits, demobilization,
-    conversion, and destruction of weapons. This definition cannot be applied for
-    all countries, however, since that would require much more detailed information
-    than is available about what is included in military budgets and off-budget military
-    expenditure items. (For example, military budgets might or might not cover civil
-    defense, reserves and auxiliary forces, police and paramilitary forces, dual-purpose
-    forces such as military and civilian police, military grants in kind, pensions
-    for military personnel, and social security contributions paid by one part of
-    government to another).
-  source_organization: 'Yearbook: Armaments, Disarmament and International Security,
-    Stockholm International Peace Research Institute (SIPRI)'
+  source_note: Military spending USD, in current prices (converted at the exchange
+    rate for the given year)
+  source_organization: 'SIPRI Military Expenditure Database, Stockholm International
+    Peace Research Institute (SIPRI), uri: https://www.sipri.org/databases'
   topic_ids:
   - '13'
   topics:
@@ -153526,26 +153526,10 @@ MS.MIL.XPND.CN:
   name: Military expenditure (current LCU)
   source: World Development Indicators
   source_id: '2'
-  source_note: Military expenditures data from SIPRI are derived from the NATO definition,
-    which includes all current and capital expenditures on the armed forces, including
-    peacekeeping forces; defense ministries and other government agencies engaged
-    in defense projects; paramilitary forces, if these are judged to be trained and
-    equipped for military operations; and military space activities. Such expenditures
-    include military and civil personnel, including retirement pensions of military
-    personnel and social services for personnel; operation and maintenance; procurement;
-    military research and development; and military aid (in the military expenditures
-    of the donor country). Excluded are civil defense and current expenditures for
-    previous military activities, such as for veterans' benefits, demobilization,
-    conversion, and destruction of weapons. This definition cannot be applied for
-    all countries, however, since that would require much more detailed information
-    than is available about what is included in military budgets and off-budget military
-    expenditure items. (For example, military budgets might or might not cover civil
-    defense, reserves and auxiliary forces, police and paramilitary forces, dual-purpose
-    forces such as military and civilian police, military grants in kind, pensions
-    for military personnel, and social security contributions paid by one part of
-    government to another.)
-  source_organization: 'Yearbook: Armaments, Disarmament and International Security,
-    Stockholm International Peace Research Institute (SIPRI)'
+  source_note: Military expenditure in local currency at current prices (by calendar
+    year)
+  source_organization: 'SIPRI Military Expenditure Database, Stockholm International
+    Peace Research Institute (SIPRI), uri: https://www.sipri.org/databases'
   topic_ids:
   - '13'
   topics:
@@ -153556,26 +153540,9 @@ MS.MIL.XPND.GD.ZS:
   name: Military expenditure (% of GDP)
   source: World Development Indicators
   source_id: '2'
-  source_note: Military expenditures data from SIPRI are derived from the NATO definition,
-    which includes all current and capital expenditures on the armed forces, including
-    peacekeeping forces; defense ministries and other government agencies engaged
-    in defense projects; paramilitary forces, if these are judged to be trained and
-    equipped for military operations; and military space activities. Such expenditures
-    include military and civil personnel, including retirement pensions of military
-    personnel and social services for personnel; operation and maintenance; procurement;
-    military research and development; and military aid (in the military expenditures
-    of the donor country). Excluded are civil defense and current expenditures for
-    previous military activities, such as for veterans' benefits, demobilization,
-    conversion, and destruction of weapons. This definition cannot be applied for
-    all countries, however, since that would require much more detailed information
-    than is available about what is included in military budgets and off-budget military
-    expenditure items. (For example, military budgets might or might not cover civil
-    defense, reserves and auxiliary forces, police and paramilitary forces, dual-purpose
-    forces such as military and civilian police, military grants in kind, pensions
-    for military personnel, and social security contributions paid by one part of
-    government to another.)
-  source_organization: 'Yearbook: Armaments, Disarmament and International Security,
-    Stockholm International Peace Research Institute (SIPRI)'
+  source_note: Military expenditure by country as percentage of gross domestic product
+  source_organization: 'SIPRI Military Expenditure Database, Stockholm International
+    Peace Research Institute (SIPRI), uri: https://www.sipri.org/databases'
   topic_ids:
   - '13'
   topics:
@@ -153596,26 +153563,10 @@ MS.MIL.XPND.ZS:
   name: Military expenditure (% of general government expenditure)
   source: World Development Indicators
   source_id: '2'
-  source_note: Military expenditures data from SIPRI are derived from the NATO definition,
-    which includes all current and capital expenditures on the armed forces, including
-    peacekeeping forces; defense ministries and other government agencies engaged
-    in defense projects; paramilitary forces, if these are judged to be trained and
-    equipped for military operations; and military space activities. Such expenditures
-    include military and civil personnel, including retirement pensions of military
-    personnel and social services for personnel; operation and maintenance; procurement;
-    military research and development; and military aid (in the military expenditures
-    of the donor country). Excluded are civil defense and current expenditures for
-    previous military activities, such as for veterans' benefits, demobilization,
-    conversion, and destruction of weapons. This definition cannot be applied for
-    all countries, however, since that would require much more detailed information
-    than is available about what is included in military budgets and off-budget military
-    expenditure items. (For example, military budgets might or might not cover civil
-    defense, reserves and auxiliary forces, police and paramilitary forces, dual-purpose
-    forces such as military and civilian police, military grants in kind, pensions
-    for military personnel, and social security contributions paid by one part of
-    government to another.)
-  source_organization: 'Yearbook: Armaments, Disarmament and International Security,
-    Stockholm International Peace Research Institute (SIPRI)'
+  source_note: Military expenditure expressed as a percentage of general government
+    expenditure
+  source_organization: 'SIPRI Military Expenditure Database, Stockholm International
+    Peace Research Institute (SIPRI), uri: https://www.sipri.org/databases'
   topic_ids:
   - '13'
   topics:
@@ -161704,7 +161655,8 @@ NY.GDP.COAL.RT.ZS:
   source_note: Coal rents are the difference between the value of both hard and soft
     coal production at world prices and their total costs of production.
   source_organization: 'The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data,
-    publisher: World Bank (WB);
+    note: World Bank staff estimates based on sources and methods described in the
+    World Bank''s The Changing Wealth of Nations., publisher: World Bank (WB);
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on sources
     and methods described in the World Bank''s The Changing Wealth of Nations.'
@@ -162006,7 +161958,8 @@ NY.GDP.FRST.RT.ZS:
   source_note: Forest rents are roundwood harvest times the product of regional prices
     and a regional rental rate.
   source_organization: 'The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data,
-    publisher: World Bank (WB);
+    note: World Bank staff estimates based on sources and methods described in the
+    World Bank''s The Changing Wealth of Nations., publisher: World Bank (WB);
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on sources
     and methods described in the World Bank''s The Changing Wealth of Nations.'
@@ -162025,7 +161978,8 @@ NY.GDP.MINR.RT.ZS:
     included in the calculation are tin, gold, lead, zinc, iron, copper, nickel, silver,
     bauxite, and phosphate.
   source_organization: 'The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data,
-    publisher: World Bank (WB);
+    note: World Bank staff estimates based on sources and methods described in the
+    World Bank''s The Changing Wealth of Nations., publisher: World Bank (WB);
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on sources
     and methods described in the World Bank''s The Changing Wealth of Nations.'
@@ -162384,7 +162338,8 @@ NY.GDP.NGAS.RT.ZS:
   source_note: Natural gas rents are the difference between the value of natural gas
     production at regional prices and total costs of production.
   source_organization: 'The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data,
-    publisher: World Bank (WB);
+    note: World Bank staff estimates based on sources and methods described in the
+    World Bank''s The Changing Wealth of Nations., publisher: World Bank (WB);
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on sources
     and methods described in the World Bank''s The Changing Wealth of Nations.'
@@ -162646,7 +162601,8 @@ NY.GDP.PETR.RT.ZS:
   source_note: Oil rents are the difference between the value of crude oil production
     at regional prices and total costs of production.
   source_organization: 'The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data,
-    publisher: World Bank (WB);
+    note: World Bank staff estimates based on sources and methods described in the
+    World Bank''s The Changing Wealth of Nations., publisher: World Bank (WB);
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on sources
     and methods described in the World Bank''s The Changing Wealth of Nations.'
@@ -162665,7 +162621,8 @@ NY.GDP.TOTL.RT.ZS:
   source_note: Total natural resources rents are the sum of oil rents, natural gas
     rents, coal rents (hard and soft), mineral rents, and forest rents.
   source_organization: 'The Changing Wealth of Nations, World Bank (WB), uri: https://www.worldbank.org/en/publication/changing-wealth-of-nations/data,
-    publisher: World Bank (WB);
+    note: World Bank staff estimates based on sources and methods described in the
+    World Bank''s The Changing Wealth of Nations., publisher: World Bank (WB);
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on sources
     and methods described in the World Bank''s The Changing Wealth of Nations.'
@@ -230074,8 +230031,8 @@ SH.DYN.AIDS.FE.ZS:
     HIV. Female rate is as a percentage of the total population ages 15+ who are living
     with HIV.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   - '17'
@@ -231691,8 +231648,9 @@ SH.H2O.BASW.RU.ZS:
     boreholes or tubewells, protected dug wells, protected springs, and packaged or
     delivered water.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -231776,8 +231734,9 @@ SH.H2O.BASW.UR.ZS:
     boreholes or tubewells, protected dug wells, protected springs, and packaged or
     delivered water.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -231801,8 +231760,9 @@ SH.H2O.BASW.ZS:
     boreholes or tubewells, protected dug wells, protected springs, and packaged or
     delivered water.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -231899,7 +231859,7 @@ SH.H2O.SMDW.RU.ZS:
     fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF
     Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org),
-    date accessed: 2023-07-25, date published: 2023-07-06;
+    date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -231926,7 +231886,7 @@ SH.H2O.SMDW.UR.ZS:
     fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF
     Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org),
-    date accessed: 2023-07-25, date published: 2023-07-06;
+    date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -231953,7 +231913,7 @@ SH.H2O.SMDW.ZS:
     fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF
     Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org),
-    date accessed: 2023-07-25, date published: 2023-07-06;
+    date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -231972,8 +231932,8 @@ SH.HIV.0014:
   source_note: Children living with HIV refers to the number of children ages 0-14
     who are infected with HIV.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232009,8 +231969,8 @@ SH.HIV.1524.FE.ZS:
   source_note: Prevalence of HIV, female is the percentage of females who are infected
     with HIV. Youth rates are as a percentage of the relevant age group.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   - '17'
@@ -232082,8 +232042,8 @@ SH.HIV.1524.MA.ZS:
   source_note: Prevalence of HIV, male is the percentage of males who are infected
     with HIV. Youth rates are as a percentage of the relevant age group.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   - '17'
@@ -232127,8 +232087,8 @@ SH.HIV.ARTC.ZS:
   source_note: Antiretroviral therapy coverage indicates the percentage of all people
     living with HIV who are receiving antiretroviral therapy.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232177,8 +232137,8 @@ SH.HIV.INCD:
   source_id: '2'
   source_note: Number of adults (ages 15-49) newly infected with HIV.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232191,8 +232151,8 @@ SH.HIV.INCD.14:
   source_id: '2'
   source_note: Number of children (ages 0-14) newly infected with HIV.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232253,8 +232213,8 @@ SH.HIV.INCD.TL:
   source_note: Number of adults (ages 15+) and children (ages 0-14) newly infected
     with HIV.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232268,8 +232228,8 @@ SH.HIV.INCD.TL.P3:
   source_note: Number of new HIV infections among uninfected populations expressed
     per 1,000 uninfected population in the year before the period.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232282,8 +232242,8 @@ SH.HIV.INCD.YG:
   source_id: '2'
   source_note: Number of young people (ages 15-24) newly infected with HIV.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232333,8 +232293,8 @@ SH.HIV.INCD.YG.P3:
   source_note: Number of new HIV infections among uninfected populations ages 15-24
     expressed per 1,000 uninfected population ages 15-24 in the year before the period.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232348,8 +232308,8 @@ SH.HIV.INCD.ZS:
   source_note: Number of new HIV infections among uninfected populations ages 15-49
     expressed per 1,000 uninfected population in the year before the period.
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -232510,8 +232470,8 @@ SH.HIV.PMTC.ZS:
   source_note: Percentage of pregnant women with HIV who receive antiretroviral medicine
     for prevention of mother-to-child transmission (PMTCT).
   source_organization: 'UNAIDS estimates, Joint United Nations Programme on HIV/AIDS
-    (UNAIDS), uri: https://aidsinfo.unaids.org/, date accessed: 2025-08-27, date published:
-    2025-07'
+    (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed:
+    2025-08-27, date published: 2025-07'
   topic_ids:
   - '8'
   topics:
@@ -235351,8 +235311,9 @@ SH.STA.BASS.RU.ZS:
     flush/pour flush to piped sewer systems, septic tanks or pit latrines; ventilated
     improved pit latrines, compositing toilets or pit latrines with slabs.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -235435,8 +235396,9 @@ SH.STA.BASS.UR.ZS:
     flush/pour flush to piped sewer systems, septic tanks or pit latrines; ventilated
     improved pit latrines, compositing toilets or pit latrines with slabs.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -235459,8 +235421,9 @@ SH.STA.BASS.ZS:
     flush/pour flush to piped sewer systems, septic tanks or pit latrines; ventilated
     improved pit latrines, compositing toilets or pit latrines with slabs.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -236310,8 +236273,9 @@ SH.STA.HYGN.RU.ZS:
     soap, powder detergent, and soapy water but does not include ash, soil, sand or
     other handwashing agents.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -236420,8 +236384,9 @@ SH.STA.HYGN.UR.ZS:
     soap, powder detergent, and soapy water but does not include ash, soil, sand or
     other handwashing agents.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -236444,8 +236409,9 @@ SH.STA.HYGN.ZS:
     soap, powder detergent, and soapy water but does not include ash, soil, sand or
     other handwashing agents.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -237059,8 +237025,9 @@ SH.STA.ODFC.RU.ZS:
     defecating in the open, such as in fields, forest, bushes, open bodies of water,
     on beaches, in other open spaces or disposed of with solid waste.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -237130,8 +237097,9 @@ SH.STA.ODFC.UR.ZS:
     defecating in the open, such as in fields, forest, bushes, open bodies of water,
     on beaches, in other open spaces or disposed of with solid waste.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -237151,8 +237119,9 @@ SH.STA.ODFC.ZS:
     defecating in the open, such as in fields, forest, bushes, open bodies of water,
     on beaches, in other open spaces or disposed of with solid waste.
   source_organization: 'WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply,
-    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, date
-    accessed: 2023-07-25, date published: 2023-07-06;
+    Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher:
+    WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene
+    (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -237687,7 +237656,7 @@ SH.STA.SMSS.RU.ZS:
     fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF
     Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org),
-    date accessed: 2023-07-25, date published: 2023-07-06;
+    date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -237714,7 +237683,7 @@ SH.STA.SMSS.UR.ZS:
     fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF
     Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org),
-    date accessed: 2023-07-25, date published: 2023-07-06;
+    date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -237741,7 +237710,7 @@ SH.STA.SMSS.ZS:
     fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF
     Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org),
-    date accessed: 2023-07-25, date published: 2023-07-06;
+    date accessed: 2025-09-30, date published: 2025-08-25;
 
     UN Children''s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring
     Programme (JMP) for Water Supply, Sanitation and Hygiene'
@@ -240043,12 +240012,12 @@ SH_UHC_FH40:
   source: World Development Indicators
   source_id: '2'
   source_note: "Proportion of population spending more than 40% of household discretionary\
-    \ budget on out-of-pocket health expenditure (%)\n\nThe discretionary budget is\
-    \ defined as the total household budget, measured by consumption expenditure or\
-    \ income, minus the societal poverty line (SPL  ). Using 2017 purchasing power\
+    \ budget on out-of-pocket health expenditure (%)\n\n\n\nThe discretionary budget\
+    \ is defined as the total household budget, measured by consumption expenditure\
+    \ or income, minus the societal poverty line (SPL  ). Using 2017 purchasing power\
     \ parities (PPPs), the SPL corresponds to whichever is greater: $2.15 (the international\
     \ poverty line) or $1.15 + 50% of median household consumption expenditure or\
-    \ income, excluding out-of-pocket household expenditure on health. \n\nOut-of-pocket\
+    \ income, excluding out-of-pocket household expenditure on health. \n\n\n\nOut-of-pocket\
     \ health expenditure is defined as any spending incurred by a household when any\
     \ member uses a health good or service to receive any type of care (preventive,\
     \ curative, rehabilitative, long-term or palliative care); provided by any type\
@@ -240129,11 +240098,15 @@ SH_UHC_FH40_LARGE:
     of household discretionary budget on out-of-pocket health expenditure (%)
 
 
+
+
     The discretionary budget is defined as the total household budget, measured by
     consumption expenditure or income, minus the societal poverty line (SPL). Using
     2017 purchasing power parities (PPPs), the SPL corresponds to whichever is greater:
     $2.15 (the international poverty line) or $1.15 + 50% of median household consumption
     expenditure or income, excluding out-of-pocket household expenditure on health.
+
+
 
 
     Out-of-pocket health expenditure is defined as any spending incurred by a household
@@ -240239,8 +240212,8 @@ SH_UHC_SCI_RMNCH:
     health
   source: World Development Indicators
   source_id: '2'
-  source_note: 'UHC service coverage sub-index on reproductive, maternal, newborn
-    and child health services is based on four tracer indicators: (i) family planning,
+  source_note: 'UHC service coverage sub-index on reproductive, maternal,?newborn?and
+    child health services is based on four tracer indicators: (i) family planning,
     (ii) pregnancy care, (iii) child immunization, (iv) child treatment. It is presented
     on a scale of 0 to 100 index points and is one of the four sub-indexes underlaying
     the overall UHC service coverage index.'
@@ -251820,10 +251793,10 @@ SP.RUR.TOTL:
     not add up to total population because of different country coverages.
   source_organization: 'World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/,
     note: World Bank staff estimates based on the United Nations Population Division''s
-    World Urbanization Prospects, publisher: UN Population Division;
+    World Urbanization Prospects, National definitions, publisher: UN Population Division;
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on the
-    United Nations Population Division''s World Urbanization Prospects'
+    United Nations Population Division''s World Urbanization Prospects, National definitions'
   topic_ids:
   - '1'
   topics:
@@ -251868,10 +251841,11 @@ SP.RUR.TOTL.ZG:
     statistical offices. It is calculated as the difference between total population
     and urban population.
   source_organization: 'World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/,
-    publisher: UN Population Division;
+    note: World Bank staff estimates based on the United Nations Population Division''s
+    World Urbanization Prospects, National definitions, publisher: UN Population Division;
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on the
-    United Nations Population Division''s World Urbanization Prospects'
+    United Nations Population Division''s World Urbanization Prospects, National definitions'
   topic_ids:
   - '1'
   topics:
@@ -251886,10 +251860,11 @@ SP.RUR.TOTL.ZS:
     by national statistical offices. It is calculated as the difference between total
     population and urban population.
   source_organization: 'World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/,
-    publisher: UN Population Division;
+    note: World Bank staff estimates based on the United Nations Population Division''s
+    World Urbanization Prospects, National definitions, publisher: UN Population Division;
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on the
-    United Nations Population Division''s World Urbanization Prospects'
+    United Nations Population Division''s World Urbanization Prospects, National definitions'
   topic_ids:
   - '1'
   topics:
@@ -252062,10 +252037,11 @@ SP.URB.GROW:
     statistical offices. It is calculated using World Bank total population estimates
     and urban ratios from the United Nations World Urbanization Prospects.
   source_organization: 'World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/,
-    publisher: UN Population Division;
+    note: World Bank staff estimates based on the United Nations Population Division''s
+    World Urbanization Prospects, National definitions, publisher: UN Population Division;
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on the
-    United Nations Population Division''s World Urbanization Prospects'
+    United Nations Population Division''s World Urbanization Prospects, National definitions'
   topic_ids:
   - '19'
   - '16'
@@ -252125,10 +252101,10 @@ SP.URB.TOTL:
     of different country coverages.
   source_organization: 'World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/,
     note: World Bank staff estimates based on the United Nations Population Division''s
-    World Urbanization Prospects, publisher: UN Population Division;
+    World Urbanization Prospects, National definitions, publisher: UN Population Division;
 
     Staff estimates, World Bank (WB), note: World Bank staff estimates based on the
-    United Nations Population Division''s World Urbanization Prospects'
+    United Nations Population Division''s World Urbanization Prospects, National definitions'
   topic_ids:
   - '19'
   - '16'
@@ -252159,7 +252135,8 @@ SP.URB.TOTL.IN.ZS:
     by national statistical offices. The data are collected and smoothed by United
     Nations Population Division.
   source_organization: 'World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/,
-    publisher: UN Population Division'
+    note: United Nations Population Division''s World Urbanization Prospects, National
+    definitions, publisher: UN Population Division'
   topic_ids:
   - '19'
   - '16'
@@ -258193,10 +258170,10 @@ TX.VAL.TECH.CD:
   source_note: High-technology exports are products with high R&D intensity, such
     as aerospace, computers, pharmaceuticals, scientific instruments, and electrical
     machinery.
-  source_organization: 'Comtrade database, United Nations (UN), publisher: UN Statistics
-    Division;
+  source_organization: 'Comtrade database, United Nations (UN), uri: comtrade.un.org,
+    publisher: UN Statistics Division;
 
-    World Integrated Trade Solution system (WITS), World Bank (WB)'
+    World Integrated Trade Solution system (WITS), World Bank (WB), uri: https://wits.worldbank.org/'
   topic_ids:
   - '12'
   - '14'
@@ -258214,10 +258191,10 @@ TX.VAL.TECH.MF.ZS:
   source_note: High-technology exports are products with high R&D intensity, such
     as in aerospace, computers, pharmaceuticals, scientific instruments, and electrical
     machinery.
-  source_organization: 'Comtrade database, United Nations (UN), publisher: UN Statistics
-    Division;
+  source_organization: 'Comtrade database, United Nations (UN), uri: comtrade.un.org,
+    publisher: UN Statistics Division;
 
-    World Integrated Trade Solution system (WITS), World Bank (WB)'
+    World Integrated Trade Solution system (WITS), World Bank (WB), uri: https://wits.worldbank.org/'
   topic_ids:
   - '12'
   - '14'
@@ -299172,15 +299149,16 @@ VC.BTL.DETH:
   source_id: '2'
   source_note: Battle-related deaths are deaths in battle-related conflicts between
     warring parties in the conflict dyad (two conflict units that are parties to a
-    conflict). Typically, battle-related deaths occur in warfare involving the armed
-    forces of the warring parties. This includes traditional battlefield fighting,
-    guerrilla activities, and all kinds of bombardments of military units, cities,
-    and villages, etc. The targets are usually the military itself and its installations
-    or state institutions and state representatives, but there is often substantial
-    collateral damage in the form of civilians being killed in crossfire, in indiscriminate
-    bombings, etc. All deaths--military as well as civilian--incurred in such situations,
-    are counted as battle-related deaths.
-  source_organization: 'Uppsala Conflict Data Program (UCDP), uri: http://www.pcr.uu.se/research/ucdp/'
+    conflict). Battle-related deaths refer to those deaths caused by the warring parties
+    that can be directly related to combat. This includes battlefield fighting, guerrilla
+    activities (e.g. hit and-run attacks/ambushes) and all kinds of bombardments of
+    military bases, cities and villages etc. The target for the attacks is either
+    the military forces or representatives for the parties, though there is often
+    substantial collateral damage in the form of civilians being killed in the crossfire,
+    indiscriminate bombings, etc. All fatalities, military as well as civilian, incurred
+    in such situations are counted as battle-related deaths.
+  source_organization: 'UCDP Battle-related Deaths Dataset , Uppsala Conflict Data
+    Program (UCDP), uri: https://ucdp.uu.se/downloads/, publisher: Uppsala University'
   topic_ids:
   - '13'
   topics:
