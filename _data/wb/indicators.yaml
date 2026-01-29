@@ -295870,12 +295870,8 @@
   source_note: Nurses and midwives include professional nurses, professional midwives,
     auxiliary nurses, auxiliary midwives, enrolled nurses, enrolled midwives and other
     associated personnel, such as dental nurses and primary care nurses.
-  source_organization: 'Global Health Workforce Statistics, World Health Organization
-    (WHO);
-
-    Organisation for Economic Co-operation and Development (OECD);
-
-    Country data'
+  source_organization: Global Health Workforce Statistics, World Health Organization
+    (WHO)
   topics: 'Health '
   topic_ids: '8'
 - id: SH.MED.NURS.ZS
@@ -295893,12 +295889,8 @@
   source_id: '2'
   source: World Development Indicators
   source_note: Physicians include generalist and specialist medical practitioners.
-  source_organization: 'Global Health Workforce Statistics, World Health Organization
-    (WHO);
-
-    Organisation for Economic Co-operation and Development (OECD);
-
-    Country data'
+  source_organization: Global Health Workforce Statistics, World Health Organization
+    (WHO)
   topics: 'Health '
   topic_ids: '8'
 - id: SH.MED.SAOP.P5
@@ -301051,8 +301043,8 @@
     of current health expenditures include healthcare goods and services consumed
     during each year. This indicator does not include capital health expenditures
     such as buildings, machinery, IT and stocks of vaccines for emergency or outbreaks.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: https://apps.who.int/nha/database, publisher: World Health Organization'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.CHEX.PC.CD
@@ -301063,8 +301055,8 @@
   source_note: Current expenditures on health per capita in current US dollars. Estimates
     of current health expenditures include healthcare goods and services consumed
     during each year.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.CHEX.PP.CD
@@ -301074,8 +301066,8 @@
   source: World Development Indicators
   source_note: Current expenditures on health per capita expressed in international
     dollars at purchasing power parity.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.EHEX.CH.ZS
@@ -301088,8 +301080,8 @@
     by government encompassing all financial inflows into the national health system
     from outside the country. External sources either flow through the government
     scheme or are channeled through non-governmental organizations or other schemes.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.EHEX.EH.ZS
@@ -301114,8 +301106,8 @@
     US dollars. External sources are composed of direct foreign transfers and foreign
     transfers distributed by government encompassing all financial inflows into the
     national health system from outside the country.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.EHEX.PP.CD
@@ -301127,8 +301119,8 @@
     dollars at purchasing power parity. External sources are composed of direct foreign
     transfers and foreign transfers distributed by government encompassing all financial
     inflows into the national health system from outside the country.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.EXTR.ZS
@@ -301156,8 +301148,8 @@
     non-profit institutions serving households (NPISH) or enterprise financing schemes
     as well as compulsory prepayment and social health insurance contributions. They
     do not include external resources spent by governments on health.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.GHED.GD.ZS
@@ -301167,8 +301159,8 @@
   source: World Development Indicators
   source_note: Public expenditure on health from domestic sources as a share of the
     economy as measured by GDP.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.GHED.GE.ZS
@@ -301179,8 +301171,8 @@
   source_note: Public expenditure on health from domestic sources as a share of total
     public expenditure.  It indicates the priority of the government to spend on health
     from own domestic public resources.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.GHED.PC.CD
@@ -301190,8 +301182,8 @@
   source: World Development Indicators
   source_note: Public expenditure on health from domestic sources per capita expressed
     in current US dollars.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.GHED.PP.CD
@@ -301202,8 +301194,8 @@
   source: World Development Indicators
   source_note: Public expenditure on health from domestic sources per capita expressed
     in international dollars at purchasing power parity.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.HLTH.ZS
@@ -301234,8 +301226,8 @@
   source: World Development Indicators
   source_note: Share of out-of-pocket payments of total current health expenditures.  Out-of-pocket
     payments are spending on health directly out-of-pocket by households.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.OOPC.PC.CD
@@ -301246,8 +301238,8 @@
   source_note: Health expenditure through out-of-pocket payments per capita in USD.  Out
     of pocket payments are spending on health directly out of pocket by households
     in each country.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.OOPC.PP.CD
@@ -301257,8 +301249,8 @@
   source: World Development Indicators
   source_note: Health expenditure through out-of-pocket payments per capita in international
     dollars at purchasing power parity.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.OOPC.TO.ZS
@@ -301429,8 +301421,8 @@
     private sources include funds from households, corporations and non-profit organizations.
     Such expenditures can be either prepaid to voluntary health insurance or paid
     directly to healthcare providers.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.PVTD.PC.CD
@@ -301442,8 +301434,8 @@
     US dollars. Domestic private sources include funds from households, corporations
     and non-profit organizations. Such expenditures can be either prepaid to voluntary
     health insurance or paid directly to healthcare providers.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.PVTD.PP.CD
@@ -301454,8 +301446,8 @@
   source: World Development Indicators
   source_note: Current private expenditures on health per capita expressed in international
     dollars at purchasing power parity.
-  source_organization: 'Global Health Expenditure database, World Health Organization
-    (WHO), uri: http://apps.who.int/nha/database'
+  source_organization: 'Global Health Expenditure Database, updated December 12th,
+    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
   topics: 'Health '
   topic_ids: '8'
 - id: SH.XPD.SOSE.GX.ZS
@@ -303085,7 +303077,7 @@
     2) or categories A-B (ISIC 3) or category A (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Agriculture & Rural Development  ;Social Protection & Labor;Gender
   topic_ids: 1;10;17
 - id: SL.AGR.EMPL.MA.ZS
@@ -303101,7 +303093,7 @@
     2) or categories A-B (ISIC 3) or category A (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Agriculture & Rural Development  ;Social Protection & Labor;Gender
   topic_ids: 1;10;17
 - id: SL.AGR.EMPL.ZS
@@ -303117,7 +303109,7 @@
     2) or categories A-B (ISIC 3) or category A (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Agriculture & Rural Development  ;Social Protection & Labor
   topic_ids: 1;10
 - id: SL.AGR.TOTL.IN.ZS
@@ -303156,7 +303148,7 @@
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.1524.SP.FE.ZS
@@ -303168,7 +303160,7 @@
     that is employed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.1524.SP.MA.NE.ZS
@@ -303180,7 +303172,7 @@
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.1524.SP.MA.ZS
@@ -303192,7 +303184,7 @@
     that is employed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.1524.SP.NE.ZS
@@ -303204,7 +303196,7 @@
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.1524.SP.ZS
@@ -303216,7 +303208,7 @@
     that is employed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.AGR.FRST.FSH
@@ -303322,7 +303314,7 @@
     a continuous basis, one or more persons to work for them as employee(s).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.MPYR.MA.ZS
@@ -303337,7 +303329,7 @@
     a continuous basis, one or more persons to work for them as employee(s).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.MPYR.ZS
@@ -303352,7 +303344,7 @@
     a continuous basis, one or more persons to work for them as employee(s).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.OWAC.FE.ZS
@@ -303403,7 +303395,7 @@
     cooperatives and contributing family workers.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.SELF.MA.ZS
@@ -303419,7 +303411,7 @@
     cooperatives and contributing family workers.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.SELF.ZS
@@ -303435,7 +303427,7 @@
     cooperatives and contributing family workers.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.SMGT.FE.ZS
@@ -303451,7 +303443,7 @@
     14 in ISCO-08 and minus category 13 in ISCO-88).
   source_organization: 'Labour Market-related SDG Indicators database (ILOSDG), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.SOCL
@@ -303505,7 +303497,7 @@
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.TOTL.SP.FE.ZS
@@ -303517,7 +303509,7 @@
     that is employed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.TOTL.SP.MA.NE.ZS
@@ -303529,7 +303521,7 @@
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.TOTL.SP.MA.ZS
@@ -303541,7 +303533,7 @@
     that is employed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.TOTL.SP.NE.ZS
@@ -303553,7 +303545,7 @@
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.TOTL.SP.ZS
@@ -303565,7 +303557,7 @@
     that is employed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.EMP.TRAD
@@ -303638,9 +303630,7 @@
     workers as a percentage of total employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database;
-
-    Staff estimates, World Bank (WB)'
+    type: estimates based on external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Gender;Social Development '
   topic_ids: 10;17;15
 - id: SL.EMP.VULN.MA.ZS
@@ -303652,9 +303642,7 @@
     workers as a percentage of total employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database;
-
-    Staff estimates, World Bank (WB)'
+    type: estimates based on external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Gender;Social Development '
   topic_ids: 10;17;15
 - id: SL.EMP.VULN.ZS
@@ -303666,9 +303654,7 @@
     workers as a percentage of total employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database;
-
-    Staff estimates, World Bank (WB)'
+    type: estimates based on external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Aid Effectiveness '
   topic_ids: 10;2
 - id: SL.EMP.WORK.FE.ZS
@@ -303682,7 +303668,7 @@
     that is not directly dependent upon the revenue of the unit for which they work.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.WORK.MA.ZS
@@ -303696,7 +303682,7 @@
     that is not directly dependent upon the revenue of the unit for which they work.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.EMP.WORK.ZS
@@ -303710,7 +303696,7 @@
     that is not directly dependent upon the revenue of the unit for which they work.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.FAM.0714.FE.ZS
@@ -303772,7 +303758,7 @@
     related person living in the same household.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.FAM.WORK.MA.ZS
@@ -303785,7 +303771,7 @@
     related person living in the same household.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.FAM.WORK.ZS
@@ -303798,7 +303784,7 @@
     related person living in the same household.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.GDP.PCAP.EM.KD
@@ -303810,20 +303796,8 @@
     total employment in the economy. Purchasing power parity (PPP) GDP is GDP converted
     to 2021 constant international dollars using PPP rates. An international dollar
     has the same purchasing power over GDP that a U.S. dollar has in the United States.
-  source_organization: 'Staff estimates, World Bank (WB), note: Estimates are based
-    on employment, population, GDP, and PPP data obtained from International Labour
-    Organization, United Nations Population Division, Eurostat, OECD, and World Bank.,
-    type: estimates based on external database;
-
-    International Labour Organization (ILO);
-
-    United Nations (UN), publisher: UN Population Division;
-
-    Eurostat (ESTAT);
-
-    Organisation for Economic Co-operation and Development (OECD);
-
-    World Development Indicators database, World Bank (WB)'
+  source_organization: Staff estimates, World Bank (WB), International Labour Organization
+    (ILO)
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.GDP.PCAP.EM.KD.ZG
@@ -303863,7 +303837,7 @@
     3) or categories B-F (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.IND.EMPL.MA.ZS
@@ -303880,7 +303854,7 @@
     3) or categories B-F (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.IND.EMPL.ZS
@@ -303897,7 +303871,7 @@
     3) or categories B-F (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.ISV.IFRM.FE.ZS
@@ -304158,7 +304132,7 @@
     G-Q (ISIC 3) or categories G-U (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.SRV.EMPL.MA.ZS
@@ -304176,7 +304150,7 @@
     G-Q (ISIC 3) or categories G-U (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.SRV.EMPL.ZS
@@ -304194,7 +304168,7 @@
     G-Q (ISIC 3) or categories G-U (ISIC 4).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF
@@ -304619,7 +304593,7 @@
     for the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.ACTI.1524.FE.ZS
@@ -304632,7 +304606,7 @@
     for the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Social Development '
   topic_ids: 10;15
 - id: SL.TLF.ACTI.1524.MA.NE.ZS
@@ -304645,7 +304619,7 @@
     for the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.ACTI.1524.MA.ZS
@@ -304658,7 +304632,7 @@
     for the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Social Development '
   topic_ids: 10;15
 - id: SL.TLF.ACTI.1524.NE.ZS
@@ -304671,7 +304645,7 @@
     for the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.ACTI.1524.ZS
@@ -304684,7 +304658,7 @@
     for the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Social Development '
   topic_ids: 10;15
 - id: SL.TLF.ACTI.FE.ZS
@@ -304698,7 +304672,7 @@
     of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Social Development '
   topic_ids: 10;15
 - id: SL.TLF.ACTI.MA.ZS
@@ -304712,7 +304686,7 @@
     of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Social Development '
   topic_ids: 10;15
 - id: SL.TLF.ACTI.ZS
@@ -304726,7 +304700,7 @@
     of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Social Development '
   topic_ids: 10;15
 - id: SL.TLF.ADVN.FE.ZS
@@ -304743,7 +304717,7 @@
     2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.ADVN.MA.ZS
@@ -304760,7 +304734,7 @@
     2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.ADVN.ZS
@@ -304777,7 +304751,7 @@
     2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.BASC.FE.ZS
@@ -304792,7 +304766,7 @@
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.BASC.MA.ZS
@@ -304807,7 +304781,7 @@
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.BASC.ZS
@@ -304822,7 +304796,7 @@
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CACT.2534.FE.ZS
@@ -305091,7 +305065,7 @@
     the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CACT.FE.ZS
@@ -305105,7 +305079,7 @@
     of working age who are employed and those who are unemployed.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Gender;Social Development '
   topic_ids: 10;17;15
 - id: SL.TLF.CACT.FM.NE.ZS
@@ -305120,9 +305094,7 @@
     are employed and those who are unemployed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database;
-
-    Staff estimates, World Bank (WB)'
+    type: estimates based on external database, date accessed:  January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CACT.FM.ZS
@@ -305135,9 +305107,7 @@
     the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database;
-
-    Staff estimates, World Bank (WB)'
+    type: estimates based on external database, date accessed:  January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CACT.MA.NE.ZS
@@ -305151,7 +305121,7 @@
     the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CACT.MA.ZS
@@ -305165,7 +305135,7 @@
     the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Social Protection & Labor;Gender;Social Development '
   topic_ids: 10;17;15
 - id: SL.TLF.CACT.NE.ZS
@@ -305179,7 +305149,7 @@
     the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CACT.ZS
@@ -305193,7 +305163,7 @@
     the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.CHLD
@@ -305226,7 +305196,7 @@
     Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.INTM.MA.ZS
@@ -305241,7 +305211,7 @@
     Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.INTM.ZS
@@ -305256,7 +305226,7 @@
     Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.PART.FE.ZS
@@ -305269,7 +305239,7 @@
     of less than 35 actual weekly hours worked.
   source_organization: 'Wages and Working Time Statistics database (COND), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.TLF.PART.MA.ZS
@@ -305282,7 +305252,7 @@
     of less than 35 actual weekly hours worked.
   source_organization: 'Wages and Working Time Statistics database (COND), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.TLF.PART.TL.FE.ZS
@@ -305307,7 +305277,7 @@
     of less than 35 actual weekly hours worked.
   source_organization: 'Wages and Working Time Statistics database (COND), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.TLF.PRIM.FE.ZS
@@ -305448,12 +305418,8 @@
     which women are active in the labor force. Labor force comprises people ages 15
     and older who supply labor for the production of goods and services during a specified
     period.
-  source_organization: 'International Labour Organization (ILO), type: estimates based
-    on external database;
-
-    United Nations (UN), publisher: UN Population Division;
-
-    Staff estimates, World Bank (WB)'
+  source_organization: Staff estimates, World Bank (WB), International Labour Organization
+    (ILO)
   topics: Education ;Social Protection & Labor;Gender
   topic_ids: 4;10;17
 - id: SL.TLF.TOTL.IN
@@ -305468,12 +305434,8 @@
     workers, family workers, and students are often omitted, and some countries do
     not count members of the armed forces. Labor force size tends to vary during the
     year as seasonal workers enter and leave.
-  source_organization: 'International Labour Organization (ILO), type: estimates based
-    on external database;
-
-    United Nations (UN), publisher: UN Population Division;
-
-    Staff estimates, World Bank (WB)'
+  source_organization: Staff estimates, World Bank (WB), International Labour Organization
+    (ILO)
   topics: Education ;Social Protection & Labor
   topic_ids: 4;10
 - id: SL.TLF.TOTL.IN.ZG
@@ -305520,7 +305482,7 @@
     and unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.1524.FE.ZS
@@ -305533,7 +305495,7 @@
     without work but available for and seeking employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.UEM.1524.FM.NE.ZS
@@ -305571,7 +305533,7 @@
     and unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.1524.MA.ZS
@@ -305583,7 +305545,7 @@
     without work but available for and seeking employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor;Gender
   topic_ids: 10;17
 - id: SL.UEM.1524.NE.ZS
@@ -305596,7 +305558,7 @@
     and unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.1524.ZS
@@ -305609,7 +305571,7 @@
     without work but available for and seeking employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.ADVN.FE.ZS
@@ -305625,7 +305587,7 @@
     the International Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.ADVN.MA.ZS
@@ -305641,7 +305603,7 @@
     the International Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.ADVN.ZS
@@ -305657,7 +305619,7 @@
     the International Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.BASC.FE.ZS
@@ -305672,7 +305634,7 @@
     2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.BASC.MA.ZS
@@ -305687,7 +305649,7 @@
     2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.BASC.ZS
@@ -305701,7 +305663,7 @@
     2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.INTM.FE.ZS
@@ -305716,7 +305678,7 @@
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.INTM.MA.ZS
@@ -305731,7 +305693,7 @@
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.INTM.ZS
@@ -305746,7 +305708,7 @@
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: September 25, 2025'
+    ILOSTAT, type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.LTRM.FE.ZS
@@ -305799,7 +305761,7 @@
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.NEET.FE.ZS
@@ -305816,7 +305778,7 @@
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.NEET.MA.ME.ZS
@@ -305833,7 +305795,7 @@
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.NEET.MA.ZS
@@ -305850,7 +305812,7 @@
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.NEET.ME.ZS
@@ -305867,7 +305829,7 @@
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.NEET.ZS
@@ -305884,7 +305846,7 @@
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.PRIM.FE.ZS
@@ -306007,7 +305969,7 @@
     unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.TOTL.FE.ZS
@@ -306019,7 +305981,7 @@
     work but available for and seeking employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Education ;Social Protection & Labor;Gender;Social Development '
   topic_ids: 4;10;17;15
 - id: SL.UEM.TOTL.MA.NE.ZS
@@ -306032,7 +305994,7 @@
     unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.TOTL.MA.ZS
@@ -306044,7 +306006,7 @@
     work but available for and seeking employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: 'Education ;Social Protection & Labor;Gender;Social Development '
   topic_ids: 4;10;17;15
 - id: SL.UEM.TOTL.NE.ZS
@@ -306057,7 +306019,7 @@
     unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: September 25, 2025'
+    type: external database, date accessed: January 17, 2026'
   topics: Social Protection & Labor
   topic_ids: '10'
 - id: SL.UEM.TOTL.ZS
@@ -306069,7 +306031,7 @@
     work but available for and seeking employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 07, 2025.'
+    type: external database, date accessed: January 17, 2026'
   topics: Education ;Social Protection & Labor
   topic_ids: 4;10
 - id: SL.WAG.0714.FE.ZS
