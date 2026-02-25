@@ -30989,14 +30989,9 @@ BM.KLT.DINV.CD.WD:
     for determining the existence of a direct investment relationship. This series
     shows net outflows of investment from the reporting economy to the rest of the
     world. Data are in current U.S. dollars.
-  source_organization: 'Balance of Payments database, International Monetary Fund
-    (IMF), note: International Monetary Fund, Balance of Payments database, supplemented
-    by data from the United Nations Conference on Trade and Development and official
-    national sources.;
-
-    UN Conference on Trade and Development (UNCTAD);
-
-    Official national sources'
+  source_organization: International Monetary Fund, Balance of Payments database,
+    supplemented by data from the United Nations Conference on Trade and Development
+    and official national sources.
   topic_ids:
   - '3'
   - '7'
@@ -31157,10 +31152,8 @@ BM.TRF.PWKR.CD.DT:
     resident and of residents employed by nonresident entities. Data are the sum of
     two items defined in the sixth edition of the IMF''s Balance of Payments Manual:
     personal transfers and compensation of employees. Data are in current U.S. dollars.'
-  source_organization: 'IMF balance of payments data, International Monetary Fund
-    (IMF);
-
-    Staff estimates, World Bank (WB)'
+  source_organization: World Bank staff estimates based on IMF balance of payments
+    data.
   topic_ids:
   - '3'
   - '7'
@@ -32568,14 +32561,9 @@ BX.KLT.DINV.CD.WD:
     Ownership of 10 percent or more of the ordinary shares of voting stock is the
     criterion for determining the existence of a direct investment relationship. Data
     are in current U.S. dollars.
-  source_organization: 'Balance of Payments database, International Monetary Fund
-    (IMF), note: International Monetary Fund, Balance of Payments database, supplemented
-    by data from the United Nations Conference on Trade and Development and official
-    national sources.;
-
-    UN Conference on Trade and Development (UNCTAD);
-
-    Official national sources'
+  source_organization: International Monetary Fund, Balance of Payments database,
+    supplemented by data from the United Nations Conference on Trade and Development
+    and official national sources.
   topic_ids:
   - '3'
   - '7'
@@ -32690,10 +32678,8 @@ BX.PEF.TOTL.CD.WD:
     than those recorded as direct investment and including shares, stocks, depository
     receipts (American or global), and direct purchases of shares in local stock markets
     by foreign investors. Data are in current U.S. dollars.
-  source_organization: 'Balance of Payments database, International Monetary Fund
-    (IMF);
-
-    International Debt Statistics, World Bank (WB)'
+  source_organization: International Monetary Fund, Balance of Payments database,
+    and World Bank, International Debt Statistics.
   topic_ids:
   - '3'
   - '7'
@@ -32837,10 +32823,8 @@ BX.TRF.PWKR.CD.DT:
     resident and of residents employed by nonresident entities. Data are the sum of
     two items defined in the sixth edition of the IMF''s Balance of Payments Manual:
     personal transfers and compensation of employees. Data are in current U.S. dollars.'
-  source_organization: 'IMF balance of payments data, International Monetary Fund
-    (IMF);
-
-    Staff estimates, World Bank (WB)'
+  source_organization: World Bank staff estimates based on IMF balance of payments
+    data.
   topic_ids:
   - '3'
   - '7'
@@ -105079,6 +105063,175 @@ HD.HCI.STNT.MA:
   topic_ids: []
   topics: []
   unit: ''
+HD_HCIP_EDUC_FE:
+  id: HD_HCIP_EDUC_FE
+  name: Human capital index plus (HCI+): education pillar score, female (scale 0–188)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): education pillar score aggregates
+    human capital accumulated during formal schooling. This includes pre-school, primary,
+    secondary, and tertiary schooling. The measure also captures learning quality
+    through harmonized learning outcomes.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_EDUC_MA:
+  id: HD_HCIP_EDUC_MA
+  name: Human capital index plus (HCI+): education pillar score, male (scale 0–188)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): education pillar score aggregates
+    human capital accumulated during formal schooling. This includes pre-school, primary,
+    secondary, and tertiary schooling. The measure also captures learning quality
+    through harmonized learning outcomes.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_EDUC_TO:
+  id: HD_HCIP_EDUC_TO
+  name: Human capital index plus (HCI+): education pillar score, total (scale 0–188)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): education pillar score aggregates
+    human capital accumulated during formal schooling. This includes pre-school, primary,
+    secondary, and tertiary schooling. The measure also captures learning quality
+    through harmonized learning outcomes.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_HLTH_FE:
+  id: HD_HCIP_HLTH_FE
+  name: Human capital index plus (HCI+): health pillar score, female (scale 0–50)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): health pillar score captures productivity
+    effects of surviving to working age and achieving adequate early-life physical
+    growth.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_HLTH_MA:
+  id: HD_HCIP_HLTH_MA
+  name: Human capital index plus (HCI+): health pillar score, male (scale 0–50)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): health pillar score captures productivity
+    effects of surviving to working age and achieving adequate early-life physical
+    growth.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_HLTH_TO:
+  id: HD_HCIP_HLTH_TO
+  name: Human capital index plus (HCI+): health pillar score, total (scale 0–50)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): health pillar score captures productivity
+    effects of surviving to working age and achieving adequate early-life physical
+    growth.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_OTJL_FE:
+  id: HD_HCIP_OTJL_FE
+  name: Human capital index plus (HCI+): on-the-job learning pillar score, female
+    (scale -30–87)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): on-the-job learning pillar score
+    measures human capital accumulation after age 18 through work experience. The
+    measure captures labor force participation, unemployment, and wage employment
+    for youth and adults.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_OTJL_MA:
+  id: HD_HCIP_OTJL_MA
+  name: Human capital index plus (HCI+): on-the-job learning pillar score, male (scale -30–87)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): on-the-job learning pillar score
+    measures human capital accumulation after age 18 through work experience. The
+    measure captures labor force participation, unemployment, and wage employment
+    for youth and adults.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_OTJL_TO:
+  id: HD_HCIP_OTJL_TO
+  name: Human capital index plus (HCI+): on-the-job learning pillar score, total (scale -30–87)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The human capital index plus (HCI+): on-the-job learning pillar score
+    measures human capital accumulation after age 18 through work experience. The
+    measure captures labor force participation, unemployment, and wage employment
+    for youth and adults.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_OVRL_FE:
+  id: HD_HCIP_OVRL_FE
+  name: Human capital index plus (HCI+): overall score, female (scale 0–325)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'The human capital index plus (HCI+): overall score calculates the
+    contributions of health, education, and on-the-job learning to worker productivity.
+    The index measures the productivity of a child born today as a future worker relative
+    to the benchmark of full health, complete education, and full employment in wage
+    employment.'
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_OVRL_MA:
+  id: HD_HCIP_OVRL_MA
+  name: 'Human capital index plus (HCI+): overall score, male (scale 0–325)'
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'The human capital index plus (HCI+): overall score calculates the
+    contributions of health, education, and on-the-job learning to worker productivity.
+    The index measures the productivity of a child born today as a future worker relative
+    to the benchmark of full health, complete education, and full employment in wage
+    employment.'
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
+HD_HCIP_OVRL_TO:
+  id: HD_HCIP_OVRL_TO
+  name: 'Human capital index plus (HCI+): overall score, total (scale 0–325)'
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'The human capital index plus (HCI+): overall score calculates the
+    contributions of health, education, and on-the-job learning to worker productivity.
+    The index measures the productivity of a child born today as a future worker relative
+    to the benchmark of full health, complete education, and full employment in wage
+    employment.'
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topic_ids: []
+  topics: []
+  unit: ''
 HF.CON.AIDS.FE.ZS:
   id: HF.CON.AIDS.FE.ZS
   name: Condom use in last intercourse (% of females at risk population)
@@ -109107,8 +109260,10 @@ HH.DHS.NAR.1.Q1:
     of students with quintile 1 being the poorest 20 percent of students and quintile
     5 being the richest 20 percent of students.'
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 HH.DHS.NAR.1.Q2:
   id: HH.DHS.NAR.1.Q2
@@ -109268,10 +109423,8 @@ HH.DHS.NAR.23.Q3:
     poorest 20 percent of students and quintile 5 being the richest 20 percent of
     students.
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 HH.DHS.NAR.23.Q4:
   id: HH.DHS.NAR.23.Q4
@@ -120123,8 +120276,10 @@ IN.ENRGY.TOWNS.TOTL:
   source_organization: "Source: Central Electricity Authority, Ministry of Power,\
     \ India.\nTABLE 16.14: NUMBER OF TOWNS AND VILLAGES ELECTRIFIED IN INDIA \nHttp://mospi.nic.in/mospi_new/upload/SYB2014/CH-16-ENERGY/Table\
     \ 16.14.xls\n"
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 IN.ENRGY.VILLAG.ELECTRFIED:
   id: IN.ENRGY.VILLAG.ELECTRFIED
@@ -120249,10 +120404,8 @@ IN.ENV.COASTALZONE.OTHFEATURES.AREA:
   source_id: '41'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 IN.ENV.COASTALZONE.OTHFEATURES.PCT:
   id: IN.ENV.COASTALZONE.OTHFEATURES.PCT
@@ -132010,8 +132163,10 @@ JI.TLF.48UP.TM.LE.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.TLF.48UP.TM.MA.ZS:
   id: JI.TLF.48UP.TM.MA.ZS
@@ -132141,10 +132296,8 @@ JI.TLF.ACTI.RU.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 JI.TLF.ACTI.UR.ZS:
   id: JI.TLF.ACTI.UR.ZS
@@ -148007,8 +148160,10 @@ LO.PISA.MAT.4.FE:
     to PISA reports, but may not be comparable across years or countries. Consult
     the PISA website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PISA.MAT.4.MA:
   id: LO.PISA.MAT.4.MA
@@ -148235,10 +148390,8 @@ LO.PISA.MAT.P25:
     reports, but may not be comparable across years or countries. Consult the PISA
     website for more detailed information: http://www.oecd.org/pisa/'
   source_organization: OECD Programme for International Student Assessment (PISA)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.PISA.MAT.P50:
   id: LO.PISA.MAT.P50
@@ -161782,8 +161935,10 @@ NY.GDP.DISC.CD:
     measured by the income or output approach. Data are in current U.S. dollars.
   source_organization: World Bank national accounts data, and OECD National Accounts
     data files.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NY.GDP.DISC.CN:
   id: NY.GDP.DISC.CN
@@ -162022,10 +162177,8 @@ NY.GDP.MKTP.CD.XD:
     as the ratio of the GDP at market prices in current U.S. dollars) to the GDP at
     market prices in constant (2000) U.S. dollars.  '
   source_organization: World Bank country economists.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NY.GDP.MKTP.CN:
   id: NY.GDP.MKTP.CN
@@ -173130,8 +173283,10 @@ PER.SR.PTR:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SR.QLT.Q1:
   id: PER.SR.QLT.Q1
@@ -173258,10 +173413,8 @@ PER.SR.SAL.RCT:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.SR.SAL.SHARE.RCT:
   id: PER.SR.SAL.SHARE.RCT
@@ -178518,8 +178671,10 @@ PRJ.ATT.4064.3.MF:
     the Wittgenstein Centre for Demography and Global Human Capital''s website: http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PRJ.ATT.4064.4.FE:
   id: PRJ.ATT.4064.4.FE
@@ -178746,10 +178901,8 @@ PRJ.ATT.60UP.1.MF:
     http://www.oeaw.ac.at/vid/dataexplorer/'
   source_organization: 'Wittgenstein Centre for Demography and Global Human Capital:
     http://www.oeaw.ac.at/vid/dataexplorer/'
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PRJ.ATT.60UP.2.FE:
   id: PRJ.ATT.60UP.2.FE
@@ -190195,8 +190348,10 @@ SE.CLO.15Y.LDSEV.R.PS.2000.M:
     the learning deprived population and is the gap squared in relation to the minimum
     proficiency squared.
   source_organization: Education Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDSEV.R.PS.2000.R:
   id: SE.CLO.15Y.LDSEV.R.PS.2000.R
@@ -190331,10 +190486,8 @@ SE.CLO.15Y.LDSEV.R.PS.2006.U:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDSEV.R.PS.2009.1:
   id: SE.CLO.15Y.LDSEV.R.PS.2009.1
@@ -201247,8 +201400,10 @@ SE.CLO.5.LDSEV.R.PRL.2006.R:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.5.LDSEV.R.PRL.2006.U:
   id: SE.CLO.5.LDSEV.R.PRL.2006.U
@@ -201379,10 +201534,8 @@ SE.CLO.5.LDSEV.R.PRL.2016.1:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.5.LDSEV.R.PRL.2016.2:
   id: SE.CLO.5.LDSEV.R.PRL.2016.2
@@ -212128,8 +212281,10 @@ SE.CLO.9.PRF.M.TMS.2019.2:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.9.PRF.M.TMS.2019.3:
   id: SE.CLO.9.PRF.M.TMS.2019.3
@@ -212259,10 +212414,8 @@ SE.CLO.9.PRF.S.TMS.2007.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.9.PRF.S.TMS.2007.5:
   id: SE.CLO.9.PRF.S.TMS.2007.5
@@ -225362,8 +225515,10 @@ SG.OWN.LDAL.FE.Q3.ZS:
     one fifth of households with quintile 1 being the poorest 20 percent of households
     and quintile 5 being the richest 20 percent of households.'
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SG.OWN.LDAL.FE.Q4.ZS:
   id: SG.OWN.LDAL.FE.Q4.ZS
@@ -225532,10 +225687,8 @@ SG.OWN.LDJT.FE.Q3.ZS:
     with quintile 1 being the poorest 20 percent of households and quintile 5 being
     the richest 20 percent of households.'
   source_organization: Demographic and Health Surveys (DHS)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SG.OWN.LDJT.FE.Q4.ZS:
   id: SG.OWN.LDJT.FE.Q4.ZS
@@ -256063,8 +256216,10 @@ TRAD.EXPT.MANF:
   source_note: ''
   source_organization: BADAN PUSAT STATISTIK - Statistics Indonesia, Unpublished statistics
     on Sub-National Trade
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 TRAD.EXPT.MANF.OTHR:
   id: TRAD.EXPT.MANF.OTHR
@@ -256198,10 +256353,8 @@ TRAD.IMPT.MTRN:
   source_note: ''
   source_organization: BADAN PUSAT STATISTIK - Statistics Indonesia, Unpublished statistics
     on Sub-National Trade
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 TRAD.IMPT.OLFTW:
   id: TRAD.IMPT.OLFTW
@@ -275504,8 +275657,10 @@ UIS.NARA.AGM1.RUR.Q2.F:
     of education below the one intended for their age. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.NARA.AGM1.RUR.Q2.GPIA:
   id: UIS.NARA.AGM1.RUR.Q2.GPIA
@@ -275711,10 +275866,8 @@ UIS.NARA.AGM1.RUR.Q5.F:
     of education below the one intended for their age. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.NARA.AGM1.RUR.Q5.GPIA:
   id: UIS.NARA.AGM1.RUR.Q5.GPIA
@@ -362102,8 +362255,10 @@ per_pr_allpr.ben_q4_rur:
   source_note: Percentage of benefits going to the fourth quintile  relative to the
     total benefits going to the population
   source_organization: ASPIRE
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_pr_allpr.ben_q4_tot:
   id: per_pr_allpr.ben_q4_tot
@@ -362232,10 +362387,8 @@ per_pr_allpr.bry_pop_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_pr_allpr.bry_q1_preT_tot:
   id: per_pr_allpr.bry_q1_preT_tot

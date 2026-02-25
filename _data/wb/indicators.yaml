@@ -33139,14 +33139,9 @@
     for determining the existence of a direct investment relationship. This series
     shows net outflows of investment from the reporting economy to the rest of the
     world. Data are in current U.S. dollars.
-  source_organization: 'Balance of Payments database, International Monetary Fund
-    (IMF), note: International Monetary Fund, Balance of Payments database, supplemented
-    by data from the United Nations Conference on Trade and Development and official
-    national sources.;
-
-    UN Conference on Trade and Development (UNCTAD);
-
-    Official national sources'
+  source_organization: International Monetary Fund, Balance of Payments database,
+    supplemented by data from the United Nations Conference on Trade and Development
+    and official national sources.
   topics: 'Economy & Growth;Financial Sector '
   topic_ids: 3;7
 - id: BM.KLT.DINV.GD.ZS
@@ -33287,10 +33282,8 @@
     resident and of residents employed by nonresident entities. Data are the sum of
     two items defined in the sixth edition of the IMF''s Balance of Payments Manual:
     personal transfers and compensation of employees. Data are in current U.S. dollars.'
-  source_organization: 'IMF balance of payments data, International Monetary Fund
-    (IMF);
-
-    Staff estimates, World Bank (WB)'
+  source_organization: World Bank staff estimates based on IMF balance of payments
+    data.
   topics: 'Economy & Growth;Financial Sector '
   topic_ids: 3;7
 - id: BM.TRF.XOKA.CD
@@ -34612,14 +34605,9 @@
     Ownership of 10 percent or more of the ordinary shares of voting stock is the
     criterion for determining the existence of a direct investment relationship. Data
     are in current U.S. dollars.
-  source_organization: 'Balance of Payments database, International Monetary Fund
-    (IMF), note: International Monetary Fund, Balance of Payments database, supplemented
-    by data from the United Nations Conference on Trade and Development and official
-    national sources.;
-
-    UN Conference on Trade and Development (UNCTAD);
-
-    Official national sources'
+  source_organization: International Monetary Fund, Balance of Payments database,
+    supplemented by data from the United Nations Conference on Trade and Development
+    and official national sources.
   topics: Economy & Growth;Financial Sector ;External Debt
   topic_ids: 3;7;20
 - id: BX.KLT.DINV.DT.GD.ZS
@@ -34707,10 +34695,8 @@
     than those recorded as direct investment and including shares, stocks, depository
     receipts (American or global), and direct purchases of shares in local stock markets
     by foreign investors. Data are in current U.S. dollars.
-  source_organization: 'Balance of Payments database, International Monetary Fund
-    (IMF);
-
-    International Debt Statistics, World Bank (WB)'
+  source_organization: International Monetary Fund, Balance of Payments database,
+    and World Bank, International Debt Statistics.
   topics: Economy & Growth;Financial Sector ;External Debt
   topic_ids: 3;7;20
 - id: BX.SVF.TOTL.CD
@@ -34832,10 +34818,8 @@
     resident and of residents employed by nonresident entities. Data are the sum of
     two items defined in the sixth edition of the IMF''s Balance of Payments Manual:
     personal transfers and compensation of employees. Data are in current U.S. dollars.'
-  source_organization: 'IMF balance of payments data, International Monetary Fund
-    (IMF);
-
-    Staff estimates, World Bank (WB)'
+  source_organization: World Bank staff estimates based on IMF balance of payments
+    data.
   topics: Economy & Growth;Financial Sector ;External Debt
   topic_ids: 3;7;20
 - id: BX.TRF.PWKR.DT.GD.ZS
@@ -136412,6 +136396,163 @@
     data notes.
   source_organization: UNICEF-WHO-World Bank Joint Malnutrition Estimates, supplemented
     with data provided by World Bank staff.
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_EDUC_FE
+  name: Human capital index plus (HCI+): education pillar score, female (scale 0–188)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): education pillar score aggregates
+    human capital accumulated during formal schooling. This includes pre-school, primary,
+    secondary, and tertiary schooling. The measure also captures learning quality
+    through harmonized learning outcomes.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_EDUC_MA
+  name: Human capital index plus (HCI+): education pillar score, male (scale 0–188)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): education pillar score aggregates
+    human capital accumulated during formal schooling. This includes pre-school, primary,
+    secondary, and tertiary schooling. The measure also captures learning quality
+    through harmonized learning outcomes.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_EDUC_TO
+  name: Human capital index plus (HCI+): education pillar score, total (scale 0–188)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): education pillar score aggregates
+    human capital accumulated during formal schooling. This includes pre-school, primary,
+    secondary, and tertiary schooling. The measure also captures learning quality
+    through harmonized learning outcomes.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_HLTH_FE
+  name: Human capital index plus (HCI+): health pillar score, female (scale 0–50)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): health pillar score captures productivity
+    effects of surviving to working age and achieving adequate early-life physical
+    growth.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_HLTH_MA
+  name: Human capital index plus (HCI+): health pillar score, male (scale 0–50)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): health pillar score captures productivity
+    effects of surviving to working age and achieving adequate early-life physical
+    growth.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_HLTH_TO
+  name: Human capital index plus (HCI+): health pillar score, total (scale 0–50)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): health pillar score captures productivity
+    effects of surviving to working age and achieving adequate early-life physical
+    growth.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_OTJL_FE
+  name: Human capital index plus (HCI+): on-the-job learning pillar score, female
+    (scale -30–87)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): on-the-job learning pillar score
+    measures human capital accumulation after age 18 through work experience. The
+    measure captures labor force participation, unemployment, and wage employment
+    for youth and adults.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_OTJL_MA
+  name: Human capital index plus (HCI+): on-the-job learning pillar score, male (scale -30–87)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): on-the-job learning pillar score
+    measures human capital accumulation after age 18 through work experience. The
+    measure captures labor force participation, unemployment, and wage employment
+    for youth and adults.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_OTJL_TO
+  name: Human capital index plus (HCI+): on-the-job learning pillar score, total (scale -30–87)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: The human capital index plus (HCI+): on-the-job learning pillar score
+    measures human capital accumulation after age 18 through work experience. The
+    measure captures labor force participation, unemployment, and wage employment
+    for youth and adults.
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_OVRL_FE
+  name: Human capital index plus (HCI+): overall score, female (scale 0–325)
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'The human capital index plus (HCI+): overall score calculates the
+    contributions of health, education, and on-the-job learning to worker productivity.
+    The index measures the productivity of a child born today as a future worker relative
+    to the benchmark of full health, complete education, and full employment in wage
+    employment.'
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_OVRL_MA
+  name: 'Human capital index plus (HCI+): overall score, male (scale 0–325)'
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'The human capital index plus (HCI+): overall score calculates the
+    contributions of health, education, and on-the-job learning to worker productivity.
+    The index measures the productivity of a child born today as a future worker relative
+    to the benchmark of full health, complete education, and full employment in wage
+    employment.'
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
+  topics: ''
+  topic_ids: ''
+- id: HD_HCIP_OVRL_TO
+  name: 'Human capital index plus (HCI+): overall score, total (scale 0–325)'
+  unit: ''
+  source_id: '2'
+  source: World Development Indicators
+  source_note: 'The human capital index plus (HCI+): overall score calculates the
+    contributions of health, education, and on-the-job learning to worker productivity.
+    The index measures the productivity of a child born today as a future worker relative
+    to the benchmark of full health, complete education, and full employment in wage
+    employment.'
+  source_organization: 'Staff calculations based on the Human Capital Project, World
+    Bank (WB), uri: https://humancapital.worldbank.org/en/home'
   topics: ''
   topic_ids: ''
 - id: HF.CON.AIDS.FE.ZS
@@ -351344,6 +351485,195 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
+- id: UIS.SLE.56
+  name: School life expectancy, tertiary, both sexes (years)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Number of years a person of school entrance age can expect to spend
+    within the specified level of education. For a child of a certain age a, the school
+    life expectancy is calculated as the sum of the age specific enrolment rates for
+    the levels of education specified. The part of the enrolment that is not distributed
+    by age is divided by the school-age population for the level of education they
+    are enrolled in, and multiplied by the duration of that level of education. The
+    result is then added to the sum of the age-specific enrolment rates. A relatively
+    high SLE indicates greater probability for children to spend more years in education
+    and higher overall retention within the education system. It must be noted that
+    the expected number of years does not necessarily coincide with the expected number
+    of grades of education completed, because of repetition. Since school life expectancy
+    is an average based on participation in different levels of education, the expected
+    number of years of schooling may be pulled down by the magnitude of children who
+    never go to school. Those children who are in school may benefit from many more
+    years of education than the average.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SLE.56.F
+  name: School life expectancy, tertiary, female (years)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Number of years a person of school entrance age can expect to spend
+    within the specified level of education. For a child of a certain age a, the school
+    life expectancy is calculated as the sum of the age specific enrolment rates for
+    the levels of education specified. The part of the enrolment that is not distributed
+    by age is divided by the school-age population for the level of education they
+    are enrolled in, and multiplied by the duration of that level of education. The
+    result is then added to the sum of the age-specific enrolment rates. A relatively
+    high SLE indicates greater probability for children to spend more years in education
+    and higher overall retention within the education system. It must be noted that
+    the expected number of years does not necessarily coincide with the expected number
+    of grades of education completed, because of repetition. Since school life expectancy
+    is an average based on participation in different levels of education, the expected
+    number of years of schooling may be pulled down by the magnitude of children who
+    never go to school. Those children who are in school may benefit from many more
+    years of education than the average.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SLE.56.GPI
+  name: School life expectancy, tertiary, gender parity index (GPI)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Ratio of female school life expectancy to the male school life expectancy.
+    It is calculated by dividing the female value for the indicator by the male value
+    for the indicator. A GPI equal to 1 indicates parity between females and males.
+    In general, a value less than 1 indicates disparity in favor of males and a value
+    greater than 1 indicates disparity in favor of females.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SLE.56.M
+  name: School life expectancy, tertiary, male (years)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Number of years a person of school entrance age can expect to spend
+    within the specified level of education. For a child of a certain age a, the school
+    life expectancy is calculated as the sum of the age specific enrolment rates for
+    the levels of education specified. The part of the enrolment that is not distributed
+    by age is divided by the school-age population for the level of education they
+    are enrolled in, and multiplied by the duration of that level of education. The
+    result is then added to the sum of the age-specific enrolment rates. A relatively
+    high SLE indicates greater probability for children to spend more years in education
+    and higher overall retention within the education system. It must be noted that
+    the expected number of years does not necessarily coincide with the expected number
+    of grades of education completed, because of repetition. Since school life expectancy
+    is an average based on participation in different levels of education, the expected
+    number of years of schooling may be pulled down by the magnitude of children who
+    never go to school. Those children who are in school may benefit from many more
+    years of education than the average.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SR.1.G4
+  name: Survival rate to Grade 4 of primary education, both sexes (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Percentage of a cohort of students enrolled in the first grade of primary
+    education in a given school year who are expected to reach grade 4, regardless
+    of repetition. Divide the total number of students belonging to a school-cohort
+    who reached each successive grade of primary education by the number of students
+    in the school-cohort i.e. those originally enrolled in the first grade of primary
+    education, and multiply the result by 100. The survival rate is calculated on
+    the basis of the reconstructed cohort method, which uses data on enrolment and
+    repeaters for two consecutive years.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SR.1.G4.F
+  name: Survival rate to Grade 4 of primary education, female (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Percentage of a cohort of female students enrolled in the first grade
+    of primary education in a given school year who are expected to reach grade 4,
+    regardless of repetition. Divide the total number of students belonging to a school-cohort
+    who reached each successive grade of primary education by the number of students
+    in the school-cohort i.e. those originally enrolled in the first grade of primary
+    education, and multiply the result by 100. The survival rate is calculated on
+    the basis of the reconstructed cohort method, which uses data on enrolment and
+    repeaters for two consecutive years.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SR.1.G4.GPI
+  name: Survival rate to Grade 4 of primary education, gender parity index (GPI)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Ratio of female survival rate to grade 4 to the male survival rate
+    to grade 4. It is calculated by dividing the female value for the indicator by
+    the male value for the indicator. A GPI equal to 1 indicates parity between females
+    and males. In general, a value less than 1 indicates disparity in favor of males
+    and a value greater than 1 indicates disparity in favor of females.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SR.1.G4.M
+  name: Survival rate to Grade 4 of primary education, male (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Percentage of a cohort of male students enrolled in the first grade
+    of primary education in a given school year who are expected to reach grade 4,
+    regardless of repetition. Divide the total number of students belonging to a school-cohort
+    who reached each successive grade of primary education by the number of students
+    in the school-cohort i.e. those originally enrolled in the first grade of primary
+    education, and multiply the result by 100. The survival rate is calculated on
+    the basis of the reconstructed cohort method, which uses data on enrolment and
+    repeaters for two consecutive years.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SR.1.G5.GPI
+  name: Survival rate to Grade 5 of primary education, gender parity index (GPI)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Ratio of female survival rate to grade 5 to the male survival rate
+    to grade 5. It is calculated by dividing the female value for the indicator by
+    the male value for the indicator. A GPI equal to 1 indicates parity between females
+    and males. In general, a value less than 1 indicates disparity in favor of males
+    and a value greater than 1 indicates disparity in favor of females.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.SR.1.GLAST.GPI
+  name: Survival rate to the last grade of primary education, gender parity index
+    (GPI)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: Ratio of female survival rate to the last grade of primary education
+    to the male survival rate to the last grade of primary education. It is calculated
+    by dividing the female value for the indicator by the male value for the indicator.
+    A GPI equal to 1 indicates parity between females and males. In general, a value
+    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
+    disparity in favor of females.
+  source_organization: UNESCO Institute for Statistics
+  topics: 'Education '
+  topic_ids: '4'
+- id: UIS.T.01
+  name: Teachers in early childhood educational development programmes, both sexes
+    (number)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Total number of teachers in public and private early childhood educational
+    development programmes. Teachers are persons employed full time or part time in
+    an official capacity to guide and direct the learning experience of pupils and
+    students, irrespective of their qualifications or the delivery mechanism, i.e.
+    face-to-face and/or at a distance. This definition excludes educational personnel
+    who have no active teaching duties (e.g. headmasters, headmistresses or principals
+    who do not teach) and persons who work occasionally or in a voluntary capacity
+    in educational institutions. For more information, consult the UNESCO Institute
+    of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
 - id: UIS.T.01.F
   name: Teachers in early childhood educational development programmes, female (number)
   unit: ''
@@ -351361,186 +351691,6 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
-- id: UIS.T.01.M
-  name: Teachers in early childhood educational development programmes, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private early childhood
-    educational development programmes. Teachers are persons employed full time or
-    part time in an official capacity to guide and direct the learning experience
-    of pupils and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions. For more information, consult the UNESCO Institute
-    of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.02.M
-  name: Teachers in pre-primary education, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private pre-primary education
-    institutions. Teachers are persons employed full time or part time in an official
-    capacity to guide and direct the learning experience of pupils and students, irrespective
-    of their qualifications or the delivery mechanism, i.e. face-to-face and/or at
-    a distance. This definition excludes educational personnel who have no active
-    teaching duties (e.g. headmasters, headmistresses or principals who do not teach)
-    and persons who work occasionally or in a voluntary capacity in educational institutions.
-    For more information, consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.1.M
-  name: Teachers in primary education, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private primary education
-    institutions. Teachers are persons employed full time or part time in an official
-    capacity to guide and direct the learning experience of pupils and students, irrespective
-    of their qualifications or the delivery mechanism, i.e. face-to-face and/or at
-    a distance. This definition excludes educational personnel who have no active
-    teaching duties (e.g. headmasters, headmistresses or principals who do not teach)
-    and persons who work occasionally or in a voluntary capacity in educational institutions.
-    For more information, consult the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.2
-  name: Teachers in lower secondary education, both sexes (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of teachers in public and private lower secondary education
-    institutions (ISCED 2). Teachers are persons employed full time or part time in
-    an official capacity to guide and direct the learning experience of pupils and
-    students, irrespective of their qualifications or the delivery mechanism, i.e.
-    face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.T.2.F
-  name: Teachers in lower secondary education, female (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of female teachers in public and private lower secondary
-    education institutions (ISCED 2). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.T.2.M
-  name: Teachers in lower secondary education, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private lower secondary
-    education institutions (ISCED 2). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions. For more information, consult the UNESCO Institute
-    of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.23.M
-  name: Teachers in secondary education, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private secondary education
-    institutions (ISCED 2 and 3). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions. For more information, consult the UNESCO Institute
-    of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.3
-  name: Teachers in upper secondary education, both sexes (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of teachers in public and private upper secondary education
-    institutions (ISCED 3). Teachers are persons employed full time or part time in
-    an official capacity to guide and direct the learning experience of pupils and
-    students, irrespective of their qualifications or the delivery mechanism, i.e.
-    face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.T.3.F
-  name: Teachers in upper secondary education, female (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of female teachers in public and private upper secondary
-    education institutions (ISCED 3). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
-- id: UIS.T.3.M
-  name: Teachers in upper secondary education, male (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Total number of male teachers in public and private upper secondary
-    education institutions (ISCED 3). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions. For more information, consult the UNESCO Institute
-    of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.T.4
-  name: Teachers in post-secondary non-tertiary education, both sexes (number)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: Total number of teachers in public and private post-secondary non-tertiary
-    education institutions (ISCED 4). Teachers are persons employed full time or part
-    time in an official capacity to guide and direct the learning experience of pupils
-    and students, irrespective of their qualifications or the delivery mechanism,
-    i.e. face-to-face and/or at a distance. This definition excludes educational personnel
-    who have no active teaching duties (e.g. headmasters, headmistresses or principals
-    who do not teach) and persons who work occasionally or in a voluntary capacity
-    in educational institutions.
-  source_organization: UNESCO Institute for Statistics
-  topics: 'Education '
-  topic_ids: '4'
 - id: UIS.T.01.M
   name: Teachers in early childhood educational development programmes, male (number)
   unit: ''
