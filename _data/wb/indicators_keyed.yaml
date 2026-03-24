@@ -106950,6 +106950,378 @@ GFDD.SM.01:
   topics:
   - 'Financial Sector '
   unit: ''
+GOV_WGI_CC.EST:
+  id: GOV_WGI_CC.EST
+  name: Control of Corruption - Governance estimate (approx. -2.5 to +2.5)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_CC.SC:
+  id: GOV_WGI_CC.SC
+  name: Control of Corruption - Governance score (0-100)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_CC.SC_LB:
+  id: GOV_WGI_CC.SC_LB
+  name: Control of Corruption - Lower bound of the 90% confidence interval for the
+    governance score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_CC.SC_UB:
+  id: GOV_WGI_CC.SC_UB
+  name: Control of Corruption - Upper bound of the 90% confidence interval for the
+    governance score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_CC.SE:
+  id: GOV_WGI_CC.SE
+  name: Control of Corruption - Standard error of the governance estimate
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_CC.SR:
+  id: GOV_WGI_CC.SR
+  name: Control of Corruption - Number of sources
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_GE.EST:
+  id: GOV_WGI_GE.EST
+  name: Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_GE.SC:
+  id: GOV_WGI_GE.SC
+  name: Government Effectiveness - Governance score (0-100)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_GE.SC_LB:
+  id: GOV_WGI_GE.SC_LB
+  name: Government Effectiveness - Lower bound of the 90% confidence interval for
+    the governance score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_GE.SC_UB:
+  id: GOV_WGI_GE.SC_UB
+  name: Government Effectiveness - Upper bound of the 90% confidence interval for
+    the governance score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_GE.SE:
+  id: GOV_WGI_GE.SE
+  name: Government Effectiveness - Standard error of the governance estimate
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_GE.SR:
+  id: GOV_WGI_GE.SR
+  name: Government Effectiveness - Number of sources
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_PV.EST:
+  id: GOV_WGI_PV.EST
+  name: Political Stability - Governance estimate (approx. -2.5 to +2.5)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_PV.SC:
+  id: GOV_WGI_PV.SC
+  name: Political Stability - Governance score (0-100)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_PV.SC_LB:
+  id: GOV_WGI_PV.SC_LB
+  name: Political Stability - Lower bound of the 90% confidence interval for the governance
+    score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_PV.SC_UB:
+  id: GOV_WGI_PV.SC_UB
+  name: Political Stability - Upper bound of the 90% confidence interval for the governance
+    score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_PV.SE:
+  id: GOV_WGI_PV.SE
+  name: Political Stability - Standard error of the governance estimate
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_PV.SR:
+  id: GOV_WGI_PV.SR
+  name: Political Stability - Number of sources
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RL.EST:
+  id: GOV_WGI_RL.EST
+  name: Rule of Law - Governance estimate (approx. -2.5 to +2.5)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RL.SC:
+  id: GOV_WGI_RL.SC
+  name: Rule of Law - Governance score (0-100)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RL.SC_LB:
+  id: GOV_WGI_RL.SC_LB
+  name: Rule of Law - Lower bound of the 90% confidence interval for the governance
+    score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RL.SC_UB:
+  id: GOV_WGI_RL.SC_UB
+  name: Rule of Law - Upper bound of the 90% confidence interval for the governance
+    score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RL.SE:
+  id: GOV_WGI_RL.SE
+  name: Rule of Law - Standard error of the governance estimate
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RL.SR:
+  id: GOV_WGI_RL.SR
+  name: Rule of Law - Number of sources
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RQ.EST:
+  id: GOV_WGI_RQ.EST
+  name: Regulatory Quality - Governance estimate (approx. -2.5 to +2.5)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RQ.SC:
+  id: GOV_WGI_RQ.SC
+  name: Regulatory Quality - Governance score (0-100)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RQ.SC_LB:
+  id: GOV_WGI_RQ.SC_LB
+  name: Regulatory Quality - Lower bound of the 90% confidence interval for the governance
+    score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RQ.SC_UB:
+  id: GOV_WGI_RQ.SC_UB
+  name: Regulatory Quality - Upper bound of the 90% confidence interval for the governance
+    score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RQ.SE:
+  id: GOV_WGI_RQ.SE
+  name: Regulatory Quality - Standard error of the governance estimate
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_RQ.SR:
+  id: GOV_WGI_RQ.SR
+  name: Regulatory Quality - Number of sources
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_VA.EST:
+  id: GOV_WGI_VA.EST
+  name: Voice and Accountability - Governance estimate (approx. -2.5 to +2.5)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_VA.SC:
+  id: GOV_WGI_VA.SC
+  name: Voice and Accountability - Governance score (0-100)
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_VA.SC_LB:
+  id: GOV_WGI_VA.SC_LB
+  name: Voice and Accountability - Lower bound of the 90% confidence interval for
+    the governance score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_VA.SC_UB:
+  id: GOV_WGI_VA.SC_UB
+  name: Voice and Accountability - Upper bound of the 90% confidence interval for
+    the governance score
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_VA.SE:
+  id: GOV_WGI_VA.SE
+  name: Voice and Accountability - Standard error of the governance estimate
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
+GOV_WGI_VA.SR:
+  id: GOV_WGI_VA.SR
+  name: Voice and Accountability - Number of sources
+  source: Worldwide Governance Indicators
+  source_id: '3'
+  source_note: ''
+  source_organization: ''
+  topic_ids: []
+  topics: []
+  unit: ''
 GPFI1_TOTL:
   id: GPFI1_TOTL
   name: Financial knowledge score (0-3)
@@ -109933,8 +110305,10 @@ HF.STA.CHOM.ZS.Q5:
     last 5 years
   source_organization: Health Equity and Financial Protection Indicators (HEFPI) database,
     World Bank
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 HF.STA.DIAB.ZS:
   id: HF.STA.DIAB.ZS
@@ -110317,10 +110691,8 @@ HF.STA.INPT.ZS.Q3:
     last 12 months
   source_organization: Health Equity and Financial Protection Indicators (HEFPI) database,
     World Bank
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 HF.STA.INPT.ZS.Q4:
   id: HF.STA.INPT.ZS.Q4
@@ -121284,8 +121656,10 @@ IC.REG.PRRT.COST.PRT.VAL:
     costs borne by the buyer and the seller are included. If cost estimates differ
     among sources, the median reported value is used.
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 IC.REG.PRRT.COST.PRT.VAL.DFRN:
   id: IC.REG.PRRT.COST.PRT.VAL.DFRN
@@ -121827,10 +122201,8 @@ IC.TEL.DURS:
     measured from the day the establishment applied to the day it received the service
     or approval.  '
   source_organization: World Bank, Enterprise Surveys (http://www.enterprisesurveys.org/).
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 IC.TEL.GIFT.ZS:
   id: IC.TEL.GIFT.ZS
@@ -133099,8 +133471,10 @@ JI.EMP.WAGE.NA.LE.ZS:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 JI.EMP.WAGE.NA.MA.ZS:
   id: JI.EMP.WAGE.NA.MA.ZS
@@ -133480,10 +133854,8 @@ JI.IND.WAGE.MD.LE.CN:
   source_id: '86'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 JI.IND.WAGE.MD.MA.CN:
   id: JI.IND.WAGE.MD.MA.CN
@@ -147104,8 +147476,10 @@ LO.PASEC.REA.2.PP:
     PASEC website for more detailed information: http://www.pasec.confemen.org/'
   source_organization: 'Programme d''Analyse des Systèmes Educatifs de la CONFEMEN/Program
     for the Analysis of CONFEMEN Education Systems (PASEC): http://www.pasec.confemen.org/'
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 LO.PASEC.REA.2.PP.GAP:
   id: LO.PASEC.REA.2.PP.GAP
@@ -147758,10 +148132,8 @@ LO.PIAAC.LIT.4:
     information, consult the OECD PIAAC website: http://www.oecd.org/site/piaac/'
   source_organization: OECD Programme for the International Assessment of Adult Competencies
     (PIAAC)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 LO.PIAAC.LIT.5:
   id: LO.PIAAC.LIT.5
@@ -162323,8 +162695,10 @@ NV.SRV.TRAN.CN:
     60-64). Data are in current local currency.
   source_organization: World Bank national accounts data, and OECD National Accounts
     data files.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NV.SRV.TRAN.KN:
   id: NV.SRV.TRAN.KN
@@ -162748,10 +163122,8 @@ NW.NCA.FSTW.PC:
   source_id: '59'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NW.NCA.FSTW.PC.CD:
   id: NW.NCA.FSTW.PC.CD
@@ -174178,8 +174550,10 @@ PER.SOR.CTL.PRM:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SOR.CTL.RCT:
   id: PER.SOR.CTL.RCT
@@ -174570,10 +174944,8 @@ PER.SOR.FEE.SEC.SHARE:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.SOR.FEE.SR:
   id: PER.SOR.FEE.SR
@@ -178497,8 +178869,10 @@ PI-20.1:
   source_id: '68'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PI-20.2:
   id: PI-20.2
@@ -178857,10 +179231,8 @@ PI-28.1:
   source_id: '68'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PI-28.2:
   id: PI-28.2
@@ -191151,8 +191523,10 @@ SE.CLO.15Y.LDGAP.R.PS.2009.R:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDGAP.R.PS.2009.U:
   id: SE.CLO.15Y.LDGAP.R.PS.2009.U
@@ -191544,10 +191918,8 @@ SE.CLO.15Y.LDGAP.R.PSD.2017.5:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDGAP.R.PSD.2017.A:
   id: SE.CLO.15Y.LDGAP.R.PSD.2017.A
@@ -202238,8 +202610,10 @@ SE.CLO.4.PRF.S.TMS.2015.M:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.4.PRF.S.TMS.2015.R:
   id: SE.CLO.4.PRF.S.TMS.2015.R
@@ -202632,10 +203006,8 @@ SE.CLO.5.LDGAP.M.TMS.2015.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.5.LDGAP.M.TMS.2015.5:
   id: SE.CLO.5.LDGAP.M.TMS.2015.5
@@ -213119,8 +213491,10 @@ SE.CLO.9.LDGAP.M.TMS.2007.3:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.9.LDGAP.M.TMS.2007.4:
   id: SE.CLO.9.LDGAP.M.TMS.2007.4
@@ -213515,10 +213889,8 @@ SE.CLO.9.LDGAP.M.TMS.2019.R:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.9.LDGAP.M.TMS.2019.U:
   id: SE.CLO.9.LDGAP.M.TMS.2019.U
@@ -255946,8 +256318,10 @@ SPI.D5.2.5.HOUS:
     provide comparability between countries and between statistics in these different
     areas.
   source_organization: Statistical Performance Indicators, The World Bank (https://datacatalog.worldbank.org/dataset/statistical-performance-indicators)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SPI.D5.2.6.EMPL:
   id: SPI.D5.2.6.EMPL
@@ -274840,8 +275214,10 @@ UIS.LP.AG65.F:
   source_note: Total number of females over age 65 who cannot both read and write
     with understanding a short simple statement on their everyday life.
   source_organization: UNESCO Institute for Statistics
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 UIS.LP.AG65.M:
   id: UIS.LP.AG65.M
@@ -275399,10 +275775,8 @@ UIS.LR.AG25T64.RUR:
     and multiplying the result by 100. For more information, consult the UNESCO Institute
     of Statistics website: http://www.uis.unesco.org/Education/'
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.LR.AG25T64.RUR.F:
   id: UIS.LR.AG25T64.RUR.F
@@ -362800,8 +363174,10 @@ per_lm_pa.bry_q1_preT_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_lm_pa.bry_q1_rur:
   id: per_lm_pa.bry_q1_rur
@@ -363198,10 +363574,8 @@ per_lm_pa.bry_q5_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_lm_pa.bry_q5_urb:
   id: per_lm_pa.bry_q5_urb
@@ -374869,8 +375243,10 @@ per_sa_cc.cov_q1_urb:
   source_note: Percentage of population participating in Conditional Cash Transfer
     programs (includes direct and indirect beneficiaries)
   source_organization: ASPIRE
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_sa_cc.cov_q2_preT_tot:
   id: per_sa_cc.cov_q2_preT_tot

@@ -137404,6 +137404,342 @@
   source_organization: Bloomberg
   topics: 'Financial Sector '
   topic_ids: '7'
+- id: GOV_WGI_CC.EST
+  name: Control of Corruption - Governance estimate (approx. -2.5 to +2.5)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_CC.SC
+  name: Control of Corruption - Governance score (0-100)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_CC.SC_LB
+  name: Control of Corruption - Lower bound of the 90% confidence interval for the
+    governance score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_CC.SC_UB
+  name: Control of Corruption - Upper bound of the 90% confidence interval for the
+    governance score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_CC.SE
+  name: Control of Corruption - Standard error of the governance estimate
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_CC.SR
+  name: Control of Corruption - Number of sources
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_GE.EST
+  name: Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_GE.SC
+  name: Government Effectiveness - Governance score (0-100)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_GE.SC_LB
+  name: Government Effectiveness - Lower bound of the 90% confidence interval for
+    the governance score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_GE.SC_UB
+  name: Government Effectiveness - Upper bound of the 90% confidence interval for
+    the governance score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_GE.SE
+  name: Government Effectiveness - Standard error of the governance estimate
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_GE.SR
+  name: Government Effectiveness - Number of sources
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_PV.EST
+  name: Political Stability - Governance estimate (approx. -2.5 to +2.5)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_PV.SC
+  name: Political Stability - Governance score (0-100)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_PV.SC_LB
+  name: Political Stability - Lower bound of the 90% confidence interval for the governance
+    score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_PV.SC_UB
+  name: Political Stability - Upper bound of the 90% confidence interval for the governance
+    score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_PV.SE
+  name: Political Stability - Standard error of the governance estimate
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_PV.SR
+  name: Political Stability - Number of sources
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RL.EST
+  name: Rule of Law - Governance estimate (approx. -2.5 to +2.5)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RL.SC
+  name: Rule of Law - Governance score (0-100)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RL.SC_LB
+  name: Rule of Law - Lower bound of the 90% confidence interval for the governance
+    score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RL.SC_UB
+  name: Rule of Law - Upper bound of the 90% confidence interval for the governance
+    score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RL.SE
+  name: Rule of Law - Standard error of the governance estimate
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RL.SR
+  name: Rule of Law - Number of sources
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RQ.EST
+  name: Regulatory Quality - Governance estimate (approx. -2.5 to +2.5)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RQ.SC
+  name: Regulatory Quality - Governance score (0-100)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RQ.SC_LB
+  name: Regulatory Quality - Lower bound of the 90% confidence interval for the governance
+    score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RQ.SC_UB
+  name: Regulatory Quality - Upper bound of the 90% confidence interval for the governance
+    score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RQ.SE
+  name: Regulatory Quality - Standard error of the governance estimate
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_RQ.SR
+  name: Regulatory Quality - Number of sources
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_VA.EST
+  name: Voice and Accountability - Governance estimate (approx. -2.5 to +2.5)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_VA.SC
+  name: Voice and Accountability - Governance score (0-100)
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_VA.SC_LB
+  name: Voice and Accountability - Lower bound of the 90% confidence interval for
+    the governance score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_VA.SC_UB
+  name: Voice and Accountability - Upper bound of the 90% confidence interval for
+    the governance score
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_VA.SE
+  name: Voice and Accountability - Standard error of the governance estimate
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
+- id: GOV_WGI_VA.SR
+  name: Voice and Accountability - Number of sources
+  unit: ''
+  source_id: '3'
+  source: Worldwide Governance Indicators
+  source_note: ''
+  source_organization: ''
+  topics: ''
+  topic_ids: ''
 - id: GPFI1_TOTL
   name: Financial knowledge score (0-3)
   unit: ''
@@ -351139,6 +351475,190 @@
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
+- id: UIS.ROFST.H.3
+  name: Out-of-school rate for youth of upper secondary school age, both sexes (household
+    survey data) (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Proportion of youth in the official age range for upper secondary
+    education who are not enrolled in upper secondary education. To calculate the
+    indicator, the number of students of the official age for upper secondary education
+    enrolled in upper secondary education is subtracted from the total population
+    of upper secondary education. The result is expressed as a percentage of the population
+    of the official age for upper secondary education. For more information, consult
+    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.F
+  name: Out-of-school rate for youth of upper secondary school age, female (household
+    survey data) (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Proportion of youth in the official age range for upper secondary
+    education who are not enrolled in upper secondary education. To calculate the
+    indicator, the number of students of the official age for upper secondary education
+    enrolled in upper secondary education is subtracted from the total population
+    of upper secondary education. The result is expressed as a percentage of the population
+    of the official age for upper secondary education. For more information, consult
+    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.F.LPIA
+  name: Out-of-school rate for youth of upper secondary school age, female, adjusted
+    location parity index (household survey data) (LPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
+    the rural value for the indicator by the urban value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    LPI equal to 1 indicates parity between rural and urban locations. In general,
+    a value less than 1 indicates disparity in favor of urban locations and a value
+    greater than 1 indicates disparity in favor of rural locations. For more information,
+    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.F.WPIA
+  name: Out-of-school rate for youth of upper secondary school age, female, adjusted
+    wealth parity index (household survey data) (WPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Wealth Parity Index (WPIA) is calculated by dividing
+    the poorest quintile value for the indicator by the richest quintile value for
+    the indicator. If the resulting value exceeds 1, the ratio is inverted and subtracted
+    from 2. The adjusted wealth parity index is symmetrical around 1 and lies in the
+    range 0-2. An adjusted WPI equal to 1 indicates parity between the richest and
+    poorest quintiles. In general, a value less than 1 indicates disparity in favor
+    of the richest quintile and a value greater than 1 indicates disparity in favor
+    of the poorest quintile. For more information, consult the UNESCO Institute for
+    Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.GPIA
+  name: Out-of-school rate for youth of upper secondary school age, adjusted gender
+    parity index (household survey data) (GPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
+    the female value for the indicator by the male value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    GPI equal to 1 indicates parity between females and males. In general, a value
+    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
+    disparity in favor of females. For more information, consult the UNESCO Institute
+    for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.LPIA
+  name: Out-of-school rate for youth of upper secondary school age, adjusted location
+    parity index (household survey data) (LPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
+    the rural value for the indicator by the urban value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    LPI equal to 1 indicates parity between rural and urban locations. In general,
+    a value less than 1 indicates disparity in favor of urban locations and a value
+    greater than 1 indicates disparity in favor of rural locations. For more information,
+    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.M
+  name: Out-of-school rate for youth of upper secondary school age, male (household
+    survey data) (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Proportion of youth in the official age range for upper secondary
+    education who are not enrolled in upper secondary education. To calculate the
+    indicator, the number of students of the official age for upper secondary education
+    enrolled in upper secondary education is subtracted from the total population
+    of upper secondary education. The result is expressed as a percentage of the population
+    of the official age for upper secondary education. For more information, consult
+    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.M.LPIA
+  name: Out-of-school rate for youth of upper secondary school age, male, adjusted
+    location parity index (household survey data) (LPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
+    the rural value for the indicator by the urban value for the indicator. If the
+    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
+    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
+    LPI equal to 1 indicates parity between rural and urban locations. In general,
+    a value less than 1 indicates disparity in favor of urban locations and a value
+    greater than 1 indicates disparity in favor of rural locations. For more information,
+    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.M.WPIA
+  name: Out-of-school rate for youth of upper secondary school age, male, adjusted
+    wealth parity index (household survey data) (WPIA)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'The Adjusted Wealth Parity Index (WPIA) is calculated by dividing
+    the poorest quintile value for the indicator by the richest quintile value for
+    the indicator. If the resulting value exceeds 1, the ratio is inverted and subtracted
+    from 2. The adjusted wealth parity index is symmetrical around 1 and lies in the
+    range 0-2. An adjusted WPI equal to 1 indicates parity between the richest and
+    poorest quintiles. In general, a value less than 1 indicates disparity in favor
+    of the richest quintile and a value greater than 1 indicates disparity in favor
+    of the poorest quintile. For more information, consult the UNESCO Institute for
+    Statistics: http://uis.unesco.org/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.Q1
+  name: Out-of-school rate for youth of upper secondary school age, poorest quintile,
+    both sexes (household survey data) (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Proportion of youth in the official age range for upper secondary
+    education who are not enrolled in upper secondary education. To calculate the
+    indicator, the number of students of the official age for upper secondary education
+    enrolled in upper secondary education is subtracted from the total population
+    of upper secondary education. The result is expressed as a percentage of the population
+    of the official age for upper secondary education. For more information, consult
+    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
+- id: UIS.ROFST.H.3.Q1.F
+  name: Out-of-school rate for youth of upper secondary school age, poorest quintile,
+    female (household survey data) (%)
+  unit: ''
+  source_id: '12'
+  source: Education Statistics
+  source_note: 'Proportion of youth in the official age range for upper secondary
+    education who are not enrolled in upper secondary education. To calculate the
+    indicator, the number of students of the official age for upper secondary education
+    enrolled in upper secondary education is subtracted from the total population
+    of upper secondary education. The result is expressed as a percentage of the population
+    of the official age for upper secondary education. For more information, consult
+    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
+  source_organization: UNESCO Institute for Statistics
+  topics: ''
+  topic_ids: ''
 - id: UIS.ROFST.H.3.Q1.F.LPIA
   name: Out-of-school rate for youth of upper secondary school age, poorest quintile,
     female, adjusted location parity index (household survey data) (LPIA)
@@ -351551,189 +352071,6 @@
     of upper secondary education. The result is expressed as a percentage of the population
     of the official age for upper secondary education. For more information, consult
     the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q4.M.LPIA
-  name: Out-of-school rate for youth of upper secondary school age, fourth quintile,
-    male, adjusted location parity index (household survey data) (LPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
-    the rural value for the indicator by the urban value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    LPI equal to 1 indicates parity between rural and urban locations. In general,
-    a value less than 1 indicates disparity in favor of urban locations and a value
-    greater than 1 indicates disparity in favor of rural locations. For more information,
-    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    both sexes (household survey data) (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Proportion of youth in the official age range for upper secondary
-    education who are not enrolled in upper secondary education. To calculate the
-    indicator, the number of students of the official age for upper secondary education
-    enrolled in upper secondary education is subtracted from the total population
-    of upper secondary education. The result is expressed as a percentage of the population
-    of the official age for upper secondary education. For more information, consult
-    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5.F
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    female (household survey data) (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Proportion of youth in the official age range for upper secondary
-    education who are not enrolled in upper secondary education. To calculate the
-    indicator, the number of students of the official age for upper secondary education
-    enrolled in upper secondary education is subtracted from the total population
-    of upper secondary education. The result is expressed as a percentage of the population
-    of the official age for upper secondary education. For more information, consult
-    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5.F.LPIA
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    female, adjusted location parity index (household survey data) (LPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
-    the rural value for the indicator by the urban value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    LPI equal to 1 indicates parity between rural and urban locations. In general,
-    a value less than 1 indicates disparity in favor of urban locations and a value
-    greater than 1 indicates disparity in favor of rural locations. For more information,
-    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5.GPIA
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    adjusted gender parity index (household survey data) (GPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Gender Parity Index (GPIA) is calculated by dividing
-    the female value for the indicator by the male value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    gender parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    GPI equal to 1 indicates parity between females and males. In general, a value
-    less than 1 indicates disparity in favor of males and a value greater than 1 indicates
-    disparity in favor of females. For more information, consult the UNESCO Institute
-    for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5.LPIA
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    adjusted location parity index (household survey data) (LPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
-    the rural value for the indicator by the urban value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    LPI equal to 1 indicates parity between rural and urban locations. In general,
-    a value less than 1 indicates disparity in favor of urban locations and a value
-    greater than 1 indicates disparity in favor of rural locations. For more information,
-    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5.M
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    male (household survey data) (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Proportion of youth in the official age range for upper secondary
-    education who are not enrolled in upper secondary education. To calculate the
-    indicator, the number of students of the official age for upper secondary education
-    enrolled in upper secondary education is subtracted from the total population
-    of upper secondary education. The result is expressed as a percentage of the population
-    of the official age for upper secondary education. For more information, consult
-    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.Q5.M.LPIA
-  name: Out-of-school rate for youth of upper secondary school age, richest quintile,
-    male, adjusted location parity index (household survey data) (LPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Location Parity Index (LPIA) is calculated by dividing
-    the rural value for the indicator by the urban value for the indicator. If the
-    resulting value exceeds 1, the ratio is inverted and subtracted from 2. The adjusted
-    location parity index is symmetrical around 1 and lies in the range 0-2. An adjusted
-    LPI equal to 1 indicates parity between rural and urban locations. In general,
-    a value less than 1 indicates disparity in favor of urban locations and a value
-    greater than 1 indicates disparity in favor of rural locations. For more information,
-    consult the UNESCO Institute for Statistics: http://uis.unesco.org/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.RUR
-  name: Out-of-school rate for youth of upper secondary school age, rural, both sexes
-    (household survey data) (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Proportion of youth in the official age range for upper secondary
-    education who are not enrolled in upper secondary education. To calculate the
-    indicator, the number of students of the official age for upper secondary education
-    enrolled in upper secondary education is subtracted from the total population
-    of upper secondary education. The result is expressed as a percentage of the population
-    of the official age for upper secondary education. For more information, consult
-    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.RUR.F
-  name: Out-of-school rate for youth of upper secondary school age, rural, female
-    (household survey data) (%)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'Proportion of youth in the official age range for upper secondary
-    education who are not enrolled in upper secondary education. To calculate the
-    indicator, the number of students of the official age for upper secondary education
-    enrolled in upper secondary education is subtracted from the total population
-    of upper secondary education. The result is expressed as a percentage of the population
-    of the official age for upper secondary education. For more information, consult
-    the UNESCO Institute of Statistics website: http://www.uis.unesco.org/Education/'
-  source_organization: UNESCO Institute for Statistics
-  topics: ''
-  topic_ids: ''
-- id: UIS.ROFST.H.3.RUR.F.WPIA
-  name: Out-of-school rate for youth of upper secondary school age, rural, female,
-    adjusted wealth parity index (household survey data) (WPIA)
-  unit: ''
-  source_id: '12'
-  source: Education Statistics
-  source_note: 'The Adjusted Wealth Parity Index (WPIA) is calculated by dividing
-    the poorest quintile value for the indicator by the richest quintile value for
-    the indicator. If the resulting value exceeds 1, the ratio is inverted and subtracted
-    from 2. The adjusted wealth parity index is symmetrical around 1 and lies in the
-    range 0-2. An adjusted WPI equal to 1 indicates parity between the richest and
-    poorest quintiles. In general, a value less than 1 indicates disparity in favor
-    of the richest quintile and a value greater than 1 indicates disparity in favor
-    of the poorest quintile. For more information, consult the UNESCO Institute for
-    Statistics: http://uis.unesco.org/'
   source_organization: UNESCO Institute for Statistics
   topics: ''
   topic_ids: ''
