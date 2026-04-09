@@ -30989,9 +30989,14 @@ BM.KLT.DINV.CD.WD:
     for determining the existence of a direct investment relationship. This series
     shows net outflows of investment from the reporting economy to the rest of the
     world. Data are in current U.S. dollars.
-  source_organization: International Monetary Fund, Balance of Payments database,
-    supplemented by data from the United Nations Conference on Trade and Development
-    and official national sources.
+  source_organization: 'Balance of Payments database, International Monetary Fund
+    (IMF), note: International Monetary Fund, Balance of Payments database, supplemented
+    by data from the United Nations Conference on Trade and Development and official
+    national sources.;
+
+    UN Conference on Trade and Development (UNCTAD);
+
+    Official national sources'
   topic_ids:
   - '3'
   - '7'
@@ -31152,8 +31157,10 @@ BM.TRF.PWKR.CD.DT:
     resident and of residents employed by nonresident entities. Data are the sum of
     two items defined in the sixth edition of the IMF''s Balance of Payments Manual:
     personal transfers and compensation of employees. Data are in current U.S. dollars.'
-  source_organization: World Bank staff estimates based on IMF balance of payments
-    data.
+  source_organization: 'IMF balance of payments data, International Monetary Fund
+    (IMF);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   - '7'
@@ -32561,9 +32568,14 @@ BX.KLT.DINV.CD.WD:
     Ownership of 10 percent or more of the ordinary shares of voting stock is the
     criterion for determining the existence of a direct investment relationship. Data
     are in current U.S. dollars.
-  source_organization: International Monetary Fund, Balance of Payments database,
-    supplemented by data from the United Nations Conference on Trade and Development
-    and official national sources.
+  source_organization: 'Balance of Payments database, International Monetary Fund
+    (IMF), note: International Monetary Fund, Balance of Payments database, supplemented
+    by data from the United Nations Conference on Trade and Development and official
+    national sources.;
+
+    UN Conference on Trade and Development (UNCTAD);
+
+    Official national sources'
   topic_ids:
   - '3'
   - '7'
@@ -32678,8 +32690,10 @@ BX.PEF.TOTL.CD.WD:
     than those recorded as direct investment and including shares, stocks, depository
     receipts (American or global), and direct purchases of shares in local stock markets
     by foreign investors. Data are in current U.S. dollars.
-  source_organization: International Monetary Fund, Balance of Payments database,
-    and World Bank, International Debt Statistics.
+  source_organization: 'Balance of Payments database, International Monetary Fund
+    (IMF);
+
+    International Debt Statistics, World Bank (WB)'
   topic_ids:
   - '3'
   - '7'
@@ -32823,8 +32837,10 @@ BX.TRF.PWKR.CD.DT:
     resident and of residents employed by nonresident entities. Data are the sum of
     two items defined in the sixth edition of the IMF''s Balance of Payments Manual:
     personal transfers and compensation of employees. Data are in current U.S. dollars.'
-  source_organization: World Bank staff estimates based on IMF balance of payments
-    data.
+  source_organization: 'IMF balance of payments data, International Monetary Fund
+    (IMF);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   - '7'
@@ -38060,8 +38076,8 @@ CC.ESG.TCMA:
 CC.EST:
   id: CC.EST
   name: 'Control of Corruption: Estimate'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -39948,8 +39964,8 @@ CC.NEFO.IMCR.WH:
 CC.NO.SRC:
   id: CC.NO.SRC
   name: 'Control of Corruption: Number of Sources'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -40386,8 +40402,8 @@ CC.OPCO.PLTY.US:
 CC.PER.RNK:
   id: CC.PER.RNK
   name: 'Control of Corruption: Percentile Rank'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -40414,8 +40430,8 @@ CC.PER.RNK:
 CC.PER.RNK.LOWER:
   id: CC.PER.RNK.LOWER
   name: 'Control of Corruption: Percentile Rank, Lower Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -40444,8 +40460,8 @@ CC.PER.RNK.LOWER:
 CC.PER.RNK.UPPER:
   id: CC.PER.RNK.UPPER
   name: 'Control of Corruption: Percentile Rank, Upper Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -40812,8 +40828,8 @@ CC.SP.EXP.ZS:
 CC.STD.ERR:
   id: CC.STD.ERR
   name: 'Control of Corruption: Standard Error'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -90513,11 +90529,11 @@ EN.ATM.PM25.MC.M3:
     are capable of penetrating deep into the respiratory tract and causing severe
     health damage. Exposure is calculated by weighting mean annual concentrations
     of PM2.5 by population in both urban and rural areas.
-  source_organization: 'Global Burden of Disease Study 2021 (GBD 2021) Air Pollution
-    Exposure Estimates 1990-2021, Institute for Health Metrics and Evaluation (IHME),
-    uri: https://ghdx.healthdata.org/record/ihme-data/gbd-2021-air-pollution-exposure-estimates-1990-2021,
+  source_organization: 'Global Burden of Disease Study 2023 (GBD 2023) Air Pollution
+    Exposure Estimates and Risk Curves 1990-2023, Global Burden of Disease Collaborative
+    Network, uri: https://ghdx.healthdata.org/record/ihme-data/gbd-2023-air-pollution-exposure-estimates-1990-2023,
     note: Need to create account to retrieve data., publisher: Institute for Health
-    Metrics and Evaluation (IHME), date accessed: 2024-09-26, date published: 2024-06-06'
+    Metrics and Evaluation (IHME), date accessed: 2026-04-03, date published: 2026-01-23'
   topic_ids:
   - '16'
   - '6'
@@ -103601,45 +103617,48 @@ GD_WBL_MOB_SFR_TRANSPNEED:
 GD_WBL_OVL_ENF:
   id: GD_WBL_OVL_ENF
   name: 'WBL: Enforcement Perceptions Index (scale 0-100)'
-  source: Gender Statistics
-  source_id: '14'
+  source: World Development Indicators
+  source_id: '2'
   source_note: 'The index is a composite measure (0–100) that summarizes how enforcement
     perceptions shape women’s economic opportunities across ten topics: Safety, Mobility,
     Work, Pay, Marriage, Parenthood, Childcare, Entrepreneurship, Assets, and Pension.
     It is calculated as the unweighted average of the ten topic scores, with 100 representing
     the highest possible score and 0 the lowest. For details, please refer to the
     WBL Methodology Handbook (link: https://wbl.worldbank.org/content/dam/sites/wbl/documents/2026/WBL-Methodology-Handbook-2026-FINAL.pdf).'
-  source_organization: 'World Bank: Women, Business and the Law. https://wbl.worldbank.org/'
+  source_organization: 'Women, Business and the Law, World Bank (WB), uri: https://wbl.worldbank.org/en/wbl-data,
+    date accessed: 2026-03-24, date published: 2026-02-24'
   topic_ids: []
   topics: []
   unit: ''
 GD_WBL_OVL_LAW:
   id: GD_WBL_OVL_LAW
   name: 'WBL: Legal Framework Index (scale 0-100)'
-  source: Gender Statistics
-  source_id: '14'
+  source: World Development Indicators
+  source_id: '2'
   source_note: 'The index refers to the composite measure (0–100) that summarizes
     how legal frameworks shape women’s economic opportunities across ten topics: Safety,
     Mobility, Work, Pay, Marriage, Parenthood, Childcare, Entrepreneurship, Assets,
     and Pension.  It is calculated by taking the unweighted average of the ten topic
     scores, with 100 representing the highest possible score and 0 the lowest. For
     details, please refer to the WBL Methodology Handbook (link: https://wbl.worldbank.org/content/dam/sites/wbl/documents/2026/WBL-Methodology-Handbook-2026-FINAL.pdf)'
-  source_organization: 'World Bank: Women, Business and the Law. https://wbl.worldbank.org/'
+  source_organization: 'Women, Business and the Law, World Bank (WB), uri: https://wbl.worldbank.org/en/wbl-data,
+    date accessed: 2026-03-24, date published: 2026-02-24'
   topic_ids: []
   topics: []
   unit: ''
 GD_WBL_OVL_SFR:
   id: GD_WBL_OVL_SFR
   name: 'WBL: Supportive Framework Index (scale 0-100)'
-  source: Gender Statistics
-  source_id: '14'
+  source: World Development Indicators
+  source_id: '2'
   source_note: 'The index refers to the composite measure (0–100) that summarizes
     how supporting frameworks shape women’s economic opportunities across ten topics:
     Safety, Mobility, Work, Pay, Marriage, Parenthood, Childcare, Entrepreneurship,
     Assets, and Pension. It is calculated by taking the unweighted average of the
     ten topic scores, with 100 representing the highest possible score and 0 the lowest.
     For details, please refer to the WBL Methodology Handbook (link: https://wbl.worldbank.org/content/dam/sites/wbl/documents/2026/WBL-Methodology-Handbook-2026-FINAL.pdf)'
-  source_organization: 'World Bank: Women, Business and the Law. https://wbl.worldbank.org/'
+  source_organization: 'Women, Business and the Law, World Bank (WB), uri: https://wbl.worldbank.org/en/wbl-data,
+    date accessed: 2026-03-24, date published: 2026-02-24'
   topic_ids: []
   topics: []
   unit: ''
@@ -105084,8 +105103,8 @@ GD_WBL_WRK_SFR_T:
 GE.EST:
   id: GE.EST
   name: 'Government Effectiveness: Estimate'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -105112,8 +105131,8 @@ GE.EST:
 GE.NO.SRC:
   id: GE.NO.SRC
   name: 'Government Effectiveness: Number of Sources'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -105147,8 +105166,8 @@ GE.NO.SRC:
 GE.PER.RNK:
   id: GE.PER.RNK
   name: 'Government Effectiveness: Percentile Rank'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -105177,8 +105196,8 @@ GE.PER.RNK.LOWER:
   id: GE.PER.RNK.LOWER
   name: 'Government Effectiveness: Percentile Rank, Lower Bound of 90% Confidence
     Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -105208,8 +105227,8 @@ GE.PER.RNK.UPPER:
   id: GE.PER.RNK.UPPER
   name: 'Government Effectiveness: Percentile Rank, Upper Bound of 90% Confidence
     Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "Good governance is essential for development. It helps countries improve\
     \ economic growth, build human capital, and strengthen social cohesion. Empirical\
     \ evidence shows a strong causal relationship between better governance and better\
@@ -105242,8 +105261,8 @@ GE.PER.RNK.UPPER:
 GE.STD.ERR:
   id: GE.STD.ERR
   name: 'Government Effectiveness: Standard Error'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -118130,10 +118149,11 @@ IC.CUS.DURS.IM:
   name: Average time to clear imports through customs (days)
   source: World Development Indicators
   source_id: '2'
-  source_note: The average time, in days, that it takes for an establishment to be
-    able to claim imported goods from customs, starting from their arrival at the
-    point of entry (such as a port or airport).
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Average number of days to clear imports from customs in the manufacturing
+    sector.
+  source_organization: 'Enterprise Surveys, World Bank (WB), uri: https://www.enterprisesurveys.org/en/data
+    , note: All surveys were administered using the Enterprise Surveys methodology
+    as outlined in the Methodology page which can be found from www.enterprisesurveys.org.'
   topic_ids: []
   topics: []
   unit: ''
@@ -118850,9 +118870,8 @@ IC.FRM.BNKL.ZS:
   name: Firms with a bank loan/line of credit (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms with a line of credit or loan from a financial
-    institution.
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Percentage of firms that have bank loans or line of credit.
+  source_organization: 'Enterprise Surveys, World Bank (WB), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -118917,9 +118936,9 @@ IC.FRM.CDP.ZS:
   name: Firms that use a third party to resolve commercial disputes (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms that use courts, arbitration, mediation, or
-    conciliation to resolve or attempt to resolve its commercial disputes.
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Percentage of firms that use courts, arbitration, mediation, or conciliation
+    to resolve or attempt to resolve its commercial disputes.
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -118940,8 +118959,9 @@ IC.FRM.CO2.ZS:
   name: Firms monitoring own CO2 emissions (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms monitoring own CO2 emissions over last 3 years.
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Percentage of firms tracking their own CO2 emissions over the past
+    three years
+  source_organization: 'Enterprise Surveys , World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -119146,12 +119166,16 @@ IC.FRM.CRDC.FL.ZS:
   name: Firms that are fully credit constrained (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: 'Firms are categorized as fully credit constrained if they do not have
-    access to external finance, and any of the following two conditions are met: (1)
-    the firm did not apply for a loan for any reason other than the lack of need for
-    it; or (2) the firm applied for a loan but the application was rejected, even
-    when it has access to equity financing.'
-  source_organization: World Bank, Enterprise Surveys
+  source_note: "Firms are categorized as fully credit constrained if they do not have\
+    \ access to external finance, and any of the following two conditions are met:\
+    \ (1) the firm did not apply for a loan for any reason other than the lack of\
+    \ need for it; or (2) the firm applied for a loan but the application was rejected,\
+    \ even when it has access to equity financing. \n\nThis indicator is based on\
+    \ Islam and Rodriguez Meza (2023, Islam, Asif Mohammed and Jorge Luis Rodriguez\
+    \ Meza. “How Prevalent Are Credit-Constrained Firms in the Formal Private Sector?\
+    \ Evidence Using Global Surveys”. World Bank Policy Research Working Paper; no.\
+    \ WPS 10502)."
+  source_organization: 'Enterprise Surveys , World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -119160,13 +119184,17 @@ IC.FRM.CRDC.PT.ZS:
   name: Firms that are partially credit constrained (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: 'Firms are categorized as partially credit constrained if any of the
-    following conditions are met: (1) the firm applied for a loan and the application
-    was partially approved; (2) the firm applied for a loan and the application was
-    rejected, but the firm has access to external sources of finance excluding any  equity
-    finance; or (3) the firm has external finance but did not apply for a loan due
-    to any reason other than no need for it.'
-  source_organization: World Bank, Enterprise Surveys
+  source_note: "Firms are categorized as partially credit constrained if any of the\
+    \ following conditions are met: (1) the firm applied for a loan and the application\
+    \ was partially approved; (2) the firm applied for a loan and the application\
+    \ was rejected, but the firm has access to external sources of finance excluding\
+    \ any  equity finance; or (3) the firm has external finance but did not apply\
+    \ for a loan due to any reason other than no need for it.  \n\nThis indicator\
+    \ is based on Islam and Rodriguez Meza (2023, Islam, Asif Mohammed and Jorge Luis\
+    \ Rodriguez Meza. “How Prevalent Are Credit-Constrained Firms in the Formal Private\
+    \ Sector? Evidence Using Global Surveys”. World Bank Policy Research Working Paper;\
+    \ no. WPS 10502)."
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -119378,9 +119406,9 @@ IC.FRM.ENGM.ZS:
   name: Firms adopting energy management measures to reduce emissions (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms adopting energy management measures to reduce
-    emissions over last 3 years.
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Share of companies adopting energy-saving practices to reduce emissions
+    over the past three years.
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -119399,9 +119427,9 @@ IC.FRM.EXS.ZS:
   name: Firms exporting directly at least 10% of sales (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms that export directly at least 10% of their
-    total annual sales.
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Percentage of firms that export directly at least 10% of their total
+    annual sales.
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -119673,9 +119701,9 @@ IC.FRM.FO.ZS:
   name: Firms with at least 10% foreign ownership
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms that have at least 10% owned by private foreign
+  source_note: Percentage of firms that have at least 10% owned by private foreign
     individuals, companies or organizations.
-  source_organization: World Bank, Enterprise Surveys
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -120123,7 +120151,7 @@ IC.FRM.LOTM.ZS:
   name: Firms where largest owner is also the top manager (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percent of firms where the largest owner is also the top manager.
+  source_note: Percent of firms where the largest owner is also the top manager.
   source_organization: World Bank, Enterprise Surveys
   topic_ids: []
   topics: []
@@ -120156,9 +120184,10 @@ IC.FRM.NPRD.ZS:
   name: Firms that introduced a new product/service and process, and spent on R&D
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms that introduced a new product/service and process
-    over last 3 years, and spent on R&D over last fiscal year (excluding small firms).
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Percentage of medium and large firms that introduced a new product/service
+    and process over last 3 years, and spent on R&D over last fiscal year (excluding
+    small firms).
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -120598,8 +120627,8 @@ IC.FRM.TAXE.ZS:
   name: Firms filling taxes electronically (% of firms)
   source: World Development Indicators
   source_id: '2'
-  source_note: The percentage of firms paying taxes electronically.
-  source_organization: World Bank, Enterprise Surveys
+  source_note: Percentage of firms filing taxes electronically either fully or partially.
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -121227,11 +121256,18 @@ IC.MNG.IND:
   name: Management practices index
   source: World Development Indicators
   source_id: '2'
-  source_note: "Composite index that combines information from eight management practices\
-    \ indicators included in the Enterprise Surveys questionnaire. \n\nThe detailed\
-    \ methodology is available in the Enterprise Surveys Indicator Description document:\
-    \ https://www.enterprisesurveys.org/content/dam/enterprisesurveys/documents/methodology/Indicator-Description.pdf"
-  source_organization: World Bank, Enterprise Surveys
+  source_note: 'Average management practices index for medium and large firms: composite
+    index that combines information from eight management practices indicators included
+    in the Enterprise Surveys.
+
+
+    The Enterprise Surveys provide indicators that describe several dimensions of
+    management practices. These indicators measure the extent to which firms implement
+    better practices such as taking long-term actions to fix and avoid problems in
+    production or service-delivery; number, time-horizon, and other features of production
+    of service-provision targets; use of bonuses or promotion to reward better performance,
+    and demotion to limit under-performance.'
+  source_organization: 'Enterprise Surveys, World Bank Group (WBG), uri: https://www.enterprisesurveys.org/en/data'
   topic_ids: []
   topics: []
   unit: ''
@@ -156613,8 +156649,8 @@ LP.LPI.OVRL.XQ:
     \ priced shipments, quality of logistics services, ability to track and trace\
     \ consignments, and frequency with which shipments reach the consignee within\
     \ the scheduled time. The index ranges from 1 to 5, with a higher score representing\
-    \ better performance. \nData are from the Logistics Performance Index survey conducted\
-    \ by the World Bank in partnership with academic and international institutions\
+    \ better performance. \n\nData are from the Logistics Performance Index survey\
+    \ conducted by the World Bank in partnership with academic and international institutions\
     \ and private companies and individuals engaged in international logistics. The\
     \ 2023 LPI survey was conducted from September 6 to November 5, 2022. It provided\
     \ 4,090 country assessments by 652 logistics professionals in 115 countries in\
@@ -156622,9 +156658,9 @@ LP.LPI.OVRL.XQ:
     \ on a scale from 1 (worst) to 5 (best). The eight countries are chosen based\
     \ on the most important export and import markets of the respondent's country,\
     \ random selection, and, for landlocked countries, neighboring countries that\
-    \ connect them with international markets. \nScores for the six areas are averaged\
+    \ connect them with international markets. \n\nScores for the six areas are averaged\
     \ across all respondents and aggregated to a single score using principal components\
-    \ analysis. \nDetails of the survey methodology and index construction methodology\
+    \ analysis. \n\nDetails of the survey methodology and index construction methodology\
     \ are included in Appendix 5 of the 2023 LPI report available at: https://lpi.worldbank.org/report."
   source_organization: 'Connecting to Compete - Logistics Performance Index (LPI),
     World Bank (WB), uri: https://lpi.worldbank.org'
@@ -157891,6 +157927,101 @@ NE.CON.PCAP.CD:
     of resources. Data are in current U.S. dollars.
   source_organization: World Bank national accounts data, and OECD National Accounts
     data files.
+  topic_ids: []
+  topics: []
+  unit: ''
+NE.CON.PCAP.PP.CD:
+  id: NE.CON.PCAP.PP.CD
+  name: Households and NPISHs Final consumption expenditure per capita, PPP (current
+    international $)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'This indicator provides values for final consumption expenditure per
+    person expressed in current international dollars, converted by purchasing power
+    parities (PPPs). PPPs account for the different price levels across countries
+    and thus PPP-based comparisons of economic output are more appropriate for comparing
+    the output of economies and the average material well-being of their inhabitants
+    than exchange-rate based comparisons.
+
+    Households and NPISHs final consumption expenditure includes expenditure on goods
+    and services by the Household and NPISH sector for the direct satisfaction of
+    human needs or wants, whether individual or collective. This series has been linked
+    to produce a consistent time series to counteract breaks in series over time due
+    to changes in base years, source data and methodologies. Thus, it may not be comparable
+    with other national accounts series in the database for historical years. The
+    core indicator has been divided by the general population to achieve a per capita
+    estimate. This indicator is expressed in current prices, meaning no adjustment
+    has been made to account for price changes over time. The PPP conversion factor
+    is a currency conversion factor and a spatial price deflator. PPPs convert different
+    currencies to a common currency and, in the process of conversion, equalize their
+    purchasing power by eliminating the differences in price levels between countries,
+    thereby allowing volume or output comparisons of GDP and its expenditure components.'
+  source_organization: 'International Comparison Program (ICP), World Bank (WB), note:
+    This information is for PPP conversion factors., publisher: International Comparison
+    Program (ICP), date published: May 30, 2024;
+
+    The Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes,
+    note: This information is for PPP conversion factors., publisher: Eurostat;
+
+    The OECD PPP Programme, Organisation for Economic Co-operation and Development
+    (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;
+
+    Staff estimates, World Bank (WB), note: This information is for households and
+    NPISHs Final consumption expenditure per capita.;
+
+    National Accounts data files, Organisation for Economic Co-operation and Development
+    (OECD), note: This information is for households and NPISHs Final consumption
+    expenditure per capita.;
+
+    World Economic Outlook database, International Monetary Fund (IMF), note: This
+    information is for households and NPISHs Final consumption expenditure per capita.'
+  topic_ids: []
+  topics: []
+  unit: ''
+NE.CON.PCAP.PP.KD:
+  id: NE.CON.PCAP.PP.KD
+  name: Households and NPISHs Final consumption expenditure per capita, PPP (constant
+    2021 international $)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: 'This indicator provides values for final consumption expenditure per
+    person expressed in constant international dollars, converted by purchasing power
+    parities (PPPs). PPPs account for the different price levels across countries
+    and thus PPP-based comparisons of economic output are more appropriate for comparing
+    the output of economies and the average material well-being of their inhabitants
+    than exchange-rate based comparisons.
+
+    Households and NPISHs final consumption expenditure includes expenditure on goods
+    and services by the Household and NPISH sector for the direct satisfaction of
+    human needs or wants, whether individual or collective. The core indicator has
+    been divided by the general population to achieve a per capita estimate. This
+    indicator is expressed in constant prices, meaning the series has been adjusted
+    to account for price changes over time. The reference year for this adjustment
+    is 2021. The PPP conversion factor is a currency conversion factor and a spatial
+    price deflator. PPPs convert different currencies to a common currency and, in
+    the process of conversion, equalize their purchasing power by eliminating the
+    differences in price levels between countries, thereby allowing volume or output
+    comparisons of GDP and its expenditure components.'
+  source_organization: 'International Comparison Program (ICP), World Bank (WB), note:
+    This information is for PPP conversion factors., publisher: International Comparison
+    Program (ICP), date published: May 30, 2024;
+
+    The Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes,
+    note: This information is for PPP conversion factors., publisher: Eurostat;
+
+    The OECD PPP Programme, Organisation for Economic Co-operation and Development
+    (OECD), uri: https://data-explorer.oecd.org/, note: This information is for PPP
+    conversion factors., publisher: OECD;
+
+    Staff estimates, World Bank (WB), note: This information is for households and
+    NPISHs Final consumption expenditure per capita.;
+
+    National Accounts data files, Organisation for Economic Co-operation and Development
+    (OECD), note: This information is for households and NPISHs Final consumption
+    expenditure per capita.;
+
+    World Economic Outlook database, International Monetary Fund (IMF), note: This
+    information is for households and NPISHs Final consumption expenditure per capita.'
   topic_ids: []
   topics: []
   unit: ''
@@ -162667,8 +162798,10 @@ NV.SRV.TRAD.KN:
     restaurants (ISIC 50-55). Data are in constant local currency.
   source_organization: World Bank national accounts data, and OECD National Accounts
     data files.
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 NV.SRV.TRAN.CD:
   id: NV.SRV.TRAN.CD
@@ -162695,10 +162828,8 @@ NV.SRV.TRAN.CN:
     60-64). Data are in current local currency.
   source_organization: World Bank national accounts data, and OECD National Accounts
     data files.
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 NV.SRV.TRAN.KN:
   id: NV.SRV.TRAN.KN
@@ -165470,7 +165601,9 @@ NY.GDP.MKTP.CD:
     and/or Central Banks;
 
     National Accounts data files, Organisation for Economic Co-operation and Development
-    (OECD);Staff estimates, World Bank (WB)'
+    (OECD);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   topics:
@@ -165607,7 +165740,9 @@ NY.GDP.MKTP.KD.ZG:
     and/or Central Banks;
 
     National Accounts data files, Organisation for Economic Co-operation and Development
-    (OECD);Staff estimates, World Bank (WB)'
+    (OECD);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   topics:
@@ -165825,7 +165960,9 @@ NY.GDP.PCAP.CD:
     and/or Central Banks;
 
     National Accounts data files, Organisation for Economic Co-operation and Development
-    (OECD);Staff estimates, World Bank (WB)'
+    (OECD);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   topics:
@@ -165872,7 +166009,9 @@ NY.GDP.PCAP.KD:
     and/or Central Banks;
 
     National Accounts data files, Organisation for Economic Co-operation and Development
-    (OECD);Staff estimates, World Bank (WB)'
+    (OECD);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   topics:
@@ -165932,25 +166071,25 @@ NY.GDP.PCAP.PP.CD:
   name: GDP per capita, PPP (current international $)
   source: World Development Indicators
   source_id: '2'
-  source_note: "This indicator provides values for gross domestic product (GDP) expressed\
-    \ in current international dollars, converted by purchasing power parities (PPPs).\
-    \ PPPs account for the different price levels across countries and thus PPP-based\
-    \ comparisons of economic output are more appropriate for comparing the output\
-    \ of economies and the average material well-being of their inhabitants than exchange-rate\
-    \ based comparisons.  \n\nGross domestic product is the total income earned through\
-    \ the production of goods and services in an economic territory during an accounting\
-    \ period. It can be measured in three different ways: using either the expenditure\
-    \ approach, the income approach, or the production approach. This series has been\
-    \ linked to produce a consistent time series to counteract breaks in series over\
-    \ time due to changes in base years, source data and methodologies. Thus, it may\
-    \ not be comparable with other national accounts series in the database for historical\
-    \ years. The core indicator has been divided by the general population to achieve\
-    \ a per capita estimate. This indicator is expressed in current prices, meaning\
-    \ no adjustment has been made to account for price changes over time. The PPP\
-    \ conversion factor is a currency conversion factor and a spatial price deflator.\
-    \ PPPs convert different currencies to a common currency and, in the process of\
-    \ conversion, equalize their purchasing power by eliminating the differences in\
-    \ price levels between countries, thereby allowing volume or output comparisons\
+  source_note: "This indicator provides values for gross domestic product (GDP) per\
+    \ person expressed in current international dollars, converted by purchasing power\
+    \ parities (PPPs). PPPs account for the different price levels across countries\
+    \ and thus PPP-based comparisons of economic output are more appropriate for comparing\
+    \ the output of economies and the average material well-being of their inhabitants\
+    \ than exchange-rate based comparisons.  \n\nGross domestic product is the total\
+    \ income earned through the production of goods and services in an economic territory\
+    \ during an accounting period. It can be measured in three different ways: using\
+    \ either the expenditure approach, the income approach, or the production approach.\
+    \ This series has been linked to produce a consistent time series to counteract\
+    \ breaks in series over time due to changes in base years, source data and methodologies.\
+    \ Thus, it may not be comparable with other national accounts series in the database\
+    \ for historical years. The core indicator has been divided by the general population\
+    \ to achieve a per capita estimate. This indicator is expressed in current prices,\
+    \ meaning no adjustment has been made to account for price changes over time.\
+    \ The PPP conversion factor is a currency conversion factor and a spatial price\
+    \ deflator. PPPs convert different currencies to a common currency and, in the\
+    \ process of conversion, equalize their purchasing power by eliminating the differences\
+    \ in price levels between countries, thereby allowing volume or output comparisons\
     \ of GDP and its expenditure components."
   source_organization: 'International Comparison Program (ICP), World Bank (WB), uri:
     https://www.worldbank.org/en/programs/icp/data, note: This information is for
@@ -165979,23 +166118,23 @@ NY.GDP.PCAP.PP.KD:
   name: GDP per capita, PPP (constant 2021 international $)
   source: World Development Indicators
   source_id: '2'
-  source_note: "This indicator provides values for gross domestic product (GDP) expressed\
-    \ in constant international dollars, converted by purchasing power parities (PPPs).\
-    \ PPPs account for the different price levels across countries and thus PPP-based\
-    \ comparisons of economic output are more appropriate for comparing the output\
-    \ of economies and the average material well-being of their inhabitants than exchange-rate\
-    \ based comparisons. \n\nGross domestic product is the total income earned through\
-    \ the production of goods and services in an economic territory during an accounting\
-    \ period. It can be measured in three different ways: using either the expenditure\
-    \ approach, the income approach, or the production approach. The core indicator\
-    \ has been divided by the general population to achieve a per capita estimate.\
-    \ This indicator is expressed in constant prices, meaning the series has been\
-    \ adjusted to account for price changes over time. The reference year for this\
-    \ adjustment is 2021. The PPP conversion factor is a currency conversion factor\
-    \ and a spatial price deflator. PPPs convert different currencies to a common\
-    \ currency and, in the process of conversion, equalize their purchasing power\
-    \ by eliminating the differences in price levels between countries, thereby allowing\
-    \ volume or output comparisons of GDP and its expenditure components."
+  source_note: "This indicator provides values for gross domestic product (GDP) per\
+    \ person expressed in constant international dollars, converted by purchasing\
+    \ power parities (PPPs). PPPs account for the different price levels across countries\
+    \ and thus PPP-based comparisons of economic output are more appropriate for comparing\
+    \ the output of economies and the average material well-being of their inhabitants\
+    \ than exchange-rate based comparisons. \n\nGross domestic product is the total\
+    \ income earned through the production of goods and services in an economic territory\
+    \ during an accounting period. It can be measured in three different ways: using\
+    \ either the expenditure approach, the income approach, or the production approach.\
+    \ The core indicator has been divided by the general population to achieve a per\
+    \ capita estimate. This indicator is expressed in constant prices, meaning the\
+    \ series has been adjusted to account for price changes over time. The reference\
+    \ year for this adjustment is 2021. The PPP conversion factor is a currency conversion\
+    \ factor and a spatial price deflator. PPPs convert different currencies to a\
+    \ common currency and, in the process of conversion, equalize their purchasing\
+    \ power by eliminating the differences in price levels between countries, thereby\
+    \ allowing volume or output comparisons of GDP and its expenditure components."
   source_organization: 'International Comparison Program (ICP), World Bank (WB), uri:
     https://www.worldbank.org/en/programs/icp/data, note: This information is for
     ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP),
@@ -166432,9 +166571,13 @@ NY.GNP.ATLS.CD:
     States. This indicator is expressed in current prices, meaning no adjustment has
     been made to account for price changes over time. This indicator is expressed
     in United States dollars.
-  source_organization: Country official statistics, National Statistical Organizations
-    and/or Central Banks;National Accounts data files, Organisation for Economic Co-operation
-    and Development (OECD);Staff estimates, World Bank (WB)
+  source_organization: 'Country official statistics, National Statistical Organizations
+    and/or Central Banks;
+
+    National Accounts data files, Organisation for Economic Co-operation and Development
+    (OECD);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   topics:
@@ -166745,9 +166888,13 @@ NY.GNP.PCAP.CD:
     the United Kingdom, and the United States. This indicator is expressed in current
     prices, meaning no adjustment has been made to account for price changes over
     time. This indicator is expressed in United States dollars.
-  source_organization: Country official statistics, National Statistical Organizations
-    and/or Central Banks;National Accounts data files, Organisation for Economic Co-operation
-    and Development (OECD);Staff estimates, World Bank (WB)
+  source_organization: 'Country official statistics, National Statistical Organizations
+    and/or Central Banks;
+
+    National Accounts data files, Organisation for Economic Co-operation and Development
+    (OECD);
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '3'
   topics:
@@ -166885,35 +167032,43 @@ NY.GNP.PCAP.PP.CD:
   name: GNI per capita, PPP (current international $)
   source: World Development Indicators
   source_id: '2'
-  source_note: This indicator provides values for gross national income (GNI) per
-    person expressed in current international dollars, converted by purchasing power
-    parities (PPPs). PPPs account for the different price levels across countries
-    and thus PPP-based comparisons of economic output are more appropriate for comparing
-    the output of economies and the average material well-being of their inhabitants
-    than exchange-rate based comparisons.Gross national income is the total income
-    earned by all residents within an economic territory during an accounting period.
-    It is equal to gross domestic product plus earned income receivable from abroad
-    minus earned income payable abroad. The core indicator has been divided by the
-    general population to achieve a per capita estimate. This series has been linked
-    to produce a consistent time series to counteract breaks in series over time due
-    to changes in base years, source data and methodologies. Thus, it may not be comparable
-    with other national accounts series in the database for historical years. This
-    indicator is expressed in current prices, meaning no adjustment has been made
-    to account for price changes over time. The PPP conversion factor is a currency
-    conversion factor and a spatial price deflator. PPPs convert different currencies
-    to a common currency and, in the process of conversion, equalize their purchasing
-    power by eliminating the differences in price levels between countries, thereby
-    allowing volume or output comparisons of GDP and its expenditure components.
+  source_note: "This indicator provides values for gross national income (GNI) per\
+    \ person expressed in current international dollars, converted by purchasing power\
+    \ parities (PPPs). PPPs account for the different price levels across countries\
+    \ and thus PPP-based comparisons of economic output are more appropriate for comparing\
+    \ the output of economies and the average material well-being of their inhabitants\
+    \ than exchange-rate based comparisons. \n\nGross national income is the total\
+    \ income earned by all residents within an economic territory during an accounting\
+    \ period. It is equal to gross domestic product plus earned income receivable\
+    \ from abroad minus earned income payable abroad. The core indicator has been\
+    \ divided by the general population to achieve a per capita estimate. This series\
+    \ has been linked to produce a consistent time series to counteract breaks in\
+    \ series over time due to changes in base years, source data and methodologies.\
+    \ Thus, it may not be comparable with other national accounts series in the database\
+    \ for historical years. This indicator is expressed in current prices, meaning\
+    \ no adjustment has been made to account for price changes over time. The PPP\
+    \ conversion factor is a currency conversion factor and a spatial price deflator.\
+    \ PPPs convert different currencies to a common currency and, in the process of\
+    \ conversion, equalize their purchasing power by eliminating the differences in\
+    \ price levels between countries, thereby allowing volume or output comparisons\
+    \ of GDP and its expenditure components."
   source_organization: 'International Comparison Program (ICP), World Bank (WB), uri:
     https://www.worldbank.org/en/programs/icp/data, note: This information is for
     ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP),
-    date accessed: May 30, 2024, date published: May 30, 2024;The Eurostat PPP Programme,
-    Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes,
-    publisher: Eurostat;The OECD PPP Programme, Organisation for Economic Co-operation
-    and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;Staff
-    estimates, World Bank (WB);National Accounts data files, Organisation for Economic
-    Co-operation and Development (OECD);World Economic Outlook database, International
-    Monetary Fund (IMF)'
+    date accessed: May 30, 2024, date published: May 30, 2024;
+
+    The Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes,
+    publisher: Eurostat;
+
+    The OECD PPP Programme, Organisation for Economic Co-operation and Development
+    (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;
+
+    Staff estimates, World Bank (WB);
+
+    National Accounts data files, Organisation for Economic Co-operation and Development
+    (OECD);
+
+    World Economic Outlook database, International Monetary Fund (IMF)'
   topic_ids:
   - '3'
   topics:
@@ -168228,6 +168383,25 @@ PA.NUS.FCRF.XR:
   topic_ids: []
   topics: []
   unit: ''
+PA.NUS.GDP.PLI:
+  id: PA.NUS.GDP.PLI
+  name: Price level index (GDP)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The price level index (PLI) is the ratio of a purchasing power parity
+    (PPP) conversion factor to the corresponding market exchange rate between two
+    countries, expressed relative to a base country that is set equal to 100. For
+    this series the base country is the United States. It provides a measure of the
+    differences in price level between the country and the United States by indicating
+    the number of units of the common currency (US dollars) needed to buy the same
+    volume of the aggregation level in each country. At the level of GDP, the price
+    level ratio provides a measure of the differences in the general price levels
+    of countries.
+  source_organization: 'World Development Indicators, World Bank (WB), uri: https://databank.worldbank.org/source/world-development-indicators,
+    publisher: World Development Indicators'
+  topic_ids: []
+  topics: []
+  unit: ''
 PA.NUS.PPP:
   id: PA.NUS.PPP
   name: PPP conversion factor, GDP (LCU per international $)
@@ -168275,8 +168449,8 @@ PA.NUS.PPP.05:
 PA.NUS.PPPC.RF:
   id: PA.NUS.PPPC.RF
   name: Price level ratio of PPP conversion factor (GDP) to market exchange rate
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: The price level ratio, or price level index, is the ratio of a purchasing
     power parity (PPP) conversion factor to the corresponding market exchange rate
     between two countries. For this series the base country is the United States.
@@ -168292,9 +168466,29 @@ PA.NUS.PPPC.RF:
   topics:
   - Economy & Growth
   unit: ''
+PA.NUS.PRVT.PLI:
+  id: PA.NUS.PRVT.PLI
+  name: Price level index (Households and NPISHs Final consumption expenditure)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: The price level index (PLI) is the ratio of a purchasing power parity
+    (PPP) conversion factor to the corresponding market exchange rate between two
+    countries, expressed relative to a base country that is set equal to 100. For
+    this series the base country is the United States. It provides a measure of the
+    differences in price level between the country and the United States by indicating
+    the number of units of the common currency (US dollars) needed to buy the same
+    volume of the aggregation level in each country. This indicator provides a measure
+    of the differences in the price levels of countries at the level of Households
+    and NPISHs final consumption expenditure.
+  source_organization: 'World Development Indicators, World Bank (WB), uri: https://databank.worldbank.org/source/world-development-indicators,
+    publisher: World Development Indicators'
+  topic_ids: []
+  topics: []
+  unit: ''
 PA.NUS.PRVT.PP:
   id: PA.NUS.PRVT.PP
-  name: PPP conversion factor, private consumption (LCU per international $)
+  name: PPP conversion factor, households and NPISHs Final consumption expenditure
+    (LCU per international $)
   source: World Development Indicators
   source_id: '2'
   source_note: The purchasing power parity (PPP) conversion factor is a currency conversion
@@ -168302,8 +168496,8 @@ PA.NUS.PRVT.PP:
     currency and, in the process of conversion, equalize their purchasing power by
     eliminating the differences in price levels between countries, thereby allowing
     volume or output comparisons of gross domestic product (GDP) and its expenditure
-    components. This conversion factor is for household final consumption expenditure
-    and the base currency is the US dollar.
+    components. This conversion factor is for households and NPISHs Final consumption
+    expenditure  and the base currency is the US dollar.
   source_organization: 'International Comparison Program (ICP), World Bank (WB), uri:
     https://www.worldbank.org/en/programs/icp/data, publisher: International Comparison
     Program, type: International statistical program, date accessed: May 30, 2024,
@@ -174507,8 +174701,10 @@ PER.SOR.CTL.CAP:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PER.SOR.CTL.CPL:
   id: PER.SOR.CTL.CPL
@@ -174550,10 +174746,8 @@ PER.SOR.CTL.PRM:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PER.SOR.CTL.RCT:
   id: PER.SOR.CTL.RCT
@@ -178829,8 +179023,10 @@ PI-19.5:
   source_id: '67'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 PI-19.6:
   id: PI-19.6
@@ -178869,10 +179065,8 @@ PI-20.1:
   source_id: '68'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 PI-20.2:
   id: PI-20.2
@@ -185751,8 +185945,8 @@ PRT.PDCL.IND9.ALLD.ZS:
 PV.EST:
   id: PV.EST
   name: 'Political Stability and Absence of Violence/Terrorism: Estimate'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -185777,8 +185971,8 @@ PV.EST:
 PV.NO.SRC:
   id: PV.NO.SRC
   name: 'Political Stability and Absence of Violence/Terrorism: Number of Sources'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -185810,8 +186004,8 @@ PV.NO.SRC:
 PV.PER.RNK:
   id: PV.PER.RNK
   name: 'Political Stability and Absence of Violence/Terrorism: Percentile Rank'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -185838,8 +186032,8 @@ PV.PER.RNK.LOWER:
   id: PV.PER.RNK.LOWER
   name: 'Political Stability and Absence of Violence/Terrorism: Percentile Rank, Lower
     Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -185868,8 +186062,8 @@ PV.PER.RNK.UPPER:
   id: PV.PER.RNK.UPPER
   name: 'Political Stability and Absence of Violence/Terrorism: Percentile Rank, Upper
     Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "Good governance is essential for development. It helps countries improve\
     \ economic growth, build human capital, and strengthen social cohesion. Empirical\
     \ evidence shows a strong causal relationship between better governance and better\
@@ -185901,8 +186095,8 @@ PV.PER.RNK.UPPER:
 PV.STD.ERR:
   id: PV.STD.ERR
   name: 'Political Stability and Absence of Violence/Terrorism: Standard Error'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -186686,8 +186880,8 @@ REV.TXRV.SHR.CR:
 RL.EST:
   id: RL.EST
   name: 'Rule of Law: Estimate'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -186716,8 +186910,8 @@ RL.EST:
 RL.NO.SRC:
   id: RL.NO.SRC
   name: 'Rule of Law: Number of Sources'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -186750,8 +186944,8 @@ RL.NO.SRC:
 RL.PER.RNK:
   id: RL.PER.RNK
   name: 'Rule of Law: Percentile Rank'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -186778,8 +186972,8 @@ RL.PER.RNK:
 RL.PER.RNK.LOWER:
   id: RL.PER.RNK.LOWER
   name: 'Rule of Law: Percentile Rank, Lower Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -186808,8 +187002,8 @@ RL.PER.RNK.LOWER:
 RL.PER.RNK.UPPER:
   id: RL.PER.RNK.UPPER
   name: 'Rule of Law: Percentile Rank, Upper Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "Good governance is essential for development. It helps countries improve\
     \ economic growth, build human capital, and strengthen social cohesion. Empirical\
     \ evidence shows a strong causal relationship between better governance and better\
@@ -186842,8 +187036,8 @@ RL.PER.RNK.UPPER:
 RL.STD.ERR:
   id: RL.STD.ERR
   name: 'Rule of Law: Standard Error'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -187198,8 +187392,8 @@ ROD.VILG.OTHR.ZS:
 RQ.EST:
   id: RQ.EST
   name: 'Regulatory Quality: Estimate'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -187227,8 +187421,8 @@ RQ.EST:
 RQ.NO.SRC:
   id: RQ.NO.SRC
   name: 'Regulatory Quality: Number of Sources'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -187260,8 +187454,8 @@ RQ.NO.SRC:
 RQ.PER.RNK:
   id: RQ.PER.RNK
   name: 'Regulatory Quality: Percentile Rank'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -187287,8 +187481,8 @@ RQ.PER.RNK:
 RQ.PER.RNK.LOWER:
   id: RQ.PER.RNK.LOWER
   name: 'Regulatory Quality: Percentile Rank, Lower Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -187316,8 +187510,8 @@ RQ.PER.RNK.LOWER:
 RQ.PER.RNK.UPPER:
   id: RQ.PER.RNK.UPPER
   name: 'Regulatory Quality: Percentile Rank, Upper Bound of 90% Confidence Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "Good governance is essential for development. It helps countries improve\
     \ economic growth, build human capital, and strengthen social cohesion. Empirical\
     \ evidence shows a strong causal relationship between better governance and better\
@@ -187349,8 +187543,8 @@ RQ.PER.RNK.UPPER:
 RQ.STD.ERR:
   id: RQ.STD.ERR
   name: 'Regulatory Quality: Standard Error'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -190255,7 +190449,7 @@ SE.ADT.1524.LT.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -190275,7 +190469,7 @@ SE.ADT.1524.LT.FM.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -190297,7 +190491,7 @@ SE.ADT.1524.LT.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -190317,7 +190511,7 @@ SE.ADT.1524.LT.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -190365,7 +190559,7 @@ SE.ADT.LITR.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '17'
   - '4'
@@ -190385,7 +190579,7 @@ SE.ADT.LITR.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -190405,7 +190599,7 @@ SE.ADT.LITR.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Excel (bulk file), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -191480,8 +191674,10 @@ SE.CLO.15Y.LDGAP.R.PS.2009.5:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.15Y.LDGAP.R.PS.2009.A:
   id: SE.CLO.15Y.LDGAP.R.PS.2009.A
@@ -191523,10 +191719,8 @@ SE.CLO.15Y.LDGAP.R.PS.2009.R:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.15Y.LDGAP.R.PS.2009.U:
   id: SE.CLO.15Y.LDGAP.R.PS.2009.U
@@ -202567,8 +202761,10 @@ SE.CLO.4.PRF.S.TMS.2015.4:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.4.PRF.S.TMS.2015.5:
   id: SE.CLO.4.PRF.S.TMS.2015.5
@@ -202610,10 +202806,8 @@ SE.CLO.4.PRF.S.TMS.2015.M:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.4.PRF.S.TMS.2015.R:
   id: SE.CLO.4.PRF.S.TMS.2015.R
@@ -213447,8 +213641,10 @@ SE.CLO.8.PRF.S.TMS.2019.R:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SE.CLO.8.PRF.S.TMS.2019.U:
   id: SE.CLO.8.PRF.S.TMS.2019.U
@@ -213491,10 +213687,8 @@ SE.CLO.9.LDGAP.M.TMS.2007.3:
   source_id: '12'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SE.CLO.9.LDGAP.M.TMS.2007.4:
   id: SE.CLO.9.LDGAP.M.TMS.2007.4
@@ -216105,8 +216299,8 @@ SE.COM.DURS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -216222,8 +216416,8 @@ SE.ENR.TERT.FM.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -217056,8 +217250,8 @@ SE.PRE.DURS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -217199,7 +217393,7 @@ SE.PRE.TCAQ.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -217217,7 +217411,7 @@ SE.PRE.TCAQ.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -217235,7 +217429,7 @@ SE.PRE.TCAQ.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -217319,8 +217513,8 @@ SE.PRM.AGES:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -217836,8 +218030,8 @@ SE.PRM.CMPT.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -217859,8 +218053,8 @@ SE.PRM.CMPT.MA.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -217883,7 +218077,7 @@ SE.PRM.CMPT.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '2'
   - '19'
@@ -218072,7 +218266,7 @@ SE.PRM.CUAT.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -218092,7 +218286,7 @@ SE.PRM.CUAT.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -218112,7 +218306,7 @@ SE.PRM.CUAT.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -218130,8 +218324,8 @@ SE.PRM.DURS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -218279,7 +218473,7 @@ SE.PRM.ENRL:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -218344,7 +218538,7 @@ SE.PRM.ENRR:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -218364,7 +218558,7 @@ SE.PRM.ENRR.FE:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -218386,7 +218580,7 @@ SE.PRM.ENRR.MA:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -221489,8 +221683,8 @@ SE.PRM.PRIV.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -221558,8 +221752,8 @@ SE.PRM.PRS5.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -221578,8 +221772,8 @@ SE.PRM.PRS5.MA.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -221598,8 +221792,8 @@ SE.PRM.PRS5.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -221616,8 +221810,8 @@ SE.PRM.PRSL.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -221636,8 +221830,8 @@ SE.PRM.PRSL.MA.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -221656,8 +221850,8 @@ SE.PRM.PRSL.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -222552,7 +222746,7 @@ SE.PRM.TCAQ.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -222572,7 +222766,7 @@ SE.PRM.TCAQ.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -222592,7 +222786,7 @@ SE.PRM.TCAQ.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -222609,7 +222803,7 @@ SE.PRM.TCHR:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -222643,8 +222837,8 @@ SE.PRM.TCHR.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223391,7 +223585,7 @@ SE.PRM.UNER:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223408,7 +223602,7 @@ SE.PRM.UNER.FE:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223429,7 +223623,7 @@ SE.PRM.UNER.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223446,7 +223640,7 @@ SE.PRM.UNER.MA:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223467,7 +223661,7 @@ SE.PRM.UNER.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223516,7 +223710,7 @@ SE.PRM.UNER.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223642,8 +223836,8 @@ SE.SEC.AGES:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223662,8 +223856,8 @@ SE.SEC.CMPT.LO.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223682,8 +223876,8 @@ SE.SEC.CMPT.LO.MA.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223702,8 +223896,8 @@ SE.SEC.CMPT.LO.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223721,7 +223915,7 @@ SE.SEC.CUAT.LO.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223741,7 +223935,7 @@ SE.SEC.CUAT.LO.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223761,7 +223955,7 @@ SE.SEC.CUAT.LO.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223781,7 +223975,7 @@ SE.SEC.CUAT.PO.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223801,7 +223995,7 @@ SE.SEC.CUAT.PO.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223821,7 +224015,7 @@ SE.SEC.CUAT.PO.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223841,7 +224035,7 @@ SE.SEC.CUAT.UP.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223861,7 +224055,7 @@ SE.SEC.CUAT.UP.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223881,7 +224075,7 @@ SE.SEC.CUAT.UP.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -223899,8 +224093,8 @@ SE.SEC.DURS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -223941,7 +224135,7 @@ SE.SEC.ENRL:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224149,7 +224343,7 @@ SE.SEC.ENRR:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224170,7 +224364,7 @@ SE.SEC.ENRR.FE:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -224238,7 +224432,7 @@ SE.SEC.ENRR.MA:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -224371,8 +224565,8 @@ SE.SEC.PRIV.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224487,7 +224681,7 @@ SE.SEC.TCAQ.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224505,7 +224699,7 @@ SE.SEC.TCAQ.LO.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224523,7 +224717,7 @@ SE.SEC.TCAQ.LO.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224541,7 +224735,7 @@ SE.SEC.TCAQ.LO.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224559,7 +224753,7 @@ SE.SEC.TCAQ.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224577,7 +224771,7 @@ SE.SEC.TCAQ.UP.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224595,7 +224789,7 @@ SE.SEC.TCAQ.UP.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224613,7 +224807,7 @@ SE.SEC.TCAQ.UP.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224631,7 +224825,7 @@ SE.SEC.TCAQ.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file, date accessed:
-    2025-09-22, date published: 2025-09'
+    2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224648,7 +224842,7 @@ SE.SEC.TCHR:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224664,8 +224858,8 @@ SE.SEC.TCHR.FE:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224681,8 +224875,8 @@ SE.SEC.TCHR.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -224771,7 +224965,7 @@ SE.SEC.UNER.LO.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224788,7 +224982,7 @@ SE.SEC.UNER.LO.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224805,7 +224999,7 @@ SE.SEC.UNER.LO.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -224978,7 +225172,7 @@ SE.TER.CUAT.BA.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -224998,7 +225192,7 @@ SE.TER.CUAT.BA.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225018,7 +225212,7 @@ SE.TER.CUAT.BA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225038,7 +225232,7 @@ SE.TER.CUAT.DO.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225057,7 +225251,7 @@ SE.TER.CUAT.DO.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225077,7 +225271,7 @@ SE.TER.CUAT.DO.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225097,7 +225291,7 @@ SE.TER.CUAT.MS.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225117,7 +225311,7 @@ SE.TER.CUAT.MS.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225137,7 +225331,7 @@ SE.TER.CUAT.MS.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225157,7 +225351,7 @@ SE.TER.CUAT.ST.FE.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225177,7 +225371,7 @@ SE.TER.CUAT.ST.MA.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225197,7 +225391,7 @@ SE.TER.CUAT.ST.ZS:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225274,7 +225468,7 @@ SE.TER.ENRR:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -225294,7 +225488,7 @@ SE.TER.ENRR.FE:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225316,7 +225510,7 @@ SE.TER.ENRR.MA:
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
     publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date
-    accessed: 2025-09-22, date published: 2025-09'
+    accessed: 2026-03-19, date published: 2026-02'
   topic_ids:
   - '4'
   - '17'
@@ -225693,8 +225887,8 @@ SE.TER.TCHR.FE.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -225732,8 +225926,8 @@ SE.XPD.CPRM.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -225755,8 +225949,8 @@ SE.XPD.CSEC.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -225778,8 +225972,8 @@ SE.XPD.CTER.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -225800,8 +225994,8 @@ SE.XPD.CTOT.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -226085,8 +226279,8 @@ SE.XPD.TOTL.GB.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -226104,8 +226298,8 @@ SE.XPD.TOTL.GD.ZS:
   source_organization: 'Data API, UN Educational, Scientific and Cultural Organization
     (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are
     obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/,
-    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2025-09-22, date
-    published: 2025-09'
+    publisher: UNESCO Institute for Statistics (UIS), date accessed: 2026-03-19, date
+    published: 2026-02'
   topic_ids:
   - '4'
   topics:
@@ -226847,7 +227041,7 @@ SG.GEN.PARL.ZS:
     single or lower chamber held by women.
   source_organization: 'Monthly ranking of women in national parliaments, Inter-Parliamentary
     Union (IPU), uri: https://data.ipu.org/women-ranking/, note: For the year of 1998,
-    the data is as of August 10, 1998., type: Excel, date accessed: 2024-03-21'
+    the data is as of August 10, 1998., type: Excel, date accessed: 2026-03-29'
   topic_ids:
   - '13'
   - '17'
@@ -226977,8 +227171,8 @@ SG.LAW.EQRM.WK:
 SG.LAW.INDX:
   id: SG.LAW.INDX
   name: Women Business and the Law Index Score (scale 1-100)
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: The index measures how laws and regulations affect women’s economic
     opportunity. Overall scores are calculated by taking the average score of each
     index (Mobility, Workplace, Pay, Marriage, Parenthood, Entrepreneurship, Assets
@@ -232533,8 +232727,8 @@ SH.DTH.COMM.ZS:
     deficiencies such as underweight and stunting.
   source_organization: 'Global Health Estimates, World Health Organization (WHO),
     uri: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death,
-    note: Derived based on the data from Global Health Estimates: Deaths by Cause,
-    Age, Sex, by Country and by Region'
+    note: Derived based on the data from Global Health Estimates  Deaths by Cause,
+    Age, Sex, by Country and by Region, 2000-2021'
   topic_ids:
   - '8'
   topics:
@@ -232550,10 +232744,13 @@ SH.DTH.IMRT:
     Fund (UNICEF), uri: www.childmortality.org;
 
     World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency
-    Group for Child Mortality Estimation;World Bank (WB), uri: www.childmortality.org,
-    note: UN Inter-agency Group for Child Mortality Estimation;United Nations (UN),
-    uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation,
-    publisher: UN Population Division'
+    Group for Child Mortality Estimation;
+
+    World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for
+    Child Mortality Estimation;
+
+    United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group
+    for Child Mortality Estimation, publisher: UN Population Division'
   topic_ids:
   - '8'
   topics:
@@ -232800,8 +232997,8 @@ SH.DTH.INJR.ZS:
     causes. Injuries include unintentional and intentional injuries.
   source_organization: 'Global Health Estimates, World Health Organization (WHO),
     uri: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death,
-    note: Derived based on the data from Global Health Estimates: Deaths by Cause,
-    Age, Sex, by Country and by Region'
+    note: Derived based on the data from Global Health Estimates  Deaths by Cause,
+    Age, Sex, by Country and by Region, 2000-2021'
   topic_ids:
   - '8'
   topics:
@@ -233098,8 +233295,8 @@ SH.DTH.NCOM.ZS:
     anomalies.
   source_organization: 'Global Health Estimates, World Health Organization (WHO),
     uri: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death,
-    note: Derived based on the data from Global Health Estimates: Deaths by Cause,
-    Age, Sex, by Country and by Region'
+    note: Derived based on the data from Global Health Estimates  Deaths by Cause,
+    Age, Sex, by Country and by Region, 2000-2021'
   topic_ids:
   - '8'
   topics:
@@ -233126,6 +233323,23 @@ SH.DTH.NMRT:
   - '8'
   topics:
   - 'Health '
+  unit: ''
+SH.DTH.OCVD.ZS:
+  id: SH.DTH.OCVD.ZS
+  name: Cause of death, by other COVID-19 pandemic-related outcomes (% of total)
+  source: World Development Indicators
+  source_id: '2'
+  source_note: Cause of death refers to the share of all deaths for all ages by underlying
+    causes. Other COVID-19 pandemic-related outcomes capture all deaths due to the
+    pandemic which were not specifically caused by COVID-19 or the indirect COVID
+    causes. These are estimated by subtracting COVID-19 specific deaths and deaths
+    attributed to indirect COVID-19 causes from total excess mortality.
+  source_organization: 'Global Health Estimates, World Health Organization (WHO),
+    uri: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death,
+    note: Derived based on the data from Global Health Estimates  Deaths by Cause,
+    Age, Sex, by Country and by Region, 2000-2021'
+  topic_ids: []
+  topics: []
   unit: ''
 SH.DTH.STLB:
   id: SH.DTH.STLB
@@ -233534,10 +233748,13 @@ SH.DYN.MORT:
     United Nations Population Division;
 
     World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency
-    Group for Child Mortality Estimation;World Bank (WB), uri: www.childmortality.org,
-    note: UN Inter-agency Group for Child Mortality Estimation;United Nations (UN),
-    uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation,
-    publisher: UN Population Division'
+    Group for Child Mortality Estimation;
+
+    World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for
+    Child Mortality Estimation;
+
+    United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group
+    for Child Mortality Estimation, publisher: UN Population Division'
   topic_ids:
   - '8'
   - '2'
@@ -233583,8 +233800,10 @@ SH.DYN.MORT.MA:
     Fund (UNICEF), uri: www.childmortality.org;
 
     World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency
-    Group for Child Mortality Estimation;World Bank (WB), uri: www.childmortality.org,
-    note: UN Inter-agency Group for Child Mortality Estimation;
+    Group for Child Mortality Estimation;
+
+    World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for
+    Child Mortality Estimation;
 
     United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group
     for Child Mortality Estimation, publisher: UN Population Division'
@@ -236348,8 +236567,9 @@ SH.IMM.IDPT:
     months who received DPT vaccinations before 12 months or at any time before the
     survey. A child is considered adequately immunized against diphtheria, pertussis
     (or whooping cough), and tetanus (DPT) after receiving three doses of vaccine.
-  source_organization: 'World Health Organization (WHO), uri: http://www.who.int/immunization/monitoring_surveillance/en/;UN
-    Children''s Fund (UNICEF)'
+  source_organization: 'World Health Organization (WHO), uri: http://www.who.int/immunization/monitoring_surveillance/en/;
+
+    UN Children''s Fund (UNICEF)'
   topic_ids:
   - '8'
   topics:
@@ -236464,8 +236684,9 @@ SH.IMM.MEAS:
     12-23 months who received the measles vaccination before 12 months or at any time
     before the survey. A child is considered adequately immunized against measles
     after receiving one dose of vaccine.
-  source_organization: 'World Health Organization (WHO), uri: http://www.who.int/immunization/monitoring_surveillance/en/;UN
-    Children''s Fund (UNICEF), uri: https://data.unicef.org/topic/child-health/immunization/'
+  source_organization: 'World Health Organization (WHO), uri: http://www.who.int/immunization/monitoring_surveillance/en/;
+
+    UN Children''s Fund (UNICEF), uri: https://data.unicef.org/topic/child-health/immunization/'
   topic_ids:
   - '8'
   topics:
@@ -236709,8 +236930,12 @@ SH.MED.NUMW.P3:
   source_note: Nurses and midwives include professional nurses, professional midwives,
     auxiliary nurses, auxiliary midwives, enrolled nurses, enrolled midwives and other
     associated personnel, such as dental nurses and primary care nurses.
-  source_organization: Global Health Workforce Statistics, World Health Organization
-    (WHO)
+  source_organization: 'Global Health Workforce Statistics, World Health Organization
+    (WHO);
+
+    Organisation for Economic Co-operation and Development (OECD);
+
+    Country data'
   topic_ids:
   - '8'
   topics:
@@ -236732,8 +236957,12 @@ SH.MED.PHYS.ZS:
   source: World Development Indicators
   source_id: '2'
   source_note: Physicians include generalist and specialist medical practitioners.
-  source_organization: Global Health Workforce Statistics, World Health Organization
-    (WHO)
+  source_organization: 'Global Health Workforce Statistics, World Health Organization
+    (WHO);
+
+    Organisation for Economic Co-operation and Development (OECD);
+
+    Country data'
   topic_ids:
   - '8'
   topics:
@@ -237518,9 +237747,11 @@ SH.MMR.DTHS:
     management but not from accidental or incidental causes.
   source_organization: 'Trends in Maternal Mortality, World Health Organization (WHO);
 
-    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;UN Population
-    Fund (UNFPA), note: Trends in Maternal Mortality;World Bank Group (WBG), note:
-    Trends in Maternal Mortality'
+    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;
+
+    UN Population Fund (UNFPA), note: Trends in Maternal Mortality;
+
+    World Bank Group (WBG), note: Trends in Maternal Mortality'
   topic_ids:
   - '8'
   topics:
@@ -237552,9 +237783,11 @@ SH.MMR.RISK:
     future, taking into account competing causes of death.
   source_organization: 'Trends in Maternal Mortality, World Health Organization (WHO);
 
-    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;UN Population
-    Fund (UNFPA), note: Trends in Maternal Mortality;World Bank Group (WBG), note:
-    Trends in Maternal Mortality'
+    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;
+
+    UN Population Fund (UNFPA), note: Trends in Maternal Mortality;
+
+    World Bank Group (WBG), note: Trends in Maternal Mortality'
   topic_ids:
   - '8'
   - '17'
@@ -237573,9 +237806,11 @@ SH.MMR.RISK.ZS:
     future, taking into account competing causes of death.
   source_organization: 'Trends in Maternal Mortality, World Health Organization (WHO);
 
-    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;UN Population
-    Fund (UNFPA), note: Trends in Maternal Mortality;World Bank Group (WBG), note:
-    Trends in Maternal Mortality'
+    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;
+
+    UN Population Fund (UNFPA), note: Trends in Maternal Mortality;
+
+    World Bank Group (WBG), note: Trends in Maternal Mortality'
   topic_ids:
   - '8'
   - '17'
@@ -238162,8 +238397,9 @@ SH.STA.ANVC.ZS:
     related to pregnancy.
   source_organization: 'State of the World''s Children, UN Children''s Fund (UNICEF);
 
-    Childinfo, UN Children''s Fund (UNICEF);Demographic and Health Surveys, DHS Program
-    (ICF)'
+    Childinfo, UN Children''s Fund (UNICEF);
+
+    Demographic and Health Surveys, DHS Program (ICF)'
   topic_ids:
   - '8'
   - '17'
@@ -238872,8 +239108,11 @@ SH.STA.BRTC.ZS:
     attended by personnel trained to give the necessary supervision, care, and advice
     to women during pregnancy, labor, and the postpartum period; to conduct deliveries
     on their own; and to care for newborns.
-  source_organization: State of the World's Children, UN Children's Fund (UNICEF);Childinfo,
-    UN Children's Fund (UNICEF);Demographic and Health Surveys, DHS Program (ICF)
+  source_organization: 'State of the World''s Children, UN Children''s Fund (UNICEF);
+
+    Childinfo, UN Children''s Fund (UNICEF);
+
+    Demographic and Health Surveys, DHS Program (ICF)'
   topic_ids:
   - '8'
   - '17'
@@ -239344,7 +239583,7 @@ SH.STA.FGMS.ZS:
     \ note: Indicator code from the original source: PT_F_15-49_FGM; \tIndicator name\
     \ from the original source: Percentage of girls and women (aged 15-49 years) who\
     \ have undergone female genital mutilation (FGM), publisher: The DHS Program (ICF),\
-    \ type: API, date accessed: 2023-12-07;DHS API, DHS Program (ICF), uri: https://api.dhsprogram.com/#/index.html,\
+    \ type: API, date accessed: 2023-12-07;\nDHS API, DHS Program (ICF), uri: https://api.dhsprogram.com/#/index.html,\
     \ note: Indicator code from the original source: PT_F_15-49_FGM; \tIndicator name\
     \ from the original source: Percentage of girls and women (aged 15-49 years) who\
     \ have undergone female genital mutilation (FGM), date accessed: 2023-12-07"
@@ -240091,9 +240330,11 @@ SH.STA.MMRT:
   source_organization: 'Trends in Maternal Mortality, World Health Organization (WHO),
     uri: https://www.who.int/news/item/23-02-2023-a-woman-dies-every-two-minutes-due-to-pregnancy-or-childbirth--un-agencies;
 
-    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;UN Population
-    Fund (UNFPA), note: Trends in Maternal Mortality;World Bank Group (WBG), note:
-    Trends in Maternal Mortality'
+    UN Children''s Fund (UNICEF), note: Trends in Maternal Mortality;
+
+    UN Population Fund (UNFPA), note: Trends in Maternal Mortality;
+
+    World Bank Group (WBG), note: Trends in Maternal Mortality'
   topic_ids:
   - '8'
   - '17'
@@ -240120,13 +240361,19 @@ SH.STA.MMRT.NE:
     data from surveillance sites.;
 
     UN Children''s Fund (UNICEF), note: Maternal Mortality Estimation Inter-Agency
-    Group (MMEIG);UN Population Fund (UNFPA), note: Maternal Mortality Estimation
-    Inter-Agency Group (MMEIG);World Bank Group (WBG), note: Maternal Mortality Estimation
-    Inter-Agency Group (MMEIG);United Nations (UN), note: Maternal Mortality Estimation
-    Inter-Agency Group (MMEIG);
+    Group (MMEIG);
 
-    PAHO, note: Core Indicators Portal;ICF, note: The DHS Program, Demographic and
-    Health Surveys'
+    UN Population Fund (UNFPA), note: Maternal Mortality Estimation Inter-Agency Group
+    (MMEIG);
+
+    World Bank Group (WBG), note: Maternal Mortality Estimation Inter-Agency Group
+    (MMEIG);
+
+    United Nations (UN), note: Maternal Mortality Estimation Inter-Agency Group (MMEIG);
+
+    PAHO, note: Core Indicators Portal;
+
+    ICF, note: The DHS Program, Demographic and Health Surveys'
   topic_ids:
   - '8'
   - '17'
@@ -240742,8 +240989,18 @@ SH.STA.OWGH.ME.FE.ZS:
     children under 5)
   source: World Development Indicators
   source_id: '2'
-  source_note: ''
-  source_organization: ''
+  source_note: Prevalence of overweight, female, is the percentage of girls under
+    age 5 whose weight for height is more than two standard deviations above the median
+    for the international reference population of the corresponding age as established
+    by the WHO's 2006 Child Growth Standards.
+  source_organization: 'Joint child Malnutrition Estimates (JME), UN Children''s Fund
+    (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb;
+
+    World Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME);
+
+    World Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME)'
   topic_ids: []
   topics: []
   unit: ''
@@ -240753,8 +241010,18 @@ SH.STA.OWGH.ME.MA.ZS:
     children under 5)
   source: World Development Indicators
   source_id: '2'
-  source_note: ''
-  source_organization: ''
+  source_note: Prevalence of overweight, male, is the percentage of boys under age
+    5 whose weight for height is more than two standard deviations above the median
+    for the international reference population of the corresponding age as established
+    by the WHO's 2006 Child Growth Standards.
+  source_organization: 'Joint child Malnutrition Estimates (JME), UN Children''s Fund
+    (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb;
+
+    World Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME);
+
+    World Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME)'
   topic_ids: []
   topics: []
   unit: ''
@@ -240768,8 +241035,14 @@ SH.STA.OWGH.ME.ZS:
     age 5 whose weight for height is more than two standard deviations above the median
     for the international reference population of the corresponding age as established
     by the WHO's 2006 Child Growth Standards.
-  source_organization: 'UNICEF, WHO, World Bank: Joint child Malnutrition Estimates
-    (JME).'
+  source_organization: 'Joint child Malnutrition Estimates (JME), UN Children''s Fund
+    (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb;
+
+    World Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME);
+
+    World Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME)'
   topic_ids:
   - '8'
   topics:
@@ -240818,11 +241091,14 @@ SH.STA.POIS.P5:
   name: Mortality rate attributed to unintentional poisoning (per 100,000 population)
   source: World Development Indicators
   source_id: '2'
-  source_note: Mortality rate attributed to unintentional poisonings is the number
+  source_note: 'Mortality rate attributed to unintentional poisonings is the number
     of deaths from unintentional poisonings in a year per 100,000 population.  Unintentional
-    poisoning can be caused by household chemicals, pesticides, kerosene, carbon monoxide
-    and medicines, or can be the result of environmental contamination or occupational
-    chemical exposure.
+    poisoning can
+
+
+
+    be caused by household chemicals, pesticides, kerosene, carbon monoxide and medicines,
+    or can be the result of environmental contamination or occupational chemical exposure.'
   source_organization: 'World Health Organization, Global Health Observatory Data
     Repository (http://apps.who.int/ghodata/)., World Health Organization (WHO), uri:
     https://www.who.int/data/gho'
@@ -240863,6 +241139,8 @@ SH.STA.POIS.P5.MA:
   source_note: 'Mortality rate attributed to unintentional poisonings is the number
     of male deaths from unintentional poisonings in a year per 100,000 male population.
     Unintentional poisoning can
+
+
 
     be caused by household chemicals, pesticides, kerosene, carbon monoxide and medicines,
     or can be the result of environmental contamination or occupational chemical exposure.'
@@ -241121,8 +241399,20 @@ SH.STA.STNT.ME.FE.ZS:
     under 5)
   source: World Development Indicators
   source_id: '2'
-  source_note: ''
-  source_organization: ''
+  source_note: Prevalence of stunting, female, is the percentage of girls under age
+    5 whose height for age is more than two standard deviations below the median for
+    the international reference population ages 0-59 months. For children up to two
+    years old height is measured by recumbent length. For older children height is
+    measured by stature while standing. The data are based on the WHO's 2006 Child
+    Growth Standards.
+  source_organization: 'Joint child Malnutrition Estimates (JME), UN Children''s Fund
+    (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb;
+
+    World Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME);
+
+    World Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME)'
   topic_ids: []
   topics: []
   unit: ''
@@ -241132,8 +241422,20 @@ SH.STA.STNT.ME.MA.ZS:
     under 5)
   source: World Development Indicators
   source_id: '2'
-  source_note: ''
-  source_organization: ''
+  source_note: Prevalence of stunting, male, is the percentage of boys under age 5
+    whose height for age is more than two standard deviations below the median for
+    the international reference population ages 0-59 months. For children up to two
+    years old height is measured by recumbent length. For older children height is
+    measured by stature while standing. The data are based on the WHO's 2006 Child
+    Growth Standards.
+  source_organization: 'Joint child Malnutrition Estimates (JME), UN Children''s Fund
+    (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb;
+
+    World Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME);
+
+    World Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME)'
   topic_ids: []
   topics: []
   unit: ''
@@ -241148,8 +241450,15 @@ SH.STA.STNT.ME.ZS:
     reference population ages 0-59 months. For children up to two years old height
     is measured by recumbent length. For older children height is measured by stature
     while standing. The data are based on the WHO's 2006 Child Growth Standards.
-  source_organization: 'UNICEF, WHO, World Bank: Joint child Malnutrition Estimates
-    (JME).'
+  source_organization: 'Joint child Malnutrition Estimates (JME), UN Children''s Fund
+    (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    publisher: JME;
+
+    World Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME), publisher: JME;
+
+    World Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb,
+    note: Joint child Malnutrition Estimates (JME), publisher: JME'
   topic_ids:
   - '8'
   topics:
@@ -241775,9 +242084,11 @@ SH.SVR.WAST.ZS:
 
     World Health Organization (WHO), note: Joint child Malnutrition Estimates (JME);
     Aggregation is based on UNICEF, WHO, and the World Bank harmonized dataset (adjusted,
-    comparable data) and methodology;World Bank (WB), note: Joint child Malnutrition
-    Estimates (JME); Aggregation is based on UNICEF, WHO, and the World Bank harmonized
-    dataset (adjusted, comparable data) and methodology'
+    comparable data) and methodology;
+
+    World Bank (WB), note: Joint child Malnutrition Estimates (JME); Aggregation is
+    based on UNICEF, WHO, and the World Bank harmonized dataset (adjusted, comparable
+    data) and methodology'
   topic_ids:
   - '8'
   topics:
@@ -242698,7 +243009,7 @@ SH.XPD.CHEX.PC.CD:
     of current health expenditures include healthcare goods and services consumed
     during each year.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242712,7 +243023,7 @@ SH.XPD.CHEX.PP.CD:
   source_note: Current expenditures on health per capita expressed in international
     dollars at purchasing power parity.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242729,7 +243040,7 @@ SH.XPD.EHEX.CH.ZS:
     from outside the country. External sources either flow through the government
     scheme or are channeled through non-governmental organizations or other schemes.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242759,7 +243070,7 @@ SH.XPD.EHEX.PC.CD:
     transfers distributed by government encompassing all financial inflows into the
     national health system from outside the country.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242775,7 +243086,7 @@ SH.XPD.EHEX.PP.CD:
     transfers and foreign transfers distributed by government encompassing all financial
     inflows into the national health system from outside the country.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242810,7 +243121,7 @@ SH.XPD.GHED.CH.ZS:
     as well as compulsory prepayment and social health insurance contributions. They
     do not include external resources spent by governments on health.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242824,7 +243135,7 @@ SH.XPD.GHED.GD.ZS:
   source_note: Public expenditure on health from domestic sources as a share of the
     economy as measured by GDP.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242839,7 +243150,7 @@ SH.XPD.GHED.GE.ZS:
     public expenditure.  It indicates the priority of the government to spend on health
     from own domestic public resources.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242853,7 +243164,7 @@ SH.XPD.GHED.PC.CD:
   source_note: Public expenditure on health from domestic sources per capita expressed
     in current US dollars.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242868,7 +243179,7 @@ SH.XPD.GHED.PP.CD:
   source_note: Public expenditure on health from domestic sources per capita expressed
     in international dollars at purchasing power parity.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242905,7 +243216,7 @@ SH.XPD.OOPC.CH.ZS:
   source_note: Share of out-of-pocket payments of total current health expenditures.  Out-of-pocket
     payments are spending on health directly out-of-pocket by households.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242920,7 +243231,7 @@ SH.XPD.OOPC.PC.CD:
     of pocket payments are spending on health directly out of pocket by households
     in each country.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -242934,7 +243245,7 @@ SH.XPD.OOPC.PP.CD:
   source_note: Health expenditure through out-of-pocket payments per capita in international
     dollars at purchasing power parity.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -243139,7 +243450,7 @@ SH.XPD.PVTD.CH.ZS:
     Such expenditures can be either prepaid to voluntary health insurance or paid
     directly to healthcare providers.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -243155,7 +243466,7 @@ SH.XPD.PVTD.PC.CD:
     and non-profit organizations. Such expenditures can be either prepaid to voluntary
     health insurance or paid directly to healthcare providers.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -243170,7 +243481,7 @@ SH.XPD.PVTD.PP.CD:
   source_note: Current private expenditures on health per capita expressed in international
     dollars at purchasing power parity.
   source_organization: 'Global Health Expenditure Database, updated December 12th,
-    2025, World Health Organization (WHO), uri: https://apps.who.int/nha/database'
+    2025, World Health Organization (WHO), uri: http://apps.who.int/nha/database'
   topic_ids:
   - '8'
   topics:
@@ -243924,7 +244235,9 @@ SI.POV.MPUN:
   source_organization: 'Alkire, S., Mishra, R., Selden, L. and Suppa, N. (2025). ‘The
     global Multidimensional Poverty Index (MPI) 2025: Country results and methodological
     note’, OPHI MPI Methodological Note 61, Oxford Poverty and Human Development Initiative
-    (OPHI), University of Oxford.url: <https://ophi.org.uk/publications/MN-61>'
+    (OPHI), University of Oxford.url: https://ophi.org.uk/publications/MN-61, uri:
+    https://ophi.org.uk/publications/MN-61, publisher: Oxford Poverty and Human Development
+    Initiative (OPHI)'
   topic_ids: []
   topics: []
   unit: ''
@@ -244553,7 +244866,7 @@ SL.EMP.1524.SP.FE.NE.ZS:
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -244585,7 +244898,7 @@ SL.EMP.1524.SP.MA.NE.ZS:
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -244617,7 +244930,7 @@ SL.EMP.1524.SP.NE.ZS:
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -244916,7 +245229,7 @@ SL.EMP.SMGT.FE.ZS:
     14 in ISCO-08 and minus category 13 in ISCO-88).
   source_organization: 'Labour Market-related SDG Indicators database (ILOSDG), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -244977,7 +245290,7 @@ SL.EMP.TOTL.SP.FE.NE.ZS:
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -245009,7 +245322,7 @@ SL.EMP.TOTL.SP.MA.NE.ZS:
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -245041,7 +245354,7 @@ SL.EMP.TOTL.SP.NE.ZS:
     that is employed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -245141,7 +245454,9 @@ SL.EMP.VULN.FE.ZS:
     workers as a percentage of total employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database, date accessed: January 17, 2026'
+    type: estimates based on external database;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '10'
   - '17'
@@ -245160,7 +245475,9 @@ SL.EMP.VULN.MA.ZS:
     workers as a percentage of total employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database, date accessed: January 17, 2026'
+    type: estimates based on external database;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '10'
   - '17'
@@ -245179,7 +245496,9 @@ SL.EMP.VULN.ZS:
     workers as a percentage of total employment.
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database, date accessed: January 17, 2026'
+    type: estimates based on external database;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '10'
   - '2'
@@ -245361,8 +245680,20 @@ SL.GDP.PCAP.EM.KD:
     total employment in the economy. Purchasing power parity (PPP) GDP is GDP converted
     to 2021 constant international dollars using PPP rates. An international dollar
     has the same purchasing power over GDP that a U.S. dollar has in the United States.
-  source_organization: Staff estimates, World Bank (WB), International Labour Organization
-    (ILO)
+  source_organization: 'Staff estimates, World Bank (WB), note: Estimates are based
+    on employment, population, GDP, and PPP data obtained from International Labour
+    Organization, United Nations Population Division, Eurostat, OECD, and World Bank.,
+    type: estimates based on external database;
+
+    International Labour Organization (ILO);
+
+    United Nations (UN), publisher: UN Population Division;
+
+    Eurostat (ESTAT);
+
+    Organisation for Economic Co-operation and Development (OECD);
+
+    World Development Indicators database, World Bank (WB)'
   topic_ids:
   - '10'
   topics:
@@ -245839,8 +246170,9 @@ SL.TLF.0714.FE.ZS:
   source_organization: 'Understanding Children''s Work, International Labour Organization
     (ILO);
 
-    UN Children''s Fund (UNICEF), note: Understanding Children''s Work;World Bank
-    (WB), note: Understanding Children''s Work'
+    UN Children''s Fund (UNICEF), note: Understanding Children''s Work;
+
+    World Bank (WB), note: Understanding Children''s Work'
   topic_ids:
   - '10'
   - '17'
@@ -245860,8 +246192,9 @@ SL.TLF.0714.MA.ZS:
   source_organization: 'Understanding Children''s Work, International Labour Organization
     (ILO);
 
-    UN Children''s Fund (UNICEF), note: Understanding Children''s Work;World Bank
-    (WB), note: Understanding Children''s Work'
+    UN Children''s Fund (UNICEF), note: Understanding Children''s Work;
+
+    World Bank (WB), note: Understanding Children''s Work'
   topic_ids:
   - '10'
   - '17'
@@ -246138,8 +246471,9 @@ SL.TLF.0714.ZS:
   source_organization: 'Understanding Children''s Work, International Labour Organization
     (ILO);
 
-    UN Children''s Fund (UNICEF), note: Understanding Children''s Work;World Bank
-    (WB), note: Understanding Children''s Work'
+    UN Children''s Fund (UNICEF), note: Understanding Children''s Work;
+
+    World Bank (WB), note: Understanding Children''s Work'
   topic_ids:
   - '10'
   - '15'
@@ -246331,7 +246665,7 @@ SL.TLF.ACTI.1524.FE.NE.ZS:
     for the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246365,7 +246699,7 @@ SL.TLF.ACTI.1524.MA.NE.ZS:
     for the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246399,7 +246733,7 @@ SL.TLF.ACTI.1524.NE.ZS:
     for the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246494,7 +246828,7 @@ SL.TLF.ADVN.FE.ZS:
     2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246514,7 +246848,7 @@ SL.TLF.ADVN.MA.ZS:
     2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246534,7 +246868,7 @@ SL.TLF.ADVN.ZS:
     2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246552,7 +246886,7 @@ SL.TLF.BASC.FE.ZS:
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246570,7 +246904,7 @@ SL.TLF.BASC.MA.ZS:
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246588,7 +246922,7 @@ SL.TLF.BASC.ZS:
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246875,7 +247209,7 @@ SL.TLF.CACT.FE.NE.ZS:
     the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246914,7 +247248,9 @@ SL.TLF.CACT.FM.NE.ZS:
     are employed and those who are unemployed.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database, date accessed:  January 17, 2026'
+    type: estimates based on external database;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '10'
   topics:
@@ -246930,7 +247266,9 @@ SL.TLF.CACT.FM.ZS:
     the production of goods and services during a specified period.'
   source_organization: 'ILO Modelled Estimates database (ILOEST), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: estimates based on external database, date accessed:  January 17, 2026'
+    type: estimates based on external database;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '10'
   topics:
@@ -246947,7 +247285,7 @@ SL.TLF.CACT.MA.NE.ZS:
     the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -246985,7 +247323,7 @@ SL.TLF.CACT.NE.ZS:
     the production of goods and services during a specified period.'
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247040,7 +247378,7 @@ SL.TLF.INTM.FE.ZS:
     Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247058,7 +247396,7 @@ SL.TLF.INTM.MA.ZS:
     Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247076,7 +247414,7 @@ SL.TLF.INTM.ZS:
     Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247092,7 +247430,7 @@ SL.TLF.PART.FE.ZS:
     of less than 35 actual weekly hours worked.
   source_organization: 'Wages and Working Time Statistics database (COND), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   - '17'
@@ -247110,7 +247448,7 @@ SL.TLF.PART.MA.ZS:
     of less than 35 actual weekly hours worked.
   source_organization: 'Wages and Working Time Statistics database (COND), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   - '17'
@@ -247145,7 +247483,7 @@ SL.TLF.PART.ZS:
     of less than 35 actual weekly hours worked.
   source_organization: 'Wages and Working Time Statistics database (COND), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247350,8 +247688,12 @@ SL.TLF.TOTL.FE.ZS:
     which women are active in the labor force. Labor force comprises people ages 15
     and older who supply labor for the production of goods and services during a specified
     period.
-  source_organization: Staff estimates, World Bank (WB), International Labour Organization
-    (ILO)
+  source_organization: 'International Labour Organization (ILO), type: estimates based
+    on external database;
+
+    United Nations (UN), publisher: UN Population Division;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '4'
   - '10'
@@ -247373,8 +247715,12 @@ SL.TLF.TOTL.IN:
     workers, family workers, and students are often omitted, and some countries do
     not count members of the armed forces. Labor force size tends to vary during the
     year as seasonal workers enter and leave.
-  source_organization: Staff estimates, World Bank (WB), International Labour Organization
-    (ILO)
+  source_organization: 'International Labour Organization (ILO), type: estimates based
+    on external database;
+
+    United Nations (UN), publisher: UN Population Division;
+
+    Staff estimates, World Bank (WB)'
   topic_ids:
   - '4'
   - '10'
@@ -247435,7 +247781,7 @@ SL.UEM.1524.FE.NE.ZS:
     and unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247500,7 +247846,7 @@ SL.UEM.1524.MA.NE.ZS:
     and unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247533,7 +247879,7 @@ SL.UEM.1524.NE.ZS:
     and unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247568,7 +247914,7 @@ SL.UEM.ADVN.FE.ZS:
     the International Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247587,7 +247933,7 @@ SL.UEM.ADVN.MA.ZS:
     the International Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247606,7 +247952,7 @@ SL.UEM.ADVN.ZS:
     the International Standard Classification of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247624,7 +247970,7 @@ SL.UEM.BASC.FE.ZS:
     2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247642,7 +247988,7 @@ SL.UEM.BASC.MA.ZS:
     2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247659,7 +248005,7 @@ SL.UEM.BASC.ZS:
     2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247677,7 +248023,7 @@ SL.UEM.INTM.FE.ZS:
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247695,7 +248041,7 @@ SL.UEM.INTM.MA.ZS:
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247713,7 +248059,7 @@ SL.UEM.INTM.ZS:
     of Education 2011 (ISCED 2011).
   source_organization: 'Education and Mismatch Indicators database (EMI), International
     Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher:
-    ILOSTAT, type: external database, date accessed: January 17, 2026'
+    ILOSTAT, type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247802,7 +248148,7 @@ SL.UEM.NEET.FE.ZS:
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247842,7 +248188,7 @@ SL.UEM.NEET.MA.ZS:
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -247882,7 +248228,7 @@ SL.UEM.NEET.ZS:
     as all persons between the ages of 15 and 24 (inclusive).
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -248048,7 +248394,7 @@ SL.UEM.TOTL.FE.NE.ZS:
     unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -248085,7 +248431,7 @@ SL.UEM.TOTL.MA.NE.ZS:
     unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -248122,7 +248468,7 @@ SL.UEM.TOTL.NE.ZS:
     unemployment differ by country.
   source_organization: 'Labour Force Statistics database (LFS), International Labour
     Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT,
-    type: external database, date accessed: January 17, 2026'
+    type: external database, date accessed: March 30, 2026'
   topic_ids:
   - '10'
   topics:
@@ -249102,8 +249448,10 @@ SP.DYN.AMRT.FE:
     UN Population Division;
 
     Human Mortality Database, Max Planck Institute for Demographic Research, uri:
-    www.mortality.org;University of California, Berkeley, uri: www.mortality.org,
-    note: Human Mortality Database;
+    www.mortality.org;
+
+    University of California, Berkeley, uri: www.mortality.org, note: Human Mortality
+    Database;
 
     French Institute for Demographic Studies, uri: www.mortality.org, note: Human
     Mortality Database'
@@ -249127,9 +249475,13 @@ SP.DYN.AMRT.MA:
     UN Population Division;
 
     Human Mortality Database, Max Planck Institute for Demographic Research, uri:
-    www.mortality.org;University of California, Berkeley, uri: www.mortality.org,
-    note: Human Mortality Database;French Institute for Demographic Studies, uri:
-    www.mortality.org, note: Human Mortality Database'
+    www.mortality.org;
+
+    University of California, Berkeley, uri: www.mortality.org, note: Human Mortality
+    Database;
+
+    French Institute for Demographic Studies, uri: www.mortality.org, note: Human
+    Mortality Database'
   topic_ids:
   - '8'
   - '17'
@@ -249160,9 +249512,12 @@ SP.DYN.CBRT.IN:
     UN Population Division;
 
     Statistical databases and publications from national statistical offices, National
-    statistical offices;Demographic Statistics, Eurostat (ESTAT);Population and Vital
-    Statistics Report (various years), United Nations (UN), publisher: UN Statistical
-    Division'
+    statistical offices;
+
+    Demographic Statistics, Eurostat (ESTAT);
+
+    Population and Vital Statistics Report (various years), United Nations (UN), publisher:
+    UN Statistical Division'
   topic_ids:
   - '8'
   topics:
@@ -249181,9 +249536,12 @@ SP.DYN.CDRT.IN:
     UN Population Division;
 
     Statistical databases and publications from national statistical offices, National
-    statistical offices;Demographic Statistics, Eurostat (ESTAT);Population and Vital
-    Statistics Report (various years), United Nations (UN), publisher: UN Statistical
-    Division'
+    statistical offices;
+
+    Demographic Statistics, Eurostat (ESTAT);
+
+    Population and Vital Statistics Report (various years), United Nations (UN), publisher:
+    UN Statistical Division'
   topic_ids:
   - '8'
   topics:
@@ -249593,8 +249951,10 @@ SP.DYN.IMRT.FE.IN:
     Fund (UNICEF), uri: www.childmortality.org;
 
     World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency
-    Group for Child Mortality Estimation;World Bank (WB), uri: www.childmortality.org,
-    note: UN Inter-agency Group for Child Mortality Estimation;
+    Group for Child Mortality Estimation;
+
+    World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for
+    Child Mortality Estimation;
 
     United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group
     for Child Mortality Estimation, publisher: UN Population Division'
@@ -249614,10 +249974,13 @@ SP.DYN.IMRT.IN:
     Fund (UNICEF), uri: www.childmortality.org;
 
     World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency
-    Group for Child Mortality Estimation;World Bank (WB), uri: www.childmortality.org,
-    note: UN Inter-agency Group for Child Mortality Estimation;United Nations (UN),
-    uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation,
-    publisher: UN Population Division'
+    Group for Child Mortality Estimation;
+
+    World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for
+    Child Mortality Estimation;
+
+    United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group
+    for Child Mortality Estimation, publisher: UN Population Division'
   topic_ids:
   - '8'
   topics:
@@ -249634,10 +249997,13 @@ SP.DYN.IMRT.MA.IN:
     Fund (UNICEF), uri: www.childmortality.org;
 
     World Health Organization (WHO), uri: www.childmortality.org, note: UN Inter-agency
-    Group for Child Mortality Estimation;World Bank (WB), uri: www.childmortality.org,
-    note: UN Inter-agency Group for Child Mortality Estimation;United Nations (UN),
-    uri: www.childmortality.org, note: UN Inter-agency Group for Child Mortality Estimation,
-    publisher: UN Population Division'
+    Group for Child Mortality Estimation;
+
+    World Bank (WB), uri: www.childmortality.org, note: UN Inter-agency Group for
+    Child Mortality Estimation;
+
+    United Nations (UN), uri: www.childmortality.org, note: UN Inter-agency Group
+    for Child Mortality Estimation, publisher: UN Population Division'
   topic_ids:
   - '8'
   topics:
@@ -249735,7 +250101,9 @@ SP.DYN.LE00.FE.IN:
     UN Population Division;
 
     Statistical databases and publications from national statistical offices, National
-    statistical offices;Demographic Statistics, Eurostat (ESTAT)'
+    statistical offices;
+
+    Demographic Statistics, Eurostat (ESTAT)'
   topic_ids:
   - '8'
   - '17'
@@ -249780,7 +250148,9 @@ SP.DYN.LE00.MA.IN:
     UN Population Division;
 
     Statistical databases and publications from national statistical offices, National
-    statistical offices;Demographic Statistics, Eurostat (ESTAT)'
+    statistical offices;
+
+    Demographic Statistics, Eurostat (ESTAT)'
   topic_ids:
   - '8'
   - '17'
@@ -249874,7 +250244,9 @@ SP.DYN.TFRT.IN:
     UN Population Division;
 
     Statistical databases and publications from national statistical offices, National
-    statistical offices;Demographic Statistics, Eurostat (ESTAT)'
+    statistical offices;
+
+    Demographic Statistics, Eurostat (ESTAT)'
   topic_ids:
   - '8'
   - '17'
@@ -256239,8 +256611,10 @@ SPI.D5.2.1.SNAU:
     evolved to meet the changing economic structure, to follow systematic accounting
     and ensure international compatibility.
   source_organization: Statistical Performance Indicators, The World Bank (https://datacatalog.worldbank.org/dataset/statistical-performance-indicators)
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 SPI.D5.2.10.GSBP:
   id: SPI.D5.2.10.GSBP
@@ -256318,10 +256692,8 @@ SPI.D5.2.5.HOUS:
     provide comparability between countries and between statistics in these different
     areas.
   source_organization: Statistical Performance Indicators, The World Bank (https://datacatalog.worldbank.org/dataset/statistical-performance-indicators)
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 SPI.D5.2.6.EMPL:
   id: SPI.D5.2.6.EMPL
@@ -275214,10 +275586,8 @@ UIS.LP.AG65.F:
   source_note: Total number of females over age 65 who cannot both read and write
     with understanding a short simple statement on their everyday life.
   source_organization: UNESCO Institute for Statistics
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 UIS.LP.AG65.M:
   id: UIS.LP.AG65.M
@@ -302111,8 +302481,8 @@ UPP.REV.POL.XQ:
 VA.EST:
   id: VA.EST
   name: 'Voice and Accountability: Estimate'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -302143,8 +302513,8 @@ VA.EST:
 VA.NO.SRC:
   id: VA.NO.SRC
   name: 'Voice and Accountability: Number of Sources'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -302177,8 +302547,8 @@ VA.NO.SRC:
 VA.PER.RNK:
   id: VA.PER.RNK
   name: 'Voice and Accountability: Percentile Rank'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -302206,8 +302576,8 @@ VA.PER.RNK.LOWER:
   id: VA.PER.RNK.LOWER
   name: 'Voice and Accountability: Percentile Rank, Lower Bound of 90% Confidence
     Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -302237,8 +302607,8 @@ VA.PER.RNK.UPPER:
   id: VA.PER.RNK.UPPER
   name: 'Voice and Accountability: Percentile Rank, Upper Bound of 90% Confidence
     Interval'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -302267,8 +302637,8 @@ VA.PER.RNK.UPPER:
 VA.STD.ERR:
   id: VA.STD.ERR
   name: 'Voice and Accountability: Standard Error'
-  source: World Development Indicators
-  source_id: '2'
+  source: WDI Database Archives
+  source_id: '57'
   source_note: "The Worldwide Governance Indicators (WGI) are a research dataset summarizing\
     \ the views on the quality of governance provided by a large number of enterprise,\
     \ citizen and expert survey respondents in industrial and developing countries.\
@@ -363131,8 +363501,10 @@ per_lm_pa.bry_pop_totm:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_lm_pa.bry_pop_totmr:
   id: per_lm_pa.bry_pop_totmr
@@ -363174,10 +363546,8 @@ per_lm_pa.bry_q1_preT_totmr:
   source_id: '29'
   source_note: ''
   source_organization: ''
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_lm_pa.bry_q1_rur:
   id: per_lm_pa.bry_q1_rur
@@ -375199,8 +375569,10 @@ per_sa_cc.cov_pop_urb:
   source_note: Percentage of population participating in Conditional Cash Transfer
     programs (includes direct and indirect beneficiaries)
   source_organization: ASPIRE
-  topic_ids: []
-  topics: []
+  topic_ids:
+  - null
+  topics:
+  - null
   unit: ''
 per_sa_cc.cov_q1_preT_tot:
   id: per_sa_cc.cov_q1_preT_tot
@@ -375243,10 +375615,8 @@ per_sa_cc.cov_q1_urb:
   source_note: Percentage of population participating in Conditional Cash Transfer
     programs (includes direct and indirect beneficiaries)
   source_organization: ASPIRE
-  topic_ids:
-  - null
-  topics:
-  - null
+  topic_ids: []
+  topics: []
   unit: ''
 per_sa_cc.cov_q2_preT_tot:
   id: per_sa_cc.cov_q2_preT_tot
