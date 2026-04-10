@@ -373,15 +373,15 @@ Australia,AUS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.
 Australia,AUS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,58327.4146842325,NY.GDP.PCAP.PP.KD
 Australia,AUS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,60029.1329190733,NY.GDP.PCAP.PP.KD
 Australia,AUS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,60684.9596204883,NY.GDP.PCAP.PP.KD
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,1.0,SI.POV.DDAY
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,1.0,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.9,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,1.1,SI.POV.DDAY
 Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.7,SI.POV.DDAY
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.7,SI.POV.DDAY
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.3,SI.POV.DDAY
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.5,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.5,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.5,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.6,SI.POV.DDAY
 Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.5,SI.POV.DDAY
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.5,SI.POV.DDAY
-Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,1.0,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.6,SI.POV.DDAY
+Australia,AUS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.9,SI.POV.DDAY
 Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,53534.3421055422,NY.GDP.PCAP.PP.KD
 Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,54032.1515612712,NY.GDP.PCAP.PP.KD
 Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,54565.0769851287,NY.GDP.PCAP.PP.KD
@@ -406,7 +406,7 @@ Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,62968.9422311892,NY.GDP.PCAP.PP.KD
 Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,65694.5513287254,NY.GDP.PCAP.PP.KD
 Austria,AUT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,64536.2981841434,NY.GDP.PCAP.PP.KD
-Austria,AUT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
+Austria,AUT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
 Austria,AUT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.4,SI.POV.DDAY
 Austria,AUT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.1,SI.POV.DDAY
 Austria,AUT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.2,SI.POV.DDAY
@@ -735,8 +735,10 @@ Bosnia and Herzegovina,BIH,"GDP per capita, PPP (constant 2021 international $)"
 Bosnia and Herzegovina,BIH,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,19805.0002774731,NY.GDP.PCAP.PP.KD
 Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.6,SI.POV.DDAY
 Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.4,SI.POV.DDAY
-Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.2,SI.POV.DDAY
-Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.2,SI.POV.DDAY
+Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.7,SI.POV.DDAY
+Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.9,SI.POV.DDAY
+Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,1.2,SI.POV.DDAY
+Bosnia and Herzegovina,BIH,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.3,SI.POV.DDAY
 Belarus,BLR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,11182.4548339393,NY.GDP.PCAP.PP.KD
 Belarus,BLR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,11771.0872003861,NY.GDP.PCAP.PP.KD
 Belarus,BLR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,12443.9322575939,NY.GDP.PCAP.PP.KD
@@ -913,10 +915,10 @@ Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),S
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,7.1,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,6.4,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,5.4,SI.POV.DDAY
-Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,4.7,SI.POV.DDAY
+Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,4.8,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,5.4,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,6.5,SI.POV.DDAY
-Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,6.9,SI.POV.DDAY
+Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,7.0,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,6.9,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,7.0,SI.POV.DDAY
 Brazil,BRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,2.8,SI.POV.DDAY
@@ -1078,28 +1080,29 @@ Canada,CAN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.
 Canada,CAN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,56995.1176781351,NY.GDP.PCAP.PP.KD
 Canada,CAN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,58321.0611834624,NY.GDP.PCAP.PP.KD
 Canada,CAN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,57517.4431587432,NY.GDP.PCAP.PP.KD
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.2,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.4,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.3,SI.POV.DDAY
 Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.2,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.3,SI.POV.DDAY
 Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.5,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.5,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.5,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.5,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.2,SI.POV.DDAY
-Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.2,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.3,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.4,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.4,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.4,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.4,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.4,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.1,SI.POV.DDAY
 Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.2,SI.POV.DDAY
+Canada,CAN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.3,SI.POV.DDAY
 Central Europe and the Baltics,CEB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,18867.1055547682,NY.GDP.PCAP.PP.KD
 Central Europe and the Baltics,CEB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,19591.2335941249,NY.GDP.PCAP.PP.KD
 Central Europe and the Baltics,CEB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,20437.7531365339,NY.GDP.PCAP.PP.KD
@@ -1148,9 +1151,9 @@ Switzerland,CHE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCA
 Switzerland,CHE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,81001.4111206118,NY.GDP.PCAP.PP.KD
 Switzerland,CHE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,82777.293582076,NY.GDP.PCAP.PP.KD
 Switzerland,CHE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,82295.2993346568,NY.GDP.PCAP.PP.KD
-Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
+Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
 Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.0,SI.POV.DDAY
-Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.2,SI.POV.DDAY
+Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.1,SI.POV.DDAY
 Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.1,SI.POV.DDAY
 Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.1,SI.POV.DDAY
 Switzerland,CHE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.1,SI.POV.DDAY
@@ -1201,7 +1204,7 @@ Chile,CHL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI
 Chile,CHL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.7,SI.POV.DDAY
 Chile,CHL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.5,SI.POV.DDAY
 Chile,CHL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,1.7,SI.POV.DDAY
-Chile,CHL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.5,SI.POV.DDAY
+Chile,CHL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.6,SI.POV.DDAY
 China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,4066.03627019859,NY.GDP.PCAP.PP.KD
 China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,4372.15705579934,NY.GDP.PCAP.PP.KD
 China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,4744.39855079794,NY.GDP.PCAP.PP.KD
@@ -1226,18 +1229,18 @@ China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.K
 China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,20843.2978347377,NY.GDP.PCAP.PP.KD
 China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,21499.3822834427,NY.GDP.PCAP.PP.KD
 China,CHN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,22687.0758723942,NY.GDP.PCAP.PP.KD
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,48.1,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,33.1,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,26.2,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,47.8,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,32.9,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,26.1,SI.POV.DDAY
 China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,20.6,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,15.7,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,13.2,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,6.2,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,4.7,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,3.0,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,2.2,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,1.7,SI.POV.DDAY
-China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.8,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,15.3,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,12.9,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,6.0,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,4.6,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,2.9,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,2.1,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,1.6,SI.POV.DDAY
+China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.7,SI.POV.DDAY
 China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.0,SI.POV.DDAY
 China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.0,SI.POV.DDAY
 China,CHN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.0,SI.POV.DDAY
@@ -1266,11 +1269,11 @@ Cote d'Ivoire,CIV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.P
 Cote d'Ivoire,CIV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,6045.20480490879,NY.GDP.PCAP.PP.KD
 Cote d'Ivoire,CIV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,6272.26395759415,NY.GDP.PCAP.PP.KD
 Cote d'Ivoire,CIV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,6520.89886460031,NY.GDP.PCAP.PP.KD
-Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,44.7,SI.POV.DDAY
-Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,47.9,SI.POV.DDAY
-Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,47.5,SI.POV.DDAY
-Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,22.7,SI.POV.DDAY
-Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,20.9,SI.POV.DDAY
+Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,43.9,SI.POV.DDAY
+Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,47.0,SI.POV.DDAY
+Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,46.6,SI.POV.DDAY
+Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,21.7,SI.POV.DDAY
+Cote d'Ivoire,CIV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,20.8,SI.POV.DDAY
 Cameroon,CMR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,3822.94425358926,NY.GDP.PCAP.PP.KD
 Cameroon,CMR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,3884.87304812714,NY.GDP.PCAP.PP.KD
 Cameroon,CMR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,3951.41936232132,NY.GDP.PCAP.PP.KD
@@ -1382,22 +1385,22 @@ Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)
 Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,19.8,SI.POV.DDAY
 Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,19.2,SI.POV.DDAY
 Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,16.8,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,16.6,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,15.0,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,13.1,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,11.2,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,10.9,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,9.9,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,9.0,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,8.1,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,8.0,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,7.3,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,7.4,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,8.8,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,13.5,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,16.3,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,15.1,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,13.3,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,11.3,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,12.7,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,11.8,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,10.9,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,10.2,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,10.1,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,9.5,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,9.8,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,11.3,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,15.8,SI.POV.DDAY
 Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,11.2,SI.POV.DDAY
 Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,9.3,SI.POV.DDAY
-Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,7.7,SI.POV.DDAY
+Colombia,COL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,8.6,SI.POV.DDAY
 Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,2858.85692121457,NY.GDP.PCAP.PP.KD
 Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,2952.44235205824,NY.GDP.PCAP.PP.KD
 Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,3023.52434389434,NY.GDP.PCAP.PP.KD
@@ -1422,8 +1425,9 @@ Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,3377.88518482587,NY.GDP.PCAP.PP.KD
 Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,3399.27830776976,NY.GDP.PCAP.PP.KD
 Comoros,COM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,3434.40177367723,NY.GDP.PCAP.PP.KD
-Comoros,COM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,27.9,SI.POV.DDAY
+Comoros,COM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,24.3,SI.POV.DDAY
 Comoros,COM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,31.4,SI.POV.DDAY
+Comoros,COM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,8.9,SI.POV.DDAY
 Cabo Verde,CPV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,4510.13573659758,NY.GDP.PCAP.PP.KD
 Cabo Verde,CPV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,4540.90731780518,NY.GDP.PCAP.PP.KD
 Cabo Verde,CPV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,4710.2410491228,NY.GDP.PCAP.PP.KD
@@ -1678,27 +1682,29 @@ Germany,DEU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Germany,DEU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,62530.7653199239,NY.GDP.PCAP.PP.KD
 Germany,DEU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,63676.087821808,NY.GDP.PCAP.PP.KD
 Germany,DEU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,63039.3719696432,NY.GDP.PCAP.PP.KD
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.2,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.0,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.1,SI.POV.DDAY
 Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.0,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.0,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.1,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.1,SI.POV.DDAY
 Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.2,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.0,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.1,SI.POV.DDAY
 Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.2,SI.POV.DDAY
-Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.2,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.3,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.6,SI.POV.DDAY
+Germany,DEU,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.7,SI.POV.DDAY
 Djibouti,DJI,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2013,4469.07409933135,NY.GDP.PCAP.PP.KD
 Djibouti,DJI,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2014,4705.04926772184,NY.GDP.PCAP.PP.KD
 Djibouti,DJI,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2015,4961.8681860592,NY.GDP.PCAP.PP.KD
@@ -1762,7 +1768,7 @@ Denmark,DNK,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Denmark,DNK,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,69715.1809680929,NY.GDP.PCAP.PP.KD
 Denmark,DNK,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,69475.3198650883,NY.GDP.PCAP.PP.KD
 Denmark,DNK,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,69379.22000847,NY.GDP.PCAP.PP.KD
-Denmark,DNK,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.0,SI.POV.DDAY
+Denmark,DNK,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
 Denmark,DNK,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.4,SI.POV.DDAY
 Denmark,DNK,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.3,SI.POV.DDAY
 Denmark,DNK,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.3,SI.POV.DDAY
@@ -1929,24 +1935,24 @@ East Asia & Pacific,EAS,"GDP per capita, PPP (constant 2021 international $)",NY
 East Asia & Pacific,EAS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,21508.4957629882,NY.GDP.PCAP.PP.KD
 East Asia & Pacific,EAS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,22175.197366634,NY.GDP.PCAP.PP.KD
 East Asia & Pacific,EAS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,23098.9334393628,NY.GDP.PCAP.PP.KD
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,46.8,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,44.2,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,40.2,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,36.5,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,33.1,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,29.0,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,27.8,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,25.2,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,23.5,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,21.5,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,18.8,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,15.5,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,13.5,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,9.1,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,46.6,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,44.1,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,40.0,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,36.2,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,32.9,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,28.9,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,27.7,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,25.0,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,23.4,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,21.4,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,18.9,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,15.3,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,13.2,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,9.0,SI.POV.DDAY
 East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,7.8,SI.POV.DDAY
 East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,6.1,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,5.1,SI.POV.DDAY
-East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,4.2,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,5.0,SI.POV.DDAY
+East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,4.1,SI.POV.DDAY
 East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,3.3,SI.POV.DDAY
 East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,2.6,SI.POV.DDAY
 East Asia & Pacific,EAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,2.7,SI.POV.DDAY
@@ -2004,7 +2010,7 @@ Europe & Central Asia,ECS,"GDP per capita, PPP (constant 2021 international $)",
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,7.6,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,6.9,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,6.2,SI.POV.DDAY
-Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,5.9,SI.POV.DDAY
+Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,6.0,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,5.1,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,5.0,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,4.4,SI.POV.DDAY
@@ -2023,8 +2029,8 @@ Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% o
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.8,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.8,SI.POV.DDAY
 Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.8,SI.POV.DDAY
-Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.7,SI.POV.DDAY
-Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,0.6,SI.POV.DDAY
+Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.8,SI.POV.DDAY
+Europe & Central Asia,ECS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,0.7,SI.POV.DDAY
 Ecuador,ECU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,9183.05155276919,NY.GDP.PCAP.PP.KD
 Ecuador,ECU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,9405.11680690106,NY.GDP.PCAP.PP.KD
 Ecuador,ECU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,9697.55517665978,NY.GDP.PCAP.PP.KD
@@ -2300,25 +2306,25 @@ Fragile and conflict affected situations,FCS,"GDP per capita, PPP (constant 2021
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,51.5,SI.POV.DDAY
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,51.1,SI.POV.DDAY
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,50.0,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,47.0,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,46.9,SI.POV.DDAY
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,45.2,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,44.0,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,44.1,SI.POV.DDAY
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,42.6,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,41.4,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,40.5,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,38.8,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,38.5,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,41.3,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,40.6,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,38.9,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,38.6,SI.POV.DDAY
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,37.6,SI.POV.DDAY
 Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,36.9,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,36.5,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,36.6,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,37.0,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,36.9,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,36.9,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,39.5,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,40.8,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,40.8,SI.POV.DDAY
-Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,41.5,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,36.3,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,36.7,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,37.1,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,37.0,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,36.8,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,39.8,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,41.1,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,40.9,SI.POV.DDAY
+Fragile and conflict affected situations,FCS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,41.6,SI.POV.DDAY
 Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,46968.841714507,NY.GDP.PCAP.PP.KD
 Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,48099.3014282794,NY.GDP.PCAP.PP.KD
 Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,48792.4864789775,NY.GDP.PCAP.PP.KD
@@ -2343,7 +2349,7 @@ Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,56790.3766177692,NY.GDP.PCAP.PP.KD
 Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,57068.3056478074,NY.GDP.PCAP.PP.KD
 Finland,FIN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,56250.8787899319,NY.GDP.PCAP.PP.KD
-Finland,FIN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.0,SI.POV.DDAY
+Finland,FIN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
 Finland,FIN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.0,SI.POV.DDAY
 Finland,FIN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.0,SI.POV.DDAY
 Finland,FIN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.1,SI.POV.DDAY
@@ -2417,9 +2423,9 @@ France,FRA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.
 France,FRA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,52517.3354905855,NY.GDP.PCAP.PP.KD
 France,FRA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,53673.8137406422,NY.GDP.PCAP.PP.KD
 France,FRA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,54296.7230897731,NY.GDP.PCAP.PP.KD
-France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.0,SI.POV.DDAY
-France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.0,SI.POV.DDAY
-France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.0,SI.POV.DDAY
+France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
+France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.1,SI.POV.DDAY
+France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.1,SI.POV.DDAY
 France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.2,SI.POV.DDAY
 France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.1,SI.POV.DDAY
 France,FRA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.1,SI.POV.DDAY
@@ -2533,28 +2539,28 @@ United Kingdom,GBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.
 United Kingdom,GBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,51004.4271714238,NY.GDP.PCAP.PP.KD
 United Kingdom,GBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,53139.151252206,NY.GDP.PCAP.PP.KD
 United Kingdom,GBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,52592.6822066393,NY.GDP.PCAP.PP.KD
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.5,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.4,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.4,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.4,SI.POV.DDAY
 United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.2,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.5,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.5,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.4,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.3,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.4,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.4,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.4,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.4,SI.POV.DDAY
 United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.5,SI.POV.DDAY
-United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.5,SI.POV.DDAY
+United Kingdom,GBR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.4,SI.POV.DDAY
 Georgia,GEO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,5706.27236527837,NY.GDP.PCAP.PP.KD
 Georgia,GEO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,6074.08643017282,NY.GDP.PCAP.PP.KD
 Georgia,GEO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,6464.32539672648,NY.GDP.PCAP.PP.KD
@@ -2763,8 +2769,8 @@ Greece,GRC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.
 Greece,GRC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,33531.15511226,NY.GDP.PCAP.PP.KD
 Greece,GRC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,35831.3441781205,NY.GDP.PCAP.PP.KD
 Greece,GRC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,36700.5134631055,NY.GDP.PCAP.PP.KD
-Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
-Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.2,SI.POV.DDAY
+Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.3,SI.POV.DDAY
+Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.4,SI.POV.DDAY
 Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.6,SI.POV.DDAY
 Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.9,SI.POV.DDAY
 Greece,GRC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.4,SI.POV.DDAY
@@ -2914,26 +2920,26 @@ High income,HIC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCA
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,1.5,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,1.3,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,1.1,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,1.0,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.9,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.8,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,1.1,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,1.0,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.9,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.8,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.6,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.6,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.6,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.6,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.6,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.6,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.7,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.6,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.7,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.8,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.7,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.6,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.6,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.7,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.6,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.5,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.6,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.4,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.3,SI.POV.DDAY
-High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.6,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.4,SI.POV.DDAY
+High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.7,SI.POV.DDAY
 High income,HIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,0.6,SI.POV.DDAY
 "Hong Kong SAR, China",HKG,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,39848.59152924,NY.GDP.PCAP.PP.KD
 "Hong Kong SAR, China",HKG,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,39777.8561883562,NY.GDP.PCAP.PP.KD
@@ -3219,21 +3225,21 @@ IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,48.3,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,46.5,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,44.3,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,43.8,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,43.9,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,41.8,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,40.8,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,40.9,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,39.6,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,37.1,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,36.3,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,36.2,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,36.0,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,35.6,SI.POV.DDAY
 IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,34.7,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,34.1,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,33.8,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,35.3,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,35.5,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,35.1,SI.POV.DDAY
-IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,35.2,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,34.0,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,33.9,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,35.7,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,36.2,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,35.9,SI.POV.DDAY
+IDA total,IDA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,36.1,SI.POV.DDAY
 IDA blend,IDB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,4207.94674833658,NY.GDP.PCAP.PP.KD
 IDA blend,IDB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,4266.64418562526,NY.GDP.PCAP.PP.KD
 IDA blend,IDB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,4437.96024962981,NY.GDP.PCAP.PP.KD
@@ -3301,7 +3307,7 @@ Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population
 Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,18.0,SI.POV.DDAY
 Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,14.8,SI.POV.DDAY
 Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,12.5,SI.POV.DDAY
-Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,10.8,SI.POV.DDAY
+Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,10.9,SI.POV.DDAY
 Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,9.8,SI.POV.DDAY
 Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,8.6,SI.POV.DDAY
 Indonesia,IDN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,7.9,SI.POV.DDAY
@@ -3383,7 +3389,7 @@ Ireland,IRL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Ireland,IRL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,123219.076059494,NY.GDP.PCAP.PP.KD
 Ireland,IRL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,117862.128878959,NY.GDP.PCAP.PP.KD
 Ireland,IRL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
-Ireland,IRL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.2,SI.POV.DDAY
+Ireland,IRL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.3,SI.POV.DDAY
 Ireland,IRL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.2,SI.POV.DDAY
 Ireland,IRL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.1,SI.POV.DDAY
 Ireland,IRL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.1,SI.POV.DDAY
@@ -3537,27 +3543,28 @@ Israel,ISR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.
 Israel,ISR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,46162.0822730247,NY.GDP.PCAP.PP.KD
 Israel,ISR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,48098.187235579,NY.GDP.PCAP.PP.KD
 Israel,ISR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,47527.151024672,NY.GDP.PCAP.PP.KD
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.2,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.7,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.4,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.8,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.9,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,1.0,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,1.0,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.9,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.5,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.5,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.6,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.7,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.7,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.5,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.9,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.6,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.3,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.7,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.5,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.7,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.8,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.6,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.6,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.5,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.5,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.7,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.7,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,1.0,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.9,SI.POV.DDAY
 Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.7,SI.POV.DDAY
-Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.7,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.6,SI.POV.DDAY
+Israel,ISR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.4,SI.POV.DDAY
 Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,50353.4200415436,NY.GDP.PCAP.PP.KD
 Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,51332.2904432567,NY.GDP.PCAP.PP.KD
 Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,51369.1149098293,NY.GDP.PCAP.PP.KD
@@ -3582,7 +3589,7 @@ Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.K
 Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,49825.3934111848,NY.GDP.PCAP.PP.KD
 Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,52333.3274270604,NY.GDP.PCAP.PP.KD
 Italy,ITA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,52870.3261442897,NY.GDP.PCAP.PP.KD
-Italy,ITA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,1.2,SI.POV.DDAY
+Italy,ITA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,1.3,SI.POV.DDAY
 Italy,ITA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,1.7,SI.POV.DDAY
 Italy,ITA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.9,SI.POV.DDAY
 Italy,ITA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.8,SI.POV.DDAY
@@ -3685,18 +3692,18 @@ Japan,JPN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.K
 Japan,JPN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,44355.3487163354,NY.GDP.PCAP.PP.KD
 Japan,JPN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,44972.3438362201,NY.GDP.PCAP.PP.KD
 Japan,JPN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,45858.6595131439,NY.GDP.PCAP.PP.KD
-Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,1.0,SI.POV.DDAY
-Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.9,SI.POV.DDAY
-Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.7,SI.POV.DDAY
+Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,1.1,SI.POV.DDAY
+Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.8,SI.POV.DDAY
+Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.6,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.5,SI.POV.DDAY
-Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,1.5,SI.POV.DDAY
-Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,1.0,SI.POV.DDAY
+Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,1.4,SI.POV.DDAY
+Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.9,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.7,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,0.4,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.7,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.6,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,1.0,SI.POV.DDAY
-Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,1.2,SI.POV.DDAY
+Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,1.3,SI.POV.DDAY
 Japan,JPN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,1.2,SI.POV.DDAY
 Kazakhstan,KAZ,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,12935.864368308,NY.GDP.PCAP.PP.KD
 Kazakhstan,KAZ,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,14612.0290050498,NY.GDP.PCAP.PP.KD
@@ -3771,7 +3778,7 @@ Kenya,KEN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI
 Kenya,KEN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,37.7,SI.POV.DDAY
 Kenya,KEN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,44.4,SI.POV.DDAY
 Kenya,KEN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,46.4,SI.POV.DDAY
-Kenya,KEN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,46.9,SI.POV.DDAY
+Kenya,KEN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,45.5,SI.POV.DDAY
 Kyrgyz Republic,KGZ,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,3638.46314292227,NY.GDP.PCAP.PP.KD
 Kyrgyz Republic,KGZ,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,3795.89059344129,NY.GDP.PCAP.PP.KD
 Kyrgyz Republic,KGZ,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,3760.53239965257,NY.GDP.PCAP.PP.KD
@@ -3870,6 +3877,7 @@ Kiribati,KIR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.P
 Kiribati,KIR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,3140.58326370439,NY.GDP.PCAP.PP.KD
 Kiribati,KIR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,21.3,SI.POV.DDAY
 Kiribati,KIR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,6.1,SI.POV.DDAY
+Kiribati,KIR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,0.9,SI.POV.DDAY
 St. Kitts and Nevis,KNA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,19840.5800645267,NY.GDP.PCAP.PP.KD
 St. Kitts and Nevis,KNA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,20648.7889741472,NY.GDP.PCAP.PP.KD
 St. Kitts and Nevis,KNA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,20813.4050029806,NY.GDP.PCAP.PP.KD
@@ -3922,13 +3930,13 @@ St. Kitts and Nevis,KNA,"GDP per capita, PPP (constant 2021 international $)",NY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.5,SI.POV.DDAY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.5,SI.POV.DDAY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.5,SI.POV.DDAY
-"Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.2,SI.POV.DDAY
+"Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,0.3,SI.POV.DDAY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,0.2,SI.POV.DDAY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,0.2,SI.POV.DDAY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.2,SI.POV.DDAY
 "Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.2,SI.POV.DDAY
-"Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.0,SI.POV.DDAY
-"Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.2,SI.POV.DDAY
+"Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.1,SI.POV.DDAY
+"Korea, Rep.",KOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.1,SI.POV.DDAY
 Kuwait,KWT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,60585.3026788164,NY.GDP.PCAP.PP.KD
 Kuwait,KWT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,59099.6653133601,NY.GDP.PCAP.PP.KD
 Kuwait,KWT,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,59348.6172741565,NY.GDP.PCAP.PP.KD
@@ -4030,7 +4038,7 @@ Lebanon,LBN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP
 Lebanon,LBN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,11474.7505845558,NY.GDP.PCAP.PP.KD
 Lebanon,LBN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,11330.2687387422,NY.GDP.PCAP.PP.KD
 Lebanon,LBN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.1,SI.POV.DDAY
-Lebanon,LBN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,5.9,SI.POV.DDAY
+Lebanon,LBN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,5.8,SI.POV.DDAY
 Liberia,LBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,1868.17975587618,NY.GDP.PCAP.PP.KD
 Liberia,LBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,1867.11910921753,NY.GDP.PCAP.PP.KD
 Liberia,LBR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,1887.64601570733,NY.GDP.PCAP.PP.KD
@@ -4143,16 +4151,16 @@ Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) 
 Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,9.5,SI.POV.DDAY
 Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,8.5,SI.POV.DDAY
 Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,7.7,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,7.4,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,6.7,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,6.3,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,5.9,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,6.1,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,6.0,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,5.9,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,6.0,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,5.6,SI.POV.DDAY
-Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,6.3,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,7.5,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,6.8,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,6.5,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,6.0,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,6.2,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,6.2,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,6.1,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,6.2,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,5.8,SI.POV.DDAY
+Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,6.2,SI.POV.DDAY
 Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,5.0,SI.POV.DDAY
 Latin America & Caribbean,LCN,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,4.6,SI.POV.DDAY
 Least developed countries: UN classification,LDC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,2047.42328358298,NY.GDP.PCAP.PP.KD
@@ -4205,24 +4213,24 @@ Low income,LIC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP
 Low income,LIC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,2245.1287272549,NY.GDP.PCAP.PP.KD
 Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,62.7,SI.POV.DDAY
 Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,60.5,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,59.7,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,58.8,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,58.0,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,57.0,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,55.8,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,55.9,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,54.1,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,53.9,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,59.6,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,58.9,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,58.2,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,57.1,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,55.7,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,56.0,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,54.3,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,54.0,SI.POV.DDAY
 Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,52.8,SI.POV.DDAY
 Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,52.3,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,52.6,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,53.6,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,54.2,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,54.1,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,55.5,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,52.3,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,53.8,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,54.4,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,54.2,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,55.6,SI.POV.DDAY
 Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,56.2,SI.POV.DDAY
 Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,55.6,SI.POV.DDAY
-Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,56.3,SI.POV.DDAY
+Low income,LIC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,56.5,SI.POV.DDAY
 Sri Lanka,LKA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,6428.61341890463,NY.GDP.PCAP.PP.KD
 Sri Lanka,LKA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,6230.03051864853,NY.GDP.PCAP.PP.KD
 Sri Lanka,LKA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,6409.86278893446,NY.GDP.PCAP.PP.KD
@@ -4281,19 +4289,19 @@ Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of 
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,44.8,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,43.2,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,41.6,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,39.4,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,39.3,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,36.9,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,35.2,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,33.5,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,33.4,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,30.1,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,28.2,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,28.1,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,26.4,SI.POV.DDAY
 Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,23.7,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,21.7,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,15.2,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,14.4,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,13.4,SI.POV.DDAY
-Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,12.6,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,21.6,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,15.4,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,14.8,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,13.8,SI.POV.DDAY
+Lower middle income,LMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,13.1,SI.POV.DDAY
 Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,5569.76197576612,NY.GDP.PCAP.PP.KD
 Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,5685.4063144974,NY.GDP.PCAP.PP.KD
 Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,5862.97360394641,NY.GDP.PCAP.PP.KD
@@ -4318,30 +4326,30 @@ Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY
 Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,12449.4134388469,NY.GDP.PCAP.PP.KD
 Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,12853.4642681799,NY.GDP.PCAP.PP.KD
 Low & middle income,LMY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,13367.5334663071,NY.GDP.PCAP.PP.KD
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,45.1,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,43.9,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,41.8,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,39.8,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,37.5,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,35.1,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,33.4,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,45.0,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,43.8,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,41.7,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,39.6,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,37.4,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,35.0,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,33.3,SI.POV.DDAY
 Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,31.2,SI.POV.DDAY
 Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,29.7,SI.POV.DDAY
 Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,28.3,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,25.7,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,23.4,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,21.7,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,18.8,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,17.5,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,16.1,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,25.6,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,23.2,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,21.6,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,18.7,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,17.4,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,16.0,SI.POV.DDAY
 Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,15.0,SI.POV.DDAY
 Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,14.0,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,13.2,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,12.7,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,13.1,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,12.6,SI.POV.DDAY
 Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,13.4,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,13.1,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,12.5,SI.POV.DDAY
-Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,12.2,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,13.2,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,12.6,SI.POV.DDAY
+Low & middle income,LMY,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,12.3,SI.POV.DDAY
 Lesotho,LSO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,1932.15793223415,NY.GDP.PCAP.PP.KD
 Lesotho,LSO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,2004.03350215955,NY.GDP.PCAP.PP.KD
 Lesotho,LSO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,2024.78727304864,NY.GDP.PCAP.PP.KD
@@ -4716,24 +4724,28 @@ Maldives,MDV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,14296.2954321092,NY.GDP.PCAP.PP.KD
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,23.8,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,24.6,SI.POV.DDAY
-"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,24.1,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,24.2,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,22.2,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,19.9,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,18.8,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,17.6,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,16.7,SI.POV.DDAY
-"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,14.6,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,14.7,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,15.2,SI.POV.DDAY
-"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,13.3,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,13.4,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,13.0,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,12.3,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,11.6,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,11.5,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,11.3,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,11.3,SI.POV.DDAY
-"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,11.0,SI.POV.DDAY
-"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,11.0,SI.POV.DDAY
-"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,11.4,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,11.1,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,11.1,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,11.6,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,12.6,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,13.4,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,13.5,SI.POV.DDAY
+"Middle East, North Africa, Afghanistan & Pakistan",MEA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,13.9,SI.POV.DDAY
 Mexico,MEX,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,20470.4937646148,NY.GDP.PCAP.PP.KD
 Mexico,MEX,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,20078.2183908739,NY.GDP.PCAP.PP.KD
 Mexico,MEX,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,19744.7933653416,NY.GDP.PCAP.PP.KD
@@ -4932,6 +4944,7 @@ Malta,MLT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI
 Malta,MLT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.4,SI.POV.DDAY
 Malta,MLT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.1,SI.POV.DDAY
 Malta,MLT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.1,SI.POV.DDAY
+Malta,MLT,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,0.4,SI.POV.DDAY
 Myanmar,MMR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,1359.93038778036,NY.GDP.PCAP.PP.KD
 Myanmar,MMR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,1498.31163236525,NY.GDP.PCAP.PP.KD
 Myanmar,MMR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,1661.73588517132,NY.GDP.PCAP.PP.KD
@@ -5225,30 +5238,30 @@ North America,NAC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.P
 North America,NAC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,69833.4948761015,NY.GDP.PCAP.PP.KD
 North America,NAC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,71184.9572983365,NY.GDP.PCAP.PP.KD
 North America,NAC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,72394.1241275026,NY.GDP.PCAP.PP.KD
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.6,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.7,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.8,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.7,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.8,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.8,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.9,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.9,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.9,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.8,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.8,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,1.1,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,0.9,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.9,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,1.2,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,1.1,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,1.0,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,1.1,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,0.9,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.8,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,0.9,SI.POV.DDAY
 North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.3,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.2,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,1.1,SI.POV.DDAY
-North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,1.0,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.3,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,1.2,SI.POV.DDAY
+North America,NAC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,1.1,SI.POV.DDAY
 Namibia,NAM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,7858.38789521253,NY.GDP.PCAP.PP.KD
 Namibia,NAM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,7786.54169496761,NY.GDP.PCAP.PP.KD
 Namibia,NAM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,8017.28134128559,NY.GDP.PCAP.PP.KD
@@ -5430,7 +5443,7 @@ Norway,NOR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.
 Norway,NOR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,88984.1386736515,NY.GDP.PCAP.PP.KD
 Norway,NOR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,91051.0831968407,NY.GDP.PCAP.PP.KD
 Norway,NOR,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,90085.4382059786,NY.GDP.PCAP.PP.KD
-Norway,NOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
+Norway,NOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.3,SI.POV.DDAY
 Norway,NOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.2,SI.POV.DDAY
 Norway,NOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.3,SI.POV.DDAY
 Norway,NOR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,0.2,SI.POV.DDAY
@@ -5476,8 +5489,8 @@ Nepal,NPL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.K
 Nepal,NPL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,4546.22970006289,NY.GDP.PCAP.PP.KD
 Nepal,NPL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,4763.38751073946,NY.GDP.PCAP.PP.KD
 Nepal,NPL,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,4861.23030387639,NY.GDP.PCAP.PP.KD
-Nepal,NPL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,55.7,SI.POV.DDAY
-Nepal,NPL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,21.5,SI.POV.DDAY
+Nepal,NPL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,55.9,SI.POV.DDAY
+Nepal,NPL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,22.1,SI.POV.DDAY
 Nepal,NPL,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,2.4,SI.POV.DDAY
 Nauru,NRU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,8844.94679373008,NY.GDP.PCAP.PP.KD
 Nauru,NRU,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,8277.86825221942,NY.GDP.PCAP.PP.KD
@@ -6262,7 +6275,7 @@ South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of populatio
 South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,36.8,SI.POV.DDAY
 South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,34.6,SI.POV.DDAY
 South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,30.4,SI.POV.DDAY
-South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,27.5,SI.POV.DDAY
+South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,27.6,SI.POV.DDAY
 South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,25.2,SI.POV.DDAY
 South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,22.8,SI.POV.DDAY
 South Asia,SAS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,20.0,SI.POV.DDAY
@@ -6467,7 +6480,7 @@ El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of populati
 El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,7.0,SI.POV.DDAY
 El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,5.3,SI.POV.DDAY
 El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,5.8,SI.POV.DDAY
-El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,4.5,SI.POV.DDAY
+El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,4.6,SI.POV.DDAY
 El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,4.1,SI.POV.DDAY
 El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,3.0,SI.POV.DDAY
 El Salvador,SLV,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,5.1,SI.POV.DDAY
@@ -6565,6 +6578,7 @@ Serbia,SRB,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),S
 Serbia,SRB,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,2.0,SI.POV.DDAY
 Serbia,SRB,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,1.7,SI.POV.DDAY
 Serbia,SRB,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,2.0,SI.POV.DDAY
+Serbia,SRB,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,1.1,SI.POV.DDAY
 Sub-Saharan Africa (excluding high income),SSA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,3831.94227075511,NY.GDP.PCAP.PP.KD
 Sub-Saharan Africa (excluding high income),SSA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,3892.72693602378,NY.GDP.PCAP.PP.KD
 Sub-Saharan Africa (excluding high income),SSA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,4050.88159908508,NY.GDP.PCAP.PP.KD
@@ -6615,30 +6629,30 @@ Sub-Saharan Africa,SSF,"GDP per capita, PPP (constant 2021 international $)",NY.
 Sub-Saharan Africa,SSF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,4720.35761389047,NY.GDP.PCAP.PP.KD
 Sub-Saharan Africa,SSF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,4796.06641542138,NY.GDP.PCAP.PP.KD
 Sub-Saharan Africa,SSF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,4810.21576811861,NY.GDP.PCAP.PP.KD
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,62.5,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,61.3,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,60.9,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,62.4,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,61.2,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,60.8,SI.POV.DDAY
 Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,59.9,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,57.0,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,55.5,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,54.0,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,53.0,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,51.6,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,51.1,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,49.5,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,48.5,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,47.3,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,46.4,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,45.7,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,45.5,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,45.3,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,45.0,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,44.6,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,44.4,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,46.4,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,46.6,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,46.4,SI.POV.DDAY
-Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,46.5,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,56.9,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,55.4,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,54.3,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,53.1,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,51.9,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,51.4,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,49.4,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,48.4,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,47.2,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,46.1,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,45.3,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,45.4,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,45.1,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,44.6,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,44.1,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,43.9,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,46.0,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,46.2,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,45.7,SI.POV.DDAY
+Sub-Saharan Africa,SSF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,45.6,SI.POV.DDAY
 Small states,SST,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,15508.8076319873,NY.GDP.PCAP.PP.KD
 Small states,SST,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,15722.9340317643,NY.GDP.PCAP.PP.KD
 Small states,SST,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,16089.5481683915,NY.GDP.PCAP.PP.KD
@@ -6829,9 +6843,9 @@ Sweden,SWE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.
 Sweden,SWE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,62731.700616293,NY.GDP.PCAP.PP.KD
 Sweden,SWE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,63088.4236678734,NY.GDP.PCAP.PP.KD
 Sweden,SWE,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,62662.7652797761,NY.GDP.PCAP.PP.KD
-Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.2,SI.POV.DDAY
+Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.1,SI.POV.DDAY
 Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.2,SI.POV.DDAY
-Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.0,SI.POV.DDAY
+Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.1,SI.POV.DDAY
 Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.4,SI.POV.DDAY
 Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,0.5,SI.POV.DDAY
 Sweden,SWE,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,1.1,SI.POV.DDAY
@@ -6948,7 +6962,7 @@ Syrian Arab Republic,SYR,"GDP per capita, PPP (constant 2021 international $)",N
 Syrian Arab Republic,SYR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,0.5,SI.POV.DDAY
 Syrian Arab Republic,SYR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,0.0,SI.POV.DDAY
 Syrian Arab Republic,SYR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,0.0,SI.POV.DDAY
-Syrian Arab Republic,SYR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,16.5,SI.POV.DDAY
+Syrian Arab Republic,SYR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,18.0,SI.POV.DDAY
 Turks and Caicos Islands,TCA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2007,21878.8206013071,NY.GDP.PCAP.PP.KD
 Turks and Caicos Islands,TCA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2008,22689.3160133769,NY.GDP.PCAP.PP.KD
 Turks and Caicos Islands,TCA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2009,17512.1977777876,NY.GDP.PCAP.PP.KD
@@ -7066,11 +7080,11 @@ Togo,TGO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD
 Togo,TGO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,2638.81095267963,NY.GDP.PCAP.PP.KD
 Togo,TGO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,2739.68813234711,NY.GDP.PCAP.PP.KD
 Togo,TGO,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,2842.23076240747,NY.GDP.PCAP.PP.KD
-Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,67.2,SI.POV.DDAY
-Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,65.2,SI.POV.DDAY
-Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,61.5,SI.POV.DDAY
-Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,35.1,SI.POV.DDAY
-Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,34.4,SI.POV.DDAY
+Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,67.6,SI.POV.DDAY
+Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,65.5,SI.POV.DDAY
+Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,61.7,SI.POV.DDAY
+Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,35.3,SI.POV.DDAY
+Togo,TGO,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,34.7,SI.POV.DDAY
 Thailand,THA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,11622.5250278537,NY.GDP.PCAP.PP.KD
 Thailand,THA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,11901.3182104659,NY.GDP.PCAP.PP.KD
 Thailand,THA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,12512.1831324963,NY.GDP.PCAP.PP.KD
@@ -7222,7 +7236,7 @@ Timor-Leste,TLS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCA
 Timor-Leste,TLS,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,4331.07806144305,NY.GDP.PCAP.PP.KD
 Timor-Leste,TLS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,55.7,SI.POV.DDAY
 Timor-Leste,TLS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,60.1,SI.POV.DDAY
-Timor-Leste,TLS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,43.9,SI.POV.DDAY
+Timor-Leste,TLS,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,44.0,SI.POV.DDAY
 "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",TMN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,7321.33920430307,NY.GDP.PCAP.PP.KD
 "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",TMN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,7371.20338714936,NY.GDP.PCAP.PP.KD
 "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",TMN,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,7458.14500325603,NY.GDP.PCAP.PP.KD
@@ -7421,6 +7435,7 @@ Turkiye,TUR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),
 Turkiye,TUR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,1.1,SI.POV.DDAY
 Turkiye,TUR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.9,SI.POV.DDAY
 Turkiye,TUR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,0.5,SI.POV.DDAY
+Turkiye,TUR,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,0.2,SI.POV.DDAY
 Tuvalu,TUV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,3721.89947875243,NY.GDP.PCAP.PP.KD
 Tuvalu,TUV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,3705.59238735794,NY.GDP.PCAP.PP.KD
 Tuvalu,TUV,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,4042.90117614992,NY.GDP.PCAP.PP.KD
@@ -7571,30 +7586,30 @@ Upper middle income,UMC,"GDP per capita, PPP (constant 2021 international $)",NY
 Upper middle income,UMC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,19507.2116769218,NY.GDP.PCAP.PP.KD
 Upper middle income,UMC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,20094.8379948072,NY.GDP.PCAP.PP.KD
 Upper middle income,UMC,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,20950.1833428582,NY.GDP.PCAP.PP.KD
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,41.3,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,39.0,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,35.1,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,32.1,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,28.9,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,25.4,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,41.1,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,38.8,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,34.8,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,31.8,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,28.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,25.2,SI.POV.DDAY
 Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,23.8,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,21.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,21.6,SI.POV.DDAY
 Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,20.2,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,18.8,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,16.5,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,13.4,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,11.6,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,7.8,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,6.9,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,5.5,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,4.8,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,4.2,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,3.5,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,3.0,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,2.9,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,2.9,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,2.5,SI.POV.DDAY
-Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,2.3,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,18.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,16.4,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,13.1,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,11.3,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,7.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,6.8,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,5.4,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,4.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,4.1,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,3.4,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,2.9,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,2.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,2.7,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,2.2,SI.POV.DDAY
+Upper middle income,UMC,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,2.0,SI.POV.DDAY
 Uruguay,URY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,18752.0578112966,NY.GDP.PCAP.PP.KD
 Uruguay,URY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,17986.9007596433,NY.GDP.PCAP.PP.KD
 Uruguay,URY,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,16572.7881760134,NY.GDP.PCAP.PP.KD
@@ -7667,29 +7682,29 @@ United States,USA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.P
 United States,USA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,71307.4017277218,NY.GDP.PCAP.PP.KD
 United States,USA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,72679.2575396348,NY.GDP.PCAP.PP.KD
 United States,USA,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,74158.7164155605,NY.GDP.PCAP.PP.KD
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.7,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,1.0,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,0.8,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,0.9,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,0.9,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,1.0,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,1.1,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,1.0,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,1.1,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,1.0,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,1.1,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,1.2,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,1.2,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,1.1,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,1.1,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,1.1,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,1.1,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,1.3,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,1.2,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,1.2,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,1.2,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,1.0,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,1.3,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,1.1,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2019,1.0,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.5,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.5,SI.POV.DDAY
-United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,1.2,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,0.4,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,0.3,SI.POV.DDAY
+United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,1.4,SI.POV.DDAY
 United States,USA,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,1.2,SI.POV.DDAY
 Uzbekistan,UZB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,3410.65044991898,NY.GDP.PCAP.PP.KD
 Uzbekistan,UZB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,3509.72863761694,NY.GDP.PCAP.PP.KD
@@ -7857,29 +7872,29 @@ World,WLD,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.K
 World,WLD,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2021,19866.7679184046,NY.GDP.PCAP.PP.KD
 World,WLD,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,20409.442097194,NY.GDP.PCAP.PP.KD
 World,WLD,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,20918.304708117,NY.GDP.PCAP.PP.KD
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,36.3,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,36.2,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2001,35.3,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,33.8,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2002,33.7,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2003,32.2,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2004,30.3,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,28.4,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,28.3,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2006,27.0,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2007,25.3,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,24.1,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,23.0,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2009,23.1,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,21.0,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,19.2,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,17.9,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,15.6,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,14.6,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2011,19.1,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2012,17.8,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2013,15.5,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,14.5,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2015,13.4,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2016,12.6,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,11.9,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,11.2,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2017,11.8,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2018,11.1,SI.POV.DDAY
 World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,11.4,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,11.2,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,10.8,SI.POV.DDAY
-World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,10.5,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,11.3,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,10.9,SI.POV.DDAY
+World,WLD,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2023,10.6,SI.POV.DDAY
 Samoa,WSM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,4638.59446502597,NY.GDP.PCAP.PP.KD
 Samoa,WSM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,4941.1152254089,NY.GDP.PCAP.PP.KD
 Samoa,WSM,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,5183.45456244226,NY.GDP.PCAP.PP.KD
@@ -7940,7 +7955,7 @@ Kosovo,XKX,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),S
 Kosovo,XKX,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2020,16.8,SI.POV.DDAY
 Kosovo,XKX,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2021,25.0,SI.POV.DDAY
 Kosovo,XKX,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,10.0,SI.POV.DDAY
-"Yemen, Rep.",YEM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,21.4,SI.POV.DDAY
+"Yemen, Rep.",YEM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,22.5,SI.POV.DDAY
 "Yemen, Rep.",YEM,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,33.3,SI.POV.DDAY
 South Africa,ZAF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,11183.825503143,NY.GDP.PCAP.PP.KD
 South Africa,ZAF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,11387.492366782,NY.GDP.PCAP.PP.KD
@@ -7967,10 +7982,11 @@ South Africa,ZAF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PC
 South Africa,ZAF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2022,13767.4967589936,NY.GDP.PCAP.PP.KD
 South Africa,ZAF,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2023,13695.3755694076,NY.GDP.PCAP.PP.KD
 South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2000,47.9,SI.POV.DDAY
-South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,42.1,SI.POV.DDAY
-South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,30.3,SI.POV.DDAY
-South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,29.5,SI.POV.DDAY
-South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,31.2,SI.POV.DDAY
+South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2005,40.7,SI.POV.DDAY
+South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2008,37.0,SI.POV.DDAY
+South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2010,27.8,SI.POV.DDAY
+South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2014,27.9,SI.POV.DDAY
+South Africa,ZAF,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),SI.POV.DDAY,,2022,17.4,SI.POV.DDAY
 Zambia,ZMB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2000,2220.5653712714,NY.GDP.PCAP.PP.KD
 Zambia,ZMB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2001,2268.96965564597,NY.GDP.PCAP.PP.KD
 Zambia,ZMB,"GDP per capita, PPP (constant 2021 international $)",NY.GDP.PCAP.PP.KD,,2002,2299.33289188114,NY.GDP.PCAP.PP.KD
