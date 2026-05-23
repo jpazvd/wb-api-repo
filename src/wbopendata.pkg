@@ -128,6 +128,7 @@ f _/__wbod_api_read_indicators.ado
 f _/__wbod_cache.ado
 f _/__wbod_check_version.ado
 f _/__wbod_check_yaml.ado
+f _/__wbod_countrymetadata.ado
 f _/__wbod_get_source_name.ado
 f _/__wbod_get_topic_name.ado
 f _/__wbod_get_yaml_path.ado
