@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "wbopendata YAML schema v2.0.0",
+  "type": "object",
+  "definitions": {
+    "metadata": {
+      "type": "object",
+      "required": ["version", "generated_at"],
+      "properties": {
+        "version": {"type": "string"},
+        "generated_at": {"type": "string"},
+        "source": {"type": "string"},
+        "compression": {"type": "string"},
+        "encoding": {"type": "string"},
+        "total_indicators": {"type": "number"},
+        "total_sources": {"type": "number"},
+        "total_topics": {"type": "number"},
+        "checksum_sha256": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "indicator": {
+      "type": "object",
+      "required": ["code", "name"],
+      "properties": {
+        "code": {"type": "string"},
+        "name": {"type": "string"},
+        "source_id": {"type": "string"},
+        "source_name": {"type": "string"},
+        "topic_ids": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "topic_names": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "description": {"type": "string"},
+        "unit": {"type": "string"},
+        "source_org": {"type": "string"},
+        "note": {"type": "string"},
+        "limited_data": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "indicators_file": {
+      "type": "object",
+      "required": ["_metadata", "indicators"],
+      "properties": {
+        "_metadata": {"$ref": "#/definitions/metadata"},
+        "indicators": {
+          "type": "object",
+          "patternProperties": {
+            ".+": {"$ref": "#/definitions/indicator"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["code", "name"],
+      "properties": {
+        "code": {"type": "string"},
+        "name": {"type": "string"},
+        "description": {"type": "string"},
+        "url": {"type": "string"},
+        "data_availability": {"type": "string"},
+        "metadata_availability": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "sources_file": {
+      "type": "object",
+      "required": ["_metadata", "sources"],
+      "properties": {
+        "_metadata": {"$ref": "#/definitions/metadata"},
+        "sources": {
+          "type": "object",
+          "patternProperties": {
+            ".+": {"$ref": "#/definitions/source"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "topic": {
+      "type": "object",
+      "required": ["code", "name"],
+      "properties": {
+        "code": {"type": "string"},
+        "name": {"type": "string"},
+        "description": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "topics_file": {
+      "type": "object",
+      "required": ["_metadata", "topics"],
+      "properties": {
+        "_metadata": {"$ref": "#/definitions/metadata"},
+        "topics": {
+          "type": "object",
+          "patternProperties": {
+            ".+": {"$ref": "#/definitions/topic"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

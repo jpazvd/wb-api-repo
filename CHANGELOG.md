@@ -11,7 +11,20 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
+### Added
+
+- **Phase 1** — YAML metadata pipeline (ported verbatim from `wbopendata-dev`):
+  - `src/py/wb_api_client.py` — HTTP client with retries + pagination; context-manager `WBAPIClient`.
+  - `src/py/yaml_generator.py` — transforms WB API JSON → YAML schema v2.0 with SHA256 checksum.
+  - `src/py/schema_validator.py` + `config/schema_yaml_v2.json` — 7-variant JSON Schema validation.
+  - `src/py/diff_analyzer.py` — key-set diffs for before/after metadata-refresh summaries.
+  - `src/py/git_manager.py` — stage/commit/tag helpers for optional `--commit`/`--tag` flow.
+  - `src/py/update_metadata.py` + `config/config_update.yaml` — 5-stage orchestrator CLI.
+  - `make wb-update-metadata` target.
+- Dependencies: `jsonschema`, `gitpython` added to `requirements.txt`.
+
 ### Changed
+
 - Repository layout reorganised to mirror `wbopendata-dev`:
   - `_wbopendata/w/*` → `src/w/`
   - `_wbopendata/_/*` → `src/_/`
@@ -22,8 +35,13 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 - Added placeholder `src/y/`, `qa/`, `doc/{architecture,user-guide,roadmap}/` directories
   for upcoming phases.
 
+### Fixed
+
+- `.gitignore`: retargeted three rules from `_tests/` to `tests/` to track the Phase 0 directory rename (oversight from Phase 0).
+- `src/y/README.md`: corrected to state that YAML metadata files live in `src/_/` per `wbopendata-dev`'s `src/wbopendata.pkg` convention; `src/y/` is reserved for the `yaml.ado` Stata library landing in Phase 2.
+
 ### Added (planned, subsequent phases)
-- YAML metadata pipeline parity (Phase 1)
+
 - `yaml` Stata frame library (Phase 2)
 - Discovery commands: `sources`, `alltopics`, `info`, `sync`, paginated `search` (Phase 3)
 - 7-day TTL HTTP cache (Phase 4)
