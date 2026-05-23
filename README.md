@@ -124,10 +124,10 @@ python src/py/wb_api_tools.py sync                # in-place refresh
 python src/py/wb_api_tools.py sync --commit --tag # also git-commit + tag
 ```
 
-A bi-weekly GitHub Action (`.github/workflows/wb_metadata_nightly.yml` —
-file name is historical; cron runs on the 1st and 15th of every month at
-02:17 UTC) keeps the cache fresh. Manually triggerable via
-`workflow_dispatch`.
+A semi-monthly GitHub Action (`.github/workflows/wb_metadata_nightly.yml`
+— file name is historical; cron runs on the 1st and 15th of every month
+at 02:17 UTC, so 14–17 days apart depending on month length) keeps the
+cache fresh. Manually triggerable via `workflow_dispatch`.
 
 ## Documentation
 

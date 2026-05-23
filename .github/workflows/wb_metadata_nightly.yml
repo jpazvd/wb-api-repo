@@ -1,12 +1,13 @@
 
-name: World Bank Data Biweekly Refresh
+name: World Bank Data Refresh
 permissions:
   contents: write
 on:
   schedule:
-    # Bi-weekly approximation: 1st + 15th of every month at 02:17 UTC.
-    # Standard cron has no native "every other week"; 1,15 is ~14 days
-    # apart with minor month-end drift.
+    # Semi-monthly: 1st + 15th of every month at 02:17 UTC.
+    # Strictly twice-monthly, not every-14-days bi-weekly — the gap
+    # between the 15th and the 1st is 14-17 days depending on month
+    # length (28-31). Standard cron has no native "every other week".
     - cron: '17 2 1,15 * *'
   workflow_dispatch: {}
 jobs:
@@ -30,7 +31,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No metadata changes"
           else
-            git commit -m "Nightly WB metadata refresh"
+            git commit -m "WB metadata refresh"
             git push
           fi
   data:
@@ -57,6 +58,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes"
           else
-            git commit -m "Nightly WB data refresh"
+            git commit -m "WB data refresh"
             git push
           fi
