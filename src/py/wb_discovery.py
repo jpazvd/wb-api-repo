@@ -207,6 +207,34 @@ def _expand_search_fields(field: str) -> List[str]:
     return [f]
 
 
+def sync(argv: Optional[List[str]] = None) -> int:
+    """Run the Phase-1 metadata-refresh pipeline (Python equivalent of
+    `wbopendata, sync replace` — full apply path).
+
+    Thin wrapper around update_metadata.main() so callers can trigger
+    a YAML refresh in-process without shelling out. Accepts the same
+    argv list as the CLI:
+      sync(["--save-raw", "--no-validate"])
+
+    Returns the orchestrator's exit code (0 success, non-zero failure).
+    """
+    import sys as _sys
+    from pathlib import Path as _Path
+    # Make sure src/py/ is on sys.path so update_metadata's local
+    # `from diff_analyzer import ...` peers resolve when called from
+    # outside that directory.
+    here = _Path(__file__).resolve().parent
+    if str(here) not in _sys.path:
+        _sys.path.insert(0, str(here))
+    saved_argv = _sys.argv
+    try:
+        _sys.argv = ["update_metadata"] + list(argv or [])
+        from update_metadata import main as _main
+        return _main() or 0
+    finally:
+        _sys.argv = saved_argv
+
+
 def describe(indicator_id: str) -> Optional[Dict]:
     """Fetch FRESH metadata for one indicator from the WB API
     (Python equivalent of Stata `wbopendata, describe indicator(<id>)`).
