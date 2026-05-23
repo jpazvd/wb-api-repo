@@ -1,0 +1,6 @@
+v 0.1.0
+d Materials by João Pedro Azevedo
+d wb-api-repo (parallel track v0.x; see CHANGELOG.md)
+github.com/jpazvd/wb-api-repo
+
+p wbopendata
