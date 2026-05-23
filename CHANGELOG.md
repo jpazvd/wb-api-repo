@@ -13,6 +13,19 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Python PR C — Country-context flags + multilingual + linewrap** (closes the remaining Phase 5-6 Python deferrals):
+  - `wb_api_tools.get_data(geo=True)` — supplementary 3-field geographic merge (capital / latitude / longitude); combinable with `no_basic` for any of 4 flag matrices. Phase 5 `geo` parity.
+  - `wb_api_tools.enrich_country_context(df, iso_col, *, basic=True, geo=False)` — standalone helper that merges country context into a user-supplied DataFrame on any ISO3 column. Python equivalent of Stata `wbopendata, match(varname) [basic geo]`. Left-join semantics; defensive `.copy()`; raises `KeyError` if `iso_col` missing.
+  - **New module `src/py/wb_text.py`** — Stata Phase-6 linewrap parity:
+    - `wb_text.wrap(text, *, width=80, fmt="stack"|"newline"|"lines"|"smcl"|"all")` — text wrapping with 4 output formats matching Stata's `linewrapformat`.
+    - `wb_text.wrap_lines(text, *, width=80)` — convenience shorthand for `wrap(fmt="lines")`.
+    - `wb_text.truncate(text, *, width=80, suffix="...")` — single-line cap with ellipsis (Stata `maxlength` without `linewrap`).
+  - **`language=` kwarg** added to `wb_discovery.describe()`, `wb_api_tools.get_data()`, and `WBAPIClient.fetch_indicator_metadata()`. Inserts `/{lang}/` into the WB API URL path when non-English (`/v2/es/indicator/...`); `None` / `'en'` / `''` / `'EN'` all use the un-prefixed default endpoint. Phase 6 `language()` parity (live-API surface). Note: YAML-cache readers (`info` / `sources` / `alltopics` / `search`) remain English-only — multilingual YAML generation is a future-phase pipeline change.
+  - **CLI flags** added to `wb_api_tools.py`: `data --geo --language LANG` and `describe --language LANG`.
+  - **`tests/test_wb_text.py`** — 14 new pytest cases covering all 4 wrap formats, edge cases (empty / None / `width<=0` / bad fmt), and the `truncate` helper.
+  - **Extended `tests/test_wb_discovery.py`** — 5 new tests for `describe(language=)` passthrough + `WBAPIClient` URL construction (parametrised across None/empty/en/EN English variants).
+  - **Extended `tests/test_wb_api_tools.py`** — 9 new tests for `get_data(geo=True)`, `enrich_country_context` (6 paths incl. custom iso_col + input-not-mutated invariant), and `get_data(language=)` URL prefix.
+  - Full suite: **59 passed** (28 pre-PR-C + 31 new).
 - **Python PR B — Discovery API** (Python parity with the Stata `wbopendata` discovery + sync surface ported in Phases 3-6):
   - **New module `src/py/wb_discovery.py`** (~270 LOC) exposing:
     - `sources(limit=20)` / `allsources()` — read `_wbopendata_sources.yaml`, sorted by numeric ID.

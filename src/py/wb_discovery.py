@@ -235,9 +235,10 @@ def sync(argv: Optional[List[str]] = None) -> int:
         _sys.argv = saved_argv
 
 
-def describe(indicator_id: str) -> Optional[Dict]:
+def describe(indicator_id: str, language: Optional[str] = None) -> Optional[Dict]:
     """Fetch FRESH metadata for one indicator from the WB API
-    (Python equivalent of Stata `wbopendata, describe indicator(<id>)`).
+    (Python equivalent of Stata `wbopendata, describe indicator(<id>)
+    [language(es|fr)]`).
 
     Unlike info() (which reads from the local YAML cache and may be stale),
     describe() always hits api.worldbank.org for the latest record.
@@ -245,6 +246,9 @@ def describe(indicator_id: str) -> Optional[Dict]:
 
     Args:
         indicator_id: WB indicator code (e.g. 'SP.POP.TOTL').
+        language:     ISO-639-1 code: 'en' (default), 'es', 'fr'. Non-English
+                      values trigger the localised API endpoint
+                      (/v2/{language}/indicator/...).
 
     Returns:
         Indicator metadata dict (YAML schema v2.0 shape) or None on
@@ -253,16 +257,14 @@ def describe(indicator_id: str) -> Optional[Dict]:
     if not indicator_id:
         return None
     # Normalise to upper-case for case-insensitive parity with info()
-    # (WB indicator codes are canonically upper-case; the API accepts
-    # mixed case but returns a record only when the code resolves).
     code = indicator_id.upper()
     from wb_api_client import WBAPIClient  # local import to avoid cycle on import
 
     try:
         with WBAPIClient() as client:
-            raw = client.fetch_indicator_metadata(code)
+            raw = client.fetch_indicator_metadata(code, language=language)
     except Exception as exc:  # network errors / bad response
-        logger.error("describe(%r) failed: %s", indicator_id, exc)
+        logger.error("describe(%r, language=%r) failed: %s", indicator_id, language, exc)
         return None
     if not raw:
         return None

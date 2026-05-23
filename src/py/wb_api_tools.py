@@ -151,6 +151,28 @@ def get_indicator_metadata(codes: Optional[List[str]] = None, search: Optional[s
     return df
 
 _BASIC_CONTEXT_CACHE: Optional[pd.DataFrame] = None
+_GEO_CONTEXT_CACHE: Optional[pd.DataFrame] = None
+
+
+def _get_geo_context() -> pd.DataFrame:
+    """Return cached ISO3 → 3-field geographic context lookup table.
+
+    Python equivalent of the Stata Phase-5 `geo` flag. Columns:
+      countryiso3code, capital, latitude, longitude
+
+    Cached separately from basic context so users can combine flags
+    (basic + geo) or pick geo-only without re-fetching /country.
+    """
+    global _GEO_CONTEXT_CACHE
+    if _GEO_CONTEXT_CACHE is None:
+        cm = get_country_metadata()
+        _GEO_CONTEXT_CACHE = cm[[
+            "id", "capitalCity", "longitude", "latitude",
+        ]].rename(columns={
+            "id":          "countryiso3code",
+            "capitalCity": "capital",
+        })
+    return _GEO_CONTEXT_CACHE
 
 
 def _get_basic_context() -> pd.DataFrame:
@@ -186,9 +208,51 @@ def _get_basic_context() -> pd.DataFrame:
     return _BASIC_CONTEXT_CACHE
 
 
+def enrich_country_context(
+    df: pd.DataFrame,
+    iso_col: str = "countryiso3code",
+    *,
+    basic: bool = True,
+    geo: bool = False,
+) -> pd.DataFrame:
+    """Merge WB country-context fields into a user-supplied DataFrame
+    (Python equivalent of Stata `wbopendata, match(varname) [basic geo]`).
+
+    Args:
+        df:      input DataFrame with an ISO3 country code column.
+        iso_col: name of the ISO3 column in df (default 'countryiso3code').
+        basic:   include the 8 basic-context fields (region/incomelevel/etc.).
+                 Default True.
+        geo:     include 3 geographic fields (capital/lat/long). Default False.
+
+    Returns:
+        New DataFrame (input not mutated) with context columns appended.
+        Rows whose ISO3 isn't found in WB metadata get NaN in the new
+        columns (left-join semantics).
+
+    Raises:
+        KeyError if `iso_col` isn't a column in `df`.
+    """
+    if iso_col not in df.columns:
+        raise KeyError(f"iso_col {iso_col!r} not found in DataFrame columns: {list(df.columns)}")
+    out = df.copy()
+    if basic:
+        bc = _get_basic_context()
+        out = out.merge(bc, left_on=iso_col, right_on="countryiso3code", how="left")
+        if iso_col != "countryiso3code":
+            out = out.drop(columns="countryiso3code")
+    if geo:
+        gc = _get_geo_context()
+        out = out.merge(gc, left_on=iso_col, right_on="countryiso3code", how="left")
+        if iso_col != "countryiso3code":
+            out = out.drop(columns="countryiso3code")
+    return out
+
+
 def get_data(indicators: List[str], countries: str = "all", date: Optional[str] = None,
              per_page: int = DEFAULT_PER_PAGE, long: bool = False,
-             no_basic: bool = False) -> pd.DataFrame:
+             no_basic: bool = False, geo: bool = False,
+             language: Optional[str] = None) -> pd.DataFrame:
     """
     Fetch indicator data using CSV downloads (following Stata wbopendata approach)
     Much more reliable than JSON for bulk data.
@@ -196,8 +260,14 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
     Phase 5 parity: by default also merges 8 basic country-context fields
     (region/regionname/adminregion/adminregionname/incomelevel/
      incomelevelname/lendingtype/lendingtypename) from /country.
-    Pass `no_basic=True` to skip (e.g. for lean output or when re-running
-    against an offline cache).
+
+    PR C parity: `geo=True` adds 3 geographic fields (capital, latitude,
+    longitude) — supplementary to the basic merge, not exclusive of it.
+    Flag matrix:
+        no_basic=False, geo=False  →  8 basic fields           (default)
+        no_basic=False, geo=True   →  8 basic + 3 geo = 11 fields
+        no_basic=True,  geo=True   →  3 geo only
+        no_basic=True,  geo=False  →  no merge (lean output)
     """
     if isinstance(indicators, str):
         indicators = [c.strip() for c in indicators.split(",") if c.strip()]
@@ -205,10 +275,18 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
 
     global VERBOSE
     frames = []
+    # Language prefix in URL path: /v2/{lang}/... when non-English.
+    # English ('en' or None) uses the un-prefixed path.
+    lang_prefix = ""
+    if language:
+        lang = language.strip().lower()
+        if lang and lang != "en":
+            lang_prefix = f"/{lang}"
+
     for ind in indicators:
         try:
             # Use CSV download approach like Stata wbopendata
-            url = f"{BASE}/countries/{countries}/indicators/{ind}"
+            url = f"{BASE}{lang_prefix}/countries/{countries}/indicators/{ind}"
 
             # Build parameters for CSV download
             params = {
@@ -298,6 +376,7 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
     df_combined = df_combined.sort_values(["countryiso3code", "indicator", "date"])
 
     # Phase-5 parity: auto-merge basic country context unless opted out.
+    # PR C: also merge geo context when requested (supplementary to basic).
     # Done BEFORE the long/wide branch so context columns participate in
     # the wide-format pivot index correctly.
     if not no_basic:
@@ -305,8 +384,13 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
             bc = _get_basic_context()
             df_combined = df_combined.merge(bc, on="countryiso3code", how="left")
         except Exception as e:
-            # Non-fatal — emit a warning and continue without context columns
             print(f"Warning: basic country context merge skipped: {e}")
+    if geo:
+        try:
+            gc = _get_geo_context()
+            df_combined = df_combined.merge(gc, on="countryiso3code", how="left")
+        except Exception as e:
+            print(f"Warning: geo context merge skipped: {e}")
 
     if long:
         # Return long format (already is)
@@ -315,11 +399,12 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
         # Convert to wide format
         # The basic-context columns (if merged) need to be in the pivot
         # index so they don't get dropped by pivot_table's column reduction.
-        bc_cols = [
+        ctx_cols = [
             "region", "regionname", "adminregion", "adminregionname",
             "incomelevel", "incomelevelname", "lendingtype", "lendingtypename",
+            "capital", "latitude", "longitude",
         ]
-        extra_idx = [c for c in bc_cols if c in df_combined.columns]
+        extra_idx = [c for c in ctx_cols if c in df_combined.columns]
         wide = df_combined.pivot_table(
             index=["countryiso3code", "country", "date"] + extra_idx,
             columns="indicator",
@@ -374,6 +459,10 @@ def build_parser():
     p_d.add_argument("--long", action="store_true")
     p_d.add_argument("--no-basic", action="store_true",
                      help="Skip the 8-field country-context auto-merge (Phase 5 parity)")
+    p_d.add_argument("--geo", action="store_true",
+                     help="Also merge capital/latitude/longitude (PR C; combinable with --no-basic for geo-only)")
+    p_d.add_argument("--language", default=None,
+                     help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
     p_d.add_argument("--out")
 
     # --- Discovery subcommands (PR B) --------------------------------
@@ -393,6 +482,8 @@ def build_parser():
 
     p_desc = sub.add_parser("describe", help="Fetch fresh metadata for one indicator (from WB API)")
     p_desc.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
+    p_desc.add_argument("--language", default=None,
+                        help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
 
     p_srch = sub.add_parser("search", help="Paginated indicator search")
     p_srch.add_argument("term", nargs="?", default="", help="Substring to search (or empty for browse-mode)")
@@ -433,7 +524,7 @@ def main(argv=None):
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
                       date=args.date, per_page=args.per_page, long=args.long,
-                      no_basic=args.no_basic)
+                      no_basic=args.no_basic, geo=args.geo, language=args.language)
         # Debug: show fetched data shape and sample if verbose
         if VERBOSE:
             print(f"Debug-final df shape: {df.shape}")
@@ -458,7 +549,7 @@ def main(argv=None):
             for k, v in rec.items():
                 print(f"  {k}: {v}")
         elif args.cmd == "describe":
-            rec = describe(args.id)
+            rec = describe(args.id, language=args.language)
             if rec is None:
                 print(f"Indicator not found via WB API: {args.id}")
                 return 1
