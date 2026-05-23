@@ -109,6 +109,104 @@ def alltopics() -> List[Dict]:
     return sorted(top_dict.values(), key=lambda r: int(r.get("code", "0") or 0))
 
 
+def search(
+    term: str = "",
+    *,
+    page: int = 1,
+    limit: int = 20,
+    source: Optional[str] = None,
+    topic: Optional[str] = None,
+    field: str = "name+description",
+    exact: bool = False,
+) -> Dict:
+    """Paginated full-text indicator search (Python equivalent of
+    `wbopendata, search(<term>) [searchsource searchtopic searchfield exact page limit]`).
+
+    Args:
+        term:   substring (or exact code with `exact=True`) to look for.
+                Empty string + a source/topic filter = "browse" mode.
+        page:   1-indexed page number.
+        limit:  results per page (default 20, same as Stata).
+        source: source-ID filter (string; matched against indicator's source_id).
+        topic:  topic-ID filter (string; matched against any element of topic_ids).
+        field:  which fields to search in 'term'. One of:
+                  "name"  | "description" | "note" | "code"
+                  "name+description"  (default — matches Stata default)
+                  "all"   (name + description + note + code)
+        exact:  exact code match instead of substring; applies to `code` field.
+
+    Returns:
+        Dict with:
+          term:    echoed input
+          total:   total matches (pre-pagination)
+          page:    current page (1-indexed)
+          pages:   total pages
+          limit:   per-page count
+          results: list of indicator dicts on this page
+    """
+    ind_dict = _load_yaml_section(INDICATORS_YAML, "indicators")
+    if not ind_dict:
+        return {"term": term, "total": 0, "page": page, "pages": 0, "limit": limit, "results": []}
+
+    needle = (term or "").strip().lower()
+    field_set = _expand_search_fields(field)
+
+    matches: List[Dict] = []
+    for rec in ind_dict.values():
+        # Source filter
+        if source and str(rec.get("source_id", "")) != str(source):
+            continue
+        # Topic filter — topic_ids is a list of strings; no semicolon parsing
+        # needed (the Stata implementation has to deal with semicolon-joined
+        # strings + the leading-zero edge case).
+        if topic and str(topic) not in {str(t) for t in (rec.get("topic_ids") or [])}:
+            continue
+        # Text match
+        if needle:
+            if exact and "code" in field_set:
+                if rec.get("code", "").lower() == needle:
+                    matches.append(rec)
+                continue
+            # Substring across the selected fields
+            haystack_parts = [str(rec.get(f, "") or "") for f in field_set]
+            if any(needle in h.lower() for h in haystack_parts):
+                matches.append(rec)
+        else:
+            # No term — must rely on source/topic filter
+            if source or topic:
+                matches.append(rec)
+
+    # Sort matches by code for stable pagination
+    matches.sort(key=lambda r: r.get("code", ""))
+
+    total = len(matches)
+    per_page = max(1, int(limit))
+    n_pages = max(1, (total + per_page - 1) // per_page) if total else 0
+    page_idx = max(1, int(page))
+    if total and page_idx > n_pages:
+        page_idx = n_pages
+    start = (page_idx - 1) * per_page
+    end = start + per_page
+    return {
+        "term": term,
+        "total": total,
+        "page": page_idx,
+        "pages": n_pages,
+        "limit": per_page,
+        "results": matches[start:end] if total else [],
+    }
+
+
+def _expand_search_fields(field: str) -> List[str]:
+    """Map the user-friendly `field` arg to a list of indicator-dict keys."""
+    f = (field or "name+description").lower()
+    if f == "all":
+        return ["name", "description", "note", "code"]
+    if "+" in f:
+        return [p.strip() for p in f.split("+") if p.strip()]
+    return [f]
+
+
 def info(indicator_id: str) -> Optional[Dict]:
     """Return full metadata for one indicator (Python equivalent of
     `wbopendata, info(<id>)`).
