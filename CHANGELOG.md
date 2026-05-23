@@ -61,6 +61,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 Initial public state of `wb-api-repo` before alignment work began.
 
 ### Existing
+
 - Stata `wbopendata.ado` v17.0 (24Jan2023) under `_wbopendata/`
 - Python CLI `wb_api_tools.py` with `countries` / `indicators` / `data` subcommands
 - `config.yaml` batch runner via `run_from_config.py`
