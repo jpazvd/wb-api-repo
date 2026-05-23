@@ -12,7 +12,7 @@ ported in Phases 3-6 to `src/w/wbopendata.ado`:
   wbopendata, info(<id>)             | wb_discovery.info(id)           [PR B C2]
   wbopendata, search(<term>)         | wb_discovery.search(term, ...)  [PR B C3]
   wbopendata, describe indicator(<id>) | wb_discovery.describe(id)     [PR B C4]
-  wbopendata, sync                   | wb_discovery.sync()             [PR B C5]
+  wbopendata, sync                   | wb_discovery.sync()             [PR B C6]
 
 Reads from the YAML metadata cache at `src/_/_wbopendata_*.yaml` produced
 by `update_metadata.py` (Phase 1 pipeline). Override the cache directory
@@ -252,11 +252,15 @@ def describe(indicator_id: str) -> Optional[Dict]:
     """
     if not indicator_id:
         return None
+    # Normalise to upper-case for case-insensitive parity with info()
+    # (WB indicator codes are canonically upper-case; the API accepts
+    # mixed case but returns a record only when the code resolves).
+    code = indicator_id.upper()
     from wb_api_client import WBAPIClient  # local import to avoid cycle on import
 
     try:
         with WBAPIClient() as client:
-            raw = client.fetch_indicator_metadata(indicator_id)
+            raw = client.fetch_indicator_metadata(code)
     except Exception as exc:  # network errors / bad response
         logger.error("describe(%r) failed: %s", indicator_id, exc)
         return None

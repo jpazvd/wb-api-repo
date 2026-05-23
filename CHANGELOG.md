@@ -22,7 +22,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
     - `describe(indicator_id)` — fresh metadata fetch via WB API (live counterpart to `info()`; same dict shape so callers can swap).
     - `sync(argv=None)` — in-process wrapper around `update_metadata.main()` (Phase 1 pipeline).
     - `_transform_api_indicator(raw)` — maps raw WB-API record → YAML schema v2.0 keys.
-    - `_load_yaml_section()` — graceful degradation: returns `[]` + `logger.warning` when YAML cache missing, instead of raising.
+    - `_load_yaml_section()` — graceful degradation: returns `{}` + `logger.warning` when YAML cache missing, instead of raising. (User-facing functions then surface this as `[]` / `None`.)
     - `WBOPENDATA_YAML_DIR` env-var override for test / alternative deployments.
   - **`WBAPIClient.fetch_indicator_metadata(code)`** added to `src/py/wb_api_client.py` for the live `describe()` path.
   - **`get_data()` auto-merge**: now joins 8 basic country-context fields (region / regionname / adminregion / adminregionname / incomelevel / incomelevelname / lendingtype / lendingtypename) via `countryiso3code` by default; opt-out with `no_basic=True` (or `--no-basic` CLI flag). Mirrors Phase 5 Stata semantics. Cached at module level so repeated calls don't refetch `/country`.
@@ -122,7 +122,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 - Added placeholder `src/y/`, `qa/`, `doc/{architecture,user-guide,roadmap}/` directories
   for upcoming phases.
 
-### Fixed
+### Fixed (Stata Phase 0 drift)
 
 - `.gitignore`: retargeted three rules from `_tests/` to `tests/` to track the Phase 0 directory rename (oversight from Phase 0).
 - `src/y/README.md`: corrected to state that YAML metadata files live in `src/_/` per `wbopendata-dev`'s `src/wbopendata.pkg` convention; `src/y/` is reserved for the `yaml.ado` Stata library landing in Phase 2.
