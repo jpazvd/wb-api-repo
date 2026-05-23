@@ -13,6 +13,13 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Phase 2** — `yaml` Stata frame library (ported verbatim from `wbopendata-dev`):
+  - `src/y/yaml.ado` (v 1.9.2) — dispatcher; subcommands `read`/`write`/`describe`/`list`/`get`/`validate`/`frames`/`clear`/`dir`.
+  - `src/y/yaml_*.ado` — 9 subcommand implementations (~2 000 LOC).
+  - `src/y/yaml{,_examples,_whatsnew}.sthlp` — main help + example gallery + release notes.
+  - `src/y/README.md` — architecture diagram, subcommand reference, supported YAML-feature matrix.
+  - `src/_/__yaml_{collapse,fastread,mataread,tokenize_line}.ado` — Mata-accelerated foundation helpers (988 LOC).
+  - `src/wbopendata.pkg` extended with 17 new file entries (10 `.ado` in `y/`, 3 `.sthlp` in `y/`, 4 `.ado` in `_/`).
 - **Phase 1** — YAML metadata pipeline (ported verbatim from `wbopendata-dev`):
   - `src/py/wb_api_client.py` — HTTP client with retries + pagination; context-manager `WBAPIClient`.
   - `src/py/yaml_generator.py` — transforms WB API JSON → YAML schema v2.0 with SHA256 checksum.
@@ -42,7 +49,6 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added (planned, subsequent phases)
 
-- `yaml` Stata frame library (Phase 2)
 - Discovery commands: `sources`, `alltopics`, `info`, `sync`, paginated `search` (Phase 3)
 - 7-day TTL HTTP cache (Phase 4)
 - Country-context auto-merge + multilingual + publication features (Phases 5–6)
@@ -55,6 +61,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 Initial public state of `wb-api-repo` before alignment work began.
 
 ### Existing
+
 - Stata `wbopendata.ado` v17.0 (24Jan2023) under `_wbopendata/`
 - Python CLI `wb_api_tools.py` with `countries` / `indicators` / `data` subcommands
 - `config.yaml` batch runner via `run_from_config.py`
