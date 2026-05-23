@@ -1,6 +1,8 @@
 *******************************************************************************
-*! __wbod_sources v1.1.2  22Feb2026
+*! __wbod_sources v1.1.3  23May2026
 *! List all World Bank data sources with navigation (Pathway C)
+*! v1.1.3: strtrim() before name/data_availability regex — PyYAML-generated
+*!         YAML indents nested fields, so ^name: regex on rawline missed them
 *******************************************************************************
 
 program define __wbod_sources, rclass
@@ -46,9 +48,9 @@ program define __wbod_sources, rclass
         gen str10 src_avail = ""
 
         replace src_name = strtrim(substr(rawline, strpos(rawline, ":") + 1, .)) ///
-            if regexm(rawline, "^name:")
+            if regexm(strtrim(rawline), "^name:")
         replace src_avail = strtrim(substr(rawline, strpos(rawline, ":") + 1, .)) ///
-            if regexm(rawline, "^data_availability:")
+            if regexm(strtrim(rawline), "^data_availability:")
 
         * Collapse to one row per source
         collapse (firstnm) src_code (firstnm) src_name (firstnm) src_avail, by(src_group)

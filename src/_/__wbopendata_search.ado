@@ -1,5 +1,8 @@
 *******************************************************************************
-*! __wbopendata_search v2.7.0  25Apr2026
+*! __wbopendata_search v2.7.1  23May2026
+*! v2.7.1: Fix topic-id filter false positive on single-digit topics —
+*!         port the strpos==1 / ;X; / regex ;X$ pattern from
+*!         __wbopendata_search_cache (which already had the correct check)
 *! Search indicators from YAML with wildcards, filters, and SMCL nav
 *! v2.7.0: Extract alias/name lookup tables to __wbod_search_aliases helper
 *! v2.6.1: Strip leading zeros from src_id before alias lookup
@@ -263,8 +266,9 @@ program define __wbopendata_search, rclass
         if ("`topic'" != "") {
             gen byte topic_match = 0
             replace topic_match = 1 if field_topic_ids == "`topic'"
-            replace topic_match = 1 if strpos(field_topic_ids, "`topic';") > 0
-            replace topic_match = 1 if strpos(field_topic_ids, ";`topic'") > 0
+            replace topic_match = 1 if strpos(field_topic_ids, "`topic';") == 1
+            replace topic_match = 1 if strpos(field_topic_ids, ";`topic';") > 0
+            replace topic_match = 1 if regexm(field_topic_ids, ";`topic'$")
             keep if topic_match
             drop topic_match
         }

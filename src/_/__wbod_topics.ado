@@ -1,6 +1,8 @@
 *******************************************************************************
-*! __wbod_topics v1.2.2  22Feb2026
+*! __wbod_topics v1.2.3  23May2026
 *! List all World Bank topic categories with navigation (Pathway C)
+*! v1.2.3: strtrim() before name regex — same fix as __wbod_sources v1.1.3
+*!         for PyYAML-generated YAML indented nested fields
 *******************************************************************************
 
 program define __wbod_topics, rclass
@@ -44,7 +46,7 @@ program define __wbod_topics, rclass
         * Extract field values (look for field: value pattern)
         gen str100 topic_name = ""
         replace topic_name = strtrim(substr(rawline, strpos(rawline, ":") + 1, .)) ///
-            if regexm(rawline, "^name:")
+            if regexm(strtrim(rawline), "^name:")
 
         * Collapse to one row per topic
         collapse (firstnm) topic_code (firstnm) topic_name, by(topic_group)
