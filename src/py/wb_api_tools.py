@@ -439,31 +439,40 @@ def _save_df(df, out: Optional[str]) -> None:
     print(f"Wrote: {out}  (rows={len(df):,}, cols={len(df.columns)})")
 
 def build_parser():
+    """Build the ``argparse`` tree for the ``wb_api_tools`` CLI.
+
+    Returns the top-level parser. Subcommands map 1:1 onto the public
+    library surface (see :mod:`wb_discovery`, :func:`get_data`,
+    :func:`enrich_country_context`). Exposed so tests and external
+    callers can introspect the parser without running ``main()``.
+    """
     p = argparse.ArgumentParser(description="World Bank API helper")
     p.add_argument("--verbose", action="store_true", help="Show debug output (verbose)")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     p_c = sub.add_parser("countries", help="Fetch country metadata")
-    p_c.add_argument("--out")
+    p_c.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_i = sub.add_parser("indicators", help="Fetch indicator metadata")
-    p_i.add_argument("--codes")
-    p_i.add_argument("--search")
-    p_i.add_argument("--out")
+    p_i.add_argument("--codes", help="Comma-separated indicator codes (e.g. SP.POP.TOTL,NY.GDP.MKTP.CD)")
+    p_i.add_argument("--search", help="Substring to search across indicator names")
+    p_i.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_d = sub.add_parser("data", help="Fetch indicator data")
-    p_d.add_argument("--indicators", required=True)
-    p_d.add_argument("--countries", default="all")
-    p_d.add_argument("--date")
-    p_d.add_argument("--per-page", type=int, default=DEFAULT_PER_PAGE)
-    p_d.add_argument("--long", action="store_true")
+    p_d.add_argument("--indicators", required=True,
+                     help="Comma-separated indicator codes (e.g. SP.POP.TOTL,NY.GDP.MKTP.CD)")
+    p_d.add_argument("--countries", default="all",
+                     help="Semicolon-separated ISO3 codes (e.g. BRA;USA;IND), 'all', or aggregate code")
+    p_d.add_argument("--date", help="Year or year range (e.g. 2020 or 2010:2020)")
+    p_d.add_argument("--long", action="store_true",
+                     help="Emit long (tidy) format instead of wide")
     p_d.add_argument("--no-basic", action="store_true",
                      help="Skip the 8-field country-context auto-merge (Phase 5 parity)")
     p_d.add_argument("--geo", action="store_true",
                      help="Also merge capital/latitude/longitude (PR C; combinable with --no-basic for geo-only)")
     p_d.add_argument("--language", default=None,
                      help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
-    p_d.add_argument("--out")
+    p_d.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     # --- Discovery subcommands (PR B) --------------------------------
     # All read from src/_/_wbopendata_*.yaml; run `wb-update-metadata`
@@ -472,10 +481,10 @@ def build_parser():
     p_src.add_argument("--limit", type=int, default=20,
                        help="Max sources to show (default 20; pass --all for no cap)")
     p_src.add_argument("--all", action="store_true", help="No limit (equivalent to allsources)")
-    p_src.add_argument("--out")
+    p_src.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_top = sub.add_parser("alltopics", help="List all WB topic categories")
-    p_top.add_argument("--out")
+    p_top.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_info = sub.add_parser("info", help="Show full metadata for one indicator (from YAML cache)")
     p_info.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
@@ -487,26 +496,40 @@ def build_parser():
 
     p_srch = sub.add_parser("search", help="Paginated indicator search")
     p_srch.add_argument("term", nargs="?", default="", help="Substring to search (or empty for browse-mode)")
-    p_srch.add_argument("--page", type=int, default=1)
-    p_srch.add_argument("--limit", type=int, default=20)
+    p_srch.add_argument("--page", type=int, default=1, help="1-based page index (default 1)")
+    p_srch.add_argument("--limit", type=int, default=20, help="Results per page (default 20)")
     p_srch.add_argument("--source", help="Filter by source ID")
     p_srch.add_argument("--topic", help="Filter by topic ID")
     p_srch.add_argument("--field", default="name+description",
                         help='Search field(s): name | description | note | code | name+description | all')
     p_srch.add_argument("--exact", action="store_true", help="Exact code match (use with --field code)")
-    p_srch.add_argument("--out")
+    p_srch.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_sync = sub.add_parser("sync", help="Refresh YAML metadata cache from WB API (Phase 1 pipeline)")
-    p_sync.add_argument("--save-raw", action="store_true", dest="save_raw")
-    p_sync.add_argument("--no-validate", action="store_true", dest="no_validate")
-    p_sync.add_argument("--skip-diff", action="store_true", dest="skip_diff")
-    p_sync.add_argument("--commit", action="store_true")
-    p_sync.add_argument("--tag", action="store_true")
+    p_sync.add_argument("--save-raw", action="store_true", dest="save_raw",
+                        help="Persist raw API JSON snapshots alongside generated YAML")
+    p_sync.add_argument("--no-validate", action="store_true", dest="no_validate",
+                        help="Skip schema validation of generated YAML")
+    p_sync.add_argument("--skip-diff", action="store_true", dest="skip_diff",
+                        help="Skip diff analysis against the previous YAML cache")
+    p_sync.add_argument("--commit", action="store_true",
+                        help="git-commit the regenerated YAML cache when the pipeline succeeds")
+    p_sync.add_argument("--tag", action="store_true",
+                        help="Create a metadata-vYYYYMMDD git tag after committing (requires --commit)")
 
     return p
 
 def main(argv=None):
-    argv = argv or sys.argv[1:]
+    """CLI entrypoint.
+
+    Parses ``argv`` (defaults to :data:`sys.argv` when ``None``),
+    dispatches to the selected subcommand, and writes results to
+    ``--out`` or stdout. Returns ``0`` on success and ``1`` on
+    handled errors; the ``__main__`` guard forwards the value to
+    :func:`sys.exit`.
+    """
+    if argv is None:
+        argv = sys.argv[1:]
     args = build_parser().parse_args(argv)
     # Set global verbose
     global VERBOSE
@@ -523,7 +546,7 @@ def main(argv=None):
         _save_df(df, args.out)
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
-                      date=args.date, per_page=args.per_page, long=args.long,
+                      date=args.date, long=args.long,
                       no_basic=args.no_basic, geo=args.geo, language=args.language)
         # Debug: show fetched data shape and sample if verbose
         if VERBOSE:
