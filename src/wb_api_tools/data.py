@@ -1,17 +1,28 @@
-#!/usr/bin/env python3
+"""World Bank API data-fetch helpers (Python equivalent of the
+Stata ``wbopendata, indicator()`` data-pull surface).
+
+Public surface (re-exported via :mod:`wb_api_tools`):
+    - :func:`get_data` — bulk indicator data with optional country-context auto-merge
+    - :func:`enrich_country_context` — Stata ``match()`` analog for any DataFrame
+    - :func:`get_country_metadata` / :func:`get_indicator_metadata`
+
+Module-level state:
+    - ``VERBOSE`` — global debug flag (set by :func:`wb_api_tools.cli.main`
+      when ``--verbose`` is passed); read by :func:`get_data` to dump
+      URLs + intermediate DataFrames.
+    - ``_BASIC_CONTEXT_CACHE`` / ``_GEO_CONTEXT_CACHE`` — per-process
+      caches of the ``/country`` metadata lookup so multi-call workflows
+      don't re-fetch on every :func:`get_data` invocation.
+"""
+
 from __future__ import annotations
-"""
-wb_api_tools.py — World Bank API helper
-- Country metadata
-- Indicator metadata
-- Indicator data (long/wide)
-- CSV/Parquet/YAML output
-"""
-import sys, time, argparse
+
+import sys, time
 from typing import Dict, Any, Optional, Iterable, List, Tuple
+
 import requests, pandas as pd
 
-# Global verbose flag
+# Global verbose flag (set by wb_api_tools.cli.main when --verbose passed)
 VERBOSE = False
 
 BASE = "https://api.worldbank.org/v2"
@@ -40,7 +51,7 @@ def _request(url: str, params: Optional[Dict[str, Any]] = None, format_type: str
                 import io
                 # Strip BOM if present
                 text = r.text
-                if text.startswith('\ufeff'):
+                if text.startswith(chr(0xfeff)):
                     text = text[1:]
                 df = pd.read_csv(io.StringIO(text))
                 # Convert DataFrame to expected format
@@ -155,7 +166,7 @@ _GEO_CONTEXT_CACHE: Optional[pd.DataFrame] = None
 
 
 def _get_geo_context() -> pd.DataFrame:
-    """Return cached ISO3 → 3-field geographic context lookup table.
+    """Return cached ISO3 -> 3-field geographic context lookup table.
 
     Python equivalent of the Stata Phase-5 `geo` flag. Columns:
       countryiso3code, capital, latitude, longitude
@@ -176,7 +187,7 @@ def _get_geo_context() -> pd.DataFrame:
 
 
 def _get_basic_context() -> pd.DataFrame:
-    """Return cached ISO3 → 8-field basic country context lookup table.
+    """Return cached ISO3 -> 8-field basic country context lookup table.
 
     Python equivalent of the Stata Phase-5 auto-merge surface. Columns:
       countryiso3code, region, regionname, adminregion, adminregionname,
@@ -264,10 +275,10 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
     PR C parity: `geo=True` adds 3 geographic fields (capital, latitude,
     longitude) — supplementary to the basic merge, not exclusive of it.
     Flag matrix:
-        no_basic=False, geo=False  →  8 basic fields           (default)
-        no_basic=False, geo=True   →  8 basic + 3 geo = 11 fields
-        no_basic=True,  geo=True   →  3 geo only
-        no_basic=True,  geo=False  →  no merge (lean output)
+        no_basic=False, geo=False  ->  8 basic fields           (default)
+        no_basic=False, geo=True   ->  8 basic + 3 geo = 11 fields
+        no_basic=True,  geo=True   ->  3 geo only
+        no_basic=True,  geo=False  ->  no merge (lean output)
     """
     if isinstance(indicators, str):
         indicators = [c.strip() for c in indicators.split(",") if c.strip()]
@@ -416,187 +427,3 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
         wide.columns = [col if isinstance(col, str) else col[1] for col in wide.columns.values]
 
         return wide
-
-def _save_df(df, out: Optional[str]) -> None:
-    if not out:
-        print(df.head(20).to_string(index=False))
-        return
-    out = out.strip(); lower = out.lower()
-    if lower.endswith(".csv"):
-        df.to_csv(out, index=False)
-    elif lower.endswith(".parquet"):
-        df.to_parquet(out, index=False)
-    elif lower.endswith(".yaml") or lower.endswith(".yml"):
-        try:
-            import yaml
-        except Exception as e:
-            raise SystemExit("Install PyYAML for YAML output: pip install pyyaml") from e
-        records = df.to_dict(orient="records")
-        with open(out, "w", encoding="utf-8") as f:
-            yaml.safe_dump(records, f, sort_keys=False, allow_unicode=True)
-    else:
-        df.to_csv(out, index=False)
-    print(f"Wrote: {out}  (rows={len(df):,}, cols={len(df.columns)})")
-
-def build_parser():
-    """Build the ``argparse`` tree for the ``wb_api_tools`` CLI.
-
-    Returns the top-level parser. Subcommands map 1:1 onto the public
-    library surface (see :mod:`wb_discovery`, :func:`get_data`,
-    :func:`enrich_country_context`). Exposed so tests and external
-    callers can introspect the parser without running ``main()``.
-    """
-    p = argparse.ArgumentParser(description="World Bank API helper")
-    p.add_argument("--verbose", action="store_true", help="Show debug output (verbose)")
-    sub = p.add_subparsers(dest="cmd", required=True)
-
-    p_c = sub.add_parser("countries", help="Fetch country metadata")
-    p_c.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
-
-    p_i = sub.add_parser("indicators", help="Fetch indicator metadata")
-    p_i.add_argument("--codes", help="Comma-separated indicator codes (e.g. SP.POP.TOTL,NY.GDP.MKTP.CD)")
-    p_i.add_argument("--search", help="Substring to search across indicator names")
-    p_i.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
-
-    p_d = sub.add_parser("data", help="Fetch indicator data")
-    p_d.add_argument("--indicators", required=True,
-                     help="Comma-separated indicator codes (e.g. SP.POP.TOTL,NY.GDP.MKTP.CD)")
-    p_d.add_argument("--countries", default="all",
-                     help="Semicolon-separated ISO3 codes (e.g. BRA;USA;IND), 'all', or aggregate code")
-    p_d.add_argument("--date", help="Year or year range (e.g. 2020 or 2010:2020)")
-    p_d.add_argument("--long", action="store_true",
-                     help="Emit long (tidy) format instead of wide")
-    p_d.add_argument("--no-basic", action="store_true",
-                     help="Skip the 8-field country-context auto-merge (Phase 5 parity)")
-    p_d.add_argument("--geo", action="store_true",
-                     help="Also merge capital/latitude/longitude (PR C; combinable with --no-basic for geo-only)")
-    p_d.add_argument("--language", default=None,
-                     help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
-    p_d.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
-
-    # --- Discovery subcommands (PR B) --------------------------------
-    # All read from src/_/_wbopendata_*.yaml; run `wb-update-metadata`
-    # first or use the `sync` subcommand below.
-    p_src = sub.add_parser("sources", help="List WB data sources")
-    p_src.add_argument("--limit", type=int, default=20,
-                       help="Max sources to show (default 20; pass --all for no cap)")
-    p_src.add_argument("--all", action="store_true", help="No limit (equivalent to allsources)")
-    p_src.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
-
-    p_top = sub.add_parser("alltopics", help="List all WB topic categories")
-    p_top.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
-
-    p_info = sub.add_parser("info", help="Show full metadata for one indicator (from YAML cache)")
-    p_info.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
-
-    p_desc = sub.add_parser("describe", help="Fetch fresh metadata for one indicator (from WB API)")
-    p_desc.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
-    p_desc.add_argument("--language", default=None,
-                        help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
-
-    p_srch = sub.add_parser("search", help="Paginated indicator search")
-    p_srch.add_argument("term", nargs="?", default="", help="Substring to search (or empty for browse-mode)")
-    p_srch.add_argument("--page", type=int, default=1, help="1-based page index (default 1)")
-    p_srch.add_argument("--limit", type=int, default=20, help="Results per page (default 20)")
-    p_srch.add_argument("--source", help="Filter by source ID")
-    p_srch.add_argument("--topic", help="Filter by topic ID")
-    p_srch.add_argument("--field", default="name+description",
-                        help='Search field(s): name | description | note | code | name+description | all')
-    p_srch.add_argument("--exact", action="store_true", help="Exact code match (use with --field code)")
-    p_srch.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
-
-    p_sync = sub.add_parser("sync", help="Refresh YAML metadata cache from WB API (Phase 1 pipeline)")
-    p_sync.add_argument("--save-raw", action="store_true", dest="save_raw",
-                        help="Persist raw API JSON snapshots alongside generated YAML")
-    p_sync.add_argument("--no-validate", action="store_true", dest="no_validate",
-                        help="Skip schema validation of generated YAML")
-    p_sync.add_argument("--skip-diff", action="store_true", dest="skip_diff",
-                        help="Skip diff analysis against the previous YAML cache")
-    p_sync.add_argument("--commit", action="store_true",
-                        help="git-commit the regenerated YAML cache when the pipeline succeeds")
-    p_sync.add_argument("--tag", action="store_true",
-                        help="Create a metadata-vYYYYMMDD git tag after committing (requires --commit)")
-
-    return p
-
-def main(argv=None):
-    """CLI entrypoint.
-
-    Parses ``argv`` (defaults to :data:`sys.argv` when ``None``),
-    dispatches to the selected subcommand, and writes results to
-    ``--out`` or stdout. Returns ``0`` on success and ``1`` on
-    handled errors; the ``__main__`` guard forwards the value to
-    :func:`sys.exit`.
-    """
-    if argv is None:
-        argv = sys.argv[1:]
-    args = build_parser().parse_args(argv)
-    # Set global verbose
-    global VERBOSE
-    VERBOSE = args.verbose
-    # Debug: print parsed arguments if verbose
-    if VERBOSE:
-        print(f"Debug-main args: cmd={args.cmd}, indicators={getattr(args, 'indicators', None)}, countries={getattr(args, 'countries', None)}, date={getattr(args, 'date', None)}, long={getattr(args, 'long', None)}, out={getattr(args, 'out', None)}")
-    if args.cmd == "countries":
-        df = get_country_metadata()
-        _save_df(df, args.out)
-    elif args.cmd == "indicators":
-        codes = [c.strip() for c in (args.codes or "").split(",") if c.strip()] or None
-        df = get_indicator_metadata(codes=codes, search=args.search)
-        _save_df(df, args.out)
-    elif args.cmd == "data":
-        df = get_data(indicators=args.indicators, countries=args.countries,
-                      date=args.date, long=args.long,
-                      no_basic=args.no_basic, geo=args.geo, language=args.language)
-        # Debug: show fetched data shape and sample if verbose
-        if VERBOSE:
-            print(f"Debug-final df shape: {df.shape}")
-            if not df.empty:
-                print(df.head(5).to_string(index=False))
-        _save_df(df, args.out)
-    elif args.cmd in ("sources", "alltopics", "info", "describe", "search", "sync"):
-        # PR B discovery subcommands — delegate to wb_discovery
-        from wb_discovery import sources, allsources, alltopics, info, describe, search, sync
-        if args.cmd == "sources":
-            recs = allsources() if args.all else sources(limit=args.limit)
-            df = pd.DataFrame.from_records(recs)
-            _save_df(df, args.out)
-        elif args.cmd == "alltopics":
-            df = pd.DataFrame.from_records(alltopics())
-            _save_df(df, args.out)
-        elif args.cmd == "info":
-            rec = info(args.id)
-            if rec is None:
-                print(f"Indicator not found in YAML cache: {args.id}")
-                return 1
-            for k, v in rec.items():
-                print(f"  {k}: {v}")
-        elif args.cmd == "describe":
-            rec = describe(args.id, language=args.language)
-            if rec is None:
-                print(f"Indicator not found via WB API: {args.id}")
-                return 1
-            for k, v in rec.items():
-                print(f"  {k}: {v}")
-        elif args.cmd == "search":
-            res = search(args.term, page=args.page, limit=args.limit,
-                         source=args.source, topic=args.topic,
-                         field=args.field, exact=args.exact)
-            print(f"  total={res['total']}  page={res['page']}/{res['pages']}  limit={res['limit']}")
-            if args.out:
-                _save_df(pd.DataFrame.from_records(res['results']), args.out)
-            else:
-                for r in res['results']:
-                    print(f"  [{r.get('code'):<20}] {r.get('name')}")
-        elif args.cmd == "sync":
-            sub_argv = []
-            if args.save_raw:    sub_argv.append("--save-raw")
-            if args.no_validate: sub_argv.append("--no-validate")
-            if args.skip_diff:   sub_argv.append("--skip-diff")
-            if args.commit:      sub_argv.append("--commit")
-            if args.tag:         sub_argv.append("--tag")
-            return sync(sub_argv)
-    return 0
-
-if __name__ == "__main__":
-    sys.exit(main() or 0)

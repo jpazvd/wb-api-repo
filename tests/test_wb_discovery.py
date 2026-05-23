@@ -1,11 +1,9 @@
-"""Tests for src/py/wb_discovery.py — the Python discovery API
+"""Tests for wb_api_tools.discovery — the Python discovery API
 (PR B; Python equivalent of the Stata wbopendata discovery subcommands).
 """
 
 from __future__ import annotations
 
-import os
-import sys
 from pathlib import Path
 from typing import Dict
 from unittest import mock
@@ -13,8 +11,7 @@ from unittest import mock
 import pytest
 import yaml
 
-# Make src/py importable
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src", "py")))
+from wb_api_tools import discovery as wd
 
 
 @pytest.fixture
@@ -72,30 +69,25 @@ def yaml_dir(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
 # --- sources / allsources / alltopics ---------------------------------
 
 def test_sources_default_returns_sorted(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.sources()
     assert [x["code"] for x in r] == ["1", "2", "11"]
 
 
 def test_sources_limit_caps(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.sources(limit=2)
     assert len(r) == 2 and r[0]["code"] == "1"
 
 
 def test_allsources_no_cap(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     assert len(wd.allsources()) == 3
 
 
 def test_alltopics_sorted(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     assert [x["code"] for x in wd.alltopics()] == ["1", "3"]
 
 
 def test_missing_yaml_returns_empty(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv("WBOPENDATA_YAML_DIR", str(tmp_path / "nope"))
-    import wb_discovery as wd
     assert wd.sources() == []
     assert wd.alltopics() == []
 
@@ -103,84 +95,71 @@ def test_missing_yaml_returns_empty(tmp_path: Path, monkeypatch: pytest.MonkeyPa
 # --- info -------------------------------------------------------------
 
 def test_info_exact_case(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.info("SP.POP.TOTL")
     assert r is not None and r["name"] == "Population, total"
 
 
 def test_info_lowercase_falls_back_to_upper(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.info("sp.pop.totl")
     assert r is not None and r["code"] == "SP.POP.TOTL"
 
 
 def test_info_unknown_returns_none(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     assert wd.info("NOPE.NOT.HERE") is None
 
 
 def test_info_empty_short_circuit(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     assert wd.info("") is None
 
 
 # --- search -----------------------------------------------------------
 
 def test_search_substring_across_name_and_description(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search("population")
     assert r["total"] == 2
     assert [x["code"] for x in r["results"]] == ["SP.POP.0014", "SP.POP.TOTL"]
 
 
 def test_search_topic_filter_browse_mode(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search(topic="8")
     assert r["total"] == 2
     assert all("8" in x["topic_ids"] for x in r["results"])
 
 
 def test_search_source_filter(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search(source="11")
     assert r["total"] == 1
     assert r["results"][0]["code"] == "EG.USE.ELEC"
 
 
 def test_search_term_plus_topic_intersection(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search("total", topic="8")
     assert r["total"] == 1
     assert r["results"][0]["code"] == "SP.POP.TOTL"
 
 
 def test_search_pagination(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search(topic="8", limit=1, page=2)
     assert r["pages"] == 2 and r["page"] == 2 and len(r["results"]) == 1
     assert r["results"][0]["code"] == "SP.POP.TOTL"
 
 
 def test_search_exact_code(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search("SP.POP.TOTL", field="code", exact=True)
     assert r["total"] == 1
 
 
 def test_search_page_overflow_clamps_to_last(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search("population", page=999)
     assert r["page"] == 1
 
 
 def test_search_no_results(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search("nonexistent_term_xyz")
     assert r["total"] == 0 and r["pages"] == 0 and r["results"] == []
 
 
 def test_search_field_description_only(yaml_dir: Path) -> None:
-    import wb_discovery as wd
     r = wd.search("Gross", field="description")
     assert r["total"] == 1 and r["results"][0]["code"] == "NY.GDP.MKTP.CD"
 
@@ -201,7 +180,6 @@ def api_record() -> Dict:
 
 
 def test_transform_api_indicator_shape(api_record: Dict) -> None:
-    import wb_discovery as wd
     out = wd._transform_api_indicator(api_record)
     assert out["code"] == "SP.POP.TOTL"
     assert out["topic_ids"] == ["8", "19"]
@@ -210,33 +188,28 @@ def test_transform_api_indicator_shape(api_record: Dict) -> None:
 
 
 def test_describe_happy_path(api_record: Dict) -> None:
-    import wb_discovery as wd
-    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata", return_value=api_record):
+    with mock.patch("wb_api_tools.api_client.WBAPIClient.fetch_indicator_metadata", return_value=api_record):
         r = wd.describe("SP.POP.TOTL")
     assert r is not None and r["code"] == "SP.POP.TOTL"
 
 
 def test_describe_empty_short_circuit() -> None:
-    import wb_discovery as wd
     assert wd.describe("") is None
 
 
 def test_describe_unknown_code_returns_none() -> None:
-    import wb_discovery as wd
-    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata", return_value=None):
+    with mock.patch("wb_api_tools.api_client.WBAPIClient.fetch_indicator_metadata", return_value=None):
         assert wd.describe("NOPE") is None
 
 
 def test_describe_network_error_returns_none() -> None:
-    import wb_discovery as wd
-    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata",
+    with mock.patch("wb_api_tools.api_client.WBAPIClient.fetch_indicator_metadata",
                     side_effect=RuntimeError("boom")):
         assert wd.describe("SP.POP.TOTL") is None
 
 
 def test_describe_and_info_have_same_keys(yaml_dir: Path, api_record: Dict) -> None:
     """The whole point of describe(): drop-in compatible with info()."""
-    import wb_discovery as wd
     info_keys = set(wd.info("SP.POP.TOTL").keys())
     describe_keys = set(wd._transform_api_indicator(api_record).keys())
     assert info_keys == describe_keys
@@ -245,25 +218,23 @@ def test_describe_and_info_have_same_keys(yaml_dir: Path, api_record: Dict) -> N
 # --- describe() language= passthrough (PR C C4) -----------------------
 
 def test_describe_language_none_uses_default_endpoint() -> None:
-    import wb_discovery as wd
     captured = {}
     def cap(self, code, language=None):
         captured["language"] = language
         return {"id": code, "name": "X", "source": {}, "sourceNote": "",
                 "sourceOrganization": "", "topics": []}
-    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata", cap):
+    with mock.patch("wb_api_tools.api_client.WBAPIClient.fetch_indicator_metadata", cap):
         wd.describe("SP.POP.TOTL")
     assert captured["language"] is None
 
 
 def test_describe_language_spanish_passes_through() -> None:
-    import wb_discovery as wd
     captured = {}
     def cap(self, code, language=None):
         captured["language"] = language
         return {"id": code, "name": "X", "source": {}, "sourceNote": "",
                 "sourceOrganization": "", "topics": []}
-    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata", cap):
+    with mock.patch("wb_api_tools.api_client.WBAPIClient.fetch_indicator_metadata", cap):
         wd.describe("SP.POP.TOTL", language="es")
     assert captured["language"] == "es"
 
@@ -271,26 +242,26 @@ def test_describe_language_spanish_passes_through() -> None:
 # --- WBAPIClient URL construction with language (PR C C4) -------------
 
 def test_wbapi_client_url_includes_language_when_set() -> None:
-    import wb_api_client as wc
+    from wb_api_tools import api_client as wc
     client = wc.WBAPIClient()
     captured = []
     def capreq(self, url, params):
         captured.append(url)
         return [{"pages": 1}, [{"id": "SP.POP.TOTL"}]]
-    with mock.patch("wb_api_client.WBAPIClient._make_request", capreq):
+    with mock.patch("wb_api_tools.api_client.WBAPIClient._make_request", capreq):
         client.fetch_indicator_metadata("SP.POP.TOTL", language="es")
     assert "/es/indicator/SP.POP.TOTL" in captured[0]
 
 
 @pytest.mark.parametrize("language", [None, "", "en", "EN"])
 def test_wbapi_client_url_unprefixed_for_english_variants(language: str) -> None:
-    import wb_api_client as wc
+    from wb_api_tools import api_client as wc
     client = wc.WBAPIClient()
     captured = []
     def capreq(self, url, params):
         captured.append(url)
         return [{"pages": 1}, [{"id": "SP.POP.TOTL"}]]
-    with mock.patch("wb_api_client.WBAPIClient._make_request", capreq):
+    with mock.patch("wb_api_tools.api_client.WBAPIClient._make_request", capreq):
         client.fetch_indicator_metadata("SP.POP.TOTL", language=language)
     assert "/es/" not in captured[0] and "/en/" not in captured[0]
     assert "/indicator/SP.POP.TOTL" in captured[0]

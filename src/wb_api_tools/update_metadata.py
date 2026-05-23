@@ -11,15 +11,11 @@ from typing import Any, Dict
 
 import yaml
 
-# Add scripts directory to path
-SCRIPT_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPT_DIR))
-
-from diff_analyzer import DiffAnalyzer
-from git_manager import GitManager
-from schema_validator import SchemaValidator
-from wb_api_client import WBAPIClient
-from yaml_generator import YAMLGenerator
+from .diff_analyzer import DiffAnalyzer
+from .git_manager import GitManager
+from .schema_validator import SchemaValidator
+from .api_client import WBAPIClient
+from .yaml_generator import YAMLGenerator
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "config_update.yaml"

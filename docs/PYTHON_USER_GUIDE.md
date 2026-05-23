@@ -1,7 +1,7 @@
 # Python User Guide
 
 The Python equivalent of the Stata `wbopendata.sthlp` help file. Documents
-the full Python surface that ships in `src/py/`, organised by intent.
+the full Python surface that ships in `wb_api_tools` (PyPI), organised by intent.
 
 For the WB-API CLI itself, see also [README.md](../README.md) and the
 captured demo transcript in [PYTHON_DEMO.md](PYTHON_DEMO.md).
@@ -10,39 +10,38 @@ captured demo transcript in [PYTHON_DEMO.md](PYTHON_DEMO.md).
 
 | What you want                  | Where it lives                                    |
 | ------------------------------ | ------------------------------------------------- |
-| Browse what's available        | `wb_discovery.sources / alltopics / search`       |
-| Look up one indicator          | `wb_discovery.info` (cache) or `describe` (live)  |
+| Browse what's available        | `wb_api_tools.{sources, alltopics, search}`       |
+| Look up one indicator          | `wb_api_tools.info` (cache) or `describe` (live)  |
 | Pull tidy data                 | `wb_api_tools.get_data(...)`                      |
 | Add country context to a frame | `wb_api_tools.enrich_country_context(df, ...)`    |
-| Wrap text for Stata graphs     | `wb_text.wrap / wrap_lines / truncate`            |
-| Refresh the YAML cache         | `wb_discovery.sync(...)` or `wb_api_tools sync`   |
+| Wrap text for Stata graphs     | `wb_api_tools.{wrap, wrap_lines, truncate}`            |
+| Refresh the YAML cache         | `wb_api_tools.sync(...)` or `wb-api-tools sync` (CLI)   |
 
-The PR B + PR C surface (`wb_discovery`, `wb_text`, `wb_api_tools.get_data`,
-`enrich_country_context`) is fully docstring'd; this guide is the
-high-level map. Legacy `make_wb_metadata_*` builders and one-off
-example scripts remain undocumented by design.
+The PR B + PR C surface (`wb_api_tools.discovery`, `wb_api_tools.text`,
+`wb_api_tools.get_data`, `enrich_country_context`) is fully docstring'd;
+this guide is the high-level map. Legacy `make_wb_metadata_*` builders
+and one-off example scripts remain undocumented by design.
 
-> **Imports**: this repo does not ship as an installable package. The
-> tests add `src/py` to `sys.path` and then `import wb_discovery as wd`.
-> To copy/paste the examples below into a script or notebook, do the
-> same — either set `PYTHONPATH=src/py` in your environment, or insert
-> the path at runtime:
+> **Install**: `pip install wb-api-tools` (or `pip install -e ".[test]"`
+> from a git checkout for dev mode). After install, the package is
+> importable directly:
 >
 > ```python
-> import sys; sys.path.insert(0, "src/py")
-> import wb_discovery as wd               # then the examples below work
-> from wb_api_tools import get_data, enrich_country_context
-> import wb_text as wt
+> import wb_api_tools as wb                            # top-level (recommended)
+> # or use submodule aliases:
+> from wb_api_tools import discovery as wd
+> from wb_api_tools import data as t                   # for get_data, enrich_country_context
+> from wb_api_tools import text as wt                  # for wrap, wrap_lines, truncate
 > ```
 
 ---
 
 ## 1. Library API
 
-### `wb_discovery` — read from the YAML cache
+### `wb_api_tools.discovery` — read from the YAML cache
 
 ```python
-import wb_discovery as wd      # after sys.path setup above
+from wb_api_tools import discovery as wd
 
 wd.sources(limit=20)         # first 20 sources, sorted by id
 wd.allsources()              # uncapped (71 today)
@@ -64,7 +63,7 @@ Notes:
 - `sync()` refreshes the cache by hitting the live WB API and invalidates
   `_SECTION_CACHE` automatically on success.
 
-### `wb_discovery.describe` — live metadata
+### `wb_api_tools.describe` — live metadata
 
 ```python
 wd.describe("SP.POP.TOTL")                    # English (default endpoint)
@@ -77,7 +76,7 @@ Returns the same key set as `info()` (verified by
 ### `wb_api_tools.get_data` — indicator data
 
 ```python
-from wb_api_tools import get_data      # after sys.path setup above
+from wb_api_tools import get_data
 
 # DEFAULT — auto-merges 8 country-context fields (region, income, ...)
 df = get_data(["SP.POP.TOTL"], "BRA;USA;IND", date="2020")
@@ -114,7 +113,7 @@ Attach the same 8 (or 8+3) context columns to any user DataFrame keyed
 by ISO3:
 
 ```python
-from wb_api_tools import enrich_country_context      # after sys.path setup above
+from wb_api_tools import enrich_country_context
 import pandas as pd
 
 user_df = pd.DataFrame({"iso3": ["BRA","USA","IND","DEU","JPN"],
@@ -128,10 +127,10 @@ The input frame is **not** mutated (verified by
 `test_enrich_country_context_input_not_mutated`). Raises `KeyError`
 if `iso_col` is missing.
 
-### `wb_text` — text wrapping for publication graphs
+### `wb_api_tools.text` — text wrapping for publication graphs
 
 ```python
-import wb_text as wt      # after sys.path setup above
+from wb_api_tools import text as wt
 
 s = "GDP per capita (current US$) — Gross domestic product divided ..."
 wt.wrap(s, width=60, fmt="stack")    # '"line1" "line2" ...' (graph title())
@@ -150,11 +149,12 @@ clamps the suffix when `width <= len(suffix)`.
 
 ## 2. CLI reference
 
-The library above is mirrored by `src/py/wb_api_tools.py` as a CLI.
-Run `python src/py/wb_api_tools.py --help` for the live tree.
+The library above is mirrored by the `wb-api-tools` console script
+(installed via `pip install wb-api-tools`). Run `wb-api-tools --help`
+for the live tree (or `python -m wb_api_tools --help`).
 
 ```text
-python src/py/wb_api_tools.py <subcommand> [options]
+wb-api-tools <subcommand> [options]
 
 Subcommands:
   countries    Fetch country metadata
@@ -168,27 +168,27 @@ Subcommands:
   sync         Refresh YAML cache (--save-raw --no-validate --skip-diff --commit --tag)
 ```
 
-Every flag has a `help=` string; `python src/py/wb_api_tools.py <cmd> --help`
+Every flag has a `help=` string; `wb-api-tools <cmd> --help`
 on any subcommand is the source of truth.
 
 ### Common patterns
 
 ```bash
 # Discovery
-python src/py/wb_api_tools.py sources --limit 5
-python src/py/wb_api_tools.py alltopics
-python src/py/wb_api_tools.py info SP.POP.TOTL
-python src/py/wb_api_tools.py describe SP.POP.TOTL --language es
-python src/py/wb_api_tools.py search "poverty headcount" --limit 5
+wb-api-tools sources --limit 5
+wb-api-tools alltopics
+wb-api-tools info SP.POP.TOTL
+wb-api-tools describe SP.POP.TOTL --language es
+wb-api-tools search "poverty headcount" --limit 5
 
 # Data with auto-merge variants
-python src/py/wb_api_tools.py data --indicators SP.POP.TOTL --countries "BRA;USA;IND" --date 2020 --out pop.csv
-python src/py/wb_api_tools.py data --indicators SP.POP.TOTL --countries BRA --date 2020 --no-basic --out pop_lean.csv
-python src/py/wb_api_tools.py data --indicators SP.POP.TOTL --countries BRA --date 2020 --geo --out pop_geo.csv
+wb-api-tools data --indicators SP.POP.TOTL --countries "BRA;USA;IND" --date 2020 --out pop.csv
+wb-api-tools data --indicators SP.POP.TOTL --countries BRA --date 2020 --no-basic --out pop_lean.csv
+wb-api-tools data --indicators SP.POP.TOTL --countries BRA --date 2020 --geo --out pop_geo.csv
 
 # Refresh metadata cache
-python src/py/wb_api_tools.py sync
-python src/py/wb_api_tools.py sync --commit --tag         # also git-commit + tag
+wb-api-tools sync
+wb-api-tools sync --commit --tag         # also git-commit + tag
 ```
 
 ---
@@ -212,7 +212,7 @@ PYTHONIOENCODING=utf-8 python -m pytest tests/ -v
 ### Live demo
 
 ```bash
-PYTHONIOENCODING=utf-8 python src/py/examples/demo_pr_b_c.py
+PYTHONIOENCODING=utf-8 python examples/demo_pr_b_c.py
 ```
 
 Runs all six surfaces against the real YAML cache and the live API in
@@ -224,28 +224,33 @@ one ~15 s run. The captured transcript lives in
 ## 4. Where things live
 
 ```text
-src/py/
-├── wb_api_client.py     # WBAPIClient (low-level HTTP, retries, language URL)
-├── wb_api_tools.py      # get_data, enrich_country_context, CLI entrypoint
-├── wb_discovery.py      # sources, alltopics, info, search, describe, sync
-├── wb_text.py           # wrap, wrap_lines, truncate
-├── yaml_generator.py    # YAML cache writer (indicators/sources/topics)
-├── schema_validator.py  # JSON-Schema validation of generated YAML
-├── update_metadata.py   # orchestrator behind `sync()`
-├── diff_analyzer.py     # before/after YAML diff for sync runs
-├── git_manager.py       # stage/commit/tag helpers for sync --commit --tag
-├── run_from_config.py   # batch data pulls from config.yaml
-├── make_wb_metadata_*.py# legacy YAML/CSV builders (pre-PR-B)
-└── examples/
-    ├── demo_pr_b_c.py            # 7-section walkthrough (live + cache)
-    └── generate_age_sex_codes.py # population indicator code generator
+src/wb_api_tools/                # the installable Python package
+├── __init__.py                  # public API re-exports + __version__
+├── __main__.py                  # `python -m wb_api_tools` entry point
+├── api_client.py                # WBAPIClient (low-level HTTP, retries, language URL)
+├── cache.py                     # XDG-aware cache dir resolution
+├── cli.py                       # build_parser, main — entry point for `wb-api-tools`
+├── data.py                      # get_data, enrich_country_context, get_*_metadata
+├── discovery.py                 # sources, alltopics, info, search, describe, sync
+├── text.py                      # wrap, wrap_lines, truncate
+├── yaml_generator.py            # YAML cache writer (indicators/sources/topics)
+├── schema_validator.py          # JSON-Schema validation of generated YAML
+├── update_metadata.py           # orchestrator behind `sync()`
+├── diff_analyzer.py             # before/after YAML diff for sync runs
+├── git_manager.py               # stage/commit/tag helpers for sync --commit --tag
+├── run_from_config.py           # batch data pulls from config.yaml
+└── make_wb_metadata_*.py        # legacy YAML/CSV builders (pre-PR-B)
 
-src/_/                                       # YAML metadata cache
-├── _wbopendata_indicators.yaml  (18 MB, 29,511 indicators)
-├── _wbopendata_sources.yaml     (12 KB, 71 sources)
-└── _wbopendata_topics.yaml      (15 KB, 21 topics)
+examples/                        # not part of the package (repo only)
+├── demo_pr_b_c.py               # 7-section walkthrough (live + cache)
+└── generate_age_sex_codes.py    # population indicator code generator
 
-config/
+~/.cache/wbopendata/             # YAML metadata cache (per user, XDG)
+├── _wbopendata_indicators.yaml  # ~18 MB, 29,511 indicators
+├── _wbopendata_sources.yaml     # ~12 KB, 71 sources
+└── _wbopendata_topics.yaml      # ~15 KB, 21 topics
+
+config/                          # not part of the package (dev-time only)
 ├── config_update.yaml           # sync pipeline settings
 └── schema_yaml_v2.json          # JSON-Schema for generated YAML
 ```
