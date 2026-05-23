@@ -240,3 +240,57 @@ def test_describe_and_info_have_same_keys(yaml_dir: Path, api_record: Dict) -> N
     info_keys = set(wd.info("SP.POP.TOTL").keys())
     describe_keys = set(wd._transform_api_indicator(api_record).keys())
     assert info_keys == describe_keys
+
+
+# --- describe() language= passthrough (PR C C4) -----------------------
+
+def test_describe_language_none_uses_default_endpoint() -> None:
+    import wb_discovery as wd
+    captured = {}
+    def cap(self, code, language=None):
+        captured["language"] = language
+        return {"id": code, "name": "X", "source": {}, "sourceNote": "",
+                "sourceOrganization": "", "topics": []}
+    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata", cap):
+        wd.describe("SP.POP.TOTL")
+    assert captured["language"] is None
+
+
+def test_describe_language_spanish_passes_through() -> None:
+    import wb_discovery as wd
+    captured = {}
+    def cap(self, code, language=None):
+        captured["language"] = language
+        return {"id": code, "name": "X", "source": {}, "sourceNote": "",
+                "sourceOrganization": "", "topics": []}
+    with mock.patch("wb_api_client.WBAPIClient.fetch_indicator_metadata", cap):
+        wd.describe("SP.POP.TOTL", language="es")
+    assert captured["language"] == "es"
+
+
+# --- WBAPIClient URL construction with language (PR C C4) -------------
+
+def test_wbapi_client_url_includes_language_when_set() -> None:
+    import wb_api_client as wc
+    client = wc.WBAPIClient()
+    captured = []
+    def capreq(self, url, params):
+        captured.append(url)
+        return [{"pages": 1}, [{"id": "SP.POP.TOTL"}]]
+    with mock.patch("wb_api_client.WBAPIClient._make_request", capreq):
+        client.fetch_indicator_metadata("SP.POP.TOTL", language="es")
+    assert "/es/indicator/SP.POP.TOTL" in captured[0]
+
+
+@pytest.mark.parametrize("language", [None, "", "en", "EN"])
+def test_wbapi_client_url_unprefixed_for_english_variants(language: str) -> None:
+    import wb_api_client as wc
+    client = wc.WBAPIClient()
+    captured = []
+    def capreq(self, url, params):
+        captured.append(url)
+        return [{"pages": 1}, [{"id": "SP.POP.TOTL"}]]
+    with mock.patch("wb_api_client.WBAPIClient._make_request", capreq):
+        client.fetch_indicator_metadata("SP.POP.TOTL", language=language)
+    assert "/es/" not in captured[0] and "/en/" not in captured[0]
+    assert "/indicator/SP.POP.TOTL" in captured[0]
