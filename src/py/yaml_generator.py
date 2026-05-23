@@ -20,20 +20,34 @@ logger = logging.getLogger(__name__)
 
 class YAMLGenerator:
     """Generate YAML files from WB API data"""
-    
+
     SCHEMA_VERSION = "2.0.0"
     GENERATOR_VERSION = SCHEMA_VERSION
-    
-    def __init__(self, output_dir: Path | None = None):
+
+    DEFAULT_FILENAMES = {
+        "indicators": "_wbopendata_indicators.yaml",
+        "sources": "_wbopendata_sources.yaml",
+        "topics": "_wbopendata_topics.yaml",
+    }
+
+    def __init__(self, output_dir: Path | None = None, filenames: Dict[str, str] | None = None):
         """
         Initialize YAML generator
-        
+
         Args:
-            output_dir: Directory for output YAML files
+            output_dir: Directory for output YAML files (default: wb-api-repo/src/_)
+            filenames: Per-target filename override dict with keys
+                       'indicators', 'sources', 'topics'. Missing keys fall
+                       back to DEFAULT_FILENAMES. Lets update_metadata.py
+                       honour config_update.yaml's yaml_output.*_file keys.
         """
         default_dir = Path(__file__).resolve().parents[2] / "src" / "_"
         self.output_dir = Path(output_dir) if output_dir else default_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
+        merged = dict(self.DEFAULT_FILENAMES)
+        if filenames:
+            merged.update({k: v for k, v in filenames.items() if v})
+        self.filenames = merged
     
     def generate_all(self, indicators: List[Dict], sources: List[Dict], 
                      topics: List[Dict]) -> Dict[str, Path]:
@@ -149,7 +163,7 @@ class YAMLGenerator:
         yaml_data['_metadata']['checksum_sha256'] = checksum
 
         # Write to file (this will include the checksum field)
-        output_file = self.output_dir / '_wbopendata_indicators.yaml'
+        output_file = self.output_dir / self.filenames["indicators"]
         self._write_yaml(yaml_data, output_file)
         
         logger.info(f"Generated {output_file} ({output_file.stat().st_size:,} bytes)")
@@ -182,7 +196,7 @@ class YAMLGenerator:
                 'metadata_availability': src.get('metadataavailability', '')
             }
         
-        output_file = self.output_dir / '_wbopendata_sources.yaml'
+        output_file = self.output_dir / self.filenames["sources"]
         self._write_yaml(yaml_data, output_file)
         
         logger.info(f"Generated {output_file} ({output_file.stat().st_size:,} bytes)")
@@ -212,7 +226,7 @@ class YAMLGenerator:
                 'description': self._clean_text(topic.get('sourceNote', ''))
             }
         
-        output_file = self.output_dir / '_wbopendata_topics.yaml'
+        output_file = self.output_dir / self.filenames["topics"]
         self._write_yaml(yaml_data, output_file)
         
         logger.info(f"Generated {output_file} ({output_file.stat().st_size:,} bytes)")

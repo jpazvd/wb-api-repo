@@ -151,8 +151,17 @@ def main():
         api_timeout = wb_cfg.get("timeout", WBAPIClient.DEFAULT_TIMEOUT)
         per_page = wb_cfg.get("per_page", 10000)
 
+        # Pull per-target filenames from config so yaml_output.*_file
+        # overrides are honoured (was a no-op before — generator hardcoded).
+        yaml_cfg = config.get("yaml_output", {})
+        filenames = {
+            "indicators": yaml_cfg.get("indicators_file"),
+            "sources":    yaml_cfg.get("sources_file"),
+            "topics":     yaml_cfg.get("topics_file"),
+        }
+
         with WBAPIClient(timeout=api_timeout) as api_client:
-            yaml_gen = YAMLGenerator(output_dir=base_dir)
+            yaml_gen = YAMLGenerator(output_dir=base_dir, filenames=filenames)
 
             # Fetch data from WB API
             logger.info("\n[1/5] Fetching data from World Bank API...")
