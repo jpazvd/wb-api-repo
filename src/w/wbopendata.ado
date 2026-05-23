@@ -1,7 +1,11 @@
 *******************************************************************************
-* wbopendata             
-*! v 17.0  	 24Jan2023               by Joao Pedro Azevedo
-* 	Create region metadata
+* wbopendata
+*! v 17.1.0  	 23May2026               by Joao Pedro Azevedo
+* 	v17.1.0: Phase 3 — discovery commands wired in dispatcher:
+* 	         sources / allsources / alltopics / search() / info() / sync (dryrun)
+* 	         Calls new __wbod_* helpers (Tiers 1-3 + transitive deps).
+* 	         `sync replace` (apply changes) deferred to Phase 4.
+* 	v17.0:  Create region metadata (24Jan2023)
 *******************************************************************************
 
 program def wbopendata, rclass
@@ -61,6 +65,19 @@ version 9.0
 							latitude 			///
 							longitude 			///
 							countryname			///
+							SOURCES                    ///
+							ALLSOURCES                 ///
+							ALLTOPICS                  ///
+							SEARCH(string)             ///
+							LIMIT(string)              ///
+							PAGE(string)               ///
+							SEARCHSOURCE(string)       ///
+							SEARCHTOPIC(string)        ///
+							SEARCHFIELD(string)        ///
+							EXACT                      ///
+							INFO(string)               ///
+							SYNC                       ///
+							REPLACE                    ///
                  ]
 
 
@@ -71,6 +88,72 @@ version 9.0
 
 
 local indicator `indicators'
+
+	* ------------------------------------------------------------------
+	* Phase 3 (v17.1.0): discovery commands + dryrun sync
+	* ------------------------------------------------------------------
+	local limit_specified = ("`limit'" != "")
+	local limit_val = 20
+	if (`limit_specified') {
+		local limit_val = real("`limit'")
+		if (missing(`limit_val') | `limit_val' <= 0) local limit_val = 20
+	}
+	local page_val = 1
+	if ("`page'" != "") {
+		local page_val = real("`page'")
+		if (missing(`page_val') | `page_val' < 1 | `page_val' != int(`page_val')) {
+			di as err "option page() incorrectly specified -- must be a positive integer"
+			exit 198
+		}
+	}
+
+	local has_search_filter = ("`searchsource'" != "" | "`searchtopic'" != "")
+	if ("`sources'" != "" | "`allsources'" != "" | "`alltopics'" != "" | "`search'" != "" | `has_search_filter' | "`info'" != "") {
+		if ("`sources'" != "") {
+			noisily __wbod_sources, limit(`limit_val')
+			return add
+			exit _rc
+		}
+		if ("`allsources'" != "") {
+			if (`limit_specified') noisily __wbod_sources, limit(`limit_val')
+			else                   noisily __wbod_sources
+			return add
+			exit _rc
+		}
+		if ("`alltopics'" != "") {
+			if (`limit_specified') noisily __wbod_topics, limit(`limit_val')
+			else                   noisily __wbod_topics
+			return add
+			exit _rc
+		}
+		if ("`search'" != "" | `has_search_filter') {
+			noisily __wbod_search "`search'", limit(`limit_val') page(`page_val') ///
+				source("`searchsource'") topic("`searchtopic'") ///
+				field("`searchfield'") `exact' `detail'
+			return add
+			exit _rc
+		}
+		if ("`info'" != "") {
+			capture noisily __wbod_info, indicator("`info'")
+			if (_rc == 0) return add
+			exit _rc
+		}
+	}
+
+	if ("`sync'" != "") {
+		noi __wbod_sync_preview, `detail'
+		return add
+		if ("`replace'" != "") {
+			di as err ""
+			di as err `"Note: {bf:sync replace} (apply changes) is not yet implemented in this distribution."'
+			di as text `"      Phase 3 ships the read-only preview only; the apply path lands in Phase 4."'
+			exit 0
+		}
+		di as text ""
+		di as text `"(Dryrun preview only. {bf:sync replace} will land in Phase 4.)"'
+		exit 0
+	}
+	* ------------------------------------------------------------------
 
 	* query and check can not be selected at the same time
 		if ("`query'" == "query") & ("`check'" == "check") {
