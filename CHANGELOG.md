@@ -13,6 +13,15 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Phase 3** — Stata discovery commands wired in `src/w/wbopendata.ado` (v17.0 → v17.1.0):
+  - `wbopendata, sources` / `, allsources` — list 71 WB data sources (limit-aware).
+  - `wbopendata, alltopics` — list 21 topic categories.
+  - `wbopendata, info(<id>)` — full metadata for one indicator (description, source, topics, unit, notes, clickable URL conversion).
+  - `wbopendata, search(<term>)` — paginated full-text indicator search with `searchsource()`, `searchtopic()`, `searchfield()`, `exact`, `page()`, `limit()` filters.
+  - `wbopendata, sync` — dryrun preview of YAML-vs-API diff (the `replace` apply path is deferred to Phase 4).
+  - 17 new `__wbod_*` / `__wbopendata_*` helpers under `src/_/` (~4 100 LOC): 5 entry points (sources/topics/info/search/sync_preview) + 5 Tier-2 shared infrastructure (get_yaml_path/parse_yaml_ind_v2/search_cache/search/api_read) + 3 Tier-3 leaf helpers (search_aliases/search_pagenav/check_yaml) + 4 transitive deps (check_version/get_source_name/get_topic_name/website).
+  - `src/wbopendata.pkg` extended with 17 new entries.
+  - **Runtime prerequisite**: discovery commands need `_wbopendata_{indicators,sources,topics}.yaml` in `src/_/`. Run `make wb-update-metadata` (Phase 1) before using.
 - **Phase 2** — `yaml` Stata frame library (ported verbatim from `wbopendata-dev`):
   - `src/y/yaml.ado` (v 1.9.2) — dispatcher; subcommands `read`/`write`/`describe`/`list`/`get`/`validate`/`frames`/`clear`/`dir`.
   - `src/y/yaml_*.ado` — 9 subcommand implementations (~2 000 LOC).
@@ -49,8 +58,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added (planned, subsequent phases)
 
-- Discovery commands: `sources`, `alltopics`, `info`, `sync`, paginated `search` (Phase 3)
-- 7-day TTL HTTP cache (Phase 4)
+- 7-day TTL HTTP cache + `sync replace` (apply) path (Phase 4)
 - Country-context auto-merge + multilingual + publication features (Phases 5–6)
 - 92-test QA suite parity (Phase 7)
 - Layered documentation parity (Phase 8)
