@@ -23,7 +23,6 @@ What it exercises (and where it lives):
 
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -168,10 +167,17 @@ def demo_3_describe_live() -> None:
 def demo_4_data_context() -> None:
     section("4. get_data() — country-context auto-merge (PR B C5 + PR C C1)")
 
+    def _clean(df_in):
+        # The WB CSV download includes a trailing blank column that pandas
+        # parses as 'Unnamed: 5'. Drop it for display so users aren't
+        # distracted by a known parser artifact. (TODO: fix in get_data
+        # itself in a future cleanup.)
+        return df_in.drop(columns=[c for c in df_in.columns if str(c).startswith("Unnamed:")], errors="ignore")
+
     sub("get_data(['SP.POP.TOTL'], 'BRA;USA;IND', date='2020') — DEFAULT (basic merge ON)")
-    df = t.get_data(
+    df = _clean(t.get_data(
         indicators=["SP.POP.TOTL"], countries="BRA;USA;IND", date="2020", long=True,
-    )
+    ))
     print(f"  shape: {df.shape}    columns: {list(df.columns)}")
     if not df.empty:
         for _, row in df.iterrows():
@@ -179,26 +185,26 @@ def demo_4_data_context() -> None:
                   f"region={row.get('region')}  income={row.get('incomelevel')}")
 
     sub("get_data(..., no_basic=True) — LEAN (no merge)")
-    df2 = t.get_data(
+    df2 = _clean(t.get_data(
         indicators=["SP.POP.TOTL"], countries="BRA;USA;IND", date="2020",
         long=True, no_basic=True,
-    )
+    ))
     print(f"  shape: {df2.shape}    columns: {list(df2.columns)}")
     print(f"  no_basic suppressed {len(df.columns) - len(df2.columns)} context cols")
 
     sub("get_data(..., geo=True) — basic + 3 geo cols")
-    df3 = t.get_data(
+    df3 = _clean(t.get_data(
         indicators=["SP.POP.TOTL"], countries="BRA;USA;IND", date="2020",
         long=True, geo=True,
-    )
+    ))
     extras = set(df3.columns) - set(df2.columns)
     print(f"  shape: {df3.shape}    columns added vs lean: {sorted(extras)}")
 
     sub("get_data(..., no_basic=True, geo=True) — geo only")
-    df4 = t.get_data(
+    df4 = _clean(t.get_data(
         indicators=["SP.POP.TOTL"], countries="BRA;USA;IND", date="2020",
         long=True, no_basic=True, geo=True,
-    )
+    ))
     print(f"  shape: {df4.shape}    columns: {list(df4.columns)}")
 
 
@@ -269,9 +275,17 @@ def demo_6_wb_text() -> None:
 # ----------------------------------------------------------------------
 
 def main() -> int:
-    # Force UTF-8 on Windows console so the ✅ in update_metadata logs etc.
-    # doesn't crash subsequent prints (per memory feedback_python_io_encoding_utf8_windows).
-    os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+    # Reconfigure stdout/stderr to UTF-8 so non-ASCII characters in
+    # WB metadata (e.g. Spanish "Población") don't crash the Windows
+    # console's default cp1252 codec. PYTHONIOENCODING is read at
+    # interpreter startup so setting it here would be a no-op; this
+    # is the in-process equivalent (Python 3.7+).
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            try:
+                stream.reconfigure(encoding="utf-8")
+            except Exception:  # pragma: no cover - best-effort
+                pass
 
     print("=" * 72)
     print("  wb-api-repo — Python library catch-up demo")

@@ -17,15 +17,15 @@ inside sections 3 & 4 (~10-15 s on a fast network).
 
 What's exercised, by section:
 
-| § | Surface                                         | Source                  |
-| - | ----------------------------------------------- | ----------------------- |
-| 0 | YAML cache health-check                         | `src/_/_wbopendata_*.yaml` (PR #12) |
-| 1 | `sources / allsources / alltopics / info`       | `wb_discovery.py` (PR B)|
-| 2 | `search` with filters + pagination              | `wb_discovery.py` (PR B)|
-| 3 | `describe()` live + multilingual                | `wb_discovery.py` (PR B + PR C) |
-| 4 | `get_data()` + `no_basic` / `geo` flag matrix   | `wb_api_tools.py` (PR B + PR C) |
-| 5 | `enrich_country_context()` — Stata `match()`    | `wb_api_tools.py` (PR C)|
-| 6 | `wb_text.wrap / wrap_lines / truncate`          | `wb_text.py` (PR C)     |
+| § | Surface                                       | Source                              |
+| - | --------------------------------------------- | ----------------------------------- |
+| 0 | YAML cache health-check                       | `src/_/_wbopendata_*.yaml` (PR #12) |
+| 1 | `sources / allsources / alltopics / info`     | `wb_discovery.py` (PR B)            |
+| 2 | `search` with filters + pagination            | `wb_discovery.py` (PR B)            |
+| 3 | `describe()` live + multilingual              | `wb_discovery.py` (PR B + PR C)     |
+| 4 | `get_data()` + `no_basic` / `geo` flag matrix | `wb_api_tools.py` (PR B + PR C)     |
+| 5 | `enrich_country_context()` — Stata `match()`  | `wb_api_tools.py` (PR C)            |
+| 6 | `wb_text.wrap / wrap_lines / truncate`        | `wb_text.py` (PR C)                 |
 
 For unit-test coverage of the same surface see
 `tests/test_wb_discovery.py`, `tests/test_wb_text.py`, and
@@ -34,6 +34,13 @@ For unit-test coverage of the same surface see
 ---
 
 ## Demo transcript (run 2026-05-23)
+
+> **Note on `Unnamed: 5`** — early versions of the transcript captured a
+> blank column the WB CSV download includes at the end of every row;
+> pandas labels it `Unnamed: 5`. The demo now drops these via a tiny
+> `_clean()` helper before display. It's a known artifact of the
+> CSV-format endpoint that `get_data()` itself should clean — TODO
+> for a future `wb_api_tools.py` cleanup.
 
 ```text
 ========================================================================

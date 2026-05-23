@@ -25,7 +25,7 @@ from __future__ import annotations
 import logging
 import os
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import yaml
 
@@ -45,7 +45,7 @@ INDICATORS_YAML = "_wbopendata_indicators.yaml"
 # (regression caught by examples/demo_pr_b_c.py).
 # Keyed by (resolved abs path, section) so multiple yaml dirs
 # (env-var overrides in tests) don't cross-contaminate.
-_SECTION_CACHE: Dict[tuple, Dict[str, Dict]] = {}
+_SECTION_CACHE: Dict[Tuple[str, str], Dict[str, Dict[str, Any]]] = {}
 
 
 def clear_cache() -> None:
@@ -263,9 +263,15 @@ def sync(argv: Optional[List[str]] = None) -> int:
     try:
         _sys.argv = ["update_metadata"] + list(argv or [])
         from update_metadata import main as _main
-        return _main() or 0
+        rc = _main() or 0
     finally:
         _sys.argv = saved_argv
+    # Refresh wrote new YAML to disk; drop the cache so the next
+    # info()/search()/sources()/alltopics()/describe() call reads the
+    # updated content instead of returning stale data from the prior
+    # process state.
+    clear_cache()
+    return rc
 
 
 def describe(indicator_id: str, language: Optional[str] = None) -> Optional[Dict]:
