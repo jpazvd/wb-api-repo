@@ -451,12 +451,12 @@ def build_parser():
     sub = p.add_subparsers(dest="cmd", required=True)
 
     p_c = sub.add_parser("countries", help="Fetch country metadata")
-    p_c.add_argument("--out", help="Output path (.csv, .parquet, or .yaml); prints to stdout if omitted")
+    p_c.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_i = sub.add_parser("indicators", help="Fetch indicator metadata")
     p_i.add_argument("--codes", help="Comma-separated indicator codes (e.g. SP.POP.TOTL,NY.GDP.MKTP.CD)")
     p_i.add_argument("--search", help="Substring to search across indicator names")
-    p_i.add_argument("--out", help="Output path (.csv, .parquet, or .yaml); prints to stdout if omitted")
+    p_i.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_d = sub.add_parser("data", help="Fetch indicator data")
     p_d.add_argument("--indicators", required=True,
@@ -472,7 +472,7 @@ def build_parser():
                      help="Also merge capital/latitude/longitude (PR C; combinable with --no-basic for geo-only)")
     p_d.add_argument("--language", default=None,
                      help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
-    p_d.add_argument("--out", help="Output path (.csv, .parquet); prints to stdout if omitted")
+    p_d.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     # --- Discovery subcommands (PR B) --------------------------------
     # All read from src/_/_wbopendata_*.yaml; run `wb-update-metadata`
@@ -481,10 +481,10 @@ def build_parser():
     p_src.add_argument("--limit", type=int, default=20,
                        help="Max sources to show (default 20; pass --all for no cap)")
     p_src.add_argument("--all", action="store_true", help="No limit (equivalent to allsources)")
-    p_src.add_argument("--out", help="Output path (.csv, .yaml); prints to stdout if omitted")
+    p_src.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_top = sub.add_parser("alltopics", help="List all WB topic categories")
-    p_top.add_argument("--out", help="Output path (.csv, .yaml); prints to stdout if omitted")
+    p_top.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_info = sub.add_parser("info", help="Show full metadata for one indicator (from YAML cache)")
     p_info.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
@@ -503,7 +503,7 @@ def build_parser():
     p_srch.add_argument("--field", default="name+description",
                         help='Search field(s): name | description | note | code | name+description | all')
     p_srch.add_argument("--exact", action="store_true", help="Exact code match (use with --field code)")
-    p_srch.add_argument("--out", help="Output path (.csv, .yaml); prints to stdout if omitted")
+    p_srch.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
 
     p_sync = sub.add_parser("sync", help="Refresh YAML metadata cache from WB API (Phase 1 pipeline)")
     p_sync.add_argument("--save-raw", action="store_true", dest="save_raw",
@@ -522,12 +522,14 @@ def build_parser():
 def main(argv=None):
     """CLI entrypoint.
 
-    Parses ``argv`` (defaults to :data:`sys.argv`), dispatches to the
-    selected subcommand, and writes results to ``--out`` or stdout.
-    Returns ``None``; non-zero exits propagate via uncaught exceptions
-    or :func:`sys.exit`.
+    Parses ``argv`` (defaults to :data:`sys.argv` when ``None``),
+    dispatches to the selected subcommand, and writes results to
+    ``--out`` or stdout. Returns ``0`` on success and ``1`` on
+    handled errors; the ``__main__`` guard forwards the value to
+    :func:`sys.exit`.
     """
-    argv = argv or sys.argv[1:]
+    if argv is None:
+        argv = sys.argv[1:]
     args = build_parser().parse_args(argv)
     # Set global verbose
     global VERBOSE

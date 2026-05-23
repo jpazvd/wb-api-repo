@@ -75,14 +75,13 @@ python wb_api_tools.py --verbose data   --indicators NY.GDP.PCAP.PP.KD   --count
 
 ## ⚙️ Options
 
-- `--out` : Output file (`.csv` or `.parquet`). If omitted, prints preview to screen.
+- `--out` : Output file (`.csv`, `.parquet`, `.yaml`, or `.yml`). If omitted, prints preview to screen.
 - `--codes` : Comma-separated list of indicator codes (metadata only).
 - `--search` : Keyword filter on indicator names/codes (metadata only).
 - `--indicators` : Comma-separated indicator codes (data only).
 - `--countries` : `"all"` (default) or list of ISO3 codes (e.g., `BRA,IND,ZAF`).
 - `--date` : `"YYYY"`, `"YYYY:YYYY"`, `"YYYY:"` (open-ended).
 - `--long` : Return data in stacked/long format instead of wide.
-- `--per-page` : Change pagination size (default 1000).
 
 ---
 
