@@ -208,6 +208,47 @@ def _get_basic_context() -> pd.DataFrame:
     return _BASIC_CONTEXT_CACHE
 
 
+def enrich_country_context(
+    df: pd.DataFrame,
+    iso_col: str = "countryiso3code",
+    *,
+    basic: bool = True,
+    geo: bool = False,
+) -> pd.DataFrame:
+    """Merge WB country-context fields into a user-supplied DataFrame
+    (Python equivalent of Stata `wbopendata, match(varname) [basic geo]`).
+
+    Args:
+        df:      input DataFrame with an ISO3 country code column.
+        iso_col: name of the ISO3 column in df (default 'countryiso3code').
+        basic:   include the 8 basic-context fields (region/incomelevel/etc.).
+                 Default True.
+        geo:     include 3 geographic fields (capital/lat/long). Default False.
+
+    Returns:
+        New DataFrame (input not mutated) with context columns appended.
+        Rows whose ISO3 isn't found in WB metadata get NaN in the new
+        columns (left-join semantics).
+
+    Raises:
+        KeyError if `iso_col` isn't a column in `df`.
+    """
+    if iso_col not in df.columns:
+        raise KeyError(f"iso_col {iso_col!r} not found in DataFrame columns: {list(df.columns)}")
+    out = df.copy()
+    if basic:
+        bc = _get_basic_context()
+        out = out.merge(bc, left_on=iso_col, right_on="countryiso3code", how="left")
+        if iso_col != "countryiso3code":
+            out = out.drop(columns="countryiso3code")
+    if geo:
+        gc = _get_geo_context()
+        out = out.merge(gc, left_on=iso_col, right_on="countryiso3code", how="left")
+        if iso_col != "countryiso3code":
+            out = out.drop(columns="countryiso3code")
+    return out
+
+
 def get_data(indicators: List[str], countries: str = "all", date: Optional[str] = None,
              per_page: int = DEFAULT_PER_PAGE, long: bool = False,
              no_basic: bool = False, geo: bool = False) -> pd.DataFrame:
