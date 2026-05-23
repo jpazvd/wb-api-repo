@@ -25,5 +25,5 @@ wbopendata, indicator(SP.POP.0004.MA SP.POP.0004.FE SP.POP.0509.MA SP.POP.0509.F
 
 ## Python CLI (this repo)
 ```bash
-python _programs/wb_api_tools.py data   --indicators SP.POP.0004.MA,SP.POP.0004.FE,SP.POP.0509.MA,SP.POP.0509.FE   --countries all   --date 2000:2050   --long   --out _data/wb/pop_age_sex_counts_long.csv
+python src/py/wb_api_tools.py data   --indicators SP.POP.0004.MA,SP.POP.0004.FE,SP.POP.0509.MA,SP.POP.0509.FE   --countries all   --date 2000:2050   --long   --out _data/wb/pop_age_sex_counts_long.csv
 ```
