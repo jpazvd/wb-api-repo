@@ -1,5 +1,5 @@
 
-.PHONY: wb-metadata wb-metadata-csv wb-metadata-keyed wb-config all
+.PHONY: wb-metadata wb-metadata-csv wb-metadata-keyed wb-config wb-update-metadata all
 all: wb-metadata wb-metadata-csv wb-metadata-keyed
 
 wb-metadata:
@@ -13,3 +13,6 @@ wb-metadata-keyed:
 
 wb-config:
 	python src/py/run_from_config.py
+
+wb-update-metadata:
+	python src/py/update_metadata.py
