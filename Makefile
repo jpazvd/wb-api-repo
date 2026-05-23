@@ -1,15 +1,18 @@
 
-.PHONY: wb-metadata wb-metadata-csv wb-metadata-keyed wb-config all
+.PHONY: wb-metadata wb-metadata-csv wb-metadata-keyed wb-config wb-update-metadata all
 all: wb-metadata wb-metadata-csv wb-metadata-keyed
 
 wb-metadata:
-	python _programs/make_wb_metadata_yaml.py
+	python src/py/make_wb_metadata_yaml.py
 
 wb-metadata-csv:
-	python _programs/make_wb_metadata_csv.py
+	python src/py/make_wb_metadata_csv.py
 
 wb-metadata-keyed:
-	python _programs/make_wb_metadata_yaml_keyed.py
+	python src/py/make_wb_metadata_yaml_keyed.py
 
 wb-config:
-	python _programs/run_from_config.py
+	python src/py/run_from_config.py
+
+wb-update-metadata:
+	python src/py/update_metadata.py

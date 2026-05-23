@@ -75,14 +75,13 @@ python wb_api_tools.py --verbose data   --indicators NY.GDP.PCAP.PP.KD   --count
 
 ## ⚙️ Options
 
-- `--out` : Output file (`.csv` or `.parquet`). If omitted, prints preview to screen.
+- `--out` : Output file (`.csv`, `.parquet`, `.yaml`, or `.yml`). If omitted, prints preview to screen.
 - `--codes` : Comma-separated list of indicator codes (metadata only).
 - `--search` : Keyword filter on indicator names/codes (metadata only).
 - `--indicators` : Comma-separated indicator codes (data only).
 - `--countries` : `"all"` (default) or list of ISO3 codes (e.g., `BRA,IND,ZAF`).
 - `--date` : `"YYYY"`, `"YYYY:YYYY"`, `"YYYY:"` (open-ended).
 - `--long` : Return data in stacked/long format instead of wide.
-- `--per-page` : Change pagination size (default 1000).
 
 ---
 
@@ -168,18 +167,18 @@ See **docs/EXAMPLES.md** and **docs/AGE_BANDS.md**.
 
 Quick example:
 ```bash
-python _programs/wb_api_tools.py data   --indicators SP.POP.0004.MA,SP.POP.0004.FE,SP.POP.0509.MA,SP.POP.0509.FE   --countries all   --date 2000:2050   --long   --out _data/wb/pop_age_sex_counts_long.csv
+python src/py/wb_api_tools.py data   --indicators SP.POP.0004.MA,SP.POP.0004.FE,SP.POP.0509.MA,SP.POP.0509.FE   --countries all   --date 2000:2050   --long   --out _data/wb/pop_age_sex_counts_long.csv
 ```
 
 ## Documentation & Examples
 - **docs/EXAMPLES.md** — end-to-end instructions (API, Stata, Python)
 - **docs/AGE_BANDS.md** — standard 5-year age band codes
-- **_programs/examples/population_examples.sh** — runnable shell examples
-- **_programs/examples/population_examples.do** — Stata examples
+- **src/py/examples/population_examples.sh** — runnable shell examples
+- **src/py/examples/population_examples.do** — Stata examples
 - **config_full_age_sex.yaml** — full age×sex batch pulls (counts + shares)
 
 Generate full indicator lists programmatically:
 ```bash
-python _programs/examples/generate_age_sex_codes.py            # counts
-python _programs/examples/generate_age_sex_codes.py --shares   # shares
+python src/py/examples/generate_age_sex_codes.py            # counts
+python src/py/examples/generate_age_sex_codes.py --shares   # shares
 ```

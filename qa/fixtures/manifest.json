@@ -1,0 +1,111 @@
+{
+  "label": "wbopendata data query fixtures",
+  "generated_at": "2026-02-11 18:06:20",
+  "generator": "generate_test_fixtures.py",
+  "fixtures": [
+    {
+      "filename": "SP_POP_TOTL_USA.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA/Indicators/SP.POP.TOTL?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "DET-01: Population total, USA (basic parsing)",
+      "exists": true,
+      "size_bytes": 1362,
+      "modified": "2026-02-11 18:06:06"
+    },
+    {
+      "filename": "SP_POP_TOTL_USA_BRA_IND.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA;BRA;IND/Indicators/SP.POP.TOTL?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "DET-02: Population total, USA+BRA+IND (wide reshape)",
+      "exists": true,
+      "size_bytes": 3038,
+      "modified": "2026-02-11 18:06:07"
+    },
+    {
+      "filename": "SP_POP_TOTL_all.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/all/Indicators/SP.POP.TOTL?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "DET-06: Population total, all countries (long format)",
+      "exists": true,
+      "size_bytes": 193722,
+      "modified": "2026-02-11 18:06:08"
+    },
+    {
+      "filename": "SP_POP_TOTL_USA_2020.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA/Indicators/SP.POP.TOTL?downloadformat=CSV&HREQ=N&filetype=data&date=2020",
+      "description": "DET-07: Population total, USA, 2020 (latest test)",
+      "exists": true,
+      "size_bytes": 146,
+      "modified": "2026-02-11 18:06:09"
+    },
+    {
+      "filename": "NY_GDP_MKTP_CD_USA.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA/Indicators/NY.GDP.MKTP.CD?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "DET-09/10: GDP current USD, USA (char / nochar test)",
+      "exists": true,
+      "size_bytes": 1679,
+      "modified": "2026-02-11 18:06:10"
+    },
+    {
+      "filename": "SP_DYN_LE00_IN_all.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/all/Indicators/SP.DYN.LE00.IN?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "EXT-02: Life expectancy, all countries (extreme: many countries)",
+      "exists": true,
+      "size_bytes": 238809,
+      "modified": "2026-02-11 18:06:12"
+    },
+    {
+      "filename": "SI_POV_DDAY_all.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/all/Indicators/SI.POV.DDAY?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "EXT-03a: Poverty headcount, all countries",
+      "exists": true,
+      "size_bytes": 90070,
+      "modified": "2026-02-11 18:06:13"
+    },
+    {
+      "filename": "SL_UEM_TOTL_ZS_all.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/all/Indicators/SL.UEM.TOTL.ZS?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "EXT-03b: Unemployment rate, all countries",
+      "exists": true,
+      "size_bytes": 139310,
+      "modified": "2026-02-11 18:06:14"
+    },
+    {
+      "filename": "country_USA.csv",
+      "url": "https://api.worldbank.org/v2/en/Countries/USA/?downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "Country metadata query: USA",
+      "exists": true,
+      "size_bytes": 945756,
+      "modified": "2026-02-11 18:06:16"
+    },
+    {
+      "filename": "SP_POP_TOTL_USA_2010_2020.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA/Indicators/SP.POP.TOTL?downloadformat=CSV&HREQ=N&filetype=data&date=2010:2020",
+      "description": "Year range: Population total, USA, 2010-2020",
+      "exists": true,
+      "size_bytes": 336,
+      "modified": "2026-02-11 18:06:17"
+    },
+    {
+      "filename": "SP_POP_TOTL_USA_source2.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA/Indicators/SP.POP.TOTL?source=2&downloadformat=CSV&HREQ=N&filetype=data",
+      "description": "Source filter: Population total, USA, WDI (source=2)",
+      "exists": true,
+      "size_bytes": 1362,
+      "modified": "2026-02-11 18:06:18"
+    },
+    {
+      "filename": "SP_POP_TOTL_USA_2020_pin.csv",
+      "url": "https://api.worldbank.org/v2/en/countries/USA/Indicators/SP.POP.TOTL?downloadformat=CSV&HREQ=N&filetype=data&date=2020",
+      "description": "Value-pin: Population total, USA, 2020",
+      "exists": true,
+      "size_bytes": 146,
+      "modified": "2026-02-11 18:06:19"
+    },
+    {
+      "filename": "DEPRECATED_INDICATOR_all.csv",
+      "url": null,
+      "description": "ERR: Deprecated/invalid indicator (manually created, empty fixture)",
+      "exists": true,
+      "size_bytes": 64,
+      "modified": "2026-02-10 17:30:40"
+    }
+  ]
+}

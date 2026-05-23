@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "wb-api-repo: World Bank API tooling (Stata + Python)"
+abstract: >-
+  Dual-stack World Bank Open Data API client combining the Stata wbopendata
+  command surface with a modern Python CLI for batch metadata and time-series
+  retrieval. Tracks feature parity with the Stata Journal package wbopendata
+  (v18.x lineage) while exposing a CLI for non-Stata workflows.
+authors:
+  - family-names: Azevedo
+    given-names: João Pedro
+    orcid: "https://orcid.org/0000-0003-1718-4129"
+license: MIT
+version: "0.1.0"
+date-released: "2026-05-22"
+repository-code: "https://github.com/jpazvd/wb-api-repo"
+keywords:
+  - World Bank
+  - WDI
+  - open data
+  - Stata
+  - Python
+  - API
