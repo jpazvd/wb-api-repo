@@ -1,7 +1,9 @@
 *******************************************************************************
 * yaml_read
-*! v 1.9.2   22Feb2026               by Joao Pedro Azevedo (UNICEF)
+*! v 1.9.3   23May2026               by Joao Pedro Azevedo (UNICEF)
 * Read YAML file into Stata (dataset by default, or frame)
+* v1.9.3: Fix __yaml_* helper call sites (single→double underscore) — enables
+*         bulk / fastread / stream / collapse modes that were unreachable.
 * v1.9.2: Strip quotes from list item values in canonical parser (parity with Mata bulk)
 * v1.9.1: Fix parent_stack contamination for sibling keys; add source_org to indicators preset
 * v1.9.0: INDICATORS preset for wbopendata/unicefdata indicator metadata
@@ -294,11 +296,11 @@ program define yaml_read, rclass
     if ("`bulk'" != "" & `skip_parse' == 0) {
         if (`use_frame' == 1) {
             frame `frame' {
-                _yaml_mataread using "`using'", `blockscalars'
+                __yaml_mataread using "`using'", `blockscalars'
             }
         }
         else {
-            _yaml_mataread using "`using'", `blockscalars'
+            __yaml_mataread using "`using'", `blockscalars'
         }
 
         * Post-process: clean up and label
@@ -312,7 +314,7 @@ program define yaml_read, rclass
                 label variable parent "Parent key"
                 label variable type "Value type"
                 if ("`collapse'" != "") {
-                    _yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
+                    __yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
                 }
             }
         }
@@ -325,7 +327,7 @@ program define yaml_read, rclass
             label variable parent "Parent key"
             label variable type "Value type"
             if ("`collapse'" != "") {
-                _yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
+                __yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
             }
         }
 
@@ -358,11 +360,11 @@ program define yaml_read, rclass
     if ("`fastread'" != "" & `skip_parse' == 0) {
         if (`use_frame' == 1) {
             frame `frame' {
-                _yaml_fastread using "`using'", fields("`fields'") listkeys("`listkeys'") `blockscalars'
+                __yaml_fastread using "`using'", fields("`fields'") listkeys("`listkeys'") `blockscalars'
             }
         }
         else {
-            _yaml_fastread using "`using'", fields("`fields'") listkeys("`listkeys'") `blockscalars'
+            __yaml_fastread using "`using'", fields("`fields'") listkeys("`listkeys'") `blockscalars'
         }
 
         * Cache fastread results if requested
@@ -442,7 +444,7 @@ program define yaml_read, rclass
         local indent = 0
         local is_list = 0
         if ("`stream'" != "") {
-            _yaml_tokenize_line, line(`"`line'"')
+            __yaml_tokenize_line, line(`"`line'"')
             local trimmed `"`s(trimmed)'"'
             local indent = `s(indent)'
             local is_list = `s(is_list)'
@@ -873,7 +875,7 @@ program define yaml_read, rclass
             label variable type "Value type"
 
             if ("`collapse'" != "") {
-                _yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
+                __yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
             }
         }
 
@@ -899,7 +901,7 @@ program define yaml_read, rclass
         label variable type "Value type"
 
         if ("`collapse'" != "") {
-            _yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
+            __yaml_collapse, fields(`colfields') maxlevel(`maxlevel')
         }
 
         if ("`verbose'" != "") {
