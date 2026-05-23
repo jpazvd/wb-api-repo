@@ -1,184 +1,172 @@
+# wb-api-repo
 
-# World Bank API Helper (`wb_api_tools.py`)
+World Bank Open Data helpers in **Python** (library + CLI) and **Stata**
+(`wbopendata` ado package). Two surfaces over the same WB API v2, with a
+shared YAML metadata cache so discovery commands stay fast and offline-safe.
 
-This script provides a **Python interface to the World Bank API**, modeled after functionality in the Stata `wbopendata` ado suite.  
-It allows you to fetch **country metadata**, **indicator metadata**, and **indicator data** (long or wide format) with automatic pagination and retries.
+Current release: **[v0.1.0](https://github.com/jpazvd/wb-api-repo/releases/tag/v0.1.0)** (2026-05-23).
+Parallel v0.x track to the upstream [`wbopendata-dev`](https://github.com/jpazvd/wbopendata-dev)
+Stata Journal lineage (v18.x).
 
----
+## What's here
 
-## 📦 Installation
+| Surface | Entry point | Reference |
+| --- | --- | --- |
+| Python library | `src/py/wb_discovery.py`, `src/py/wb_api_tools.py`, `src/py/wb_text.py` | [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) |
+| Python CLI | `python src/py/wb_api_tools.py <subcmd>` | `--help` on every subcommand |
+| Stata package | `src/w/wbopendata.ado` (v17.4.0) | `help wbopendata` in Stata, or `src/w/wbopendata.sthlp` |
+| YAML metadata cache | `src/_/_wbopendata_{indicators,sources,topics}.yaml` | refreshed by `python src/py/wb_api_tools.py sync` |
 
-1. Save the script `wb_api_tools.py` to your project folder.
-2. Install required Python libraries from `requirements.txt`:
+## Install
 
 ```bash
+git clone https://github.com/jpazvd/wb-api-repo.git
+cd wb-api-repo
 pip install -r requirements.txt
 ```
 
-3. Run from the command line:
+Requires Python 3.11+. The Stata package is loaded by adding `src/w/` and
+`src/_/` to Stata's adopath (or installed via `net install` once an SSC
+release lands).
+
+## Quick start
+
+The repo ships with a runnable 7-section walkthrough that exercises the
+whole Python surface (discovery, live `describe`, `get_data` flag matrix,
+`enrich_country_context`, `wb_text` formats):
 
 ```bash
-python wb_api_tools.py <subcommand> [options]
+PYTHONIOENCODING=utf-8 python src/py/examples/demo_pr_b_c.py
 ```
 
----
+Captured transcript: [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md).
 
-## 🚀 Subcommands and Examples
+## Python CLI
 
-### 1. Country Metadata
-Fetch World Bank country metadata (ISO codes, region, income group, capital, coordinates, etc.).
+`python src/py/wb_api_tools.py <subcommand>` — run any subcommand with
+`--help` for full flag descriptions.
+
+| Subcommand | Purpose |
+| --- | --- |
+| `countries` | Fetch country metadata |
+| `indicators` | Fetch indicator metadata (legacy CSV/parquet/yaml dump) |
+| `data` | Fetch indicator data; `--no-basic` skips country-context auto-merge, `--geo` adds capital/lat/lon, `--language es` switches the API path |
+| `sources` | List WB data sources (`--all` for the full set) |
+| `alltopics` | List all WB topic categories |
+| `info <id>` | Show full metadata for one indicator (from YAML cache) |
+| `describe <id>` | Fetch fresh metadata for one indicator (live API; `--language` supported) |
+| `search [term]` | Paginated indicator search; `--source`, `--topic`, `--field`, `--exact` |
+| `sync` | Refresh the YAML metadata cache from the live WB API |
+
+Example:
 
 ```bash
-python wb_api_tools.py countries --out countries.csv
+python src/py/wb_api_tools.py data \
+    --indicators SP.POP.TOTL,NY.GDP.MKTP.CD \
+    --countries "BRA;USA;IND" \
+    --date 2010:2020 \
+    --geo --long --out _data/wb/pop_gdp_long.csv
 ```
 
-Output columns include: `id`, `iso2Code`, `name`, `region`, `incomeLevel`, `lendingType`, `capitalCity`, `longitude`, `latitude`.
+Output is written to `--out` (`.csv` / `.parquet` / `.yaml` / `.yml`) or
+printed as a preview if `--out` is omitted.
 
----
+## Python library
 
-### 2. Indicator Metadata
-Fetch indicator descriptions, units, sources, and topics.
+After putting `src/py/` on `sys.path` (the tests do this), the library is
+importable directly:
+
+```python
+import sys; sys.path.insert(0, "src/py")
+import wb_discovery as wd
+from wb_api_tools import get_data, enrich_country_context
+import wb_text as wt
+
+wd.search("poverty headcount", limit=5)
+df = get_data(["SP.POP.TOTL"], "BRA;USA;IND", date="2020", geo=True)
+wt.wrap("long indicator title ...", width=60, fmt="stack")   # for Stata graph title()
+```
+
+Full reference: [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md)
+(library + CLI + Stata-parity table).
+
+## Stata package
+
+`src/w/wbopendata.ado` is the v17.4.0 dispatcher; current Phase-0-through-6
+surface mirrors the Python library:
+
+- `wbopendata, sources / allsources / alltopics / info / search / describe`
+  discovery commands
+- `wbopendata, indicator(X) clear` data fetch with `noBASIC`, `geo`,
+  `language(es)`, `cache(days)`, `sync`
+- `linewrap(W) maxlength(N) linewrapformat(stack|newline|lines|smcl)`
+  for graph-title and SMCL formatting
+
+Open `src/w/wbopendata.sthlp` in Stata's viewer or run `help wbopendata`
+once the package is on the adopath. The Python-side
+[docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) §5 has a row-by-row
+Stata ↔ Python parity table.
+
+## YAML metadata cache
+
+`src/_/_wbopendata_*.yaml` is the offline metadata cache populated from the
+live WB API:
+
+- `_wbopendata_indicators.yaml` — 29,511 indicators (~18 MB)
+- `_wbopendata_sources.yaml` — 71 sources
+- `_wbopendata_topics.yaml` — 21 topics
+
+Discovery commands (`info`, `search`, `sources`, `alltopics`) read from this
+cache for microsecond lookups. Refresh with:
 
 ```bash
-# All indicators
-python wb_api_tools.py indicators --out indicators.csv
-
-# Specific indicators by code
-python wb_api_tools.py indicators --codes SI.POV.DDAY,NY.GDP.PCAP.PP.KD --out ind_meta.csv
-
-# Filter indicators by keyword (client-side search)
-python wb_api_tools.py indicators --search "poverty" --out poverty_inds.csv
+python src/py/wb_api_tools.py sync                # in-place refresh
+python src/py/wb_api_tools.py sync --commit --tag # also git-commit + tag
 ```
 
-Columns include: `id`, `name`, `unit`, `source`, `topics`, `source_note`, `source_organization`.
+A weekly GitHub Action (`.github/workflows/wb_metadata_nightly.yml` — file
+name is historical; cron runs every Monday at 02:17 UTC) keeps the cache
+fresh.
 
----
+## Documentation
 
-### 3. Indicator Data
-Fetch values for one or more indicators, for countries and years.
+- [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) — Python library + CLI reference (Stata `.sthlp` equivalent)
+- [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md) — captured live-API transcript from the 7-section walkthrough
+- [docs/EXAMPLES.md](docs/EXAMPLES.md) — end-to-end workflows (API, Stata, Python)
+- [docs/AGE_BANDS.md](docs/AGE_BANDS.md) — standard 5-year age band codes for population indicators
+- [src/py/examples/](src/py/examples/) — runnable Python examples
+- [CHANGELOG.md](CHANGELOG.md) — per-release change log
+- [doc/VERSIONING_POLICY.md](doc/VERSIONING_POLICY.md) — semver policy + component-level `.ado` version headers
+
+## Development
 
 ```bash
-# Long format (tidy)
-python wb_api_tools.py data   --indicators SI.POV.DDAY,NY.GDP.PCAP.PP.KD   --countries all   --date 2000:2023   --long   --out data_long.csv
-
-# Wide format (default)
-python wb_api_tools.py data   --indicators SI.POV.DDAY,NY.GDP.PCAP.PP.KD   --countries BRA,IND,ZAF   --date 2010:   --out data.csv
-
-# Verbose debug output
-python wb_api_tools.py --verbose data   --indicators NY.GDP.PCAP.PP.KD   --countries BRA   --date 2010:2020   --long   --out data_verbose.csv
+PYTHONIOENCODING=utf-8 python -m pytest tests/   # 62 cases across discovery, wb_text, wb_api_tools
 ```
 
-- **Long format**: `countryiso3code, country, indicator, date, value`
-- **Wide format**: One column per indicator.
-
----
-
-## ⚙️ Options
-
-- `--out` : Output file (`.csv`, `.parquet`, `.yaml`, or `.yml`). If omitted, prints preview to screen.
-- `--codes` : Comma-separated list of indicator codes (metadata only).
-- `--search` : Keyword filter on indicator names/codes (metadata only).
-- `--indicators` : Comma-separated indicator codes (data only).
-- `--countries` : `"all"` (default) or list of ISO3 codes (e.g., `BRA,IND,ZAF`).
-- `--date` : `"YYYY"`, `"YYYY:YYYY"`, `"YYYY:"` (open-ended).
-- `--long` : Return data in stacked/long format instead of wide.
-
----
-
-## 📝 Notes
-
-- Built on the **World Bank API v2 JSON endpoints**:  
-  <https://api.worldbank.org/>
-- Handles retries with exponential backoff for reliability.
-- Metadata is normalized: nested dictionaries (e.g., region/income level) are flattened.
-- Long vs wide format allows flexibility for **analysis (long)** or **reporting (wide)**.
-
----
-
-## 🔧 Example Workflow
-
-1. Download **country metadata** to align codes and regions:
+Useful Makefile targets:
 
 ```bash
-python wb_api_tools.py countries --out _data/wb/countries.csv
+make wb-update-metadata   # refresh YAML cache (v0.1.0 pipeline)
+make wb-metadata          # legacy YAML builder (pre-Phase-0)
+make wb-metadata-csv      # legacy CSV builder
+make wb-config            # batch data pulls from config.yaml
 ```
 
-2. Download **indicator metadata** to document variables:
+Branch model: feature work on `develop`; releases tag from `main`. See the
+v0.1.0 release notes for the full PR list.
 
-```bash
-python wb_api_tools.py indicators --out _data/wb/indicators.csv
-```
+## Integration
 
-3. Pull **time series data** for key indicators:
+The Python CLI and library plug into:
 
-```bash
-python wb_api_tools.py data   --indicators SI.POV.DDAY,NY.GDP.PCAP.PP.KD,DT.ODA.DACD.HLTH.BAS.CD,DT.ODA.DACD.HLTH.CD,DT.ODA.DACD.HLTH.GEN.CD   --countries all   --date 2000:2023   --long   --out _data/wb/oda_health_long.csv
-```
-
----
-
-## ✅ Output Preview
-
-Example (long format):
-
-| countryiso3code | country     | indicator     | date | value   |
-|-----------------|-------------|---------------|------|---------|
-| BRA             | Brazil      | SI.POV.DDAY   | 2000 | 12.345  |
-| BRA             | Brazil      | SI.POV.DDAY   | 2001 | 11.876  |
-| IND             | India       | NY.GDP.PCAP.PP.KD | 2000 | 4532.1 |
-
----
-
-## 🔒 Integration
-
-This tool can be easily integrated into:
-- **Makefiles** or pipelines (e.g., `make update-data`)
-- **Stata workflows** (export CSV → `import delimited`)
+- **Makefiles / pipelines** (`make wb-update-metadata`, cron, GitHub Actions)
+- **Stata workflows** (export CSV → `import delimited`, or use the Stata package directly)
 - **R workflows** (`readr::read_csv` or `arrow::read_parquet`)
-- **Jupyter notebooks** for analysis
+- **Jupyter notebooks** for ad-hoc analysis
 
----
+## License
 
-## 👤 Author
-
-Developed for bridging **Stata `wbopendata` workflows** with modern Python pipelines.  
-Supports reproducible UNICEF/World Bank style analytics.
-
-
-# World Bank API Helper (wb_api_tools)
-
-This repo provides a lightweight CLI to fetch **country metadata**, **indicator metadata**, and **indicator data** from the World Bank API, plus automation for nightly metadata refresh and batch data pulls from `config.yaml`.
-
-## Quick Start
-```bash
-pip install -r requirements.txt
-
-# Metadata (YAML, CSV, keyed YAML)
-make wb-metadata
-make wb-metadata-csv
-make wb-metadata-keyed
-
-# Batch pulls from config.yaml
-make wb-config
-```
-
-## Population by Age & Sex (Examples)
-See **docs/EXAMPLES.md** and **docs/AGE_BANDS.md**.
-
-Quick example:
-```bash
-python src/py/wb_api_tools.py data   --indicators SP.POP.0004.MA,SP.POP.0004.FE,SP.POP.0509.MA,SP.POP.0509.FE   --countries all   --date 2000:2050   --long   --out _data/wb/pop_age_sex_counts_long.csv
-```
-
-## Documentation & Examples
-- **docs/EXAMPLES.md** — end-to-end instructions (API, Stata, Python)
-- **docs/AGE_BANDS.md** — standard 5-year age band codes
-- **src/py/examples/population_examples.sh** — runnable shell examples
-- **src/py/examples/population_examples.do** — Stata examples
-- **config_full_age_sex.yaml** — full age×sex batch pulls (counts + shares)
-
-Generate full indicator lists programmatically:
-```bash
-python src/py/examples/generate_age_sex_codes.py            # counts
-python src/py/examples/generate_age_sex_codes.py --shares   # shares
-```
+See [LICENSE.md](LICENSE.md). Developed to bridge **Stata `wbopendata`
+workflows** with modern Python pipelines for reproducible UNICEF / World
+Bank style analytics.
