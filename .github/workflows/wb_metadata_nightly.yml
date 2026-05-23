@@ -1,10 +1,13 @@
 
-name: World Bank Data Nightly
+name: World Bank Data Biweekly Refresh
 permissions:
   contents: write
 on:
   schedule:
-    - cron: '17 2 * * 1'
+    # Bi-weekly approximation: 1st + 15th of every month at 02:17 UTC.
+    # Standard cron has no native "every other week"; 1,15 is ~14 days
+    # apart with minor month-end drift.
+    - cron: '17 2 1,15 * *'
   workflow_dispatch: {}
 jobs:
   metadata:
