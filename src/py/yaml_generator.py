@@ -18,22 +18,60 @@ import yaml
 logger = logging.getLogger(__name__)
 
 
+# Module-level YAML dumper config.
+# Previously duplicated in both generate_indicators_yaml() and _write_yaml(),
+# each registering yaml.add_representer per-call — which mutates global
+# PyYAML state and added redundant work. Hoisted here so registration
+# happens once at import time; idempotent for repeat-imports.
+
+def _wrap_long_text(value: str) -> str:
+    """Wrap strings >200 chars at width 120 for YAML readability."""
+    if len(value) <= 200 or " " not in value:
+        return value
+    return textwrap.fill(value, width=120, break_long_words=False, break_on_hyphens=False)
+
+
+def _str_representer(dumper, data):
+    """Emit folded-block scalar (`>`) when wrapping introduces newlines."""
+    wrapped = _wrap_long_text(data)
+    if "\n" in wrapped:
+        return dumper.represent_scalar("tag:yaml.org,2002:str", wrapped, style=">")
+    return dumper.represent_scalar("tag:yaml.org,2002:str", wrapped)
+
+
+yaml.add_representer(str, _str_representer, Dumper=yaml.SafeDumper)
+
+
 class YAMLGenerator:
     """Generate YAML files from WB API data"""
-    
+
     SCHEMA_VERSION = "2.0.0"
     GENERATOR_VERSION = SCHEMA_VERSION
-    
-    def __init__(self, output_dir: Path | None = None):
+
+    DEFAULT_FILENAMES = {
+        "indicators": "_wbopendata_indicators.yaml",
+        "sources": "_wbopendata_sources.yaml",
+        "topics": "_wbopendata_topics.yaml",
+    }
+
+    def __init__(self, output_dir: Path | None = None, filenames: Dict[str, str] | None = None):
         """
         Initialize YAML generator
-        
+
         Args:
-            output_dir: Directory for output YAML files
+            output_dir: Directory for output YAML files (default: wb-api-repo/src/_)
+            filenames: Per-target filename override dict with keys
+                       'indicators', 'sources', 'topics'. Missing keys fall
+                       back to DEFAULT_FILENAMES. Lets update_metadata.py
+                       honour config_update.yaml's yaml_output.*_file keys.
         """
         default_dir = Path(__file__).resolve().parents[2] / "src" / "_"
         self.output_dir = Path(output_dir) if output_dir else default_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
+        merged = dict(self.DEFAULT_FILENAMES)
+        if filenames:
+            merged.update({k: v for k, v in filenames.items() if v})
+        self.filenames = merged
     
     def generate_all(self, indicators: List[Dict], sources: List[Dict], 
                      topics: List[Dict]) -> Dict[str, Path]:
@@ -111,25 +149,8 @@ class YAMLGenerator:
         # using the same parameters as _write_yaml (but excluding the header).
         # This matches how the file will actually be written and allows validation
         # to recompute the checksum by temporarily removing the field.
+        # Note: yaml dumper representer registered at module load (see top of file).
         import io
-
-        def _wrap_long_text(value: str) -> str:
-            if len(value) <= 200 or " " not in value:
-                return value
-            return textwrap.fill(
-                value,
-                width=120,
-                break_long_words=False,
-                break_on_hyphens=False,
-            )
-
-        def str_representer(dumper, data):
-            wrapped = _wrap_long_text(data)
-            if "\n" in wrapped:
-                return dumper.represent_scalar('tag:yaml.org,2002:str', wrapped, style='>')
-            return dumper.represent_scalar('tag:yaml.org,2002:str', wrapped)
-
-        yaml.add_representer(str, str_representer, Dumper=yaml.SafeDumper)
 
         # Serialize YAML content for checksum (without checksum field itself)
         yaml_content = io.StringIO()
@@ -149,7 +170,7 @@ class YAMLGenerator:
         yaml_data['_metadata']['checksum_sha256'] = checksum
 
         # Write to file (this will include the checksum field)
-        output_file = self.output_dir / '_wbopendata_indicators.yaml'
+        output_file = self.output_dir / self.filenames["indicators"]
         self._write_yaml(yaml_data, output_file)
         
         logger.info(f"Generated {output_file} ({output_file.stat().st_size:,} bytes)")
@@ -158,21 +179,26 @@ class YAMLGenerator:
     def generate_sources_yaml(self, sources: List[Dict]) -> Path:
         """Generate _wbopendata_sources.yaml"""
         logger.info(f"Generating sources YAML for {len(sources)} sources...")
-        
+
+        # Build YAML structure; total_sources set after empty-id filter
+        # so the count matches what's actually written (was len(input) — over-counted
+        # whenever the API returned records with missing IDs).
         yaml_data = {
             '_metadata': {
                 'version': self.SCHEMA_VERSION,
                 'generated_at': datetime.utcnow().isoformat() + 'Z',
-                'total_sources': len(sources)
+                'total_sources': 0,
             },
             'sources': {}
         }
-        
+
+        n_empty_id = 0
         for src in sources:
             code = str(src.get('id', ''))
             if not code:
+                n_empty_id += 1
                 continue
-            
+
             yaml_data['sources'][code] = {
                 'code': code,
                 'name': src.get('name', ''),
@@ -181,8 +207,16 @@ class YAMLGenerator:
                 'data_availability': src.get('dataavailability', ''),
                 'metadata_availability': src.get('metadataavailability', '')
             }
-        
-        output_file = self.output_dir / '_wbopendata_sources.yaml'
+
+        n_unique = len(yaml_data['sources'])
+        n_duplicates = len(sources) - n_empty_id - n_unique
+        if n_empty_id > 0:
+            logger.warning(f"Dropped {n_empty_id} source record(s) with empty id (kept {n_unique})")
+        if n_duplicates > 0:
+            logger.warning(f"API returned {n_duplicates} duplicate source code(s) (kept last occurrence)")
+        yaml_data['_metadata']['total_sources'] = n_unique
+
+        output_file = self.output_dir / self.filenames["sources"]
         self._write_yaml(yaml_data, output_file)
         
         logger.info(f"Generated {output_file} ({output_file.stat().st_size:,} bytes)")
@@ -191,58 +225,55 @@ class YAMLGenerator:
     def generate_topics_yaml(self, topics: List[Dict]) -> Path:
         """Generate _wbopendata_topics.yaml"""
         logger.info(f"Generating topics YAML for {len(topics)} topics...")
-        
+
+        # Build YAML structure; total_topics set after empty-id filter
+        # so the count matches what's actually written (mirrors the
+        # generate_sources_yaml fix; was len(input) before).
         yaml_data = {
             '_metadata': {
                 'version': self.SCHEMA_VERSION,
                 'generated_at': datetime.utcnow().isoformat() + 'Z',
-                'total_topics': len(topics)
+                'total_topics': 0,
             },
             'topics': {}
         }
-        
+
+        n_empty_id = 0
         for topic in topics:
             code = str(topic.get('id', ''))
             if not code:
+                n_empty_id += 1
                 continue
-            
+
             yaml_data['topics'][code] = {
                 'code': code,
                 'name': topic.get('value', ''),
                 'description': self._clean_text(topic.get('sourceNote', ''))
             }
-        
-        output_file = self.output_dir / '_wbopendata_topics.yaml'
+
+        n_unique = len(yaml_data['topics'])
+        n_duplicates = len(topics) - n_empty_id - n_unique
+        if n_empty_id > 0:
+            logger.warning(f"Dropped {n_empty_id} topic record(s) with empty id (kept {n_unique})")
+        if n_duplicates > 0:
+            logger.warning(f"API returned {n_duplicates} duplicate topic code(s) (kept last occurrence)")
+        yaml_data['_metadata']['total_topics'] = n_unique
+
+        output_file = self.output_dir / self.filenames["topics"]
         self._write_yaml(yaml_data, output_file)
         
         logger.info(f"Generated {output_file} ({output_file.stat().st_size:,} bytes)")
         return output_file
     
     def _write_yaml(self, data: Dict, output_file: Path):
-        """Write YAML data to file with proper string formatting"""
+        """Write YAML data to file with proper string formatting.
 
+        String representer registered at module load — no per-call setup.
+        """
         header = (
             f"# Generated by Python yaml_generator.py v{self.GENERATOR_VERSION} "
             f"(schema {self.SCHEMA_VERSION})\n"
         )
-
-        def _wrap_long_text(value: str) -> str:
-            if len(value) <= 200 or " " not in value:
-                return value
-            return textwrap.fill(
-                value,
-                width=120,
-                break_long_words=False,
-                break_on_hyphens=False,
-            )
-
-        def str_representer(dumper, data):
-            wrapped = _wrap_long_text(data)
-            if "\n" in wrapped:
-                return dumper.represent_scalar('tag:yaml.org,2002:str', wrapped, style='>')
-            return dumper.represent_scalar('tag:yaml.org,2002:str', wrapped)
-
-        yaml.add_representer(str, str_representer, Dumper=yaml.SafeDumper)
 
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(header)

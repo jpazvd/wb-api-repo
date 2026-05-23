@@ -26,9 +26,29 @@ class WBAPIClient:
     RETRY_DELAY = 2  # seconds
     MAX_PER_PAGE = 20000
 
-    def __init__(self, timeout: int = DEFAULT_TIMEOUT):
-        """Initialize the API client with a persistent session."""
+    def __init__(
+        self,
+        timeout: int = DEFAULT_TIMEOUT,
+        base_url: str | None = None,
+        max_retries: int | None = None,
+        retry_delay: int | None = None,
+    ):
+        """Initialize the API client with a persistent session.
+
+        Args:
+            timeout:     request timeout in seconds.
+            base_url:    override WB API base URL (default: class constant).
+            max_retries: override retry attempt count (default: class constant).
+            retry_delay: override retry backoff base in seconds (default: class constant).
+
+        Per-instance overrides let update_metadata.py honour
+        config_update.yaml's wb_api.{base_url,retry_count,retry_delay}
+        keys (previously inert — _make_request read class constants).
+        """
         self.timeout = timeout
+        self.base_url = base_url if base_url else self.BASE_URL
+        self.max_retries = max_retries if max_retries is not None else self.MAX_RETRIES
+        self.retry_delay = retry_delay if retry_delay is not None else self.RETRY_DELAY
         self.session = requests.Session()
         self.session.headers.update(
             {
@@ -56,7 +76,7 @@ class WBAPIClient:
         total_pages = None
 
         while True:
-            url = f"{self.BASE_URL}/indicators"
+            url = f"{self.base_url}/indicators"
             params = {
                 "format": "json",
                 "per_page": per_page,
@@ -73,8 +93,18 @@ class WBAPIClient:
             records = data[1]
 
             if total_pages is None:
-                total_pages = metadata.get("pages", 1)
-                total_indicators = metadata.get("total", 0)
+                # WB v2 API sometimes returns "pages"/"total" as strings; coerce
+                # so `page >= total_pages` can't raise TypeError downstream.
+                # max(1, ...) guards against 0/None/'' or string '0' yielding
+                # an int < 1 that would immediately exit the pagination loop.
+                try:
+                    total_pages = max(1, int(metadata.get("pages") or 1))
+                except (TypeError, ValueError):
+                    total_pages = 1
+                try:
+                    total_indicators = max(0, int(metadata.get("total") or 0))
+                except (TypeError, ValueError):
+                    total_indicators = 0
                 logger.info("Total indicators: %s, Pages: %s", total_indicators, total_pages)
 
             indicators.extend(records)
@@ -83,7 +113,7 @@ class WBAPIClient:
                 break
 
             page += 1
-            time.sleep(self.RETRY_DELAY)
+            time.sleep(self.retry_delay)
 
         logger.info("Fetched %s indicators", len(indicators))
         return indicators
@@ -92,7 +122,7 @@ class WBAPIClient:
         """Fetch all data sources."""
         logger.info("Fetching sources from WB API...")
 
-        url = f"{self.BASE_URL}/sources"
+        url = f"{self.base_url}/sources"
         params = {"format": "json", "per_page": 100}
         data = self._make_request(url, params)
 
@@ -107,7 +137,7 @@ class WBAPIClient:
         """Fetch all topics."""
         logger.info("Fetching topics from WB API...")
 
-        url = f"{self.BASE_URL}/topics"
+        url = f"{self.base_url}/topics"
         params = {"format": "json", "per_page": 100}
         data = self._make_request(url, params)
 
@@ -119,9 +149,14 @@ class WBAPIClient:
         return topics
 
     def _make_request(self, url: str, params: Dict[str, Any]) -> Any:
-        """Make HTTP request with retry logic."""
+        """Make HTTP request with retry logic.
+
+        Floor max_retries at 1 attempt so config `retry_count=0` means
+        "one attempt, no retries" (the conventional interpretation),
+        not "zero HTTP attempts" (which would silently no-op every call).
+        """
         last_error: Exception | None = None
-        for attempt in range(self.MAX_RETRIES):
+        for attempt in range(max(1, self.max_retries)):
             try:
                 response = self.session.get(url, params=params, timeout=self.timeout)
                 response.raise_for_status()
@@ -131,24 +166,24 @@ class WBAPIClient:
                 logger.warning(
                     "Timeout on attempt %s/%s for %s; retrying in %ss",
                     attempt + 1,
-                    self.MAX_RETRIES,
+                    self.max_retries,
                     url,
-                    self.RETRY_DELAY * (attempt + 1),
+                    self.retry_delay * (attempt + 1),
                 )
             except requests.exceptions.RequestException as exc:
                 last_error = exc
                 logger.warning(
                     "Request failed on attempt %s/%s for %s: %s",
                     attempt + 1,
-                    self.MAX_RETRIES,
+                    self.max_retries,
                     url,
                     exc,
                 )
 
-            if attempt < self.MAX_RETRIES - 1:
-                time.sleep(self.RETRY_DELAY * (attempt + 1))
+            if attempt < self.max_retries - 1:
+                time.sleep(self.retry_delay * (attempt + 1))
 
-        raise RuntimeError(f"API request failed after {self.MAX_RETRIES} attempts: {url}") from last_error
+        raise RuntimeError(f"API request failed after {self.max_retries} attempts: {url}") from last_error
 
     def save_raw_data(self, data: Dict[str, List], output_dir: Path = Path("data/raw")) -> None:
         """Save raw API responses to JSON files."""

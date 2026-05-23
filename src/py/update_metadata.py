@@ -150,9 +150,28 @@ def main():
         wb_cfg = config.get("wb_api", {})
         api_timeout = wb_cfg.get("timeout", WBAPIClient.DEFAULT_TIMEOUT)
         per_page = wb_cfg.get("per_page", 10000)
+        # wb_api.{base_url,retry_count,retry_delay} now wired into WBAPIClient
+        # (was inert before — client read class constants regardless of config).
+        api_base_url = wb_cfg.get("base_url")
+        api_max_retries = wb_cfg.get("retry_count")
+        api_retry_delay = wb_cfg.get("retry_delay")
 
-        with WBAPIClient(timeout=api_timeout) as api_client:
-            yaml_gen = YAMLGenerator(output_dir=base_dir)
+        # Pull per-target filenames from config so yaml_output.*_file
+        # overrides are honoured (was a no-op before — generator hardcoded).
+        yaml_cfg = config.get("yaml_output", {})
+        filenames = {
+            "indicators": yaml_cfg.get("indicators_file"),
+            "sources":    yaml_cfg.get("sources_file"),
+            "topics":     yaml_cfg.get("topics_file"),
+        }
+
+        with WBAPIClient(
+            timeout=api_timeout,
+            base_url=api_base_url,
+            max_retries=api_max_retries,
+            retry_delay=api_retry_delay,
+        ) as api_client:
+            yaml_gen = YAMLGenerator(output_dir=base_dir, filenames=filenames)
 
             # Fetch data from WB API
             logger.info("\n[1/5] Fetching data from World Bank API...")
