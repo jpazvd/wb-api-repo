@@ -2,3 +2,4 @@ requests
 pandas
 pyyaml
 pytest
+jsonschema
