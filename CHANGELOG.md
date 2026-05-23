@@ -13,6 +13,15 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Python validation pass + docs audit** (closes the post-demo cleanup):
+  - **`docs/PYTHON_USER_GUIDE.md`** — comprehensive Python-surface reference (library + CLI + verification + Stata-parity table). Hand-maintained companion to the auto-captured `docs/PYTHON_DEMO.md` transcript.
+  - **CLI `--help` completeness**: every flag on every `wb_api_tools.py` subcommand now has a `help=` string. `countries`, `indicators`, `data`, `alltopics`, `sources`, `search`, `sync` `--out`/`--codes`/`--search`/`--date`/`--per-page`/`--long`/`--page`/`--limit`/`--save-raw`/`--no-validate`/`--skip-diff`/`--commit`/`--tag` previously had no descriptions.
+  - **Docstrings** added to `wb_api_tools.build_parser()` and `wb_api_tools.main()` (the two public CLI helpers were undocumented).
+  - **Validation pass results** (no code changes, recorded for traceability):
+    - pytest: 62/62 green (28 discovery + 17 wb_text + 14 wb_api_tools + 3 misc).
+    - Live demo: `examples/demo_pr_b_c.py` runs end-to-end against the live API + 18 MB YAML cache without errors.
+    - Module docstring coverage: 9/15 modules (legacy `make_wb_metadata_*` builders and one-off examples remain undocumented by design).
+    - Public function docstring coverage: 34/64 (53%); 100% on the PR B + PR C surface (`wb_discovery`, `wb_text`, `yaml_generator`, `update_metadata`, `schema_validator`).
 - **Python PR C — Country-context flags + multilingual + linewrap** (closes the remaining Phase 5-6 Python deferrals):
   - `wb_api_tools.get_data(geo=True)` — supplementary 3-field geographic merge (capital / latitude / longitude); combinable with `no_basic` for any of 4 flag matrices. Phase 5 `geo` parity.
   - `wb_api_tools.enrich_country_context(df, iso_col, *, basic=True, geo=False)` — standalone helper that merges country context into a user-supplied DataFrame on any ISO3 column. Python equivalent of Stata `wbopendata, match(varname) [basic geo]`. Left-join semantics; defensive `.copy()`; raises `KeyError` if `iso_col` missing.
