@@ -13,6 +13,12 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Phase 5** — Basic country context on-by-default in `src/w/wbopendata.ado` (v17.2.0 → v17.3.0):
+  - 8-field basic context (region / regionname / adminregion / adminregionname / incomelevel / incomelevelname / lendingtype / lendingtypename) is now auto-merged into every data-fetch output unless the user passes `noBASIC`.
+  - `noCHAR` option added (the actual `char define wbopendata_*` write block lands with Phase 5.1 / Phase 6 — currently the flag is parsed and defaulted ON, but not yet enforced).
+  - Both country-context call sites — the `match()` flow and the default data-fetch flow — retargeted from legacy `_countrymetadata` to new `__wbod_countrymetadata` (v18, 175 LOC), which adds the `basic` and `geo` flag passthroughs.
+  - Legacy `_countrymetadata.ado` retained for the `_update_countrymetadata` / `_update_regionmetadata` admin paths.
+  - `src/wbopendata.pkg` extended with 1 new entry (`_/__wbod_countrymetadata.ado`).
 - **Phase 4** — Cache management + `sync replace` (apply) path in `src/w/wbopendata.ado` (v17.1.0 → v17.2.0):
   - `wbopendata, sync replace [force]` — full apply flow: preview → snapshot → `__wbod_sync` (Python-preferred / Stata-fallback) → stats history → diff display.
   - `wbopendata, clearcache` / `, cacheinfo` / `, checkupdate` — metadata-cache subcommands.
@@ -72,7 +78,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added (planned, subsequent phases)
 
-- Country-context auto-merge + multilingual + publication features (Phases 5–6)
+- Multilingual (`language(en|es|fr)`) + publication features (`linewrap`, `maxlength`, `linewrapformat`, `describe`, `char` embed enforcement) (Phase 6)
 - 92-test QA suite parity (Phase 7)
 - Layered documentation parity (Phase 8)
 - CI/CD + SSC packaging workflows (Phase 9)
