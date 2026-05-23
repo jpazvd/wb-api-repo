@@ -11,6 +11,24 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
+### Added
+
+- **Python PR B — Discovery API** (Python parity with the Stata `wbopendata` discovery + sync surface ported in Phases 3-6):
+  - **New module `src/py/wb_discovery.py`** (~270 LOC) exposing:
+    - `sources(limit=20)` / `allsources()` — read `_wbopendata_sources.yaml`, sorted by numeric ID.
+    - `alltopics()` — read `_wbopendata_topics.yaml`.
+    - `info(indicator_id)` — single-indicator metadata lookup from YAML cache (case-insensitive; falls back to uppercase for canonical WB codes).
+    - `search(term, *, page=1, limit=20, source=None, topic=None, field="name+description", exact=False)` — paginated full-text search with source/topic/field filters; supports "browse mode" (empty term + filter).
+    - `describe(indicator_id)` — fresh metadata fetch via WB API (live counterpart to `info()`; same dict shape so callers can swap).
+    - `sync(argv=None)` — in-process wrapper around `update_metadata.main()` (Phase 1 pipeline).
+    - `_transform_api_indicator(raw)` — maps raw WB-API record → YAML schema v2.0 keys.
+    - `_load_yaml_section()` — graceful degradation: returns `[]` + `logger.warning` when YAML cache missing, instead of raising.
+    - `WBOPENDATA_YAML_DIR` env-var override for test / alternative deployments.
+  - **`WBAPIClient.fetch_indicator_metadata(code)`** added to `src/py/wb_api_client.py` for the live `describe()` path.
+  - **`get_data()` auto-merge**: now joins 8 basic country-context fields (region / regionname / adminregion / adminregionname / incomelevel / incomelevelname / lendingtype / lendingtypename) via `countryiso3code` by default; opt-out with `no_basic=True` (or `--no-basic` CLI flag). Mirrors Phase 5 Stata semantics. Cached at module level so repeated calls don't refetch `/country`.
+  - **CLI subcommands** added to `src/py/wb_api_tools.py`: `sources`, `alltopics`, `info <id>`, `describe <id>`, `search <term> [--page N --limit N --source N --topic N --field FIELD --exact --out FILE]`, `sync [--save-raw --no-validate --skip-diff --commit --tag]`, plus `data --no-basic`.
+  - **`tests/test_wb_discovery.py`** — 24 new pytest tests covering sources / alltopics / info / search (10 paths) / describe (mock-based, 5 paths) / drop-in shape parity between `describe()` and `info()`. Full suite now 26/26 green.
+
 ### Fixed
 
 - **Python P1 (Phase 1 debt cleanup)** — addressed all 5 Copilot inline findings from PR #2 that were deferred at the time:
