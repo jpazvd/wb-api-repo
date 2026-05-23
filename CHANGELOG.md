@@ -11,7 +11,41 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-_Nothing yet — open a new section here when work resumes on `develop` post-v0.1.0._
+_Nothing yet — open a new section here when work resumes on `develop` post-v0.1.1._
+
+## [0.1.1] — 2026-05-23
+
+PATCH release. Docs + CI infrastructure follow-ups after v0.1.0; no
+changes to the Python or Stata public surface. 3 PRs since v0.1.0.
+
+### Added (v0.1.1)
+
+- **CI: pytest workflow** (PR #18) — `.github/workflows/tests.yml` runs
+  the 62-case pytest suite on push to `develop`/`main` and on PRs
+  targeting either. Python 3.11 + pip cache; uses `python -m pytest`
+  and `python -m pip` consistently for interpreter clarity.
+- **README refresh** (PR #17) — rewrote `README.md` for the v0.1.0
+  surface: single H1 (was two concatenated READMEs), all 9 CLI
+  subcommands documented (was 3), Python library import pattern, Stata
+  package section, YAML cache section, documentation index. Cross-links
+  to PYTHON_USER_GUIDE / PYTHON_DEMO / CHANGELOG / VERSIONING_POLICY.
+
+### Changed (v0.1.1)
+
+- **Metadata refresh cadence weekly → semi-monthly** (PR #19) —
+  `wb_metadata_nightly.yml` cron `'17 2 * * 1'` → `'17 2 1,15 * *'`
+  (1st + 15th of every month at 02:17 UTC). Workflow display name
+  cadence-agnostic ("World Bank Data Refresh"); auto-commit messages
+  dropped the stale "Nightly" prefix. Filename kept to preserve
+  workflow ID + run history.
+
+### Fixed (v0.1.1)
+
+- **Silent cron-parse bug** (PR #17) — `wb_metadata_nightly.yml` cron
+  was `'17 2 * * 1''` with a stray trailing quote; the YAML parser
+  either rejected the schedule or fell through to an unintended cadence.
+  Every push to develop since PR #12 had been showing 0-second failures
+  on this workflow as a result. Now parses cleanly.
 
 ## [0.1.0] — 2026-05-23
 
