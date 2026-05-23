@@ -13,6 +13,20 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Phase 4** — Cache management + `sync replace` (apply) path in `src/w/wbopendata.ado` (v17.1.0 → v17.2.0):
+  - `wbopendata, sync replace [force]` — full apply flow: preview → snapshot → `__wbod_sync` (Python-preferred / Stata-fallback) → stats history → diff display.
+  - `wbopendata, clearcache` / `, cacheinfo` / `, checkupdate` — metadata-cache subcommands.
+  - `wbopendata, cleardatacache` / `, resetdatacache` — data-cache subcommands.
+  - `cachedays(integer 7)`, `nocache`, `forcestata`, `forcepython` options.
+  - Deprecated aliases: `syncforce` / `syncpreview` / `syncdryrun` (one-line deprecation notice + canonical-modifier substitution).
+  - 6 new `__wbod_*` helpers (~1957 LOC):
+    - `__wbod_cache.ado` (283 LOC) — cache backend with 5 inline subcommands (clear/info/checkversion/cleardatacache/resetdatacache).
+    - `__wbod_sync.ado` (293 LOC) — sync orchestrator with 6 inline programs (check_python/check_staleness/download_yaml/run_python/update_sync_history/write_cache_meta).
+    - `__wbod_sync_diff.ado` (182 LOC) — before/after snapshot diff.
+    - `__wbod_refresh_yaml.ado` (685 LOC) — Stata-native YAML regeneration fallback.
+    - `__wbod_api_read_indicators.ado` (358 LOC) — bulk WB-API fetcher feeding refresh_yaml.
+    - `__wbod_write_stats_history.ado` (156 LOC) — post-sync stats logger.
+  - `src/wbopendata.pkg` extended with 6 new entries.
 - **Phase 3** — Stata discovery commands wired in `src/w/wbopendata.ado` (v17.0 → v17.1.0):
   - `wbopendata, sources` / `, allsources` — list 71 WB data sources (limit-aware).
   - `wbopendata, alltopics` — list 21 topic categories.
@@ -58,7 +72,6 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added (planned, subsequent phases)
 
-- 7-day TTL HTTP cache + `sync replace` (apply) path (Phase 4)
 - Country-context auto-merge + multilingual + publication features (Phases 5–6)
 - 92-test QA suite parity (Phase 7)
 - Layered documentation parity (Phase 8)
