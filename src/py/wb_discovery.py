@@ -107,3 +107,37 @@ def alltopics() -> List[Dict]:
     if not top_dict:
         return []
     return sorted(top_dict.values(), key=lambda r: int(r.get("code", "0") or 0))
+
+
+def info(indicator_id: str) -> Optional[Dict]:
+    """Return full metadata for one indicator (Python equivalent of
+    `wbopendata, info(<id>)`).
+
+    Args:
+        indicator_id: WB indicator code (case-insensitive lookup).
+                      Common forms accepted: 'SP.POP.TOTL', 'sp.pop.totl'.
+
+    Returns:
+        Single indicator dict — keys per the YAML schema v2.0:
+            code, name, source_id, source_name, topic_ids, topic_names,
+            description, unit, source_org, note, limited_data
+        OR None if the indicator is not in the YAML cache.
+
+    The YAML keys are case-sensitive (typically uppercase); we try the
+    raw input first then the upper-cased form.
+    """
+    if not indicator_id:
+        return None
+    ind_dict = _load_yaml_section(INDICATORS_YAML, "indicators")
+    if not ind_dict:
+        return None
+    # Direct hit first (preserves exact case if the YAML used a lowercase key)
+    if indicator_id in ind_dict:
+        return ind_dict[indicator_id]
+    # Fall back to upper-case (WB indicator codes are canonically uppercase)
+    upper = indicator_id.upper()
+    if upper in ind_dict:
+        return ind_dict[upper]
+    logger.info("Indicator %r not found in YAML cache (tried %r and %r).",
+                indicator_id, indicator_id, upper)
+    return None
