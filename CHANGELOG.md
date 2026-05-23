@@ -15,10 +15,11 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 - **Python validation pass + docs audit** (closes the post-demo cleanup):
   - **`docs/PYTHON_USER_GUIDE.md`** — comprehensive Python-surface reference (library + CLI + verification + Stata-parity table). Hand-maintained companion to the auto-captured `docs/PYTHON_DEMO.md` transcript.
-  - **CLI `--help` completeness**: every flag on every `wb_api_tools.py` subcommand now has a `help=` string. `countries`, `indicators`, `data`, `alltopics`, `sources`, `search`, `sync` `--out`/`--codes`/`--search`/`--date`/`--per-page`/`--long`/`--page`/`--limit`/`--save-raw`/`--no-validate`/`--skip-diff`/`--commit`/`--tag` previously had no descriptions.
+  - **CLI `--help` completeness**: every flag on every `wb_api_tools.py` subcommand now has a `help=` string. `countries`, `indicators`, `data`, `alltopics`, `sources`, `search`, `sync` `--out`/`--codes`/`--search`/`--date`/`--long`/`--page`/`--limit`/`--save-raw`/`--no-validate`/`--skip-diff`/`--commit`/`--tag` previously had no descriptions.
+  - **Removed dead `--per-page` flag** from `data` subcommand. `get_data()` uses CSV downloads (which don't paginate), so the value was always ignored. Documented as a no-op by Copilot; removing rather than wiring or hiding.
   - **Docstrings** added to `wb_api_tools.build_parser()` and `wb_api_tools.main()` (the two public CLI helpers were undocumented).
   - **Validation pass results** (no code changes, recorded for traceability):
-    - pytest: 62/62 green (28 discovery + 17 wb_text + 14 wb_api_tools + 3 misc).
+    - pytest: 62/62 green (31 discovery + 17 wb_text + 14 wb_api_tools).
     - Live demo: `examples/demo_pr_b_c.py` runs end-to-end against the live API + 18 MB YAML cache without errors.
     - Module docstring coverage: 9/15 modules (legacy `make_wb_metadata_*` builders and one-off examples remain undocumented by design).
     - Public function docstring coverage: 34/64 (53%); 100% on the PR B + PR C surface (`wb_discovery`, `wb_text`, `yaml_generator`, `update_metadata`, `schema_validator`).

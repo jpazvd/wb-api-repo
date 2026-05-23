@@ -464,8 +464,6 @@ def build_parser():
     p_d.add_argument("--countries", default="all",
                      help="Semicolon-separated ISO3 codes (e.g. BRA;USA;IND), 'all', or aggregate code")
     p_d.add_argument("--date", help="Year or year range (e.g. 2020 or 2010:2020)")
-    p_d.add_argument("--per-page", type=int, default=DEFAULT_PER_PAGE,
-                     help=f"Rows per API page (default {DEFAULT_PER_PAGE})")
     p_d.add_argument("--long", action="store_true",
                      help="Emit long (tidy) format instead of wide")
     p_d.add_argument("--no-basic", action="store_true",
@@ -546,7 +544,7 @@ def main(argv=None):
         _save_df(df, args.out)
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
-                      date=args.date, per_page=args.per_page, long=args.long,
+                      date=args.date, long=args.long,
                       no_basic=args.no_basic, geo=args.geo, language=args.language)
         # Debug: show fetched data shape and sample if verbose
         if VERBOSE:

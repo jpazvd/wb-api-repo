@@ -17,7 +17,23 @@ captured demo transcript in [PYTHON_DEMO.md](PYTHON_DEMO.md).
 | Wrap text for Stata graphs     | `wb_text.wrap / wrap_lines / truncate`            |
 | Refresh the YAML cache         | `wb_discovery.sync(...)` or `wb_api_tools sync`   |
 
-All public functions have docstrings; this guide is the high-level map.
+The PR B + PR C surface (`wb_discovery`, `wb_text`, `wb_api_tools.get_data`,
+`enrich_country_context`) is fully docstring'd; this guide is the
+high-level map. Legacy `make_wb_metadata_*` builders and one-off
+example scripts remain undocumented by design.
+
+> **Imports**: this repo does not ship as an installable package. The
+> tests add `src/py` to `sys.path` and then `import wb_discovery as wd`.
+> To copy/paste the examples below into a script or notebook, do the
+> same — either set `PYTHONPATH=src/py` in your environment, or insert
+> the path at runtime:
+>
+> ```python
+> import sys; sys.path.insert(0, "src/py")
+> import wb_discovery as wd               # then the examples below work
+> from wb_api_tools import get_data, enrich_country_context
+> import wb_text as wt
+> ```
 
 ---
 
@@ -26,7 +42,7 @@ All public functions have docstrings; this guide is the high-level map.
 ### `wb_discovery` — read from the YAML cache
 
 ```python
-import src.py.wb_discovery as wd
+import wb_discovery as wd      # after sys.path setup above
 
 wd.sources(limit=20)         # first 20 sources, sorted by id
 wd.allsources()              # uncapped (71 today)
@@ -40,6 +56,7 @@ wd.search("population", page=2, limit=20)             # pagination
 ```
 
 Notes:
+
 - The YAML cache lives in `src/_/_wbopendata_{indicators,sources,topics}.yaml`.
 - Override the cache location with `WBOPENDATA_YAML_DIR` (used by tests).
 - A module-level `_SECTION_CACHE` avoids re-parsing the 18 MB indicators
@@ -60,7 +77,7 @@ Returns the same key set as `info()` (verified by
 ### `wb_api_tools.get_data` — indicator data
 
 ```python
-from src.py.wb_api_tools import get_data
+from wb_api_tools import get_data      # after sys.path setup above
 
 # DEFAULT — auto-merges 8 country-context fields (region, income, ...)
 df = get_data(["SP.POP.TOTL"], "BRA;USA;IND", date="2020")
@@ -97,7 +114,7 @@ Attach the same 8 (or 8+3) context columns to any user DataFrame keyed
 by ISO3:
 
 ```python
-from src.py.wb_api_tools import enrich_country_context
+from wb_api_tools import enrich_country_context      # after sys.path setup above
 import pandas as pd
 
 user_df = pd.DataFrame({"iso3": ["BRA","USA","IND","DEU","JPN"],
@@ -114,7 +131,7 @@ if `iso_col` is missing.
 ### `wb_text` — text wrapping for publication graphs
 
 ```python
-import src.py.wb_text as wt
+import wb_text as wt      # after sys.path setup above
 
 s = "GDP per capita (current US$) — Gross domestic product divided ..."
 wt.wrap(s, width=60, fmt="stack")    # '"line1" "line2" ...' (graph title())
@@ -185,6 +202,7 @@ PYTHONIOENCODING=utf-8 python -m pytest tests/ -v
 ```
 
 62 tests across three files:
+
 - `tests/test_wb_discovery.py` — 31 cases (sources, allsources, alltopics,
   info, search filters/pagination, describe live + multilingual)
 - `tests/test_wb_text.py` — 17 cases (all 4 wrap formats + truncate)
@@ -205,7 +223,7 @@ one ~15 s run. The captured transcript lives in
 
 ## 4. Where things live
 
-```
+```text
 src/py/
 ├── wb_api_client.py     # WBAPIClient (low-level HTTP, retries, language URL)
 ├── wb_api_tools.py      # get_data, enrich_country_context, CLI entrypoint
@@ -236,19 +254,19 @@ config/
 
 ## 5. Parity with Stata `wbopendata`
 
-| Stata surface                         | Python equivalent                          |
-| ------------------------------------- | ------------------------------------------ |
-| `wbopendata, indicator(X) clear`      | `get_data([X], ...)`                       |
-| `wbopendata, sources`                 | `wd.sources()` / CLI `sources`             |
-| `wbopendata, allsources`              | `wd.allsources()` / CLI `sources --all`    |
-| `wbopendata, alltopics`               | `wd.alltopics()` / CLI `alltopics`         |
-| `wbopendata, search("term")`          | `wd.search("term", ...)` / CLI `search`    |
-| `wbopendata, indicator(X) describe`   | `wd.describe(X, language=...)`             |
-| `wbopendata, ... language(es)`        | `language="es"` on `describe` / `get_data` |
-| `wbopendata, ... noBASIC`             | `no_basic=True` on `get_data`              |
-| Country-context merge (Phase 5)       | default in `get_data`; `enrich_country_context` for arbitrary frames |
-| `linewrap(width)` for graph titles    | `wt.wrap(s, width=W, fmt="stack")`         |
-| `__wbod_yaml_sync` cache refresh      | `wd.sync(argv)` / CLI `sync`               |
+| Stata surface                         | Python equivalent                                                     |
+| ------------------------------------- | --------------------------------------------------------------------- |
+| `wbopendata, indicator(X) clear`      | `get_data([X], ...)`                                                  |
+| `wbopendata, sources`                 | `wd.sources()` / CLI `sources`                                        |
+| `wbopendata, allsources`              | `wd.allsources()` / CLI `sources --all`                               |
+| `wbopendata, alltopics`               | `wd.alltopics()` / CLI `alltopics`                                    |
+| `wbopendata, search("term")`          | `wd.search("term", ...)` / CLI `search`                               |
+| `wbopendata, indicator(X) describe`   | `wd.describe(X, language=...)`                                        |
+| `wbopendata, ... language(es)`        | `language="es"` on `describe` / `get_data`                            |
+| `wbopendata, ... noBASIC`             | `no_basic=True` on `get_data`                                         |
+| Country-context merge (Phase 5)       | default in `get_data` (`enrich_country_context` for arbitrary frames) |
+| `linewrap(width)` for graph titles    | `wt.wrap(s, width=W, fmt="stack")`                                    |
+| `__wbod_yaml_sync` cache refresh      | `wd.sync(["--save-raw"])` / CLI `sync`                                |
 
 ---
 
