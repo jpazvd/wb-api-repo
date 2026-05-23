@@ -1,6 +1,16 @@
 *******************************************************************************
 * wbopendata
-*! v 17.3.0  	 23May2026               by Joao Pedro Azevedo
+*! v 17.4.0  	 23May2026               by Joao Pedro Azevedo
+* 	v17.4.0: Phase 6 — describe (metadata-only) + linewrap features:
+* 	         linewrap() / maxlength() / linewrapformat() — wrap long
+* 	         metadata strings for publication graphs.
+* 	         describe — fetch metadata only (no data download); routes
+* 	         to new __wbod_query_metadata (v18) with linewrap opts.
+* 	         Calls new __wbod_linewrap / __wbod_metadata_linewrap /
+* 	         __wbod_query_metadata helpers.
+* 	         Deferred to Phase 6.1: noCHAR enforcement (the actual
+* 	         `char define wbopendata_*' writes inside the data-fetch
+* 	         path); language() wiring verification.
 * 	v17.3.0: Phase 5 — basic country context on-by-default:
 * 	         noBASIC opts out of the 8-field basic context auto-merge.
 * 	         noCHAR opts out of dataset characteristic embedding
@@ -105,6 +115,10 @@ version 9.0
 							FORCEPYTHON                ///
 							noBASIC                    ///
 							noCHAR                     ///
+							LINEWRAP(string)           ///
+							MAXLENGTH(string)          ///
+							LINEWRAPFORMAT(string)     ///
+							DESCRIBE                   ///
                  ]
 
 
@@ -179,6 +193,28 @@ local indicator `indicators'
 			exit _rc
 		}
 	}
+
+	* ------------------------------------------------------------------
+	* Phase 6 (v17.4.0): describe (metadata-only) + linewrap features
+	* ------------------------------------------------------------------
+	* Assemble linewrap option pass-through once; consumed by describe
+	* below and (eventually) by other metadata callers.
+	local _lw_opts ""
+	if ("`linewrap'" != "")        local _lw_opts `_lw_opts' linewrap("`linewrap'")
+	if ("`maxlength'" != "")       local _lw_opts `_lw_opts' maxlength("`maxlength'")
+	if ("`linewrapformat'" != "")  local _lw_opts `_lw_opts' linewrapformat("`linewrapformat'")
+
+	if ("`describe'" != "") {
+		if ("`indicators'" == "" & "`indicator'" == "") {
+			di as err "describe requires indicator() or indicators()"
+			exit 198
+		}
+		local _ind_arg = cond("`indicator'" != "", "`indicator'", "`indicators'")
+		noisily __wbod_query_metadata, ind("`_ind_arg'") language("`language'") `_lw_opts'
+		return add
+		exit _rc
+	}
+	* ------------------------------------------------------------------
 
 	* ------------------------------------------------------------------
 	* Phase 4 (v17.2.0): cache management + sync replace (apply) path
