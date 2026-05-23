@@ -126,7 +126,7 @@ class YAMLGenerator:
 
             yaml_data['indicators'][code] = {
                 'code': code,
-                'name': ind.get('name', ''),
+                'name': self._normalize_name(ind.get('name')),
                 'source_id': self._extract_source_id(ind),
                 'source_name': self._extract_source_name(ind),
                 'topic_ids': self._extract_topic_ids(ind),
@@ -201,7 +201,7 @@ class YAMLGenerator:
 
             yaml_data['sources'][code] = {
                 'code': code,
-                'name': src.get('name', ''),
+                'name': self._normalize_name(src.get('name')),
                 'description': self._clean_text(src.get('description', '')),
                 'url': src.get('url', ''),
                 'data_availability': src.get('dataavailability', ''),
@@ -247,7 +247,7 @@ class YAMLGenerator:
 
             yaml_data['topics'][code] = {
                 'code': code,
-                'name': topic.get('value', ''),
+                'name': self._normalize_name(topic.get('value')),
                 'description': self._clean_text(topic.get('sourceNote', ''))
             }
 
@@ -324,7 +324,23 @@ class YAMLGenerator:
         text = ' '.join(text.split())
         # Normalize known content issues (e.g., "workers\ remittances" -> "workers' remittances")
         text = re.sub(r"workers\\\s+remittances", "workers' remittances", text, flags=re.IGNORECASE)
+        # Common WB-API misspelling: "Millenium" -> "Millennium"
+        text = re.sub(r"\bMilleni(?=um\b)", "Millenni", text, flags=re.IGNORECASE)
         return text.strip()
+
+    def _normalize_name(self, name: str) -> str:
+        """Trim + fix known upstream typos in metadata name fields.
+
+        Lighter-weight than _clean_text (which also collapses internal
+        whitespace + handles description-style text); applied to short
+        identifier-style strings like source/topic/indicator names.
+        """
+        if not name:
+            return ''
+        name = name.strip()
+        # Common WB-API misspelling: "Millenium" -> "Millennium"
+        name = re.sub(r"\bMilleni(?=um\b)", "Millenni", name, flags=re.IGNORECASE)
+        return name
 
 
 if __name__ == '__main__':
