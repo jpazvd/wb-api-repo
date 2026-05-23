@@ -124,8 +124,9 @@ python src/py/wb_api_tools.py sync                # in-place refresh
 python src/py/wb_api_tools.py sync --commit --tag # also git-commit + tag
 ```
 
-A nightly GitHub Action (`.github/workflows/wb_metadata_nightly.yml`) keeps
-the cache fresh.
+A weekly GitHub Action (`.github/workflows/wb_metadata_nightly.yml` — file
+name is historical; cron runs every Monday at 02:17 UTC) keeps the cache
+fresh.
 
 ## Documentation
 
@@ -159,7 +160,7 @@ v0.1.0 release notes for the full PR list.
 
 The Python CLI and library plug into:
 
-- **Makefiles / pipelines** (`make update-data`, cron, GitHub Actions)
+- **Makefiles / pipelines** (`make wb-update-metadata`, cron, GitHub Actions)
 - **Stata workflows** (export CSV → `import delimited`, or use the Stata package directly)
 - **R workflows** (`readr::read_csv` or `arrow::read_parquet`)
 - **Jupyter notebooks** for ad-hoc analysis
