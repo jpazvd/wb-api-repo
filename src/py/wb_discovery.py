@@ -207,6 +207,59 @@ def _expand_search_fields(field: str) -> List[str]:
     return [f]
 
 
+def describe(indicator_id: str) -> Optional[Dict]:
+    """Fetch FRESH metadata for one indicator from the WB API
+    (Python equivalent of Stata `wbopendata, describe indicator(<id>)`).
+
+    Unlike info() (which reads from the local YAML cache and may be stale),
+    describe() always hits api.worldbank.org for the latest record.
+    Returns the same dict shape as info() so callers can swap between them.
+
+    Args:
+        indicator_id: WB indicator code (e.g. 'SP.POP.TOTL').
+
+    Returns:
+        Indicator metadata dict (YAML schema v2.0 shape) or None on
+        unknown code / API error.
+    """
+    if not indicator_id:
+        return None
+    from wb_api_client import WBAPIClient  # local import to avoid cycle on import
+
+    try:
+        with WBAPIClient() as client:
+            raw = client.fetch_indicator_metadata(indicator_id)
+    except Exception as exc:  # network errors / bad response
+        logger.error("describe(%r) failed: %s", indicator_id, exc)
+        return None
+    if not raw:
+        return None
+    return _transform_api_indicator(raw)
+
+
+def _transform_api_indicator(raw: Dict) -> Dict:
+    """Map a raw WB-API indicator record to the YAML schema v2.0 shape
+    used by info(). Keeps describe()'s output drop-in compatible.
+    """
+    source = raw.get("source") or {}
+    topics = raw.get("topics") or []
+    return {
+        "code": raw.get("id", ""),
+        "name": raw.get("name", ""),
+        "source_id": str(source.get("id", "")) if isinstance(source, dict) else "",
+        "source_name": source.get("value", "") if isinstance(source, dict) else "",
+        "topic_ids": [str(t.get("id", "")) for t in topics if isinstance(t, dict)],
+        "topic_names": [
+            (t.get("value") or "").strip() for t in topics if isinstance(t, dict)
+        ],
+        "description": (raw.get("sourceNote") or "").strip(),
+        "unit": raw.get("unit", "") or "",
+        "source_org": raw.get("sourceOrganization", "") or "",
+        "note": raw.get("note", "") or "",
+        "limited_data": False,  # API doesn't expose; YAML schema default
+    }
+
+
 def info(indicator_id: str) -> Optional[Dict]:
     """Return full metadata for one indicator (Python equivalent of
     `wbopendata, info(<id>)`).
