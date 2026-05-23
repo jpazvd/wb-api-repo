@@ -149,9 +149,14 @@ class WBAPIClient:
         return topics
 
     def _make_request(self, url: str, params: Dict[str, Any]) -> Any:
-        """Make HTTP request with retry logic."""
+        """Make HTTP request with retry logic.
+
+        Floor max_retries at 1 attempt so config `retry_count=0` means
+        "one attempt, no retries" (the conventional interpretation),
+        not "zero HTTP attempts" (which would silently no-op every call).
+        """
         last_error: Exception | None = None
-        for attempt in range(self.max_retries):
+        for attempt in range(max(1, self.max_retries)):
             try:
                 response = self.session.get(url, params=params, timeout=self.timeout)
                 response.raise_for_status()

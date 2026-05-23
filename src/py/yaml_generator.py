@@ -28,8 +28,7 @@ def _wrap_long_text(value: str) -> str:
     """Wrap strings >200 chars at width 120 for YAML readability."""
     if len(value) <= 200 or " " not in value:
         return value
-    import textwrap as _tw  # local import to avoid stdlib leak in YAMLGenerator namespace
-    return _tw.fill(value, width=120, break_long_words=False, break_on_hyphens=False)
+    return textwrap.fill(value, width=120, break_long_words=False, break_on_hyphens=False)
 
 
 def _str_representer(dumper, data):
@@ -193,9 +192,11 @@ class YAMLGenerator:
             'sources': {}
         }
 
+        n_empty_id = 0
         for src in sources:
             code = str(src.get('id', ''))
             if not code:
+                n_empty_id += 1
                 continue
 
             yaml_data['sources'][code] = {
@@ -208,9 +209,11 @@ class YAMLGenerator:
             }
 
         n_unique = len(yaml_data['sources'])
-        n_dropped = len(sources) - n_unique
-        if n_dropped > 0:
-            logger.warning(f"Dropped {n_dropped} source record(s) with empty id (kept {n_unique})")
+        n_duplicates = len(sources) - n_empty_id - n_unique
+        if n_empty_id > 0:
+            logger.warning(f"Dropped {n_empty_id} source record(s) with empty id (kept {n_unique})")
+        if n_duplicates > 0:
+            logger.warning(f"API returned {n_duplicates} duplicate source code(s) (kept last occurrence)")
         yaml_data['_metadata']['total_sources'] = n_unique
 
         output_file = self.output_dir / self.filenames["sources"]
@@ -235,9 +238,11 @@ class YAMLGenerator:
             'topics': {}
         }
 
+        n_empty_id = 0
         for topic in topics:
             code = str(topic.get('id', ''))
             if not code:
+                n_empty_id += 1
                 continue
 
             yaml_data['topics'][code] = {
@@ -247,9 +252,11 @@ class YAMLGenerator:
             }
 
         n_unique = len(yaml_data['topics'])
-        n_dropped = len(topics) - n_unique
-        if n_dropped > 0:
-            logger.warning(f"Dropped {n_dropped} topic record(s) with empty id (kept {n_unique})")
+        n_duplicates = len(topics) - n_empty_id - n_unique
+        if n_empty_id > 0:
+            logger.warning(f"Dropped {n_empty_id} topic record(s) with empty id (kept {n_unique})")
+        if n_duplicates > 0:
+            logger.warning(f"API returned {n_duplicates} duplicate topic code(s) (kept last occurrence)")
         yaml_data['_metadata']['total_topics'] = n_unique
 
         output_file = self.output_dir / self.filenames["topics"]
