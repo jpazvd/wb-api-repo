@@ -1,10 +1,16 @@
 *******************************************************************************
 * wbopendata
-*! v 17.1.0  	 23May2026               by Joao Pedro Azevedo
+*! v 17.2.0  	 23May2026               by Joao Pedro Azevedo
+* 	v17.2.0: Phase 4 — cache management + sync replace (apply) path:
+* 	         clearcache / cacheinfo / checkupdate / cleardatacache /
+* 	         resetdatacache + nocache + cachedays() + forcestata /
+* 	         forcepython + sync replace flow (preview → apply → diff).
+* 	         Calls new __wbod_cache / __wbod_sync / __wbod_sync_diff /
+* 	         __wbod_refresh_yaml / __wbod_write_stats_history helpers.
+* 	         Backward-compat aliases: syncforce / syncpreview / syncdryrun.
 * 	v17.1.0: Phase 3 — discovery commands wired in dispatcher:
 * 	         sources / allsources / alltopics / search() / info() / sync (dryrun)
 * 	         Calls new __wbod_* helpers (Tiers 1-3 + transitive deps).
-* 	         `sync replace` (apply changes) deferred to Phase 4.
 * 	v17.0:  Create region metadata (24Jan2023)
 *******************************************************************************
 
@@ -78,6 +84,18 @@ version 9.0
 							INFO(string)               ///
 							SYNC                       ///
 							REPLACE                    ///
+							SYNCFORCE                  ///
+							SYNCPREVIEW                ///
+							SYNCDRYRUN                 ///
+							CHECKUPDATE                ///
+							CLEARCACHE                 ///
+							CACHEINFO                  ///
+							CLEARDATACACHE             ///
+							RESETDATACACHE             ///
+							NOCACHE                    ///
+							CACHEDAYS(integer 7)       ///
+							FORCESTATA                 ///
+							FORCEPYTHON                ///
                  ]
 
 
@@ -140,18 +158,113 @@ local indicator `indicators'
 		}
 	}
 
-	if ("`sync'" != "") {
+	* ------------------------------------------------------------------
+	* Phase 4 (v17.2.0): cache management + sync replace (apply) path
+	* ------------------------------------------------------------------
+
+	* Resolve backward-compatible aliases into canonical modifiers (deprecated v18.0):
+	*   syncforce   → sync + replace + force
+	*   syncpreview → sync + replace
+	*   syncdryrun  → sync (dryrun is the default)
+	if ("`syncforce'" != "") {
+		noi di as txt "{bf:Note:} {cmd:syncforce} is deprecated; use {cmd:sync replace force} instead."
+		local sync "sync"
+		local replace "replace"
+	}
+	if ("`syncpreview'" != "") {
+		noi di as txt "{bf:Note:} {cmd:syncpreview} is deprecated; use {cmd:sync replace} instead."
+		local sync "sync"
+		local replace "replace"
+	}
+	if ("`syncdryrun'" != "") {
+		noi di as txt "{bf:Note:} {cmd:syncdryrun} is deprecated; use {cmd:sync} instead."
+		local sync "sync"
+	}
+
+	* Data-cache maintenance commands (standalone exits)
+	if ("`cleardatacache'" != "") {
+		__wbod_cache, cleardatacache
+		exit 0
+	}
+	if ("`resetdatacache'" != "") {
+		__wbod_cache, resetdatacache
+		exit 0
+	}
+
+	* Metadata-cache + sync routing
+	if ("`sync'" != "" | "`checkupdate'" != "" | "`clearcache'" != "" | "`cacheinfo'" != "") {
+		if ("`clearcache'" != "") {
+			__wbod_cache, clear
+			exit _rc
+		}
+		if ("`cacheinfo'" != "") {
+			__wbod_cache, info
+			exit _rc
+		}
+		if ("`checkupdate'" != "") {
+			__wbod_cache, checkversion
+			if (r(needs_update)) {
+				di as result "Update available!"
+				di as text "  Local version:  v" r(local_version)
+				di as text "  Remote version: v" r(remote_version)
+				di as text ""
+				di as text `"Run {stata wbopendata, sync replace:wbopendata, sync replace} to update"'
+			}
+			else di as text "Metadata is up-to-date (v" r(local_version) ")"
+			exit _rc
+		}
+
+		* sync: always show preview first
 		noi __wbod_sync_preview, `detail'
 		return add
-		if ("`replace'" != "") {
-			di as err ""
-			di as err `"Note: {bf:sync replace} (apply changes) is not yet implemented in this distribution."'
-			di as text `"      Phase 3 ships the read-only preview only; the apply path lands in Phase 4."'
+
+		* sync without replace: dryrun (safe default) — stop after preview
+		if ("`replace'" == "") {
+			di as text ""
+			if ("`force'" != "") {
+				di as text `"To apply changes, run: {stata wbopendata, sync replace force:wbopendata, sync replace force}"'
+			}
+			else {
+				di as text `"To apply changes, run: {stata wbopendata, sync replace:wbopendata, sync replace}"'
+			}
 			exit 0
 		}
+
+		* sync replace: actually apply the sync
 		di as text ""
-		di as text `"(Dryrun preview only. {bf:sync replace} will land in Phase 4.)"'
-		exit 0
+		di as text "Proceeding with sync..."
+		di as text ""
+		* Snapshot current indicator list for post-sync diff
+		tempfile _sync_snap
+		capture quietly __wbod_sync_diff, before("`_sync_snap'")
+		if ("`forcestata'" != "") __wbod_sync, forcestata `force'
+		else if ("`forcepython'" != "") __wbod_sync, forcepython `force'
+		else if ("`force'" != "") __wbod_sync, force
+		else __wbod_sync
+		local sync_rc = _rc
+		if (`sync_rc' == 0) {
+			* Get counts after sync for history
+			quietly __wbod_sync_preview
+			local ind_count = r(ind_count)
+			local src_count = r(src_count)
+			local top_count = r(top_count)
+			local ctry_count = r(ctry_count)
+			local method = r(cache_method)
+			local by_source = r(by_source)
+			local by_topic = r(by_topic)
+			if ("`method'" == "") local method = "unknown"
+			capture quietly __wbod_write_stats_history, ///
+				method("`method'") ///
+				indicators(`ind_count') ///
+				sources(`src_count') ///
+				topics(`top_count') ///
+				countries(`ctry_count') ///
+				bysource("`by_source'") ///
+				bytopic("`by_topic'")
+			* Show indicator diff vs pre-sync snapshot
+			capture noisily __wbod_sync_diff, after("`_sync_snap'")
+		}
+		exit `sync_rc'
 	}
 	* ------------------------------------------------------------------
 
