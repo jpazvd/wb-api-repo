@@ -4,7 +4,7 @@ World Bank Open Data helpers in **Python** (library + CLI) and **Stata**
 (`wbopendata` ado package). Two surfaces over the same WB API v2, with a
 shared YAML metadata cache so discovery commands stay fast and offline-safe.
 
-Current release: **[v0.1.0](https://github.com/jpazvd/wb-api-repo/releases/tag/v0.1.0)** (2026-05-23).
+Current release: **[v0.1.1](https://github.com/jpazvd/wb-api-repo/releases/tag/v0.1.1)** (2026-05-23).
 Parallel v0.x track to the upstream [`wbopendata-dev`](https://github.com/jpazvd/wbopendata-dev)
 Stata Journal lineage (v18.x).
 
