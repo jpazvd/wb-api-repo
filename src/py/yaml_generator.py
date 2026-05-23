@@ -172,21 +172,24 @@ class YAMLGenerator:
     def generate_sources_yaml(self, sources: List[Dict]) -> Path:
         """Generate _wbopendata_sources.yaml"""
         logger.info(f"Generating sources YAML for {len(sources)} sources...")
-        
+
+        # Build YAML structure; total_sources set after empty-id filter
+        # so the count matches what's actually written (was len(input) — over-counted
+        # whenever the API returned records with missing IDs).
         yaml_data = {
             '_metadata': {
                 'version': self.SCHEMA_VERSION,
                 'generated_at': datetime.utcnow().isoformat() + 'Z',
-                'total_sources': len(sources)
+                'total_sources': 0,
             },
             'sources': {}
         }
-        
+
         for src in sources:
             code = str(src.get('id', ''))
             if not code:
                 continue
-            
+
             yaml_data['sources'][code] = {
                 'code': code,
                 'name': src.get('name', ''),
@@ -195,7 +198,13 @@ class YAMLGenerator:
                 'data_availability': src.get('dataavailability', ''),
                 'metadata_availability': src.get('metadataavailability', '')
             }
-        
+
+        n_unique = len(yaml_data['sources'])
+        n_dropped = len(sources) - n_unique
+        if n_dropped > 0:
+            logger.warning(f"Dropped {n_dropped} source record(s) with empty id (kept {n_unique})")
+        yaml_data['_metadata']['total_sources'] = n_unique
+
         output_file = self.output_dir / self.filenames["sources"]
         self._write_yaml(yaml_data, output_file)
         
@@ -205,27 +214,36 @@ class YAMLGenerator:
     def generate_topics_yaml(self, topics: List[Dict]) -> Path:
         """Generate _wbopendata_topics.yaml"""
         logger.info(f"Generating topics YAML for {len(topics)} topics...")
-        
+
+        # Build YAML structure; total_topics set after empty-id filter
+        # so the count matches what's actually written (mirrors the
+        # generate_sources_yaml fix; was len(input) before).
         yaml_data = {
             '_metadata': {
                 'version': self.SCHEMA_VERSION,
                 'generated_at': datetime.utcnow().isoformat() + 'Z',
-                'total_topics': len(topics)
+                'total_topics': 0,
             },
             'topics': {}
         }
-        
+
         for topic in topics:
             code = str(topic.get('id', ''))
             if not code:
                 continue
-            
+
             yaml_data['topics'][code] = {
                 'code': code,
                 'name': topic.get('value', ''),
                 'description': self._clean_text(topic.get('sourceNote', ''))
             }
-        
+
+        n_unique = len(yaml_data['topics'])
+        n_dropped = len(topics) - n_unique
+        if n_dropped > 0:
+            logger.warning(f"Dropped {n_dropped} topic record(s) with empty id (kept {n_unique})")
+        yaml_data['_metadata']['total_topics'] = n_unique
+
         output_file = self.output_dir / self.filenames["topics"]
         self._write_yaml(yaml_data, output_file)
         
