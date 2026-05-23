@@ -150,11 +150,54 @@ def get_indicator_metadata(codes: Optional[List[str]] = None, search: Optional[s
         df = df.loc[mask].copy()
     return df
 
+_BASIC_CONTEXT_CACHE: Optional[pd.DataFrame] = None
+
+
+def _get_basic_context() -> pd.DataFrame:
+    """Return cached ISO3 → 8-field basic country context lookup table.
+
+    Python equivalent of the Stata Phase-5 auto-merge surface. Columns:
+      countryiso3code, region, regionname, adminregion, adminregionname,
+      incomelevel, incomelevelname, lendingtype, lendingtypename
+
+    Cached at module level so multi-call workflows don't re-fetch
+    country metadata from /country on every get_data() invocation.
+    """
+    global _BASIC_CONTEXT_CACHE
+    if _BASIC_CONTEXT_CACHE is None:
+        cm = get_country_metadata()
+        _BASIC_CONTEXT_CACHE = cm[[
+            "id",
+            "region_id", "region",
+            "adminregion_id", "adminregion",
+            "incomeLevel_id", "incomeLevel",
+            "lendingType_id", "lendingType",
+        ]].rename(columns={
+            "id":               "countryiso3code",
+            "region_id":        "region",
+            "region":           "regionname",
+            "adminregion_id":   "adminregion",
+            "adminregion":      "adminregionname",
+            "incomeLevel_id":   "incomelevel",
+            "incomeLevel":      "incomelevelname",
+            "lendingType_id":   "lendingtype",
+            "lendingType":      "lendingtypename",
+        })
+    return _BASIC_CONTEXT_CACHE
+
+
 def get_data(indicators: List[str], countries: str = "all", date: Optional[str] = None,
-             per_page: int = DEFAULT_PER_PAGE, long: bool = False) -> pd.DataFrame:
+             per_page: int = DEFAULT_PER_PAGE, long: bool = False,
+             no_basic: bool = False) -> pd.DataFrame:
     """
     Fetch indicator data using CSV downloads (following Stata wbopendata approach)
-    Much more reliable than JSON for bulk data
+    Much more reliable than JSON for bulk data.
+
+    Phase 5 parity: by default also merges 8 basic country-context fields
+    (region/regionname/adminregion/adminregionname/incomelevel/
+     incomelevelname/lendingtype/lendingtypename) from /country.
+    Pass `no_basic=True` to skip (e.g. for lean output or when re-running
+    against an offline cache).
     """
     if isinstance(indicators, str):
         indicators = [c.strip() for c in indicators.split(",") if c.strip()]
@@ -254,14 +297,31 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
     # Sort data
     df_combined = df_combined.sort_values(["countryiso3code", "indicator", "date"])
 
+    # Phase-5 parity: auto-merge basic country context unless opted out.
+    # Done BEFORE the long/wide branch so context columns participate in
+    # the wide-format pivot index correctly.
+    if not no_basic:
+        try:
+            bc = _get_basic_context()
+            df_combined = df_combined.merge(bc, on="countryiso3code", how="left")
+        except Exception as e:
+            # Non-fatal — emit a warning and continue without context columns
+            print(f"Warning: basic country context merge skipped: {e}")
+
     if long:
         # Return long format (already is)
         return df_combined
     else:
         # Convert to wide format
-        # First, create a pivot table
+        # The basic-context columns (if merged) need to be in the pivot
+        # index so they don't get dropped by pivot_table's column reduction.
+        bc_cols = [
+            "region", "regionname", "adminregion", "adminregionname",
+            "incomelevel", "incomelevelname", "lendingtype", "lendingtypename",
+        ]
+        extra_idx = [c for c in bc_cols if c in df_combined.columns]
         wide = df_combined.pivot_table(
-            index=["countryiso3code", "country", "date"],
+            index=["countryiso3code", "country", "date"] + extra_idx,
             columns="indicator",
             values="value",
             aggfunc="first"
