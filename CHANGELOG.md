@@ -39,7 +39,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   - `yaml_generator.py` — hoisted `_wrap_long_text` + `_str_representer` to module scope; `yaml.add_representer` now runs once at import instead of twice per `generate_indicators_yaml` call. Removes per-method global-state mutation (`71c1c35`).
 - `pytest tests/` — 2/2 pass post-change. End-to-end YAMLGenerator round-trip verified (filename overrides + folded scalars).
 
-### Added
+### Added (Stata phases 2-7)
 
 - **Phase 7** — 92-test QA suite ported from `wbopendata-dev/qa/` to `wb-api-repo/qa/`:
   - `qa/run_tests.do` (2 851 LOC, v 3.0.0) — main harness covering 92 tests across 15 categories (ENV / DL / FMT / CTRY / REG / LW / UPD / TOPIC+LANG / Advanced / Cache+Sync / Discovery / Char / ERR / EXT / DET).
