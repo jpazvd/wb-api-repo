@@ -25,7 +25,7 @@ from __future__ import annotations
 import logging
 import os
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import yaml
 
@@ -36,6 +36,26 @@ DEFAULT_YAML_DIR = Path(__file__).resolve().parents[2] / "src" / "_"
 SOURCES_YAML = "_wbopendata_sources.yaml"
 TOPICS_YAML = "_wbopendata_topics.yaml"
 INDICATORS_YAML = "_wbopendata_indicators.yaml"
+
+
+# Module-level cache for parsed YAML sections.
+# The indicators file is ~18 MB; PyYAML's safe_load peaks at ~200-400 MB
+# of transient memory per call. Without this cache, two sequential
+# wd.info() / wd.search() calls reliably OOM on a 16 GB machine
+# (regression caught by examples/demo_pr_b_c.py).
+# Keyed by (resolved abs path, section) so multiple yaml dirs
+# (env-var overrides in tests) don't cross-contaminate.
+_SECTION_CACHE: Dict[Tuple[str, str], Dict[str, Dict[str, Any]]] = {}
+
+
+def clear_cache() -> None:
+    """Drop the in-process YAML section cache.
+
+    Call after `sync()` to force the next discovery call to re-read the
+    refreshed YAML. Also useful in long-running notebooks / services
+    where you want to reclaim the ~200 MB used by the indicators cache.
+    """
+    _SECTION_CACHE.clear()
 
 
 def _yaml_dir() -> Path:
@@ -53,17 +73,30 @@ def _load_yaml_section(filename: str, section: str) -> Dict[str, Dict]:
     Returns empty dict + warning if the file is missing — lets callers
     degrade gracefully when the user hasn't run `make wb-update-metadata`
     yet, instead of raising.
+
+    Cached at module level — re-parsing the 18 MB indicators file each
+    call peaks at ~200 MB of transient memory and reliably OOMs after
+    a few sequential discovery operations. Cache is keyed by resolved
+    abs path so test env-var overrides don't cross-contaminate. Drop
+    via `clear_cache()` after `sync()` or to reclaim memory.
     """
     path = _yaml_dir() / filename
+    cache_key = (str(path.resolve()), section)
+    if cache_key in _SECTION_CACHE:
+        return _SECTION_CACHE[cache_key]
     if not path.exists():
         logger.warning(
             "YAML metadata not found: %s. Run `make wb-update-metadata` first to populate.",
             path,
         )
+        # Cache the empty result too — avoids repeated stat() on a missing file
+        _SECTION_CACHE[cache_key] = {}
         return {}
     with open(path, "r", encoding="utf-8") as handle:
         payload = yaml.safe_load(handle) or {}
-    return payload.get(section, {}) or {}
+    section_dict = payload.get(section, {}) or {}
+    _SECTION_CACHE[cache_key] = section_dict
+    return section_dict
 
 
 def sources(limit: Optional[int] = 20) -> List[Dict]:
@@ -230,9 +263,15 @@ def sync(argv: Optional[List[str]] = None) -> int:
     try:
         _sys.argv = ["update_metadata"] + list(argv or [])
         from update_metadata import main as _main
-        return _main() or 0
+        rc = _main() or 0
     finally:
         _sys.argv = saved_argv
+    # Refresh wrote new YAML to disk; drop the cache so the next
+    # info()/search()/sources()/alltopics()/describe() call reads the
+    # updated content instead of returning stale data from the prior
+    # process state.
+    clear_cache()
+    return rc
 
 
 def describe(indicator_id: str, language: Optional[str] = None) -> Optional[Dict]:
