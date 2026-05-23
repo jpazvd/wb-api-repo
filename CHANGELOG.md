@@ -13,6 +13,19 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Phase 7** — 92-test QA suite ported from `wbopendata-dev/qa/` to `wb-api-repo/qa/`:
+  - `qa/run_tests.do` (2 851 LOC, v 3.0.0) — main harness covering 92 tests across 15 categories (ENV / DL / FMT / CTRY / REG / LW / UPD / TOPIC+LANG / Advanced / Cache+Sync / Discovery / Char / ERR / EXT / DET).
+  - `qa/run_tests_dev.do` — dev-mode runner with `profile.do` integration.
+  - 4 standalone tests (`smoke_search_aliases.do`, `test_ctry04_fix.do`, `test_v1850_pagination.do`, `run_test_v1850.do`) — focused regressions for Phase 3 surface.
+  - `qa/scripts/` — 4 small helpers (`benchmark_parsers`, `check_yaml_vars`, `debug_yaml_read`, `test_yaml_check`).
+  - `qa/fixtures/` — 22 files (~1.8 MB): 12 CSV reference snapshots for offline comparison + 6 small XML/JSON API probes + manifest + decompress/generate helpers. Intentionally skipped: `fixtures.tar.gz`/`.zip` (compressed dupes) and `fixtures/api/indicators_default.xml` (13.7 MB — regenerable via `generate_test_fixtures.py`).
+  - `qa/README.md`, `qa/TESTING_GUIDE.md`, `qa/test_protocol.md` — usage docs, methodology, and current protocol (replaces the Phase 0 placeholder README).
+  - **Expected gaps when run against v17.4.0** (this distribution):
+    - CHAR-01..06 (6 tests): `noCHAR` enforcement is deferred to Phase 6.1.
+    - LANG-01 (1 test): `language()` end-to-end wiring not yet verified.
+    - Some UPD-* tests: `__wbod_update_indicators` / `__wbod_update_regionmetadata` (admin paths) not ported; planned for Phase 8.
+    - Anything requiring populated YAML in `src/_/` (most DL/CTRY/DISC tests): blocked until `make wb-update-metadata` is run at least once.
+  - `qa/` files are NOT enumerated in `src/wbopendata.pkg` — development-only, not SSC distributable (mirrors `wbopendata-dev` convention).
 - **Phase 6** — `describe` (metadata-only) + linewrap publication features in `src/w/wbopendata.ado` (v17.3.0 → v17.4.0):
   - `wbopendata, describe indicator(<id>)` — fetch indicator metadata only, no data download; routes to new `__wbod_query_metadata`.
   - `linewrap(<mode>)` / `maxlength(<n>)` / `linewrapformat(stack|all|lines|newline|smcl)` — wrap long metadata strings for publication graphs.
@@ -89,7 +102,6 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 ### Added (planned, subsequent phases)
 
 - Phase 6.1 cleanup: `noCHAR` enforcement (inline `char define wbopendata_*` writes inside data-fetch path) + `language()` wiring verification
-- 92-test QA suite parity (Phase 7)
 - Layered documentation parity (Phase 8)
 - CI/CD + SSC packaging workflows (Phase 9)
 
