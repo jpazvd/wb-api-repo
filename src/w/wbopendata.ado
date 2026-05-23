@@ -1,6 +1,13 @@
 *******************************************************************************
 * wbopendata
-*! v 17.2.0  	 23May2026               by Joao Pedro Azevedo
+*! v 17.3.0  	 23May2026               by Joao Pedro Azevedo
+* 	v17.3.0: Phase 5 — basic country context on-by-default:
+* 	         noBASIC opts out of the 8-field basic context auto-merge.
+* 	         noCHAR opts out of dataset characteristic embedding
+* 	         (char-write block itself lands with Phase 5.1 / Phase 6).
+* 	         Both call sites (match() flow + default flow) retargeted
+* 	         to new __wbod_countrymetadata (v18 — adds basic + geo
+* 	         flags); legacy _countrymetadata kept for update paths.
 * 	v17.2.0: Phase 4 — cache management + sync replace (apply) path:
 * 	         clearcache / cacheinfo / checkupdate / cleardatacache /
 * 	         resetdatacache + nocache + cachedays() + forcestata /
@@ -96,6 +103,8 @@ version 9.0
 							CACHEDAYS(integer 7)       ///
 							FORCESTATA                 ///
 							FORCEPYTHON                ///
+							noBASIC                    ///
+							noCHAR                     ///
                  ]
 
 
@@ -106,6 +115,19 @@ version 9.0
 
 
 local indicator `indicators'
+
+	* ------------------------------------------------------------------
+	* Phase 5 (v17.3.0): basic country context on-by-default
+	* ------------------------------------------------------------------
+	* `basic' is set unless user explicitly opted out via noBASIC. The
+	* downstream call to __wbod_countrymetadata passes it through and
+	* will merge the 8-field basic context (region / regionname /
+	* adminregion / adminregionname / incomelevel / incomelevelname /
+	* lendingtype / lendingtypename) into the working dataset.
+	if ("`basic'" == "") local basic "basic"
+	* `char' default ON; noCHAR suppresses dataset characteristic embed
+	* (the actual char-write block lands with Phase 5.1 / Phase 6).
+	if ("`char'" == "") local char "char"
 
 	* ------------------------------------------------------------------
 	* Phase 3 (v17.1.0): discovery commands + dryrun sync
@@ -315,7 +337,7 @@ local indicator `indicators'
 	
 	qui if ("`match'" != "") {
 
-		_countrymetadata, match(`match') `full' `iso' `isolist' `regionlist' `adminlist' `incomelist' `lendinglist' `capitalist' `isolist' `countryname' `region'  `region_iso2' `regionname' `adminregion' `adminregion_iso2' `adminregionname' `incomelevel' `incomelevel_iso2' `incomelevelname'  `lendingtype' `lendingtype_iso2' `lendingtypename' `capital' `longitude' `latitude'
+		__wbod_countrymetadata, match(`match') `full' `iso' `basic' `geo' `isolist' `regionlist' `adminlist' `incomelist' `lendinglist' `capitalist' `isolist' `countryname' `region'  `region_iso2' `regionname' `adminregion' `adminregion_iso2' `adminregionname' `incomelevel' `incomelevel_iso2' `incomelevelname'  `lendingtype' `lendingtype_iso2' `lendingtypename' `capital' `longitude' `latitude'
 
 	}
 
@@ -494,7 +516,7 @@ local indicator `indicators'
 
 		tostring  countryname countrycode, replace
 
-		_countrymetadata, match(countrycode) `full' `iso'
+		__wbod_countrymetadata, match(countrycode) `full' `iso' `basic' `geo' `countrycode_iso2' `region' `region_iso2' `regionname' `adminregion' `adminregion_iso2' `adminregionname' `incomelevel' `incomelevel_iso2' `incomelevelname' `lendingtype' `lendingtype_iso2' `lendingtypename' `capital' `longitude' `latitude' `countryname'
 
 	}
 	
