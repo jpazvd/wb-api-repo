@@ -93,8 +93,18 @@ class WBAPIClient:
             records = data[1]
 
             if total_pages is None:
-                total_pages = metadata.get("pages", 1)
-                total_indicators = metadata.get("total", 0)
+                # WB v2 API sometimes returns "pages"/"total" as strings; coerce
+                # so `page >= total_pages` can't raise TypeError downstream.
+                # max(1, ...) guards against 0/None/'' or string '0' yielding
+                # an int < 1 that would immediately exit the pagination loop.
+                try:
+                    total_pages = max(1, int(metadata.get("pages") or 1))
+                except (TypeError, ValueError):
+                    total_pages = 1
+                try:
+                    total_indicators = max(0, int(metadata.get("total") or 0))
+                except (TypeError, ValueError):
+                    total_indicators = 0
                 logger.info("Total indicators: %s, Pages: %s", total_indicators, total_pages)
 
             indicators.extend(records)
