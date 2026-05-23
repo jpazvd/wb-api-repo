@@ -11,6 +11,17 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
+_Nothing yet — open a new section here when work resumes on `develop` post-v0.1.0._
+
+## [0.1.0] — 2026-05-23
+
+First tagged release on the parallel v0.x track. Closes the Stata-side
+discovery, cache-sync, country-context, and multilingual surface
+(Phases 0-7), and the Python-side parity catch-up (PR A debt cleanup,
+PR B discovery API, PR C country-context / multilingual / linewrap,
+live YAML cache population, demo, and user guide). 14 PRs total since
+the cloned baseline.
+
 ### Added
 
 - **Python validation pass + docs audit** (closes the post-demo cleanup):
