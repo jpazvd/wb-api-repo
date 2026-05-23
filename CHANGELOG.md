@@ -11,6 +11,16 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
+### Fixed
+
+- **Python P1 (Phase 1 debt cleanup)** — addressed all 5 Copilot inline findings from PR #2 that were deferred at the time:
+  - `yaml_generator.py` — wired `config_update.yaml`'s `yaml_output.{indicators,sources,topics}_file` overrides through `YAMLGenerator(filenames=...)`; previously the hardcoded basenames silently ignored config (`0bda2f3`).
+  - `wb_api_client.py` — wired `config_update.yaml`'s `wb_api.{base_url,retry_count,retry_delay}` through `WBAPIClient(base_url=..., max_retries=..., retry_delay=...)`; previously the client read class constants regardless of config (`ece4890`).
+  - `yaml_generator.py` — `total_sources` / `total_topics` set AFTER the empty-`id` filter so the metadata count matches what's written; logger warning when records dropped. Mirrors the existing `generate_indicators_yaml` pattern (`08453e0`).
+  - `wb_api_client.py` — pages/total coercion via `max(1, int(... or 1))` + try/except; handles all 11 edge cases incl. Python-truthy `'0'`. Previously could `TypeError` on string responses (`71c1c35`).
+  - `yaml_generator.py` — hoisted `_wrap_long_text` + `_str_representer` to module scope; `yaml.add_representer` now runs once at import instead of twice per `generate_indicators_yaml` call. Removes per-method global-state mutation (`71c1c35`).
+- `pytest tests/` — 2/2 pass post-change. End-to-end YAMLGenerator round-trip verified (filename overrides + folded scalars).
+
 ### Added
 
 - **Phase 7** — 92-test QA suite ported from `wbopendata-dev/qa/` to `wb-api-repo/qa/`:
