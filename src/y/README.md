@@ -202,8 +202,10 @@ yaml frames [, detail]
 ### yaml clear
 
 ```stata
-yaml clear [, all frame(name)]
+yaml clear [framename] [, all]
 ```
+
+The frame name is a positional argument, not a `frame()` option. Omit it to clear the working dataset; pass `all` to clear every `yaml_*` frame.
 
 ## Supported YAML Features
 
@@ -219,13 +221,13 @@ yaml clear [, all frame(name)]
 | Booleans | `debug: true`, `verbose: false` |
 | Null values | `empty:` or `empty: null` |
 | Lists/Sequences | `- item1`, `- item2` |
+| Block scalars | `\|`, `>` (canonical parser + fastread with `blockscalars` opt) |
 
 ### ❌ Not Supported
 
 | Feature | Reason |
 |---------|--------|
 | Anchors & Aliases | `&anchor`, `*alias` - Complex to implement |
-| Multi-line blocks | `\|`, `>` - Requires special handling |
 | Flow style | `{a: 1, b: 2}`, `[1, 2, 3]` - JSON-like inline |
 | Custom tags | `!!map`, `!!seq` - Advanced YAML |
 
@@ -287,7 +289,7 @@ yaml get database:host, frame(prod)
 local prod_host = r(host)
 
 * Clear specific frame
-yaml clear, frame(dev)
+yaml clear dev
 ```
 
 ### Round-trip: Read and Write
@@ -500,13 +502,17 @@ The `unicefdata` command (v1.4.0) uses this exact pattern:
 ## File Location
 
 ```
-unicefData/
-└── stata/
-    └── src/
-        └── y/
-            ├── yaml.ado      # Main command file
-            └── README.md     # This documentation
+wb-api-repo/
+└── src/
+    └── y/
+        ├── yaml.ado                    # Main dispatcher
+        ├── yaml_{read,write,get,list,validate,describe,frames,clear,dir}.ado
+        ├── yaml.sthlp                  # Main help
+        ├── yaml_{examples,whatsnew}.sthlp
+        └── README.md                   # This documentation
 ```
+
+Foundation helpers (`__yaml_{collapse,fastread,mataread,tokenize_line}.ado`) live alongside other internal sub-routines under `src/_/`.
 
 ## Design Principles
 

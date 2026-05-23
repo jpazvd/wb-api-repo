@@ -100,7 +100,7 @@ Reads a YAML file and parses its contents into the current dataset (default) or 
 {synopt:{opt index(string)}}materialize an index frame for repeated queries (Stata 16+){p_end}
 {synopt:{opt cache(string)}}cache parsed results in a frame (Stata 16+){p_end}
 {synopt:{opt bulk}}use Mata bulk-load parser for high-performance parsing{p_end}
-{synopt:{opt collapse}}produce wide-format output (use with {cmd:_yaml_collapse} helper){p_end}
+{synopt:{opt collapse}}produce wide-format output (uses {cmd:__yaml_collapse} helper){p_end}
 {synopt:{opt colfields(string)}}filter collapsed output to specific field names (semicolon-separated){p_end}
 {synopt:{opt maxlevel(#)}}limit collapsed columns by depth (1=no underscores, 2=one underscore, etc.){p_end}
 {synopt:{opt indicators}}preset for wbopendata/unicefdata indicator metadata (implies bulk collapse){p_end}
