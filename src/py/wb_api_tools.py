@@ -251,7 +251,8 @@ def enrich_country_context(
 
 def get_data(indicators: List[str], countries: str = "all", date: Optional[str] = None,
              per_page: int = DEFAULT_PER_PAGE, long: bool = False,
-             no_basic: bool = False, geo: bool = False) -> pd.DataFrame:
+             no_basic: bool = False, geo: bool = False,
+             language: Optional[str] = None) -> pd.DataFrame:
     """
     Fetch indicator data using CSV downloads (following Stata wbopendata approach)
     Much more reliable than JSON for bulk data.
@@ -274,10 +275,18 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
 
     global VERBOSE
     frames = []
+    # Language prefix in URL path: /v2/{lang}/... when non-English.
+    # English ('en' or None) uses the un-prefixed path.
+    lang_prefix = ""
+    if language:
+        lang = language.strip().lower()
+        if lang and lang != "en":
+            lang_prefix = f"/{lang}"
+
     for ind in indicators:
         try:
             # Use CSV download approach like Stata wbopendata
-            url = f"{BASE}/countries/{countries}/indicators/{ind}"
+            url = f"{BASE}{lang_prefix}/countries/{countries}/indicators/{ind}"
 
             # Build parameters for CSV download
             params = {
@@ -452,6 +461,8 @@ def build_parser():
                      help="Skip the 8-field country-context auto-merge (Phase 5 parity)")
     p_d.add_argument("--geo", action="store_true",
                      help="Also merge capital/latitude/longitude (PR C; combinable with --no-basic for geo-only)")
+    p_d.add_argument("--language", default=None,
+                     help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
     p_d.add_argument("--out")
 
     # --- Discovery subcommands (PR B) --------------------------------
@@ -471,6 +482,8 @@ def build_parser():
 
     p_desc = sub.add_parser("describe", help="Fetch fresh metadata for one indicator (from WB API)")
     p_desc.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
+    p_desc.add_argument("--language", default=None,
+                        help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
 
     p_srch = sub.add_parser("search", help="Paginated indicator search")
     p_srch.add_argument("term", nargs="?", default="", help="Substring to search (or empty for browse-mode)")
@@ -511,7 +524,7 @@ def main(argv=None):
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
                       date=args.date, per_page=args.per_page, long=args.long,
-                      no_basic=args.no_basic, geo=args.geo)
+                      no_basic=args.no_basic, geo=args.geo, language=args.language)
         # Debug: show fetched data shape and sample if verbose
         if VERBOSE:
             print(f"Debug-final df shape: {df.shape}")
@@ -536,7 +549,7 @@ def main(argv=None):
             for k, v in rec.items():
                 print(f"  {k}: {v}")
         elif args.cmd == "describe":
-            rec = describe(args.id)
+            rec = describe(args.id, language=args.language)
             if rec is None:
                 print(f"Indicator not found via WB API: {args.id}")
                 return 1
