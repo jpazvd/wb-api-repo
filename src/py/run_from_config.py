@@ -2,8 +2,8 @@
 #!/usr/bin/env python3
 import os, sys, yaml, subprocess, shutil, time, requests
 PY = shutil.which("python") or sys.executable
-ROOT = os.path.dirname(os.path.dirname(__file__))
-WB = os.path.join(ROOT, "_programs", "wb_api_tools.py")
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+WB = os.path.join(os.path.dirname(__file__), "wb_api_tools.py")
 CFG = os.path.join(ROOT, "config.yaml")
 def run(c): print("+", " ".join(c)); subprocess.check_call(c)
 def _req(url, retries=4, backoff=0.8):

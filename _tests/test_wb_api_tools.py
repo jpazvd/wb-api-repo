@@ -1,13 +1,9 @@
 import sys, os
-# Add repo root to path for recognizing _programs package
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import sys, os
-# Add repo root to path for recognizing _programs package
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src', 'py')))
 import pytest
 import requests
 import pandas as pd
-from _programs.wb_api_tools import get_data
+from wb_api_tools import get_data
 
 @pytest.mark.parametrize("countries,date,expected_rows", [
     ('BRA', '2010:2012', 3),
