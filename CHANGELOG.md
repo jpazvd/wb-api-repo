@@ -13,6 +13,16 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added
 
+- **Phase 6** — `describe` (metadata-only) + linewrap publication features in `src/w/wbopendata.ado` (v17.3.0 → v17.4.0):
+  - `wbopendata, describe indicator(<id>)` — fetch indicator metadata only, no data download; routes to new `__wbod_query_metadata`.
+  - `linewrap(<mode>)` / `maxlength(<n>)` / `linewrapformat(stack|all|lines|newline|smcl)` — wrap long metadata strings for publication graphs.
+  - 3 new helpers (~934 LOC):
+    - `__wbod_linewrap.ado` (323 LOC, v 2.1) — Mead Over + Joao Pedro Azevedo string-wrapping engine.
+    - `__wbod_metadata_linewrap.ado` (199 LOC, v 1.1) — per-field metadata wrapper; returns `_stack` / `_newline` / `_nlines` / `_line1..._lineN`.
+    - `__wbod_query_metadata.ado` (412 LOC, v 16.8) — v18 linewrap-aware metadata fetch.
+  - `src/wbopendata.pkg` extended with 3 new entries.
+  - Coexists with legacy `_query_metadata.ado` (Phase 0) — still called by the v17 data-fetch path; v18 helper only called from the new dispatcher `describe` block.
+  - **Deferred to Phase 6.1**: `noCHAR` enforcement (the actual `char define wbopendata_*` writes inside the v17 data-fetch path — surgical risk) and `language()` wiring verification (probably works via v17 `_query.ado`; needs end-to-end test against multilingual API endpoint).
 - **Phase 5** — Basic country context on-by-default in `src/w/wbopendata.ado` (v17.2.0 → v17.3.0):
   - 8-field basic context (region / regionname / adminregion / adminregionname / incomelevel / incomelevelname / lendingtype / lendingtypename) is now auto-merged into every data-fetch output unless the user passes `noBASIC`.
   - `noCHAR` option added (the actual `char define wbopendata_*` write block lands with Phase 5.1 / Phase 6 — currently the flag is parsed and defaulted ON, but not yet enforced).
@@ -78,7 +88,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ### Added (planned, subsequent phases)
 
-- Multilingual (`language(en|es|fr)`) + publication features (`linewrap`, `maxlength`, `linewrapformat`, `describe`, `char` embed enforcement) (Phase 6)
+- Phase 6.1 cleanup: `noCHAR` enforcement (inline `char define wbopendata_*` writes inside data-fetch path) + `language()` wiring verification
 - 92-test QA suite parity (Phase 7)
 - Layered documentation parity (Phase 8)
 - CI/CD + SSC packaging workflows (Phase 9)
