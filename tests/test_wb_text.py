@@ -20,14 +20,34 @@ def long_text() -> str:
 # --- wrap() formats ---------------------------------------------------
 
 def test_wrap_stack_default(long_text: str) -> None:
+    """Default fmt is 'stack' — Stata-style quoted segments for graph title()."""
     import wb_text as wt
     out = wt.wrap(long_text, width=30)
-    assert isinstance(out, str) and "\n" in out
+    assert isinstance(out, str)
+    assert out.startswith('"') and '" "' in out
 
 
-def test_wrap_newline_alias_matches_stack(long_text: str) -> None:
+def test_wrap_stack_uses_space_separated_quoted_segments(long_text: str) -> None:
+    """Stata `linewrap(stack)`: `"line1" "line2"` — for graph title()."""
     import wb_text as wt
-    assert wt.wrap(long_text, width=30, fmt="newline") == wt.wrap(long_text, width=30, fmt="stack")
+    out = wt.wrap(long_text, width=30, fmt="stack")
+    assert isinstance(out, str)
+    assert out.startswith('"')
+    assert '" "' in out, "stack should join quoted segments with spaces"
+
+
+def test_wrap_newline_uses_actual_newlines(long_text: str) -> None:
+    """`newline` is for SMCL note/caption display — actual \\n separators."""
+    import wb_text as wt
+    out = wt.wrap(long_text, width=30, fmt="newline")
+    assert isinstance(out, str) and "\n" in out
+    assert '" "' not in out, "newline should NOT use the stack format"
+
+
+def test_wrap_stack_and_newline_are_distinct(long_text: str) -> None:
+    """Stack and newline are different formats, not aliases."""
+    import wb_text as wt
+    assert wt.wrap(long_text, width=30, fmt="stack") != wt.wrap(long_text, width=30, fmt="newline")
 
 
 def test_wrap_lines_returns_list(long_text: str) -> None:
@@ -37,20 +57,23 @@ def test_wrap_lines_returns_list(long_text: str) -> None:
     assert all(isinstance(line, str) for line in out)
 
 
-def test_wrap_smcl_uses_smcl_markup(long_text: str) -> None:
+def test_wrap_smcl_uses_brace_break_tag(long_text: str) -> None:
+    """Stata SMCL: lines separated by `{break}` for Results window."""
     import wb_text as wt
     out = wt.wrap(long_text, width=30, fmt="smcl")
     assert isinstance(out, str)
-    # SMCL compound-quote separator contains a backtick
-    assert "`" in out
+    assert "{break}" in out, "smcl must use Stata's {break} tag (not backticks)"
 
 
-def test_wrap_all_returns_dict_with_three_keys(long_text: str) -> None:
+def test_wrap_all_returns_dict_with_five_keys(long_text: str) -> None:
     import wb_text as wt
     out = wt.wrap(long_text, width=30, fmt="all")
-    assert isinstance(out, dict) and set(out) == {"stack", "lines", "nlines"}
+    assert isinstance(out, dict) and set(out) == {"stack", "newline", "smcl", "lines", "nlines"}
     assert out["nlines"] == len(out["lines"]) > 1
-    assert out["stack"] == "\n".join(out["lines"])
+    # Each format key matches its standalone equivalent
+    assert out["stack"] == wt.wrap(long_text, width=30, fmt="stack")
+    assert out["newline"] == wt.wrap(long_text, width=30, fmt="newline")
+    assert out["smcl"] == wt.wrap(long_text, width=30, fmt="smcl")
 
 
 # --- wrap() edge cases ------------------------------------------------
@@ -58,9 +81,10 @@ def test_wrap_all_returns_dict_with_three_keys(long_text: str) -> None:
 def test_wrap_empty_string_returns_empty_per_fmt() -> None:
     import wb_text as wt
     assert wt.wrap("", fmt="stack") == ""
+    assert wt.wrap("", fmt="newline") == ""
     assert wt.wrap("", fmt="lines") == []
     assert wt.wrap("", fmt="smcl") == ""
-    assert wt.wrap("", fmt="all") == {"stack": "", "lines": [], "nlines": 0}
+    assert wt.wrap("", fmt="all") == {"stack": "", "newline": "", "smcl": "", "lines": [], "nlines": 0}
 
 
 def test_wrap_none_input_returns_empty_per_fmt() -> None:
@@ -112,3 +136,12 @@ def test_truncate_empty_or_none_returns_empty() -> None:
     import wb_text as wt
     assert wt.truncate("", width=10) == ""
     assert wt.truncate(None, width=10) == ""
+
+
+def test_truncate_width_smaller_than_suffix_drops_suffix() -> None:
+    """When len(suffix) >= width, drop the suffix instead of overshooting."""
+    import wb_text as wt
+    # Naive impl would return '...' (len 3) for width=2 → exceeds contract
+    result = wt.truncate("hello world", width=2, suffix="...")
+    assert len(result) == 2, f"width contract: result must be <= width, got len {len(result)}"
+    assert result == "he"

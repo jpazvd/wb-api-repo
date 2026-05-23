@@ -16,12 +16,15 @@ Quick reference (Stata → Python):
   linewrapformat(smcl)                       | wb_text.wrap(s, width=80, fmt="smcl")
   (truncation w/ ellipsis)                   | wb_text.truncate(s, width=80)
 
-Format choices:
-  "stack"   single string with \\n between hard-wrapped lines
-  "newline" alias for stack (kept for Stata-name fidelity)
+Format choices (mirror Stata __wbod_metadata_linewrap.ado):
+  "stack"   space-separated double-quoted segments — for graph title()
+              e.g. `"line1" "line2" "line3"`
+  "newline" newline-joined single string — for SMCL note/caption display
+              e.g. `"line1\\nline2\\nline3"`
   "lines"   returns List[str] — one element per wrapped line
-  "smcl"    Stata SMCL output: lines joined with `" `" `" `"' newline marker
-  "all"     returns dict with all three: {stack, lines, nlines}
+  "smcl"    Stata SMCL output: lines joined with the `{break}` tag
+              e.g. `"line1{break}line2"` — renders as line break in Results
+  "all"     returns dict with {stack, newline, smcl, lines, nlines}
 """
 
 from __future__ import annotations
@@ -54,7 +57,7 @@ def wrap(
     Returns:
         - str when fmt in {"stack", "newline", "smcl"}
         - List[str] when fmt == "lines"
-        - Dict[str, object] when fmt == "all" — keys: stack, lines, nlines
+        - Dict[str, object] when fmt == "all" — keys: stack, newline, smcl, lines, nlines
     """
     if fmt not in _VALID_FORMATS:
         raise ValueError(f"fmt must be one of {sorted(_VALID_FORMATS)}, got {fmt!r}")
@@ -66,7 +69,7 @@ def wrap(
             "newline": "",
             "lines":   [],
             "smcl":    "",
-            "all":     {"stack": "", "lines": [], "nlines": 0},
+            "all":     {"stack": "", "newline": "", "smcl": "", "lines": [], "nlines": 0},
         }
         return empty_map[fmt]
 
@@ -77,16 +80,28 @@ def wrap(
         break_on_hyphens=break_on_hyphens,
     )
 
-    if fmt in ("stack", "newline"):
+    if fmt == "stack":
+        # Stata `linewrap(stack)`: quoted segments joined by spaces, suitable
+        # for direct paste into `graph ... , title(...)`. Mirrors
+        # __wbod_metadata_linewrap.ado lines 106-114.
+        return " ".join(f'"{line}"' for line in lines)
+    if fmt == "newline":
         return "\n".join(lines)
     if fmt == "lines":
         return lines
     if fmt == "smcl":
-        # Stata SMCL convention: each line wrapped in compound quotes,
-        # separated by a literal `" `"' line break marker.
-        return " `\"`\"' ".join(lines)
+        # Stata `linewrap`/`linewrapformat(smcl)`: lines separated by the
+        # {break} SMCL tag for the Results window. Mirrors
+        # __wbod_metadata_linewrap.ado lines 129-137.
+        return "{break}".join(lines)
     # fmt == "all"
-    return {"stack": "\n".join(lines), "lines": lines, "nlines": len(lines)}
+    return {
+        "stack":   " ".join(f'"{line}"' for line in lines),
+        "newline": "\n".join(lines),
+        "smcl":    "{break}".join(lines),
+        "lines":   lines,
+        "nlines":  len(lines),
+    }
 
 
 def wrap_lines(text: str, *, width: int = 80, **kwargs) -> List[str]:
@@ -104,12 +119,19 @@ def truncate(text: str, *, width: int = 80, suffix: str = "...") -> str:
     Args:
         text:   input string (None / empty -> "")
         width:  max output length INCLUDING suffix
-        suffix: appended on truncation (default "...")
+        suffix: appended on truncation (default "..."). When
+                `len(suffix) >= width` the suffix is also dropped —
+                truncation degrades to a hard text cut so the result
+                NEVER exceeds `width`.
     """
     if not text:
         return ""
     width = max(1, int(width))
     if len(text) <= width:
         return text
-    cut = max(0, width - len(suffix))
+    # Defensive: if the suffix alone won't fit, do a clean truncation
+    # without it. Otherwise the result would exceed the width contract.
+    if len(suffix) >= width:
+        return text[:width]
+    cut = width - len(suffix)
     return text[:cut] + suffix
