@@ -11,6 +11,24 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
+### Added
+
+- **Python PR B — Discovery API** (Python parity with the Stata `wbopendata` discovery + sync surface ported in Phases 3-6):
+  - **New module `src/py/wb_discovery.py`** (~270 LOC) exposing:
+    - `sources(limit=20)` / `allsources()` — read `_wbopendata_sources.yaml`, sorted by numeric ID.
+    - `alltopics()` — read `_wbopendata_topics.yaml`.
+    - `info(indicator_id)` — single-indicator metadata lookup from YAML cache (case-insensitive; falls back to uppercase for canonical WB codes).
+    - `search(term, *, page=1, limit=20, source=None, topic=None, field="name+description", exact=False)` — paginated full-text search with source/topic/field filters; supports "browse mode" (empty term + filter).
+    - `describe(indicator_id)` — fresh metadata fetch via WB API (live counterpart to `info()`; same dict shape so callers can swap).
+    - `sync(argv=None)` — in-process wrapper around `update_metadata.main()` (Phase 1 pipeline).
+    - `_transform_api_indicator(raw)` — maps raw WB-API record → YAML schema v2.0 keys.
+    - `_load_yaml_section()` — graceful degradation: returns `{}` + `logger.warning` when YAML cache missing, instead of raising. (User-facing functions then surface this as `[]` / `None`.)
+    - `WBOPENDATA_YAML_DIR` env-var override for test / alternative deployments.
+  - **`WBAPIClient.fetch_indicator_metadata(code)`** added to `src/py/wb_api_client.py` for the live `describe()` path.
+  - **`get_data()` auto-merge**: now joins 8 basic country-context fields (region / regionname / adminregion / adminregionname / incomelevel / incomelevelname / lendingtype / lendingtypename) via `countryiso3code` by default; opt-out with `no_basic=True` (or `--no-basic` CLI flag). Mirrors Phase 5 Stata semantics. Cached at module level so repeated calls don't refetch `/country`.
+  - **CLI subcommands** added to `src/py/wb_api_tools.py`: `sources`, `alltopics`, `info <id>`, `describe <id>`, `search <term> [--page N --limit N --source N --topic N --field FIELD --exact --out FILE]`, `sync [--save-raw --no-validate --skip-diff --commit --tag]`, plus `data --no-basic`.
+  - **`tests/test_wb_discovery.py`** — 24 new pytest tests covering sources / alltopics / info / search (10 paths) / describe (mock-based, 5 paths) / drop-in shape parity between `describe()` and `info()`. Full suite now 26/26 green.
+
 ### Fixed
 
 - **Python P1 (Phase 1 debt cleanup)** — addressed all 5 Copilot inline findings from PR #2 that were deferred at the time:
@@ -21,7 +39,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   - `yaml_generator.py` — hoisted `_wrap_long_text` + `_str_representer` to module scope; `yaml.add_representer` now runs once at import instead of twice per `generate_indicators_yaml` call. Removes per-method global-state mutation (`71c1c35`).
 - `pytest tests/` — 2/2 pass post-change. End-to-end YAMLGenerator round-trip verified (filename overrides + folded scalars).
 
-### Added
+### Added (Stata phases 2-7)
 
 - **Phase 7** — 92-test QA suite ported from `wbopendata-dev/qa/` to `wb-api-repo/qa/`:
   - `qa/run_tests.do` (2 851 LOC, v 3.0.0) — main harness covering 92 tests across 15 categories (ENV / DL / FMT / CTRY / REG / LW / UPD / TOPIC+LANG / Advanced / Cache+Sync / Discovery / Char / ERR / EXT / DET).
@@ -104,7 +122,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 - Added placeholder `src/y/`, `qa/`, `doc/{architecture,user-guide,roadmap}/` directories
   for upcoming phases.
 
-### Fixed
+### Fixed (Stata Phase 0 drift)
 
 - `.gitignore`: retargeted three rules from `_tests/` to `tests/` to track the Phase 0 directory rename (oversight from Phase 0).
 - `src/y/README.md`: corrected to state that YAML metadata files live in `src/_/` per `wbopendata-dev`'s `src/wbopendata.pkg` convention; `src/y/` is reserved for the `yaml.ado` Stata library landing in Phase 2.

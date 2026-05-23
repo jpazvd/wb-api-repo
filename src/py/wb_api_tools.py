@@ -150,11 +150,54 @@ def get_indicator_metadata(codes: Optional[List[str]] = None, search: Optional[s
         df = df.loc[mask].copy()
     return df
 
+_BASIC_CONTEXT_CACHE: Optional[pd.DataFrame] = None
+
+
+def _get_basic_context() -> pd.DataFrame:
+    """Return cached ISO3 → 8-field basic country context lookup table.
+
+    Python equivalent of the Stata Phase-5 auto-merge surface. Columns:
+      countryiso3code, region, regionname, adminregion, adminregionname,
+      incomelevel, incomelevelname, lendingtype, lendingtypename
+
+    Cached at module level so multi-call workflows don't re-fetch
+    country metadata from /country on every get_data() invocation.
+    """
+    global _BASIC_CONTEXT_CACHE
+    if _BASIC_CONTEXT_CACHE is None:
+        cm = get_country_metadata()
+        _BASIC_CONTEXT_CACHE = cm[[
+            "id",
+            "region_id", "region",
+            "adminregion_id", "adminregion",
+            "incomeLevel_id", "incomeLevel",
+            "lendingType_id", "lendingType",
+        ]].rename(columns={
+            "id":               "countryiso3code",
+            "region_id":        "region",
+            "region":           "regionname",
+            "adminregion_id":   "adminregion",
+            "adminregion":      "adminregionname",
+            "incomeLevel_id":   "incomelevel",
+            "incomeLevel":      "incomelevelname",
+            "lendingType_id":   "lendingtype",
+            "lendingType":      "lendingtypename",
+        })
+    return _BASIC_CONTEXT_CACHE
+
+
 def get_data(indicators: List[str], countries: str = "all", date: Optional[str] = None,
-             per_page: int = DEFAULT_PER_PAGE, long: bool = False) -> pd.DataFrame:
+             per_page: int = DEFAULT_PER_PAGE, long: bool = False,
+             no_basic: bool = False) -> pd.DataFrame:
     """
     Fetch indicator data using CSV downloads (following Stata wbopendata approach)
-    Much more reliable than JSON for bulk data
+    Much more reliable than JSON for bulk data.
+
+    Phase 5 parity: by default also merges 8 basic country-context fields
+    (region/regionname/adminregion/adminregionname/incomelevel/
+     incomelevelname/lendingtype/lendingtypename) from /country.
+    Pass `no_basic=True` to skip (e.g. for lean output or when re-running
+    against an offline cache).
     """
     if isinstance(indicators, str):
         indicators = [c.strip() for c in indicators.split(",") if c.strip()]
@@ -254,14 +297,31 @@ def get_data(indicators: List[str], countries: str = "all", date: Optional[str] 
     # Sort data
     df_combined = df_combined.sort_values(["countryiso3code", "indicator", "date"])
 
+    # Phase-5 parity: auto-merge basic country context unless opted out.
+    # Done BEFORE the long/wide branch so context columns participate in
+    # the wide-format pivot index correctly.
+    if not no_basic:
+        try:
+            bc = _get_basic_context()
+            df_combined = df_combined.merge(bc, on="countryiso3code", how="left")
+        except Exception as e:
+            # Non-fatal — emit a warning and continue without context columns
+            print(f"Warning: basic country context merge skipped: {e}")
+
     if long:
         # Return long format (already is)
         return df_combined
     else:
         # Convert to wide format
-        # First, create a pivot table
+        # The basic-context columns (if merged) need to be in the pivot
+        # index so they don't get dropped by pivot_table's column reduction.
+        bc_cols = [
+            "region", "regionname", "adminregion", "adminregionname",
+            "incomelevel", "incomelevelname", "lendingtype", "lendingtypename",
+        ]
+        extra_idx = [c for c in bc_cols if c in df_combined.columns]
         wide = df_combined.pivot_table(
-            index=["countryiso3code", "country", "date"],
+            index=["countryiso3code", "country", "date"] + extra_idx,
             columns="indicator",
             values="value",
             aggfunc="first"
@@ -312,7 +372,45 @@ def build_parser():
     p_d.add_argument("--date")
     p_d.add_argument("--per-page", type=int, default=DEFAULT_PER_PAGE)
     p_d.add_argument("--long", action="store_true")
+    p_d.add_argument("--no-basic", action="store_true",
+                     help="Skip the 8-field country-context auto-merge (Phase 5 parity)")
     p_d.add_argument("--out")
+
+    # --- Discovery subcommands (PR B) --------------------------------
+    # All read from src/_/_wbopendata_*.yaml; run `wb-update-metadata`
+    # first or use the `sync` subcommand below.
+    p_src = sub.add_parser("sources", help="List WB data sources")
+    p_src.add_argument("--limit", type=int, default=20,
+                       help="Max sources to show (default 20; pass --all for no cap)")
+    p_src.add_argument("--all", action="store_true", help="No limit (equivalent to allsources)")
+    p_src.add_argument("--out")
+
+    p_top = sub.add_parser("alltopics", help="List all WB topic categories")
+    p_top.add_argument("--out")
+
+    p_info = sub.add_parser("info", help="Show full metadata for one indicator (from YAML cache)")
+    p_info.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
+
+    p_desc = sub.add_parser("describe", help="Fetch fresh metadata for one indicator (from WB API)")
+    p_desc.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
+
+    p_srch = sub.add_parser("search", help="Paginated indicator search")
+    p_srch.add_argument("term", nargs="?", default="", help="Substring to search (or empty for browse-mode)")
+    p_srch.add_argument("--page", type=int, default=1)
+    p_srch.add_argument("--limit", type=int, default=20)
+    p_srch.add_argument("--source", help="Filter by source ID")
+    p_srch.add_argument("--topic", help="Filter by topic ID")
+    p_srch.add_argument("--field", default="name+description",
+                        help='Search field(s): name | description | note | code | name+description | all')
+    p_srch.add_argument("--exact", action="store_true", help="Exact code match (use with --field code)")
+    p_srch.add_argument("--out")
+
+    p_sync = sub.add_parser("sync", help="Refresh YAML metadata cache from WB API (Phase 1 pipeline)")
+    p_sync.add_argument("--save-raw", action="store_true", dest="save_raw")
+    p_sync.add_argument("--no-validate", action="store_true", dest="no_validate")
+    p_sync.add_argument("--skip-diff", action="store_true", dest="skip_diff")
+    p_sync.add_argument("--commit", action="store_true")
+    p_sync.add_argument("--tag", action="store_true")
 
     return p
 
@@ -334,13 +432,57 @@ def main(argv=None):
         _save_df(df, args.out)
     elif args.cmd == "data":
         df = get_data(indicators=args.indicators, countries=args.countries,
-                      date=args.date, per_page=args.per_page, long=args.long)
+                      date=args.date, per_page=args.per_page, long=args.long,
+                      no_basic=args.no_basic)
         # Debug: show fetched data shape and sample if verbose
         if VERBOSE:
             print(f"Debug-final df shape: {df.shape}")
             if not df.empty:
                 print(df.head(5).to_string(index=False))
         _save_df(df, args.out)
+    elif args.cmd in ("sources", "alltopics", "info", "describe", "search", "sync"):
+        # PR B discovery subcommands — delegate to wb_discovery
+        from wb_discovery import sources, allsources, alltopics, info, describe, search, sync
+        if args.cmd == "sources":
+            recs = allsources() if args.all else sources(limit=args.limit)
+            df = pd.DataFrame.from_records(recs)
+            _save_df(df, args.out)
+        elif args.cmd == "alltopics":
+            df = pd.DataFrame.from_records(alltopics())
+            _save_df(df, args.out)
+        elif args.cmd == "info":
+            rec = info(args.id)
+            if rec is None:
+                print(f"Indicator not found in YAML cache: {args.id}")
+                return 1
+            for k, v in rec.items():
+                print(f"  {k}: {v}")
+        elif args.cmd == "describe":
+            rec = describe(args.id)
+            if rec is None:
+                print(f"Indicator not found via WB API: {args.id}")
+                return 1
+            for k, v in rec.items():
+                print(f"  {k}: {v}")
+        elif args.cmd == "search":
+            res = search(args.term, page=args.page, limit=args.limit,
+                         source=args.source, topic=args.topic,
+                         field=args.field, exact=args.exact)
+            print(f"  total={res['total']}  page={res['page']}/{res['pages']}  limit={res['limit']}")
+            if args.out:
+                _save_df(pd.DataFrame.from_records(res['results']), args.out)
+            else:
+                for r in res['results']:
+                    print(f"  [{r.get('code'):<20}] {r.get('name')}")
+        elif args.cmd == "sync":
+            sub_argv = []
+            if args.save_raw:    sub_argv.append("--save-raw")
+            if args.no_validate: sub_argv.append("--no-validate")
+            if args.skip_diff:   sub_argv.append("--skip-diff")
+            if args.commit:      sub_argv.append("--commit")
+            if args.tag:         sub_argv.append("--tag")
+            return sync(sub_argv)
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)

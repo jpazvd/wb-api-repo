@@ -10,7 +10,7 @@ import logging
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 import requests
 
@@ -147,6 +147,22 @@ class WBAPIClient:
         topics = data[1]
         logger.info("Fetched %s topics", len(topics))
         return topics
+
+    def fetch_indicator_metadata(self, code: str) -> Optional[Dict]:
+        """Fetch one indicator's raw metadata from the WB API.
+
+        Returns the first record from /v2/indicator/{code} or None if the
+        API returned no records. Unlike fetch_indicators() (which is
+        paginated bulk), this is a single targeted lookup intended for
+        wb_discovery.describe() — the live counterpart to info() (which
+        reads from the YAML cache).
+        """
+        url = f"{self.base_url}/indicator/{code}"
+        params = {"format": "json"}
+        data = self._make_request(url, params)
+        if not data or len(data) < 2 or not data[1]:
+            return None
+        return data[1][0]
 
     def _make_request(self, url: str, params: Dict[str, Any]) -> Any:
         """Make HTTP request with retry logic.
