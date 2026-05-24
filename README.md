@@ -146,17 +146,26 @@ wb.enrich_country_context(user_df, iso_col="iso3", geo=True)
 
 ---
 
-## What's new in v0.2.1
+## What's new in v0.3.0
 
-PATCH release. PyPI README badge rendering fix — switched from dynamic
-shields.io PyPI-scraping endpoints (`pypi/pyversions/...`, `pypi/l/...`) to
-static badges + `badge.fury.io`. v0.2.0's PyPI page showed alt-text instead of
-the Python-version and License badges because shields.io's PyPI scraper has
-caching delay on new packages. See [CHANGELOG.md](CHANGELOG.md) for the full
-per-release log.
+MINOR release. New CLI capabilities + a README/docs refresh for the PyPI
+landing page:
 
-`[Unreleased]` (next release): CLI `--out -` for streaming CSV to stdout,
-JSON / JSONL / NDJSON output formats, status lines routed to stderr.
+- **CLI: `--out -`** streams the full CSV to stdout (Unix convention; pipeable
+  into `jq`, `csvkit`, etc. without a disk round-trip).
+- **CLI: `.json` / `.jsonl` / `.ndjson` output formats** via the same
+  `--out` dispatcher (records orient for `.json`, line-delimited for the
+  others). Web-friendly + streaming-friendly.
+- **CLI: status lines routed to stderr** so `--out -` produces a clean,
+  parseable CSV stream on stdout.
+- **README restructured** for PyPI-first audience: 5 worked examples with
+  figures, Common Indicators starter table, Troubleshooting, Citation.
+- **`examples/readme_examples.{py,ipynb}`** — runnable script + paired
+  Jupyter notebook (GitHub renders inline, no clone required).
+- **Example 3** demonstrates a 3-way functional-form comparison (linear-log /
+  quadratic-log / logistic 4PL); logistic wins at R² = 0.834.
+
+See [CHANGELOG.md](CHANGELOG.md) for the full per-release log.
 
 ---
 

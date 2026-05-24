@@ -48,8 +48,13 @@ def _save_df(df, out: Optional[str]) -> None:
     elif lower.endswith(".json"):
         # Records orient: `[{...}, {...}]` — the most consumable shape
         # for JS / web clients and notebooks. Skip pandas's split/index
-        # orients (verbose, type-keyed).
-        df.to_json(out, orient="records", force_ascii=False, indent=2)
+        # orients (verbose, type-keyed). Use stdlib `json` for indent=2
+        # rather than `df.to_json(indent=...)` — pandas's indent support
+        # is inconsistent across versions/engines, json.dump is stable.
+        import json as _json
+        records = df.to_dict(orient="records")
+        with open(out, "w", encoding="utf-8") as f:
+            _json.dump(records, f, indent=2, ensure_ascii=False, default=str)
     elif lower.endswith(".yaml") or lower.endswith(".yml"):
         try:
             import yaml
