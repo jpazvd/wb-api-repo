@@ -11,7 +11,33 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-_Nothing yet — open a new section here when work resumes on `develop` post-v0.2.0._
+_Nothing yet — open a new section here when work resumes on `develop` post-v0.2.1._
+
+## [0.2.1] — 2026-05-24
+
+**PATCH release — PyPI badge rendering fix.** Switches the README
+badge block from dynamic shields.io endpoints (`pypi/pyversions/...`,
+`pypi/l/...`, `pypi/dm/...`) to static badges + `badge.fury.io` for
+the PyPI version. Dynamic shields.io endpoints scrape PyPI and have
+caching/indexing delay on brand-new packages — the v0.2.0 page was
+showing alt-text instead of the Python-version and License badges for
+hours after publish. Static badges render instantly and never break.
+
+No code changes; no API impact.
+
+### Changed (v0.2.1)
+
+- **README badges** aligned with the [`unicefData`](https://github.com/unicef-drp/unicefData)
+  badge convention:
+  - `pypi/pyversions/wb-api-tools` → static `python-3.11+` shield
+  - `pypi/l/wb-api-tools` → static `License-MIT` shield
+  - `pypi/v/wb-api-tools` → `badge.fury.io/py/wb-api-tools`
+  - Added a new **Stata 14+** badge to reflect that the repo also
+    ships the Stata `wbopendata` ado package (was invisible on the
+    PyPI page).
+  - Dropped the **Downloads** badge — `pypi/dm/...` returned
+    "package not found" for the first 24h after publish anyway, and
+    download stats for a small-audience scientific package are noise.
 
 ## [0.2.0] — 2026-05-23
 
