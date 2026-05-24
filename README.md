@@ -30,9 +30,9 @@ wb-api-tools sync
 ```
 
 Then any of the five examples below works. **Full runnable notebook:**
-[`examples/readme_examples.ipynb`](examples/readme_examples.ipynb) — GitHub
-renders it inline (DataFrame tables + figures), or open in Jupyter / Colab to
-re-execute.
+[`examples/readme_examples.ipynb`](https://github.com/jpazvd/wb-api-repo/blob/main/examples/readme_examples.ipynb)
+— GitHub renders it inline (DataFrame tables + figures), or open in Jupyter /
+Colab to re-execute.
 
 ### 1. Population time-series (multiple countries)
 
@@ -165,7 +165,7 @@ landing page:
 - **Example 3** demonstrates a 3-way functional-form comparison (linear-log /
   quadratic-log / logistic 4PL); logistic wins at R² = 0.834.
 
-See [CHANGELOG.md](CHANGELOG.md) for the full per-release log.
+See [CHANGELOG.md](https://github.com/jpazvd/wb-api-repo/blob/main/CHANGELOG.md) for the full per-release log.
 
 ---
 
@@ -204,7 +204,7 @@ v0.x track to the upstream Stata
 
 | Surface | Entry point | Reference |
 | --- | --- | --- |
-| Python library | `wb_api_tools.{discovery,data,text}` (re-exported at the package root) | [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) |
+| Python library | `wb_api_tools.{discovery,data,text}` (re-exported at the package root) | [docs/PYTHON_USER_GUIDE.md](https://github.com/jpazvd/wb-api-repo/blob/main/docs/PYTHON_USER_GUIDE.md) |
 | Python CLI | `wb-api-tools <subcmd>` (after install) or `python -m wb_api_tools <subcmd>` | `--help` on every subcommand |
 | Stata package | `src/w/wbopendata.ado` in the GitHub repo (v17.4.0) | `help wbopendata` in Stata, or [`src/w/wbopendata.sthlp`](https://github.com/jpazvd/wb-api-repo/blob/main/src/w/wbopendata.sthlp) |
 | YAML metadata cache | `~/.cache/wbopendata/_wbopendata_{indicators,sources,topics}.yaml` (XDG-aware) | populated by `wb-api-tools sync` |
@@ -270,7 +270,7 @@ dispatcher; current surface mirrors the Python library:
 
 Open `src/w/wbopendata.sthlp` in Stata's viewer or run `help wbopendata` once
 the package is on the adopath. The Python-side
-[docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) §5 has a row-by-row
+[docs/PYTHON_USER_GUIDE.md](https://github.com/jpazvd/wb-api-repo/blob/main/docs/PYTHON_USER_GUIDE.md) §5 has a row-by-row
 Stata ↔ Python parity table.
 
 ---
@@ -302,14 +302,14 @@ UTC) keeps the repo-committed cache fresh. Manually triggerable via
 
 ## Documentation
 
-- [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) — Python library + CLI reference (Stata `.sthlp` equivalent)
-- [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md) — captured live-API transcript from the 7-section walkthrough
-- [docs/EXAMPLES.md](docs/EXAMPLES.md) — end-to-end workflows (API, Stata, Python)
-- [docs/AGE_BANDS.md](docs/AGE_BANDS.md) — standard 5-year age band codes for population indicators
-- [examples/readme_examples.ipynb](examples/readme_examples.ipynb) — runnable Jupyter notebook for the Quick-start examples above
-- [examples/readme_examples.py](examples/readme_examples.py) — paired Python script (regenerates the figures in `docs/figures/`)
-- [CHANGELOG.md](CHANGELOG.md) — per-release change log
-- [doc/VERSIONING_POLICY.md](doc/VERSIONING_POLICY.md) — semver policy + component-level `.ado` version headers
+- [docs/PYTHON_USER_GUIDE.md](https://github.com/jpazvd/wb-api-repo/blob/main/docs/PYTHON_USER_GUIDE.md) — Python library + CLI reference (Stata `.sthlp` equivalent)
+- [docs/PYTHON_DEMO.md](https://github.com/jpazvd/wb-api-repo/blob/main/docs/PYTHON_DEMO.md) — captured live-API transcript from the 7-section walkthrough
+- [docs/EXAMPLES.md](https://github.com/jpazvd/wb-api-repo/blob/main/docs/EXAMPLES.md) — end-to-end workflows (API, Stata, Python)
+- [docs/AGE_BANDS.md](https://github.com/jpazvd/wb-api-repo/blob/main/docs/AGE_BANDS.md) — standard 5-year age band codes for population indicators
+- [examples/readme_examples.ipynb](https://github.com/jpazvd/wb-api-repo/blob/main/examples/readme_examples.ipynb) — runnable Jupyter notebook for the Quick-start examples above (GitHub renders inline)
+- [examples/readme_examples.py](https://github.com/jpazvd/wb-api-repo/blob/main/examples/readme_examples.py) — paired Python script (regenerates the figures in `docs/figures/`)
+- [CHANGELOG.md](https://github.com/jpazvd/wb-api-repo/blob/main/CHANGELOG.md) — per-release change log
+- [doc/VERSIONING_POLICY.md](https://github.com/jpazvd/wb-api-repo/blob/main/doc/VERSIONING_POLICY.md) — semver policy + component-level `.ado` version headers
 
 ---
 
@@ -419,6 +419,6 @@ The Python CLI and library plug into:
 
 ## License
 
-See [LICENSE.md](LICENSE.md). Developed to bridge **Stata `wbopendata`
+See [LICENSE.md](https://github.com/jpazvd/wb-api-repo/blob/main/LICENSE.md). Developed to bridge **Stata `wbopendata`
 workflows** with modern Python pipelines for reproducible UNICEF / World
 Bank style analytics.
