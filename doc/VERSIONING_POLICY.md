@@ -1,6 +1,7 @@
-# wb-api-repo Versioning Policy
+# wb-api-tools Versioning Policy
 
-Adapted from `wbopendata-dev/doc/VERSIONING_POLICY.md`. Two coordinated tracks:
+Adapted from the [Stata `wbopendata`](https://github.com/jpazvd/wbopendata)
+versioning policy. Two coordinated tracks:
 
 ## Track 1 — Package version (canonical)
 
@@ -10,7 +11,7 @@ Files that MUST move together at every release:
 - `src/wbopendata.pkg`
 - `src/stata.toc`
 
-Initial package version: **v0.1.0** (parallel track; independent of `wbopendata-dev` v18.x).
+Initial package version: **v0.1.0** (parallel track; independent of the Stata [`wbopendata`](https://github.com/jpazvd/wbopendata) v18.x).
 
 Bump rules ([SemVer](https://semver.org)):
 - **PATCH** — bugfix, doc-only change, internal refactor with no observable behaviour change.
@@ -34,10 +35,11 @@ Before opening a PR:
 - [ ] If the PR is a release, move `[Unreleased]` → `[X.Y.Z] — YYYY-MM-DD`,
       bump `CITATION.cff` and `src/wbopendata.pkg`, tag with `git tag -a vX.Y.Z`.
 
-## Coordination with `wbopendata-dev`
+## Coordination with the Stata `wbopendata` package
 
-This repo's package version (v0.x) is **independent** of `wbopendata-dev` (v18.x).
-Component-level headers may coincidentally match across repos when an `.ado` was
+This repo's package version (v0.x) is **independent** of the Stata
+[`wbopendata`](https://github.com/jpazvd/wbopendata) v18.x lineage.
+Component-level headers may coincidentally match when an `.ado` was
 copied unchanged; that's expected, not load-bearing.
 
 Per-axis alignment of features tracked in `CHANGELOG.md` under each phase.
