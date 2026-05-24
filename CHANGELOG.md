@@ -11,7 +11,69 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-_Nothing yet — open a new section here when work resumes on `develop` post-v0.1.1._
+_Nothing yet — open a new section here when work resumes on `develop` post-v0.2.0._
+
+## [0.2.0rc1] — 2026-05-23
+
+**First PyPI release candidate.** Packages the Python library + CLI as
+`wb-api-tools` on PyPI; ships via OIDC trusted publishing. Pre-release
+tag — pip only installs with `--pre wb-api-tools`. If smoke-test passes,
+bump to stable `0.2.0`; if broken, bump to `rc2`.
+
+### Added (v0.2.0rc1)
+
+- **`wb-api-tools` package on PyPI** (PR #23) — the Python code,
+  previously a flat `src/py/*.py` script tree requiring `sys.path`
+  hacks, now ships as an installable distribution. `pip install
+  wb-api-tools` makes the library + `wb-api-tools` console script
+  available; `import wb_api_tools as wb` works without any
+  bootstrapping.
+- **`pyproject.toml`** with hatchling build backend; deps
+  (`requests`, `pandas`, `pyyaml`, `jsonschema`, `gitpython`); `[test]`
+  extra (`pytest`, `pytest-mock`, `requests-mock`); console-script
+  entry point `wb-api-tools = wb_api_tools.cli:main`.
+- **XDG-aware cache** (`src/wb_api_tools/cache.py`) — discovery reads
+  from `$WBOPENDATA_YAML_DIR` > `$XDG_CACHE_HOME/wbopendata` >
+  `$LOCALAPPDATA/wbopendata` > `~/.cache/wbopendata`. No more
+  repo-relative paths.
+- **Bundled config + schema** (`src/wb_api_tools/_resources/`) ride
+  along in the wheel so `wb-api-tools sync` works out of the box for
+  pip-installed users (writes to `get_cache_dir()`).
+- **`.github/workflows/publish.yml`** (PR #24) — OIDC-authenticated
+  publish on `v*` tag push. Two jobs: `build` (`python -m build` +
+  smoke install) and `publish` (`pypa/gh-action-pypi-publish@release/v1`
+  via OIDC trusted publisher, `environment: pypi`). Publish job is
+  gated by `if: startsWith(github.ref, 'refs/tags/v')` so
+  `workflow_dispatch` from a branch builds but doesn't publish.
+  Version-guard step asserts the built wheel version matches the git
+  tag and rejects `.dev` builds.
+- **PyPI badges** in README (version / pyversions / license / tests /
+  downloads).
+
+### Changed (v0.2.0rc1)
+
+- **Module renames during packaging** (no public API break):
+  - `wb_discovery.py` → `wb_api_tools.discovery`
+  - `wb_text.py` → `wb_api_tools.text`
+  - `wb_api_client.py` → `wb_api_tools.api_client`
+  - `wb_api_tools.py` split into `wb_api_tools.data` (library) +
+    `wb_api_tools.cli` (CLI entry point + `_save_df`).
+- **YAML cache location**: was `<repo>/src/_/_wbopendata_*.yaml`;
+  now `~/.cache/wbopendata/_wbopendata_*.yaml` (per-user, XDG).
+  The repo-committed cache at `src/_/` stays for the Stata side +
+  dev convenience.
+- **Makefile**: targets switched from `python src/py/foo.py` to
+  `python -m wb_api_tools.foo`. Added `install`, `test`, `demo`
+  targets.
+- **Stata `__wbod_sync.ado`**: dropped the 4-path candidate search
+  for the Python pipeline; now shells `python -m
+  wb_api_tools.update_metadata` (assumes `pip install wb-api-tools`).
+
+### Removed (v0.2.0rc1)
+
+- `src/py/` directory (replaced by `src/wb_api_tools/`).
+- `src/py/examples/` (moved to repo-root `examples/`, not shipped in
+  the wheel).
 
 ## [0.1.1] — 2026-05-23
 
