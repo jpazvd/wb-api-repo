@@ -70,6 +70,58 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   still ships both surfaces; the Stata package is documented in its
   own section of the README + via `help wbopendata` in Stata.
 
+### Documentation (Unreleased)
+
+- **README restructured for PyPI-first audience.**
+  - Reordered the badge block — PyPI version badge first (highest
+    install-decision signal), tests + Python + new pepy.tech Downloads
+    badge + License after.
+  - Moved `pip install wb-api-tools` above the fold (was buried after
+    a "What's here" table).
+  - Added a **Quick-start with 5 worked examples**, three of which
+    embed inline PNG figures pulled from `docs/figures/` via absolute
+    `raw.githubusercontent.com` URLs (work on both GitHub and PyPI):
+    - Example 1 — population time-series for BRA/USA/IND, 2000-2023
+      (line chart)
+    - Example 2 — G7 GDP per capita PPP cross-section, 2022 (bar chart)
+    - Example 3 — poverty vs GDP per capita scatter, 2019 (mirrors
+      Stata `wbopendata_examples.ado` example 04)
+    - Example 4 — discovery workflow (`search` → `info`)
+    - Example 5 — `enrich_country_context` user-DataFrame match
+      (mirrors Stata example 05)
+  - Added **What's new in v0.2.1** section right after the examples,
+    visible at-a-glance so the README doesn't feel undated.
+  - Added a **Common indicators** starter table — 15 high-traffic
+    codes across Population / Economy / Poverty / Education / Health /
+    Environment categories — lowers activation cost for first-time
+    users (the full universe is 29,511).
+  - Added **Troubleshooting** section covering YAML cache missing,
+    cache-dir resolution order, corporate proxy, Windows
+    `UnicodeEncodeError`, and "is `sync` stuck?" FAQ.
+  - Added **Citation** section with BibTeX for both `wb-api-tools` and
+    the upstream Stata `wbopendata` (SSC RePEc).
+  - Moved the **Project surfaces** table (renamed from "What's here")
+    below the Quick-start so PyPI visitors see runnable code before
+    architectural framing.
+
+- **New `examples/readme_examples.py`** — runnable Python script that
+  reproduces the five Quick-start examples and writes the three PNG +
+  SVG figure twins to `docs/figures/`. Mirrors the Stata
+  `wbopendata_examples.ado` numbering and theme.
+
+- **New `examples/readme_examples.ipynb`** — paired Jupyter notebook
+  (18 cells, outputs captured) for the same five examples. GitHub
+  renders it inline — DataFrame tables + figures — without anyone
+  having to clone or install.
+
+- **New `examples/_build_readme_notebook.py`** — internal builder that
+  constructs the notebook from a single Python source via `nbformat`
+  and executes it via `nbconvert --execute --inplace`. Keeps the
+  `.py` + `.ipynb` pair in sync without jupytext.
+
+- **New `docs/figures/` directory** — committed PNG + SVG assets
+  embedded in the README + reproducible from the script above.
+
 ## [0.2.1] — 2026-05-24
 
 **PATCH release — PyPI badge rendering fix.** Switches the README
