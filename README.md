@@ -11,8 +11,7 @@ World Bank Open Data helpers in **Python** (library + CLI) and **Stata**
 shared YAML metadata cache so discovery commands stay fast and offline-safe.
 
 Python package: **[`wb-api-tools` on PyPI](https://pypi.org/project/wb-api-tools/)** —
-`pip install wb-api-tools`.
-Current release: **[v0.1.1](https://github.com/jpazvd/wb-api-repo/releases/tag/v0.1.1)** (2026-05-23).
+`pip install wb-api-tools` (live release version shown in the PyPI badge above).
 Parallel v0.x track to the upstream [`wbopendata-dev`](https://github.com/jpazvd/wbopendata-dev)
 Stata Journal lineage (v18.x).
 

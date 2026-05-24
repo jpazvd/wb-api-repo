@@ -12,8 +12,7 @@ from jsonschema import ValidationError, validate
 
 logger = logging.getLogger(__name__)
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SCHEMA_PATH = PROJECT_ROOT / "config" / "schema_yaml_v2.json"
+DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parent / "_resources" / "schema_yaml_v2.json"
 
 
 class SchemaValidator:

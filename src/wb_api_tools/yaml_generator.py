@@ -65,7 +65,8 @@ class YAMLGenerator:
                        back to DEFAULT_FILENAMES. Lets update_metadata.py
                        honour config_update.yaml's yaml_output.*_file keys.
         """
-        default_dir = Path(__file__).resolve().parents[2] / "src" / "_"
+        from .cache import get_cache_dir
+        default_dir = get_cache_dir()
         self.output_dir = Path(output_dir) if output_dir else default_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
         merged = dict(self.DEFAULT_FILENAMES)

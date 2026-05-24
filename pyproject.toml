@@ -48,6 +48,9 @@ wb-api-tools = "wb_api_tools.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/wb_api_tools"]
+# wb_api_tools/_resources/{config_update.yaml,schema_yaml_v2.json} ride
+# along automatically (hatchling includes non-Python files inside the
+# package dir by default); no explicit include list needed.
 
 [tool.hatch.build.targets.sdist]
 include = [
