@@ -16,10 +16,11 @@ _Nothing yet — open a new section here when work resumes on `develop` post-v0.
 ## [0.2.0] — 2026-05-23
 
 **Stable release.** Promotes [0.2.0rc1] after a clean PyPI publish +
-clean-venv smoke test (`pip install --pre wb-api-tools`, then
-`import wb_api_tools` → 0.2.0rc1 + 17 public symbols). Identical code
-to rc1; only the version string is bumped + the README cosmetic
-fixes from PR #26 land in this tag.
+clean-venv smoke test: `pip install --pre wb-api-tools`, then
+`wb_api_tools.__version__` returned `0.2.0rc1` and
+`len(wb_api_tools.__all__)` returned `17`. Identical code to rc1;
+only the version string is bumped + the README cosmetic fixes from
+PR #26 land in this tag.
 
 `pip install wb-api-tools` (no `--pre`) now resolves to this release.
 
