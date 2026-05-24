@@ -21,7 +21,7 @@ Full reference: https://github.com/jpazvd/wb-api-repo/blob/main/docs/PYTHON_USER
 
 from __future__ import annotations
 
-__version__ = "0.2.0rc1"
+__version__ = "0.2.0"
 
 from .api_client import WBAPIClient
 from .data import (
