@@ -1,67 +1,212 @@
 # wb-api-tools
 
+[![PyPI version](https://badge.fury.io/py/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
 [![tests](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![PyPI version](https://badge.fury.io/py/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
+[![Downloads](https://static.pepy.tech/badge/wb-api-tools)](https://pepy.tech/project/wb-api-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Package: **`wb-api-tools`** on PyPI — repo: [`jpazvd/wb-api-repo`](https://github.com/jpazvd/wb-api-repo).
-
-World Bank Open Data helpers in **Python** (library + CLI) and **Stata**
-(`wbopendata` ado package). Two surfaces over the same WB API v2, with a
-shared YAML metadata cache so discovery commands stay fast and offline-safe.
-
-Python package: **[`wb-api-tools` on PyPI](https://pypi.org/project/wb-api-tools/)** —
-`pip install wb-api-tools` (live release version shown in the PyPI badge above).
-Parallel v0.x track to the upstream [Stata `wbopendata`](https://github.com/jpazvd/wbopendata)
-package (Stata Journal lineage, v18.x).
-
-## What's here
-
-| Surface | Entry point | Reference |
-| --- | --- | --- |
-| Python library | `wb_api_tools.{discovery,data,text}` (re-exported at package root) | [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) |
-| Python CLI | `wb-api-tools <subcmd>` (after install) or `python -m wb_api_tools <subcmd>` | `--help` on every subcommand |
-| Stata package | `src/w/wbopendata.ado` (v17.4.0) | `help wbopendata` in Stata, or `src/w/wbopendata.sthlp` |
-| YAML metadata cache | `~/.cache/wbopendata/_wbopendata_{indicators,sources,topics}.yaml` (XDG-aware) | populated by `wb-api-tools sync` |
-
-## Install
-
-From PyPI (once published — see `pyproject.toml` for the canonical name):
+**Python library + CLI for the World Bank Open Data API — the Stata `wbopendata` surface, packaged for modern Python.**
 
 ```bash
 pip install wb-api-tools
 ```
 
-From a git checkout (dev mode):
+`wb-api-tools` wraps the World Bank's WDI / IBRD APIs in two thin, well-tested
+interfaces: a Python library you import (`import wb_api_tools as wb`) and a
+console script (`wb-api-tools <subcommand>`). It mirrors the surface of the
+[Stata `wbopendata`](https://github.com/jpazvd/wbopendata) package (v18.x
+lineage) so workflows port cleanly between the two ecosystems.
 
-```bash
-git clone https://github.com/jpazvd/wb-api-repo.git
-cd wb-api-repo
-pip install -e ".[test]"
-```
-
-Requires Python 3.11+. The Stata package is loaded by adding `src/w/` and
-`src/_/` to Stata's adopath (or installed via `net install` once an SSC
-release lands).
+---
 
 ## Quick start
 
-The repo ships with a runnable 7-section walkthrough that exercises the
-whole Python surface (discovery, live `describe`, `get_data` flag matrix,
-`enrich_country_context`, `wb_text` formats):
+After `pip install wb-api-tools`, populate the offline metadata cache once
+(~30 s; downloads three small YAML files to `~/.cache/wbopendata/`):
 
 ```bash
-PYTHONIOENCODING=utf-8 python examples/demo_pr_b_c.py
+wb-api-tools sync
 ```
 
-Captured transcript: [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md).
+Then any of the five examples below works. **Full runnable notebook:**
+[`examples/readme_examples.ipynb`](examples/readme_examples.ipynb) — GitHub
+renders it inline (DataFrame tables + figures), or open in Jupyter / Colab to
+re-execute.
+
+### 1. Population time-series (multiple countries)
+
+```python
+import wb_api_tools as wb
+
+df = wb.get_data(
+    ["SP.POP.TOTL"], "BRA;USA;IND",
+    date="2000:2023", long=True, no_basic=True,
+)
+df["pop_billions"] = df["value"] / 1e9
+print(df.head(3)[["country", "date", "pop_billions"]].to_string(index=False))
+#  country  date  pop_billions
+#   Brazil  2000      0.174018
+#   Brazil  2001      0.176301
+#   Brazil  2002      0.178503
+```
+
+![Population time-series, 2000-2023](https://raw.githubusercontent.com/jpazvd/wb-api-repo/main/docs/figures/example_1_population_timeseries.png)
+
+### 2. Cross-country bar chart (G7, latest year)
+
+```python
+df = wb.get_data(
+    ["NY.GDP.PCAP.PP.KD"],
+    "CAN;DEU;FRA;GBR;ITA;JPN;USA",
+    date="2022", long=True, no_basic=True,
+)
+df["gdp_pcap_k"] = df["value"] / 1000
+print(df.sort_values("gdp_pcap_k")[["country", "gdp_pcap_k"]].to_string(index=False))
+#         country  gdp_pcap_k
+#           Japan   44.972344
+#           Italy   52.333327
+#  United Kingdom   53.139151
+#          France   53.673814
+#          Canada   58.321061
+#         Germany   63.676088
+#   United States   72.679258
+```
+
+![G7 GDP per capita PPP, 2022](https://raw.githubusercontent.com/jpazvd/wb-api-repo/main/docs/figures/example_2_gdp_per_capita_bar.png)
+
+### 3. Bivariate scatter — poverty vs GDP per capita
+
+Two indicators, all countries, single year (mirrors Stata
+`wbopendata_examples.ado` example 04). We fit three candidate functional forms
+and overlay the one with the highest R²:
+
+```python
+import numpy as np
+from scipy.optimize import curve_fit
+
+df = wb.get_data(
+    ["SI.POV.DDAY", "NY.GDP.PCAP.PP.KD"], "all",
+    date="2019",
+)
+df = df.dropna(subset=["SI.POV.DDAY", "NY.GDP.PCAP.PP.KD"])
+df = df[df["region"].notna() & (df["region"] != "NA")]
+print(f"countries with both indicators in 2019: {len(df)}")
+# countries with both indicators in 2019: 78
+
+x = df["NY.GDP.PCAP.PP.KD"].to_numpy()
+y = df["SI.POV.DDAY"].to_numpy()
+# Logistic 4PL is the principled choice — y is bounded in [0, 100%], so a
+# sigmoid that respects both asymptotes is the right family.
+def logistic_4pl(x, a, b, c, d):
+    return d + (a - d) / (1.0 + (x / c) ** b)
+popt, _ = curve_fit(logistic_4pl, x, y,
+                    p0=[100.0, 1.0, float(np.median(x)), 0.0], maxfev=20000)
+
+# R^2 against linear (log) and quadratic (log) baselines:
+#   Linear    (log GDP):    R^2 = 0.503
+#   Quadratic (log GDP):    R^2 = 0.775
+#   Logistic 4PL:           R^2 = 0.834   <-- best fit, plotted in black
+```
+
+![Poverty vs GDP per capita with logistic 4PL fit, 2019](https://raw.githubusercontent.com/jpazvd/wb-api-repo/main/docs/figures/example_3_poverty_vs_gdp_scatter.png)
+
+### 4. Discovery workflow: search → info → fetch
+
+```python
+res = wb.search("education spending", limit=3)
+print(f"matches: {res['total']:,}")
+# matches: 19
+
+wb.info("SE.XPD.TOTL.GD.ZS")
+# {'code': 'SE.XPD.TOTL.GD.ZS',
+#  'name': 'Government expenditure on education, total (% of GDP)',
+#  'source_name': 'World Development Indicators',
+#  'topic_names': ['Education'],
+#  ...}
+```
+
+### 5. Enrich a user DataFrame with country context
+
+Mirrors Stata `wbopendata, match(varname) [basic geo]`:
+
+```python
+import pandas as pd
+
+user_df = pd.DataFrame({
+    "iso3": ["BRA", "USA", "IND", "DEU", "JPN"],
+    "my_metric": [1.2, 3.4, 5.6, 7.8, 9.0],
+})
+wb.enrich_country_context(user_df, iso_col="iso3", geo=True)
+# iso3  my_metric region  ...  capital         latitude   longitude
+#  BRA        1.2    LCN  ...  Brasilia        -15.7801   -47.9292
+#  USA        3.4    NAC  ...  Washington D.C.  38.8895   -77.032
+#  ...
+```
+
+---
+
+## What's new in v0.2.1
+
+PATCH release. PyPI README badge rendering fix — switched from dynamic
+shields.io PyPI-scraping endpoints (`pypi/pyversions/...`, `pypi/l/...`) to
+static badges + `badge.fury.io`. v0.2.0's PyPI page showed alt-text instead of
+the Python-version and License badges because shields.io's PyPI scraper has
+caching delay on new packages. See [CHANGELOG.md](CHANGELOG.md) for the full
+per-release log.
+
+`[Unreleased]` (next release): CLI `--out -` for streaming CSV to stdout,
+JSON / JSONL / NDJSON output formats, status lines routed to stderr.
+
+---
+
+## Common indicators
+
+A starter set of high-traffic World Bank indicator codes. The full universe
+is **29,511 indicators**; use `wb.search(...)` or
+[Data Catalog](https://datacatalog.worldbank.org/) to discover more.
+
+| Category | Code | Indicator |
+| --- | --- | --- |
+| Population | `SP.POP.TOTL` | Population, total |
+| Population | `SP.URB.TOTL.IN.ZS` | Urban population (% of total) |
+| Economy | `NY.GDP.MKTP.CD` | GDP (current US$) |
+| Economy | `NY.GDP.PCAP.PP.KD` | GDP per capita, PPP (constant 2017 international $) |
+| Economy | `NE.TRD.GNFS.ZS` | Trade (% of GDP) |
+| Poverty | `SI.POV.DDAY` | Poverty headcount at $3.00/day (2021 PPP) |
+| Poverty | `SI.POV.GINI` | Gini index |
+| Education | `SE.XPD.TOTL.GD.ZS` | Government expenditure on education (% of GDP) |
+| Education | `SE.PRM.ENRR` | Gross primary enrollment ratio |
+| Education | `SE.SEC.CMPT.LO.ZS` | Lower secondary completion rate |
+| Health | `SP.DYN.LE00.IN` | Life expectancy at birth |
+| Health | `SH.DYN.MORT` | Under-5 mortality rate |
+| Health | `SH.STA.MMRT` | Maternal mortality ratio |
+| Environment | `EN.ATM.CO2E.PC` | CO2 emissions per capita (metric tons) |
+| Environment | `AG.LND.FRST.ZS` | Forest area (% of land area) |
+
+---
+
+## Project surfaces
+
+`wb-api-tools` is the Python distribution of a dual Stata + Python repo
+([`jpazvd/wb-api-repo`](https://github.com/jpazvd/wb-api-repo)) on a parallel
+v0.x track to the upstream Stata
+[`wbopendata`](https://github.com/jpazvd/wbopendata) (Stata Journal v18.x).
+
+| Surface | Entry point | Reference |
+| --- | --- | --- |
+| Python library | `wb_api_tools.{discovery,data,text}` (re-exported at the package root) | [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) |
+| Python CLI | `wb-api-tools <subcmd>` (after install) or `python -m wb_api_tools <subcmd>` | `--help` on every subcommand |
+| Stata package | `src/w/wbopendata.ado` in the GitHub repo (v17.4.0) | `help wbopendata` in Stata, or [`src/w/wbopendata.sthlp`](https://github.com/jpazvd/wb-api-repo/blob/main/src/w/wbopendata.sthlp) |
+| YAML metadata cache | `~/.cache/wbopendata/_wbopendata_{indicators,sources,topics}.yaml` (XDG-aware) | populated by `wb-api-tools sync` |
+
+---
 
 ## Python CLI
 
 After `pip install`, use the `wb-api-tools` console script (or
-`python -m wb_api_tools` if PATH doesn't include scripts). Each subcommand
-has `--help` for full flag descriptions.
+`python -m wb_api_tools` if PATH doesn't include scripts). Each subcommand has
+`--help` for full flag descriptions.
 
 | Subcommand | Purpose |
 | --- | --- |
@@ -100,61 +245,51 @@ Plus two stdout modes:
 - **`--out -`** → full CSV streamed to stdout (pipeable into other tools)
 - **`--out` omitted** → 20-row preview to stdout (head only, not parseable)
 
-## Python library
-
-After `pip install`, the package is importable directly — no `sys.path`
-hacks needed:
-
-```python
-import wb_api_tools as wb
-
-wb.search("poverty headcount", limit=5)
-df = wb.get_data(["SP.POP.TOTL"], "BRA;USA;IND", date="2020", geo=True)
-wb.wrap("long indicator title ...", width=60, fmt="stack")   # for Stata graph title()
-```
-
-Full reference: [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md)
-(library + CLI + Stata-parity table).
+---
 
 ## Stata package
 
-`src/w/wbopendata.ado` is the v17.4.0 dispatcher; current Phase-0-through-6
-surface mirrors the Python library:
+`src/w/wbopendata.ado` (in the GitHub repo, not on PyPI) is the v17.4.0
+dispatcher; current surface mirrors the Python library:
 
 - `wbopendata, sources / allsources / alltopics / info / search / describe`
   discovery commands
 - `wbopendata, indicator(X) clear` data fetch with `noBASIC`, `geo`,
   `language(es)`, `cache(days)`, `sync`
-- `linewrap(W) maxlength(N) linewrapformat(stack|newline|lines|smcl)`
-  for graph-title and SMCL formatting
+- `linewrap(W) maxlength(N) linewrapformat(stack|newline|lines|smcl)` for
+  graph-title and SMCL formatting
 
-Open `src/w/wbopendata.sthlp` in Stata's viewer or run `help wbopendata`
-once the package is on the adopath. The Python-side
+Open `src/w/wbopendata.sthlp` in Stata's viewer or run `help wbopendata` once
+the package is on the adopath. The Python-side
 [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) §5 has a row-by-row
 Stata ↔ Python parity table.
 
+---
+
 ## YAML metadata cache
 
-The offline metadata cache lives in a per-user XDG-aware directory
-(typically `~/.cache/wbopendata/` on POSIX or `~/AppData/Local/wbopendata/`
-on Windows; override with `$WBOPENDATA_YAML_DIR`):
+The offline metadata cache lives in a per-user XDG-aware directory (typically
+`~/.cache/wbopendata/` on POSIX or `~/AppData/Local/wbopendata/` on Windows;
+override with `$WBOPENDATA_YAML_DIR`):
 
 - `_wbopendata_indicators.yaml` — 29,511 indicators (~18 MB)
 - `_wbopendata_sources.yaml` — 71 sources
 - `_wbopendata_topics.yaml` — 21 topics
 
-Discovery commands (`info`, `search`, `sources`, `alltopics`) read from
-this cache for microsecond lookups. After `pip install`, populate it once:
+Discovery commands (`info`, `search`, `sources`, `alltopics`) read from this
+cache for microsecond lookups. After `pip install`, populate it once:
 
 ```bash
-wb-api-tools sync                # download + write all three YAMLs (~10 min first time)
+wb-api-tools sync                # download + write all three YAMLs (~30 s first time)
 wb-api-tools sync --commit --tag # git-commit + tag (dev mode only)
 ```
 
-A semi-monthly GitHub Action (`.github/workflows/wb_metadata_nightly.yml`
-— file name is historical; cron runs on the 1st and 15th of every month
-at 02:17 UTC, so 14–17 days apart depending on month length) keeps the
-repo-committed cache fresh. Manually triggerable via `workflow_dispatch`.
+A semi-monthly GitHub Action (`.github/workflows/wb_metadata_nightly.yml` —
+file name is historical; cron runs on the 1st and 15th of every month at 02:17
+UTC) keeps the repo-committed cache fresh. Manually triggerable via
+`workflow_dispatch`.
+
+---
 
 ## Documentation
 
@@ -162,14 +297,81 @@ repo-committed cache fresh. Manually triggerable via `workflow_dispatch`.
 - [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md) — captured live-API transcript from the 7-section walkthrough
 - [docs/EXAMPLES.md](docs/EXAMPLES.md) — end-to-end workflows (API, Stata, Python)
 - [docs/AGE_BANDS.md](docs/AGE_BANDS.md) — standard 5-year age band codes for population indicators
-- [examples/](examples/) — runnable Python examples
+- [examples/readme_examples.ipynb](examples/readme_examples.ipynb) — runnable Jupyter notebook for the Quick-start examples above
+- [examples/readme_examples.py](examples/readme_examples.py) — paired Python script (regenerates the figures in `docs/figures/`)
 - [CHANGELOG.md](CHANGELOG.md) — per-release change log
 - [doc/VERSIONING_POLICY.md](doc/VERSIONING_POLICY.md) — semver policy + component-level `.ado` version headers
+
+---
+
+## Troubleshooting
+
+**`YAML metadata not found in cache`** — run `wb-api-tools sync` once. The
+package ships without a YAML cache (would push the wheel size up needlessly);
+`sync` downloads + writes the three files to `~/.cache/wbopendata/` in ~30 s.
+
+**Cache lives somewhere unexpected** — the resolution order is OS-specific
+(see `src/wb_api_tools/cache.py`):
+
+- **`$WBOPENDATA_YAML_DIR`** wins on every platform when set.
+- **POSIX** (Linux / macOS): otherwise `$XDG_CACHE_HOME/wbopendata/` if set,
+  else `~/.cache/wbopendata/`.
+- **Windows**: otherwise `$LOCALAPPDATA/wbopendata/` if set,
+  else `~/AppData/Local/wbopendata/`.
+
+Set the env var to point at a shared directory if working across machines.
+
+**Corporate proxy blocks `api.worldbank.org`** — the WB API responds to plain
+HTTPS over port 443 with no auth. If `wb-api-tools sync` hangs, check your
+proxy whitelist or set `HTTPS_PROXY` in your environment.
+
+**`UnicodeEncodeError` on Windows** — country names contain accented characters
+that Windows' default cp1252 can't represent. Set
+`PYTHONIOENCODING=utf-8` in your environment before running, or use a
+Unicode-aware terminal (Windows Terminal, modern PowerShell).
+
+**`wb-api-tools sync` takes ~30 s — is it stuck?** — that's normal first-run
+behaviour: it fetches 29,511 indicators in batches of 10,000 from the
+`/v2/indicator` endpoint. Subsequent reads come from the local YAML cache
+(microseconds).
+
+---
+
+## Citation
+
+If `wb-api-tools` supports a published paper or working paper, please cite
+both the package and the underlying Stata implementation:
+
+```bibtex
+@misc{azevedo_wbapitools_2026,
+  author       = {Azevedo, Jo{\~a}o Pedro},
+  title        = {{wb-api-tools}: World Bank Open Data helpers for Python},
+  year         = {2026},
+  publisher    = {PyPI},
+  url          = {https://pypi.org/project/wb-api-tools/}
+}
+
+@misc{azevedo_wbopendata_2011,
+  author       = {Azevedo, Jo{\~a}o Pedro},
+  title        = {{wbopendata}: Stata module to access World Bank databases},
+  year         = {2011},
+  publisher    = {Statistical Software Components, Boston College},
+  number       = {S457234},
+  url          = {https://ideas.repec.org/c/boc/bocode/s457234.html}
+}
+```
+
+Source data: World Bank Open Data — <https://data.worldbank.org/>.
+
+---
 
 ## Development
 
 ```bash
-PYTHONIOENCODING=utf-8 python -m pytest tests/   # 62 cases across discovery, wb_text, wb_api_tools
+git clone https://github.com/jpazvd/wb-api-repo.git
+cd wb-api-repo
+pip install -e ".[test]"
+PYTHONIOENCODING=utf-8 python -m pytest tests/   # 71 cases across discovery, wb_text, wb_api_tools, cli
 ```
 
 Useful Makefile targets:
@@ -181,8 +383,19 @@ make wb-metadata-csv      # legacy CSV builder
 make wb-config            # batch data pulls from config.yaml
 ```
 
-Branch model: feature work on `develop`; releases tag from `main`. See the
-v0.1.0 release notes for the full PR list.
+To regenerate the Quick-start figures from live API data, install the
+**`[examples]` extras group** first (pulls in matplotlib + scipy + nbformat +
+jupyter + nbconvert — none of these are runtime deps of `wb-api-tools`):
+
+```bash
+pip install -e ".[examples]"
+WBOPENDATA_YAML_DIR=src/_ python examples/readme_examples.py        # PNG + SVG to docs/figures/
+WBOPENDATA_YAML_DIR=src/_ python examples/_build_readme_notebook.py # rebuild + execute the .ipynb
+```
+
+Branch model: feature work on `develop`; releases tag from `main`.
+
+---
 
 ## Integration
 
@@ -192,6 +405,8 @@ The Python CLI and library plug into:
 - **Stata workflows** (export CSV → `import delimited`, or use the Stata package directly)
 - **R workflows** (`readr::read_csv` or `arrow::read_parquet`)
 - **Jupyter notebooks** for ad-hoc analysis
+
+---
 
 ## License
 

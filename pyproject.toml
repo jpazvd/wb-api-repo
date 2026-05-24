@@ -35,6 +35,15 @@ test = [
     "pytest-mock",
     "requests-mock",
 ]
+# Extras for regenerating the README's Quick-start figures + notebook.
+# Not pulled in by `pip install wb-api-tools` (these are dev/docs tooling).
+examples = [
+    "matplotlib",
+    "scipy",           # logistic 4PL fit in example 3 (curve_fit)
+    "nbformat",        # notebook builder
+    "jupyter",         # `python -m jupyter nbconvert ...`
+    "nbconvert",
+]
 
 [project.urls]
 Homepage = "https://github.com/jpazvd/wb-api-repo"
