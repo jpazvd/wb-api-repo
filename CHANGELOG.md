@@ -17,8 +17,9 @@ _Nothing yet — open a new section here when work resumes on `develop` post-v0.
 
 **First PyPI release candidate.** Packages the Python library + CLI as
 `wb-api-tools` on PyPI; ships via OIDC trusted publishing. Pre-release
-tag — pip only installs with `--pre wb-api-tools`. If smoke-test passes,
-bump to stable `0.2.0`; if broken, bump to `rc2`.
+tag — installable only with `pip install --pre wb-api-tools`; plain
+`pip install wb-api-tools` skips it. If smoke-test passes, bump to
+stable `0.2.0`; if broken, bump to `rc2`.
 
 ### Added (v0.2.0rc1)
 
