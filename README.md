@@ -1,10 +1,10 @@
 # wb-api-tools
 
-[![PyPI version](https://img.shields.io/pypi/v/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
-[![Python versions](https://img.shields.io/pypi/pyversions/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
-[![License: MIT](https://img.shields.io/pypi/l/wb-api-tools.svg)](https://github.com/jpazvd/wb-api-repo/blob/main/LICENSE.md)
 [![tests](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml)
-[![Downloads](https://img.shields.io/pypi/dm/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![PyPI version](https://badge.fury.io/py/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
+[![Stata 16+](https://img.shields.io/badge/Stata-16+-1a5276.svg)](https://www.stata.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Package: **`wb-api-tools`** on PyPI — repo: [`jpazvd/wb-api-repo`](https://github.com/jpazvd/wb-api-repo).
 
