@@ -19,7 +19,7 @@ _Nothing yet — open a new section here when work resumes on `develop` post-v0.
 develop: README restructured for PyPI-first audience (5 worked examples
 with figures + Common Indicators starter + Troubleshooting + Citation),
 CLI output formats expanded (`--out -` stdout streaming + JSON / JSONL /
-NDJSON), and CI status lines routed to stderr. No breaking changes to
+NDJSON), and CLI status lines routed to stderr. No breaking changes to
 the Python or CLI public surface — additive only.
 
 ### Added (v0.3.0)
