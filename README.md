@@ -1,4 +1,4 @@
-# wb-api-repo
+# wb-api-tools
 
 [![PyPI version](https://img.shields.io/pypi/v/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
 [![Python versions](https://img.shields.io/pypi/pyversions/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
@@ -6,14 +6,16 @@
 [![tests](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml)
 [![Downloads](https://img.shields.io/pypi/dm/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
 
+> Package: **`wb-api-tools`** on PyPI — repo: [`jpazvd/wb-api-repo`](https://github.com/jpazvd/wb-api-repo).
+
 World Bank Open Data helpers in **Python** (library + CLI) and **Stata**
 (`wbopendata` ado package). Two surfaces over the same WB API v2, with a
 shared YAML metadata cache so discovery commands stay fast and offline-safe.
 
 Python package: **[`wb-api-tools` on PyPI](https://pypi.org/project/wb-api-tools/)** —
 `pip install wb-api-tools` (live release version shown in the PyPI badge above).
-Parallel v0.x track to the upstream [`wbopendata-dev`](https://github.com/jpazvd/wbopendata-dev)
-Stata Journal lineage (v18.x).
+Parallel v0.x track to the upstream [Stata `wbopendata`](https://github.com/jpazvd/wbopendata)
+package (Stata Journal lineage, v18.x).
 
 ## What's here
 
