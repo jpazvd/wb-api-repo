@@ -1,10 +1,17 @@
 # wb-api-repo
 
+[![PyPI version](https://img.shields.io/pypi/v/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
+[![Python versions](https://img.shields.io/pypi/pyversions/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
+[![License: MIT](https://img.shields.io/pypi/l/wb-api-tools.svg)](https://github.com/jpazvd/wb-api-repo/blob/main/LICENSE.md)
+[![tests](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jpazvd/wb-api-repo/actions/workflows/tests.yml)
+[![Downloads](https://img.shields.io/pypi/dm/wb-api-tools.svg)](https://pypi.org/project/wb-api-tools/)
+
 World Bank Open Data helpers in **Python** (library + CLI) and **Stata**
 (`wbopendata` ado package). Two surfaces over the same WB API v2, with a
 shared YAML metadata cache so discovery commands stay fast and offline-safe.
 
-Current release: **[v0.1.1](https://github.com/jpazvd/wb-api-repo/releases/tag/v0.1.1)** (2026-05-23).
+Python package: **[`wb-api-tools` on PyPI](https://pypi.org/project/wb-api-tools/)** —
+`pip install wb-api-tools` (live release version shown in the PyPI badge above).
 Parallel v0.x track to the upstream [`wbopendata-dev`](https://github.com/jpazvd/wbopendata-dev)
 Stata Journal lineage (v18.x).
 
@@ -12,17 +19,25 @@ Stata Journal lineage (v18.x).
 
 | Surface | Entry point | Reference |
 | --- | --- | --- |
-| Python library | `src/py/wb_discovery.py`, `src/py/wb_api_tools.py`, `src/py/wb_text.py` | [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) |
-| Python CLI | `python src/py/wb_api_tools.py <subcmd>` | `--help` on every subcommand |
+| Python library | `wb_api_tools.{discovery,data,text}` (re-exported at package root) | [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md) |
+| Python CLI | `wb-api-tools <subcmd>` (after install) or `python -m wb_api_tools <subcmd>` | `--help` on every subcommand |
 | Stata package | `src/w/wbopendata.ado` (v17.4.0) | `help wbopendata` in Stata, or `src/w/wbopendata.sthlp` |
-| YAML metadata cache | `src/_/_wbopendata_{indicators,sources,topics}.yaml` | refreshed by `python src/py/wb_api_tools.py sync` |
+| YAML metadata cache | `~/.cache/wbopendata/_wbopendata_{indicators,sources,topics}.yaml` (XDG-aware) | populated by `wb-api-tools sync` |
 
 ## Install
+
+From PyPI (once published — see `pyproject.toml` for the canonical name):
+
+```bash
+pip install wb-api-tools
+```
+
+From a git checkout (dev mode):
 
 ```bash
 git clone https://github.com/jpazvd/wb-api-repo.git
 cd wb-api-repo
-pip install -r requirements.txt
+pip install -e ".[test]"
 ```
 
 Requires Python 3.11+. The Stata package is loaded by adding `src/w/` and
@@ -36,15 +51,16 @@ whole Python surface (discovery, live `describe`, `get_data` flag matrix,
 `enrich_country_context`, `wb_text` formats):
 
 ```bash
-PYTHONIOENCODING=utf-8 python src/py/examples/demo_pr_b_c.py
+PYTHONIOENCODING=utf-8 python examples/demo_pr_b_c.py
 ```
 
 Captured transcript: [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md).
 
 ## Python CLI
 
-`python src/py/wb_api_tools.py <subcommand>` — run any subcommand with
-`--help` for full flag descriptions.
+After `pip install`, use the `wb-api-tools` console script (or
+`python -m wb_api_tools` if PATH doesn't include scripts). Each subcommand
+has `--help` for full flag descriptions.
 
 | Subcommand | Purpose |
 | --- | --- |
@@ -56,12 +72,12 @@ Captured transcript: [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md).
 | `info <id>` | Show full metadata for one indicator (from YAML cache) |
 | `describe <id>` | Fetch fresh metadata for one indicator (live API; `--language` supported) |
 | `search [term]` | Paginated indicator search; `--source`, `--topic`, `--field`, `--exact` |
-| `sync` | Refresh the YAML metadata cache from the live WB API |
+| `sync` | Populate / refresh the YAML metadata cache from the live WB API |
 
 Example:
 
 ```bash
-python src/py/wb_api_tools.py data \
+wb-api-tools data \
     --indicators SP.POP.TOTL,NY.GDP.MKTP.CD \
     --countries "BRA;USA;IND" \
     --date 2010:2020 \
@@ -73,18 +89,15 @@ printed as a preview if `--out` is omitted.
 
 ## Python library
 
-After putting `src/py/` on `sys.path` (the tests do this), the library is
-importable directly:
+After `pip install`, the package is importable directly — no `sys.path`
+hacks needed:
 
 ```python
-import sys; sys.path.insert(0, "src/py")
-import wb_discovery as wd
-from wb_api_tools import get_data, enrich_country_context
-import wb_text as wt
+import wb_api_tools as wb
 
-wd.search("poverty headcount", limit=5)
-df = get_data(["SP.POP.TOTL"], "BRA;USA;IND", date="2020", geo=True)
-wt.wrap("long indicator title ...", width=60, fmt="stack")   # for Stata graph title()
+wb.search("poverty headcount", limit=5)
+df = wb.get_data(["SP.POP.TOTL"], "BRA;USA;IND", date="2020", geo=True)
+wb.wrap("long indicator title ...", width=60, fmt="stack")   # for Stata graph title()
 ```
 
 Full reference: [docs/PYTHON_USER_GUIDE.md](docs/PYTHON_USER_GUIDE.md)
@@ -109,25 +122,26 @@ Stata ↔ Python parity table.
 
 ## YAML metadata cache
 
-`src/_/_wbopendata_*.yaml` is the offline metadata cache populated from the
-live WB API:
+The offline metadata cache lives in a per-user XDG-aware directory
+(typically `~/.cache/wbopendata/` on POSIX or `~/AppData/Local/wbopendata/`
+on Windows; override with `$WBOPENDATA_YAML_DIR`):
 
 - `_wbopendata_indicators.yaml` — 29,511 indicators (~18 MB)
 - `_wbopendata_sources.yaml` — 71 sources
 - `_wbopendata_topics.yaml` — 21 topics
 
-Discovery commands (`info`, `search`, `sources`, `alltopics`) read from this
-cache for microsecond lookups. Refresh with:
+Discovery commands (`info`, `search`, `sources`, `alltopics`) read from
+this cache for microsecond lookups. After `pip install`, populate it once:
 
 ```bash
-python src/py/wb_api_tools.py sync                # in-place refresh
-python src/py/wb_api_tools.py sync --commit --tag # also git-commit + tag
+wb-api-tools sync                # download + write all three YAMLs (~10 min first time)
+wb-api-tools sync --commit --tag # git-commit + tag (dev mode only)
 ```
 
 A semi-monthly GitHub Action (`.github/workflows/wb_metadata_nightly.yml`
 — file name is historical; cron runs on the 1st and 15th of every month
 at 02:17 UTC, so 14–17 days apart depending on month length) keeps the
-cache fresh. Manually triggerable via `workflow_dispatch`.
+repo-committed cache fresh. Manually triggerable via `workflow_dispatch`.
 
 ## Documentation
 
@@ -135,7 +149,7 @@ cache fresh. Manually triggerable via `workflow_dispatch`.
 - [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md) — captured live-API transcript from the 7-section walkthrough
 - [docs/EXAMPLES.md](docs/EXAMPLES.md) — end-to-end workflows (API, Stata, Python)
 - [docs/AGE_BANDS.md](docs/AGE_BANDS.md) — standard 5-year age band codes for population indicators
-- [src/py/examples/](src/py/examples/) — runnable Python examples
+- [examples/](examples/) — runnable Python examples
 - [CHANGELOG.md](CHANGELOG.md) — per-release change log
 - [doc/VERSIONING_POLICY.md](doc/VERSIONING_POLICY.md) — semver policy + component-level `.ado` version headers
 

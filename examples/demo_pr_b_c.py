@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """
-End-to-end walkthrough of the Python library catch-up arc
-(Python PR A debt cleanup + PR B discovery API + PR C
-country-context/multilingual/linewrap).
+End-to-end walkthrough of the Python library surface.
 
-Run from the repo root:
+Requires the package installed (``pip install -e .`` from the repo root)
+or available on ``PYTHONPATH``. Run from anywhere:
 
-    PYTHONIOENCODING=utf-8 python src/py/examples/demo_pr_b_c.py
+    PYTHONIOENCODING=utf-8 python examples/demo_pr_b_c.py
 
-What it exercises (and where it lives):
+What it exercises:
 
-  Discovery (PR B)              src/py/wb_discovery.py
+  Discovery (PR B)        wb_api_tools.discovery
     sources / allsources / alltopics / info / search / describe / sync
-  Data fetch enrichment (PR C)  src/py/wb_api_tools.py
+  Data fetch (PR C)       wb_api_tools.data
     get_data(..., no_basic, geo, language)
     enrich_country_context(df, iso_col, basic, geo)
-  Text wrap (PR C)              src/py/wb_text.py
+  Text wrap (PR C)        wb_api_tools.text
     wrap(stack/newline/lines/smcl/all) / wrap_lines / truncate
   Multilingual (PR C)
     describe(language='es')
@@ -23,18 +22,14 @@ What it exercises (and where it lives):
 
 from __future__ import annotations
 
-import sys
 from pathlib import Path
 
-# Make the in-repo modules importable when run from repo root
-HERE = Path(__file__).resolve()
-sys.path.insert(0, str(HERE.parents[1]))  # src/py/
+import pandas as pd
 
-import pandas as pd  # noqa: E402
-
-import wb_api_tools as t  # noqa: E402
-import wb_discovery as wd  # noqa: E402
-import wb_text as wt  # noqa: E402
+import wb_api_tools as t
+from wb_api_tools import discovery as wd
+from wb_api_tools import text as wt
+from wb_api_tools.cache import get_cache_dir
 
 
 # ----------------------------------------------------------------------
@@ -58,14 +53,15 @@ def sub(title: str) -> None:
 # ----------------------------------------------------------------------
 
 def demo_0_cache_check() -> None:
-    section("0. YAML cache health-check (committed by PR #12)")
-    yaml_dir = Path(__file__).resolve().parents[2] / "_"
+    section("0. YAML cache health-check")
+    yaml_dir = get_cache_dir()
+    print(f"  Cache dir: {yaml_dir}")
     for name in ("indicators", "sources", "topics"):
         p = yaml_dir / f"_wbopendata_{name}.yaml"
         if p.exists():
             print(f"  OK  {p.name:35s} {p.stat().st_size:>12,} bytes")
         else:
-            print(f"  MISSING  {p.name} — run `python src/py/wb_api_tools.py sync` first")
+            print(f"  MISSING  {p.name} — run `wb-api-tools sync` to populate")
 
 
 # ----------------------------------------------------------------------
