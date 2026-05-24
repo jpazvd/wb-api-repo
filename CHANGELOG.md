@@ -11,7 +11,24 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-_Nothing yet — open a new section here when work resumes on `develop` post-v0.2.1._
+### Added (Unreleased)
+
+- **CLI: `--out -` for full CSV to stdout.** All subcommands that
+  accept `--out` (data / countries / indicators / sources / alltopics /
+  search) now route to `sys.stdout` as CSV when the path is a single
+  dash, conventional Unix style. Lets you pipe output into other
+  tools without the round-trip through disk:
+
+  ```bash
+  wb-api-tools data --indicators SP.POP.TOTL --countries BRA \
+      --date 2010:2020 --long --out - | csvkit ...
+  ```
+
+  Omitting `--out` still emits a 20-row preview (head-only, not
+  parseable) — distinct from `--out -` which emits the full DataFrame.
+- **New `tests/test_cli.py`** covering all `_save_df` output paths
+  (dash-to-stdout, no-out preview, .csv, .yaml, unknown-extension
+  fallback). +5 tests; suite now 67/67.
 
 ## [0.2.1] — 2026-05-24
 

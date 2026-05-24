@@ -28,7 +28,15 @@ def _save_df(df, out: Optional[str]) -> None:
     if not out:
         print(df.head(20).to_string(index=False))
         return
-    out = out.strip(); lower = out.lower()
+    out = out.strip()
+    # `--out -` is the conventional Unix marker for "write to stdout".
+    # Emits full CSV (not a head-only preview) so the output is pipeable
+    # into other tools — `wb-api-tools data ... --out - | csvkit ...`.
+    # pandas writes directly to sys.stdout so the CSV is byte-exact.
+    if out == "-":
+        df.to_csv(sys.stdout, index=False)
+        return
+    lower = out.lower()
     if lower.endswith(".csv"):
         df.to_csv(out, index=False)
     elif lower.endswith(".parquet"):
@@ -59,12 +67,12 @@ def build_parser():
     sub = p.add_subparsers(dest="cmd", required=True)
 
     p_c = sub.add_parser("countries", help="Fetch country metadata")
-    p_c.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
+    p_c.add_argument("--out", help="Output path (.csv, .parquet, .yaml, .yml); use '-' for full CSV to stdout; prints a 20-row preview if omitted")
 
     p_i = sub.add_parser("indicators", help="Fetch indicator metadata")
     p_i.add_argument("--codes", help="Comma-separated indicator codes (e.g. SP.POP.TOTL,NY.GDP.MKTP.CD)")
     p_i.add_argument("--search", help="Substring to search across indicator names")
-    p_i.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
+    p_i.add_argument("--out", help="Output path (.csv, .parquet, .yaml, .yml); use '-' for full CSV to stdout; prints a 20-row preview if omitted")
 
     p_d = sub.add_parser("data", help="Fetch indicator data")
     p_d.add_argument("--indicators", required=True,
@@ -80,7 +88,7 @@ def build_parser():
                      help="Also merge capital/latitude/longitude (PR C; combinable with --no-basic for geo-only)")
     p_d.add_argument("--language", default=None,
                      help="ISO-639-1 code (es, fr); en/None uses default endpoint (PR C)")
-    p_d.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
+    p_d.add_argument("--out", help="Output path (.csv, .parquet, .yaml, .yml); use '-' for full CSV to stdout; prints a 20-row preview if omitted")
 
     # --- Discovery subcommands (PR B) --------------------------------
     # All read from the YAML metadata cache (see wb_api_tools.cache);
@@ -89,10 +97,10 @@ def build_parser():
     p_src.add_argument("--limit", type=int, default=20,
                        help="Max sources to show (default 20; pass --all for no cap)")
     p_src.add_argument("--all", action="store_true", help="No limit (equivalent to allsources)")
-    p_src.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
+    p_src.add_argument("--out", help="Output path (.csv, .parquet, .yaml, .yml); use '-' for full CSV to stdout; prints a 20-row preview if omitted")
 
     p_top = sub.add_parser("alltopics", help="List all WB topic categories")
-    p_top.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
+    p_top.add_argument("--out", help="Output path (.csv, .parquet, .yaml, .yml); use '-' for full CSV to stdout; prints a 20-row preview if omitted")
 
     p_info = sub.add_parser("info", help="Show full metadata for one indicator (from YAML cache)")
     p_info.add_argument("id", help="Indicator code, e.g. SP.POP.TOTL")
@@ -111,7 +119,7 @@ def build_parser():
     p_srch.add_argument("--field", default="name+description",
                         help='Search field(s): name | description | note | code | name+description | all')
     p_srch.add_argument("--exact", action="store_true", help="Exact code match (use with --field code)")
-    p_srch.add_argument("--out", help="Output path (.csv, .parquet, .yaml, or .yml); prints to stdout if omitted")
+    p_srch.add_argument("--out", help="Output path (.csv, .parquet, .yaml, .yml); use '-' for full CSV to stdout; prints a 20-row preview if omitted")
 
     p_sync = sub.add_parser("sync", help="Refresh YAML metadata cache from WB API (Phase 1 pipeline)")
     p_sync.add_argument("--save-raw", action="store_true", dest="save_raw",

@@ -86,8 +86,9 @@ wb-api-tools data \
     --geo --long --out _data/wb/pop_gdp_long.csv
 ```
 
-Output is written to `--out` (`.csv` / `.parquet` / `.yaml` / `.yml`) or
-printed as a preview if `--out` is omitted.
+Output is written to `--out` (`.csv` / `.parquet` / `.yaml` / `.yml`).
+Use `--out -` to stream the full CSV to stdout (pipeable into other
+tools). Omit `--out` entirely for a 20-row preview.
 
 ## Python library
 
