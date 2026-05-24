@@ -23,7 +23,9 @@ metadata:
   compression: "none"
 
 validation:
-  schema_path: "config/schema_yaml_v2.json"
+  # schema_path omitted -> update_metadata.py falls back to the packaged
+  # _resources/schema_yaml_v2.json. Override here with an absolute path
+  # (or a path relative to cwd) only if you're shipping a custom schema.
   enabled: true
 
 diff:
