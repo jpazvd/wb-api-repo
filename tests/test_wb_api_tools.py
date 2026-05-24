@@ -1,9 +1,8 @@
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src', 'py')))
 import pytest
 import requests
 import pandas as pd
 from wb_api_tools import get_data
+from wb_api_tools import data as t
 
 @pytest.mark.parametrize("countries,date,expected_rows", [
     ('BRA', '2010:2012', 3),
@@ -62,7 +61,6 @@ def _stub_basic_context(monkeypatch):
     """Stub _get_basic_context so the auto-merge happens with a known
     2-country lookup (BRA, USA — ROW intentionally absent so we can
     verify left-join behaviour)."""
-    import wb_api_tools as t
     fake_bc = pd.DataFrame([
         {'countryiso3code': 'BRA', 'region': 'LCN', 'regionname': 'Latin America',
          'adminregion': 'LAC', 'adminregionname': 'L.America (developing)',
@@ -109,7 +107,6 @@ def test_get_data_no_basic_skips_merge(_stub_csv_session, _stub_basic_context):
 @pytest.fixture
 def _stub_geo_context(monkeypatch):
     """Stub _get_geo_context with a tiny 2-country lookup."""
-    import wb_api_tools as t
     fake_geo = pd.DataFrame([
         {'countryiso3code': 'BRA', 'capital': 'Brasilia',   'longitude': -47.9, 'latitude': -15.7},
         {'countryiso3code': 'USA', 'capital': 'Washington', 'longitude': -77.0, 'latitude':  38.9},
@@ -144,7 +141,6 @@ def test_get_data_geo_only_with_no_basic(_stub_csv_session, _stub_basic_context,
 
 def test_enrich_country_context_basic_default(_stub_basic_context):
     """Default basic merge into a user-supplied DataFrame."""
-    import wb_api_tools as t
     user = pd.DataFrame({'countryiso3code': ['BRA', 'USA', 'ROW'], 'mydata': [1, 2, 3]})
     out = t.enrich_country_context(user)
     assert 'region' in out.columns and 'mydata' in out.columns
@@ -154,7 +150,6 @@ def test_enrich_country_context_basic_default(_stub_basic_context):
 
 
 def test_enrich_country_context_with_geo(_stub_basic_context, _stub_geo_context):
-    import wb_api_tools as t
     user = pd.DataFrame({'countryiso3code': ['BRA'], 'mydata': [1]})
     out = t.enrich_country_context(user, geo=True)
     assert 'region' in out.columns and 'capital' in out.columns
@@ -162,7 +157,6 @@ def test_enrich_country_context_with_geo(_stub_basic_context, _stub_geo_context)
 
 def test_enrich_country_context_custom_iso_col(_stub_basic_context):
     """Custom iso_col, duplicate countryiso3code column dropped."""
-    import wb_api_tools as t
     user = pd.DataFrame({'iso3': ['BRA', 'USA'], 'val': [100, 200]})
     out = t.enrich_country_context(user, iso_col='iso3')
     assert 'iso3' in out.columns and 'region' in out.columns
@@ -170,20 +164,17 @@ def test_enrich_country_context_custom_iso_col(_stub_basic_context):
 
 
 def test_enrich_country_context_geo_only(_stub_basic_context, _stub_geo_context):
-    import wb_api_tools as t
     user = pd.DataFrame({'countryiso3code': ['BRA'], 'val': [1]})
     out = t.enrich_country_context(user, basic=False, geo=True)
     assert 'region' not in out.columns and 'capital' in out.columns
 
 
 def test_enrich_country_context_missing_iso_col_raises() -> None:
-    import wb_api_tools as t
     with pytest.raises(KeyError, match="not found"):
         t.enrich_country_context(pd.DataFrame({'foo': [1]}), iso_col='notthere')
 
 
 def test_enrich_country_context_input_not_mutated(_stub_basic_context):
-    import wb_api_tools as t
     user = pd.DataFrame({'countryiso3code': ['BRA'], 'mydata': [1]})
     orig_cols = list(user.columns)
     _ = t.enrich_country_context(user)
@@ -194,7 +185,6 @@ def test_enrich_country_context_input_not_mutated(_stub_basic_context):
 
 def test_get_data_language_inserts_prefix_in_url(monkeypatch):
     """language='es' -> /v2/es/countries/... URL."""
-    import wb_api_tools as t
     captured = []
 
     class DummyResponse:
@@ -215,7 +205,6 @@ def test_get_data_language_inserts_prefix_in_url(monkeypatch):
 
 def test_get_data_language_english_or_none_unprefixed(monkeypatch):
     """language=None or 'en' -> no language prefix in URL."""
-    import wb_api_tools as t
 
     class DummyResponse:
         status_code = 200

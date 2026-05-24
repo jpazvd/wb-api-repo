@@ -1,0 +1,38 @@
+# Pathway C automation pipeline configuration
+
+wb_api:
+  base_url: "https://api.worldbank.org/v2"
+  timeout: 30
+  per_page: 10000
+  retry_count: 3
+  retry_delay: 2
+
+yaml_output:
+  # base_dir omitted -> defaults to wb_api_tools.cache.get_cache_dir()
+  # (~/.cache/wbopendata/ on POSIX, ~/AppData/Local/wbopendata/ on Windows).
+  # Override via --output-dir on the CLI or by setting base_dir below.
+  indicators_file: "_wbopendata_indicators.yaml"
+  sources_file: "_wbopendata_sources.yaml"
+  topics_file: "_wbopendata_topics.yaml"
+
+data:
+  raw_dir: "data/raw"
+
+metadata:
+  schema_version: "2.0.0"
+  compression: "none"
+
+validation:
+  # schema_path omitted -> update_metadata.py falls back to the packaged
+  # _resources/schema_yaml_v2.json. Override here with an absolute path
+  # (or a path relative to cwd) only if you're shipping a custom schema.
+  enabled: true
+
+diff:
+  enabled: true
+
+git:
+  auto_commit: false
+  auto_tag: false
+  tag_prefix: "metadata-v"
+  commit_message_template: "Update metadata: {version} ({date})"

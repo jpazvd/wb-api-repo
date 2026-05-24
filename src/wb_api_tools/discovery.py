@@ -23,15 +23,14 @@ deployments.
 from __future__ import annotations
 
 import logging
-import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import yaml
 
-logger = logging.getLogger(__name__)
+from .cache import get_cache_dir
 
-DEFAULT_YAML_DIR = Path(__file__).resolve().parents[2] / "src" / "_"
+logger = logging.getLogger(__name__)
 
 SOURCES_YAML = "_wbopendata_sources.yaml"
 TOPICS_YAML = "_wbopendata_topics.yaml"
@@ -61,10 +60,11 @@ def clear_cache() -> None:
 def _yaml_dir() -> Path:
     """Resolve the YAML metadata directory.
 
-    Precedence: WBOPENDATA_YAML_DIR env var > DEFAULT_YAML_DIR (repo path).
+    Delegates to :func:`wb_api_tools.cache.get_cache_dir` — see that
+    module for the resolution precedence (env var > XDG/LOCALAPPDATA >
+    ``~/.cache`` fallback).
     """
-    env = os.environ.get("WBOPENDATA_YAML_DIR")
-    return Path(env) if env else DEFAULT_YAML_DIR
+    return get_cache_dir()
 
 
 def _load_yaml_section(filename: str, section: str) -> Dict[str, Dict]:
@@ -86,7 +86,8 @@ def _load_yaml_section(filename: str, section: str) -> Dict[str, Dict]:
         return _SECTION_CACHE[cache_key]
     if not path.exists():
         logger.warning(
-            "YAML metadata not found: %s. Run `make wb-update-metadata` first to populate.",
+            "YAML metadata not found: %s. Run `wb-api-tools sync` (or "
+            "`python -m wb_api_tools sync`) to populate the cache from the live WB API.",
             path,
         )
         # Cache the empty result too — avoids repeated stat() on a missing file
@@ -252,17 +253,10 @@ def sync(argv: Optional[List[str]] = None) -> int:
     Returns the orchestrator's exit code (0 success, non-zero failure).
     """
     import sys as _sys
-    from pathlib import Path as _Path
-    # Make sure src/py/ is on sys.path so update_metadata's local
-    # `from diff_analyzer import ...` peers resolve when called from
-    # outside that directory.
-    here = _Path(__file__).resolve().parent
-    if str(here) not in _sys.path:
-        _sys.path.insert(0, str(here))
+    from .update_metadata import main as _main
     saved_argv = _sys.argv
     try:
         _sys.argv = ["update_metadata"] + list(argv or [])
-        from update_metadata import main as _main
         rc = _main() or 0
     finally:
         _sys.argv = saved_argv
@@ -297,7 +291,7 @@ def describe(indicator_id: str, language: Optional[str] = None) -> Optional[Dict
         return None
     # Normalise to upper-case for case-insensitive parity with info()
     code = indicator_id.upper()
-    from wb_api_client import WBAPIClient  # local import to avoid cycle on import
+    from .api_client import WBAPIClient  # local import to avoid cycle on import
 
     try:
         with WBAPIClient() as client:

@@ -11,19 +11,19 @@ from typing import Any, Dict
 
 import yaml
 
-# Add scripts directory to path
-SCRIPT_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPT_DIR))
+from .diff_analyzer import DiffAnalyzer
+from .git_manager import GitManager
+from .schema_validator import SchemaValidator
+from .api_client import WBAPIClient
+from .yaml_generator import YAMLGenerator
 
-from diff_analyzer import DiffAnalyzer
-from git_manager import GitManager
-from schema_validator import SchemaValidator
-from wb_api_client import WBAPIClient
-from yaml_generator import YAMLGenerator
+from .cache import get_cache_dir
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "config_update.yaml"
-LOG_DIR = PROJECT_ROOT / "logs"
+# Packaged resources (config + schema) live inside the wheel.
+_PKG_RESOURCES = Path(__file__).resolve().parent / "_resources"
+DEFAULT_CONFIG_PATH = _PKG_RESOURCES / "config_update.yaml"
+# Logs go to the user's cache dir, not site-packages.
+LOG_DIR = get_cache_dir() / "logs"
 
 
 def setup_logging(verbose: bool = False) -> None:
@@ -41,15 +41,20 @@ def setup_logging(verbose: bool = False) -> None:
     )
 
 
-def _resolve_to_project_root(path: Path) -> Path:
+def _resolve_relative(path: Path, base: Path) -> Path:
+    """Resolve a possibly-relative path against ``base``."""
     if path.is_absolute():
         return path
-    return PROJECT_ROOT / path
+    return base / path
 
 
 def load_config(config_path: Path) -> Dict[str, Any]:
-    """Load pipeline configuration from YAML."""
-    config_path = _resolve_to_project_root(config_path)
+    """Load pipeline configuration from YAML.
+
+    Relative ``config_path`` resolves against the user's cwd; the default
+    points at the packaged config bundled in ``_resources/``.
+    """
+    config_path = _resolve_relative(config_path, Path.cwd())
     if not config_path.exists():
         raise FileNotFoundError(f"Config file not found: {config_path}")
 
@@ -58,10 +63,16 @@ def load_config(config_path: Path) -> Dict[str, Any]:
 
 
 def resolve_output_paths(config: Dict[str, Any], override_dir: Path | None) -> Dict[str, Path]:
-    """Resolve output paths for generated YAML files."""
+    """Resolve output paths for generated YAML files.
+
+    Default base dir is the XDG cache dir (``wb_api_tools.cache.get_cache_dir()``)
+    so a pip-installed user gets a working ``wb-api-tools sync`` out of the
+    box. The config's ``yaml_output.base_dir`` is honored when set; relative
+    values resolve against ``Path.cwd()`` (dev convenience).
+    """
     yaml_cfg = config.get("yaml_output", {})
-    base_dir_value = override_dir or yaml_cfg.get("base_dir", "src/_")
-    base_dir = _resolve_to_project_root(Path(base_dir_value))
+    base_dir_value = override_dir or yaml_cfg.get("base_dir") or get_cache_dir()
+    base_dir = _resolve_relative(Path(base_dir_value), Path.cwd())
     return {
         "indicators": base_dir / yaml_cfg.get("indicators_file", "_wbopendata_indicators.yaml"),
         "sources": base_dir / yaml_cfg.get("sources_file", "_wbopendata_sources.yaml"),
@@ -186,8 +197,9 @@ def main():
             # Optionally save raw data
             if args.save_raw:
                 logger.info("\n[2/5] Saving raw API responses...")
-                raw_dir = _resolve_to_project_root(
-                    Path(config.get("data", {}).get("raw_dir", "data/raw"))
+                raw_dir = _resolve_relative(
+                    Path(config.get("data", {}).get("raw_dir", "data/raw")),
+                    Path.cwd(),
                 )
                 api_client.save_raw_data(
                     {
@@ -207,9 +219,13 @@ def main():
         # Validate against schema
         if args.validate and config.get("validation", {}).get("enabled", True):
             logger.info("\n[4/5] Validating YAML outputs...")
-            schema_path = _resolve_to_project_root(
-                Path(config.get("validation", {}).get("schema_path", "config/schema_yaml_v2.json"))
-            )
+            # Default schema is the packaged copy; config can override with
+            # an absolute path or a path relative to cwd (dev convenience).
+            schema_cfg = config.get("validation", {}).get("schema_path")
+            if schema_cfg:
+                schema_path = _resolve_relative(Path(schema_cfg), Path.cwd())
+            else:
+                schema_path = _PKG_RESOURCES / "schema_yaml_v2.json"
             validator = SchemaValidator(schema_path)
             for variant, path in output_files.items():
                 result = validator.validate_yaml(path, variant)

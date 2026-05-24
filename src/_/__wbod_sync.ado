@@ -117,42 +117,17 @@ program define __wbod_run_python
     local python_cmd "`pythoncmd'"
     if ("`python_cmd'" == "") local python_cmd "python"
 
-    local script ""
-
-    local candidate1 "`c(pwd)'/src/py/update_metadata.py"
-    if (fileexists("`candidate1'")) local script "`candidate1'"
-
-    if ("`script'" == "") {
-        local candidate2 "`c(pwd)'/wbopendata-dev/src/py/update_metadata.py"
-        if (fileexists("`candidate2'")) local script "`candidate2'"
-    }
-
-    if ("`script'" == "") {
-        capture findfile wbopendata.ado
-        if (_rc == 0) {
-            local fn `r(fn)'
-            local root : subinstr local fn "/src/w/wbopendata.ado" ""
-            local root : subinstr local root "\src\w\wbopendata.ado" ""
-            local candidate3 "`root'/src/py/update_metadata.py"
-            if (fileexists("`candidate3'")) local script "`candidate3'"
-        }
-    }
-
-    * Check installed package directory (ado/plus/py/)
-    if ("`script'" == "") {
-        local candidate4 "`c(sysdir_plus)'py/update_metadata.py"
-        if (fileexists("`candidate4'")) local script "`candidate4'"
-    }
-
-    if ("`script'" == "") {
-        di as error "Python pipeline not found (update_metadata.py missing)."
-        exit 601
-    }
-
-    local cmd "`python_cmd' \"`script'\" --output-dir \"`outdir'\""
-    di as text "Running Python pipeline..."
+    * v0.2.0+: the Python sync pipeline ships as an installable package
+    * (`wb-api-tools` on PyPI). Invoke via `python -m wb_api_tools.update_metadata`
+    * so the package's relative imports resolve cleanly; the legacy
+    * src/py/update_metadata.py path is no longer supported.
+    local cmd "`python_cmd' -m wb_api_tools.update_metadata --output-dir \"`outdir'\""
+    di as text "Running Python pipeline (wb_api_tools.update_metadata)..."
     shell `cmd'
-    if (_rc != 0) exit _rc
+    if (_rc != 0) {
+        di as error "Python pipeline failed. Ensure `pip install wb-api-tools` was run."
+        exit _rc
+    }
 end
 
 

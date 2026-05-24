@@ -1,14 +1,15 @@
 # Python library walkthrough — captured transcript
 
 This is the verbatim stdout from running
-`src/py/examples/demo_pr_b_c.py` against the live YAML cache that
+`examples/demo_pr_b_c.py` against the live YAML cache that
 PR #12 populated (and against the live World Bank API for the
 `describe()` / `get_data()` calls).
 
-To regenerate, run from the repo root:
+To regenerate, install the package and run from the repo root:
 
 ```bash
-PYTHONIOENCODING=utf-8 python src/py/examples/demo_pr_b_c.py
+pip install -e ".[test]"
+PYTHONIOENCODING=utf-8 python examples/demo_pr_b_c.py
 ```
 
 Discovery functions hit the cached YAML (microseconds after first
