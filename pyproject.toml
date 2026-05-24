@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "wb-api-tools"
-version = "0.2.1"
+version = "0.3.0"
 description = "World Bank Open Data helpers — Python library + CLI mirroring the Stata wbopendata surface (discovery, data, country-context, multilingual, linewrap)."
 readme = "README.md"
 license = { file = "LICENSE.md" }
@@ -34,6 +34,15 @@ test = [
     "pytest",
     "pytest-mock",
     "requests-mock",
+]
+# Extras for regenerating the README's Quick-start figures + notebook.
+# Not pulled in by `pip install wb-api-tools` (these are dev/docs tooling).
+examples = [
+    "matplotlib",
+    "scipy",           # logistic 4PL fit in example 3 (curve_fit)
+    "nbformat",        # notebook builder
+    "jupyter",         # `python -m jupyter nbconvert ...`
+    "nbconvert",
 ]
 
 [project.urls]

@@ -11,7 +11,167 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-_Nothing yet — open a new section here when work resumes on `develop` post-v0.2.1._
+_Nothing yet — open a new section here when work resumes on `develop` post-v0.3.0._
+
+## [0.3.0] — 2026-05-24
+
+**MINOR release.** Bundles the post-v0.2.1 docs + CLI work staged on
+develop: README restructured for PyPI-first audience (5 worked examples
+with figures + Common Indicators starter + Troubleshooting + Citation),
+CLI output formats expanded (`--out -` stdout streaming + JSON / JSONL /
+NDJSON), and CLI status lines routed to stderr. No breaking changes to
+the Python or CLI public surface — additive only.
+
+### Added (v0.3.0)
+
+- **CLI: `--out -` for full CSV to stdout.** All subcommands that
+  accept `--out` (data / countries / indicators / sources / alltopics /
+  search) now route to `sys.stdout` as CSV when the path is a single
+  dash, conventional Unix style. Lets you pipe output into other
+  tools without the round-trip through disk:
+
+  ```bash
+  wb-api-tools data --indicators SP.POP.TOTL --countries BRA \
+      --date 2010:2020 --long --out - | csvkit ...
+  ```
+
+  Omitting `--out` still emits a 20-row preview (head-only, not
+  parseable) — distinct from `--out -` which emits the full DataFrame.
+- **CLI: JSON + JSONL output formats.** Two new file-extension routes
+  in the same `--out` dispatcher:
+  - `--out file.json` — pretty-printed records orient
+    (`[{...}, {...}]`, indent=2). Web / JS / notebook friendly.
+  - `--out file.jsonl` or `--out file.ndjson` — line-delimited
+    records, one JSON object per line. Streaming-friendly for `jq`,
+    log pipelines, Spark / BigQuery ingest.
+
+  Both use `pd.DataFrame.to_json(..., force_ascii=False)` so non-ASCII
+  characters in country names + descriptions round-trip cleanly.
+
+  Deliberately NOT added: XML (`pandas.to_xml()` works but use case
+  is narrow — defer until requested), SDMX (the right path is a
+  separate fetch mode hitting WB's native SDMX endpoint, not a
+  pandas-to-SDMX serializer — planned for a future release).
+- **`tests/test_cli.py`** — 9 cases covering all `_save_df` output
+  paths: dash-to-stdout, no-out preview, .csv (+ stderr-status
+  assertion), .yaml, unknown-ext fallback, .json records, .jsonl
+  lines, .ndjson alias parity with .jsonl, dash-mode-no-status.
+  Suite now **71/71**.
+
+### Changed (v0.3.0)
+
+- **CLI status lines now route to stderr** (Unix convention: stdout =
+  data, stderr = diagnostics). Affects:
+  - `_save_df()` "Wrote: ..." line on file output
+  - `search` subcommand's `total=N page=M/N limit=L` summary
+
+  Fixes a real bug Copilot caught on PR #33: `wb-api-tools search
+  --out -` previously contaminated the piped CSV with the summary
+  line glued to the top. With the fix, `--out -` is a clean
+  parseable stream across all six subcommands; status info is still
+  human-visible (unredirected stderr).
+
+### Removed (v0.3.0)
+
+- **Stata badge removed from README**. The PyPI package
+  (`wb-api-tools`) is Python-only — `pip install wb-api-tools` gives
+  the Python library + CLI, not the Stata `wbopendata.ado` files. The
+  Stata badge added in v0.2.1 was misleading on the PyPI project page
+  (suggested `pip install` would deliver Stata content). The repo
+  still ships both surfaces; the Stata package is documented in its
+  own section of the README + via `help wbopendata` in Stata.
+
+### Documentation (v0.3.0)
+
+- **README restructured for PyPI-first audience.**
+  - Reordered the badge block — PyPI version badge first (highest
+    install-decision signal), tests + Python + new pepy.tech Downloads
+    badge + License after.
+  - Moved `pip install wb-api-tools` above the fold (was buried after
+    a "What's here" table).
+  - Added a **Quick-start with 5 worked examples**, three of which
+    embed inline PNG figures pulled from `docs/figures/` via absolute
+    `raw.githubusercontent.com` URLs (work on both GitHub and PyPI):
+    - Example 1 — population time-series for BRA/USA/IND, 2000-2023
+      (line chart)
+    - Example 2 — G7 GDP per capita PPP cross-section, 2022 (bar chart)
+    - Example 3 — poverty vs GDP per capita scatter, 2019 (mirrors
+      Stata `wbopendata_examples.ado` example 04)
+    - Example 4 — discovery workflow (`search` → `info`)
+    - Example 5 — `enrich_country_context` user-DataFrame match
+      (mirrors Stata example 05)
+  - Added **What's new in v0.2.1** section right after the examples,
+    visible at-a-glance so the README doesn't feel undated.
+  - Added a **Common indicators** starter table — 15 high-traffic
+    codes across Population / Economy / Poverty / Education / Health /
+    Environment categories — lowers activation cost for first-time
+    users (the full universe is 29,511).
+  - Added **Troubleshooting** section covering YAML cache missing,
+    cache-dir resolution order, corporate proxy, Windows
+    `UnicodeEncodeError`, and "is `sync` stuck?" FAQ.
+  - Added **Citation** section with BibTeX for both `wb-api-tools` and
+    the upstream Stata `wbopendata` (SSC RePEc).
+  - Moved the **Project surfaces** table (renamed from "What's here")
+    below the Quick-start so PyPI visitors see runnable code before
+    architectural framing.
+
+- **New `examples/readme_examples.py`** — runnable Python script that
+  reproduces the five Quick-start examples and writes the three PNG +
+  SVG figure twins to `docs/figures/`. Mirrors the Stata
+  `wbopendata_examples.ado` numbering and theme.
+
+- **New `examples/readme_examples.ipynb`** — paired Jupyter notebook
+  (18 cells, outputs captured) for the same five examples. GitHub
+  renders it inline — DataFrame tables + figures — without anyone
+  having to clone or install.
+
+- **New `examples/_build_readme_notebook.py`** — internal builder that
+  constructs the notebook from a single Python source via `nbformat`
+  and executes it via `nbconvert --execute --inplace`. Keeps the
+  `.py` + `.ipynb` pair in sync without jupytext.
+
+- **New `docs/figures/` directory** — committed PNG + SVG assets
+  embedded in the README + reproducible from the script above.
+
+- **Example 3 fitted-curve overlay (selected via R²)**. Three
+  candidate functional forms tried — linear-in-log(GDP),
+  quadratic-in-log(GDP), logistic 4PL — and the best fit overlaid in
+  black. On the 78-country 2019 cross-section the logistic 4PL wins
+  (R²=0.834 vs 0.775 for quadratic vs 0.503 for linear); it's also
+  the principled choice since poverty headcount is bounded [0, 100%]
+  and a sigmoid respects both asymptotes. `scipy.optimize.curve_fit`
+  for the logistic; `numpy.polyfit` for the polynomial baselines.
+
+- **`[examples]` optional-dependencies group** added to
+  `pyproject.toml`. Pulls in matplotlib, scipy, nbformat, jupyter,
+  nbconvert — needed to regenerate the README's figures + notebook,
+  NOT needed at runtime. `pip install -e ".[examples]"` for dev work
+  on the README.
+
+### Fixed (v0.3.0)
+
+- Test fixture in `tests/test_wb_discovery.py` for `SI.POV.DDAY`
+  described the indicator as `"Poverty at $2.15/day"` (the pre-2025
+  WB methodology). Updated to `"Poverty at $3.00/day (2021 PPP)"`
+  to match the current YAML cache definition + the README's Common
+  Indicators table. Cosmetic stub-text change; test logic unchanged.
+- `examples/readme_examples.py` guarded the `sys.stdout.reconfigure`
+  call with `hasattr` + try/except (matches the existing pattern in
+  `examples/demo_pr_b_c.py`). Avoids `AttributeError` in environments
+  where stdout/stderr don't expose `.reconfigure` (some IDE consoles,
+  test runners that replace streams).
+
+### Fixed during release-prep (v0.3.0)
+
+- **README image URLs pinned to commit SHA `c92320c7ce8fe1b86329b808dd452c930226a853`** (the PR #35
+  merge commit). Were pointing at `main`, which broke the figure
+  rendering on the GitHub `develop` view because the figures only
+  existed on develop, not yet on main. Pinning to a specific commit
+  SHA fixes that — the SHA is reachable from both branches now (and
+  forever, since git keeps the commit alive). Side benefit: PyPI's
+  frozen v0.3.0 README description will show the figures as they
+  were at release time, immune to any later regenerations on `main`
+  or `develop`.
 
 ## [0.2.1] — 2026-05-24
 
