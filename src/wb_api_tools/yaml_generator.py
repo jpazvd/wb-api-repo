@@ -59,7 +59,11 @@ class YAMLGenerator:
         Initialize YAML generator
 
         Args:
-            output_dir: Directory for output YAML files (default: wb-api-repo/src/_)
+            output_dir: Directory for output YAML files (default:
+                       :func:`wb_api_tools.cache.get_cache_dir`, i.e.
+                       ``~/.cache/wbopendata/`` on POSIX or
+                       ``~/AppData/Local/wbopendata/`` on Windows; overridable
+                       via the ``WBOPENDATA_YAML_DIR`` env var).
             filenames: Per-target filename override dict with keys
                        'indicators', 'sources', 'topics'. Missing keys fall
                        back to DEFAULT_FILENAMES. Lets update_metadata.py
