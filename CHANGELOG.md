@@ -51,7 +51,7 @@ the Python or CLI public surface — additive only.
   Deliberately NOT added: XML (`pandas.to_xml()` works but use case
   is narrow — defer until requested), SDMX (the right path is a
   separate fetch mode hitting WB's native SDMX endpoint, not a
-  pandas-to-SDMX serializer — planned for v0.3.0).
+  pandas-to-SDMX serializer — planned for a future release).
 - **`tests/test_cli.py`** — 9 cases covering all `_save_df` output
   paths: dash-to-stdout, no-out preview, .csv (+ stderr-status
   assertion), .yaml, unknown-ext fallback, .json records, .jsonl
@@ -163,7 +163,7 @@ the Python or CLI public surface — additive only.
 
 ### Fixed during release-prep (v0.3.0)
 
-- **README image URLs pinned to commit SHA `c92320c`** (the PR #35
+- **README image URLs pinned to commit SHA `c92320c7ce8fe1b86329b808dd452c930226a853`** (the PR #35
   merge commit). Were pointing at `main`, which broke the figure
   rendering on the GitHub `develop` view because the figures only
   existed on develop, not yet on main. Pinning to a specific commit

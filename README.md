@@ -51,7 +51,7 @@ print(df.head(3)[["country", "date", "pop_billions"]].to_string(index=False))
 #   Brazil  2002      0.178503
 ```
 
-![Population time-series, 2000-2023](https://raw.githubusercontent.com/jpazvd/wb-api-repo/c92320c/docs/figures/example_1_population_timeseries.png)
+![Population time-series, 2000-2023](https://raw.githubusercontent.com/jpazvd/wb-api-repo/c92320c7ce8fe1b86329b808dd452c930226a853/docs/figures/example_1_population_timeseries.png)
 
 ### 2. Cross-country bar chart (G7, latest year)
 
@@ -73,7 +73,7 @@ print(df.sort_values("gdp_pcap_k")[["country", "gdp_pcap_k"]].to_string(index=Fa
 #   United States   72.679258
 ```
 
-![G7 GDP per capita PPP, 2022](https://raw.githubusercontent.com/jpazvd/wb-api-repo/c92320c/docs/figures/example_2_gdp_per_capita_bar.png)
+![G7 GDP per capita PPP, 2022](https://raw.githubusercontent.com/jpazvd/wb-api-repo/c92320c7ce8fe1b86329b808dd452c930226a853/docs/figures/example_2_gdp_per_capita_bar.png)
 
 ### 3. Bivariate scatter — poverty vs GDP per capita
 
@@ -109,7 +109,7 @@ popt, _ = curve_fit(logistic_4pl, x, y,
 #   Logistic 4PL:           R^2 = 0.834   <-- best fit, plotted in black
 ```
 
-![Poverty vs GDP per capita with logistic 4PL fit, 2019](https://raw.githubusercontent.com/jpazvd/wb-api-repo/c92320c/docs/figures/example_3_poverty_vs_gdp_scatter.png)
+![Poverty vs GDP per capita with logistic 4PL fit, 2019](https://raw.githubusercontent.com/jpazvd/wb-api-repo/c92320c7ce8fe1b86329b808dd452c930226a853/docs/figures/example_3_poverty_vs_gdp_scatter.png)
 
 ### 4. Discovery workflow: search → info → fetch
 
