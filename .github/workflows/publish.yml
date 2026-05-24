@@ -17,6 +17,9 @@ on:
   push:
     tags:
       - 'v*'
+  # workflow_dispatch is kept for re-running a failed tag-triggered run
+  # from the Actions UI. The `publish` job is gated below so a manual
+  # run from a branch (no tag context) builds but does NOT publish.
   workflow_dispatch: {}
 
 jobs:
@@ -47,16 +50,53 @@ jobs:
   publish:
     name: Publish to PyPI
     needs: build
+    # Only run on tag pushes (covers both push:tags and tag-context
+    # workflow_dispatch). A manual run from a branch builds the wheel
+    # but skips publish — protects against accidental publishes from
+    # the Actions UI.
+    if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     environment: pypi
     permissions:
-      # OIDC token for trusted publishing
-      id-token: write
+      # Job-level `permissions` resets all unlisted scopes to `none`,
+      # so we have to explicitly grant `actions: read` for the artifact
+      # download. `contents: read` is also needed for any git-ref ops.
+      id-token: write    # OIDC token for trusted publishing
+      contents: read
+      actions: read
     steps:
       - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
           name: dist
           path: dist/
+      - name: Verify tag matches built distribution version
+        # Refuses to publish if the wheel's version doesn't match the
+        # git tag (forgot to bump pyproject.toml before tagging?) or
+        # if the version contains `.dev` (pre-release-from-an-unbumped-
+        # source-tree slipped through). Either is a release-process bug.
+        run: |
+          set -euo pipefail
+          # Extract version from the built wheel filename:
+          # wb_api_tools-0.2.0rc1-py3-none-any.whl -> 0.2.0rc1
+          wheel=$(ls dist/*.whl | head -1)
+          wheel_version=$(python -c "import re,sys; m=re.match(r'.*?-(\d[^-]*)-', sys.argv[1]); print(m.group(1) if m else '')" "$wheel")
+          # Tag minus the leading 'v', normalised the same way PEP 440 does
+          # (v0.2.0-rc1 -> 0.2.0rc1, v0.2.0 -> 0.2.0).
+          tag="${GITHUB_REF#refs/tags/v}"
+          normalised_tag="${tag//-/}"
+          echo "wheel: $wheel"
+          echo "wheel_version: $wheel_version"
+          echo "tag:           $tag"
+          echo "normalised_tag: $normalised_tag"
+          if [[ "$wheel_version" == *".dev"* ]]; then
+            echo "::error::Refusing to publish a .dev version ($wheel_version). Bump pyproject.toml + wb_api_tools.__version__ before tagging."
+            exit 1
+          fi
+          if [[ "$wheel_version" != "$normalised_tag" ]]; then
+            echo "::error::Tag/version mismatch: tag '$tag' (normalised: '$normalised_tag') does not match built wheel version '$wheel_version'. Bump pyproject.toml + wb_api_tools.__version__ to match the tag before tagging."
+            exit 1
+          fi
+          echo "OK: wheel version matches tag"
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
