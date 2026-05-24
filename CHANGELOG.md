@@ -11,7 +11,54 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-_Nothing yet — open a new section here when work resumes on `develop` post-v0.2.1._
+### Added (Unreleased)
+
+- **CLI: `--out -` for full CSV to stdout.** All subcommands that
+  accept `--out` (data / countries / indicators / sources / alltopics /
+  search) now route to `sys.stdout` as CSV when the path is a single
+  dash, conventional Unix style. Lets you pipe output into other
+  tools without the round-trip through disk:
+
+  ```bash
+  wb-api-tools data --indicators SP.POP.TOTL --countries BRA \
+      --date 2010:2020 --long --out - | csvkit ...
+  ```
+
+  Omitting `--out` still emits a 20-row preview (head-only, not
+  parseable) — distinct from `--out -` which emits the full DataFrame.
+- **CLI: JSON + JSONL output formats.** Two new file-extension routes
+  in the same `--out` dispatcher:
+  - `--out file.json` — pretty-printed records orient
+    (`[{...}, {...}]`, indent=2). Web / JS / notebook friendly.
+  - `--out file.jsonl` or `--out file.ndjson` — line-delimited
+    records, one JSON object per line. Streaming-friendly for `jq`,
+    log pipelines, Spark / BigQuery ingest.
+
+  Both use `pd.DataFrame.to_json(..., force_ascii=False)` so non-ASCII
+  characters in country names + descriptions round-trip cleanly.
+
+  Deliberately NOT added: XML (`pandas.to_xml()` works but use case
+  is narrow — defer until requested), SDMX (the right path is a
+  separate fetch mode hitting WB's native SDMX endpoint, not a
+  pandas-to-SDMX serializer — planned for v0.3.0).
+- **`tests/test_cli.py`** — 9 cases covering all `_save_df` output
+  paths: dash-to-stdout, no-out preview, .csv (+ stderr-status
+  assertion), .yaml, unknown-ext fallback, .json records, .jsonl
+  lines, .ndjson alias parity with .jsonl, dash-mode-no-status.
+  Suite now **71/71**.
+
+### Changed (Unreleased)
+
+- **CLI status lines now route to stderr** (Unix convention: stdout =
+  data, stderr = diagnostics). Affects:
+  - `_save_df()` "Wrote: ..." line on file output
+  - `search` subcommand's `total=N page=M/N limit=L` summary
+
+  Fixes a real bug Copilot caught on PR #33: `wb-api-tools search
+  --out -` previously contaminated the piped CSV with the summary
+  line glued to the top. With the fix, `--out -` is a clean
+  parseable stream across all six subcommands; status info is still
+  human-visible (unredirected stderr).
 
 ## [0.2.1] — 2026-05-24
 
