@@ -26,9 +26,25 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
   Omitting `--out` still emits a 20-row preview (head-only, not
   parseable) — distinct from `--out -` which emits the full DataFrame.
-- **New `tests/test_cli.py`** covering all `_save_df` output paths
-  (dash-to-stdout, no-out preview, .csv, .yaml, unknown-extension
-  fallback). +5 tests; suite now 67/67.
+- **CLI: JSON + JSONL output formats.** Two new file-extension routes
+  in the same `--out` dispatcher:
+  - `--out file.json` — pretty-printed records orient
+    (`[{...}, {...}]`, indent=2). Web / JS / notebook friendly.
+  - `--out file.jsonl` or `--out file.ndjson` — line-delimited
+    records, one JSON object per line. Streaming-friendly for `jq`,
+    log pipelines, Spark / BigQuery ingest.
+
+  Both use `pd.DataFrame.to_json(..., force_ascii=False)` so non-ASCII
+  characters in country names + descriptions round-trip cleanly.
+
+  Deliberately NOT added: XML (`pandas.to_xml()` works but use case
+  is narrow — defer until requested), SDMX (the right path is a
+  separate fetch mode hitting WB's native SDMX endpoint, not a
+  pandas-to-SDMX serializer — planned for v0.3.0).
+- **`tests/test_cli.py`** — 8 cases covering all `_save_df` output
+  paths: dash-to-stdout, no-out preview, .csv, .yaml, unknown-ext
+  fallback, .json records, .jsonl lines, .ndjson alias parity with
+  .jsonl. Suite now **70/70**.
 
 ## [0.2.1] — 2026-05-24
 

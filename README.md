@@ -86,9 +86,20 @@ wb-api-tools data \
     --geo --long --out _data/wb/pop_gdp_long.csv
 ```
 
-Output is written to `--out` (`.csv` / `.parquet` / `.yaml` / `.yml`).
-Use `--out -` to stream the full CSV to stdout (pipeable into other
-tools). Omit `--out` entirely for a 20-row preview.
+Output is written to `--out` — six file formats supported by extension:
+
+| Extension | Format | Notes |
+| --- | --- | --- |
+| `.csv` | Comma-separated | Default fallback for unknown extensions too |
+| `.parquet` | Apache Parquet | Columnar; small + fast for analytics |
+| `.json` | JSON records, pretty-printed | `[{...}, {...}]` indent=2 |
+| `.jsonl` / `.ndjson` | Line-delimited JSON | Streaming-friendly for `jq`, Spark, BigQuery |
+| `.yaml` / `.yml` | YAML records | Stata-friendly |
+
+Plus two stdout modes:
+
+- **`--out -`** → full CSV streamed to stdout (pipeable into other tools)
+- **`--out` omitted** → 20-row preview to stdout (head only, not parseable)
 
 ## Python library
 

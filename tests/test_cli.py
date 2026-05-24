@@ -69,3 +69,36 @@ def test_save_df_unknown_extension_falls_back_to_csv(sample_df: pd.DataFrame, tm
     _save_df(sample_df, str(out))
     assert out.exists()
     assert out.read_text(encoding="utf-8").startswith("countryiso3code,year,value")
+
+
+def test_save_df_json_writes_records_orient(sample_df: pd.DataFrame, tmp_path: Path) -> None:
+    """`.json` -> records orient, pretty-indented."""
+    out = tmp_path / "data.json"
+    _save_df(sample_df, str(out))
+    import json
+    records = json.loads(out.read_text(encoding="utf-8"))
+    assert isinstance(records, list) and len(records) == 3
+    assert records[0] == {"countryiso3code": "BRA", "year": 2020, "value": 212.6}
+    # Confirm pretty-printed (indent=2) — not a single-line dump
+    assert "\n" in out.read_text(encoding="utf-8")
+
+
+def test_save_df_jsonl_writes_lines_orient(sample_df: pd.DataFrame, tmp_path: Path) -> None:
+    """`.jsonl` -> one record per line (streaming-friendly)."""
+    out = tmp_path / "data.jsonl"
+    _save_df(sample_df, str(out))
+    import json
+    lines = [ln for ln in out.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    assert len(lines) == 3, "each row should be on its own line"
+    parsed = [json.loads(ln) for ln in lines]
+    assert parsed[0]["countryiso3code"] == "BRA"
+    assert parsed[2]["countryiso3code"] == "IND"
+
+
+def test_save_df_ndjson_alias_same_as_jsonl(sample_df: pd.DataFrame, tmp_path: Path) -> None:
+    """`.ndjson` is the same wire format as `.jsonl` (common alias)."""
+    out_jsonl = tmp_path / "data.jsonl"
+    out_ndjson = tmp_path / "data.ndjson"
+    _save_df(sample_df, str(out_jsonl))
+    _save_df(sample_df, str(out_ndjson))
+    assert out_jsonl.read_text(encoding="utf-8") == out_ndjson.read_text(encoding="utf-8")
