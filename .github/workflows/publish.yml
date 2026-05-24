@@ -1,0 +1,62 @@
+name: publish
+
+# Build + publish `wb-api-tools` to PyPI on every `v*` tag push.
+#
+# Authentication: PyPI trusted publisher (OIDC) — no API token. The
+# matching pending publisher was registered on PyPI with:
+#   PyPI Project Name: wb-api-tools
+#   Owner:             jpazvd
+#   Repository name:   wb-api-repo
+#   Workflow name:     publish.yml      (this file)
+#   Environment name:  pypi             (matches the `environment:` below)
+#
+# Pre-release versions (v0.2.0-rc1, v0.2.0a1, etc.) are first-class — pip
+# only installs them with --pre, so they're a safe dry-run on real PyPI.
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    name: Build wheel + sdist
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install build backend
+        run: python -m pip install --upgrade pip build
+      - name: Build distributions
+        run: python -m build
+      - name: Sanity-check the wheel
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install dist/*.whl
+          python -c "import wb_api_tools; print('installed:', wb_api_tools.__version__)"
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7
+
+  publish:
+    name: Publish to PyPI
+    needs: build
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      # OIDC token for trusted publishing
+      id-token: write
+    steps:
+      - name: Download dist artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
