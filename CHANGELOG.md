@@ -11,7 +11,18 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 ## [Unreleased]
 
-### Added (Unreleased)
+_Nothing yet — open a new section here when work resumes on `develop` post-v0.3.0._
+
+## [0.3.0] — 2026-05-24
+
+**MINOR release.** Bundles the post-v0.2.1 docs + CLI work staged on
+develop: README restructured for PyPI-first audience (5 worked examples
+with figures + Common Indicators starter + Troubleshooting + Citation),
+CLI output formats expanded (`--out -` stdout streaming + JSON / JSONL /
+NDJSON), and CI status lines routed to stderr. No breaking changes to
+the Python or CLI public surface — additive only.
+
+### Added (v0.3.0)
 
 - **CLI: `--out -` for full CSV to stdout.** All subcommands that
   accept `--out` (data / countries / indicators / sources / alltopics /
@@ -47,7 +58,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   lines, .ndjson alias parity with .jsonl, dash-mode-no-status.
   Suite now **71/71**.
 
-### Changed (Unreleased)
+### Changed (v0.3.0)
 
 - **CLI status lines now route to stderr** (Unix convention: stdout =
   data, stderr = diagnostics). Affects:
@@ -60,7 +71,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   parseable stream across all six subcommands; status info is still
   human-visible (unredirected stderr).
 
-### Removed (Unreleased)
+### Removed (v0.3.0)
 
 - **Stata badge removed from README**. The PyPI package
   (`wb-api-tools`) is Python-only — `pip install wb-api-tools` gives
@@ -70,7 +81,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   still ships both surfaces; the Stata package is documented in its
   own section of the README + via `help wbopendata` in Stata.
 
-### Documentation (Unreleased)
+### Documentation (v0.3.0)
 
 - **README restructured for PyPI-first audience.**
   - Reordered the badge block — PyPI version badge first (highest
@@ -137,7 +148,7 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   NOT needed at runtime. `pip install -e ".[examples]"` for dev work
   on the README.
 
-### Fixed (Unreleased)
+### Fixed (v0.3.0)
 
 - Test fixture in `tests/test_wb_discovery.py` for `SI.POV.DDAY`
   described the indicator as `"Poverty at $2.15/day"` (the pre-2025
@@ -150,17 +161,17 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   where stdout/stderr don't expose `.reconfigure` (some IDE consoles,
   test runners that replace streams).
 
-### Deferred to release-prep (Unreleased)
+### Fixed during release-prep (v0.3.0)
 
-- **Re-pin README image URLs from `main` to the release tag**
-  (`raw.githubusercontent.com/jpazvd/wb-api-repo/<tag>/docs/figures/...`)
-  during the v0.3.0 release-prep PR. Today the URLs point at `main`,
-  which means PyPI's frozen v0.3.0 README would show whatever
-  `docs/figures/` looks like in HEAD — could drift if a contributor
-  regenerates the script + figures change pixel-wise. Risk is low
-  (figures only change when example code changes; we control both
-  ends), but pinning eliminates the drift entirely. Tracked in the
-  v0.3.0 release checklist.
+- **README image URLs pinned to commit SHA `c92320c`** (the PR #35
+  merge commit). Were pointing at `main`, which broke the figure
+  rendering on the GitHub `develop` view because the figures only
+  existed on develop, not yet on main. Pinning to a specific commit
+  SHA fixes that — the SHA is reachable from both branches now (and
+  forever, since git keeps the commit alive). Side benefit: PyPI's
+  frozen v0.3.0 README description will show the figures as they
+  were at release time, immune to any later regenerations on `main`
+  or `develop`.
 
 ## [0.2.1] — 2026-05-24
 
