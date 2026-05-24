@@ -310,10 +310,16 @@ UTC) keeps the repo-committed cache fresh. Manually triggerable via
 package ships without a YAML cache (would push the wheel size up needlessly);
 `sync` downloads + writes the three files to `~/.cache/wbopendata/` in ~30 s.
 
-**Cache lives somewhere unexpected** — the resolution order is:
-`$WBOPENDATA_YAML_DIR` > `$XDG_CACHE_HOME/wbopendata/` >
-`$LOCALAPPDATA/wbopendata/` > `~/.cache/wbopendata/`. Set the env var to point
-at a shared directory if working across machines.
+**Cache lives somewhere unexpected** — the resolution order is OS-specific
+(see `src/wb_api_tools/cache.py`):
+
+- **`$WBOPENDATA_YAML_DIR`** wins on every platform when set.
+- **POSIX** (Linux / macOS): otherwise `$XDG_CACHE_HOME/wbopendata/` if set,
+  else `~/.cache/wbopendata/`.
+- **Windows**: otherwise `$LOCALAPPDATA/wbopendata/` if set,
+  else `~/AppData/Local/wbopendata/`.
+
+Set the env var to point at a shared directory if working across machines.
 
 **Corporate proxy blocks `api.worldbank.org`** — the WB API responds to plain
 HTTPS over port 443 with no auth. If `wb-api-tools sync` hangs, check your
@@ -377,9 +383,12 @@ make wb-metadata-csv      # legacy CSV builder
 make wb-config            # batch data pulls from config.yaml
 ```
 
-To regenerate the Quick-start figures from live API data:
+To regenerate the Quick-start figures from live API data, install the
+**`[examples]` extras group** first (pulls in matplotlib + scipy + nbformat +
+jupyter + nbconvert — none of these are runtime deps of `wb-api-tools`):
 
 ```bash
+pip install -e ".[examples]"
 WBOPENDATA_YAML_DIR=src/_ python examples/readme_examples.py        # PNG + SVG to docs/figures/
 WBOPENDATA_YAML_DIR=src/_ python examples/_build_readme_notebook.py # rebuild + execute the .ipynb
 ```

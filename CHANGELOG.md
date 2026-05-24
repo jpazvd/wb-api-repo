@@ -122,6 +122,46 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 - **New `docs/figures/` directory** — committed PNG + SVG assets
   embedded in the README + reproducible from the script above.
 
+- **Example 3 fitted-curve overlay (selected via R²)**. Three
+  candidate functional forms tried — linear-in-log(GDP),
+  quadratic-in-log(GDP), logistic 4PL — and the best fit overlaid in
+  black. On the 78-country 2019 cross-section the logistic 4PL wins
+  (R²=0.834 vs 0.775 for quadratic vs 0.503 for linear); it's also
+  the principled choice since poverty headcount is bounded [0, 100%]
+  and a sigmoid respects both asymptotes. `scipy.optimize.curve_fit`
+  for the logistic; `numpy.polyfit` for the polynomial baselines.
+
+- **`[examples]` optional-dependencies group** added to
+  `pyproject.toml`. Pulls in matplotlib, scipy, nbformat, jupyter,
+  nbconvert — needed to regenerate the README's figures + notebook,
+  NOT needed at runtime. `pip install -e ".[examples]"` for dev work
+  on the README.
+
+### Fixed (Unreleased)
+
+- Test fixture in `tests/test_wb_discovery.py` for `SI.POV.DDAY`
+  described the indicator as `"Poverty at $2.15/day"` (the pre-2025
+  WB methodology). Updated to `"Poverty at $3.00/day (2021 PPP)"`
+  to match the current YAML cache definition + the README's Common
+  Indicators table. Cosmetic stub-text change; test logic unchanged.
+- `examples/readme_examples.py` guarded the `sys.stdout.reconfigure`
+  call with `hasattr` + try/except (matches the existing pattern in
+  `examples/demo_pr_b_c.py`). Avoids `AttributeError` in environments
+  where stdout/stderr don't expose `.reconfigure` (some IDE consoles,
+  test runners that replace streams).
+
+### Deferred to release-prep (Unreleased)
+
+- **Re-pin README image URLs from `main` to the release tag**
+  (`raw.githubusercontent.com/jpazvd/wb-api-repo/<tag>/docs/figures/...`)
+  during the v0.3.0 release-prep PR. Today the URLs point at `main`,
+  which means PyPI's frozen v0.3.0 README would show whatever
+  `docs/figures/` looks like in HEAD — could drift if a contributor
+  regenerates the script + figures change pixel-wise. Risk is low
+  (figures only change when example code changes; we control both
+  ends), but pinning eliminates the drift entirely. Tracked in the
+  v0.3.0 release checklist.
+
 ## [0.2.1] — 2026-05-24
 
 **PATCH release — PyPI badge rendering fix.** Switches the README

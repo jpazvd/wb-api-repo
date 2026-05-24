@@ -1,7 +1,9 @@
 """Generate the 5 illustrative examples used in the README.
 
-Run from the repo root after `pip install -e .` (or `pip install wb-api-tools`):
+Run from the repo root after installing the examples extras (pulls in
+matplotlib + scipy + jupyter on top of the runtime deps):
 
+    pip install -e ".[examples]"
     PYTHONIOENCODING=utf-8 python examples/readme_examples.py
 
 Side effects:
@@ -30,9 +32,15 @@ import wb_api_tools as wb
 
 # --- setup -----------------------------------------------------------------
 
-# Reconfigure stdout for non-ASCII country names (Brasil, Côte d'Ivoire, etc.)
-sys.stdout.reconfigure(encoding="utf-8")
-sys.stderr.reconfigure(encoding="utf-8")
+# Reconfigure stdout/stderr for non-ASCII country names (Brasil, Côte
+# d'Ivoire, etc.). Best-effort: some environments (older IDE consoles,
+# test runners that replace streams) don't expose `.reconfigure`.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8")
+        except Exception:  # pragma: no cover - best-effort
+            pass
 
 FIGS_DIR = Path(__file__).resolve().parent.parent / "docs" / "figures"
 FIGS_DIR.mkdir(parents=True, exist_ok=True)

@@ -4,8 +4,10 @@ The .py script generates the figures committed to docs/figures/ for the README
 to embed; this notebook is the user-facing reproducible demo (open on GitHub or
 nbviewer; click "Run all" in Jupyter / Colab to reproduce).
 
-Run from repo root after `pip install -e ".[test]"`:
+Run from repo root after installing the examples extras (pulls in
+matplotlib + scipy + nbformat + jupyter/nbconvert):
 
+    pip install -e ".[examples]"
     PYTHONIOENCODING=utf-8 python examples/_build_readme_notebook.py
 
 This writes the notebook + invokes `jupyter nbconvert --execute` to capture

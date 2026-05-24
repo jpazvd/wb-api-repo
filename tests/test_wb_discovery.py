@@ -52,7 +52,7 @@ def yaml_dir(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
             "SP.POP.TOTL":    _ind("SP.POP.TOTL",    "Population, total",         "2",  ["8"],  "Total population"),
             "SP.POP.0014":    _ind("SP.POP.0014",    "Population ages 0-14",      "2",  ["8"],  "Population aged 0-14"),
             "NY.GDP.MKTP.CD": _ind("NY.GDP.MKTP.CD", "GDP current USD",           "2",  ["3"],  "Gross domestic product"),
-            "SI.POV.DDAY":    _ind("SI.POV.DDAY",    "Poverty headcount",         "2",  ["11"], "Poverty at $2.15/day"),
+            "SI.POV.DDAY":    _ind("SI.POV.DDAY",    "Poverty headcount",         "2",  ["11"], "Poverty at $3.00/day (2021 PPP)"),
             "EG.USE.ELEC":    _ind("EG.USE.ELEC",    "Electric power consumption","11", ["5"],  "Energy use"),
         },
     }
