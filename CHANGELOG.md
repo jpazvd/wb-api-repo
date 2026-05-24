@@ -60,6 +60,16 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
   parseable stream across all six subcommands; status info is still
   human-visible (unredirected stderr).
 
+### Removed (Unreleased)
+
+- **Stata badge removed from README**. The PyPI package
+  (`wb-api-tools`) is Python-only — `pip install wb-api-tools` gives
+  the Python library + CLI, not the Stata `wbopendata.ado` files. The
+  Stata badge added in v0.2.1 was misleading on the PyPI project page
+  (suggested `pip install` would deliver Stata content). The repo
+  still ships both surfaces; the Stata package is documented in its
+  own section of the README + via `help wbopendata` in Stata.
+
 ## [0.2.1] — 2026-05-24
 
 **PATCH release — PyPI badge rendering fix.** Switches the README
