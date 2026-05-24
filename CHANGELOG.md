@@ -13,6 +13,35 @@ retain their upstream lineage versions (see `doc/VERSIONING_POLICY.md`).
 
 _Nothing yet — open a new section here when work resumes on `develop` post-v0.2.0._
 
+## [0.2.0] — 2026-05-23
+
+**Stable release.** Promotes [0.2.0rc1] after a clean PyPI publish +
+clean-venv smoke test (`pip install --pre wb-api-tools`, then
+`import wb_api_tools` → 0.2.0rc1 + 17 public symbols). Identical code
+to rc1; only the version string is bumped + the README cosmetic
+fixes from PR #26 land in this tag.
+
+`pip install wb-api-tools` (no `--pre`) now resolves to this release.
+
+See the `[0.2.0rc1]` section below for the full scope of what 0.2.0
+delivers (PyPI packaging, OIDC publish workflow, XDG-aware cache,
+PROJECT_ROOT removed, bundled config+schema).
+
+### Added (v0.2.0)
+
+- README H1 renamed `wb-api-repo` → `wb-api-tools` so the PyPI page
+  header and the README's first heading agree (PR #26).
+- One-line callout under the badges making the repo↔package
+  relationship explicit.
+
+### Changed (v0.2.0)
+
+- User-facing references to the upstream Stata package now point at
+  [`jpazvd/wbopendata`](https://github.com/jpazvd/wbopendata) (public
+  repo) instead of the dev fork (PR #26).
+- `doc/VERSIONING_POLICY.md` and `doc/roadmap/README.md` aligned with
+  the same naming convention.
+
 ## [0.2.0rc1] — 2026-05-23
 
 **First PyPI release candidate.** Packages the Python library + CLI as
