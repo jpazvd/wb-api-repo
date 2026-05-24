@@ -50,8 +50,23 @@ def test_save_df_csv_writes_file(sample_df: pd.DataFrame, tmp_path: Path, capsys
     assert out.exists()
     contents = out.read_text(encoding="utf-8")
     assert contents.startswith("countryiso3code,year,value")
-    # "Wrote: ..." status line printed to stdout
-    assert "Wrote:" in capsys.readouterr().out
+    # "Wrote: ..." status line goes to STDERR (not stdout) so users
+    # who redirect stdout for piping aren't surprised by status noise.
+    captured = capsys.readouterr()
+    assert "Wrote:" in captured.err
+    assert "Wrote:" not in captured.out
+
+
+def test_save_df_dash_writes_no_status_to_either_stream(sample_df: pd.DataFrame, capsys) -> None:
+    """`--out -` mode: only the CSV body goes to stdout, NO status to stderr.
+    (Status line is intentionally suppressed when streaming to stdout.)"""
+    _save_df(sample_df, "-")
+    captured = capsys.readouterr()
+    # No "Wrote:" line on EITHER stream — early return before the print
+    assert "Wrote:" not in captured.err
+    assert "Wrote:" not in captured.out
+    # stdout contains only the CSV
+    assert captured.out.startswith("countryiso3code,year,value")
 
 
 def test_save_df_yaml_writes_file(sample_df: pd.DataFrame, tmp_path: Path) -> None:

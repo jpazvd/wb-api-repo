@@ -60,7 +60,12 @@ def _save_df(df, out: Optional[str]) -> None:
             yaml.safe_dump(records, f, sort_keys=False, allow_unicode=True)
     else:
         df.to_csv(out, index=False)
-    print(f"Wrote: {out}  (rows={len(df):,}, cols={len(df.columns)})")
+    # Status line on stderr — keeps stdout clean for file-mode users
+    # who redirect, and matches the search-summary convention above.
+    print(
+        f"Wrote: {out}  (rows={len(df):,}, cols={len(df.columns)})",
+        file=sys.stderr,
+    )
 
 
 def build_parser():
@@ -207,7 +212,13 @@ def main(argv=None):
             res = search(args.term, page=args.page, limit=args.limit,
                          source=args.source, topic=args.topic,
                          field=args.field, exact=args.exact)
-            print(f"  total={res['total']}  page={res['page']}/{res['pages']}  limit={res['limit']}")
+            # Pagination summary goes to stderr so stdout stays a pure
+            # data stream when `--out -` is piped into another tool.
+            # Unix convention: stdout = data, stderr = diagnostics.
+            print(
+                f"  total={res['total']}  page={res['page']}/{res['pages']}  limit={res['limit']}",
+                file=sys.stderr,
+            )
             if args.out:
                 _save_df(pd.DataFrame.from_records(res['results']), args.out)
             else:
