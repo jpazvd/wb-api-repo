@@ -30,9 +30,9 @@ wb-api-tools sync
 ```
 
 Then any of the five examples below works. **Full runnable notebook:**
-[`examples/readme_examples.ipynb`](examples/readme_examples.ipynb) — GitHub
-renders it inline (DataFrame tables + figures), or open in Jupyter / Colab to
-re-execute.
+<https://github.com/jpazvd/wb-api-repo/blob/main/examples/readme_examples.ipynb>
+— GitHub renders it inline (DataFrame tables + figures), or open in Jupyter /
+Colab to re-execute.
 
 ### 1. Population time-series (multiple countries)
 
@@ -306,8 +306,8 @@ UTC) keeps the repo-committed cache fresh. Manually triggerable via
 - [docs/PYTHON_DEMO.md](docs/PYTHON_DEMO.md) — captured live-API transcript from the 7-section walkthrough
 - [docs/EXAMPLES.md](docs/EXAMPLES.md) — end-to-end workflows (API, Stata, Python)
 - [docs/AGE_BANDS.md](docs/AGE_BANDS.md) — standard 5-year age band codes for population indicators
-- [examples/readme_examples.ipynb](examples/readme_examples.ipynb) — runnable Jupyter notebook for the Quick-start examples above
-- [examples/readme_examples.py](examples/readme_examples.py) — paired Python script (regenerates the figures in `docs/figures/`)
+- [examples/readme_examples.ipynb](https://github.com/jpazvd/wb-api-repo/blob/main/examples/readme_examples.ipynb) — runnable Jupyter notebook for the Quick-start examples above (GitHub renders inline)
+- [examples/readme_examples.py](https://github.com/jpazvd/wb-api-repo/blob/main/examples/readme_examples.py) — paired Python script (regenerates the figures in `docs/figures/`)
 - [CHANGELOG.md](CHANGELOG.md) — per-release change log
 - [doc/VERSIONING_POLICY.md](doc/VERSIONING_POLICY.md) — semver policy + component-level `.ado` version headers
 
