@@ -138,13 +138,71 @@ def example_3_poverty_vs_gdp_scatter() -> None:
     print(df[["countryiso3code", "country", "SI.POV.DDAY", "NY.GDP.PCAP.PP.KD"]]
           .sort_values("SI.POV.DDAY", ascending=False).head(8).to_string(index=False))
 
+    # --- Fit comparison: linear-log vs quadratic-log vs logistic 4PL --------
+    # Poverty headcount is bounded in [0, 100]; the logistic 4PL form respects
+    # both asymptotes (high-poverty plateau at low income, near-zero at high
+    # income). We try simpler forms too and pick by R².
+    import numpy as np
+    from scipy.optimize import curve_fit
+
+    x_raw = df["NY.GDP.PCAP.PP.KD"].to_numpy(dtype=float)
+    y = df["SI.POV.DDAY"].to_numpy(dtype=float)
+    log_x = np.log10(x_raw)
+    ss_tot = float(np.sum((y - y.mean()) ** 2))
+
+    def r2(y_hat: np.ndarray) -> float:
+        return 1.0 - float(np.sum((y - y_hat) ** 2)) / ss_tot
+
+    # 1. Linear in log10(GDP):  y = a + b * log10(x)
+    b_lin, a_lin = np.polyfit(log_x, y, 1)
+    fit_lin = lambda x: b_lin * np.log10(x) + a_lin
+    r2_lin = r2(fit_lin(x_raw))
+
+    # 2. Quadratic in log10(GDP):  y = a + b * log10(x) + c * log10(x)^2
+    coefs_q = np.polyfit(log_x, y, 2)
+    fit_q = lambda x: np.polyval(coefs_q, np.log10(x))
+    r2_q = r2(fit_q(x_raw))
+
+    # 3. Logistic 4PL:  y = d + (a - d) / (1 + (x/c)^b)
+    #    a = upper asymptote, d = lower asymptote, c = x at midpoint, b = slope
+    def logistic_4pl(x, a, b, c, d):
+        return d + (a - d) / (1.0 + (x / c) ** b)
+
+    try:
+        popt, _ = curve_fit(
+            logistic_4pl, x_raw, y,
+            p0=[100.0, 1.0, float(np.median(x_raw)), 0.0],
+            maxfev=20000,
+        )
+        fit_log = lambda x, _p=popt: logistic_4pl(x, *_p)
+        r2_log = r2(fit_log(x_raw))
+    except RuntimeError:
+        fit_log, r2_log = None, float("-inf")
+
+    fits = [
+        ("Linear (log GDP)",    r2_lin, fit_lin),
+        ("Quadratic (log GDP)", r2_q,   fit_q),
+        ("Logistic 4PL",        r2_log, fit_log),
+    ]
+    best = max((f for f in fits if f[2] is not None), key=lambda f: f[1])
+    print()
+    print("  Fit comparison (higher R² = better):")
+    for name, r, _ in fits:
+        marker = "  <-- selected" if (name, r) == (best[0], best[1]) else ""
+        print(f"    {name:22s}  R^2 = {r:.3f}{marker}")
+
+    # --- Plot ---------------------------------------------------------------
     fig, ax = plt.subplots()
     for region, sub in df.groupby("regionname"):
         ax.scatter(sub["NY.GDP.PCAP.PP.KD"], sub["SI.POV.DDAY"],
                    alpha=0.7, s=30, label=region)
+    # Overlay the selected fit on a log-spaced x grid
+    x_smooth = np.logspace(np.log10(x_raw.min()), np.log10(x_raw.max()), 200)
+    ax.plot(x_smooth, best[2](x_smooth), color="black", linewidth=2,
+            label=f"{best[0]} fit (R²={best[1]:.2f})")
     ax.set_xscale("log")
     ax.set_xlabel("GDP per capita, PPP (log scale)")
-    ax.set_ylabel("Poverty headcount at $2.15/day (% of population)")
+    ax.set_ylabel("Poverty headcount at $3.00/day, 2021 PPP (% of population)")
     ax.set_title("Poverty vs GDP per capita, 2019 (cross-country)")
     ax.legend(fontsize=8, loc="upper right")
     save_fig("example_3_poverty_vs_gdp_scatter", fig)
