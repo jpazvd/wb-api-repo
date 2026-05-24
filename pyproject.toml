@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "wb-api-tools"
-version = "0.2.0.dev0"
+version = "0.2.0rc1"
 description = "World Bank Open Data helpers — Python library + CLI mirroring the Stata wbopendata surface (discovery, data, country-context, multilingual, linewrap)."
 readme = "README.md"
 license = { file = "LICENSE.md" }
